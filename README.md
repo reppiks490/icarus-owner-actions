@@ -7,6 +7,7 @@ live orders, certify an ML candidate, or promise a win rate.
 **Start here:** [OWNER_TASKS.md](OWNER_TASKS.md). The exact chart/export request
 is in [EXPORT_MATRIX.md](EXPORT_MATRIX.md); optional subscriptions and account
 choices are in [PROVIDERS_AND_COSTS.md](PROVIDERS_AND_COSTS.md).
+For click-to-complete checkboxes, use [Owner action checklist #1](https://github.com/reppiks490/icarus-owner-actions/issues/1).
 
 ## The next three things
 
