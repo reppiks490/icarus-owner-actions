@@ -1,0 +1,19 @@
+# Private owner data and credentials must never enter this checklist repository.
+.env
+.env.*
+!.env.example
+secrets/
+private/
+raw/
+exports/
+*.zip
+*.7z
+*.xlsx
+*.mp4
+*.mov
+*.key
+*.pem
+*.sqlite
+*.db
+__pycache__/
+*.pyc

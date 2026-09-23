@@ -1,0 +1,2 @@
+asset_role,market_id,contract_id,session,chart_type,interval,time_zone,first_ts_utc,last_ts_utc,rows,sha256,adjusted_roll,data_entitlement,source_note
+execution,CME:NQ1!,continuous,RTH,HA,20m,America/Chicago,YYYY-MM-DDTHH:MM:SSZ,YYYY-MM-DDTHH:MM:SSZ,0,REPLACE_WITH_SHA256,unknown,unknown,Reference chart; confirm exact ticker and settings
