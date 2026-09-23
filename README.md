@@ -50,6 +50,8 @@ Checked against official provider documentation on 2026-09-23. Prices,
 entitlements, contract symbols, API policies, and prop-firm rules can change;
 verify again before purchasing or connecting anything.
 
+Prepared by CA / Codex, 2026-09-23.
+
 ## Key source documents
 
 - [TradingView chart export](https://www.tradingview.com/support/solutions/43000537255-how-to-export-chart-data/)

@@ -1,5 +1,7 @@
 # Data, broker and prop decisions
 
+Prepared by CA / Codex, 2026-09-23.
+
 Checked 2026-09-23 against the linked official pages. Prices and eligibility
 change; the owner must verify the checkout page and license **before paying**.
 No subscription is required to read this repository. No purchase has been

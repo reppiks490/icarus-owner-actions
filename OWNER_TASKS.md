@@ -1,5 +1,7 @@
 # Owner tasks
 
+Prepared by CA / Codex, 2026-09-23.
+
 Check a box only after its **proof to provide** is available. `P0` tasks are
 needed for like-for-like parity; `P1` tasks come before live paper futures;
 `P2` tasks are optional research or later execution preparation. Monetary

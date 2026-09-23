@@ -1,5 +1,7 @@
 # Chart-data export matrix
 
+Prepared by CA / Codex, 2026-09-23.
+
 The goal is **comparable, timestamped evidence**, not a pile of similar files.
 Start with the P0 packet. The P1/P2 lists are a research universe, not
 qualified trade recommendations. Confirm each chart's exact exchange ticker
