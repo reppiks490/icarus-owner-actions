@@ -140,8 +140,8 @@ The owner clarified that the corpus intentionally spans multiple chart and
 sampling constructions across assets: regular candles, Heikin Ashi, Renko,
 TPO/profile views, volume-footprint/profile views, session-volume-profile views,
 plus seconds/minutes/hours, tick and range sampling. O14 must therefore inventory
-`asset -> venue/contract -> session -> representation family -> native
-time/tick/range setting -> schema -> date span -> hash`.
+`asset -> venue/contract -> session -> chart/view family -> price geometry ->
+sampling construction/native setting -> schema -> date span -> hash`.
 
 NEXUS and PARALLAX have been hardened so chart/view family and sampling
 construction are separate axes. Tick/range claims are event-driven sampling
@@ -153,3 +153,12 @@ cross-asset weighting.
 **O14 remains open only for reconciliation of the existing corpus against the
 required execution/micro/contract matrix and for genuinely missing cells. Bulk
 re-export of the historical ~800-file corpus is not requested.**
+
+
+### O14 identity refinement
+
+Transform comparisons are treated as **price-geometry evidence**, not automatic
+chart/view-family evidence. Standard-OHLC equality cannot by itself distinguish
+an ordinary candlestick export from a TPO, footprint or profile view that
+preserves the same OHLC fields. Family-specific O14 cells stay unresolved until
+the view identity is independently evidenced.
