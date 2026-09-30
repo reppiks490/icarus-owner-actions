@@ -70,6 +70,28 @@ ES contains both Heikin Ashi and standard-candlestick 20-minute reports, plus a 
 - Current-window HA XLSX: SHA-256 `9b039da30ce28c9d7ca57d213ea1d178e2375c877c69eb0c4d5a54cc4930fac5`
 - Current-window Candles XLSX: SHA-256 `30e885410e8fff5dc6977a7ea6902e3e8432e9363d66d3e33c5068468bed013a` (`...7.xlsx` and `...8.xlsx` are identical)
 
+## User-confirmed session provenance
+
+The owner confirmed that the export families are distinguished by their history start date:
+
+- **RTH:** reports/export families whose backtest/trade history begins in **2019**.
+- **ETH:** reports/export families whose backtest/trade history begins in **2024**.
+
+This resolves the main session ambiguity in the intake. The strategy property `RTH Session Gate = Off` is an internal Pine/strategy input and is **not** used here as the TradingView chart-session label.
+
+Accordingly:
+- NQ 2019 standard report (`... 3.xlsx`) = **RTH**.
+- NQ 2019 Heikin Ashi report (`... 4.xlsx`) = **RTH**.
+- NQ 2024 Heikin Ashi report family (`...(1).xlsx`, `...(2).xlsx`, base `.xlsx`) = **ETH**.
+- NQ 2024 standard report (`... 2.xlsx`) = **ETH**.
+- NQ 2024 trade-list CSV family = **ETH**.
+- NQ 2024 20m HA and standard chart-data CSV pair = **ETH**.
+- ES 2019 Heikin Ashi report (`... 4.xlsx`) and its 2019 trade-list CSV family = **RTH**.
+- ES 2024 Heikin Ashi report (`... 6.xlsx`) = **ETH**.
+- ES 2024 standard report family (`... 7.xlsx` / `... 8.xlsx`) = **ETH**.
+
+Byte-identical copies remain duplicate payloads within the same session family; the RTH/ETH distinction is between the 2019-start and 2024-start families.
+
 ## Checklist status
 
 This intake provides strong evidence for the **20-minute NQ portion of O03**:
@@ -82,7 +104,7 @@ This intake provides strong evidence for the **20-minute NQ portion of O03**:
 
 `O04` is **not marked complete**. A standard-candlestick report exists, but the owner checklist specifically requires proof of a Heikin-Ashi signal chart using TradingView's **Standard bars** execution-price mode, with separate trade list/summary and settings evidence. The uploaded report does not by itself prove that emulator mode.
 
-`O05` is **not marked complete**. The report properties show `RTH Session Gate = Off` and a configured ET session, while the bar history includes overnight timestamps, but the checklist requires explicit session-toggle evidence and representative session exports.
+`O05` is **partially evidenced but not marked complete**. The owner has confirmed that the 2019-start export family is RTH and the 2024-start export family is ETH, so the uploaded session families are now classified. The remaining O05 proof requirement is the explicit session-toggle evidence plus the requested representative regular day and holiday/early-close day export.
 
 `O06` now has a reproducible checksum/provenance manifest, but raw files remain outside GitHub as required.
 
