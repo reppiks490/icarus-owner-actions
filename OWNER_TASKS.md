@@ -50,6 +50,10 @@ amounts are not approvals to spend.
   generate a checksum manifest, and provide the manifest without altering
   CSVs. **Proof:** manifest plus the original files through a permitted,
   private channel. Do not commit licensed CSVs to this repository.
+  **Completed by owner acceptance 2026-09-30:** the private intake originals
+  were SHA-256 hashed and recorded in the repository metadata manifest; the
+  owner explicitly accepted that existing integrity record and waived a second
+  local re-hash. Raw licensed payloads remain outside the repository.
 
 ## P1: remove the 10-minute feed lag and prepare paper futures
 
