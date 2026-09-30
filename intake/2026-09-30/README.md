@@ -109,3 +109,39 @@ This intake provides strong evidence for the **20-minute NQ portion of O03**:
 `O06` now has a reproducible checksum/provenance manifest, but raw files remain outside GitHub as required.
 
 See `EXPORT_INTAKE_MANIFEST.csv` for every observed filename, SHA-256, duplicate group, row count, report range, and key report metadata.
+
+
+## O14 historical corpus recovery
+
+The wider multi-asset corpus was located in historical Git revisions and should
+be inventoried before any large re-export campaign.
+
+Authoritative recovered checkpoints:
+
+- `reppiks490/multi-level-csv` at
+  `ce82124352762c14eb33836a5c894bc3a2a71dfe`: nine source ZIPs.
+- `reppiks490/csv-data-multi-chart-type` at
+  `a482e7d1801fa7fa5aec093960097c0051c0403c`: `Csv indexes.zip`.
+- PARALLAX ten-archive audit: **659 usable CSV members / 13,788,256 logical
+  rows / 542 distinct byte-exact contents**.
+- DAEDALUS extracted-corpus reconciliation: **803 physical CSV files / 542
+  distinct byte contents**, with zero ZIP-only or extracted-only content hashes.
+
+The physical count is larger because the extracted roots preserve additional
+lineage/copies. It is not evidence of 803 independent market signals.
+
+The owner clarified that the corpus intentionally spans multiple chart and
+sampling constructions across assets: regular candles, Heikin Ashi, Renko,
+TPO/profile views, volume-footprint/profile views, session-volume-profile views,
+plus seconds/minutes/hours, tick and range sampling. O14 must therefore inventory
+`asset -> venue/contract -> session -> representation family -> native
+time/tick/range setting -> schema -> date span -> hash`.
+
+NEXUS and PARALLAX have been hardened so tick/range claims are treated as
+event-driven constructions, explicit representation families remain distinct,
+duplicate payloads do not gain evidence weight, and modeling requires
+family-balanced symbol fusion before cross-asset weighting.
+
+**O14 remains open only for reconciliation of the existing corpus against the
+required execution/micro/contract matrix and for genuinely missing cells. Bulk
+re-export of the historical ~800-file corpus is not requested.**
