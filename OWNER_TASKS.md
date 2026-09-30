@@ -37,12 +37,15 @@ amounts are not approvals to spend.
   Keep the original synthetic-fill result too; label both. Do not interpret
   the synthetic-fill report as broker-achievable P&L. **Proof:** both reports
   with the settings screenshot for each.
-- [ ] **O05 - Confirm session behavior (free).** On NQ 20m, note whether
+- [x] **O05 - Confirm session behavior (free).** On NQ 20m, note whether
   the first bar is 08:30 CT (RTH) or an overnight bar (ETH). Export one
   complete regular trading day and one holiday/early-close day if available.
   TradingView documents RTH and ETH as different intraday data streams.
-  **Proof:** chart CSV and session-toggle screenshot.
-- [ ] **O06 - Preserve raw data provenance (free).** Keep the CSVs in a local
+  **Proof:** chart CSV and session-toggle screenshot. **Completed 2026-09-30:**
+  NQ 20m RTH and ETH session-selector screenshots were supplied through the
+  private intake; the retained NQ chart data covers ordinary sessions and the
+  2025-11-28 shortened session.
+- [x] **O06 - Preserve raw data provenance (free).** Keep the CSVs in a local
   private folder. Use the command in [EXPORT_MATRIX.md](EXPORT_MATRIX.md) to
   generate a checksum manifest, and provide the manifest without altering
   CSVs. **Proof:** manifest plus the original files through a permitted,
