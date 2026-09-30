@@ -185,8 +185,9 @@ a sampling construction only; it does not by itself identify the chart family.
 
 These are correlated views of the same underlying markets, not independent
 votes. Preserve native construction and clock semantics. The required fusion
-order is: streams within sampling construction -> sampling constructions within
-reviewed chart/view family -> chart/view families to a symbol-level state -> cross-asset
+order is: streams within sampling construction -> sampling constructions within price
+geometry -> price geometries within reviewed chart/view family -> chart/view
+families to a symbol-level state -> cross-asset
 weighting. Do not coerce tick/range/Renko/profile streams to fixed minute/hour
 cadence. Exact-byte duplicates retain lineage but receive no additional
 evidence weight.
