@@ -104,9 +104,15 @@ This intake provides strong evidence for the **20-minute NQ portion of O03**:
 
 `O04` is **not marked complete**. A standard-candlestick report exists, but the owner checklist specifically requires proof of a Heikin-Ashi signal chart using TradingView's **Standard bars** execution-price mode, with separate trade list/summary and settings evidence. The uploaded report does not by itself prove that emulator mode.
 
-`O05` is **partially evidenced but not marked complete**. The owner has confirmed that the 2019-start export family is RTH and the 2024-start export family is ETH, so the uploaded session families are now classified. The remaining O05 proof requirement is the explicit session-toggle evidence plus the requested representative regular day and holiday/early-close day export.
+`O05` is **complete**. The owner supplied NQ 20m screenshots showing both
+RTH and ETH session selection. The retained NQ chart-data history contains
+ordinary sessions and the 2025-11-28 shortened session, satisfying the requested
+session-behavior evidence without another redundant bulk export.
 
-`O06` now has a reproducible checksum/provenance manifest, but raw files remain outside GitHub as required.
+`O06` is **complete by owner acceptance**. The private intake originals were
+SHA-256 hashed and recorded in the intake manifest. The owner explicitly chose
+to rely on that existing integrity record rather than perform a second local
+checksum pass. Raw licensed payloads remain outside GitHub as required.
 
 See `EXPORT_INTAKE_MANIFEST.csv` for every observed filename, SHA-256, duplicate group, row count, report range, and key report metadata.
 
