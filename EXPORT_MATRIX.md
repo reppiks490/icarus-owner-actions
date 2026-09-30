@@ -148,7 +148,8 @@ do not create independent evidence.
 | market_id | `CME:NQ1!` as shown on your chart |
 | contract_id | continuous or named expiry |
 | session | RTH / ETH / 24x7 |
-| chart_family | standard candles / HA / Renko / TPO / volume footprint / session volume profile / unknown |
+| chart_view_family | standard candles / HA / Renko / TPO / volume footprint / session volume profile / unknown |
+| price_geometry | standard OHLC / Heikin Ashi / Renko-like / unknown |
 | sampling_domain | time / event / provider-native profile |
 | sampling_construction | time_bar / tick / range / provider-native |
 | native_setting | 1s / 1m / 20m / 60m / 240m / 1D / 1000T / 10R / exact provider setting |
@@ -173,17 +174,19 @@ multi-asset corpus. The recovered PARALLAX checkpoint contains 10 source ZIPs,
 659 usable archive members, 13,788,256 logical rows and 542 distinct byte
 contents; the DAEDALUS extracted catalog reconciled to 803 physical CSV files.
 
-Those files intentionally span **orthogonal chart/view and sampling axes**.
+Those files intentionally span **orthogonal chart/view, price-geometry and sampling axes**.
 Chart/view families include regular candles, Heikin Ashi, Renko, TPO, volume
 footprint/profile and session volume profile where explicitly identified.
-Sampling/construction separately includes seconds/minutes/hours and other time
-bars, tick sampling, and range sampling. A `1000T` or `10R` suffix establishes
+Price geometry is tracked separately because a TPO/footprint/profile view can
+still export standard OHLC or Heikin-Ashi-derived OHLC. Sampling/construction
+separately includes seconds/minutes/hours and other time bars, tick sampling,
+and range sampling. A `1000T` or `10R` suffix establishes
 a sampling construction only; it does not by itself identify the chart family.
 
 These are correlated views of the same underlying markets, not independent
 votes. Preserve native construction and clock semantics. The required fusion
 order is: streams within sampling construction -> sampling constructions within
-reviewed chart family -> chart families to a symbol-level state -> cross-asset
+reviewed chart/view family -> chart/view families to a symbol-level state -> cross-asset
 weighting. Do not coerce tick/range/Renko/profile streams to fixed minute/hour
 cadence. Exact-byte duplicates retain lineage but receive no additional
 evidence weight.
@@ -191,3 +194,14 @@ evidence weight.
 Only export a new file after the inventory proves that an O14-required cell
 (asset/contract/session/representation/native setting/date span) is genuinely
 missing.
+
+
+### Price geometry is not chart/view identity
+
+A mathematical OHLC transform check proves **price geometry only**. Equality to
+a known standard-OHLC stream does not prove that the source was an ordinary
+candlestick view: TPO, footprint and profile views can retain the same OHLC
+geometry. Likewise, Heikin-Ashi geometry does not rule out an additional
+profile/footprint view layer. O14 therefore requires view-family provenance
+separately from price-geometry proof before a family-specific matrix cell is
+marked satisfied.
