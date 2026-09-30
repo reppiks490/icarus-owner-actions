@@ -143,10 +143,12 @@ plus seconds/minutes/hours, tick and range sampling. O14 must therefore inventor
 `asset -> venue/contract -> session -> representation family -> native
 time/tick/range setting -> schema -> date span -> hash`.
 
-NEXUS and PARALLAX have been hardened so tick/range claims are treated as
-event-driven constructions, explicit representation families remain distinct,
-duplicate payloads do not gain evidence weight, and modeling requires
-family-balanced symbol fusion before cross-asset weighting.
+NEXUS and PARALLAX have been hardened so chart/view family and sampling
+construction are separate axes. Tick/range claims are event-driven sampling
+constructions, not automatic chart-family labels. Duplicate payloads do not gain
+evidence weight. Representation-sensitive modeling is fail-closed and uses the
+hierarchy: sampling construction -> reviewed chart family -> symbol ->
+cross-asset weighting.
 
 **O14 remains open only for reconciliation of the existing corpus against the
 required execution/micro/contract matrix and for genuinely missing cells. Bulk
