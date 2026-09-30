@@ -147,8 +147,8 @@ NEXUS and PARALLAX have been hardened so chart/view family and sampling
 construction are separate axes. Tick/range claims are event-driven sampling
 constructions, not automatic chart-family labels. Duplicate payloads do not gain
 evidence weight. Representation-sensitive modeling is fail-closed and uses the
-hierarchy: sampling construction -> reviewed chart family -> symbol ->
-cross-asset weighting.
+hierarchy: sampling construction -> price geometry -> reviewed chart/view
+family -> symbol -> cross-asset weighting.
 
 **O14 remains open only for reconciliation of the existing corpus against the
 required execution/micro/contract matrix and for genuinely missing cells. Bulk
