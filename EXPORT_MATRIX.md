@@ -148,8 +148,8 @@ do not create independent evidence.
 | market_id | `CME:NQ1!` as shown on your chart |
 | contract_id | continuous or named expiry |
 | session | RTH / ETH / 24x7 |
-| chart_type | HA / standard / range / Renko / tick |
-| interval | 1m / 20m / 60m / 240m / 1D / exact non-time setting |
+| chart_type | HA / standard / Renko / range / tick / TPO / volume footprint / session volume profile |
+| interval | 1s / 1m / 20m / 60m / 240m / 1D / 1000T / 10R / exact native setting |
 | time_zone | exchange and displayed time zone |
 | first_ts, last_ts | UTC timestamps after validation |
 | rows, sha256 | Count and checksum from unchanged raw file |
@@ -161,3 +161,27 @@ Range, Renko and tick exports need their exact construction settings and a
 provider-native chart identity. They cannot be silently treated as 20-minute
 time bars. Re-export after changing TradingView chart settings or contract
 roll mode.
+
+
+### Existing multi-representation corpus rule
+
+Before requesting new O14 exports, reconcile the owner's existing historical
+multi-asset corpus. The recovered PARALLAX checkpoint contains 10 source ZIPs,
+659 usable archive members, 13,788,256 logical rows and 542 distinct byte
+contents; the DAEDALUS extracted catalog reconciled to 803 physical CSV files.
+
+Those files intentionally span multiple sampling/construction families:
+seconds/minutes/hours and other time bars, tick bars, range bars, Renko,
+Heikin Ashi, regular candles, and profile-derived/exported views including TPO,
+volume footprint/profile and session volume profile where explicitly identified.
+
+These are correlated views of the same underlying markets, not independent
+votes. Preserve their native construction and clock semantics. Fuse reviewed
+streams within representation family, then families to a symbol-level state,
+before cross-asset weighting. Do not coerce tick/range/Renko/profile streams to
+fixed minute/hour cadence. Exact-byte duplicates retain lineage but receive no
+additional evidence weight.
+
+Only export a new file after the inventory proves that an O14-required cell
+(asset/contract/session/representation/native setting/date span) is genuinely
+missing.
