@@ -26,7 +26,7 @@ The central NQ pair is structurally valid and aligned:
 - **Standard OHLC chart export:** `CME_MINI_DL_NQ1!, 20(1).csv`
   - SHA-256: `a8141ffa372b4ffaba4d6bf8b8998a489f2daf00bfad5e248bf27132d99f0932`
   - 41,239 bars over the identical timestamp set and date range.
-  - The HA transform was independently checked against this standard OHLC source: timestamp alignment is complete, and HA close/high/low identities hold for all post-seed rows.
+  - Re-validation on 2026-10-01 confirmed complete timestamp alignment. HA open matches all rows when seeded from the supplied HA export; HA high/low/close geometry matches 41,238 of 41,239 rows. The only mismatch is the final timestamp (2026-09-30 13:20 UTC) between the separately downloaded files. No cause is inferred; the standard-OHLC export remains the canonical runtime history input.
 
 The matching current-window NQ Heikin Ashi strategy report is represented by one unique XLSX payload (three identical filename copies were uploaded):
 
