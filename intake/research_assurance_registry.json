@@ -80,5 +80,11 @@
     "broker_execution_authority": false,
     "synthetic_evidence_is_performance_proof": false,
     "protected_holdout_auto_spend": false
+  },
+  "assurance_contract": {
+    "schema_version": 1,
+    "schema_path": "templates/assurance-summary.schema.json",
+    "artifact_retention_days": 30,
+    "required_execution_allowed": false
   }
 }
