@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/reppiks490/icarus-owner-actions/blob/main/templates/assurance-summary.schema.json",
+  "title": "ICARUS Research Assurance Summary v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "repository",
+    "workflow",
+    "run_id",
+    "run_attempt",
+    "event",
+    "sha",
+    "ref",
+    "generated_at",
+    "authority",
+    "execution_allowed",
+    "gates",
+    "result"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "repository": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workflow": {
+      "type": "string",
+      "minLength": 1
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "run_attempt": {
+      "type": "string",
+      "pattern": "^[0-9]+$"
+    },
+    "event": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{40}$"
+    },
+    "ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "authority": {
+      "enum": [
+        "read_only_research",
+        "research_only"
+      ]
+    },
+    "execution_allowed": {
+      "const": false
+    },
+    "production_authorized": {
+      "const": false
+    },
+    "market_validation": {
+      "const": false
+    },
+    "profitability_claim": {
+      "const": false
+    },
+    "gates": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "enum": [
+          "success",
+          "failure",
+          "cancelled",
+          "skipped"
+        ]
+      }
+    },
+    "result": {
+      "enum": [
+        "success",
+        "failure"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
