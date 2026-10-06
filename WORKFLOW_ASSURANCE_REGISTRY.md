@@ -101,3 +101,19 @@ including commit/run identity, research authority, an explicit
 
 Consumers should reject a document with an unknown `schema_version` rather than
 silently guessing its semantics.
+
+
+## Actions runtime refresh
+
+The first Dependabot major-version wave has been reconciled against current
+workflow heads. AION/PARALLAX now runs `actions/checkout@v7`,
+`actions/setup-python@v7`, `actions/setup-node@v7`, and
+`actions/upload-artifact@v7`; its full assurance matrix passed on the final
+main SHA.
+
+DAEDALUS and Causal Router now carry the corresponding checkout/setup-python/
+upload-artifact v7 updates. Those exact action majors were proven on the public
+AION runner before the private repositories were updated. Their own private
+workflow runs still terminate at the existing hosted-runner infrastructure
+blocker before usable step-level evidence, so those red states remain
+infrastructure states rather than Python/test verdicts.
