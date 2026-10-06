@@ -76,3 +76,16 @@ When these states change, update both this document and
 `intake/research_assurance_registry.json` with the current main SHA and the
 latest verified/observed workflow run. Do not call a red private run a Python
 failure unless GitHub actually starts the job and produces step-level evidence.
+
+
+## Runner portability fallback
+
+DAEDALUS and Causal Router now default to `ubuntu-latest` through the
+`ASSURANCE_RUNNER` repository-variable expression. If a maintained Linux
+self-hosted runner is later registered, the owner can point that variable at its
+label without another workflow edit. This is a fallback for private hosted-runner
+quota/billing constraints, not a reason to run untrusted pull-request code on an
+unisolated personal machine.
+
+The current default remains GitHub-hosted and therefore remains blocked until
+private hosted-runner eligibility/quota/settings permit execution.
