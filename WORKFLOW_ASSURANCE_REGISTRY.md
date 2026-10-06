@@ -89,3 +89,15 @@ unisolated personal machine.
 
 The current default remains GitHub-hosted and therefore remains blocked until
 private hosted-runner eligibility/quota/settings permit execution.
+
+
+## Shared assurance schema
+
+The canonical downstream contract is
+[`templates/assurance-summary.schema.json`](templates/assurance-summary.schema.json).
+It defines the common v1 fields used by the three workflow evidence artifacts,
+including commit/run identity, research authority, an explicit
+`execution_allowed=false` invariant, gate outcomes, and aggregate result.
+
+Consumers should reject a document with an unknown `schema_version` rather than
+silently guessing its semantics.
