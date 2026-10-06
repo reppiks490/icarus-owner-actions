@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-10-06T01:20:00Z",
+  "purpose": "Cross-repository assurance registry for ICARUS research siblings.",
+  "components": [
+    {
+      "id": "aion-parallax-research",
+      "repository": "reppiks490/aion-parallax-research",
+      "visibility": "public",
+      "main_sha": "1d828b2289994c7d06dd86d8a269a2bb933e770e",
+      "workflow_path": ".github/workflows/parallax-tests.yml",
+      "workflow_name": "AION / PARALLAX assurance",
+      "schedule_utc": "17 7 * * *",
+      "latest_verified_workflow_run_id": 37398470180,
+      "latest_verified_workflow_sha": "e5e201237014b57318548dc1423a73b576fa4412",
+      "latest_verified_conclusion": "success",
+      "assurance_artifact_pattern": "aion-assurance-<run_id>-<run_attempt>",
+      "package_artifact_pattern": "aion-package-<run_id>-<run_attempt>",
+      "authority": "read_only_research",
+      "execution_allowed": false,
+      "runner_state": "operational"
+    },
+    {
+      "id": "daedalus-research-os",
+      "repository": "reppiks490/daedalus-research-os",
+      "visibility": "private",
+      "main_sha": "54b0544fc3914679142a2e07d744f55c1eee985f",
+      "workflow_path": ".github/workflows/assurance.yml",
+      "workflow_name": "DAEDALUS research assurance",
+      "schedule_utc": "41 7 * * *",
+      "latest_observed_workflow_run_id": 37398504859,
+      "latest_observed_conclusion": "failure",
+      "assurance_artifact_pattern": "daedalus-assurance-<run_id>-<run_attempt>",
+      "package_artifact_pattern": "daedalus-package-<run_id>-<run_attempt>",
+      "authority": "research_only",
+      "production_authorized": false,
+      "execution_allowed": false,
+      "runner_state": "blocked_before_usable_job_logs",
+      "blocker": "GitHub-hosted private-repository runner eligibility/quota/settings; bare runner probe reproduced the same failure."
+    },
+    {
+      "id": "icarus-causal-router",
+      "repository": "reppiks490/icarus-causal-router",
+      "visibility": "private",
+      "main_sha": "3fd280d737aee20a01b5c751ebe167cbfbc483ef",
+      "workflow_path": ".github/workflows/assurance.yml",
+      "workflow_name": "ICARUS causal-router assurance",
+      "schedule_utc": "5 8 * * *",
+      "latest_observed_workflow_run_id": 37398510323,
+      "latest_observed_conclusion": "failure",
+      "assurance_artifact_pattern": "causal-router-assurance-<run_id>-<run_attempt>",
+      "package_artifact_pattern": "causal-router-package-<run_id>-<run_attempt>",
+      "authority": "research_only",
+      "execution_allowed": false,
+      "market_validation": false,
+      "profitability_claim": false,
+      "runner_state": "blocked_before_usable_job_logs",
+      "blocker": "GitHub-hosted private-repository runner eligibility/quota/settings; bare runner probe reproduced the same failure."
+    }
+  ],
+  "dependency_automation": {
+    "configuration_path": ".github/dependabot.yml",
+    "cadence": "weekly",
+    "timezone": "America/Chicago",
+    "ecosystems": [
+      "github-actions",
+      "pip"
+    ],
+    "minor_patch_grouping": true,
+    "major_updates_separate": true
+  },
+  "safety": {
+    "secrets_in_registry": false,
+    "broker_execution_authority": false,
+    "synthetic_evidence_is_performance_proof": false,
+    "protected_holdout_auto_spend": false
+  }
+}
