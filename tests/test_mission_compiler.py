@@ -25,6 +25,24 @@ class CompilerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'baseline requirements missing'):
             validate(self.record)
 
+    def test_observation_clock_is_required(self):
+        del self.record['observed_at']
+        with self.assertRaises(ValueError):
+            validate(self.record)
+
+    def test_invalid_or_naive_observation_clock_is_rejected(self):
+        for value in ('not a timestamp', '2026-10-08T00:00:00', None, True):
+            with self.subTest(value=value):
+                self.record['observed_at'] = value
+                with self.assertRaises(ValueError):
+                    validate(self.record)
+
+    def test_observation_clock_accepts_explicit_utc_and_offsets(self):
+        for value in ('2026-10-08T00:00:00Z', '2026-10-07T19:00:00-05:00'):
+            with self.subTest(value=value):
+                self.record['observed_at'] = value
+                self.assertTrue(validate(self.record))
+
     def test_duplicate_and_boolean_ids_rejected(self):
         for value in (2, True):
             record = copy.deepcopy(self.record)
