@@ -6473,7 +6473,8 @@
       "independently_decrypted_validated_rows": null,
       "global_eligible_denominator": null,
       "blocked": "Signed artifact downloads HTTP403 error1010; GitHub binary blob/contents downloads reject UTF-8; no decrypt keys available",
-      "next_action": "Use an authorized binary-capable download environment before Oct14 expiry; archive privately, hash and restore with approved key controls. Do not restart collections."
+      "next_action": "Use an authorized binary-capable download environment before Oct14 expiry; archive privately, hash and restore with approved key controls. Do not restart collections.",
+      "current_recovery_update": "Three original Git ciphertext checkpoints hash/retrieval verified; Tiingo no content >1MB and Actions ZIPs remain blocked; no decrypted row validation"
     },
     {
       "id": "F-UI-OWNERSHIP",
@@ -6536,7 +6537,16 @@
         "All four Actions ZIPs: signed download HTTP403"
       ],
       "decryption": "UNVERIFIED_NO_KEYS",
-      "validated_market_rows": null
+      "validated_market_rows": null,
+      "independent_restore_proof": {
+        "status": "INDEPENDENT_RETRIEVAL_AND_CIPHERTEXT_RESTORE_VERIFIED",
+        "archive_sha256": "c5a63d99a29bff55ed5019275b185a21481a086fbb51123cbf27634b8302a9d1",
+        "bytes": 427313,
+        "items": 3,
+        "verification": "Retrieved independently from saved Library item; original archive and every ciphertext SHA match; ZIP CRC passes",
+        "decryption": "UNVERIFIED_NO_KEYS",
+        "validated_market_rows": null
+      }
     },
     {
       "id": "F-RETAINED-RECEIPT-RESTORE",
@@ -6758,7 +6768,8 @@
     "verified_package_count": 4,
     "component_ownership_verified": "Open PR file collision review only; full owner passports pending",
     "latest_repair_pr": "https://github.com/reppiks490/icarus-csv-evidence-lab/pull/4",
-    "latest_hybrid_pr": "https://github.com/reppiks490/Icarus-engine/pull/124"
+    "latest_hybrid_pr": "https://github.com/reppiks490/Icarus-engine/pull/124",
+    "ciphertext_backup_scope": "Three original encrypted Git checkpoints independently restored; keys/plaintext and remaining artifacts unverified"
   },
   "executed_work_packages": [
     {
