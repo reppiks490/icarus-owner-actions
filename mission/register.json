@@ -6199,18 +6199,21 @@
       "execution_authorized": false
     },
     {
-      "id": "F-HYBRID-FILES",
-      "status": "TREE_COUNTS_ONLY",
+      "id": "F-HYBRID-RECONCILIATION",
+      "status": "EXACT_REQUEST_RESULT_IDENTITY_VERIFIED_AT_PINNED_HEAD",
       "head": "4960c5f679e416bf3c740fbeb4fb449e9651d257",
       "request_files": 306,
+      "unique_request_ids": 306,
       "result_files": 5,
-      "substantive_result_count": null,
-      "result_dispositions": {
-        "blocked_no_substantive_work": 4,
-        "narrative_NO_MATERIAL_DELTA_unverified": 1,
-        "requests_without_result_file": 301,
-        "exact_all_request_contents_validation": "NOT_YET_PERFORMED"
-      }
+      "matching_identity_results": 5,
+      "requests_without_result": 301,
+      "blocked_results": 4,
+      "narrative_results_unverified": 1,
+      "substantive_verified_count": 0,
+      "oldest_unmatched": "advanced_csv-20261004T191000Z",
+      "missing_original_due_slot": 5,
+      "immutable_history_unchanged": true,
+      "next_action": "Validate original alpha narrative sources; process oldest request only from authentic retained evidence, otherwise exact BLOCKED; do not trigger ChatGPT loops"
     },
     {
       "id": "F-EXPIRY",
@@ -6490,5 +6493,172 @@
       "all main branches"
     ],
     "remaining_mission": "PARTIAL; most of 202 requirements only registered/discovered, no full acquisition or end-to-end system claim"
+  },
+  "executed_work_packages": [
+    {
+      "work_package_id": "WP-ROUTER-JOURNAL-20261008",
+      "requirement_ids": [
+        26,
+        27,
+        54,
+        59,
+        201,
+        202
+      ],
+      "owner": "Codex takeover coordinator",
+      "scope": "causal_router.journal and persistence acceptance tests",
+      "priority": "P1",
+      "authority_class": "AUTONOMOUSLY_PERMITTED_ISOLATED_BRANCH_PR",
+      "starting_repository": "reppiks490/icarus-causal-router",
+      "starting_head_sha": "5c46a2f0879da4a2ca3ea30d9893ad06397728a8",
+      "active_conflicts": "Existing restoration4734bf preserved; own branch based on it, no main changes",
+      "inputs_and_provenance": [
+        "Original main source and failed run37644317860 job113057275188",
+        "Existing restoration4734bf10731adab0cc9ec94db930bce14e08a240"
+      ],
+      "objective": "Restore intended Session and reject silently repaired corrupted journal evidence",
+      "baseline": "38 tests37pass missingmodule; restoration42tests41pass broken policy fixture; additional8tests5pass3fail",
+      "acceptance_criteria": [
+        "Full suite passes",
+        "Crash rollback preserves logical state",
+        "Missing witness/schema/unrelated DB reject without mutation",
+        "Concurrent stale append rejects",
+        "Replay and research-only firewall pass",
+        "Remote source readback matches"
+      ],
+      "implementation_or_research_method": "Preserve restoration, minimal transaction/witness guard, independent real SQLite fault/negative tests",
+      "files_changed": [
+        "causal_router/journal.py",
+        "tests/test_journal.py",
+        "tests/test_journal_acceptance.py"
+      ],
+      "branch": "codex/journal-verification-20261008",
+      "commit_sha": "8d2549d96be0f1741b3e2068453557277df61de0",
+      "pull_request": "https://github.com/reppiks490/icarus-causal-router/pull/9",
+      "tests_and_actual_results": {
+        "local": "50/50 tests and compileall pass",
+        "ci_run": 37706533890,
+        "python": [
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13"
+        ],
+        "ci": "success incl packaging determinism/firewall assurance",
+        "diagnostic_replay": "SYNTHETIC_DIAGNOSTIC_ONLY 240steps489events, repeated hash4e7af5620b3c94c73ba856f1f04f008ab9d8dbbce071a5e794cd363c4fec5367"
+      },
+      "output_artifacts": [
+        "Git commit and CI logs"
+      ],
+      "hashes": {
+        "journal_git_blob": "c033e6f509b617693eefd6977804b31e6fbaa877",
+        "acceptance_tests_git_blob": "8317f53fb726eda7cbb716db0b871847ea75588d"
+      },
+      "storage_path": "Git PR9",
+      "readback_or_restore_proof": "All three final Git files byte-equal local outputs",
+      "consumers": [
+        "CLI exercised in suite/CI; live market/MCP/UI path unverified"
+      ],
+      "producer_consumer_contract_tests": "Local CLI+SQLite replay and CI installed package checks",
+      "ui_rendering_proof": "UNVERIFIED",
+      "measured_before_after_value": "Missing import and three fail-open corruption cases corrected; full focused50pass",
+      "negative_results": "Policy mismatch seed fixture did not change policy; fixed to vary max_pending explicitly",
+      "uncertainty": "Not malicious whole-history rewrite-proof; downstream integration unverified",
+      "risks": [
+        "Unmerged",
+        "Real production journals not restored"
+      ],
+      "rollback": "Reviewed revert PR changes; original main and restoration branch retained",
+      "completion_state": "VERIFIED_WITHIN_PR_TEST_SCOPE_NOT_INTEGRATED",
+      "blockers": [
+        "Owner review/merge and main/downstream revalidation"
+      ],
+      "required_owner_decisions": [
+        "Review merge through normal ownership"
+      ],
+      "exact_next_action": "Review PR9 then verify merged exact main CI and consumer contracts",
+      "execution_authorized": false
+    },
+    {
+      "work_package_id": "WP-ENGINE-CRYPTO-CI-20261008",
+      "requirement_ids": [
+        21,
+        26,
+        54,
+        59,
+        202
+      ],
+      "owner": "Codex takeover coordinator",
+      "scope": "Test-only optional dependencies and full-suite CI install",
+      "priority": "P1",
+      "authority_class": "AUTONOMOUSLY_PERMITTED_ISOLATED_BRANCH_PR",
+      "starting_repository": "reppiks490/Icarus-engine",
+      "starting_head_sha": "4960c5f679e416bf3c740fbeb4fb449e9651d257",
+      "active_conflicts": "No overlap DatabentoPR84 files",
+      "inputs_and_provenance": [
+        "Failed CI37694866418 and job113043997689",
+        "Existing test_encrypted_checkpoint_recovers_after_cache_eviction"
+      ],
+      "objective": "Make authenticated archive recovery regression execute with declared test dependency",
+      "baseline": "Python3.11/12/13 test jobs install onlypytest, crypto unavailable => NOT_RETAINED_ARCHIVE_UNAVAILABLE",
+      "acceptance_criteria": [
+        "Existing encrypted recovery assertion passes unchanged",
+        "Entire matrix/core/CLI/MCP jobs pass",
+        "Zero runtime dependencies retained"
+      ],
+      "implementation_or_research_method": "Declare cryptography>=44,<47 in dev extra; CI install -e '.[dev]'",
+      "files_changed": [
+        "pyproject.toml",
+        ".github/workflows/tests.yml"
+      ],
+      "branch": "codex/provider-recovery-test-dependencies-20261008",
+      "commit_sha": "8fbddc0a874fc47c6b0e2023c7c06ce2c23f5df6",
+      "pull_request": "https://github.com/reppiks490/Icarus-engine/pull/123",
+      "tests_and_actual_results": {
+        "ci_run": 37706697693,
+        "ci": "all six jobs success, Python3.11/12/13 full suite, zero-dependency core,CLI,MCP",
+        "local_full_suite": "NOT_EXECUTED; remote actual suite used"
+      },
+      "output_artifacts": [
+        "Git commit and CI logs"
+      ],
+      "hashes": {
+        "pyproject_git_blob": "b8296a5d765c1d73041a5a96f0ae759b6ac0b53a",
+        "workflow_git_blob": "3536d2b1ece49ac0989ff06b989b79bbf77aedcf"
+      },
+      "storage_path": "Git PR123",
+      "readback_or_restore_proof": "Both final Git files byte-equal submitted sources",
+      "consumers": [
+        "CI full matrix"
+      ],
+      "producer_consumer_contract_tests": "Existing authenticated cache-eviction test passes within complete actual remote suite",
+      "ui_rendering_proof": "NOT_APPLICABLE_TO_THIS_PACKAGE",
+      "measured_before_after_value": "Three failing full-suite jobs become passing while existing assertions retained",
+      "negative_results": "Runtime core itself not dependency cause",
+      "uncertainty": "No actual encrypted provider checkpoint restoration performed",
+      "risks": [
+        "Unmerged",
+        "Future optional dependency compatibility"
+      ],
+      "rollback": "Reviewed revert twofiles",
+      "completion_state": "VERIFIED_WITHIN_PR_CI_SCOPE_NOT_INTEGRATED",
+      "blockers": [
+        "Owner review/merge and main revalidation"
+      ],
+      "required_owner_decisions": [
+        "Normal PR review"
+      ],
+      "exact_next_action": "Review PR123 and verify exact merged mainCI",
+      "execution_authorized": false
+    }
+  ],
+  "mission_compiler": {
+    "pull_request": "https://github.com/reppiks490/icarus-owner-actions/pull/8",
+    "head": "e8f5ac110acfbba7adc20e549ec399f6a2cb539a",
+    "local_tests": 17,
+    "ci_run": 37707247819,
+    "ci_result": "success on Python3.11/12/13 at initialhead",
+    "verification_scope": "OFFLINE_RECORD_CONSISTENCY_ONLY",
+    "next_action": "Review PR8; refine component-level owners/acceptance and evidence truth verification; no global completion"
   }
 }
