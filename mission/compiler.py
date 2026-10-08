@@ -93,6 +93,7 @@ def validate_coverage(coverage):
 def validate(record):
     require(isinstance(record, dict), 'record object required')
     require(record.get('schema_version') == '1.0', 'unsupported schema')
+    timestamp(record.get('observed_at'))
     require(isinstance(record.get('invariants'), dict), 'invariants object required')
     for key in INVARIANTS:
         require(record.get('invariants', {}).get(key) is False, 'mandatory authority invariant: ' + key)
