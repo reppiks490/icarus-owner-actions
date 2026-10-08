@@ -91,7 +91,43 @@ class CompilerTests(unittest.TestCase):
             entitlement_identity='fixture-entitlement', manifest_sha256='d'*64)
         with self.assertRaises(ValueError): validate(self.record)
         row['data_coverage']['validated_partitions'] = ['a','b']
+        row['data_coverage']['durable_partitions'] = [self.partition('a'), self.partition('b')]
         validate(self.record)
+
+    def partition(self, identity):
+        return dict(partition_id=identity, storage_identity='fixture/'+identity,
+            sha256='e'*64, rows=12, bytes=120, integrity_verified=True,
+            verified_at='2026-10-08T00:00:00Z')
+
+    def complete_coverage(self):
+        row = self.verified()
+        row['data_coverage'] = dict(status='COMPLETE_WITHIN_VERIFIED_ENTITLEMENT',
+            eligible_partitions=['a','b'], validated_partitions=['a','b'],
+            eligible_scope_known=True, license_verified=True, acquisition_kind='PRODUCTION',
+            entitlement_identity='fixture-entitlement', manifest_sha256='d'*64,
+            durable_partitions=[self.partition('a'), self.partition('b')])
+        return row['data_coverage']
+
+    def test_validated_names_without_all_durable_bytes_cannot_be_complete(self):
+        coverage = self.complete_coverage()
+        coverage['durable_partitions'].pop()
+        with self.assertRaises(ValueError): validate(self.record)
+
+    def test_duplicate_or_unverified_storage_witness_cannot_prove_coverage(self):
+        for bad in ('duplicate', 'unverified', 'missing_hash', 'missing_storage'):
+            coverage = self.complete_coverage()
+            if bad == 'duplicate': coverage['durable_partitions'][1] = self.partition('a')
+            elif bad == 'unverified': coverage['durable_partitions'][1]['integrity_verified'] = False
+            elif bad == 'missing_hash': coverage['durable_partitions'][1]['sha256'] = None
+            else: coverage['durable_partitions'][1]['storage_identity'] = ''
+            with self.assertRaises(ValueError): validate(self.record)
+
+    def test_invalid_row_byte_count_or_naive_verification_clock_rejected(self):
+        for field, value in [('rows', True), ('rows', -1), ('bytes', -1), ('bytes', '120'),
+                             ('verified_at', '2026-10-08T00:00:00')]:
+            coverage = self.complete_coverage()
+            coverage['durable_partitions'][0][field] = value
+            with self.assertRaises(ValueError): validate(self.record)
 
     def test_loop_trading_and_spend_expansion_rejected(self):
         for key in self.record['invariants']:
