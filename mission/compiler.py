@@ -70,6 +70,24 @@ def validate_coverage(coverage):
             'explicit nonempty partition identities required')
         require(len(values) == len(set(values)), 'duplicate partitions')
     require(set(eligible) == set(validated), 'eligible and validated partitions differ')
+    durable = coverage.get('durable_partitions')
+    require(isinstance(durable, list) and durable, 'durable partition witnesses required')
+    stored = set()
+    for partition in durable:
+        require(isinstance(partition, dict), 'durable partition object required')
+        ident = partition.get('partition_id')
+        require(isinstance(ident, str) and ident and ident not in stored,
+            'invalid or duplicate durable partition identity')
+        stored.add(ident)
+        require(isinstance(partition.get('storage_identity'), str) and partition['storage_identity'],
+            'durable storage identity required')
+        require(sha(partition.get('sha256'), 64), 'durable byte hash required')
+        require(partition.get('integrity_verified') is True, 'durable integrity proof required')
+        for quantity in ('rows', 'bytes'):
+            require(type(partition.get(quantity)) is int and partition[quantity] >= 0,
+                'nonnegative integer ' + quantity + ' required')
+        timestamp(partition.get('verified_at'))
+    require(stored == set(eligible), 'durable and eligible partitions differ')
 
 
 def validate(record):
