@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-09T17:14:11.037070Z",
+  "scope": "Generic assurance.compare_series primitive: reject nonfinite numeric comparisons and invalid tolerances",
+  "status": "MERGED_VERIFIED_SCOPED",
+  "local_commit_sha": "88438d21d461b35c33b299d88731b972dcbbad48",
+  "local_parent_sha": "20fcd274b3aabe372a0d79e4531cd03a04d39ba4",
+  "reviewed_paths": [
+    {
+      "path": "icarus_engine/assurance.py",
+      "git_blob_sha": "219b948f404bd3a4a3746003b93f695a1b3bc62e"
+    },
+    {
+      "path": "tests_engine/test_assurance_finite.py",
+      "git_blob_sha": "d191061207b62d005a205421a7d93642a96834bd"
+    },
+    {
+      "path": "automation_intelligence/mcp_interface/events/20261009_codex_assurance_finite_input_repair.json",
+      "git_blob_sha": "4d37d60e05af2355f6349c844435cc77e4ca3ec3"
+    }
+  ],
+  "behavior": {
+    "before": [
+      "compare_series([NaN], [123]) reported equal=true and max_abs_error=0",
+      "Matching infinities produced a NaN difference and reported equal=true",
+      "NaN tolerance could mask finite mismatches"
+    ],
+    "after": [
+      "Any converted nonfinite numeric observation marks divergence and uses the existing infinite-error sentinel",
+      "Tolerance must be a finite nonnegative number; invalid tolerance raises ValueError before evaluating even empty inputs",
+      "Finite numeric comparisons, matching nonnumeric values, first divergence, and length divergence retain regression controls"
+    ],
+    "json_serialization_guarantee_added": false
+  },
+  "regression_verification": {
+    "new_cases": 42,
+    "baseline_red": {
+      "failed": 29,
+      "passed": 27
+    },
+    "focused_green": {
+      "passed": 56,
+      "failed": 0
+    },
+    "focused_invocation": "python -m pytest tests_engine/test_assurance_finite.py tests_engine/test_foundation_v2.py -q -o addopts=''",
+    "covered_inputs": [
+      "NaN",
+      "positive and negative infinity",
+      "matching nonfinite values",
+      "numeric text",
+      "Decimal nonfinite values",
+      "mixed numeric and nonnumeric sequences",
+      "nonfinite and negative tolerance",
+      "empty sequences",
+      "finite tolerance boundaries",
+      "unequal lengths"
+    ]
+  },
+  "independent_review": {
+    "reviewer": "root agent",
+    "outcome": "APPROVED",
+    "focused_tests_passed": 56,
+    "normal_project_settings_checked": true,
+    "diff_check_clean": true
+  },
+  "full_local_suite": {
+    "invocation": "python -m pytest tests tests_engine -q",
+    "exit_code": 1,
+    "passed": 1068,
+    "failed": 2,
+    "errors": 10,
+    "not_current_main_validation": true,
+    "classification": "All 12 nonpassing cases encounter PermissionError Errno 1 Operation not permitted while constructing the local HTTP server socket.",
+    "baseline_comparison": {
+      "unmodified_commit_sha": "20fcd274b3aabe372a0d79e4531cd03a04d39ba4",
+      "baseline_worktree_clean": true,
+      "exact_nonpassing_cases_retested": 12,
+      "failed": 2,
+      "errors": 10,
+      "same_socket_permission_exception_reproduced": true,
+      "test_nodes": [
+        "tests_engine/test_futures.py::test_server_auth_host_and_body_limits",
+        "tests_engine/test_futures.py::test_backtest_routes_end_to_end",
+        "tests_engine/test_backtest_validation.py::test_http_invalid_requests_never_reach_job_scheduler",
+        "tests_engine/test_backtest_validation.py::test_http_keeps_valid_costs_modes_windows_and_input_types",
+        "tests_engine/test_backtest_validation.py::test_http_optional_defaults_and_zero_costs_are_valid",
+        "tests_engine/test_backtest_validation.py::test_http_preset_path_validation_still_rejects_before_scheduling",
+        "tests_engine/test_execution_controls.py::test_all_admin_configuration_routes_reject_pending_before_side_effects",
+        "tests_engine/test_execution_controls.py::test_admin_all_assets_preflight_prevents_partial_writes",
+        "tests_engine/test_execution_controls.py::test_admin_pause_flatten_and_config_success_are_completed_on_return",
+        "tests_engine/test_research_service.py::test_http_auth_static_json_validation_and_no_provider_calls",
+        "tests_engine/test_research_service.py::test_http_adaptation_lifecycle_is_authenticated_and_opt_in",
+        "tests_engine/test_research_service.py::test_http_signed_ingestion_replay_and_unconfigured_receiver"
+      ]
+    },
+    "new_regression_failed": false,
+    "logs": [
+      "assurance-finite-local-tests.log",
+      "assurance-finite-baseline-failures.log"
+    ]
+  },
+  "remote_publication": {
+    "status": "MERGED_VERIFIED_SCOPED",
+    "repository": "reppiks490/Icarus-engine",
+    "created_commit_sha": "cf1d7b8abc3ca8b66c06b69a744990619f63d55b",
+    "created_branch": "codex/assurance-finite-series-20261009",
+    "tree_sha": "f866a63d47451bc5880ed540efd141104b0f6285",
+    "pull_request": 130,
+    "merge_sha": "e76d70b16b2e17af070fb450d441870ffc763810",
+    "exact_head_ci": {
+      "checks_passed": 8,
+      "run_ids": [
+        37963580201,
+        37963580146,
+        37963578066
+      ]
+    },
+    "initial_head_sha": "635399f25ac6ced70a9d51cd2928603934dd403b",
+    "initial_provenance_failure": "Critical assurance source changed without an MCP event in the same changeset. Repaired with a truthful CODEX_ENGINEERING event, then all applicable revised-head gates passed.",
+    "post_merge_validation": {
+      "status": "SUCCESS",
+      "merge_head_sha": "e76d70b16b2e17af070fb450d441870ffc763810",
+      "checks_passed": 10,
+      "run_ids": [
+        37964561167,
+        37964561107,
+        37964561090,
+        37964561074,
+        37964561073
+      ],
+      "checkout_scope": "Checks are associated with the merged head. Native liveness and peer export refresh main before checking/exporting, so this association does not pin every runtime checkout to the merge commit."
+    }
+  },
+  "scope_limits": {
+    "active_comparison_job_integration_proven": false,
+    "production_parity_proven": false,
+    "financial_edge_proven": false,
+    "whole_requirement_completion_proven": false,
+    "live_orders_or_holdout_tuning_performed": false,
+    "protected_PR84_or_PR128_files_changed": false,
+    "federated_ingestion_of_CODEX_ENGINEERING_event_proven": false
+  },
+  "original_observed_at_utc": "2026-10-09T04:20:38Z",
+  "published_head_sha": "cf1d7b8abc3ca8b66c06b69a744990619f63d55b",
+  "merge_sha": "e76d70b16b2e17af070fb450d441870ffc763810",
+  "pull_request": 130
+}

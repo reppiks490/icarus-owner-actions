@@ -1,0 +1,54 @@
+{
+  "updated_at": "2026-10-08T15:43:19.182419+00:00",
+  "scope": "P0 recovery of original encrypted provider checkpoints; no code changes",
+  "source_commit": "4960c5f679e416bf3c740fbeb4fb449e9651d257",
+  "local_recovery": {
+    "status": "verified",
+    "providers": [
+      "eodhd",
+      "fmp",
+      "fred",
+      "tiingo"
+    ],
+    "ciphertext_count": 4,
+    "ciphertext_bytes": 1632361,
+    "original_ciphertext_bytes_preserved": true,
+    "archive_bytes": 1634198,
+    "archive_sha256": "4e9cebc1fc2967559fde476241eb7ad68b8b62638254486d36b29b9062b85cbc",
+    "independent_extraction_verified": true,
+    "verification": "ZIP CRC, SHA256, Git object IDs, and restored byte equality to original source Git blobs"
+  },
+  "durable_private_archive": {
+    "four_checkpoint_bundle_status": "VERIFIED_PRIVATE_REMOTE_RESTORE",
+    "verified_at": "2026-10-08T15:43:19.182419+00:00",
+    "archive_bytes": 1634198,
+    "archive_sha256": "4e9cebc1fc2967559fde476241eb7ad68b8b62638254486d36b29b9062b85cbc",
+    "independent_remote_bytes_verified_by_this_worker": true,
+    "archive_byte_equal_to_uploaded_local_bundle": true,
+    "zip_crc_verified": true,
+    "original_git_blob_byte_equality_verified": true,
+    "owner_only_metadata_verified_by_parent": true,
+    "shared": false,
+    "tiingo_standalone_status": "VERIFIED_PRIVATE_REMOTE_RESTORE",
+    "verification": "Downloaded remote archive CRC, SHA256 and every ciphertext compared byte-for-byte with original Git blobs"
+  },
+  "workflow_artifacts": {
+    "inventory_count": 11,
+    "unexpired_at_inventory_count": 11,
+    "earliest_expiration": "2026-10-14T22:14:29Z",
+    "latest_expiration": "2026-10-14T22:18:56Z",
+    "downloaded_local_bytes_verified": false,
+    "durable_private_backup_verified": false,
+    "blocker": "GitHub connector returned file references, but attempted signed transfer to workspace returned HTTP 403. References alone are not verified preserved bytes."
+  },
+  "safety": {
+    "key_accessed": false,
+    "decrypted": false,
+    "raw_data_published": false,
+    "code_changed": false
+  },
+  "limitations": [
+    "Checkpoint encryption was preserved; checkpoint contents and collection coverage were not decrypted or assessed.",
+    "Workflow artifact private preservation remains unverified; checkpoint bundle recovery does not establish recovery of those separate artifacts."
+  ]
+}

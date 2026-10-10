@@ -1,0 +1,204 @@
+{
+  "report_version": 1,
+  "generated_at": "2026-10-09T17:19:21.797417+00:00",
+  "publication_class": "public_safe",
+  "scope": "Bounded free supporting connections and designs; no claim that all four plugins are deployed runtime integrations.",
+  "canonical": {
+    "repository": "reppiks490/icarus-owner-actions",
+    "branch": "main",
+    "register": "mission/register.json",
+    "url": "https://github.com/reppiks490/icarus-owner-actions/blob/main/mission/register.json",
+    "authority": "sole canonical requirements and mission status register; supporting tools cannot advance it"
+  },
+  "canonical_snapshot_supplied_at_delegation": {
+    "requirements": 202,
+    "DISCOVERED": 200,
+    "IMPLEMENTED_UNVERIFIED": 2,
+    "VERIFIED": 0,
+    "INTEGRATED": 0,
+    "warning": "Historical supplied snapshot; consult canonical register for current status."
+  },
+  "connections": {
+    "linear": {
+      "status": "project_and_unassigned_five_gate_issue_created_readback_verified",
+      "observations": [
+        {
+          "tool": "linear_list_projects",
+          "query": "ICARUS",
+          "result": "projects empty; hasNextPage false",
+          "source": "this agent readback before create attempt"
+        },
+        {
+          "tool": "linear_save_project",
+          "result": "aborted by user after 715.7 seconds; no confirmed response",
+          "source": "this agent attempted one create named ICARUS evidence follow-through"
+        },
+        {
+          "tool": "linear_list_projects",
+          "query": "ICARUS",
+          "result": "empty",
+          "observed_at": "2026-10-09T17:18:00Z",
+          "source": "root-reported later readback"
+        },
+        {
+          "tool": "linear_save_project",
+          "result": "Root create returned a project. Earlier interrupted attempt remains historical unknown.",
+          "created_at": "2026-10-09T17:32:48.233Z"
+        },
+        {
+          "tool": "linear_list_projects",
+          "query": "ICARUS",
+          "result": "Exactly one matching support project returned."
+        },
+        {
+          "tool": "linear_save_issue",
+          "result": "Created one unassigned issue with five open gates."
+        },
+        {
+          "tool": "linear_list_issues",
+          "result": "Exactly one project issue returned, Backlog state and no assignee.",
+          "observed_at": "2026-10-09T17:39:26.313431Z"
+        }
+      ],
+      "project_creation_attempts": 2,
+      "issues_creation_attempts": 1,
+      "assignees_added": false,
+      "direct_messages_sent": false,
+      "final_owner": "root",
+      "public_resource_ids_or_workspace_urls_retained": false,
+      "pending_queue": [
+        {
+          "title": "Preserve the 11 original GitHub Actions ZIP archives",
+          "state": "open_blocked",
+          "evidence": "11 original archives, 1,461,997 total API bytes; expiry October 14, 2026. File Service to workspace transport remains blocked.",
+          "acceptance": "Preserve original ZIP bytes, record SHA-256 hashes and provenance, and validate archive contents before treating recovered evidence as complete."
+        },
+        {
+          "title": "Resolve pinned hybrid evidence gaps",
+          "state": "open",
+          "evidence": "Historical October 8 baseline: 372 unique requests, 5 valid, 367 unresolved. Latest pinned source commit at October 9 17:12:27 UTC, observed at 17:14:18.642 UTC: 478 unique requests, 5 valid, 473 unresolved at 0f1089f9fd6e412e11fd8c69afef508099638869. Engine PR 129 merged at 2028b825fc04054e2fe13c153de1bc26e7726aa2 fixes health accounting only.",
+          "acceptance": "Reconcile original evidence against the pinned source; retain strict fail-closed behavior and advance canonical status only with valid evidence."
+        },
+        {
+          "title": "Monitor Brain freshness after the merged fixes",
+          "state": "open",
+          "evidence": "Engine PR 125 and Icarus PR 327 are merged.",
+          "acceptance": "Retain live, time-bounded freshness evidence and prove stale/error events cannot pass the gate; merged code alone does not prove durable freshness."
+        },
+        {
+          "title": "Validate isolated UW metadata intake before production adoption",
+          "state": "open",
+          "evidence": "Icarus PR 328 merged at 0d619104c1e36d2db4ef6408c1686c75b11a7fc3. 21 actual events: 15 observed, 6 errors; 17 endpoint families, 14 successful families; 0 candidates. Intake is private and isolated, not production-integrated.",
+          "acceptance": "Verify sanitized metadata lineage, freshness, error handling, and production boundary before any integration claim; retain zero candidates unless evidence proves eligibility."
+        },
+        {
+          "title": "Evaluate public forecasting models with sealed evidence",
+          "state": "research_only",
+          "evidence": "Public Hugging Face references for amazon/chronos-2 and google/timesfm-2.5-200m-pytorch were read successfully. Neither lookup proves financial edge or point-in-time suitability.",
+          "acceptance": "Freeze a point-in-time dataset and protocol, use chronological development partitions, compare simple baselines after costs, and evaluate a sealed holdout once without tuning on it. No evaluation job or inference was run."
+        }
+      ],
+      "confirmed_project_count": 1,
+      "confirmed_unassigned_issue_count": 1,
+      "support_gate_count": 5,
+      "mirror_layout": "One support project and one unassigned Backlog issue with five open evidence gates; GitHub remains canonical."
+    },
+    "supabase": {
+      "status": "read_connection_verified_configuration_blocked",
+      "observations": [
+        {
+          "tool": "supabase_list_projects",
+          "result": "projects empty",
+          "source": "this agent readback"
+        },
+        {
+          "tool": "supabase_list_organizations",
+          "result": "authentication tested successfully",
+          "source": "root-reported earlier observation"
+        },
+        {
+          "tool": "supabase_get_cost",
+          "result": "wrapper unavailable; zero-price verification not established",
+          "source": "root-reported earlier observation"
+        }
+      ],
+      "project_created": false,
+      "sql_executed": false,
+      "postgres_validation_performed": false,
+      "blueprint": "supabase-metadata-blueprint.sql",
+      "blueprint_state": "UNAPPLIED and unvalidated on PostgreSQL; ends ROLLBACK; no raw vendor payloads, runtime grants, or canonical status writes"
+    },
+    "hugging_face": {
+      "status": "public_repository_lookup_verified_research_only",
+      "tool": "hugging_face_hub_repo_details",
+      "repo_type": "model",
+      "include_readme_requested": true,
+      "readme_body_returned_by_this_lookup": false,
+      "repositories": [
+        {
+          "id": "amazon/chronos-2",
+          "url": "https://huggingface.co/amazon/chronos-2",
+          "license_from_metadata": "apache-2.0",
+          "task": "time-series-forecasting"
+        },
+        {
+          "id": "google/timesfm-2.5-200m-pytorch",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch",
+          "license_from_metadata": "apache-2.0",
+          "task": "time-series-forecasting"
+        }
+      ],
+      "known_tool_limit": {
+        "tool": "model_search",
+        "result": "wrapper unavailable; not retried",
+        "source": "root-reported earlier observation"
+      },
+      "jobs_started": 0,
+      "inference_run": false,
+      "deployment_created": false,
+      "financial_edge_proven": false,
+      "point_in_time_suitability_proven": false
+    },
+    "openai_developers": {
+      "status": "official_documentation_research_verified_unpublished_design",
+      "documentation": [
+        "https://openai.github.io/openai-agents-python/tracing/",
+        "https://openai.github.io/openai-agents-python/handoffs/",
+        "https://openai.github.io/openai-agents-python/guardrails/"
+      ],
+      "lookup_tool": "search_service_web_run",
+      "lookup_result": "all three official SDK pages returned HTML successfully",
+      "dedicated_developer_doc_wrapper": "absent from available tool metadata",
+      "blueprint": "support-architecture.md",
+      "runtime_instantiated": false,
+      "api_keys_created": false,
+      "hosted_sessions_started": false
+    }
+  },
+  "documentation_limits": [
+    {
+      "lookup": "https://supabase.com/changelog.md",
+      "result": "browser unsupported text/markdown; direct shell retrieval failed because configured proxy unreachable"
+    },
+    {
+      "lookup": "https://supabase.com/changelog",
+      "result": "HTML opened; complete relevant breaking-change review not performed"
+    }
+  ],
+  "free_scope_actions": {
+    "paid_resources_or_jobs_started": false,
+    "gpu_jobs_started": false,
+    "broker_or_live_orders_submitted": false,
+    "holdout_tuning_performed": false,
+    "direct_notifications_or_messages_sent": false,
+    "note": "No confirmed Linear resource exists from this agent; the aborted create outcome remains unknown."
+  },
+  "artifacts": [
+    "plugin-support-report.json",
+    "plugin-support-report.md",
+    "support-architecture.md",
+    "supabase-metadata-blueprint.sql"
+  ],
+  "claims_limit": "Connection and public documentation checks support research and a follow-through design. They do not prove database isolation, forecasting edge, production UW integration, recovered archive integrity, live Brain durability, or hybrid closure.",
+  "last_verified_at": "2026-10-09T17:39:26.313431Z"
+}

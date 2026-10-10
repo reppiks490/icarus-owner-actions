@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-10-09T17:07:44Z",
+  "scope": "Full-population hybrid backlog health and recovery provenance; preserves latest-24 display",
+  "local_commit_sha": "8acd69f732c81c27ae4a9150ee44d1677e502680",
+  "local_parent_sha": "20fcd274b3aabe372a0d79e4531cd03a04d39ba4",
+  "reviewed_paths": [
+    {
+      "path": "tools/hybrid_loop_bridge.py",
+      "git_blob_sha": "b66d46978d5fef6642cc332486b0ae01907b5afd",
+      "bytes": 17852
+    },
+    {
+      "path": "tests_engine/test_hybrid_full_population_health.py",
+      "git_blob_sha": "f573c5d575c3ba97dba732ef841ba7d04265848a",
+      "bytes": 11000
+    },
+    {
+      "path": "docs/research/hybrid-backlog-health.md",
+      "git_blob_sha": "77e8e3dc575fc2aa4d15a58df7d0623305a31d00",
+      "bytes": 2632
+    }
+  ],
+  "remote_publication": {
+    "status": "MERGED_VERIFIED_SCOPED",
+    "repository": "reppiks490/Icarus-engine",
+    "created_commit_sha": "7b6021f4a2bff45a8387c5dfaf92b3bb113ccc9c",
+    "tree_sha": "ae44450e81deee12ea9ff8efe9b7a5ed9e4e756f",
+    "created_branch": "codex/hybrid-complete-backlog-health-20261008",
+    "pull_request": 129,
+    "merge_sha": "2028b825fc04054e2fe13c153de1bc26e7726aa2",
+    "exact_head_ci": {
+      "checks_passed": 12,
+      "run_ids": [
+        37883428464,
+        37883453994
+      ]
+    }
+  },
+  "independent_review": {
+    "outcome": "APPROVED",
+    "focused_tests_passed": 19,
+    "subtests_passed": 17,
+    "original_tools_test_restored_byte_exact": true
+  },
+  "full_local_suite": {
+    "invocation": "python -m pytest",
+    "exit_code": 1,
+    "passed": 1033,
+    "subtests_passed": 17,
+    "failed": 2,
+    "errors": 10,
+    "duration_seconds": 33.96,
+    "limitation": "Default sandbox prohibits socket creation; all listed failures and errors arise from PermissionError Errno1 Operation not permitted",
+    "not_current_main_validation": true
+  },
+  "historical_reconciliation": {
+    "source_commit_sha": "b9e6013aa578c1638ed5fb023563776ff72d5888",
+    "unique_immutable_requests": 372,
+    "valid_results": 5,
+    "strict_unresolved": 367,
+    "missing_results": 366,
+    "latest_aliases_excluded": 4,
+    "new_pinned_reconciliation_generated": false,
+    "counts_are_historical": true
+  },
+  "execution_authorized": false,
+  "whole_requirement_completion_proven": false,
+  "status": "MERGED_VERIFIED_SCOPED",
+  "published_head_sha": "7b6021f4a2bff45a8387c5dfaf92b3bb113ccc9c",
+  "merge_sha": "2028b825fc04054e2fe13c153de1bc26e7726aa2",
+  "pull_request": 129,
+  "remote_tree_sha": "ae44450e81deee12ea9ff8efe9b7a5ed9e4e756f",
+  "ci_runs": [
+    {
+      "id": 37883428464,
+      "event": "push",
+      "conclusion": "success"
+    },
+    {
+      "id": 37883453994,
+      "event": "pull_request",
+      "conclusion": "success"
+    }
+  ],
+  "ci_job_count": 12,
+  "publication_attempt_history": {
+    "status": "PENDING_ROOT_PUBLICATION",
+    "last_read_main_sha": "4c23c46055562ff81faba8624ef77ba697be56c6",
+    "last_read_main_tree_sha": "45c8fddf842b24b976cb489c8007c1377249bb9e",
+    "original_bridge_blob_sha": "f4ecdfdd0c8448245b8b7dadb43a1ccec7b5462f",
+    "attempted_inline_tree_result": "NO_RETURNED_SHA_AFTER_TOOL_STALL_AND_ABORT",
+    "created_commit_sha": null,
+    "created_branch": null,
+    "pull_request": null,
+    "merge_sha": null
+  }
+}
