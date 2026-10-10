@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-10T01:22:55Z",
+  "status": "VERIFIED_UNCHANGED_ACTIONS_METADATA",
+  "scope": "The original 11 GitHub Actions ZIP artifacts; distinct from the Git ciphertext archive.",
+  "metadata_only": true,
+  "source_count": 11,
+  "original_count": 11,
+  "current_count": 11,
+  "unique_artifact_ids": true,
+  "original_artifact_id_set_matches": true,
+  "field_comparisons": {
+    "id": true,
+    "name": true,
+    "size_in_bytes": true,
+    "digest": true,
+    "expires_at": true,
+    "expired": true
+  },
+  "api_total_size_bytes": 1461997,
+  "unexpired_count": 11,
+  "earliest_expiration": "2026-10-14T22:14:29Z",
+  "latest_expiration": "2026-10-14T22:18:56Z",
+  "payload_bytes_preserved_by_this_metadata_refresh": 0,
+  "preservation_claim": "Metadata and reusable file references do not establish preservation of payload bytes.",
+  "artifacts": [
+    {
+      "label": "provider-fmp",
+      "api_size_bytes": 159447,
+      "expires_at": "2026-10-14T22:18:39Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-alpaca",
+      "api_size_bytes": 840,
+      "expires_at": "2026-10-14T22:14:29Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-intrinio",
+      "api_size_bytes": 847,
+      "expires_at": "2026-10-14T22:14:29Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-massive",
+      "api_size_bytes": 844,
+      "expires_at": "2026-10-14T22:14:33Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-eodhd",
+      "api_size_bytes": 4171,
+      "expires_at": "2026-10-14T22:18:41Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-bybit",
+      "api_size_bytes": 1026,
+      "expires_at": "2026-10-14T22:17:59Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-tiingo",
+      "api_size_bytes": 1087789,
+      "expires_at": "2026-10-14T22:18:49Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-twelve",
+      "api_size_bytes": 844,
+      "expires_at": "2026-10-14T22:14:32Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-fred",
+      "api_size_bytes": 204495,
+      "expires_at": "2026-10-14T22:18:56Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-tickstream",
+      "api_size_bytes": 853,
+      "expires_at": "2026-10-14T22:14:32Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    },
+    {
+      "label": "provider-quiver",
+      "api_size_bytes": 841,
+      "expires_at": "2026-10-14T22:14:31Z",
+      "expired": false,
+      "name_matches_prior": true,
+      "size_matches_prior": true,
+      "digest_matches_prior": true,
+      "expiry_matches_prior": true
+    }
+  ],
+  "privacy": {
+    "private_identifiers_included": false,
+    "signed_urls_included": false,
+    "raw_payloads_included": false
+  }
+}
