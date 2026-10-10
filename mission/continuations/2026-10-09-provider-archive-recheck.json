@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-provider-private-remote-recheck-v1",
+  "observed_at": "2026-10-09T04:13:07.153068+00:00",
+  "source_commit": "4960c5f679e416bf3c740fbeb4fb449e9651d257",
+  "archive_bytes": 1634198,
+  "archive_sha256": "4e9cebc1fc2967559fde476241eb7ad68b8b62638254486d36b29b9062b85cbc",
+  "fresh_remote_download": true,
+  "remote_metadata_owner_only": true,
+  "shared": false,
+  "zip_crc_verified": true,
+  "archive_digest_matches_original_uploaded_bundle": true,
+  "ciphertext_members": [
+    {
+      "provider": "eodhd",
+      "bytes": 21394,
+      "sha256": "a2b917a4504584ce19a1d0aa5edea998ebd47f53a68c8216a16a1160db46c0cf",
+      "git_blob_sha": "679a67bacbe5a5f861d8bf800461574eb11367b7",
+      "byte_equal_to_previously_authenticated_original_git_blob": true
+    },
+    {
+      "provider": "fmp",
+      "bytes": 363206,
+      "sha256": "3466961488c95aca879ca2e50f1ddd1310720a53ee003471651e255c2b4295ab",
+      "git_blob_sha": "88b52c900cc063ecec9ee46aaa4f59b60144375e",
+      "byte_equal_to_previously_authenticated_original_git_blob": true
+    },
+    {
+      "provider": "fred",
+      "bytes": 39990,
+      "sha256": "4fe747e1524e3a31f4c58a2d984fa996fa73e4ba2758ad4d5d378b85eb214c4f",
+      "git_blob_sha": "5d8692ea4949a16363c12431a7ec6ef762484a9f",
+      "byte_equal_to_previously_authenticated_original_git_blob": true
+    },
+    {
+      "provider": "tiingo",
+      "bytes": 1207771,
+      "sha256": "16966b79ca39bd5e945ea91a44d7bd05194115254f098bebac5efecdd118ba0c",
+      "git_blob_sha": "96b62d79c4ae827cd21c2683b6bc70c8564db53c",
+      "byte_equal_to_previously_authenticated_original_git_blob": true
+    }
+  ],
+  "decryption_performed": false,
+  "aes_gcm_authentication_tested": false,
+  "collection_coverage_verified": false,
+  "original_actions_zips_recovered": 0
+}

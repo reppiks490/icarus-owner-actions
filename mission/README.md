@@ -1,5 +1,7 @@
 # ICARUS mission register — first verified engineering tranche
 
+**Latest continuation:** [2026-10-09 checkpoint](continuations/2026-10-09.md). It records subsequent merges, recovered ciphertext and remaining blockers. The earlier tranche notes below are retained as historical evidence; their unmerged states and recovery limitations are not the latest status.
+
 This offline index preserves all 202 baseline requirements. It does not certify the entire ecosystem, data coverage, profitable research or source-to-UI integration. Domain records remain authoritative; this register indexes them and their evidence.
 
 ## Run

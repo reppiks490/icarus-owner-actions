@@ -1,0 +1,153 @@
+{
+  "schema_version": "icarus-continuation-brain-live-check-v1",
+  "pull_request": 327,
+  "head_sha": "21952d27116d00c6bc53d61c3656a49e782b27c3",
+  "merge_sha": "fb9ef2b4bd84d32e1b3e288bdc9e3bf13a65d762",
+  "runs": [
+    {
+      "id": 37823534175,
+      "attempt": 2,
+      "job_id": 113570428369,
+      "conclusion": "success",
+      "receipt": {
+        "canonical_acceptance_authority": "RESEARCH",
+        "canonical_acceptance_required_for_export": false,
+        "canonical_acceptance_schema": "icarus-engine-federation-acceptance-v1",
+        "event_records": "RESEARCH_OBSERVABILITY_ONLY",
+        "execution_authorized": false,
+        "federation_schema": "icarus-engine-brain-federation-v1",
+        "icarus_commit": "1d6ebb9d2e16794cbce8c1c7ea2d9edfc564f592",
+        "icarus_engine_commit": "163d867d287c0a5c5de7927b51b704c71de60177",
+        "ingested_total": 99,
+        "legacy_exception_count": 4,
+        "peer_durability_only_lane_count": 4,
+        "peer_event_file_count": 127,
+        "peer_lane_contract_binding_verified_count": 5,
+        "peer_lane_count": 5,
+        "peer_lane_source_witnesses_required": true,
+        "peer_lane_witness_unavailable_count": 0,
+        "peer_lane_witness_verified_count": 4,
+        "peer_packet_age_seconds": 55.727,
+        "peer_packet_blob_sha": "b00d7d5eb984a32d4b94c7282d7ecaefa8939038",
+        "peer_packet_fresh": true,
+        "peer_packet_id": "2c120931f371c5096aeaf92c875a2f12ae559b7c4a23d40f41255b5617e05036",
+        "peer_packet_max_age_seconds": 1800,
+        "peer_packet_max_future_skew_seconds": 300,
+        "peer_packet_status": "green",
+        "peer_roundtrip_accepted_packet_id": "e486841516443efcf69bb334fc888d4bd21a359f010d8c4373d59fc61a3c25a2",
+        "peer_roundtrip_accepted_source_commit": "e5059c0e15fe75955654fc742a44c52e8f0bb5f1",
+        "peer_roundtrip_ack_status": "VERIFIED_PRIOR_PACKET",
+        "peer_source_commit": "58439809feb977871a91dc58ccff5b68d6ab7397",
+        "peer_source_commit_ancestor_of_engine_head": true,
+        "peer_source_commit_relation": "AHEAD",
+        "peer_source_commit_verified": true,
+        "peer_source_contract_blob_witnesses_required": true,
+        "peer_source_contract_witness_count": 3,
+        "peer_source_contract_witness_status": "green",
+        "peer_substantive_lane_count": 0,
+        "production_decision_authorized": false,
+        "rejected_total": 0,
+        "schema_version": "icarus-live-bilateral-federation-receipt-v1",
+        "strict_event_contract": true
+      }
+    },
+    {
+      "id": 37823534300,
+      "attempt": 2,
+      "job_id": 113570429322,
+      "conclusion": "success",
+      "receipt": {
+        "execution_authorized": false,
+        "historical_candidate_evidence_count": 0,
+        "historical_context_ingested_total": 4,
+        "historical_context_source_count": 4,
+        "historical_context_status": "green",
+        "historical_packet_live_advanced_count": 0,
+        "historical_packet_projection_verified_count": 4,
+        "historical_packet_same_as_live_count": 4,
+        "historical_packet_witness_count": 4,
+        "historical_packet_witness_status": "green",
+        "historical_packet_witnesses": [
+          {
+            "artifact_id": "dc953272d203a1c175ebba6d3245390a51ba0673753961c0a356058f9eb03f8b",
+            "current_main_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee",
+            "current_main_relation": "SAME_AS_PACKET_SOURCE",
+            "id": "alpha_synthesis",
+            "projection_verified": true,
+            "source_artifact_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee",
+            "source_artifact_blob_verified": true
+          },
+          {
+            "artifact_id": "3ca36c424cd02c159577f70af2f4d2c6b3ab515724c550597ed02229f6bdc270",
+            "current_main_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c",
+            "current_main_relation": "SAME_AS_PACKET_SOURCE",
+            "id": "apex_council",
+            "projection_verified": true,
+            "source_artifact_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c",
+            "source_artifact_blob_verified": true
+          },
+          {
+            "artifact_id": "1ae5bd0c3bb6bf7c5a91077f58a2cf920068ec4c6369b6512b5d31e73aa47e94",
+            "current_main_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8",
+            "current_main_relation": "SAME_AS_PACKET_SOURCE",
+            "id": "flow_microstructure",
+            "projection_verified": true,
+            "source_artifact_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8",
+            "source_artifact_blob_verified": true
+          },
+          {
+            "artifact_id": "78a8f4e40b06d184d388456bc304416caa6601b7704f6058cd81320f021b10d0",
+            "current_main_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7",
+            "current_main_relation": "SAME_AS_PACKET_SOURCE",
+            "id": "robustness_guardian",
+            "projection_verified": true,
+            "source_artifact_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7",
+            "source_artifact_blob_verified": true
+          }
+        ],
+        "historical_sources": [
+          {
+            "candidate_evidence_eligible": false,
+            "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+            "id": "alpha_synthesis",
+            "remote_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee"
+          },
+          {
+            "candidate_evidence_eligible": false,
+            "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+            "id": "apex_council",
+            "remote_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c"
+          },
+          {
+            "candidate_evidence_eligible": false,
+            "evidence_status": "HISTORICAL_COLLECTION_EVIDENCE",
+            "id": "flow_microstructure",
+            "remote_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8"
+          },
+          {
+            "candidate_evidence_eligible": false,
+            "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+            "id": "robustness_guardian",
+            "remote_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7"
+          }
+        ],
+        "icarus_commit": "1d6ebb9d2e16794cbce8c1c7ea2d9edfc564f592",
+        "icarus_engine_commit": "163d867d287c0a5c5de7927b51b704c71de60177",
+        "peer_lane_contract_binding_verified_count": 5,
+        "peer_lane_witness_unavailable_count": 0,
+        "peer_lane_witness_verified_count": 4,
+        "peer_packet_fresh": true,
+        "peer_packet_relation": "AHEAD",
+        "peer_packet_source_commit": "58439809feb977871a91dc58ccff5b68d6ab7397",
+        "peer_roundtrip_accepted_packet_id": "e486841516443efcf69bb334fc888d4bd21a359f010d8c4373d59fc61a3c25a2",
+        "peer_roundtrip_accepted_source_commit": "e5059c0e15fe75955654fc742a44c52e8f0bb5f1",
+        "peer_roundtrip_ack_status": "VERIFIED_PRIOR_PACKET",
+        "peer_source_contract_witness_count": 3,
+        "peer_source_contract_witness_status": "green",
+        "production_decision_authorized": false,
+        "schema_version": "icarus-live-historical-context-receipt-v1"
+      }
+    }
+  ],
+  "scope": "Live CI receipt from PR checkout; isolated verification, no trading or production authority"
+}

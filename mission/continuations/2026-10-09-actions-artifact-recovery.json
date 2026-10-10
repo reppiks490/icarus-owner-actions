@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-09T04:08:54Z",
+  "scope": "Original GitHub Actions artifact ZIP preservation; separate from verified encrypted Git checkpoint bundle",
+  "status": "BLOCKED_FILE_REFERENCE_MATERIALIZATION",
+  "source": {
+    "repository": "reppiks490/Icarus-engine",
+    "workflow_run_id": 37694866296,
+    "workflow_head_sha": "da8b0ebd10d501dcb097dee911c75b9ddc290ebf"
+  },
+  "inventory": {
+    "count": 11,
+    "api_total_size_bytes": 1461997,
+    "unexpired_count": 11,
+    "earliest_expiration": "2026-10-14T22:14:29Z",
+    "latest_expiration": "2026-10-14T22:18:56Z",
+    "artifacts": [
+      {
+        "artifact_id": 11515346321,
+        "name": "provider-fmp-37694866296-1",
+        "api_size_bytes": 159447,
+        "api_sha256": "sha256:0e115752a35651d99e8ae29d1cfc503184ff1c4b31ba01d17c5e6bfb070407bb",
+        "expires_at": "2026-10-14T22:18:39Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11515281035,
+        "name": "provider-alpaca-37694866296-1",
+        "api_size_bytes": 840,
+        "api_sha256": "sha256:665e40681a9463dd13764e5347f99a7648ddefdc228010cdc1a1870ce66a35c6",
+        "expires_at": "2026-10-14T22:14:29Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514841644,
+        "name": "provider-intrinio-37694866296-1",
+        "api_size_bytes": 847,
+        "api_sha256": "sha256:a1b73ff567a58e5e3f76d30a3de3f8a21a6b83a79b2a2e9245268b7b7a16e8b5",
+        "expires_at": "2026-10-14T22:14:29Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514836873,
+        "name": "provider-massive-37694866296-1",
+        "api_size_bytes": 844,
+        "api_sha256": "sha256:ea578c368ed1daf8b27fa9905f411f06c738e16612aa1f858008ceaae7fc2e7d",
+        "expires_at": "2026-10-14T22:14:33Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514772788,
+        "name": "provider-eodhd-37694866296-1",
+        "api_size_bytes": 4171,
+        "api_sha256": "sha256:0aca2a5d797283068893f7434838d1cbe80030c4cd50c3640ba0ea749ea59a97",
+        "expires_at": "2026-10-14T22:18:41Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514772683,
+        "name": "provider-bybit-37694866296-1",
+        "api_size_bytes": 1026,
+        "api_sha256": "sha256:d512de0b718c165a0659cfe00694f219e364921572fc234edad78343f195310c",
+        "expires_at": "2026-10-14T22:17:59Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514594282,
+        "name": "provider-tiingo-37694866296-1",
+        "api_size_bytes": 1087789,
+        "api_sha256": "sha256:41d59f58745577f497d30499ef9636ff5a15422ac9f260c0cacf55c37e6a0e22",
+        "expires_at": "2026-10-14T22:18:49Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514583459,
+        "name": "provider-twelve-37694866296-1",
+        "api_size_bytes": 844,
+        "api_sha256": "sha256:b308671af56c5edafe66a94957c12bb9aeb440b411effddacfd41fe2a2c9a284",
+        "expires_at": "2026-10-14T22:14:32Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514529547,
+        "name": "provider-fred-37694866296-1",
+        "api_size_bytes": 204495,
+        "api_sha256": "sha256:600078d64e314ef63bf29fef5165b46d28adff416209cf04e093576a321a2ccb",
+        "expires_at": "2026-10-14T22:18:56Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514339530,
+        "name": "provider-tickstream-37694866296-1",
+        "api_size_bytes": 853,
+        "api_sha256": "sha256:dc2aaa65a69b7192eb9a12c24b58d7ecfd5a625c52809bffafeb8f8b864bf78f",
+        "expires_at": "2026-10-14T22:14:32Z",
+        "expired": false
+      },
+      {
+        "artifact_id": 11514274639,
+        "name": "provider-quiver-37694866296-1",
+        "api_size_bytes": 841,
+        "api_sha256": "sha256:2edf652acc51e6072ab306491e8533e71a992e80dba4d1b550d24e532ddc2fc0",
+        "expires_at": "2026-10-14T22:14:31Z",
+        "expired": false
+      }
+    ]
+  },
+  "current_attempt": {
+    "github_inventory_refresh": "SUCCESS",
+    "github_artifact_download": "SUCCESS_REFERENCE_ONLY",
+    "sampled_artifact_id": 11515346321,
+    "returned_reference_fields": [
+      "download_url",
+      "file_id",
+      "mime_type",
+      "file_name"
+    ],
+    "returned_reference_backend": "File Service",
+    "workspace_path_returned": false,
+    "inline_bytes_returned": false,
+    "reusable_string_file_uri_returned": false,
+    "supported_materialization_tool_found": false,
+    "drive_upload_attempted": false,
+    "download_file_attempted": false,
+    "shell_network_transfer_repeated": false
+  },
+  "blocker": {
+    "reason": "The successful GitHub download returns a File Service object without local bytes. The available download_file tool supports Sediment only. The Drive upload tool declares file_uri as a string absolute local path while its prose also refers to a structured object; the returned object has no compatible documented string file URI or workspace path.",
+    "previous_attempt_observation": "Earlier signed-URL transfers returned HTTP 403; this observation is retained from the prior recovery record and was not reproduced in this bounded attempt.",
+    "no_known_failure_loop": true
+  },
+  "verification": {
+    "original_zip_bytes_materialized_count": 0,
+    "computed_zip_sha256_count": 0,
+    "zip_crc_verified_count": 0,
+    "private_durable_remote_zip_backups_verified_count": 0,
+    "api_digests_are_metadata_only": true,
+    "source_checkpoint_archive_proves_original_zip_preservation": false
+  },
+  "remaining_action": {
+    "prerequisite": "Provide a supported File Service-to-workspace materialization or connector-to-connector binary transfer for the actual returned reference; alternatively use an authenticated artifact download in an execution environment with supported network access.",
+    "before": "2026-10-14T22:14:29Z",
+    "steps": [
+      "Materialize all 11 original artifact ZIPs from workflow run 37694866296.",
+      "Compute each ZIP SHA256 and compare to the API digest, verify its expected byte count, and validate ZIP CRC.",
+      "Upload each verified ZIP, or one lossless archive containing all 11 ZIPs plus their manifest, to the user's private Drive without sharing.",
+      "Verify owner-only metadata, download the private archive back, and independently compare all original ZIP bytes and hashes.",
+      "Update preservation status only after these byte-level checks pass."
+    ],
+    "manual_user_action_requested": false
+  },
+  "privacy": {
+    "vendor_payloads_or_zip_bytes_published": false,
+    "file_service_ids_published": false,
+    "drive_ids_published": false,
+    "signed_urls_published": false,
+    "private_runtime_paths_published": false,
+    "keys_accessed": false,
+    "decrypted": false,
+    "new_paid_resources_created": false
+  }
+}

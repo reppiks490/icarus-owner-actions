@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-bounded-package-outcome-v1",
+  "observed_at": "2026-10-09T17:07:44Z",
+  "repository": "reppiks490/Icarus",
+  "pull_request": 328,
+  "status": "MERGED_VERIFIED_SCOPED",
+  "published_head_sha": "f0603fa9f87a3dda07b16478e7de51b651e6af3b",
+  "merge_sha": "0d619104c1e36d2db4ef6408c1686c75b11a7fc3",
+  "base_sha": "85c316ddc9eac96eef66556db48d2311e093b066",
+  "tree_sha": "597e59b8977bf12b050574ce215990fcf9fa2c6d",
+  "ci_runs": [
+    {
+      "id": 37883226034,
+      "event": "push",
+      "conclusion": "success"
+    },
+    {
+      "id": 37883244877,
+      "event": "pull_request",
+      "conclusion": "success"
+    }
+  ],
+  "ci_job_count": 4,
+  "focused_tests_passed": 61,
+  "independent_review": "APPROVED",
+  "changed_paths": [
+    "icarus_engine/unusual_whales_intake.py",
+    "tests_engine/test_unusual_whales_intake.py",
+    "docs/research/unusual-whales-intake.md",
+    "docs/research/unusual-whales-capability-map.json"
+  ],
+  "actual_readback": {
+    "brain_events": 21,
+    "observed": 15,
+    "errors": 6,
+    "research_families_probed": 17,
+    "observed_success_families": 14,
+    "candidates": 0,
+    "isolated_private_runtime": true
+  },
+  "complete_provider_coverage_verified": false,
+  "production_deployment_verified": false,
+  "raw_vendor_payload_retained": false,
+  "execution_authorized": false
+}

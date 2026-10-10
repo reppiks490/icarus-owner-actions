@@ -1,0 +1,559 @@
+{
+  "authority": "Bounded implementation outcomes; mission/register.json and domain evidence remain authoritative.",
+  "bounded_artifact_records": {
+    "assurance_finite_merged_package": {
+      "path": "2026-10-09-assurance-package.json",
+      "scope": "Bounded reviewed source, actual CI and merge outcome; no whole-requirement credit.",
+      "sha256": "61e88fdf9b617cd42e1361464eedc2ff6606c4e3aa173199611dfa4a43fee035"
+    },
+    "brain_live_acceptance": {
+      "path": "2026-10-08-brain-live-acceptance.json",
+      "scope": "Successful attempt-two live gates associated with reviewed PR head, using the separately recorded GitHub synthetic merge checkout.",
+      "sha256": "d53c03e338900d1b28f8de38fdce612f190abdd3bbd1ae8ecc22d481e5364088"
+    },
+    "current_hybrid_portable_reproduction": {
+      "artifact_packaged_at": "2026-10-10T01:13:27.215702+00:00",
+      "bytes": 241801,
+      "compression": "tar+gzip",
+      "member_byte_equality_verified": true,
+      "members": 505,
+      "path": "2026-10-09-hybrid-reproduction.tar.gz",
+      "scope": "Portable audit of already-public pinned Git request/result data. Distinct from original provider Actions artifact ZIPs; no provider recovery credit.",
+      "sha256": "a7956f06df1550b35017d733a981ea33f79e640fac2c7a7a4f6956c673c26131"
+    },
+    "current_pinned_hybrid_reconciliation": {
+      "path": "2026-10-09-hybrid-reconciliation.json",
+      "scope": "Full 478-request source-pinned audit, registry identities, 488 entry hashes and current shipped/strict validation; no historical completion credit.",
+      "sha256": "4b4a4055052ac27415b5abf8f5ef1fd2fd0d4f59cddc130055c13e15397283ac"
+    },
+    "hybrid_health_merged_package": {
+      "path": "2026-10-09-hybrid-health-package.json",
+      "scope": "Bounded reviewed source, actual CI and merge outcome; no whole-requirement credit.",
+      "sha256": "9ec53e4c500ba406825667237459d5088da474d34d5db3c795fe9124c3743c9c"
+    },
+    "original_actions_artifact_preservation": {
+      "path": "2026-10-09-actions-artifact-recovery.json",
+      "scope": "Refreshed API metadata for 11 unexpired artifact ZIPs; zero actual ZIPs materialized, hashed, CRC-verified or privately restored. API digests and byte counts are metadata only.",
+      "sha256": "f8c03fbd919c4d74c769c0b52e22e7c40a55eef2374bfeb7a9f14d548fd72304"
+    },
+    "pinned_hybrid_reconciliation": "2026-10-08-hybrid-reconciliation.json",
+    "provider_archive_fresh_remote_recheck": {
+      "path": "2026-10-09-provider-archive-recheck.json",
+      "scope": "Fresh private remote archive download on October 9: owner-only/shared-false metadata, archive SHA-256 and CRC, exact member inventory and four ciphertext byte equalities against previously authenticated original Git blobs. No decryption, AES-GCM authentication or collection coverage.",
+      "sha256": "d1f12000dab993e873811de5a9c21bb5e0aa02f2d34b69fae6e22e30392b28c0"
+    },
+    "provider_ciphertext_recovery": "2026-10-08-provider-recovery.json",
+    "supporting_plugins": {
+      "path": "plugins/plugin-support-report.json",
+      "scope": "One actual Linear support project and one unassigned five-gate issue; read-only Hugging Face/docs evidence and unapplied Supabase/agent designs.",
+      "sha256": "10a81e8d8b4b22f6832e165143d99408b18f7c4b636097b2324949e6d829f6ac"
+    },
+    "unusual_whales_isolated_baseline_readback": {
+      "path": "2026-10-08-unusual-whales-baseline-12-readback.json",
+      "scope": "Twelve connector metadata observations delivered once to an isolated private Brain runtime; production deployment remains unverified.",
+      "sha256": "86e9aac03205b957dbce75cfbe05232f3ce2758c3e8d66ce3eb7d9c67136a329"
+    },
+    "unusual_whales_isolated_expanded_readback": {
+      "path": "2026-10-08-unusual-whales-expanded-21-readback.json",
+      "scope": "21 connector metadata observations: 15 OBSERVED, 6 ERROR, 17 probed research-data families, 14 observed families and zero candidate records. Isolated private Brain runtime; no production deployment or provider coverage certification.",
+      "sha256": "c7e0dadc2e2bee3e1d3dded48190e9e70f44a1d388f09e647bc049786a9d35fa"
+    },
+    "unusual_whales_merged_package": {
+      "path": "2026-10-09-unusual-whales-package.json",
+      "scope": "Bounded reviewed source, actual CI and merge outcome; no whole-requirement credit.",
+      "sha256": "c14fe1515babe70ce3935fa7dea7242757ae974693c0ae642b8f58811a63792e"
+    }
+  },
+  "checkpoint_date": "2026-10-09",
+  "ci_attribution_scope": "CI run IDs pin workflow association with the reviewed PR head. Pull-request workflows may check out a distinct GitHub synthetic merge commit. Brain live receipts record both identities; push workflow and local branch validation are reported separately where available. Head association alone does not prove an identical tested checkout. Some post-merge workflows refresh main; their triggering head is not proof of the runtime checkout. Those checks retain run-association scope.",
+  "limitations": [
+    "No package outcome promotes a whole mission requirement.",
+    "Earlier source snapshots and failure evidence remain preserved.",
+    "This ledger grants no new execution, schedule, paid service, broker or protected-holdout authority. Producer completion trigger repair does not change the existing schedule."
+  ],
+  "merged_packages": [
+    {
+      "exact_reviewed_head_sha": "8fbddc0a874fc47c6b0e2023c7c06ce2c23f5df6",
+      "exact_source_ci_run_ids": [
+        37706697693
+      ],
+      "implemented_scope": "Install the development cryptography dependency in the test workflow while preserving the zero-dependency core.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 1038,
+        "reproduction_command_from_repository_root": "python -m pytest -q tests_engine"
+      },
+      "merge_commit_sha": "94b43c387dec158594076e1638b93f9e1e295eed",
+      "pull_request": 123,
+      "remaining_limits": [
+        "No broker, strategy or collection deployment is established by this dependency repair.",
+        "Socket tests required a network-capable test environment; the successful rerun resolved the local sandbox restriction."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "8d2549d96be0f1741b3e2068453557277df61de0",
+      "exact_source_ci_run_ids": [
+        37706533890
+      ],
+      "implemented_scope": "Reject missing journal witness/schema evidence, commit durable transactions before state promotion, and preserve deterministic research replay.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 50,
+        "reproduction_command_from_repository_root": "python -m pytest -q tests"
+      },
+      "merge_commit_sha": "d2defe732d2a559d7fd3c4e90e56f192582ceb0d",
+      "passed_pytest_subtests": 42,
+      "pull_request": 9,
+      "remaining_limits": [
+        "Real downstream service integration remains unverified.",
+        "The prior restoration branch and its evidence remain preserved."
+      ],
+      "repository": "reppiks490/icarus-causal-router",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "bf0fc7c4fe6d75351ae18b863660d7362497402a",
+      "exact_source_ci_run_ids": [
+        37708511811
+      ],
+      "implemented_scope": "Audit recursive mixed-case CSV files deterministically and skip CSV-named directories.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 17,
+        "reproduction_command_from_repository_root": "python -m unittest discover -s tests -v"
+      },
+      "merge_commit_sha": "94ab380acd552e6d1cbd8fbbe0446b62ef150b03",
+      "pull_request": 4,
+      "remaining_limits": [
+        "The original full corpus remains unavailable for complete authentic-byte validation.",
+        "Fixture audit success is not source-data or coverage certification."
+      ],
+      "repository": "reppiks490/icarus-csv-evidence-lab",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "earlier_baseline_ci_head_sha": "0b0479838c5f88cb6261c2884ae98d2cb615681e",
+      "earlier_baseline_ci_run_id": 37708187165,
+      "exact_reviewed_head_sha": "eed872563ee13983ad75adff3fcc4499d69a6fea",
+      "exact_source_ci_checks_passed": 3,
+      "exact_source_ci_run_ids": [
+        37708808170
+      ],
+      "implemented_scope": "Register all 202 baseline identities and enforce offline mission evidence consistency, partition storage integrity and integration record gates.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 20,
+        "reproduction_command_from_repository_root": "python -m unittest discover -s tests -p 'test_mission_compiler.py' -v"
+      },
+      "merge_commit_sha": "51d652db22437b1f0a517b52ad260b82a25303c5",
+      "pull_request": 8,
+      "remaining_limits": [
+        "Record consistency does not prove external evidence truth.",
+        "Most baseline requirements remain DISCOVERED; no full-system certification."
+      ],
+      "repository": "reppiks490/icarus-owner-actions",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "261acf4d5c6d82baa38238b78d26a2e291a71bb9",
+      "exact_source_ci_run_ids": [
+        37717317129
+      ],
+      "implemented_scope": "Preserve a truthful BLOCKED recovery audit/result for advanced_csv-20261004T191000Z, bound to original request and four source CSV blob witnesses.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 1050,
+        "reproduction_command_from_repository_root": "python -m pytest -q tests_engine tools/test_hybrid_loop_bridge.py"
+      },
+      "merge_commit_sha": "934a3709eb0827269231cd2a45224bc2b330084e",
+      "pull_request": 124,
+      "remaining_limits": [
+        "BLOCKED disposition does not complete missed worker cognition, corpus acquisition or collection.",
+        "The integrated local suite includes the existing Engine tests and hybrid bridge contract tests."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "request_blob_sha": "bead94943314c86e2d9b0d97740af734889acfb7",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "241d99ca3369ac48ea17a311f3122c36acfbe37d",
+      "exact_source_ci_run_ids": [
+        37733170197
+      ],
+      "implemented_scope": "Reject missing, invalid and timezone-naive mission observation timestamps.",
+      "local_source_same_tree_as_merge": "e326e4852f42f7a0ac32471058cbdad12242988b",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 23,
+        "reproduction_command_from_repository_root": "python -m unittest discover -s tests -p 'test_mission_compiler.py' -v"
+      },
+      "merge_commit_sha": "bface9f52513c1e5a1081b87ca60bde133cc5de8",
+      "pull_request": 9,
+      "remaining_limits": [
+        "A valid observation timestamp does not establish that external evidence is fresh."
+      ],
+      "repository": "reppiks490/icarus-owner-actions",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "c4522b6a081ad1194bdcc84e7cd221ecd8d6ce5d",
+      "exact_source_ci_run_ids": [
+        37733372799
+      ],
+      "implemented_scope": "Use exact Evolution positive status values and prioritize error/failure/block/rejection markers.",
+      "local_validation": {
+        "command_role": "reproduction; original validation totals are retained separately",
+        "passed_tests": 68,
+        "reproduction_command_from_repository_root": "python -m pytest -q tests_engine/test_evolution_ui_status.py tests_engine/test_evolution_sync.py tests_engine/test_apex_evolution.py"
+      },
+      "merge_commit_sha": "bd6288d18c5f23ba4741028055fdf4ac03736a05",
+      "pull_request": 326,
+      "remaining_limits": [
+        "The shipped JavaScript was exercised through a Node VM and DOM/HTML parsing.",
+        "A live deployed browser or whole source-to-UI acceptance is not established."
+      ],
+      "repository": "reppiks490/Icarus",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "74182cc4bb8413ef72a39382691b70056271b995",
+      "exact_source_ci_checks_passed": 12,
+      "exact_source_ci_run_ids": [
+        37852730860,
+        37852748374
+      ],
+      "implemented_scope": "Export peer intelligence after successful scheduled main-branch completion of provider-exhaustive-collection and native-five-research; preserve the existing schedule, freshness bounds, revision/source contracts and authority flags.",
+      "local_validation": {
+        "baseline_other_checks_passed": 13,
+        "baseline_regressions_failed": 2,
+        "independent_review": "APPROVED",
+        "passed_tests": 40,
+        "reproduction_command_from_repository_root": "python -m pytest tests_engine/test_peer_export_workflow.py tests_engine/test_interrepo_bridge.py -q -o addopts=''"
+      },
+      "merge_commit_sha": "e7e73e744b58750260e2085dedebfda6a16f6d45",
+      "post_merge_automatic_export": {
+        "execution_authorized": false,
+        "freshness_at_readback_seconds_rounded": 13,
+        "maximum_age_seconds": 1800,
+        "observed_at": "2026-10-08T22:21:17Z",
+        "packet_id": "2c120931f371c5096aeaf92c875a2f12ae559b7c4a23d40f41255b5617e05036",
+        "production_authorized": false,
+        "run_id": 37852904200,
+        "source_ancestor_of_main_verified": true,
+        "source_commit": "58439809feb977871a91dc58ccff5b68d6ab7397",
+        "successful_export_job_id": 113570081171
+      },
+      "pull_request": 125,
+      "remaining_limits": [
+        "GitHub scheduled-run delivery gaps remain possible. No uninterrupted freshness or complete historical collection is certified.",
+        "A fresh packet from the prior scheduled producer run is not attributed to this trigger change. The separately witnessed automatic post-merge export and downstream reruns verify the repaired path."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "ci_summary": {
+        "conditionally_skipped_checks": 1,
+        "skip_reason": "Acceptance persistence is conditional and skipped in the pull-request context.",
+        "successful_checks": 7
+      },
+      "exact_reviewed_head_sha": "21952d27116d00c6bc53d61c3656a49e782b27c3",
+      "exact_source_ci_run_ids": [
+        37823533946,
+        37823533934,
+        37823534175,
+        37823534300
+      ],
+      "historical_acceptance_failures": [
+        {
+          "failure": "Upstream peer packet age exceeds unchanged freshness bound",
+          "maximum_age_seconds": 1800,
+          "packet_age_seconds": 2659.568,
+          "run_id": 37823534175,
+          "workflow": "live-engine-federation-gate"
+        },
+        {
+          "failure": "Upstream peer packet age exceeds unchanged freshness bound before historical event assertion",
+          "maximum_age_seconds": 1800,
+          "packet_age_seconds": 2684.537,
+          "run_id": 37823534300,
+          "workflow": "live-engine-historical-context-gate"
+        }
+      ],
+      "historical_baseline_failure": {
+        "failure": "Historical context event count asserted against the truncated UI snapshot",
+        "head_sha": "ffdea1678e2b0ee626852eef2cfdf54dfb8fab4c",
+        "run_id": 37794789601
+      },
+      "implemented_scope": "Recompute Brain freshness from timezone-aware clocks on read; validate all historical context records in the complete persisted journal while retaining the UI latest-200 event window and existing integrity/candidate vetoes.",
+      "live_acceptance_checkout_context": {
+        "engine_checkout_sha": "163d867d287c0a5c5de7927b51b704c71de60177",
+        "github_synthetic_pr_merge_checkout_sha": "1d6ebb9d2e16794cbce8c1c7ea2d9edfc564f592",
+        "receipt_artifact": "2026-10-08-brain-live-acceptance.json",
+        "reviewed_pull_request_head_sha": "21952d27116d00c6bc53d61c3656a49e782b27c3",
+        "tested_checkout_is_identical_to_pr_head": false
+      },
+      "local_validation": {
+        "independent_review": "APPROVED",
+        "passed_tests": 114,
+        "reproduction_command_from_repository_root": "python -m pytest -q tests_engine/test_brain_sync.py tests_engine/test_brain_status_freshness.py tests_engine/test_brain_historical_context_gate.py tests_engine/test_evolution_ui_status.py"
+      },
+      "merge_commit_sha": "fb9ef2b4bd84d32e1b3e288bdc9e3bf13a65d762",
+      "pull_request": 327,
+      "remaining_limits": [
+        "Status read recomputation does not repair historical producer outages.",
+        "The complete journal and current repaired producer packet passed live acceptance; this does not certify continuous upstream freshness or complete historical collection.",
+        "No deployed live-browser acceptance is established."
+      ],
+      "repository": "reppiks490/Icarus",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "successful_live_acceptance_attempts": [
+        {
+          "attempt": 2,
+          "run_id": 37823534175,
+          "successful_job_id": 113570428369,
+          "workflow": "live-engine-federation-gate"
+        },
+        {
+          "attempt": 2,
+          "run_id": 37823534300,
+          "successful_job_id": 113570429322,
+          "workflow": "live-engine-historical-context-gate"
+        }
+      ],
+      "whole_requirement_credit": 0
+    },
+    {
+      "ci_jobs_passed_per_run": 6,
+      "exact_reviewed_head_sha": "f5c36a7891dcf864382d7f07a52b7c33d30ef923",
+      "exact_source_ci_run_ids": [
+        37853219206,
+        37853231488
+      ],
+      "implemented_scope": "Create staged plaintext archive files exclusively with owner-only POSIX mode at initial open, rather than relying on chmod after writing. Preserve existing files and symlinks, and keep partial failure files private.",
+      "local_validation": {
+        "baseline_cases_passed": 2,
+        "baseline_failures": 2,
+        "focused_synthetic_cli_cases_passed": 4,
+        "independent_review": "APPROVED",
+        "reproduction_command_from_repository_root": "python -m pytest tests_engine/test_provider_archive.py -q -o addopts=''",
+        "scope": "Synthetic CLI payloads with mocked decryption; POSIX permissions and overwrite/symlink preservation. Real credentials, AES-GCM authentication and licensed plaintext were not exercised."
+      },
+      "merge_commit_sha": "e3205cbb8f7506340cb560dee4b27349c52b60be",
+      "pull_request": 126,
+      "remaining_limits": [
+        "Initial POSIX mode is verified in the synthetic CLI cases, including permissive umask; Windows ACL privacy remains unverified.",
+        "This source repair does not decrypt or validate the privately preserved authentic ciphertexts and does not recover the separate Actions artifact ZIPs."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "actual_connector_readback": {
+        "brain_events": 21,
+        "candidates": 0,
+        "errors": 6,
+        "isolated_private_runtime": true,
+        "observed": 15,
+        "observed_success_families": 14,
+        "research_families_probed": 17
+      },
+      "exact_reviewed_head_sha": "f0603fa9f87a3dda07b16478e7de51b651e6af3b",
+      "exact_source_ci_checks_passed": 4,
+      "exact_source_ci_run_ids": [
+        37883226034,
+        37883244877
+      ],
+      "implemented_scope": "Offline metadata-only Unusual Whales intake with durable idempotent delivery to the existing native Brain API, explicit error states and qualification vetoes. No provider HTTP client or raw response retention.",
+      "local_validation": {
+        "independent_review": "APPROVED",
+        "passed_tests": 61
+      },
+      "merge_commit_sha": "0d619104c1e36d2db4ef6408c1686c75b11a7fc3",
+      "pull_request": 328,
+      "remaining_limits": [
+        "Readback used an isolated private runtime; production deployment is unverified.",
+        "Entitlement, requested-filter adherence, source-time qualification, retention and redistribution rights and complete historical coverage remain unverified.",
+        "Seventeen research-data families were probed; only fourteen had observed successful responses. POSIX privacy guards do not certify Windows ACLs."
+      ],
+      "repository": "reppiks490/Icarus",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "7b6021f4a2bff45a8387c5dfaf92b3bb113ccc9c",
+      "exact_source_ci_checks_passed": 12,
+      "exact_source_ci_run_ids": [
+        37883428464,
+        37883453994
+      ],
+      "full_local_suite": {
+        "duration_seconds": 33.96,
+        "errors": 10,
+        "exit_code": 1,
+        "failed": 2,
+        "invocation": "python -m pytest",
+        "limitation": "Default sandbox prohibits socket creation; all listed failures and errors arise from PermissionError Errno1 Operation not permitted",
+        "not_current_main_validation": true,
+        "passed": 1033,
+        "subtests_passed": 17
+      },
+      "implemented_scope": "Calculate backlog health, oldest unresolved request, counters and recovery provenance from the complete population; retain the latest-24 display window. Invalid identities/clocks and malformed outcome text remain unverified.",
+      "local_validation": {
+        "focused_tests_passed": 19,
+        "original_tools_test_restored_byte_exact": true,
+        "outcome": "APPROVED",
+        "subtests_passed": 17
+      },
+      "merge_commit_sha": "2028b825fc04054e2fe13c153de1bc26e7726aa2",
+      "pull_request": 129,
+      "remaining_limits": [
+        "This repair does not recreate missed worker cognition or change immutable request/result history.",
+        "The independently pinned 372-request reconciliation remains a historical source snapshot. No live backlog count is claimed."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    },
+    {
+      "exact_reviewed_head_sha": "cf1d7b8abc3ca8b66c06b69a744990619f63d55b",
+      "exact_source_ci_checks_passed": 8,
+      "exact_source_ci_run_ids": [
+        37963580201,
+        37963580146,
+        37963578066
+      ],
+      "full_local_suite": {
+        "baseline_comparison": {
+          "baseline_worktree_clean": true,
+          "errors": 10,
+          "exact_nonpassing_cases_retested": 12,
+          "failed": 2,
+          "same_socket_permission_exception_reproduced": true,
+          "test_nodes": [
+            "tests_engine/test_futures.py::test_server_auth_host_and_body_limits",
+            "tests_engine/test_futures.py::test_backtest_routes_end_to_end",
+            "tests_engine/test_backtest_validation.py::test_http_invalid_requests_never_reach_job_scheduler",
+            "tests_engine/test_backtest_validation.py::test_http_keeps_valid_costs_modes_windows_and_input_types",
+            "tests_engine/test_backtest_validation.py::test_http_optional_defaults_and_zero_costs_are_valid",
+            "tests_engine/test_backtest_validation.py::test_http_preset_path_validation_still_rejects_before_scheduling",
+            "tests_engine/test_execution_controls.py::test_all_admin_configuration_routes_reject_pending_before_side_effects",
+            "tests_engine/test_execution_controls.py::test_admin_all_assets_preflight_prevents_partial_writes",
+            "tests_engine/test_execution_controls.py::test_admin_pause_flatten_and_config_success_are_completed_on_return",
+            "tests_engine/test_research_service.py::test_http_auth_static_json_validation_and_no_provider_calls",
+            "tests_engine/test_research_service.py::test_http_adaptation_lifecycle_is_authenticated_and_opt_in",
+            "tests_engine/test_research_service.py::test_http_signed_ingestion_replay_and_unconfigured_receiver"
+          ],
+          "unmodified_commit_sha": "20fcd274b3aabe372a0d79e4531cd03a04d39ba4"
+        },
+        "classification": "All 12 nonpassing cases encounter PermissionError Errno 1 Operation not permitted while constructing the local HTTP server socket.",
+        "errors": 10,
+        "exit_code": 1,
+        "failed": 2,
+        "invocation": "python -m pytest tests tests_engine -q",
+        "logs": [
+          "assurance-finite-local-tests.log",
+          "assurance-finite-baseline-failures.log"
+        ],
+        "new_regression_failed": false,
+        "not_current_main_validation": true,
+        "passed": 1068
+      },
+      "historical_ci_failure": {
+        "head_sha": "635399f25ac6ced70a9d51cd2928603934dd403b",
+        "reason": "Critical assurance source changed without an MCP event in the same changeset. Repaired with a truthful CODEX_ENGINEERING event, then all applicable revised-head gates passed."
+      },
+      "implemented_scope": "Reject nonfinite numeric series values as parity divergence and reject nonfinite or negative tolerance. Preserve finite, matching nonnumeric, length and first-divergence contracts. Add truthful same-changeset CODEX_ENGINEERING MCP provenance.",
+      "local_validation": {
+        "baseline_failed": 29,
+        "baseline_passed": 27,
+        "new_cases": 42,
+        "passed_tests": 56
+      },
+      "merge_commit_sha": "e76d70b16b2e17af070fb450d441870ffc763810",
+      "post_merge_validation": {
+        "checkout_scope": "Checks are associated with the merged head. Native liveness and peer export refresh main before checking/exporting, so this association does not pin every runtime checkout to the merge commit.",
+        "checks_passed": 10,
+        "merge_head_sha": "e76d70b16b2e17af070fb450d441870ffc763810",
+        "run_ids": [
+          37964561167,
+          37964561107,
+          37964561090,
+          37964561074,
+          37964561073
+        ],
+        "status": "SUCCESS"
+      },
+      "pull_request": 130,
+      "remaining_limits": [
+        "Active comparison-job integration and financial edge are unverified.",
+        "The existing infinite-error sentinel remains; no strict JSON serialization guarantee is added.",
+        "CODEX_ENGINEERING is truthful local provenance; federated consumer ingestion of this source is unverified."
+      ],
+      "repository": "reppiks490/Icarus-engine",
+      "state": "MERGED_BOUNDED_SCOPE",
+      "whole_requirement_credit": 0
+    }
+  ],
+  "observed_at_utc": "2026-10-09T17:39:26.313431Z",
+  "pending_packages": [],
+  "pinned_observation_dates_preserved": true,
+  "preserved_independent_pull_requests": [
+    {
+      "pull_request": 318,
+      "repository": "reppiks490/Icarus"
+    },
+    {
+      "pull_request": 198,
+      "repository": "reppiks490/Icarus"
+    },
+    {
+      "pull_request": 84,
+      "repository": "reppiks490/Icarus-engine"
+    },
+    {
+      "pull_request": 7,
+      "repository": "reppiks490/icarus-owner-actions"
+    },
+    {
+      "pull_request": 295,
+      "repository": "reppiks490/Icarus"
+    }
+  ],
+  "requirement_states_unchanged": {
+    "DISCOVERED": 200,
+    "IMPLEMENTED_UNVERIFIED": 2,
+    "INTEGRATED": 0,
+    "VERIFIED": 0,
+    "baseline_requirements": 202,
+    "entire_system_certified": false
+  },
+  "schema_version": "icarus-bounded-package-outcomes-v1",
+  "supporting_plugin_integration_scope": {
+    "hugging_face": "Public repository metadata and links only; no inference or evaluation.",
+    "linear": {
+      "canonical_authority": false,
+      "confirmed_projects": 1,
+      "confirmed_unassigned_backlog_issues": 1,
+      "open_evidence_gates": 5
+    },
+    "openai_developers": "Official public SDK documentation and design only; no hosted runtime or API key.",
+    "supabase": "Connected empty project list; SQL unapplied and cost discovery unavailable."
+  },
+  "validation_commands_for_this_checkpoint": [
+    "python -m unittest discover -s tests -p 'test_mission_compiler.py' -v",
+    "python -m mission.compiler validate mission/register.json",
+    "python -m mission.compiler certificate mission/register.json"
+  ]
+}
