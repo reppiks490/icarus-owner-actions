@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "duplicate_immutable_request_ids": 0,
+    "duplicate_result_request_ids": 0,
+    "identity_matched_result_files": 6,
+    "immutable_request_paths": 685,
+    "latest_mirror_paths": 4,
+    "orphan_result_files": 0,
+    "presence_only_unmatched_immutable_requests": 679,
+    "request_json_paths_including_mirrors": 689,
+    "request_result_identity_inconsistencies": 0,
+    "result_json_paths": 6,
+    "schema_or_invariant_issue_count": 1,
+    "strict_unresolved_immutable_requests": 680,
+    "strict_valid_matching_results": 5,
+    "unique_immutable_request_ids": 685,
+    "unique_result_request_ids": 6
+  },
+  "execution_authorized": false,
+  "files": {
+    "2026-10-11-c04-evening-population.md": {
+      "bytes": 4856,
+      "sha256": "81fff61f0dcde02c72dcb910526eb10d42a2f467ff2500bf70413361e163ef24"
+    },
+    "2026-10-11-c04-evening-reconciliation.json.gz": {
+      "bytes": 36578,
+      "sha256": "07135ddf14258e2c063bf637f9171a92f606fa20d09e5909bcaf8924c35f3461"
+    }
+  },
+  "observed_at": "2026-10-11T21:11:09.494961Z",
+  "source_commit": "dc5ef0d5ab5165eaa6f560268dca25066c3a9237",
+  "source_repository": "reppiks490/Icarus-engine",
+  "uncompressed_reconciliation": {
+    "bytes": 422773,
+    "sha256": "f6036ff7d2a48e4eaa4a8a56114e0d4340ece2ee9cd50d1104f0a1c7f65f3d79"
+  }
+}
