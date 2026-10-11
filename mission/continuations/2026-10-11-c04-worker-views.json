@@ -1,0 +1,54 @@
+{
+  "consumer_views": {
+    "advanced_csv": {
+      "committed_health_oldest_matches": true,
+      "committed_health_total_matches": true,
+      "full_unresolved": 164,
+      "hot_is_exhaustive": false,
+      "hot_unresolved": 24,
+      "oldest_full": "advanced_csv-20261004T201000Z",
+      "oldest_full_in_hot": false,
+      "oldest_hot": "advanced_csv-20261010T151000Z"
+    },
+    "alpha_synthesis": {
+      "committed_health_oldest_matches": true,
+      "committed_health_total_matches": true,
+      "full_unresolved": 164,
+      "hot_is_exhaustive": false,
+      "hot_unresolved": 24,
+      "oldest_full": "alpha_synthesis-20261004T192000Z",
+      "oldest_full_in_hot": false,
+      "oldest_hot": "alpha_synthesis-20261010T142000Z"
+    },
+    "microstructure_sensor_grid": {
+      "committed_health_oldest_matches": true,
+      "committed_health_total_matches": true,
+      "full_unresolved": 160,
+      "hot_is_exhaustive": false,
+      "hot_unresolved": 24,
+      "oldest_full": "microstructure_sensor_grid-20261004T223000Z",
+      "oldest_full_in_hot": false,
+      "oldest_hot": "microstructure_sensor_grid-20261010T143000Z"
+    },
+    "robustness_guardian": {
+      "committed_health_oldest_matches": true,
+      "committed_health_total_matches": true,
+      "full_unresolved": 165,
+      "hot_is_exhaustive": false,
+      "hot_unresolved": 24,
+      "oldest_full": "robustness_guardian-20261004T200000Z",
+      "oldest_full_in_hot": false,
+      "oldest_hot": "robustness_guardian-20261010T150000Z"
+    }
+  },
+  "prior_comparison": {
+    "current_request_count": 658,
+    "full_ordering_global_oldest": "alpha_synthesis-20261004T192000Z",
+    "historical_request_blob_changes": 0,
+    "historical_result_blob_changes": 0,
+    "new_immutable_ids": 180,
+    "prior_commit": "0f1089f9fd6e412e11fd8c69afef508099638869",
+    "prior_request_count": 478,
+    "removed_immutable_ids": 0
+  }
+}
