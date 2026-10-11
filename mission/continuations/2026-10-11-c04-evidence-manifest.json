@@ -1,0 +1,42 @@
+{
+  "counts": {
+    "duplicate_immutable_request_ids": 0,
+    "duplicate_result_request_ids": 0,
+    "identity_matched_result_files": 6,
+    "immutable_request_paths": 658,
+    "latest_mirror_paths": 4,
+    "orphan_result_files": 0,
+    "presence_only_unmatched_immutable_requests": 652,
+    "request_json_paths_including_mirrors": 662,
+    "request_result_identity_inconsistencies": 0,
+    "result_json_paths": 6,
+    "schema_or_invariant_issue_count": 1,
+    "strict_unresolved_immutable_requests": 653,
+    "strict_valid_matching_results": 5,
+    "unique_immutable_request_ids": 658,
+    "unique_result_request_ids": 6
+  },
+  "execution_authorized": false,
+  "files": {
+    "2026-10-11-c04-current-population.md": {
+      "bytes": 4534,
+      "sha256": "c4795ff1a8c86af6e0c74e9821e427258c2a2fcfcd416f29654966f247d17a92"
+    },
+    "2026-10-11-c04-reconciliation.json.gz": {
+      "bytes": 35672,
+      "sha256": "24fb943715481e58ea2eae534cebfc78bcf9447c4ee46c04db9a3063455d47b7"
+    },
+    "2026-10-11-c04-worker-views.json": {
+      "bytes": 1895,
+      "sha256": "460f91e2b1efb9eb56386981a39422b1ae81be5c13feb107a6c9db79595e272f"
+    }
+  },
+  "observed_at": "2026-10-11T14:23:22.350121Z",
+  "scope": "Public committed request/result identity metadata only; no request execution or source-domain completion credit.",
+  "source_commit": "f4c803ad06ec2f512fdc69b9c3b10c817270b039",
+  "source_repository": "reppiks490/Icarus-engine",
+  "uncompressed_reconciliation": {
+    "bytes": 407000,
+    "sha256": "8d6d9e4ac86ee3226cb2968e8ab4c94a40d6946d8fd264c9e0c40e2b959131cd"
+  }
+}
