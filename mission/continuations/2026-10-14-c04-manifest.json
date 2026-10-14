@@ -1,0 +1,27 @@
+{
+  "limitations": [
+    "Repository-pinned identity/schema/clock/byte audit only.",
+    "Does not prove prior worker cognition or source-domain correctness.",
+    "Does not authenticate licensed data or create historical completion.",
+    "No original request/result bytes or automation settings were changed."
+  ],
+  "outcomes": {
+    "material_delta": 0,
+    "schema_or_invariant_issues": 1,
+    "strict_unresolved": 934,
+    "strict_valid_dispositions": 5
+  },
+  "pinned_validator_executed_for_every_immutable_request": 939,
+  "pinned_validator_git_blob_sha": "b66d46978d5fef6642cc332486b0ae01907b5afd",
+  "pinned_validator_sha256": "12937ab18fee9dbf8a707f5474398f0002f86f42004c32b0c11ca493ecf8c7d9",
+  "reconciliation_sha256": "fd568081627f5b03a5952eae2867df0203ecd83637509739a0cc8befa27fcf6e",
+  "request_json_paths_including_latest_mirrors": 943,
+  "result_json_paths": 6,
+  "schema_version": "icarus-c04-current-population-manifest-v1",
+  "source_commit_sha": "8e94a2e75022808bb79ec0c7a35db3d22bb688f8",
+  "source_observed_at_utc": "2026-10-14T15:30:00Z",
+  "source_ref": "main",
+  "source_repository": "reppiks490/Icarus-engine",
+  "source_tree_sha": "54b420bea729c76591b23a32c3c72fecf818d185",
+  "tree_manifest_sha256": "6d01cbde6659211dc9ba2625ed396e197af0bbb18e513d911c744656205273b5"
+}
