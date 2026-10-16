@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-c02-brain-uw-merge",
+  "completed_at_utc": "2026-10-16T13:03:17Z",
+  "result": "complete",
+  "summary": "Merged PR #369 at head 3e2ef806b35883db6a8b143cb75b8c657f23d261 as 862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f. Exact-head Linux and Windows CI passed. Independent review found no blockers in cooperative process locking, private receipt persistence, or the metadata-only Unusual Whales claims. Icarus main readback matched the merge SHA.",
+  "evidence": [
+    "coordination/events/2026/10/16/codex-20261016-c02-brain-uw-merge/20261016T130317Z-complete.json",
+    "PR author reports 113 focused tests and 62 dependent tests passed",
+    "GitHub Actions run 38789304122: Linux and Windows jobs passed"
+  ],
+  "limits": [
+    "This merges Brain journal concurrency and UW receipt persistence only; it does not create provider authentication or a UW-to-Pulse/champion consumer.",
+    "Full-suite quiet logs showed 100% progress but did not report a collected test total, so no full-suite count is claimed.",
+    "Live execution remains disabled."
+  ]
+}
