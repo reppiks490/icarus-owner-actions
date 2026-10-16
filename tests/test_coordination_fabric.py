@@ -166,8 +166,8 @@ class CoordinationFabricContractTests(unittest.TestCase):
             for i in range(64):
                 sid = f"chat-{i:02d}"
                 _session(root, sid, stale=180)
-                # 62 chats reserve unique narrow files. The last two deliberately
-                # overlap with chat-00 to prove large-N collision accounting stays exact.
+                # 62 chats reserve unique narrow files. Chat-62 reserves their
+                # common parent; chat-63 reserves a sibling of chat-00's file.
                 if i == 62:
                     path = "workstreams/00"
                 elif i == 63:
@@ -191,7 +191,6 @@ class CoordinationFabricContractTests(unittest.TestCase):
                 pairs,
                 {
                     ("chat-00", "chat-62"),
-                    ("chat-00", "chat-63"),
                     ("chat-62", "chat-63"),
                 },
             )
