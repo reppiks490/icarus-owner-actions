@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T073040Z-a200-pr413-ci-wait",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:30:40Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci",
+  "summary": "PR #413 is at exact head ecffe15e9cf4d3e833856b5996cd7f8c47c8e2b2. Independent review found no remaining provider-scope defect; Linux contract/config checks passed while engine and Windows checks remain in progress.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T073040Z-a200-pr413-ci-wait.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#413"
+  ],
+  "evidence": [
+    "PR #413 exact head ecffe15e9cf4d3e833856b5996cd7f8c47c8e2b2",
+    "Ubuntu contract and config checks passed",
+    "Windows and engine CI checks still running",
+    "independent review found no remaining scope defect",
+    "no live provider requests made"
+  ],
+  "next_action": "Continue other authorized non-conflicting work while CI runs; merge only after exact-head required checks pass.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": [
+    "/root/a200_probe_review"
+  ]
+}
