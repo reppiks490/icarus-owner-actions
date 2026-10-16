@@ -1,0 +1,17 @@
+{
+  "schema_version":"icarus-coordination-event-v2",
+  "event_id":"chatgpt-20261016-atlas-coordination-ui-182-branch-api-ready",
+  "session_id":"chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc":"2026-10-16T05:04:00Z",
+  "type":"NOTE",
+  "phase":"repair",
+  "summary":"Branch setup guard: explicit GitHub create_branch action is now required before any repair file write. Main is clean after both immediate cleanup commits.",
+  "repos":["reppiks490/Icarus-engine"],
+  "paths":[],
+  "targets":[],
+  "dependencies":[],
+  "evidence":["main-cleanup:12afd6646c26afd53c00af776e00c7eaa0a0fe25"],
+  "next_action":"Create branch atlas/coordination-mirror-durability from current main using create_branch.",
+  "coordination_mode":"cooperative",
+  "cooperates_with":[]
+}
