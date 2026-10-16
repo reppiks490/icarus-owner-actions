@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T031300Z-crossrepo-adoption",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:13:00Z",
+  "type": "UPDATE",
+  "phase": "cross-repo-adoption",
+  "summary": "Coordination bus and concurrency-safe maintenance are merged. Adopting the central bus into Engine, Icarus, Divine Providence, causal-router, CSV evidence lab, and owner-actions entrypoints without model-specific task gates; existing PR-owned paths will be changed on those PR branches to avoid collisions.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/Icarus",
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "AGENTS.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/README.md"},
+    {"repo": "reppiks490/Icarus", "path": "AGENTS.md"},
+    {"repo": "reppiks490/divine-providence", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-causal-router", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-csv-evidence-lab", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "AGENTS.md"}
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus-engine#178",
+    "pr:reppiks490/Icarus#397",
+    "pr:reppiks490/icarus-owner-actions#18:merged"
+  ],
+  "evidence": [
+    "merge:reppiks490/icarus-owner-actions#15@6a5015ea687ccc2917b1ee3a60b380607ffd7513",
+    "merge:reppiks490/icarus-owner-actions#18@ef6ae205a260424ed45da7a45dab6f92eb96b401"
+  ],
+  "next_action": "Update Engine #178 coordination entrypoints, Icarus #397 AGENTS, and auxiliary repo AGENTS; verify zero path collisions and repo tests before moving to dashboard coordination UI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
