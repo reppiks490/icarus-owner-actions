@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T034310Z-l1-j02-claim",
+  "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
+  "at_utc": "2026-10-16T03:43:10Z",
+  "type": "CLAIM",
+  "phase": "l1-j02-vendor-panel-containment",
+  "summary": "Reclaiming the useful L1/J02 security slice from superseded PR #135 on current Icarus-engine main. Work is fail-closed: first prove authenticated encrypted/private recoverability and origin coverage; only after that evidence may the 13 public working-tree panel CSVs be removed. No Git history rewrite, no plaintext secret output, and no live execution changes.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": ".github/workflows/depth-vault.yml"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/depth_vault.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/asset_panel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/data_sentinel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_depth_vault.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_asset_panel_vault.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_data_sentinel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "data/depth_vault"},
+    {"repo": "reppiks490/Icarus-engine", "path": "data/panel"}
+  ],
+  "dependencies": [
+    "closed-unmerged:reppiks490/Icarus-engine#135",
+    "merged-current-main:3ca0959a57d8585cb44be4af5a1d7c13ec23a5bb",
+    "constraint:authenticated-recovery-before-panel-delete",
+    "constraint:no-history-rewrite"
+  ],
+  "evidence": [
+    "pr135:preserved-source-material",
+    "main:data/panel:13-public-csvs-still-present",
+    "main:data/depth_vault/sources.json:absent"
+  ],
+  "next_action": "Audit current-main vault/loader/sentinel behavior and PR #135 security patches. Write a current-main implementation plan and failing tests before porting code. Do not delete panel CSVs in the first implementation commit.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
