@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T200723Z-databento-sweep-durability-update",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "at_utc": "2026-10-16T20:07:23Z",
+  "type": "UPDATE",
+  "phase": "sweep-durability",
+  "summary": "Expanded scope after confirming the sweep cache is absent and the vault has no NQ sweep features from primary, secondary, or third accounts. Repair the sweep workflow so it seals reduced files into the encrypted vault in the acquisition run before cache eviction.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/depth_vault.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_depth_vault.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/cl-depth-sweep.yml"
+    }
+  ],
+  "dependencies": [
+    "merged:reppiks490/Icarus-engine#202",
+    "constraint:no-new-provider-spend"
+  ],
+  "evidence": [
+    "actions-cache:databento-sweep-prefix=0",
+    "vault-manifest:sweep-group-absent",
+    "vault-manifest:nq-mbp10-files=0",
+    "dropbox:Databento-folder-no-Databento-export"
+  ],
+  "next_action": "Implement same-run vault seal and fail closed before ledger-only success claims; verify on branch.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
