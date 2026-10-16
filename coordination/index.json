@@ -569,16 +569,105 @@
       "session_id": "codex-20261016-phone-command-center-site",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/provider-data-hardening-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "config/data_ingestion_manifest.json",
+        "tests/test_ingestion_surface_contract.py",
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "config/data_ingestion_manifest.json",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_ingestion_surface_contract.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "dependencies": [
+        "provider response: Unusual Whales API HTTP 401 in run supplemental-38902990406-unusual_whales",
+        "external: provider credential/account authorization required to restore UW API calls"
+      ],
+      "goal": "Correct shared provider evidence truth and repair the provider manifest contract that currently fails Engine verification.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T13:03:49Z",
+      "latest_summary": "Update provider truth to reflect current Unusual Whales HTTP 401 while preserving prior data evidence; correct manifest state for staged Yahoo corpus; adjust contract test to accept truthful staged/blocked states; verify with focused contract suite and workflow run.",
+      "latest_type": "PLAN",
+      "model_family": "openai",
+      "phase": "repair",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "config/data_ingestion_manifest.json",
+        "tests/test_ingestion_surface_contract.py",
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "config/data_ingestion_manifest.json",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_ingestion_surface_contract.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "session_id": "codex-20261016-provider-data-hardening",
+      "stale": false,
+      "status": "active"
     }
   ],
-  "collisions": [],
+  "collisions": [
+    {
+      "path_pairs": [
+        [
+          "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        ],
+        [
+          "tests/test_ingestion_surface_contract.py",
+          "tests/test_ingestion_surface_contract.py"
+        ]
+      ],
+      "repo": "reppiks490/Icarus-engine",
+      "sessions": [
+        "codex-20261016-intrinio-ledger-refresh",
+        "codex-20261016-provider-data-hardening"
+      ],
+      "severity": "collision",
+      "target_pairs": [
+        [
+          "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        ],
+        [
+          "tests/test_ingestion_surface_contract.py",
+          "tests/test_ingestion_surface_contract.py"
+        ]
+      ]
+    }
+  ],
   "counts": {
-    "active": 9,
-    "collisions": 0,
+    "active": 10,
+    "collisions": 1,
     "stale": 4,
     "terminal": 13
   },
-  "generated_at_utc": "2026-10-16T13:03:41.083053Z",
+  "generated_at_utc": "2026-10-16T13:04:16.476051Z",
   "owner_status": {
     "claude": {
       "active": false,

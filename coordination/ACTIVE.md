@@ -1,8 +1,8 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-16T13:03:41.083053Z`
+Generated: `2026-10-16T13:04:16.476051Z`
 
-Active sessions: **9** · Stale/reclaimable: **4** · Collisions: **0**
+Active sessions: **10** · Stale/reclaimable: **4** · Collisions: **1**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
@@ -15,3 +15,8 @@ Active sessions: **9** · Stale/reclaimable: **4** · Collisions: **0**
 | `codex-20261016-intrinio-ledger-refresh` | ci-contract-repair | `reppiks490/Icarus-engine` / `atlas/intrinio-federated-auth-truth-20261016` | Exact-head CI for PR #192 revealed a pre-existing ingestion-contract test that rejects the newly valid STAGED manifest state for yahoo_cme_futures_seed; expanding the claim to update the contract enum only. | pr:reppiks490/Icarus-engine#192<br>run:reppiks490/Icarus-engine#38904540531 | reppiks490/Icarus-engine:docs/agent-handoffs/DATA_GAP_LEDGER.md<br>reppiks490/Icarus-engine:tests/test_ingestion_surface_contract.py |
 | `codex-20261016-owner-contact-boundary` ⚠️ STALE/RECLAIMABLE | documentation | `reppiks490/icarus-owner-actions` / `codex/owner-contact-boundary-20261016` | Added the owner no-routine-contact directive and linked it from the coordination entrypoint and mass-chat operating contract. The new session and event validate individually. Full-tree validation currently stops on a pre-existing Atlas event whose coordination_mode is 'cooperative', which the validator rejects. | baseline coordination validator fix for pre-existing invalid event | — |
 | `codex-20261016-phone-command-center-site` | ci-and-backend-integration | `sites/icarus-command-center-mobile` / `feat/mobile-worlds-command-center` | The desktop UI is now proposed on current main as PR #423 after preserving the intervening trade-history (#379) and Style-popup (#ec44170) updates. Independent Chromium review on the current-main cherry-pick passed desktop and mobile mock screens and viewport checks. PR #423 visual, test, and configuration workflows are queued. PR #421 adds the backend P&L/feed API and partial-flatten receipt; its workflows are also queued. Phone Site v14 is already deployed privately. | PR #421 backend CI and merge<br>PR #423 UI visual/test/configuration CI | reppiks490/Icarus:icarus_engine/command-centers-ui.js<br>reppiks490/Icarus:icarus_engine/dashboard.html<br>reppiks490/Icarus:icarus_engine/experience-ui.css<br>reppiks490/Icarus:icarus_engine/experience-ui.js<br>reppiks490/Icarus:icarus_engine/world-aura.js<br>reppiks490/Icarus:icarus_engine/world-cinema.js<br>reppiks490/Icarus:icarus_engine/world-immersion.js<br>reppiks490/Icarus:icarus_engine/world-motion.js<br>sites/icarus-command-center-mobile:assets/dashboard.html<br>sites/icarus-command-center-mobile:assets/command-centers-ui.js |
+| `codex-20261016-provider-data-hardening` | repair | `reppiks490/Icarus-engine` / `codex/provider-data-hardening-20261016` | Update provider truth to reflect current Unusual Whales HTTP 401 while preserving prior data evidence; correct manifest state for staged Yahoo corpus; adjust contract test to accept truthful staged/blocked states; verify with focused contract suite and workflow run. | provider response: Unusual Whales API HTTP 401 in run supplemental-38902990406-unusual_whales<br>external: provider credential/account authorization required to restore UW API calls | reppiks490/Icarus-engine:config/data_ingestion_manifest.json<br>reppiks490/Icarus-engine:tests/test_ingestion_surface_contract.py<br>reppiks490/Icarus-engine:docs/agent-handoffs/DATA_GAP_LEDGER.md |
+
+## Active collisions
+
+- **codex-20261016-intrinio-ledger-refresh ↔ codex-20261016-provider-data-hardening** in `reppiks490/Icarus-engine`: `docs/agent-handoffs/DATA_GAP_LEDGER.md` ↔ `docs/agent-handoffs/DATA_GAP_LEDGER.md`, `tests/test_ingestion_surface_contract.py` ↔ `tests/test_ingestion_surface_contract.py`
