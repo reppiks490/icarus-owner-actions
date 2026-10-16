@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-intrinio-doc-consistency",
+  "completed_at_utc": "2026-10-16T12:51:32Z",
+  "result": "complete",
+  "summary": "Corrected repository-scoped Intrinio status in both the Icarus-engine GitHub-native credential handoff and the central owner-actions data-access directive. Engine's local audit lacks an Intrinio secret; the preferred Icarus collector reported a credential present but rejected by HTTP 401, with zero rows in the receipt cited by the shared ledger. Both updates explicitly distinguish credential presence from actual data access and prohibit implying cross-repository secret sharing or readability. Icarus-engine PR #195 merged as 3e29e9527f9e9a8eb20346e38ee807616d8b7a6a; owner-actions PR #33 merged as 0d419c48777346945d30777f67e994f4bae306d7. The separate DATA_GAP_LEDGER refresh remains in open PR #192 and was not modified by this session.",
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#195@2aa33e01e3aba280b4585fb02637e6a5d66bdcd4",
+    "merge:reppiks490/Icarus-engine:3e29e9527f9e9a8eb20346e38ee807616d8b7a6a",
+    "checks:engine-pr195:Python-3.11-3.13,core,CLI,MCP-success",
+    "pr:reppiks490/icarus-owner-actions#33@038867d1d61dda5ce041b06a894bca6721bfda54",
+    "merge:reppiks490/icarus-owner-actions:0d419c48777346945d30777f67e994f4bae306d7",
+    "checks:owner-actions-pr33:Python-3.11-3.13-success",
+    "workflow:reppiks490/Icarus#38865138563 completed; Intrinio job success; HTTP 401 and zero rows cited by ledger review"
+  ],
+  "follow_ups": [
+    "Check PR #192 for its separate DATA_GAP_LEDGER corrections before treating that ledger as current.",
+    "Keep the credential status repository-scoped; use shared Actions evidence rather than attempting to read or transfer plaintext secrets."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T125132Z-intrinio-doc-consistency-complete",
+  "session_id": "codex-20261016-intrinio-doc-consistency",
+  "at_utc": "2026-10-16T12:51:32Z",
+  "type": "COMPLETE",
+  "phase": "documentation-consistency",
+  "summary": "Merged the repository-scoped Intrinio credential/authentication correction into both canonical handoff surfaces. Icarus reports its present-but-rejected credential (401); Icarus-engine accurately states its local secret set lacks Intrinio. Neither doc implies secrets are readable or shared. The separate DATA_GAP_LEDGER update remains under review in PR #192 and was not changed by this session.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"}
+  ],
+  "dependencies": ["run:reppiks490/Icarus#38865138563", "pr:reppiks490/Icarus-engine#192"],
+  "evidence": [
+    "pr:reppiks490/icarus-owner-actions#33",
+    "merge:0d419c48777346945d30777f67e994f4bae306d7",
+    "head:reppiks490/icarus-owner-actions#33@038867d1d61dda5ce041b06a894bca6721bfda54",
+    "checks:reppiks490/icarus-owner-actions#33:python-3.11-3.13-success",
+    "pr:reppiks490/Icarus-engine#195",
+    "merge:3e29e9527f9e9a8eb20346e38ee807616d8b7a6a",
+    "head:reppiks490/Icarus-engine#195@2aa33e01e3aba280b4585fb02637e6a5d66bdcd4",
+    "checks:reppiks490/Icarus-engine#195:python-3.11-3.13-cli-mcp-zero-dependency-success",
+    "run:reppiks490/Icarus#38865138563:workflow-and-intrinio-job-success;provider-401-zero-rows-as-reported-by-ledger-review"
+  ],
+  "next_action": "No further reservation from this session. PR #192 still owns the separate DATA_GAP_LEDGER refresh; its status remains open and must be checked independently.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
