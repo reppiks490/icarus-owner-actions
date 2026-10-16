@@ -1,0 +1,10 @@
+{
+  "schema_version": "icarus-coordination-owner-status-v1",
+  "updated_at_utc": "2026-10-16T02:50:00Z",
+  "claude": {
+    "active": false,
+    "return_date": null,
+    "note": "Owner reports Claude will be inactive for roughly one to two months. Unfinished Claude work is reclaimable after a takeover/cooperation note; absence is not completion."
+  },
+  "live_broker_arming": false
+}
