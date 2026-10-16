@@ -41,6 +41,14 @@ A chat waiting on CI should say so explicitly, for example: `waiting on Icarus-e
 
 Use `python -m coordination_fabric validate` to validate records and `python -m coordination_fabric compile` to rebuild the generated views. `python -m coordination_fabric prune --days 14` may remove old terminal event files from the working tree only after a durable session summary exists. Git history remains the provenance record.
 
+## Automatic refresh and easy cleanup
+
+On every relevant push to `main`, the coordination workflow automatically resets to the latest `origin/main`, validates the live record tree, recompiles `coordination/ACTIVE.md`, `coordination/index.json`, and `coordination/collisions.json`, refuses active collisions, and publishes only those generated views when they changed. If another chat moves `main` while publication is in progress, the workflow discards its stale derived snapshot, refreshes from the new main, recomputes, and retries.
+
+Old terminal event notes can be cleaned from the working tree without erasing provenance. The `coordination-maintenance` workflow runs on a daily schedule and also exposes `workflow_dispatch` with a `retention_days` input (default 14). It calls `python -m coordination_fabric prune --days N`, which only prunes terminal sessions that already have durable summaries and are beyond the requested retention period. Active, waiting, blocked, or unsummarized sessions are not eligible. After pruning, the workflow recompiles the generated views and refuses collisions before publishing. Git history remains the permanent audit trail even when old terminal event files are removed from the current tree.
+
+For local/operator use, the same cleanup is available with `python -m coordination_fabric prune --days N`, followed by validation and compile. Prefer the GitHub Actions `workflow_dispatch` path for routine owner cleanup because it applies the fresh-main retry rules automatically.
+
 ## Scale rules for 50+ chats
 
 - Session IDs must be unique and stable for the life of the chat/workstream.
