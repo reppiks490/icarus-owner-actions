@@ -1,0 +1,64 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122900Z-phone-site-deployed-paper-api-pr",
+  "session_id": "codex-20261016-phone-command-center-site",
+  "at_utc": "2026-10-16T12:29:00Z",
+  "type": "UPDATE",
+  "phase": "ci-and-backend-integration",
+  "summary": "The desktop command center UI is integrated into the owner-private phone Site and deployed as version 14. Backend paper P&L/feed fields plus best-effort flatten reporting are committed on codex/paper-workspace-api-integration in PR #421. Focused paper workspace and execution control tests pass locally (100 tests); PR CI is queued/running. The phone Site remains truthful about engine connectivity and uses the new /api/command-centers contract once the backend PR is integrated.",
+  "repos": [
+    "reppiks490/Icarus",
+    "sites/icarus-command-center-mobile"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_execution_controls.py"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/dashboard.html"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/command-centers-ui.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/experience-ui.css"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "scripts/build-worker.mjs"
+    }
+  ],
+  "dependencies": [
+    "PR #421 exact-head CI",
+    "live engine tunnel must be running on the owner machine to show engine data"
+  ],
+  "evidence": [
+    "Site version 14 deployed successfully to https://icarus-command-center-mobile.cloudyrook1.chatgpt.site and remains owner-only",
+    "Site source commit 76f1128368215e7180935aa6e19ebb09d1b32a33",
+    "Backend PR #421 head 3fc7cc5478c3e2b2e6671028a5380e278090f5b3 is mergeable",
+    "pytest tests_engine/test_paper_workspaces.py tests_engine/test_execution_controls.py -q passed locally",
+    "Site Worker build and git diff --check passed; legacy reference-choreography imports are removed"
+  ],
+  "next_action": "Wait for PR #421 exact-head CI. If checks pass and mergeability remains true, merge the paper API/reliability changes, then report the engine restart command and live tunnel pairing state separately."
+}
