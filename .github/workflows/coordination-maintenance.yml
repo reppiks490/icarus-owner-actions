@@ -9,12 +9,15 @@ on:
       - 'coordination/summaries/**'
       - 'coordination/owner_status.json'
       - '.github/workflows/coordination-maintenance.yml'
+  schedule:
+    - cron: '47 3 * * *'
   workflow_dispatch:
     inputs:
-      prune_days:
-        description: 'Prune terminal event files older than this many days after durable summaries exist; 0 disables pruning'
+      retention_days:
+        description: 'Working-tree retention for summarized terminal session events'
         required: false
-        default: '0'
+        default: '14'
+        type: string
 
 permissions:
   contents: write
@@ -26,6 +29,8 @@ concurrency:
 jobs:
   compile-and-maintain:
     runs-on: ubuntu-latest
+    env:
+      RETENTION_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.retention_days || github.event_name == 'schedule' && '14' || '0' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,38 +39,48 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Validate coordination records
-        run: python -m coordination_fabric validate
-      - name: Optional summary-gated event pruning
-        if: github.event_name == 'workflow_dispatch' && inputs.prune_days != '0'
-        env:
-          PRUNE_DAYS: ${{ inputs.prune_days }}
+      - name: Validate requested retention
+        shell: bash
         run: |
-          case "$PRUNE_DAYS" in
-            ''|*[!0-9]*) echo 'prune_days must be a non-negative integer' >&2; exit 2 ;;
+          set -euo pipefail
+          case "$RETENTION_DAYS" in
+            ''|*[!0-9]*) echo 'retention_days must be a non-negative integer' >&2; exit 2 ;;
           esac
-          if [ "$PRUNE_DAYS" -lt 1 ] || [ "$PRUNE_DAYS" -gt 3650 ]; then
-            echo 'prune_days must be between 1 and 3650 when pruning is enabled' >&2
+          if [ "$RETENTION_DAYS" -gt 3650 ]; then
+            echo 'retention_days must be between 1 and 3650 when pruning is enabled' >&2
             exit 2
           fi
-          python -m coordination_fabric prune --days "$PRUNE_DAYS"
-      - name: Compile active coordination view
-        run: python -m coordination_fabric compile
-      - name: Verify generated coordination surfaces
+      - name: Recompute from fresh main, optionally prune, and publish atomically
+        shell: bash
         run: |
-          test -f coordination/ACTIVE.md
-          test -f coordination/index.json
-          test -f coordination/collisions.json
-          python -c "import json; d=json.load(open('coordination/collisions.json')); assert isinstance(d.get('collisions'), list)"
-      - name: Persist generated state and approved prune deletions
-        run: |
+          set -euo pipefail
           git config user.name 'icarus-coordination-bot'
           git config user.email '162067269+reppiks490@users.noreply.github.com'
-          git add coordination/ACTIVE.md coordination/index.json coordination/collisions.json
-          git add -A coordination/events
-          if git diff --cached --quiet; then
-            echo 'Coordination state already current.'
-            exit 0
-          fi
-          git commit -m 'coordination: refresh compiled state [skip ci]'
-          git push origin HEAD:main
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m coordination_fabric validate
+            if [ "$RETENTION_DAYS" -gt 0 ]; then
+              python -m coordination_fabric prune --days "$RETENTION_DAYS"
+              python -m coordination_fabric validate
+            fi
+            python -m coordination_fabric compile
+            python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+            test -f coordination/ACTIVE.md
+            test -f coordination/index.json
+            test -f coordination/collisions.json
+            git add coordination/ACTIVE.md coordination/index.json coordination/collisions.json
+            git add -A coordination/events
+            if git diff --cached --quiet; then
+              echo 'Coordination state already current.'
+              exit 0
+            fi
+            git commit -m "coordination: refresh compiled state retention=${RETENTION_DAYS}d [skip ci]"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Main moved during publish attempt $attempt; recomputing from fresh main." >&2
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish a fresh coordination snapshot after retries.' >&2
+          exit 1
