@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T130200Z-latest-pr415-review",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T13:02:00Z",
+  "type": "WAITING",
+  "phase": "review",
+  "summary": "Reviewed Atlas PR #415 at exact head 315073a88f1abbda8789562abcbed4ae8572cf61 and posted updated blocking findings. The date-rule code now includes bounded CME and London holiday tables, but the catalog asserts all 32 roots execution_qualified and resolves candidates through year+3 without enforcing calendar coverage. The command-center test still asserts CL is unqualified while the catalog defaults CL qualified. The canonical system index also marks simulated-paper controls eligible from resolver presence alone, while asset_command_center requires fresh verified data, risk controls, and journal readiness. The exact-head tests workflow run 38904182081 is in progress.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#415@315073a88f1abbda8789562abcbed4ae8572cf61",
+    "github-run:38904182081"
+  ],
+  "evidence": [
+    "Updated review comment: https://github.com/reppiks490/Icarus/pull/415#issuecomment-6216019821",
+    "PR #415 exact head commit: https://github.com/reppiks490/Icarus/commit/315073a88f1abbda8789562abcbed4ae8572cf61",
+    "tests_engine/test_asset_command_center.py:69-76 contradicts futures_catalog.py CL default execution_qualified=true.",
+    "system_index.py:183-194 exposes simulated-paper authorization/control eligibility from structural resolver presence; asset_command_center.py:111-118 applies additional data/risk/journal gates.",
+    "Independent read-only review corroborated the calendar horizon and paper-control projection findings."
+  ],
+  "next_action": "Wait for run 38904182081, re-fetch the latest PR head, and check whether the test/qualification/readiness findings were addressed before any approval."
+}

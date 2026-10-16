@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T130317Z-complete-c02-merge",
+  "session_id": "codex-20261016-c02-brain-uw-merge",
+  "at_utc": "2026-10-16T13:03:17Z",
+  "type": "COMPLETE",
+  "phase": "receipt-verification",
+  "summary": "Merged C02 process-safe Brain journal append and Unusual Whales receipt persistence PR #369. Exact head 3e2ef806b35883db6a8b143cb75b8c657f23d261 merged as 862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f; Icarus main readback resolves to that SHA and the metadata-only UW intake file is present. Independent review found no blocking lock/persistence issue. Hosted exact-head run 38789304122 passed Linux engine and Windows engine-windows.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/unusual_whales_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_unusual_whales_intake.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#369@3e2ef806b35883db6a8b143cb75b8c657f23d261",
+    "github-run:38789304122",
+    "merge:reppiks490/Icarus@862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f"
+  ],
+  "evidence": [
+    "PR: https://github.com/reppiks490/Icarus/pull/369",
+    "Merge commit: https://github.com/reppiks490/Icarus/commit/862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f",
+    "Exact-head GitHub Actions run 38789304122: engine Linux SUCCESS; engine-windows SUCCESS.",
+    "PR author reports 113 focused Brain/intake tests and 62 dependent tests passed; hosted full-suite output shows [100%] on both platforms. Quiet job logs did not include a collected-total summary, so no full-suite count is asserted.",
+    "Post-merge readback: Icarus main HEAD 862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f; unusual_whales_intake.py describes a private metadata-only connector boundary."
+  ],
+  "next_action": "Continue with the bounded A200 source-to-Pulse qualification slice and keep UW separate from OHLCV/Pulse until authentication, entitlement, coverage, point-in-time and consumer contracts are proven."
+}
