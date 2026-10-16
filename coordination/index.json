@@ -6,72 +6,32 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        ".github/workflows/coordination-mirror.yml",
-        "icarus_engine/mcp_control.py",
-        "icarus_engine/mcp-ui.js",
-        "tests_engine/test_mcp_control.py",
-        "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json"
+        "automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json"
       ],
       "declared_targets": [
         {
-          "path": ".github/workflows/coordination-mirror.yml",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "icarus_engine/mcp_control.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "icarus_engine/mcp-ui.js",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_engine/test_mcp_control.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json",
+          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus-engine#182"
+        "pr:reppiks490/Icarus-engine#181"
       ],
       "goal": "Finish federation closure, deploy and harden multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
       "home_repo": "reppiks490/icarus-owner-actions",
       "last_event_at_utc": "2026-10-16T03:27:00Z",
-      "latest_summary": "Implementation revealed the Engine MCP same-changeset provenance contract. Adding the required source-qualified INTEGRATION event for the coordination mirror/MCP UI changes before CI verification; this is a discovered repository invariant, not a new functional scope.",
+      "latest_summary": "Engine MCP provenance gate correctly rejected the futures registry change because icarus_engine/assets.py is a critical interface path without a same-changeset MCP event. Extending the claim to the required provenance event; the gate will not be weakened or bypassed.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "coordination-ui-verification",
+      "phase": "futures-universe-expansion",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        ".github/workflows/coordination-mirror.yml",
-        "icarus_engine/mcp_control.py",
-        "icarus_engine/mcp-ui.js",
-        "tests_engine/test_mcp_control.py",
-        "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json"
+        "automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json"
       ],
       "reserved_targets": [
         {
-          "path": ".github/workflows/coordination-mirror.yml",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "icarus_engine/mcp_control.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "icarus_engine/mcp-ui.js",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_engine/test_mcp_control.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json",
+          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
@@ -87,7 +47,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:25:39.584067Z",
+  "generated_at_utc": "2026-10-16T03:26:41.910949Z",
   "owner_status": {
     "claude": {
       "active": false,

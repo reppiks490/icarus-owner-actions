@@ -1,9 +1,9 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-16T03:25:39.584067Z`
+Generated: `2026-10-16T03:26:41.910949Z`
 
 Active sessions: **1** · Stale/reclaimable: **0** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
-| `chatgpt-20261016-atlas-coordination-futures` | coordination-ui-verification | `reppiks490/icarus-owner-actions` / `multi-repo/continuous` | Implementation revealed the Engine MCP same-changeset provenance contract. Adding the required source-qualified INTEGRATION event for the coordination mirror/MCP UI changes before CI verification; this is a discovered repository invariant, not a new functional scope. | pr:reppiks490/Icarus-engine#182 | reppiks490/Icarus-engine:.github/workflows/coordination-mirror.yml<br>reppiks490/Icarus-engine:icarus_engine/mcp_control.py<br>reppiks490/Icarus-engine:icarus_engine/mcp-ui.js<br>reppiks490/Icarus-engine:tests_engine/test_mcp_control.py<br>reppiks490/Icarus-engine:automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json |
+| `chatgpt-20261016-atlas-coordination-futures` | futures-universe-expansion | `reppiks490/icarus-owner-actions` / `multi-repo/continuous` | Engine MCP provenance gate correctly rejected the futures registry change because icarus_engine/assets.py is a critical interface path without a same-changeset MCP event. Extending the claim to the required provenance event; the gate will not be weakened or bypassed. | pr:reppiks490/Icarus-engine#181 | reppiks490/Icarus-engine:automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json |
