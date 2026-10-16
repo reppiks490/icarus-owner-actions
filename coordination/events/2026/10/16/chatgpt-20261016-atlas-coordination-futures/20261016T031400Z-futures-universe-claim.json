@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T031400Z-futures-universe-claim",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:14:00Z",
+  "type": "CLAIM",
+  "phase": "futures-universe-expansion",
+  "summary": "Collision audit found no open Icarus/Icarus-engine PR naming the selected roots/micros. Claiming a first-class futures expansion: RTY/M2K, CL/MCL, NG/MNG, HG/MHG, 6E/M6E, 6J/MJY, 6B/M6B, 6A/M6A, ZN, ZB. Also repairing existing micro identity bugs by making MNQ, MES, MYM, MGC, and SIL first-class futures rather than NQ aliases or unknown-symbol fallthroughs. Live broker arming remains disabled.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/assets.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/server.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/dashboard.html"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_engine/test_futures_universe_expansion.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/futures_universe_probe.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/FUTURES_UNIVERSE_2026_10_16.md"}
+  ],
+  "dependencies": [
+    "merged:reppiks490/Icarus-engine#179@029b944826be5b9edf72abfdd3a2980ba17c1c14",
+    "no-open-pr-match:RTY,M2K,CL,MCL,NG,MNG,HG,MHG,6E,M6E,6J,MJY,6B,M6B,6A,M6A,ZN,ZB"
+  ],
+  "evidence": [
+    "official:CME-FX-Product-Guide-2026",
+    "official:CME-Micro-E-mini-specs",
+    "official:CME-Micro-WTI",
+    "official:CME-Micro-Henry-Hub",
+    "official:CME-Micro-Copper",
+    "official:CME-US-Treasury-specs",
+    "public-source:Yahoo-futures-symbol-lookup"
+  ],
+  "next_action": "Create a current-main Engine branch; write failing contract tests for correct root/micro identity, multiplier/tick/session/feed metadata, API/UI exposure and provider-probe schema before modifying the registry. Do not claim a ticker connected unless a public source probe or existing qualified provider proves it.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
