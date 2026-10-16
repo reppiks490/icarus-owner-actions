@@ -194,83 +194,43 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "tools/a200_listing_crosswalk.py",
-        "icarus_engine/a200-listing-crosswalk.json",
         "icarus_engine/market_universe.py",
-        "icarus_engine/market-data-ui.js",
-        "tests_engine/test_a200_listing_crosswalk.py",
-        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+        "tests_engine/test_a200_listing_crosswalk.py"
       ],
       "declared_targets": [
-        {
-          "path": "tools/a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/a200-listing-crosswalk.json",
-          "repo": "reppiks490/Icarus"
-        },
         {
           "path": "icarus_engine/market_universe.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/market-data-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
           "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
           "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
         "pr:reppiks490/Icarus#428",
-        "exact-head-ci:ee06b2c"
+        "exact-head-ci:da66c0450bffe148beff0f4214f60ec574b29231"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T13:06:00Z",
-      "latest_summary": "Implemented and published A200 public listing identity crosswalk PR #428 at exact head ee06b2c. Fresh Nasdaq screener evidence matched 200/200 catalog identity tuples; fail-closed loader and UI report this separately while provider connectivity and all qualification/Pulse counts remain zero. Focused tests passed locally. Linux contract check passed; Windows and engine checks are running.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-16T13:15:00Z",
+      "latest_summary": "Hardened PR #428 to validate exact identity-only schemas, source endpoints and source retrieval timestamps, and to expire any source snapshot older than 24 hours. Added stale-source coverage. Exact head is da66c0450bffe148beff0f4214f60ec574b29231; the earlier ee06b2c workflows are still completing/cancelable and the new exact-head run is queued.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "ci-and-qualification-boundary",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "tools/a200_listing_crosswalk.py",
-        "icarus_engine/a200-listing-crosswalk.json",
         "icarus_engine/market_universe.py",
-        "icarus_engine/market-data-ui.js",
-        "tests_engine/test_a200_listing_crosswalk.py",
-        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+        "tests_engine/test_a200_listing_crosswalk.py"
       ],
       "reserved_targets": [
-        {
-          "path": "tools/a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/a200-listing-crosswalk.json",
-          "repo": "reppiks490/Icarus"
-        },
         {
           "path": "icarus_engine/market_universe.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/market-data-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
           "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -806,7 +766,7 @@
     "stale": 3,
     "terminal": 9
   },
-  "generated_at_utc": "2026-10-16T13:02:50.982866Z",
+  "generated_at_utc": "2026-10-16T13:06:59.094487Z",
   "owner_status": {
     "claude": {
       "active": false,

@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T131500Z-a200-crosswalk-source-staleness",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "at_utc": "2026-10-16T13:15:00Z",
+  "type": "UPDATE",
+  "phase": "ci-and-qualification-boundary",
+  "summary": "Hardened PR #428 to validate exact identity-only schemas, source endpoints and source retrieval timestamps, and to expire any source snapshot older than 24 hours. Added stale-source coverage. Exact head is da66c0450bffe148beff0f4214f60ec574b29231; the earlier ee06b2c workflows are still completing/cancelable and the new exact-head run is queued.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["icarus_engine/market_universe.py", "tests_engine/test_a200_listing_crosswalk.py"],
+  "dependencies": ["pr:reppiks490/Icarus#428", "exact-head-ci:da66c0450bffe148beff0f4214f60ec574b29231"],
+  "evidence": [
+    "focused A200 crosswalk, market universe, and dashboard test suites pass locally",
+    "Python compileall, Node syntax check, and git diff --check pass",
+    "public listing identity remains 200/200; source-connected and qualification counts remain zero"
+  ],
+  "next_action": "Track exact-head PR #428 checks; resolve any failures, then wait for non-conflicting runtime integration paths and authoritative per-provider mapping and entitlement evidence before claiming feed connection.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
