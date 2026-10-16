@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T030700Z-federation-entrypoint-adoption",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:07:00Z",
+  "type": "CLAIM",
+  "phase": "federation-entrypoint-adoption",
+  "summary": "Coordination bus and automatic maintenance are merged and runtime-verified. Claiming narrow entrypoint adoption paths in Icarus-engine and satellite repos. Icarus/AGENTS.md is intentionally excluded until PR #397 is reconciled because that active PR already edits it.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/icarus-csv-evidence-lab"
+  ],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "AGENTS.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/README.md"},
+    {"repo": "reppiks490/divine-providence", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-causal-router", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-csv-evidence-lab", "path": "AGENTS.md"}
+  ],
+  "dependencies": [
+    "commit:reppiks490/icarus-owner-actions@d4929c23ecb23d335268341b9f115f1b85104ca3",
+    "hold:reppiks490/Icarus#397:AGENTS.md-overlap"
+  ],
+  "evidence": [
+    "github-run:38843831287:success",
+    "commit:reppiks490/icarus-owner-actions@d4929c23ecb23d335268341b9f115f1b85104ca3"
+  ],
+  "next_action": "Audit open PR file overlaps in each claimed repo, then add only a central-bus pointer and model-neutral cooperation contract without overwriting repo-specific evidence rules.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
