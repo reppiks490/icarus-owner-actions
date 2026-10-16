@@ -1,0 +1,17 @@
+{
+  "schema_version":"icarus-coordination-event-v2",
+  "event_id":"chatgpt-20261016-atlas-coordination-ui-182-tool-routing-note",
+  "session_id":"chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc":"2026-10-16T05:06:00Z",
+  "type":"NOTE",
+  "phase":"repair",
+  "summary":"Tool-routing note: file writes remain confined to the coordination bus until the Engine repair branch exists. Engine main is not being modified further.",
+  "repos":["reppiks490/icarus-owner-actions"],
+  "paths":[],
+  "targets":[],
+  "dependencies":[],
+  "evidence":[],
+  "next_action":"Create Engine repair branch, then test-first changes.",
+  "coordination_mode":"cooperative",
+  "cooperates_with":[]
+}
