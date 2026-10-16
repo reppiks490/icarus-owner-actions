@@ -102,6 +102,75 @@
     },
     {
       "actor": "ChatGPT / Codex",
+      "branch": "codex/owner-contact-boundary-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "coordination/START_HERE.md",
+        "coordination/directives/2026-10-16-mass-chat-operating-contract.md",
+        "coordination/directives/2026-10-16-owner-contact-boundary.md",
+        "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json"
+      ],
+      "declared_targets": [
+        {
+          "path": "coordination/START_HERE.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-16-mass-chat-operating-contract.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-16-owner-contact-boundary.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "dependencies": [
+        "baseline coordination validator fix for pre-existing invalid event"
+      ],
+      "goal": "Persist the owner's explicit no-routine-contact preference for active ICARUS work so agents continue independently, coordinate through the bus, and do not ask the owner to perform manual steps while work remains.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T07:14:00Z",
+      "latest_summary": "Added the owner no-routine-contact directive and linked it from the coordination entrypoint and mass-chat operating contract. The new session and event validate individually. Full-tree validation currently stops on a pre-existing Atlas event whose coordination_mode is 'cooperative', which the validator rejects.",
+      "latest_type": "UPDATE",
+      "model_family": "openai",
+      "phase": "documentation",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "coordination/START_HERE.md",
+        "coordination/directives/2026-10-16-mass-chat-operating-contract.md",
+        "coordination/directives/2026-10-16-owner-contact-boundary.md",
+        "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json"
+      ],
+      "reserved_targets": [
+        {
+          "path": "coordination/START_HERE.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-16-mass-chat-operating-contract.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-16-owner-contact-boundary.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "session_id": "codex-20261016-owner-contact-boundary",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
       "branch": "feat/mobile-worlds-command-center",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -353,12 +422,12 @@
     }
   ],
   "counts": {
-    "active": 3,
+    "active": 4,
     "collisions": 1,
     "stale": 0,
     "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T07:16:06.995834Z",
+  "generated_at_utc": "2026-10-16T07:18:10.208144Z",
   "owner_status": {
     "claude": {
       "active": false,
