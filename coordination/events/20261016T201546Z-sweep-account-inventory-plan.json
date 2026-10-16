@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T201546Z-sweep-account-inventory-plan",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "at_utc": "2026-10-16T20:15:46Z",
+  "type": "PLAN",
+  "phase": "sweep-integrity-account-receipt",
+  "summary": "The post-merge three-account sweep sealing step ran successfully but found no sweep cache; the vault still has no NQ sweep entries. Persist an account-specific ledger-versus-vault receipt and fail the workflow when paid reductions are missing, preventing green wrappers from masking the existing 18 primary, 1 secondary, and 3 third account missing days.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/cl-depth-sweep.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/databento_sweep_inventory.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_databento_sweep_inventory.py"
+    }
+  ],
+  "dependencies": [
+    "merged:reppiks490/Icarus-engine#203",
+    "sweep-run:38960505869-success-no-sweep-vault-files"
+  ],
+  "evidence": [
+    "vault:sweep-group-absent",
+    "ledger:primary-paid-days=18",
+    "ledger:secondary-paid-days=1",
+    "ledger:third-paid-days=3",
+    "actions-cache:databento-sweep-prefix=0"
+  ],
+  "next_action": "Implement deterministic account-specific durability receipt and enforce an honest failure until data is recovered.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
