@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T125900Z-intrinio-ledger-refresh-claim",
+  "session_id": "codex-20261016-intrinio-ledger-refresh",
+  "at_utc": "2026-10-16T12:59:00Z",
+  "type": "CLAIM",
+  "phase": "documentation-evidence-refresh",
+  "summary": "Refresh stale evidence statements in the Engine data-gap ledger using current persisted receipts and exact merged-workflow evidence.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [{"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md"}],
+  "dependencies": ["pr:reppiks490/Icarus-engine#192", "run:reppiks490/Icarus#38865138563"],
+  "evidence": ["Owner review on PR #192 identifies stale Intrinio run, partial primary Databento sweep, and merged cadence repair with successful post-merge runs."],
+  "next_action": "Read current receipts and PR branch, refresh only claims supported by evidence, and run documentation/coordination validation.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
