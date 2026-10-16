@@ -10,7 +10,10 @@ on:
       - 'coordination/owner_status.json'
       - '.github/workflows/coordination-maintenance.yml'
   schedule:
-    - cron: '47 3 * * *'
+    # Keep the canonical compiled board fresh within five minutes of new
+    # coordination evidence, even when a connector's commit skipped triggers.
+    # Offset the cadence so this workflow does not align at minute zero.
+    - cron: '2-57/5 * * * *'
   workflow_dispatch:
     inputs:
       retention_days:
@@ -30,7 +33,7 @@ jobs:
   compile-and-maintain:
     runs-on: ubuntu-latest
     env:
-      RETENTION_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.retention_days || github.event_name == 'schedule' && '14' || '0' }}
+      RETENTION_DAYS: ${{ github.event_name == 'workflow_dispatch' && inputs.retention_days || '0' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -65,7 +68,10 @@ jobs:
               python -m coordination_fabric validate
             fi
             python -m coordination_fabric compile
-            python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+            # Publish collision diagnostics as part of the fresh snapshot. A
+            # declared collision is a coordination blocker to display, not a
+            # reason to keep publishing stale ACTIVE/index state.
+            python -c "import json; d=json.load(open('coordination/collisions.json')); assert isinstance(d.get('collisions'), list)"
             test -f coordination/ACTIVE.md
             test -f coordination/index.json
             test -f coordination/collisions.json

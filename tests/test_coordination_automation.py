@@ -19,6 +19,13 @@ class CoordinationAutomationContractTests(unittest.TestCase):
         self.assertIn('coordination/collisions.json', text)
         self.assertIn('git push', text)
 
+    def test_contract_workflow_accepts_and_publishes_visible_collision_diagnostics(self):
+        workflow = Path('.github/workflows/coordination-fabric.yml')
+        text = workflow.read_text(encoding='utf-8')
+        self.assertIn('Validate collision diagnostics are present', text)
+        self.assertIn("assert isinstance(d.get('collisions'), list)", text)
+        self.assertNotIn("assert not d['collisions']", text)
+
     def test_generated_files_do_not_retrigger_the_push_filter(self):
         workflow = Path('.github/workflows/coordination-maintenance.yml')
         self.assertTrue(workflow.exists(), 'coordination maintenance workflow is missing')
