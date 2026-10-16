@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T032250Z-coordination-ui-scope-refine",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:22:50Z",
+  "type": "UPDATE",
+  "phase": "coordination-ui",
+  "summary": "Refined the coordination UI to the existing MCP/Automation seam: mirror the public central index into Engine evidence every five minutes, read it locally in MCPControlPlane with no runtime network I/O, and render a read-only Multi-chat coordination section in mcp-ui.js. Avoiding server.py/dashboard.html mutations reduces collision and preserves CSP/loopback behavior.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [
+    ".github/workflows/coordination-mirror.yml",
+    "icarus_engine/mcp_control.py",
+    "icarus_engine/mcp-ui.js",
+    "tests_engine/test_mcp_control.py",
+    "tests_engine/test_dashboard_js.py",
+    "tests/test_multichat_coordination_entrypoint.py"
+  ],
+  "dependencies": ["coordination-bus:main", "owner-actions:coordination/index.json"],
+  "evidence": ["engine:mcp-control-local-repository-snapshot", "engine:mcp-ui-existing-read-only-tab"],
+  "next_action": "Write failing local-snapshot/mirror/UI contracts, then implement the mirror, parser/status field, and read-only panel.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
