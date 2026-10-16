@@ -312,57 +312,20 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "icarus_engine/command-centers-ui.js",
-        "icarus_engine/dashboard.html",
-        "icarus_engine/experience-ui.css",
-        "icarus_engine/experience-ui.js",
-        "icarus_engine/world-aura.js",
-        "icarus_engine/world-cinema.js",
-        "icarus_engine/world-immersion.js",
-        "icarus_engine/world-motion.js",
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
         "assets/dashboard.html",
         "assets/command-centers-ui.js",
         "assets/experience-ui.css",
-        "assets/experience-ui.js",
-        "assets/world-aura.js",
-        "assets/world-cinema.js",
-        "assets/world-immersion.js",
-        "assets/world-motion.js",
-        "scripts/build-worker.mjs",
-        "worker/index.js",
-        "dist/server/index.js"
+        "scripts/build-worker.mjs"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/command-centers-ui.js",
+          "path": "icarus_engine/paper_workspaces.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.css",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-aura.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-cinema.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-immersion.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-motion.js",
+          "path": "tests_engine/test_paper_workspaces.py",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -378,56 +341,60 @@
           "repo": "sites/icarus-command-center-mobile"
         },
         {
-          "path": "assets/experience-ui.js",
+          "path": "scripts/build-worker.mjs",
+          "repo": "sites/icarus-command-center-mobile"
+        }
+      ],
+      "dependencies": [
+        "reppiks490/Icarus backend branch 751618a",
+        "independent review paper_backend_review",
+        "coordination collisions refreshed 2026-10-16T12:12:39Z"
+      ],
+      "goal": "Bring the current four-isolated-paper-portfolio Command Center, combined net P&L, and current atmosphere assets into the owner-private phone Site, then validate and publish the same source state.",
+      "home_repo": "sites/icarus-command-center-mobile",
+      "last_event_at_utc": "2026-10-16T12:17:00Z",
+      "latest_summary": "The current backend branch includes truthful persisted realized/open/replay P&L fields and passes 81 focused tests locally. Independent review found flatten may short-circuit on the first runner exception after pausing all runners, leaving later portfolios unattempted without a partial-result receipt. I am extending the workstream to harden the paper-only flatten flow and tests before consuming the API from the phone Site. No broker/live execution authority is involved.",
+      "latest_type": "UPDATE",
+      "model_family": "openai",
+      "phase": "paper-ledger-reliability-review",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
+        "assets/dashboard.html",
+        "assets/command-centers-ui.js",
+        "assets/experience-ui.css",
+        "scripts/build-worker.mjs"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "assets/dashboard.html",
           "repo": "sites/icarus-command-center-mobile"
         },
         {
-          "path": "assets/world-aura.js",
+          "path": "assets/command-centers-ui.js",
           "repo": "sites/icarus-command-center-mobile"
         },
         {
-          "path": "assets/world-cinema.js",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/world-immersion.js",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/world-motion.js",
+          "path": "assets/experience-ui.css",
           "repo": "sites/icarus-command-center-mobile"
         },
         {
           "path": "scripts/build-worker.mjs",
           "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "worker/index.js",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "dist/server/index.js",
-          "repo": "sites/icarus-command-center-mobile"
         }
       ],
-      "dependencies": [
-        "reppiks490/Icarus `origin/main` current at source checkout",
-        "backend contract review by command_center_backend",
-        "mobile UI review by mobile_audit"
-      ],
-      "goal": "Bring the current four-isolated-paper-portfolio Command Center, combined net P&L, and current atmosphere assets into the owner-private phone Site, then validate and publish the same source state.",
-      "home_repo": "sites/icarus-command-center-mobile",
-      "last_event_at_utc": "2026-10-16T06:10:00Z",
-      "latest_summary": "The desktop UI source is being completed by the delegated desktop worker on `feat/command-center-desktop`. This event adds its source paths to the coordinated workstream so the phone Site can consume the exact reviewed source. The desktop diff predates this central claim; no further mutations in these paths should occur until the refreshed collision view is checked. UI imports the legacy tail/reference renderer out; dormant backend routes/files remain a separate server concern.",
-      "latest_type": "UPDATE",
-      "model_family": "openai",
-      "phase": "desktop-ui-source-and-mobile-integration",
-      "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
       "session_id": "codex-20261016-phone-command-center-site",
-      "stale": true,
+      "stale": false,
       "status": "active"
     }
   ],
@@ -435,10 +402,10 @@
   "counts": {
     "active": 6,
     "collisions": 0,
-    "stale": 5,
+    "stale": 4,
     "terminal": 6
   },
-  "generated_at_utc": "2026-10-16T12:12:39.254360Z",
+  "generated_at_utc": "2026-10-16T12:16:03.092251Z",
   "owner_status": {
     "claude": {
       "active": false,
