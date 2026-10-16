@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123550Z-plan-shadow-dashboard-overlay",
+  "session_id": "codex-20261016-shadow-dashboard-overlay",
+  "at_utc": "2026-10-16T12:35:50Z",
+  "type": "PLAN",
+  "phase": "verification",
+  "summary": "Complete the read-only Shadow Twin dashboard overlay follow-up on PR #417. The fixed launcher and dedicated panel must preserve cinematic/world layout, expose existing RT01 evidence only, and never enable execution.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["icarus_engine/shadow-twin-ui.js", "tests_engine/browser_shadow_twin.cjs", "tests_engine/test_dashboard_js.py", ".github/workflows/ui-visual-contract.yml"],
+  "dependencies": ["PR #417 exact-head CI", "merged PR #377 dashboard integration"],
+  "evidence": ["PR #417 head ae5feba74b390822ca483a9a907016cac0526b3e", "focused tests 101 passed", "local browser contract passed; hosted checks pending"],
+  "next_action": "Monitor exact-head CI; resolve only reproducible failures and publish WAITING/UPDATE/HANDOFF/COMPLETE with evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

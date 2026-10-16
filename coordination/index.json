@@ -669,16 +669,85 @@
       "session_id": "codex-20261016-real-price-shadow-twin",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "Codex",
+      "branch": "codex/shadow-dashboard-fixed-overlay-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "icarus_engine/shadow-twin-ui.js",
+        "tests_engine/browser_shadow_twin.cjs",
+        "tests_engine/test_dashboard_js.py",
+        ".github/workflows/ui-visual-contract.yml"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/shadow-twin-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_shadow_twin.cjs",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_dashboard_js.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "PR #417 hosted browser, Windows engine, and historical-context consumer checks"
+      ],
+      "goal": "Finish the RT01 Shadow Twin dashboard overlay follow-up, preserve existing cinematic layout, and verify the exact shared PR head while keeping all execution read-only.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:37:00Z",
+      "latest_summary": "PR #417 exact-head validation is still running. The local browser fixture and focused test suites pass; no execution authority is enabled.",
+      "latest_type": "WAITING",
+      "model_family": "openai",
+      "phase": "ci",
+      "pr": 417,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/shadow-twin-ui.js",
+        "tests_engine/browser_shadow_twin.cjs",
+        "tests_engine/test_dashboard_js.py",
+        ".github/workflows/ui-visual-contract.yml"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/shadow-twin-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_shadow_twin.cjs",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_dashboard_js.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261016-shadow-dashboard-overlay",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 10,
+    "active": 11,
     "collisions": 0,
     "stale": 4,
     "terminal": 6
   },
-  "generated_at_utc": "2026-10-16T12:36:26.502336Z",
+  "generated_at_utc": "2026-10-16T12:36:20.383058Z",
   "owner_status": {
     "claude": {
       "active": false,
