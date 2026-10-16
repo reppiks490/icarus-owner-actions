@@ -119,73 +119,11 @@
       "model_family": "openai",
       "phase": "system-convergence",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
-        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
-        "icarus_engine/system_index.py",
-        "icarus_engine/futures_catalog.py",
-        "icarus_engine/assets.py",
-        "icarus_futures/contracts.py",
-        "icarus_engine/asset_command_center.py",
-        "icarus_engine/brain_evidence.py",
-        "tests_engine/test_system_index.py",
-        "tests_engine/test_futures_catalog.py",
-        "tests_engine/test_asset_command_center.py",
-        "tests_engine/test_brain_evidence.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/system_index.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/futures_catalog.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/assets.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_futures/contracts.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/asset_command_center.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_system_index.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_futures_catalog.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_asset_command_center.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "chatgpt-20261016-atlas-system-convergence",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -213,17 +151,16 @@
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#415 asset registry integration",
-        "pr:reppiks490/Icarus#421 runtime/server integration",
-        "pr:reppiks490/Icarus#424 runtime/server integration",
-        "provider-evidence:A200 mapping and product entitlement",
-        "provider-evidence:qualified licensed durable history and live bars"
+        "pr:reppiks490/Icarus#440 runtime.py feed freshness integration",
+        "pr:reppiks490/Icarus#415 assets.py registry integration",
+        "provider-evidence:A200 authoritative mapping and product entitlement",
+        "provider-evidence:licensed durable 200-instrument history and qualified live feed"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T13:25:00Z",
-      "latest_summary": "A200 listing identity evidence merged to Icarus main as 6e40d0b5ef27c4835a011480cec2f39c830f39ef via PR #428 after Linux/Windows exact-head checks passed. Current main snapshot validates the fresh crosswalk at 200/200 while provider connection, entitlement, historical/live qualification, Pulse, and strategy counts remain 0. Runtime/asset integration PRs #415, #421, and #424 remain open; canonical provider evidence still lacks per-A200 mapped/entitled datasets and qualified durable bars.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-16T19:47:00Z",
+      "latest_summary": "Refreshed canonical provider and PR state after A200 crosswalk merge. PR #421 merged as 805764f, PR #423 merged as 7eb0a88, and stacked PR #424 closed unmerged. PR #440 remains open and owns runtime.py; PR #415 remains open and owns assets.py. Current provider receipts still do not qualify A200: Massive has 20k generic rows but asset_datasets_collected=0; FMP has 0 rows in its latest generic receipt and 85 endpoint denials. Engine's external data fabric has EODHD 1-year daily bars for 10 A200 symbols, a partial research sample only. Icarus A200 ledger remains Yahoo responses 200/200 but PROVISIONAL identity, UNKNOWN entitlement, zero historical qualification, FMP NOT_CONFIGURED. Public listing identity crosswalk remains separate at 200/200.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
@@ -286,28 +223,11 @@
       "model_family": "openai",
       "phase": "handoff",
       "pr": 418,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/calendar.py",
-        "icarus_engine/market_universe_adapter.py",
-        "tests_engine/test_market_universe.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/calendar.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/market_universe_adapter.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-a200-timezone-provenance",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -368,11 +288,11 @@
       "model_family": "openai",
       "phase": "review",
       "pr": null,
-      "reclaimable": false,
+      "reclaimable": true,
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-futures-pr-review",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -406,23 +326,11 @@
       "model_family": "openai",
       "phase": "documentation-consistency",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-        "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-intrinio-doc-consistency",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -543,63 +451,11 @@
       "model_family": "openai",
       "phase": "ci-and-backend-integration",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/command-centers-ui.js",
-        "icarus_engine/dashboard.html",
-        "icarus_engine/experience-ui.css",
-        "icarus_engine/experience-ui.js",
-        "icarus_engine/world-aura.js",
-        "icarus_engine/world-cinema.js",
-        "icarus_engine/world-immersion.js",
-        "icarus_engine/world-motion.js",
-        "assets/dashboard.html",
-        "assets/command-centers-ui.js"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/command-centers-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.css",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-aura.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-cinema.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-immersion.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-motion.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "assets/dashboard.html",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/command-centers-ui.js",
-          "repo": "sites/icarus-command-center-mobile"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-phone-command-center-site",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -657,48 +513,11 @@
       "model_family": "openai",
       "phase": "verification",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/shadow_twin.py",
-        "icarus_engine/shadow_evidence_events.py",
-        "icarus_engine/runtime.py",
-        "icarus_engine/cli.py",
-        "tests_engine/test_shadow_twin.py",
-        "tests_engine/test_shadow_evidence_events.py",
-        "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/runtime.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/cli.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-real-price-shadow-twin",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -742,33 +561,11 @@
       "model_family": "openai",
       "phase": "ci",
       "pr": 417,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/shadow-twin-ui.js",
-        "tests_engine/browser_shadow_twin.cjs",
-        "tests_engine/test_dashboard_js.py",
-        ".github/workflows/ui-visual-contract.yml"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/shadow-twin-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/browser_shadow_twin.cjs",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_dashboard_js.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/ui-visual-contract.yml",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-shadow-dashboard-overlay",
-      "stale": false,
+      "stale": true,
       "status": "active"
     }
   ],
@@ -776,10 +573,10 @@
   "counts": {
     "active": 11,
     "collisions": 0,
-    "stale": 3,
+    "stale": 10,
     "terminal": 9
   },
-  "generated_at_utc": "2026-10-16T13:16:02.698727Z",
+  "generated_at_utc": "2026-10-16T19:47:50.832873Z",
   "owner_status": {
     "claude": {
       "active": false,
