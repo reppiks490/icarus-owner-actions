@@ -1,0 +1,7 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "status": "superseded",
+  "summary": "# Session summary: codex-20261016-ui-pointer-contract-fix\n\nThe scoped browser-depth test repair was published to stacked PR #424, whose final head was `17c7aebdebe1477a5972c299e8125f85a044151d`. Exact-head Actions passed: UI visual run `38906554608`, Linux/Windows tests `38906554948`, configuration `38906555206`, source-data `38906554781`, intelligence-feed `38906555079`, and federation-consumer `38906554923`.\n\nOwner subsequently merged paper API PR #421 at `805764f570dbc74dc1affd3cc5f51d8017b586ba` and desktop UI PR #423 at `7eb0a8818173842ace677f626ee79e4f74f4394b`, then closed #424 as superseded. The test-only commit is therefore not on main and no longer needs cherry-picking unless a new failure reproduces.\n\nNo live broker was connected and no authorization boundary changed. Session paths are released.",
+  "finished_at_utc": "2026-10-16T20:10:00Z"
+}
