@@ -4,7 +4,7 @@ on:
     paths:
       - 'coordination_fabric/**'
       - 'coordination/**'
-      - 'tests/test_coordination_fabric.py'
+      - 'tests/test_coordination*.py'
       - 'AGENTS.md'
       - '.github/workflows/coordination-fabric.yml'
   push:
@@ -12,7 +12,7 @@ on:
     paths:
       - 'coordination_fabric/**'
       - 'coordination/**'
-      - 'tests/test_coordination_fabric.py'
+      - 'tests/test_coordination*.py'
       - 'AGENTS.md'
       - '.github/workflows/coordination-fabric.yml'
   workflow_dispatch:
@@ -35,7 +35,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Coordination fabric contract
-        run: python -m unittest tests.test_coordination_fabric -v
+        run: python -m unittest discover -s tests -p 'test_coordination*.py' -v
       - name: Existing mission compiler regression
         run: python -m unittest tests.test_mission_compiler -v
       - name: Validate live coordination records
