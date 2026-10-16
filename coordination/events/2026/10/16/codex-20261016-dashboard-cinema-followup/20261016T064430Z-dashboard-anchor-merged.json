@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T064430Z-dashboard-anchor-merged",
+  "session_id": "codex-20261016-dashboard-cinema-followup",
+  "at_utc": "2026-10-16T06:44:30Z",
+  "type": "UPDATE",
+  "phase": "verification",
+  "summary": "Merged concurrent same-branch popover clamp commit 256570e with the local vertical clamp and reflow-safe placement. The open panel is viewport-fixed and anchored to the summary with left/top clamped; mobile keeps its bottom-sheet rules. Standalone browser_cinema passed after merge. Pushed exact dashboard head ca75790; hosted checks are the next gate.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/experience-ui.css",
+    "icarus_engine/experience-ui.js"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#377",
+    "github-run:38861946952",
+    "concurrent-commit:256570eba593c8abed96f401e4495c88828fd107"
+  ],
+  "evidence": [
+    "local browser_cinema.cjs passed after merge on local head ca75790",
+    "git diff --cached --check passed at merge commit",
+    "latest branch head is ca75790"
+  ],
+  "next_action": "Run complete local browser sequence and wait for exact-head hosted checks; continue read-only review of the paired shadow payload PRs."
+}
