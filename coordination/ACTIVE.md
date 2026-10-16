@@ -1,9 +1,9 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-16T03:20:50.706649Z`
+Generated: `2026-10-16T03:23:21.753508Z`
 
 Active sessions: **1** · Stale/reclaimable: **0** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
-| `chatgpt-20261016-atlas-coordination-futures` | coordination-ui | `reppiks490/icarus-owner-actions` / `multi-repo/continuous` | Refined the coordination UI to the existing MCP/Automation seam: mirror the public central index into Engine evidence every five minutes, read it locally in MCPControlPlane with no runtime network I/O, and render a read-only Multi-chat coordination section in mcp-ui.js. Avoiding server.py/dashboard.html mutations reduces collision and preserves CSP/loopback behavior. | coordination-bus:main<br>owner-actions:coordination/index.json | reppiks490/Icarus-engine:.github/workflows/coordination-mirror.yml<br>reppiks490/Icarus-engine:icarus_engine/mcp_control.py<br>reppiks490/Icarus-engine:icarus_engine/mcp-ui.js<br>reppiks490/Icarus-engine:tests_engine/test_mcp_control.py<br>reppiks490/Icarus-engine:tests_engine/test_dashboard_js.py<br>reppiks490/Icarus-engine:tests/test_multichat_coordination_entrypoint.py |
+| `chatgpt-20261016-atlas-coordination-futures` | coordination-ui-tdd-red | `reppiks490/icarus-owner-actions` / `multi-repo/continuous` | Waiting on Engine PR #182 run 38845135614 to finish the intentionally failing coordination mirror/MCP/UI contract. Provenance, zero-dependency core, and CLI jobs are already green; Python 3.11/3.12/3.13 combined suites are still running. Central collision view is clean, so no competing UI target claim exists. | pr:reppiks490/Icarus-engine#182<br>github-run:38845135614 | reppiks490/Icarus-engine:tests_engine/test_mcp_control.py |
