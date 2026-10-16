@@ -159,6 +159,45 @@ class CoordinationFabricContractTests(unittest.TestCase):
             self.assertFalse(any((root / p).exists() for p in removed))
             self.assertTrue(any((root / "coordination/events").glob("**/active/*.json")))
 
+    def test_scales_to_64_parallel_chats_with_precise_collision_accounting(self):
+        compile_state, _, _, _ = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for i in range(64):
+                sid = f"chat-{i:02d}"
+                _session(root, sid, stale=180)
+                # 62 chats reserve unique narrow files. The last two deliberately
+                # overlap with chat-00 to prove large-N collision accounting stays exact.
+                if i == 62:
+                    path = "workstreams/00"
+                elif i == 63:
+                    path = "workstreams/00/shared.py"
+                else:
+                    path = f"workstreams/{i:02d}/task.py"
+                _event(
+                    root,
+                    sid,
+                    f"2026-10-16T02:{i % 60:02d}:00Z",
+                    "CLAIM",
+                    paths=[path],
+                    summary=f"chat {i} active",
+                )
+            now = datetime(2026, 10, 16, 3, 0, tzinfo=timezone.utc)
+            state = compile_state(root, now=now)
+            self.assertEqual(state["counts"]["active"], 64)
+            self.assertEqual(state["counts"]["stale"], 0)
+            pairs = {tuple(sorted(item["sessions"])) for item in state["collisions"]}
+            self.assertEqual(
+                pairs,
+                {
+                    ("chat-00", "chat-62"),
+                    ("chat-00", "chat-63"),
+                    ("chat-62", "chat-63"),
+                },
+            )
+            # Compilation must remain deterministic at this scale.
+            self.assertEqual(state, compile_state(root, now=now))
+
 
 if __name__ == "__main__":
     unittest.main()
