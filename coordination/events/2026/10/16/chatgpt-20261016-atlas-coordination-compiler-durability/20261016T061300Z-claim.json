@@ -14,6 +14,6 @@
   "dependencies": ["current compiled snapshot:2026-10-16T04:51:27.767228Z", "new coordination events through 2026-10-16T06:10Z"],
   "evidence": ["coordination/ACTIVE.md still lists completed PR #182 session", "new Codex phone Command Center session exists but is absent from compiled ACTIVE.md"],
   "next_action": "Create isolated branch, add RED schedule-fallback contract, implement shifted five-minute maintenance schedule, verify CI and post-merge compiled state.",
-  "coordination_mode": "cooperative",
+  "coordination_mode": "cooperate",
   "cooperates_with": ["codex-20261016-phone-command-center-site", "chatgpt-20261016-atlas-data-health-accuracy"]
 }
