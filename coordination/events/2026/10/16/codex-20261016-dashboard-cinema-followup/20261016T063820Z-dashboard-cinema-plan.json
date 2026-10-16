@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T063820Z-dashboard-cinema-plan",
+  "session_id": "codex-20261016-dashboard-cinema-followup",
+  "at_utc": "2026-10-16T06:38:20Z",
+  "type": "PLAN",
+  "phase": "verification",
+  "summary": "Fix the settings popover viewport overflow found by exact-head browser CI for PR #377. Verify the browser contract and follow-up exact-head hosted checks; then integrate the RT01 dashboard only after all required checks pass. Also monitor A200 hybrid probe PR #403 since its work is an active adjacent integration dependency; do not touch its reserved files.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/experience-ui.css"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#377",
+    "pr:reppiks490/Icarus#403"
+  ],
+  "evidence": [
+    "PR #377 updated head 7fd3e84d6e3f80047b1e187669f69da8ff90fd09",
+    "local browser_cinema.cjs passed on fix",
+    "A200 test_market_universe.py passed on PR #403 head"
+  ],
+  "next_action": "Wait for exact-head GitHub Actions to finish; continue useful read-only review of adjacent non-broker tasks meanwhile."
+}
