@@ -76,7 +76,8 @@ class RepoQualifiedTargetTests(unittest.TestCase):
             self.assertEqual(len(state["collisions"]), 1)
             collision = state["collisions"][0]
             self.assertEqual(collision["repo"], "reppiks490/Icarus-engine")
-            self.assertEqual(collision["target_pairs"], [["icarus_engine/assets.py", "icarus_engine"]])
+            # Preserve the v2 path_pairs key while repo qualifies the lock domain.
+            self.assertEqual(collision["path_pairs"], [["icarus_engine/assets.py", "icarus_engine"]])
 
     def test_cross_repo_event_reserves_every_declared_target(self):
         from coordination_fabric import compile_state, render_active
