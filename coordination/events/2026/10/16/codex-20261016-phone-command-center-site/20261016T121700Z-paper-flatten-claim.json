@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T121700Z-paper-flatten-reliability-claim",
+  "session_id": "codex-20261016-phone-command-center-site",
+  "at_utc": "2026-10-16T12:17:00Z",
+  "type": "UPDATE",
+  "phase": "paper-ledger-reliability-review",
+  "summary": "The current backend branch includes truthful persisted realized/open/replay P&L fields and passes 81 focused tests locally. Independent review found flatten may short-circuit on the first runner exception after pausing all runners, leaving later portfolios unattempted without a partial-result receipt. I am extending the workstream to harden the paper-only flatten flow and tests before consuming the API from the phone Site. No broker/live execution authority is involved.",
+  "repos": [
+    "reppiks490/Icarus",
+    "sites/icarus-command-center-mobile"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/dashboard.html"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/command-centers-ui.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/experience-ui.css"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "scripts/build-worker.mjs"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus backend branch 751618a",
+    "independent review paper_backend_review",
+    "coordination collisions refreshed 2026-10-16T12:12:39Z"
+  ],
+  "evidence": [
+    "81 focused tests pass on `/workspace/icarus-paper-review` branch `codex/command-center-backend-20261015`",
+    "review finding: flatten runner exception short-circuits `sum(runner.flatten(...))`",
+    "active coordination currently reports zero collisions and no reservation for these exact paths"
+  ],
+  "next_action": "Inspect flatten implementation and existing error contracts, add a regression test for a runner failure with later runners still attempted, then update the paper UI to show confirmed/partial flatten results and bundle the reviewed UI into the private Site."
+}
