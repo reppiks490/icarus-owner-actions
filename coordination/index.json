@@ -6,33 +6,28 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "icarus_engine/coordination_view.py",
-        "icarus_engine/coordination-ui.js",
-        "icarus_engine/server.py",
-        "icarus_engine/dashboard.html",
-        "tests_engine/test_coordination_view.py",
+        ".github/workflows/coordination-mirror.yml",
+        "icarus_engine/mcp_control.py",
+        "icarus_engine/mcp-ui.js",
+        "tests_engine/test_mcp_control.py",
         "tests_engine/test_dashboard_js.py",
         "tests/test_multichat_coordination_entrypoint.py"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/coordination_view.py",
+          "path": ".github/workflows/coordination-mirror.yml",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/coordination-ui.js",
+          "path": "icarus_engine/mcp_control.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/server.py",
+          "path": "icarus_engine/mcp-ui.js",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_engine/test_coordination_view.py",
+          "path": "tests_engine/test_mcp_control.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
@@ -46,45 +41,40 @@
       ],
       "dependencies": [
         "coordination-bus:main",
-        "pr:reppiks490/Icarus#397"
+        "owner-actions:coordination/index.json"
       ],
       "goal": "Finish federation closure, deploy and harden multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-16T03:20:00Z",
-      "latest_summary": "Cross-repo coordination policy is on main or under exact-head verification. Building a read-only Engine coordination snapshot/API/dashboard tab so every operator/agent can see active chats, phases, waits, dependencies, repo-qualified reservations, stale/reclaimable work, Claude status, and collisions. No mutation or live execution controls.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-16T03:22:50Z",
+      "latest_summary": "Refined the coordination UI to the existing MCP/Automation seam: mirror the public central index into Engine evidence every five minutes, read it locally in MCPControlPlane with no runtime network I/O, and render a read-only Multi-chat coordination section in mcp-ui.js. Avoiding server.py/dashboard.html mutations reduces collision and preserves CSP/loopback behavior.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "coordination-ui",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/coordination_view.py",
-        "icarus_engine/coordination-ui.js",
-        "icarus_engine/server.py",
-        "icarus_engine/dashboard.html",
-        "tests_engine/test_coordination_view.py",
+        ".github/workflows/coordination-mirror.yml",
+        "icarus_engine/mcp_control.py",
+        "icarus_engine/mcp-ui.js",
+        "tests_engine/test_mcp_control.py",
         "tests_engine/test_dashboard_js.py",
         "tests/test_multichat_coordination_entrypoint.py"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/coordination_view.py",
+          "path": ".github/workflows/coordination-mirror.yml",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/coordination-ui.js",
+          "path": "icarus_engine/mcp_control.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/server.py",
+          "path": "icarus_engine/mcp-ui.js",
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_engine/test_coordination_view.py",
+          "path": "tests_engine/test_mcp_control.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
@@ -108,7 +98,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:19:30.385050Z",
+  "generated_at_utc": "2026-10-16T03:20:50.706649Z",
   "owner_status": {
     "claude": {
       "active": false,
