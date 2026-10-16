@@ -1,11 +1,11 @@
 {
   "schema_version": "icarus-coordination-event-v2",
-  "event_id": "20261016T200100Z-a200-runtime-bridge-pr443-update",
+  "event_id": "20261016T201400Z-a200-runtime-bridge-ci-wait",
   "session_id": "codex-20261016-a200-listing-qualification",
-  "at_utc": "2026-10-16T20:01:00Z",
-  "type": "UPDATE",
+  "at_utc": "2026-10-16T20:14:00Z",
+  "type": "WAITING",
   "phase": "provider-qualification-and-runtime-connection",
-  "summary": "Implemented the isolated receipt-preserving A200 runtime boundary and opened PR #443 at 2270e67 after rebasing on PR #441 current main. The bridge carries canonical instrument_id and exact BarBatchReceipt, assesses identity/mapping/entitlement/history/live-feed gates, and always keeps execution unauthorized. Focused tests pass. PR #415 remains open on assets.py; latest exact-head Linux engine checks fail while Windows passes, and PR #443 exact-head Linux/Windows checks are pending.",
+  "summary": "PR #443 is open at exact head 2270e67. Local focused tests and compile checks pass. Both exact-head Linux and Windows workflow runs have been in progress since 19:55Z with broad engine pytest still running; no failure result is available. PR #444 remains open with the CL paper-readiness fix, and its exact-head CI is also pending. A200 provider gates remain zero.",
   "repos": [
     "reppiks490/Icarus"
   ],
@@ -25,19 +25,17 @@
     }
   ],
   "dependencies": [
-    "pr:reppiks490/Icarus#443@2270e67 exact-head CI and review",
-    "pr:reppiks490/Icarus#415@cfa97333bbccbb0a62da4802b3d9b495f9ec347d asset registry path",
-    "provider-evidence:A200 authoritative mapping and product entitlement",
-    "provider-evidence:licensed durable per-instrument history and qualified live feed"
+    "pr:reppiks490/Icarus#443@2270e67 exact-head Actions runs 38958422591 and 38958427775",
+    "pr:reppiks490/Icarus#444@735d4440c9662bf74670c4a0cb5fa436a6c63577 exact-head CI",
+    "A200 provider mapping, entitlement, qualified history and live feed evidence"
   ],
   "evidence": [
-    "PR #443 open: https://github.com/reppiks490/Icarus/pull/443",
-    "Focused pytest tests_engine/test_a200_runtime_bridge.py tests_engine/test_market_universe.py passed after rebasing onto 4c7ef2c (PR #441).",
+    "pytest -q tests_engine/test_a200_runtime_bridge.py tests_engine/test_market_universe.py passed (46 tests).",
     "python -m compileall and git diff --check passed.",
-    "PR #415 checks: Linux engine jobs 38910078926 and 38910087247 failed; Windows jobs passed; pytest diagnostic passed. GitHub denied retrieval of the private Actions job log from the signed result-storage URL, so failure details are not established.",
-    "A200 still has zero source-connected, entitlement-verified, historical/live-qualified, Pulse-enabled, or strategy-qualified instruments."
+    "At 2026-10-16T20:13Z, GitHub reports PR #443 engine and engine-windows jobs in progress; broad engine pytest is executing.",
+    "PR #444 CI checks pending."
   ],
-  "next_action": "Review exact PR #443 CI and resolve failures if any. Continue provider-evidence qualification and integration planning without editing assets.py while PR #415 owns it. Obtain a permitted exact failure summary for PR #415 or inspect its author updates; do not infer a fix from unavailable logs.",
+  "next_action": "Continue useful non-overlapping A200 provider qualification and adapter-contract review while CI runs; inspect and address any exact-head failures before merging. Do not touch assets.py while #415/#414/#444 integration work owns it.",
   "coordination_mode": "independent",
   "cooperates_with": []
 }

@@ -151,16 +151,15 @@
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#443@2270e67 exact-head CI and review",
-        "pr:reppiks490/Icarus#415@cfa97333bbccbb0a62da4802b3d9b495f9ec347d asset registry path",
-        "provider-evidence:A200 authoritative mapping and product entitlement",
-        "provider-evidence:licensed durable per-instrument history and qualified live feed"
+        "pr:reppiks490/Icarus#443@2270e67 exact-head Actions runs 38958422591 and 38958427775",
+        "pr:reppiks490/Icarus#444@735d4440c9662bf74670c4a0cb5fa436a6c63577 exact-head CI",
+        "A200 provider mapping, entitlement, qualified history and live feed evidence"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T20:01:00Z",
-      "latest_summary": "Implemented the isolated receipt-preserving A200 runtime boundary and opened PR #443 at 2270e67 after rebasing on PR #441 current main. The bridge carries canonical instrument_id and exact BarBatchReceipt, assesses identity/mapping/entitlement/history/live-feed gates, and always keeps execution unauthorized. Focused tests pass. PR #415 remains open on assets.py; latest exact-head Linux engine checks fail while Windows passes, and PR #443 exact-head Linux/Windows checks are pending.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-16T20:14:00Z",
+      "latest_summary": "PR #443 is open at exact head 2270e67. Local focused tests and compile checks pass. Both exact-head Linux and Windows workflow runs have been in progress since 19:55Z with broad engine pytest still running; no failure result is available. PR #444 remains open with the CL paper-readiness fix, and its exact-head CI is also pending. A200 provider gates remain zero.",
+      "latest_type": "WAITING",
       "model_family": "openai",
       "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
@@ -516,7 +515,7 @@
     "stale": 9,
     "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T19:55:26.499108Z",
+  "generated_at_utc": "2026-10-16T19:57:21.114178Z",
   "owner_status": {
     "claude": {
       "active": false,
