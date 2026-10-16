@@ -1,11 +1,11 @@
 {
   "schema_version": "icarus-coordination-event-v2",
-  "event_id": "20261016T202200Z-a200-runtime-bridge-ci-heartbeat",
+  "event_id": "20261016T202500Z-a200-runtime-bridge-review-fixes",
   "session_id": "codex-20261016-a200-listing-qualification",
-  "at_utc": "2026-10-16T20:22:00Z",
-  "type": "HEARTBEAT",
+  "at_utc": "2026-10-16T20:25:00Z",
+  "type": "UPDATE",
   "phase": "provider-qualification-and-runtime-connection",
-  "summary": "A200 bridge PR #443 remains open at 2270e67 with no review comments. Focused receipt-boundary tests pass locally (46 tests), and the branch remains clean. Both hosted Linux/Windows full-engine pytest jobs for #443 and stacked #444 are still in progress; no exact-head failure has surfaced. Provider qualification remains blocked by missing verified A200 mapping, entitlement, licensed history, and live-feed evidence.",
+  "summary": "Addressed both exact-head review findings on A200 runtime bridge PR #443. Head df735353 copies mutable bar inputs to an immutable tuple and recomputes the canonical OHLCV SHA-256 against the receipt, with regressions for same-count OHLCV substitution and caller-list mutation. Focused bridge/market-universe suite passes (48 tests); compileall and diff-check pass. GitHub reports mergeState CLEAN; exact-head Linux/Windows runs 38959013195 and 38959003877 are queued. Prior Linux runs on 2270e67 passed; prior Windows runs remain active.",
   "repos": [
     "reppiks490/Icarus"
   ],
@@ -25,17 +25,18 @@
     }
   ],
   "dependencies": [
-    "pr:reppiks490/Icarus#443@2270e67 runs 38958422591 and 38958427775",
-    "pr:reppiks490/Icarus#444@735d4440c9662bf74670c4a0cb5fa436a6c63577 runs 38958447513 and 38958463969",
-    "A200 provider mapping, entitlement, qualified history and live feed evidence"
+    "pr:reppiks490/Icarus#443@df735353bea4f8b6fd8e97e3e6972ebbf0efafab exact-head runs 38959013195 and 38959003877",
+    "provider-evidence:A200 authoritative mapping and product entitlement",
+    "provider-evidence:licensed durable per-instrument history and qualified live feed"
   ],
   "evidence": [
-    "Focused pytest tests_engine/test_a200_runtime_bridge.py tests_engine/test_market_universe.py passed again (46 tests).",
-    "PR #443 engine and engine-windows jobs remain in pytest steps at 2026-10-16T20:22Z.",
-    "PR #444 exact-head engine checks remain pending/in progress.",
-    "No provider/runtime qualification count was promoted."
+    "Review findings: receipt checksum is now recomputed from exact bars; mutable sequences are copied to a tuple before validation.",
+    "pytest -q tests_engine/test_a200_runtime_bridge.py tests_engine/test_market_universe.py passed (48 tests).",
+    "python compileall and git diff --check passed.",
+    "PR #443 mergeState CLEAN; current exact-head CI queued.",
+    "A200 listing crosswalk remains identity-only; source, entitlement, history, live, Pulse, strategy counts remain zero."
   ],
-  "next_action": "Continue tracking #443 exact-head CI and review. If successful, merge the standalone evidence-boundary PR, then start the runtime consumer integration only after the registry contract is stable. Keep all candidate feeds, Pulse, and execution disabled until independent provider evidence passes.",
+  "next_action": "Track df73535 exact-head checks and request/review independent reassessment of addressed findings. After green CI/review, merge this narrow boundary. Then integrate the bridge into runtime only when the active AssetSpec contract permits canonical instrument IDs and provider evidence passes.",
   "coordination_mode": "independent",
   "cooperates_with": []
 }
