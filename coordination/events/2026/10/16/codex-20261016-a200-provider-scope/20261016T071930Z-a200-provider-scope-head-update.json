@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T071930Z-a200-provider-scope-head-update",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:19:30Z",
+  "type": "UPDATE",
+  "phase": "exact-head-verification",
+  "summary": "Addressed the least-privilege review finding: Yahoo-only runs now construct the provider adapter with Yahoo scope, so an FMP key in the environment cannot cause FmpHistory to be initialized. Added a regression test that fails if FMP connector construction occurs. PR #411 is now at df18391 with 41 focused tests passing; prior CI on 971c835 is superseded and exact-head checks for df18391 are pending.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus#411"],
+  "evidence": ["targeted market-universe test suite: 41 passed", "Yahoo-only default adapter test injects FMP_API_KEY and asserts FmpHistory is not constructed", "no live provider request made"],
+  "next_action": "Review exact-head CI at df18391; merge only when required Linux and Windows checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
