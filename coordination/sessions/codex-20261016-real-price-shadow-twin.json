@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-real-price-shadow-twin",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Complete exact-head review, regression validation, and draft publication for the default-off real-price shadow twin without changing live execution authority.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/real-price-shadow-twin-v1",
+  "started_at_utc": "2026-10-16T12:21:09Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "testing", "paper-shadow"],
+  "initial_dependencies": ["design PR #148", "exact-head independent review", "paper-only authority boundary"]
+}
