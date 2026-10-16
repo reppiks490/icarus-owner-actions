@@ -130,7 +130,7 @@ class CoordinationFabricContractTests(unittest.TestCase):
                 {"repo": "reppiks490/Icarus-engine", "path": "engine/path"}])
 
     def test_orphaned_events_require_a_terminal_complete_receipt(self):
-        _, _, _, validate_tree = self._api()
+        compile_state, _, _, validate_tree = self._api()
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
             _event(root, "missing-session", "2026-10-16T02:10:00Z", "CLAIM")
@@ -139,6 +139,8 @@ class CoordinationFabricContractTests(unittest.TestCase):
             _event(root, "missing-session", "2026-10-16T02:20:00Z", "COMPLETE")
             tree = validate_tree(root)
             self.assertEqual(len(tree["events"]), 2)
+            state = compile_state(root, now=datetime(2026, 10, 16, 2, 30, tzinfo=timezone.utc))
+            self.assertEqual(state["terminal_sessions"][0]["session_id"], "missing-session")
 
     def test_stale_session_is_reclaimable_not_complete(self):
         compile_state, _, _, _ = self._api()

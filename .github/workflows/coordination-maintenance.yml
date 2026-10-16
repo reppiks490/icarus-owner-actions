@@ -68,7 +68,10 @@ jobs:
               python -m coordination_fabric validate
             fi
             python -m coordination_fabric compile
-            python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+            # Publish collision diagnostics as part of the fresh snapshot. A
+            # declared collision is a coordination blocker to display, not a
+            # reason to keep publishing stale ACTIVE/index state.
+            python -c "import json; d=json.load(open('coordination/collisions.json')); assert isinstance(d.get('collisions'), list)"
             test -f coordination/ACTIVE.md
             test -f coordination/index.json
             test -f coordination/collisions.json

@@ -271,16 +271,34 @@ def _mutual_cooperation(a: dict[str, Any], b: dict[str, Any]) -> bool:
 def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str, Any]:
     tree = validate_tree(root)
     now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
-    by_session: dict[str, list[dict[str, Any]]] = {sid: [] for sid in tree["sessions"]}
+    sessions = dict(tree["sessions"])
+    # Completed evidence can outlive an omitted/pruned stable session record.
+    # Synthesize the minimal terminal identity so those receipts remain visible
+    # in the terminal projection without inventing active reservations.
     for _, event in tree["events"]:
-        if event["session_id"] in by_session:
-            by_session[event["session_id"]].append(event)
+        sid = event["session_id"]
+        if sid in sessions:
+            continue
+        sessions[sid] = {
+            "session_id": sid,
+            "actor": "Unknown (terminal event history)",
+            "model_family": "unknown",
+            "goal": event["summary"],
+            "home_repo": event["repos"][0] if event["repos"] else "unknown/unknown",
+            "branch": "unknown",
+            "started_at_utc": event["at_utc"],
+            "stale_after_minutes": 1,
+            "initial_dependencies": [],
+        }
+    by_session: dict[str, list[dict[str, Any]]] = {sid: [] for sid in sessions}
+    for _, event in tree["events"]:
+        by_session[event["session_id"]].append(event)
     for events in by_session.values():
         events.sort(key=lambda e: (_stamp(e["at_utc"]), e["event_id"]))
 
     rows: list[dict[str, Any]] = []
     terminal_rows: list[dict[str, Any]] = []
-    for sid, session in sorted(tree["sessions"].items()):
+    for sid, session in sorted(sessions.items()):
         events = by_session[sid]
         latest = events[-1] if events else None
         last_at = _stamp(latest["at_utc"]) if latest else _stamp(session["started_at_utc"])
@@ -329,6 +347,10 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
         (terminal_rows if terminal else rows).append(row)
 
     collisions: list[dict[str, Any]] = []
+    # A session's reservations are cross-repository. A later COMPLETE/RELEASE
+    # event in any repository releases all of that session's reservations.
+    # Collision detection must use the compiled per-session row, not stale
+    # per-target claims from an older event.
     live_rows = [row for row in rows if not row["stale"] and row["reserved_targets"]]
     for idx, left in enumerate(live_rows):
         for right in live_rows[idx + 1:]:
