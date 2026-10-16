@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "chatgpt-20261016-atlas-coordination-ui-182-mirror-durability-repair",
+  "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc": "2026-10-16T05:01:00Z",
+  "type": "NOTE",
+  "phase": "repair",
+  "summary": "PR #182 is merged and its exact-head tests are green, but the Engine-side coordination mirror is stale. Only one historical mirror commit exists and coordination-mirror is absent from recent scheduled runs. Repairing trigger durability before closing the session: retain schedule, move cron away from minute-zero congestion, and add workflow_run fallback after the trusted 10-minute restored-five-local-shadow workflow. No UI authority or live broker arming changes.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [".github/workflows/coordination-mirror.yml", "tests/test_multichat_coordination_entrypoint.py", "automation_intelligence/coordination/index.json"],
+  "targets": [
+    {"repo":"reppiks490/Icarus-engine","path":".github/workflows/coordination-mirror.yml"},
+    {"repo":"reppiks490/Icarus-engine","path":"tests/test_multichat_coordination_entrypoint.py"},
+    {"repo":"reppiks490/Icarus-engine","path":"automation_intelligence/coordination/index.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#182", "workflow:restored-five-local-shadow"],
+  "evidence": ["github-run:38845896424", "central-bus-current/local-mirror-stale"],
+  "next_action": "Add a regression test for redundant trusted refresh triggers, patch mirror workflow, prove current index refreshes, then emit COMPLETE.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": []
+}
