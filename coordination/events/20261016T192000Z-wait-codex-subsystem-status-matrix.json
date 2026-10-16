@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T192000Z-wait-codex-subsystem-status-matrix",
+  "session_id": "codex-20261016-subsystem-status-matrix",
+  "at_utc": "2026-10-16T19:20:00Z",
+  "type": "WAITING",
+  "phase": "exact-head-validation",
+  "summary": "Repository status matrix PR #441 and the Windows test-fixture repair PR #439 are pushed; exact-head CI is queued/running. Coordination registration PR #40 is blocked by a pre-existing malformed event from the separate active ui-pointer-contract-fix session; no files in that session were changed.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md",
+    "reppiks490/Icarus:tests_engine/test_ibkr_paper_venue.py"
+  ],
+  "dependencies": [
+    "Icarus PR #439 head 112754896b5e3ba43a91b0979350b15183d354c4 CI",
+    "Icarus PR #441 head 659a17fa169773e6f1160af5165325cd94265b54 CI",
+    "owner-actions PR #40 baseline coordination validation repair"
+  ],
+  "evidence": [
+    "PR #439 current checks pending",
+    "PR #441 current checks pending",
+    "PR #40 checks fail on missing event type in existing ui-pointer-contract-fix event"
+  ],
+  "next_action": "Wait for exact-head Icarus checks and resume after the coordination baseline defect is fixed or safely superseded.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
