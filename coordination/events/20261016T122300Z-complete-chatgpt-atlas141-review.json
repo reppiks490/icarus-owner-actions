@@ -7,8 +7,7 @@
   "phase": "complete",
   "summary": "Exact-head peer review complete: no Critical/Important finding in scope; GitHub COMMENT review 5547580914 submitted. 84 standard-library tests passed. Pytest unavailable; no runtime/market qualification asserted.",
   "repos": [
-    "reppiks490/Icarus-engine",
-    "reppiks490/icarus-owner-actions"
+    "reppiks490/Icarus-engine"
   ],
   "paths": [
     "research_allocation/**",
