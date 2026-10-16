@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T064505Z-a200-ledger-claim",
+  "session_id": "codex-20261016-a200-ledger-hardening",
+  "at_utc": "2026-10-16T06:45:05Z",
+  "type": "CLAIM",
+  "phase": "research",
+  "summary": "Claim read-only A200 hybrid probe validation hardening on a new branch from current main after PR #403 merged. Review identified missing status-specific receipt fields, unvalidated row/window bounds, contradictory qualification fields, and fixed old probe window defaults. Add fail-closed validation/tests and ensure status CURRENT means ledger integrity/freshness only, never historical qualification or Pulse readiness.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/market_universe.py",
+    "tests_engine/test_market_universe.py",
+    "tools/probe_a200_hybrid.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market_universe.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_market_universe.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/probe_a200_hybrid.py"
+    }
+  ],
+  "dependencies": [
+    "merged:reppiks490/Icarus#403@e8d463e3cb31e09ada3d1c931acec85e73348c4d"
+  ],
+  "evidence": [
+    "independent read-only review of #403 exact head identified validation gaps",
+    "#403 CI green on Linux/Windows; ledger not cryptographically signed and digests provide consistency, not authenticity"
+  ],
+  "next_action": "Inspect hybrid report and adapter timestamp semantics, then implement bounded status-specific validation with mutation tests."
+}
