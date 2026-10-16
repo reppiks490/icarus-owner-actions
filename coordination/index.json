@@ -6,33 +6,72 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "tests_engine/test_mcp_control.py"
+        "icarus_engine/assets.py",
+        "tests_engine/test_futures_universe_expansion.py",
+        "tools/futures_universe_probe.py",
+        "docs/FUTURES_UNIVERSE_2026_10_16.md",
+        ".github/workflows/futures-universe-probe.yml"
       ],
       "declared_targets": [
         {
-          "path": "tests_engine/test_mcp_control.py",
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_futures_universe_expansion.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/futures_universe_probe.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/FUTURES_UNIVERSE_2026_10_16.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": ".github/workflows/futures-universe-probe.yml",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus-engine#182",
-        "github-run:38845135614"
+        "pr:reppiks490/Icarus-engine#181"
       ],
       "goal": "Finish federation closure, deploy and harden multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-16T03:24:00Z",
-      "latest_summary": "Waiting on Engine PR #182 run 38845135614 to finish the intentionally failing coordination mirror/MCP/UI contract. Provenance, zero-dependency core, and CLI jobs are already green; Python 3.11/3.12/3.13 combined suites are still running. Central collision view is clean, so no competing UI target claim exists.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-16T03:25:00Z",
+      "latest_summary": "Extending the futures universe claim to a no-credential GitHub Actions probe workflow. It will run the public Yahoo evidence probe on PR #181, preserve the JSON as an artifact, and never authorize live execution or expose credentials.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "coordination-ui-tdd-red",
+      "phase": "futures-universe-expansion",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "tests_engine/test_mcp_control.py"
+        "icarus_engine/assets.py",
+        "tests_engine/test_futures_universe_expansion.py",
+        "tools/futures_universe_probe.py",
+        "docs/FUTURES_UNIVERSE_2026_10_16.md",
+        ".github/workflows/futures-universe-probe.yml"
       ],
       "reserved_targets": [
         {
-          "path": "tests_engine/test_mcp_control.py",
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_futures_universe_expansion.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/futures_universe_probe.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/FUTURES_UNIVERSE_2026_10_16.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": ".github/workflows/futures-universe-probe.yml",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
@@ -48,7 +87,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:23:21.753508Z",
+  "generated_at_utc": "2026-10-16T03:24:07.800223Z",
   "owner_status": {
     "claude": {
       "active": false,
