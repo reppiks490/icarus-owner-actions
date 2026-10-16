@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+  "actor": "ChatGPT / Atlas",
+  "model_family": "openai",
+  "goal": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "atlas/coordination-dashboard",
+  "pr": "reppiks490/Icarus-engine#182",
+  "started_at_utc": "2026-10-16T03:29:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "testing", "ui-integration", "coordination"],
+  "initial_dependencies": ["coordination-bus:main"]
+}
