@@ -151,15 +151,15 @@
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#443@2270e67 exact-head Actions runs 38958422591 and 38958427775",
-        "pr:reppiks490/Icarus#444@735d4440c9662bf74670c4a0cb5fa436a6c63577 exact-head CI",
+        "pr:reppiks490/Icarus#443@2270e67 runs 38958422591 and 38958427775",
+        "pr:reppiks490/Icarus#444@735d4440c9662bf74670c4a0cb5fa436a6c63577 runs 38958447513 and 38958463969",
         "A200 provider mapping, entitlement, qualified history and live feed evidence"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T20:14:00Z",
-      "latest_summary": "PR #443 is open at exact head 2270e67. Local focused tests and compile checks pass. Both exact-head Linux and Windows workflow runs have been in progress since 19:55Z with broad engine pytest still running; no failure result is available. PR #444 remains open with the CL paper-readiness fix, and its exact-head CI is also pending. A200 provider gates remain zero.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-16T20:22:00Z",
+      "latest_summary": "A200 bridge PR #443 remains open at 2270e67 with no review comments. Focused receipt-boundary tests pass locally (46 tests), and the branch remains clean. Both hosted Linux/Windows full-engine pytest jobs for #443 and stacked #444 are still in progress; no exact-head failure has surfaced. Provider qualification remains blocked by missing verified A200 mapping, entitlement, licensed history, and live-feed evidence.",
+      "latest_type": "HEARTBEAT",
       "model_family": "openai",
       "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
@@ -515,7 +515,7 @@
     "stale": 9,
     "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T19:57:21.114178Z",
+  "generated_at_utc": "2026-10-16T19:59:00.570098Z",
   "owner_status": {
     "claude": {
       "active": false,
