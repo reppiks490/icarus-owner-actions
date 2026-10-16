@@ -186,14 +186,15 @@ def validate_tree(root: Path | str) -> dict[str, Any]:
         sessions[sid] = doc
 
     events: list[tuple[Path, dict[str, Any]]] = []
-    seen_events: set[str] = set()
+    seen_events: set[tuple[str, str]] = set()
     if events_dir.exists():
         for path in sorted(events_dir.glob("**/*.json")):
             doc = _validate_event(_load(path), path, set(sessions))
             event_id = doc["event_id"]
-            if event_id in seen_events:
-                raise ValueError(f"duplicate event_id: {event_id}")
-            seen_events.add(event_id)
+            event_key = (doc["session_id"], event_id)
+            if event_key in seen_events:
+                raise ValueError(f"duplicate event_id within session {doc['session_id']}: {event_id}")
+            seen_events.add(event_key)
             events.append((path, doc))
 
     summaries: dict[str, dict[str, Any]] = {}
