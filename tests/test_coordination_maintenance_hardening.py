@@ -7,10 +7,12 @@ README = Path('coordination/README.md')
 
 
 class CoordinationMaintenanceHardeningTests(unittest.TestCase):
-    def test_one_workflow_handles_push_refresh_scheduled_retention_and_manual_cleanup(self):
+    def test_one_workflow_handles_push_refresh_schedule_and_manual_cleanup(self):
         text = WORKFLOW.read_text(encoding='utf-8')
         self.assertIn('push:', text)
         self.assertIn('schedule:', text)
+        self.assertIn("cron: '2-57/5 * * * *'", text)
+        self.assertIn("github.event_name == 'workflow_dispatch' && inputs.retention_days || '0'", text)
         self.assertIn('workflow_dispatch:', text)
         self.assertIn('retention_days:', text)
         self.assertIn("default: '14'", text)
