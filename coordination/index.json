@@ -44,22 +44,87 @@
       "branch": "atlas/coordination-dashboard",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "declared_paths": [
+        ".github/workflows/coordination-mirror.yml",
+        "icarus_engine/mcp_control.py",
+        "icarus_engine/mcp-ui.js",
+        "tests_engine/test_mcp_control.py",
+        "tests/test_multichat_coordination_entrypoint.py",
+        "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json"
+      ],
+      "declared_targets": [
+        {
+          "path": ".github/workflows/coordination-mirror.yml",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/mcp_control.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/mcp-ui.js",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_mcp_control.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_multichat_coordination_entrypoint.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "dependencies": [
-        "coordination-bus:main"
+        "pr:reppiks490/Icarus-engine#182",
+        "github-run:38845526089"
       ],
       "goal": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T03:29:00Z",
-      "latest_summary": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
-      "latest_type": "REGISTERED",
+      "last_event_at_utc": "2026-10-16T03:29:05Z",
+      "latest_summary": "Split from the reused futures session after detecting hidden intra-session workstream overlap. PR #182 now has its own unique session and retains the coordination mirror/MCP UI paths while full exact-head tests run.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "registered",
+      "phase": "verification",
       "pr": "reppiks490/Icarus-engine#182",
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        ".github/workflows/coordination-mirror.yml",
+        "icarus_engine/mcp_control.py",
+        "icarus_engine/mcp-ui.js",
+        "tests_engine/test_mcp_control.py",
+        "tests/test_multichat_coordination_entrypoint.py",
+        "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json"
+      ],
+      "reserved_targets": [
+        {
+          "path": ".github/workflows/coordination-mirror.yml",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/mcp_control.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/mcp-ui.js",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_mcp_control.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_multichat_coordination_entrypoint.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
       "stale": false,
       "status": "active"
@@ -72,7 +137,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:28:00.765161Z",
+  "generated_at_utc": "2026-10-16T03:28:14.853208Z",
   "owner_status": {
     "claude": {
       "active": false,
