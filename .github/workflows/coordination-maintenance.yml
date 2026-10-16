@@ -1,0 +1,66 @@
+name: coordination-maintenance
+on:
+  schedule:
+    - cron: '47 3 * * *'
+  workflow_dispatch:
+    inputs:
+      retention_days:
+        description: 'Working-tree retention for summarized terminal session events'
+        required: false
+        default: '14'
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coordination-maintenance
+  cancel-in-progress: false
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Prune summarized terminal notes and rebuild generated state
+        env:
+          RETENTION_DAYS: ${{ inputs.retention_days || '14' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$RETENTION_DAYS" in
+            ''|*[!0-9]*) echo 'retention_days must be a positive integer' >&2; exit 2 ;;
+          esac
+          if [ "$RETENTION_DAYS" -lt 1 ]; then
+            echo 'retention_days must be a positive integer' >&2
+            exit 2
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m coordination_fabric validate
+            python -m coordination_fabric prune --days "$RETENTION_DAYS"
+            python -m coordination_fabric validate
+            python -m coordination_fabric compile
+            python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+            git add -A coordination/events coordination/ACTIVE.md coordination/index.json coordination/collisions.json
+            if git diff --cached --quiet; then
+              echo 'No summarized terminal coordination notes are beyond retention.'
+              exit 0
+            fi
+            git commit -m "coordination: prune terminal notes after ${RETENTION_DAYS}d [skip ci]"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish fresh pruned coordination state after retries.' >&2
+          exit 1
