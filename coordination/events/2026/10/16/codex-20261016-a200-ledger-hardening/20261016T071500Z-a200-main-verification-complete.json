@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T071500Z-a200-main-verification-complete",
+  "session_id": "codex-20261016-a200-ledger-hardening",
+  "at_utc": "2026-10-16T07:15:00Z",
+  "type": "COMPLETE",
+  "phase": "verification",
+  "summary": "A200 hybrid receipt validation is merged and verified on current Icarus main. PR #410 merged as 3e7903efd16a26c771b610ef5fb815f5cb2445d2 from exact PR head 7a926dccd75478de896fd1002876112ca1c61e92. Linux and Windows exact-head checks both succeeded. Current main focused readback collected 30 tests from tests_engine/test_market_universe.py and all passed. Secret-name/value visibility remains HTTP 403 for this GitHub integration; no plaintext credentials were accessed. FMP remains NOT_CONFIGURED in the persisted probe evidence. A200 inventory freshness is not strategy qualification: Pulse, strategy, and execution authority remain false.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["pr:reppiks490/Icarus#410", "merge:3e7903efd16a26c771b610ef5fb815f5cb2445d2"],
+  "evidence": [
+    "tested-head:7a926dccd75478de896fd1002876112ca1c61e92",
+    "linux-run:38863425408:success",
+    "windows-run:38863425408:success",
+    "merged-main-focused-test:tests_engine/test_market_universe.py:30-passed",
+    "merged-main:197cc66"
+  ],
+  "next_action": "A200 validation package is complete; any further market-universe changes require a new coordination session and claim.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -51,66 +51,6 @@
     },
     {
       "actor": "ChatGPT / Codex",
-      "branch": "codex/a200-ledger-validation-20261016",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "icarus_engine/market_universe.py",
-        "tests_engine/test_market_universe.py",
-        "tools/probe_a200_hybrid.py"
-      ],
-      "declared_targets": [
-        {
-          "path": "icarus_engine/market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tools/probe_a200_hybrid.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "dependencies": [
-        "pr:reppiks490/Icarus#410",
-        "secret-list-access:403"
-      ],
-      "goal": "Harden the read-only A200 hybrid history receipt validator so malformed or out-of-window provider evidence cannot be labeled CURRENT; preserve 200 catalog status separation and all broker/Pulse execution gates.",
-      "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T06:51:20Z",
-      "latest_summary": "Credential visibility was checked without requesting or printing secret values: `gh secret list` and `gh variable list` both return HTTP 403 Resource not accessible by integration. This confirms the current GitHub integration cannot inspect repository Actions secret names or values. The packaged probe evidence still records FMP NOT_CONFIGURED; no FMP request or live-data claim was made.",
-      "latest_type": "UPDATE",
-      "model_family": "openai",
-      "phase": "verification",
-      "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/market_universe.py",
-        "tests_engine/test_market_universe.py",
-        "tools/probe_a200_hybrid.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tools/probe_a200_hybrid.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "session_id": "codex-20261016-a200-ledger-hardening",
-      "stale": false,
-      "status": "active"
-    },
-    {
-      "actor": "ChatGPT / Codex",
       "branch": "codex/rt01-shadow-dashboard-20261015",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -413,12 +353,12 @@
     }
   ],
   "counts": {
-    "active": 4,
+    "active": 3,
     "collisions": 1,
     "stale": 0,
-    "terminal": 4
+    "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T07:11:22.340508Z",
+  "generated_at_utc": "2026-10-16T07:15:14.096401Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -536,6 +476,32 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-ledger-validation-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#410",
+        "merge:3e7903efd16a26c771b610ef5fb815f5cb2445d2"
+      ],
+      "goal": "Harden the read-only A200 hybrid history receipt validator so malformed or out-of-window provider evidence cannot be labeled CURRENT; preserve 200 catalog status separation and all broker/Pulse execution gates.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T07:15:00Z",
+      "latest_summary": "A200 hybrid receipt validation is merged and verified on current Icarus main. PR #410 merged as 3e7903efd16a26c771b610ef5fb815f5cb2445d2 from exact PR head 7a926dccd75478de896fd1002876112ca1c61e92. Linux and Windows exact-head checks both succeeded. Current main focused readback collected 30 tests from tests_engine/test_market_universe.py and all passed. Secret-name/value visibility remains HTTP 403 for this GitHub integration; no plaintext credentials were accessed. FMP remains NOT_CONFIGURED in the persisted probe evidence. A200 inventory freshness is not strategy qualification: Pulse, strategy, and execution authority remain false.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "verification",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-ledger-hardening",
       "stale": false,
       "status": "complete"
     }
