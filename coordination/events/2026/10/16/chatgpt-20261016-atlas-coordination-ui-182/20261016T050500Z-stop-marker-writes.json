@@ -1,0 +1,17 @@
+{
+  "schema_version":"icarus-coordination-event-v2",
+  "event_id":"chatgpt-20261016-atlas-coordination-ui-182-stop-marker-writes",
+  "session_id":"chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc":"2026-10-16T05:05:00Z",
+  "type":"NOTE",
+  "phase":"repair",
+  "summary":"Control note only: no more placeholder/marker writes will be made to Icarus-engine main. Proceed only through an explicit branch operation or, if unavailable, use a separate PR-capable mutation path after verifying the target ref.",
+  "repos":["reppiks490/Icarus-engine"],
+  "paths":[],
+  "targets":[],
+  "dependencies":[],
+  "evidence":[],
+  "next_action":"Use explicit branch API; do not use file creation to simulate branch creation.",
+  "coordination_mode":"cooperative",
+  "cooperates_with":[]
+}
