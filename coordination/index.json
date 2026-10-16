@@ -221,6 +221,65 @@
       "status": "active"
     },
     {
+      "actor": "Codex",
+      "branch": "codex/a200-receipt-timezone-evidence",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "icarus_engine/calendar.py",
+        "icarus_engine/market_universe_adapter.py",
+        "tests_engine/test_market_universe.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/calendar.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/market_universe_adapter.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_market_universe.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "pr:reppiks490/Icarus#419 exact-head CI"
+      ],
+      "goal": "Carry authoritative US equities timezone through the A200 history adapter into receipt provenance and verify the follow-up PR.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:27:25Z",
+      "latest_summary": "The same timezone-provenance integration was independently implemented on PR #419; PR #418 was closed as a duplicate. PR #419 carries the authoritative timezone through the adapter and adds adapter-level coverage.",
+      "latest_type": "HANDOFF",
+      "model_family": "openai",
+      "phase": "handoff",
+      "pr": 418,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/calendar.py",
+        "icarus_engine/market_universe_adapter.py",
+        "tests_engine/test_market_universe.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/calendar.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/market_universe_adapter.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_market_universe.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261016-a200-timezone-provenance",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "ChatGPT / Codex",
       "branch": "codex/rt01-shadow-dashboard-20261015",
       "cooperates_with": [],
@@ -287,6 +346,56 @@
     },
     {
       "actor": "ChatGPT / Codex",
+      "branch": "codex/intrinio-repo-scoped-credential-truth-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
+        "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "dependencies": [
+        "run:reppiks490/Icarus#38861416940",
+        "pr:reppiks490/Icarus-engine#192"
+      ],
+      "goal": "Align canonical credential handoff with verified repository-scoped Intrinio credential and authentication evidence without exposing secrets.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T12:28:00Z",
+      "latest_summary": "Update the Engine GitHub-native credential handoff and central data-access directive to distinguish Intrinio credential presence by repository from its HTTP 401 data-access failure, matching the verified shared ledger and collector receipt.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "documentation-consistency",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
+        "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "session_id": "codex-20261016-intrinio-doc-consistency",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
       "branch": "codex/owner-contact-boundary-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -338,20 +447,48 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "icarus_engine/paper_workspaces.py",
-        "tests_engine/test_paper_workspaces.py",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/dashboard.html",
+        "icarus_engine/experience-ui.css",
+        "icarus_engine/experience-ui.js",
+        "icarus_engine/world-aura.js",
+        "icarus_engine/world-cinema.js",
+        "icarus_engine/world-immersion.js",
+        "icarus_engine/world-motion.js",
         "assets/dashboard.html",
-        "assets/command-centers-ui.js",
-        "assets/experience-ui.css",
-        "scripts/build-worker.mjs"
+        "assets/command-centers-ui.js"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/paper_workspaces.py",
+          "path": "icarus_engine/command-centers-ui.js",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_paper_workspaces.py",
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.css",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-aura.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-cinema.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-motion.js",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -360,46 +497,65 @@
         },
         {
           "path": "assets/command-centers-ui.js",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/experience-ui.css",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "scripts/build-worker.mjs",
           "repo": "sites/icarus-command-center-mobile"
         }
       ],
       "dependencies": [
-        "reppiks490/Icarus backend branch 751618a",
-        "independent review paper_backend_review",
-        "coordination collisions refreshed 2026-10-16T12:12:39Z"
+        "PR #421 backend CI and merge",
+        "PR #423 UI visual/test/configuration CI"
       ],
       "goal": "Bring the current four-isolated-paper-portfolio Command Center, combined net P&L, and current atmosphere assets into the owner-private phone Site, then validate and publish the same source state.",
       "home_repo": "sites/icarus-command-center-mobile",
-      "last_event_at_utc": "2026-10-16T12:17:00Z",
-      "latest_summary": "The current backend branch includes truthful persisted realized/open/replay P&L fields and passes 81 focused tests locally. Independent review found flatten may short-circuit on the first runner exception after pausing all runners, leaving later portfolios unattempted without a partial-result receipt. I am extending the workstream to harden the paper-only flatten flow and tests before consuming the API from the phone Site. No broker/live execution authority is involved.",
+      "last_event_at_utc": "2026-10-16T12:30:34Z",
+      "latest_summary": "The desktop UI is now proposed on current main as PR #423 after preserving the intervening trade-history (#379) and Style-popup (#ec44170) updates. Independent Chromium review on the current-main cherry-pick passed desktop and mobile mock screens and viewport checks. PR #423 visual, test, and configuration workflows are queued. PR #421 adds the backend P&L/feed API and partial-flatten receipt; its workflows are also queued. Phone Site v14 is already deployed privately.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "paper-ledger-reliability-review",
+      "phase": "ci-and-backend-integration",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/paper_workspaces.py",
-        "tests_engine/test_paper_workspaces.py",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/dashboard.html",
+        "icarus_engine/experience-ui.css",
+        "icarus_engine/experience-ui.js",
+        "icarus_engine/world-aura.js",
+        "icarus_engine/world-cinema.js",
+        "icarus_engine/world-immersion.js",
+        "icarus_engine/world-motion.js",
         "assets/dashboard.html",
-        "assets/command-centers-ui.js",
-        "assets/experience-ui.css",
-        "scripts/build-worker.mjs"
+        "assets/command-centers-ui.js"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/paper_workspaces.py",
+          "path": "icarus_engine/command-centers-ui.js",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_paper_workspaces.py",
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.css",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-aura.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-cinema.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-motion.js",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -408,14 +564,6 @@
         },
         {
           "path": "assets/command-centers-ui.js",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/experience-ui.css",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "scripts/build-worker.mjs",
           "repo": "sites/icarus-command-center-mobile"
         }
       ],
@@ -525,12 +673,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 8,
+    "active": 10,
     "collisions": 0,
     "stale": 4,
     "terminal": 6
   },
-  "generated_at_utc": "2026-10-16T12:24:16.460930Z",
+  "generated_at_utc": "2026-10-16T12:32:33.385213Z",
   "owner_status": {
     "claude": {
       "active": false,
