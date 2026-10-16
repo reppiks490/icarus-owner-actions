@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122109Z-shadow-twin-claim",
+  "session_id": "codex-20261016-real-price-shadow-twin",
+  "at_utc": "2026-10-16T12:21:09Z",
+  "type": "CLAIM",
+  "phase": "verification",
+  "summary": "Resume the existing default-off real-price shadow twin implementation from its checked-in plan. Audit the complete branch diff against the design, run focused and relevant regressions, repair any verified defects, and publish a draft PR for independent review while preserving the primary emulator and execution-authority boundaries.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "icarus_engine/shadow_twin.py",
+    "icarus_engine/shadow_evidence_events.py",
+    "icarus_engine/runtime.py",
+    "icarus_engine/cli.py",
+    "tests_engine/test_shadow_twin.py",
+    "tests_engine/test_shadow_evidence_events.py",
+    "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/shadow_twin.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/shadow_evidence_events.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/runtime.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/cli.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_shadow_twin.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_shadow_evidence_events.py"},
+    {"repo": "reppiks490/Icarus", "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"}
+  ],
+  "dependencies": ["reppiks490/Icarus design PR #148"],
+  "evidence": ["Existing implementation branch codex/real-price-shadow-twin-v1 at c0a945d85dd89e0156ac101eef4a243c28934df1", "Workspace is clean; plan requires exact-head testing and draft PR before review"],
+  "next_action": "Inspect the implementation against the complete design contract, then run focused and runtime/emulator regression suites."
+}

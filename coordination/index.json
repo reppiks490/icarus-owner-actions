@@ -261,6 +261,32 @@
     },
     {
       "actor": "ChatGPT / Codex",
+      "branch": "read-only-review",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#414@c44d0bea85171375dd8c7733827cc5c6dc79d97f",
+        "pr:reppiks490/Icarus#415@292be819fffd57d18bbaee25a3edbe6732bc6b63"
+      ],
+      "goal": "Independently review the in-progress canonical 32-root futures PRs for contract failures and cross-PR collisions, and provide exact-head findings to their author.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:24:00Z",
+      "latest_summary": "Independent exact-head review found that PR #414 currently fails its futures authority contract tests: ContractSpec drops product.execution_root and the code formatter uses the research root, while the CL representative expectation also disagrees with the documented roll rule. PR #415 independently adds a second 32-root catalog and edits the same assets.py/contracts.py paths, so the two drafts conflict and should converge on one authority before merge. Findings and reproduction were posted on both PR threads.",
+      "latest_type": "HANDOFF",
+      "model_family": "openai",
+      "phase": "review",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-futures-pr-review",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
       "branch": "codex/owner-contact-boundary-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -396,16 +422,115 @@
       "session_id": "codex-20261016-phone-command-center-site",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/real-price-shadow-twin-v1",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "icarus_engine/shadow_twin.py",
+        "icarus_engine/shadow_evidence_events.py",
+        "icarus_engine/runtime.py",
+        "icarus_engine/cli.py",
+        "tests_engine/test_shadow_twin.py",
+        "tests_engine/test_shadow_evidence_events.py",
+        "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/shadow_twin.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/shadow_evidence_events.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/cli.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_shadow_twin.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_shadow_evidence_events.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "reppiks490/Icarus design PR #148"
+      ],
+      "goal": "Complete exact-head review, regression validation, and draft publication for the default-off real-price shadow twin without changing live execution authority.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:21:09Z",
+      "latest_summary": "Resume the existing default-off real-price shadow twin implementation from its checked-in plan. Audit the complete branch diff against the design, run focused and relevant regressions, repair any verified defects, and publish a draft PR for independent review while preserving the primary emulator and execution-authority boundaries.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "verification",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/shadow_twin.py",
+        "icarus_engine/shadow_evidence_events.py",
+        "icarus_engine/runtime.py",
+        "icarus_engine/cli.py",
+        "tests_engine/test_shadow_twin.py",
+        "tests_engine/test_shadow_evidence_events.py",
+        "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/shadow_twin.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/shadow_evidence_events.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/cli.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_shadow_twin.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_shadow_evidence_events.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261016-real-price-shadow-twin",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 6,
+    "active": 8,
     "collisions": 0,
     "stale": 4,
     "terminal": 6
   },
-  "generated_at_utc": "2026-10-16T12:16:03.092251Z",
+  "generated_at_utc": "2026-10-16T12:24:16.460930Z",
   "owner_status": {
     "claude": {
       "active": false,

@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122400Z-overlap-and-tests-handoff",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T12:24:00Z",
+  "type": "HANDOFF",
+  "phase": "review",
+  "summary": "Independent exact-head review found that PR #414 currently fails its futures authority contract tests: ContractSpec drops product.execution_root and the code formatter uses the research root, while the CL representative expectation also disagrees with the documented roll rule. PR #415 independently adds a second 32-root catalog and edits the same assets.py/contracts.py paths, so the two drafts conflict and should converge on one authority before merge. Findings and reproduction were posted on both PR threads.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["pr:reppiks490/Icarus#414@c44d0bea85171375dd8c7733827cc5c6dc79d97f", "pr:reppiks490/Icarus#415@292be819fffd57d18bbaee25a3edbe6732bc6b63"],
+  "evidence": ["Independent command: uv run --extra dev pytest tests_engine/test_futures_product_authority.py -q on #414 head c44d0be; 3 failures", "Review comments: https://github.com/reppiks490/Icarus/pull/414#issuecomment-6215421647", "Cross-PR collision comments: https://github.com/reppiks490/Icarus/pull/414#issuecomment-6215428683 and https://github.com/reppiks490/Icarus/pull/415#issuecomment-6215427282"],
+  "next_action": "Wait for the author to consolidate the futures catalog and resolve the exact-head contract failures, then review the unified branch."
+}

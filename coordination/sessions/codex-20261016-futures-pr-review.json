@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-futures-pr-review",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Independently review the in-progress canonical 32-root futures PRs for contract failures and cross-PR collisions, and provide exact-head findings to their author.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "read-only-review",
+  "started_at_utc": "2026-10-16T12:24:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "review", "testing"],
+  "initial_dependencies": ["reppiks490/Icarus#414", "reppiks490/Icarus#415", "both branches remain drafts"]
+}
