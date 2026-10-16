@@ -3,7 +3,7 @@
   "session_id": "chatgpt-20261016-atlas141-review",
   "created_at_utc": "2026-10-16T12:22:00Z",
   "goal": "Independent exact-head peer review of draft PR #141.",
-  "result": "Reviewed PR #141 at ba05a182b4aa947d81b26b6c4063e33adec9f147. No Critical or Important correctness issue found in reviewed finite-model, joint/sequential, scenario, journal, CLI/handoff, planner, docs, and collection-shim scope. Posted GitHub COMMENT review 5547580914.",
+  "result": "complete",
   "verification": [
     "python -m unittest discover -s research_allocation -p 'test_*.py' -q: 84 tests passed in 0.600s.",
     "Independent pytest rerun could not be performed because pytest is not installed in the active environment.",
@@ -14,7 +14,10 @@
     "PR remains draft and needs remaining owner/integration review."
   ],
   "evidence": [
-    "https://github.com/reppiks490/Icarus-engine/pull/141#pullrequestreview-5547580914"
+    "https://github.com/reppiks490/Icarus-engine/pull/141#pullrequestreview-5547580914",
+    "GitHub review 5547580914",
+    "Unittest output captured at exact PR checkout"
   ],
-  "next_action": "Atlas and maintainers can address or close the review; do not infer runtime or market qualification."
+  "next_action": "Atlas and maintainers can address or close the review; do not infer runtime or market qualification.",
+  "completed_at_utc": "2026-10-16T12:22:00Z"
 }
