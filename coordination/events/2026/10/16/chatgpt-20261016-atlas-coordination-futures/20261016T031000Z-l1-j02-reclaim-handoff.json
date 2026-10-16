@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T031000Z-l1-j02-reclaim-handoff",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:10:00Z",
+  "type": "HANDOFF",
+  "phase": "federation-entrypoint-adoption",
+  "summary": "Closed stale Icarus-engine PR #135 as an unmerged superseded bundle because its X1 two-agent governance conflicts with the new model-neutral bus. L1/J02 vault-security work remains incomplete and high priority: current main still exposes 13 data/panel vendor CSVs and lacks data/depth_vault/sources.json. Preserve #135 branch as source material and reclaim only the security/provenance slice from current main.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["closed-unmerged:reppiks490/Icarus-engine#135"],
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#135:closed-unmerged",
+    "path-present:reppiks490/Icarus-engine:data/panel/EEM_5m.csv",
+    "path-missing:reppiks490/Icarus-engine:data/depth_vault/sources.json"
+  ],
+  "next_action": "Any non-conflicting chat may claim L1/J02. Start from current Icarus-engine main, reuse/review #135 implementation ideas, prove encrypted/private authenticated copies and recoverability before deleting public panel CSVs, preserve source/origin provenance, and retain all newer ingestion protections. Do not restore old two-agent ownership rules.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
