@@ -1,6 +1,7 @@
 from pathlib import Path
 
-
+# This contract intentionally lives under the coordination CI glob so the universal
+# agent/bootstrap guidance cannot drift back to account-local or plaintext-key assumptions.
 AGENTS = Path("AGENTS.md")
 README = Path("README.md")
 START_HERE = Path("coordination/START_HERE.md")
