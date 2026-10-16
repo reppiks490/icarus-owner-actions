@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-c04-population-audit",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Recompute the active hybrid-lane backlog from immutable requests and validated result receipts on exact Engine main, and publish current C04 evidence without mutating Engine data.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/icarus-review-baton-20261016",
+  "started_at_utc": "2026-10-16T12:43:15Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "read-only-audit", "coordination"],
+  "initial_dependencies": ["reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"]
+}
