@@ -56,8 +56,9 @@ def test_shared_access_directive_explains_use_without_secret_possession():
 
 def test_shared_access_directive_separates_local_plant_control_from_provider_data():
     text = DIRECTIVE.read_text(encoding="utf-8").lower()
+    plain = text.replace("**", "")
     assert "admin_token" in text and "icarus_admin_token" in text
     assert "local plant / bridge runtime controls" in text
     assert "local_runtime_capability_required" in text
-    assert "must not" in text and "provider data" in text
-    assert "live broker arming disabled" in text
+    assert "must not" in plain and "provider data" in plain
+    assert "live broker arming disabled" in plain
