@@ -89,127 +89,16 @@
       "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
       "stale": false,
       "status": "active"
-    },
-    {
-      "actor": "ChatGPT / Atlas",
-      "branch": "atlas/vendor-panel-vault-20261016",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        ".github/workflows/depth-vault.yml",
-        "tools/depth_vault.py",
-        "tools/asset_panel.py",
-        "tools/data_sentinel.py",
-        "tests/test_vendor_panel_vault.py",
-        "data/depth_vault",
-        "data/panel",
-        "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md"
-      ],
-      "declared_targets": [
-        {
-          "path": ".github/workflows/depth-vault.yml",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/depth_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/asset_panel.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/data_sentinel.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_vendor_panel_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "data/depth_vault",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "data/panel",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md",
-          "repo": "reppiks490/Icarus-engine"
-        }
-      ],
-      "dependencies": [
-        "closed-unmerged:reppiks490/Icarus-engine#135",
-        "constraint:authenticated-recovery-before-panel-delete",
-        "constraint:no-history-rewrite"
-      ],
-      "goal": "Reclaim and safely complete L1/J02 vendor-panel containment from superseded Icarus-engine PR #135: prove authenticated encrypted recovery on current main before removing public working-tree vendor CSVs, preserve provenance, and avoid history rewriting or secret exposure.",
-      "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T03:45:00Z",
-      "latest_summary": "Current-main audit confirms the 13 panel CSVs remain public and the vault manifest has no panel inventory. PR #135 contains useful primitives but is stale. Scope is refined to add a focused current-main security contract test and implementation plan rather than replacing existing regression tests wholesale.",
-      "latest_type": "UPDATE",
-      "model_family": "openai",
-      "phase": "l1-j02-vendor-panel-containment",
-      "pr": "pending",
-      "reclaimable": false,
-      "reserved_paths": [
-        ".github/workflows/depth-vault.yml",
-        "tools/depth_vault.py",
-        "tools/asset_panel.py",
-        "tools/data_sentinel.py",
-        "tests/test_vendor_panel_vault.py",
-        "data/depth_vault",
-        "data/panel",
-        "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": ".github/workflows/depth-vault.yml",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/depth_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/asset_panel.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tools/data_sentinel.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_vendor_panel_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "data/depth_vault",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "data/panel",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md",
-          "repo": "reppiks490/Icarus-engine"
-        }
-      ],
-      "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
-      "stale": false,
-      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 2,
+    "active": 1,
     "collisions": 0,
     "stale": 0,
-    "terminal": 1
+    "terminal": 2
   },
-  "generated_at_utc": "2026-10-16T03:46:28.367792Z",
+  "generated_at_utc": "2026-10-16T04:51:27.767228Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -244,6 +133,35 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "chatgpt-20261016-atlas-coordination-futures",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Atlas",
+      "branch": "atlas/vendor-panel-vault-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "merged:reppiks490/Icarus-engine#183",
+        "merge-sha:7ba271f8e7130842308084ac86e6f0ae6fb353c0",
+        "tested-head:817bdc208399a79cd854f26fbfaa27a0ef7ae4c6",
+        "tests-run:38852522074",
+        "vault-run:38852522116"
+      ],
+      "goal": "Reclaim and safely complete L1/J02 vendor-panel containment from superseded Icarus-engine PR #135: prove authenticated encrypted recovery on current main before removing public working-tree vendor CSVs, preserve provenance, and avoid history rewriting or secret exposure.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T04:51:10Z",
+      "latest_summary": "L1/J02 vendor-panel containment completed and merged via Icarus-engine PR #183. The 13 plaintext vendor panel CSVs were removed from the current public working tree only after authenticated encrypted recovery was proven. Git history was not rewritten; historical exposure remains explicitly acknowledged. The fail-closed panel loader, provenance labeling, in-memory vault verification, sentinel receipt, and private restore drill are live on main.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "complete",
+      "pr": "pending",
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
       "stale": false,
       "status": "complete"
     }
