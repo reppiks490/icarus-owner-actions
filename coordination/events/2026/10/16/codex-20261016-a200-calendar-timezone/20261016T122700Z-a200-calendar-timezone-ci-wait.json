@@ -2,10 +2,10 @@
   "schema_version": "icarus-coordination-event-v2",
   "event_id": "20261016T122700Z-a200-calendar-timezone-ci-wait",
   "session_id": "codex-20261016-a200-calendar-timezone",
-  "at_utc": "2026-10-16T12:27:00Z",
-  "type": "WAITING",
-  "phase": "exact-head-ci",
-  "summary": "Calendar timezone wiring is committed to A200 PR #419 at head 6e652fa72ccec56c0caa97f33ec39f931dbace47. Focused market-universe and A200 cadence suites passed (49); diff check and wheel/sdist builds passed. CI is queued.",
+  "at_utc": "2026-10-16T12:39:00Z",
+  "type": "COMPLETE",
+  "phase": "merged",
+  "summary": "A200 calendar timezone receipt wiring PR #419 merged at b99f7e0ee3ceb2e211b404f57fef6e3fa79ee243 after Linux and Windows exact-head CI passed on both push and PR workflows.",
   "repos": [
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
@@ -27,7 +27,7 @@
     "wheel and source distribution built",
     "no live provider requests made"
   ],
-  "next_action": "Review all required CI against the exact PR head and merge only after success.",
+  "next_action": "Continue the A200 readiness audit without enabling live provider calls or runtime activation.",
   "coordination_mode": "independent",
   "cooperates_with": []
 }
