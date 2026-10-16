@@ -89,16 +89,43 @@
       "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Atlas",
+      "branch": "atlas/vendor-panel-vault-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "superseded-pr:reppiks490/Icarus-engine#135",
+        "constraint:no-history-rewrite",
+        "constraint:prove-recovery-before-delete"
+      ],
+      "goal": "Reclaim and safely complete L1/J02 vendor-panel containment from superseded Icarus-engine PR #135: prove authenticated encrypted recovery on current main before removing public working-tree vendor CSVs, preserve provenance, and avoid history rewriting or secret exposure.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T03:43:00Z",
+      "latest_summary": "Reclaim and safely complete L1/J02 vendor-panel containment from superseded Icarus-engine PR #135: prove authenticated encrypted recovery on current main before removing public working-tree vendor CSVs, preserve provenance, and avoid history rewriting or secret exposure.",
+      "latest_type": "REGISTERED",
+      "model_family": "openai",
+      "phase": "registered",
+      "pr": "pending",
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 1,
+    "active": 2,
     "collisions": 0,
     "stale": 0,
     "terminal": 1
   },
-  "generated_at_utc": "2026-10-16T03:42:56.577089Z",
+  "generated_at_utc": "2026-10-16T03:43:46.758317Z",
   "owner_status": {
     "claude": {
       "active": false,
