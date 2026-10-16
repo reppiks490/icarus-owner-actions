@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-node-test-coverage",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Ensure valuable Node-backed ICARUS tests run in CI instead of silently skipping, by provisioning Node and covering relevant UI lifecycle contracts.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/optional-test-skips-20261016",
+  "pr": null,
+  "started_at_utc": "2026-10-16T19:50:00Z",
+  "stale_after_minutes": 240,
+  "capabilities": [
+    "github",
+    "ci",
+    "test-audit"
+  ],
+  "initial_dependencies": [
+    "Coordination ACTIVE.md lists no overlapping workflow reservations",
+    "Icarus main and open PR state inspected; Node test coverage gap remains on main"
+  ]
+}
