@@ -213,16 +213,19 @@
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#428",
-        "exact-head-ci:636c65d"
+        "pr:reppiks490/Icarus#415 asset registry integration",
+        "pr:reppiks490/Icarus#421 runtime/server integration",
+        "pr:reppiks490/Icarus#424 runtime/server integration",
+        "provider-evidence:A200 mapping and product entitlement",
+        "provider-evidence:qualified licensed durable history and live bars"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T13:20:00Z",
-      "latest_summary": "Independent review of PR #428 found no false qualification path and one timestamp edge case: naive report retrieval times were accepted. Exact-head fix rejects naive timestamps, adds malformed timestamp/digest cases, and documents that source response hashes are format-checked but cannot be recomputed offline because raw source responses are intentionally not persisted. Current exact head is 636c65d.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-16T13:25:00Z",
+      "latest_summary": "A200 listing identity evidence merged to Icarus main as 6e40d0b5ef27c4835a011480cec2f39c830f39ef via PR #428 after Linux/Windows exact-head checks passed. Current main snapshot validates the fresh crosswalk at 200/200 while provider connection, entitlement, historical/live qualification, Pulse, and strategy counts remain 0. Runtime/asset integration PRs #415, #421, and #424 remain open; canonical provider evidence still lacks per-A200 mapped/entitled datasets and qualified durable bars.",
+      "latest_type": "WAITING",
       "model_family": "openai",
-      "phase": "ci-and-qualification-boundary",
+      "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -776,7 +779,7 @@
     "stale": 3,
     "terminal": 9
   },
-  "generated_at_utc": "2026-10-16T13:09:39.566147Z",
+  "generated_at_utc": "2026-10-16T13:16:02.698727Z",
   "owner_status": {
     "claude": {
       "active": false,
