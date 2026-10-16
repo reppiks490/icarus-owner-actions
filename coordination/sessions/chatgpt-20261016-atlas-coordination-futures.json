@@ -3,12 +3,17 @@
   "session_id": "chatgpt-20261016-atlas-coordination-futures",
   "actor": "ChatGPT / Atlas",
   "model_family": "openai",
-  "goal": "Finish federation closure, deploy multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
+  "goal": "Finish federation closure, deploy and harden multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
   "home_repo": "reppiks490/icarus-owner-actions",
-  "branch": "atlas/coordination-fabric-v2",
-  "pr": "reppiks490/icarus-owner-actions#15",
+  "branch": "multi-repo/continuous",
+  "pr": null,
   "started_at_utc": "2026-10-16T02:40:00Z",
   "stale_after_minutes": 180,
   "capabilities": ["github", "web-research", "testing", "ui-integration", "futures-research"],
-  "initial_dependencies": ["pr:reppiks490/Icarus-engine#178", "pr:reppiks490/Icarus#397"]
+  "initial_dependencies": [
+    "merged:reppiks490/Icarus-engine#178@20616cce0ac5c30d05750fdb53169800f75cb3b6",
+    "merged:reppiks490/icarus-owner-actions#15@6a5015ea687ccc2917b1ee3a60b380607ffd7513",
+    "merged:reppiks490/icarus-owner-actions#17@772bc98339460056d42a188a59021fccc282b27b",
+    "pr:reppiks490/Icarus#397"
+  ]
 }
