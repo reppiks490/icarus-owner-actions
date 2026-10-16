@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "chatgpt-20261016-atlas-coordination-compiler-durability-tool-routing-note",
+  "session_id": "chatgpt-20261016-atlas-coordination-compiler-durability",
+  "at_utc": "2026-10-16T06:16:00Z",
+  "type": "NOTE",
+  "phase": "repair",
+  "summary": "Operator note: two redundant create_branch calls were rejected with HTTP 422 because the branch already existed; no repository state changed. Continue with the existing branch and PR creation only.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["branch:atlas/coordination-compiler-freshness"],
+  "evidence": ["GitHub 422 Reference already exists; no commit created"],
+  "next_action": "Open PR from existing branch; do not recreate branch.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": []
+}
