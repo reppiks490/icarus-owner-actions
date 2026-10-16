@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 import unittest
 
 
@@ -27,6 +28,18 @@ class CoordinationAutomationContractTests(unittest.TestCase):
         self.assertNotIn("- 'coordination/ACTIVE.md'", push_section)
         self.assertNotIn("- 'coordination/index.json'", push_section)
         self.assertNotIn("- 'coordination/collisions.json'", push_section)
+
+    def test_schedule_fallback_recompiles_within_five_minutes_off_hour_boundary(self):
+        workflow = Path('.github/workflows/coordination-maintenance.yml')
+        self.assertTrue(workflow.exists(), 'coordination maintenance workflow is missing')
+        text = workflow.read_text(encoding='utf-8')
+        cron_values = re.findall(r"cron:\s*['\"]([^'\"]+)['\"]", text)
+        self.assertTrue(cron_values, 'coordination maintenance needs a schedule fallback')
+        five_minute = [value for value in cron_values if '/5' in value.split()[0]]
+        self.assertTrue(five_minute, f'expected five-minute fallback schedule, got {cron_values!r}')
+        minute_field = five_minute[0].split()[0]
+        self.assertNotEqual(minute_field, '*/5', 'avoid top-of-hour/high-load minute zero')
+        self.assertRegex(minute_field, r'^[1-9][0-9]?-[0-9]+/5$')
 
 
 if __name__ == '__main__':
