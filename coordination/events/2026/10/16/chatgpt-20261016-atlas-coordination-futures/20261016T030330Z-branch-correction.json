@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T030330Z-branch-correction",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:03:30Z",
+  "type": "UPDATE",
+  "phase": "coordination-automation-hardening",
+  "summary": "A RED maintenance test was accidentally committed to the already-merged atlas/coordination-fabric-v2 branch. Main was not changed. The stale branch is no longer an implementation target; maintenance work is moving to a fresh branch from current main.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "dependencies": [],
+  "evidence": ["commit:reppiks490/icarus-owner-actions@8b4fe69213c3a57cc37d02d3d01e3c43a7c89395:stale-branch-only"],
+  "next_action": "Create atlas/coordination-maintenance-v1 from main and continue TDD there.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
