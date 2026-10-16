@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123100Z-plan",
+  "session_id": "codex-20261016-uw-pulse-consumption-audit",
+  "at_utc": "2026-10-16T12:31:00Z",
+  "type": "PLAN",
+  "phase": "research",
+  "summary": "Read the newest federated data-closure handoff and current canonical provider manifest, credentials contract, data-gap ledger, A200 catalog/probe receipt, Unusual Whales scheduled collector and canary receipts, and Icarus connector intake. Establish whether 200 assets are provider-qualified and whether Unusual Whales data is consumed by Pulse/champions; make no code changes or provider collection calls.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["handoff:reppiks490/Icarus-engine:coordination/inbox/to-chatgpt/20261016T0212Z-atlas-federated-data-closure.md"],
+  "evidence": ["Read-only audit; no reserved implementation paths."],
+  "next_action": "Report exact current evidence and any remaining source-to-Pulse integration gap."
+}
