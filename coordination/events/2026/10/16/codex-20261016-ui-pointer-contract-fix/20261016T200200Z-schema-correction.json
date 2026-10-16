@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261016-ui-pointer-contract-fix-20261016T200200Z-schema-correction",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "type": "UPDATE",
+  "at_utc": "2026-10-16T20:02:00Z",
+  "actor": "ChatGPT / Codex",
+  "summary": "Schema correction: the initial claim event used unsupported event_type/created_at_utc fields. Later immutable UPDATE and RELEASE events use schema-v2 type/at_utc/repos/targets fields; exact verification and supersession evidence are recorded there.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    "tests_engine/browser_depth.cjs",
+    "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/"
+  ],
+  "evidence": [
+    "Corrected session summary exists at coordination/summaries/codex-20261016-ui-pointer-contract-fix.json.",
+    "Schema-v2 UPDATE event 20261016T200000Z-update contains exact workflow evidence and records supersession; RELEASE event 20261016T200100Z-release releases the path."
+  ],
+  "coordination_mode": "cooperate",
+  "status": "superseded"
+}
