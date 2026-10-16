@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T065015Z-a200-ledger-ci-wait",
+  "session_id": "codex-20261016-a200-ledger-hardening",
+  "at_utc": "2026-10-16T06:50:15Z",
+  "type": "WAITING",
+  "phase": "verification",
+  "summary": "Implemented fail-closed hybrid receipt validation and rolling CLI windows; opened PR #410 at head 7a926dc. Focused market-universe suite passed (37), uv build and diff check passed, and the packaged ledger remains CURRENT for 400/400 provider records with all execution authority false. Waiting on exact-head PR checks.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/market_universe.py",
+    "tests_engine/test_market_universe.py",
+    "tools/probe_a200_hybrid.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market_universe.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_market_universe.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/probe_a200_hybrid.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#410",
+    "merged:reppiks490/Icarus#403@e8d463e3cb31e09ada3d1c931acec85e73348c4d"
+  ],
+  "evidence": [
+    "head:7a926dc",
+    "focused tests:tests_engine/test_market_universe.py 37 passed",
+    "build:uv build passed",
+    "freshness check:200 instruments, 400/400 provider records, CURRENT, authority false"
+  ],
+  "next_action": "Monitor exact-head CI; fix failures semantically; then integrate PR #410 if all required checks pass."
+}
