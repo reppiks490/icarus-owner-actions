@@ -151,18 +151,18 @@
         }
       ],
       "dependencies": [
-        "PR #440 merged as d9c5ce5bf62f910e81c6d8a7949260ffef061319",
-        "PR #415 asset registry path remains active at cfa97333bbccbb0a62da4802b3d9b495f9ec347d",
-        "A200 provider mapping and product entitlement evidence",
-        "licensed durable per-instrument history and qualified feed freshness"
+        "pr:reppiks490/Icarus#443@2270e67 exact-head CI and review",
+        "pr:reppiks490/Icarus#415@cfa97333bbccbb0a62da4802b3d9b495f9ec347d asset registry path",
+        "provider-evidence:A200 authoritative mapping and product entitlement",
+        "provider-evidence:licensed durable per-instrument history and qualified live feed"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T19:56:00Z",
-      "latest_summary": "With runtime freshness PR #440 merged, prepare the next A200 runtime integration phase. Reserve only a new bridge module, its focused tests, and the market-universe runtime boundary documentation; leave assets.py, runtime.py, server.py, bar_receipts.py, and UI surfaces to their active owners. Design must preserve canonical instrument identity and provider receipts, and must fail closed until authoritative provider mapping, entitlement, licensed history, and feed freshness qualify per instrument.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-16T20:01:00Z",
+      "latest_summary": "Implemented the isolated receipt-preserving A200 runtime boundary and opened PR #443 at 2270e67 after rebasing on PR #441 current main. The bridge carries canonical instrument_id and exact BarBatchReceipt, assesses identity/mapping/entitlement/history/live-feed gates, and always keeps execution unauthorized. Focused tests pass. PR #415 remains open on assets.py; latest exact-head Linux engine checks fail while Windows passes, and PR #443 exact-head Linux/Windows checks are pending.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "runtime-bridge-design-and-provider-gating",
+      "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -516,7 +516,7 @@
     "stale": 9,
     "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T19:53:40.420999Z",
+  "generated_at_utc": "2026-10-16T19:55:26.499108Z",
   "owner_status": {
     "claude": {
       "active": false,

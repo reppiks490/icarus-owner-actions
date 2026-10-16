@@ -1,31 +1,43 @@
 {
   "schema_version": "icarus-coordination-event-v2",
-  "event_id": "20261016T195600Z-a200-runtime-bridge-plan",
+  "event_id": "20261016T200100Z-a200-runtime-bridge-pr443-update",
   "session_id": "codex-20261016-a200-listing-qualification",
-  "at_utc": "2026-10-16T19:56:00Z",
-  "type": "PLAN",
-  "phase": "runtime-bridge-design-and-provider-gating",
-  "summary": "With runtime freshness PR #440 merged, prepare the next A200 runtime integration phase. Reserve only a new bridge module, its focused tests, and the market-universe runtime boundary documentation; leave assets.py, runtime.py, server.py, bar_receipts.py, and UI surfaces to their active owners. Design must preserve canonical instrument identity and provider receipts, and must fail closed until authoritative provider mapping, entitlement, licensed history, and feed freshness qualify per instrument.",
-  "repos": ["reppiks490/Icarus"],
+  "at_utc": "2026-10-16T20:01:00Z",
+  "type": "UPDATE",
+  "phase": "provider-qualification-and-runtime-connection",
+  "summary": "Implemented the isolated receipt-preserving A200 runtime boundary and opened PR #443 at 2270e67 after rebasing on PR #441 current main. The bridge carries canonical instrument_id and exact BarBatchReceipt, assesses identity/mapping/entitlement/history/live-feed gates, and always keeps execution unauthorized. Focused tests pass. PR #415 remains open on assets.py; latest exact-head Linux engine checks fail while Windows passes, and PR #443 exact-head Linux/Windows checks are pending.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
   "paths": [],
   "targets": [
-    {"repo": "reppiks490/Icarus", "path": "icarus_engine/a200_runtime_bridge.py"},
-    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_a200_runtime_bridge.py"},
-    {"repo": "reppiks490/Icarus", "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"}
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+    }
   ],
   "dependencies": [
-    "PR #440 merged as d9c5ce5bf62f910e81c6d8a7949260ffef061319",
-    "PR #415 asset registry path remains active at cfa97333bbccbb0a62da4802b3d9b495f9ec347d",
-    "A200 provider mapping and product entitlement evidence",
-    "licensed durable per-instrument history and qualified feed freshness"
+    "pr:reppiks490/Icarus#443@2270e67 exact-head CI and review",
+    "pr:reppiks490/Icarus#415@cfa97333bbccbb0a62da4802b3d9b495f9ec347d asset registry path",
+    "provider-evidence:A200 authoritative mapping and product entitlement",
+    "provider-evidence:licensed durable per-instrument history and qualified live feed"
   ],
   "evidence": [
-    "PR #440 is merged; runtime.py feed freshness path is released.",
-    "PR #415 remains open and changes assets.py; no edit to its registry path is reserved.",
-    "Provider evidence remains insufficient: Massive asset_datasets_collected=0; FMP latest rows=0 and endpoint denials=85; EODHD sample covers only 10 A200 names and is research-only; A200 history ledger reports provisional identity, unknown entitlement, and no historical qualification.",
-    "Listing identity crosswalk is 200/200 but explicitly does not qualify a provider feed."
+    "PR #443 open: https://github.com/reppiks490/Icarus/pull/443",
+    "Focused pytest tests_engine/test_a200_runtime_bridge.py tests_engine/test_market_universe.py passed after rebasing onto 4c7ef2c (PR #441).",
+    "python -m compileall and git diff --check passed.",
+    "PR #415 checks: Linux engine jobs 38910078926 and 38910087247 failed; Windows jobs passed; pytest diagnostic passed. GitHub denied retrieval of the private Actions job log from the signed result-storage URL, so failure details are not established.",
+    "A200 still has zero source-connected, entitlement-verified, historical/live-qualified, Pulse-enabled, or strategy-qualified instruments."
   ],
-  "next_action": "Inspect current Icarus main runtime and MarketUniverse adapter contracts, then implement an isolated typed bridge that carries eligibility/receipt evidence without introducing unqualified bars into runtime. If required AssetSpec support is unavailable, publish exact dependency and keep the bridge disabled; do not edit files owned by active PRs.",
+  "next_action": "Review exact PR #443 CI and resolve failures if any. Continue provider-evidence qualification and integration planning without editing assets.py while PR #415 owns it. Obtain a permitted exact failure summary for PR #415 or inspect its author updates; do not infer a fix from unavailable logs.",
   "coordination_mode": "independent",
   "cooperates_with": []
 }
