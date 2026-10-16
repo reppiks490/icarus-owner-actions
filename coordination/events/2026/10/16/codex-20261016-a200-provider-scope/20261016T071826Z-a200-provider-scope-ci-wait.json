@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T071826Z-a200-provider-scope-ci-wait",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:18:26Z",
+  "type": "WAITING",
+  "phase": "exact-head-verification",
+  "summary": "PR #411 head 971c835c2ceddd7a1bd5e7fcf2dbd05bf90fdc55 has passed the focused 40-test market-universe suite and diff checks. Two exact-head Linux/Windows Actions runs remain in progress; no live provider request was issued.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071826Z-a200-provider-scope-ci-wait.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus#411", "github-run:38866158543", "github-run:38866164181"],
+  "evidence": ["targeted market-universe test suite: 40 passed", "both workflow runs have head_sha 971c835c2ceddd7a1bd5e7fcf2dbd05bf90fdc55", "A200 runtime authority flags remain false"],
+  "next_action": "Review exact-head Linux and Windows results; resolve failures, then merge only when all required checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
