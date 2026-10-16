@@ -1,0 +1,61 @@
+{
+  "active_sessions": [
+    {
+      "actor": "ChatGPT / Atlas",
+      "branch": "atlas/coordination-fabric-v2",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "coordination_fabric",
+        "coordination",
+        "tests/test_coordination_fabric.py",
+        ".github/workflows/coordination-fabric.yml",
+        "AGENTS.md"
+      ],
+      "dependencies": [
+        "github-run:38842249502",
+        "pr:reppiks490/Icarus-engine#178",
+        "pr:reppiks490/Icarus#397"
+      ],
+      "goal": "Finish federation closure, deploy multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T02:51:00Z",
+      "latest_summary": "Building and verifying the many-chat coordination bus before futures implementation; Engine federation #178 is green, Icarus #397 is being held for a non-superseded exact-head CI completion.",
+      "latest_type": "PLAN",
+      "model_family": "openai",
+      "phase": "coordination-fabric",
+      "pr": "reppiks490/icarus-owner-actions#15",
+      "reclaimable": false,
+      "reserved_paths": [
+        "coordination_fabric",
+        "coordination",
+        "tests/test_coordination_fabric.py",
+        ".github/workflows/coordination-fabric.yml",
+        "AGENTS.md"
+      ],
+      "session_id": "chatgpt-20261016-atlas-coordination-futures",
+      "stale": false,
+      "status": "active"
+    }
+  ],
+  "collisions": [],
+  "counts": {
+    "active": 1,
+    "collisions": 0,
+    "stale": 0,
+    "terminal": 0
+  },
+  "generated_at_utc": "2026-10-16T02:55:00Z",
+  "owner_status": {
+    "claude": {
+      "active": false,
+      "note": "Owner reports Claude will be inactive for roughly one to two months. Unfinished Claude work is reclaimable after a takeover/cooperation note; absence is not completion.",
+      "return_date": null
+    },
+    "live_broker_arming": false,
+    "schema_version": "icarus-coordination-owner-status-v1",
+    "updated_at_utc": "2026-10-16T02:50:00Z"
+  },
+  "schema_version": "icarus-coordination-index-v2",
+  "terminal_sessions": []
+}

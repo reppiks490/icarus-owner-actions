@@ -1,0 +1,47 @@
+name: coordination-fabric
+on:
+  pull_request:
+    paths:
+      - 'coordination_fabric/**'
+      - 'coordination/**'
+      - 'tests/test_coordination*.py'
+      - 'AGENTS.md'
+      - '.github/workflows/coordination-fabric.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'coordination_fabric/**'
+      - 'coordination/**'
+      - 'tests/test_coordination*.py'
+      - 'AGENTS.md'
+      - '.github/workflows/coordination-fabric.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Coordination fabric contract
+        run: python -m unittest discover -s tests -p 'test_coordination*.py' -v
+      - name: Existing mission compiler regression
+        run: python -m unittest tests.test_mission_compiler -v
+      - name: Validate live coordination records
+        run: python -m coordination_fabric validate
+      - name: Compile active coordination view
+        run: python -m coordination_fabric compile
+      - name: Refuse undeclared active path collisions
+        run: >-
+          python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"

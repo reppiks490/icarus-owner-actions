@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-YYYYMMDD-short-task-unique",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "One concrete workstream goal",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "chatgpt/example-branch",
+  "pr": null,
+  "started_at_utc": "2026-10-16T00:00:00Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["github"],
+  "initial_dependencies": []
+}
