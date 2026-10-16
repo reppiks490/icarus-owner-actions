@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T120516Z-plan",
+  "session_id": "chatgpt-20261016-atlas-system-convergence",
+  "at_utc": "2026-10-16T12:05:16Z",
+  "type": "PLAN",
+  "phase": "system-convergence",
+  "summary": "Implement the post-audit convergence layer: canonical capability index, unified 32-root futures authority/execution qualification, backend asset-centric paper dashboard state, corpus-to-Brain provenance contracts, and rigid exact-head tests while avoiding active command-center UI collision paths.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+    "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+    "icarus_engine/system_index.py",
+    "icarus_engine/futures_catalog.py",
+    "icarus_engine/assets.py",
+    "icarus_futures/contracts.py",
+    "icarus_engine/asset_command_center.py",
+    "icarus_engine/brain_evidence.py",
+    "tests_engine/test_system_index.py",
+    "tests_engine/test_futures_catalog.py",
+    "tests_engine/test_asset_command_center.py",
+    "tests_engine/test_brain_evidence.py"
+  ],
+  "dependencies": [
+    "coordination:reppiks490/icarus-owner-actions:coordination/ACTIVE.md",
+    "pr:reppiks490/Icarus#411",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "deep-audit:2026-10-16",
+    "repo:reppiks490/Icarus@main",
+    "repo:reppiks490/Icarus-engine@main"
+  ],
+  "next_action": "Write the approved design/spec and implementation plan, then execute TDD task-by-task on atlas/icarus-system-convergence-20261016; do not touch command-center UI collision paths.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
