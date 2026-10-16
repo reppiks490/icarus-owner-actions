@@ -6,32 +6,44 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination_fabric",
-        "coordination",
-        "tests/test_coordination_fabric.py",
-        ".github/workflows/coordination-fabric.yml",
-        "AGENTS.md"
+        ".github/workflows/coordination-maintenance.yml",
+        "tests/test_coordination_automation.py"
+      ],
+      "declared_targets": [
+        {
+          "path": ".github/workflows/coordination-maintenance.yml",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_coordination_automation.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
       ],
       "dependencies": [
-        "github-run:38842249502",
-        "pr:reppiks490/Icarus-engine#178",
-        "pr:reppiks490/Icarus#397"
+        "commit:reppiks490/icarus-owner-actions@6a5015ea687ccc2917b1ee3a60b380607ffd7513"
       ],
       "goal": "Finish federation closure, deploy multi-chat coordination, reclaim Claude-stalled work, then research and integrate a collision-free high-value futures expansion with UI visibility.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-16T02:51:00Z",
-      "latest_summary": "Building and verifying the many-chat coordination bus before futures implementation; Engine federation #178 is green, Icarus #397 is being held for a non-superseded exact-head CI completion.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-16T03:05:00Z",
+      "latest_summary": "Accidental .branch-note marker was removed. Branch setup will use GitHub's branch API only; no more create-file calls are permitted for branch creation.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "coordination-fabric",
+      "phase": "coordination-automation-hardening",
       "pr": "reppiks490/icarus-owner-actions#15",
       "reclaimable": false,
       "reserved_paths": [
-        "coordination_fabric",
-        "coordination",
-        "tests/test_coordination_fabric.py",
-        ".github/workflows/coordination-fabric.yml",
-        "AGENTS.md"
+        ".github/workflows/coordination-maintenance.yml",
+        "tests/test_coordination_automation.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": ".github/workflows/coordination-maintenance.yml",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_coordination_automation.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
       ],
       "session_id": "chatgpt-20261016-atlas-coordination-futures",
       "stale": false,
@@ -45,7 +57,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T02:55:00Z",
+  "generated_at_utc": "2026-10-16T03:06:21.726286Z",
   "owner_status": {
     "claude": {
       "active": false,
