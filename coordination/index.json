@@ -326,15 +326,18 @@
       "declared_paths": [],
       "declared_targets": [],
       "dependencies": [
-        "pr:reppiks490/Icarus#415@1f58f37dc9f58c5a8c0bf6d1a50d579db289da1a"
+        "pr:reppiks490/Icarus#415@6c60e18d6e1225dc284c8429dbc9ed3ba7638276",
+        "github-run:38905446953",
+        "pr:reppiks490/Icarus#428@636c65de5212fb714a89e2be6f2c15536a73a097",
+        "github-run:38905721195"
       ],
       "goal": "Independently review the in-progress canonical 32-root futures PRs for contract failures and cross-PR collisions, and provide exact-head findings to their author.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T12:48:41Z",
-      "latest_summary": "Added an execution-boundary finding on #415 TDD head 1f58f37: the new contract-family test requires all 32 catalog products to enter SPECS/parse_continuous, but the current module contract defines these as execution-qualified dated-contract APIs and intentionally limits SPECS to 12 qualified roots. Keep that execution subset; if 32-root static roll candidates are needed, expose a separate structural catalog/resolver with an explicit execution_qualified=false flag and a tested paper-admission rejection. The focused exact-head run has 23 expected TDD failures plus two unresolved Databento mapping failures. Hosted checks are still pending.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-16T13:11:10Z",
+      "latest_summary": "Re-reviewed Atlas convergence PR #415 at 6c60e18d6e1225dc284c8429dbc9ed3ba7638276. The stale CL qualification test is corrected. Calendar-coverage and simulated-paper-control projection findings remain blocking; exact-head run 38905446953 was cancelled by a superseding commit, so await the current run after fixes. Separately reviewed A200 public-listing crosswalk PR #428: per-source freshness finding from ee06b2ce81fad0a1c43345362768b7fd0cda3c2f is corrected at 636c65de5212fb714a89e2be6f2c15536a73a097 and exact-head CI run 38905721195 is in progress.",
+      "latest_type": "WAITING",
       "model_family": "openai",
-      "phase": "review",
+      "phase": "exact-head-review",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [],
@@ -526,54 +529,32 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "config/data_ingestion_manifest.json",
-        "tests/test_ingestion_surface_contract.py",
-        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        "ICARUS_STATE.md"
       ],
       "declared_targets": [
         {
-          "path": "config/data_ingestion_manifest.json",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_ingestion_surface_contract.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "path": "ICARUS_STATE.md",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "CI: reppiks490/Icarus-engine#197 exact-head verification",
-        "external: restore already-paid primary depth feature data or record additional recovery budget",
-        "external: repair/replace Unusual Whales Actions credential/authorization"
+        "PR #198 exact-head verification is running"
       ],
       "goal": "Correct shared provider evidence truth and repair the provider manifest contract that currently fails Engine verification.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T13:10:27Z",
-      "latest_summary": "Expanded the status repair after auditing Databento depth. Current vault restores through HKDF(DATABENTO_API_KEY); the real integrity gap is a missing primary-account feature file after a prior paid 165-row partial-day slice, with 156,928 secondary/third rows. Updated manifest and ledger to name the precise budget-gated recovery. Local JSON/status checks pass; PR #197 exact-head CI is running.",
+      "last_event_at_utc": "2026-10-16T13:13:47Z",
+      "latest_summary": "Add ICARUS_STATE.md to the repair scope because its data access section is dated 2026-10-11 and now contradicts the current 2026-10-16 health/provider/depth receipts. The repo's own instructions require updating that source of truth when facts change.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "config/data_ingestion_manifest.json",
-        "tests/test_ingestion_surface_contract.py",
-        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        "ICARUS_STATE.md"
       ],
       "reserved_targets": [
         {
-          "path": "config/data_ingestion_manifest.json",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_ingestion_surface_contract.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "path": "ICARUS_STATE.md",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
@@ -587,9 +568,9 @@
     "active": 9,
     "collisions": 0,
     "stale": 4,
-    "terminal": 14
+    "terminal": 15
   },
-  "generated_at_utc": "2026-10-16T13:11:20.304265Z",
+  "generated_at_utc": "2026-10-16T13:13:56.983297Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -784,6 +765,33 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-a200-uw-head-refresh",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/futures-review-update-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#369@3e2ef806b35883db6a8b143cb75b8c657f23d261",
+        "github-run:38789304122",
+        "merge:reppiks490/Icarus@862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f"
+      ],
+      "goal": "Independently review and record the merge receipt for the process-safe Brain journal and Unusual Whales intake persistence port; preserve the metadata-only provider boundary.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T13:03:17Z",
+      "latest_summary": "Merged C02 process-safe Brain journal append and Unusual Whales receipt persistence PR #369. Exact head 3e2ef806b35883db6a8b143cb75b8c657f23d261 merged as 862a1ca38d4adcc11cb4ddc9093fcf857fe2e46f; Icarus main readback resolves to that SHA and the metadata-only UW intake file is present. Independent review found no blocking lock/persistence issue. Hosted exact-head run 38789304122 passed Linux engine and Windows engine-windows.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "receipt-verification",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-c02-brain-uw-merge",
       "stale": false,
       "status": "complete"
     },
