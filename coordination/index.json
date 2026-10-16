@@ -189,6 +189,55 @@
       "status": "active"
     },
     {
+      "actor": "ChatGPT",
+      "branch": "review/atlas141-exact-head",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "research_allocation/**",
+        "tests/test_research_allocation.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "research_allocation/**",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_research_allocation.py",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "dependencies": [
+        "PR #141 exact head ba05a182b4aa947d81b26b6c4063e33adec9f147"
+      ],
+      "goal": "Review Atlas draft PR #141 at exact published head and record evidence-based findings for the federation.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T12:11:00Z",
+      "latest_summary": "Review draft PR #141 at exact head ba05a182b4aa947d81b26b6c4063e33adec9f147, focusing finite/joint/sequential calculations, journal accounting boundaries, and CI shim. No source edits.",
+      "latest_type": "PLAN",
+      "model_family": "openai",
+      "phase": "reviewing",
+      "pr": 141,
+      "reclaimable": false,
+      "reserved_paths": [
+        "research_allocation/**",
+        "tests/test_research_allocation.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "research_allocation/**",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_research_allocation.py",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "session_id": "chatgpt-20261016-atlas141-review",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "ChatGPT / Codex",
       "branch": "codex/a200-probe-provider-scope-20261016",
       "cooperates_with": [],
@@ -433,12 +482,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 6,
+    "active": 7,
     "collisions": 0,
     "stale": 5,
     "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T12:06:05.799847Z",
+  "generated_at_utc": "2026-10-16T12:11:07.726734Z",
   "owner_status": {
     "claude": {
       "active": false,
