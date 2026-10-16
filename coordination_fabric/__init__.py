@@ -22,6 +22,7 @@ EVENT_TYPES = {
 }
 TERMINAL_TYPES = {"COMPLETE", "CANCELLED"}
 SESSION_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}\Z")
+REPO_RE = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\Z")
 
 
 def _load(path: Path) -> dict[str, Any]:
@@ -49,6 +50,12 @@ def _stamp(value: str) -> datetime:
 def _safe_session_id(value: Any) -> str:
     if not isinstance(value, str) or not SESSION_ID_RE.fullmatch(value):
         raise ValueError(f"unsafe session_id: {value!r}")
+    return value
+
+
+def _safe_repo(value: Any) -> str:
+    if not isinstance(value, str) or not REPO_RE.fullmatch(value):
+        raise ValueError(f"unsafe repository name: {value!r}")
     return value
 
 
@@ -82,12 +89,29 @@ def _validate_session(doc: dict[str, Any], path: Path) -> dict[str, Any]:
     stale = doc.get("stale_after_minutes")
     if not isinstance(stale, int) or stale < 1 or stale > 10080:
         raise ValueError(f"invalid stale_after_minutes: {path}")
-    for key in ("actor", "model_family", "goal", "home_repo", "branch"):
+    for key in ("actor", "model_family", "goal", "branch"):
         if not isinstance(doc.get(key), str) or not doc[key].strip():
             raise ValueError(f"session {key} must be non-empty: {path}")
+    _safe_repo(doc.get("home_repo"))
     _string_list(doc.get("capabilities", []), "capabilities")
     _string_list(doc.get("initial_dependencies", []), "initial_dependencies")
     return doc
+
+
+def _validate_targets(value: Any, repos: list[str], path: Path) -> list[dict[str, str]]:
+    if value is None:
+        return []
+    if not isinstance(value, list):
+        raise ValueError(f"targets must be a list: {path}")
+    out: list[dict[str, str]] = []
+    for item in value:
+        if not isinstance(item, dict) or set(item) != {"repo", "path"}:
+            raise ValueError(f"each target requires exactly repo/path: {path}")
+        repo = _safe_repo(item["repo"])
+        if repo not in repos:
+            raise ValueError(f"target repo not declared in repos: {path}")
+        out.append({"repo": repo, "path": _safe_path(item["path"])})
+    return out
 
 
 def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict[str, Any]:
@@ -106,12 +130,28 @@ def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict
         raise ValueError(f"missing phase: {path}")
     if not isinstance(doc.get("summary"), str) or not doc["summary"].strip():
         raise ValueError(f"missing summary: {path}")
-    for key in ("repos", "dependencies", "evidence", "cooperates_with"):
+
+    repos = _string_list(doc.get("repos", []), "repos")
+    repos = [_safe_repo(repo) for repo in repos]
+    if len(set(repos)) != len(repos):
+        raise ValueError(f"duplicate repositories: {path}")
+    doc["repos"] = repos
+    for key in ("dependencies", "evidence", "cooperates_with"):
         _string_list(doc.get(key, []), key)
+
     paths = doc.get("paths", [])
     if not isinstance(paths, list):
         raise ValueError(f"paths must be a list: {path}")
     doc["paths"] = [_safe_path(item) for item in paths]
+    targets = _validate_targets(doc.get("targets"), repos, path)
+    if doc["paths"] and len(repos) != 1:
+        raise ValueError(f"unqualified paths require exactly one repo: {path}")
+    if doc["paths"] and targets:
+        raise ValueError(f"use either paths or targets, not both: {path}")
+    if doc["paths"]:
+        targets = [{"repo": repos[0], "path": item} for item in doc["paths"]]
+    doc["targets"] = targets
+
     mode = doc.get("coordination_mode", "independent")
     if mode not in {"independent", "cooperate"}:
         raise ValueError(f"invalid coordination_mode: {path}")
@@ -216,20 +256,22 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
         terminal = bool(latest and latest["type"] in TERMINAL_TYPES)
         stale = (not terminal) and now - last_at > timedelta(minutes=session["stale_after_minutes"])
 
-        reservations: list[str] = []
+        reservation_targets: list[dict[str, str]] = []
         dependencies = list(session.get("initial_dependencies", []))
         mode = "independent"
         cooperates: list[str] = []
         for event in events:
             if event["type"] in TERMINAL_TYPES or event["type"] == "RELEASE":
-                reservations = []
-            elif event.get("paths"):
-                reservations = list(dict.fromkeys(event["paths"]))
+                reservation_targets = []
+            elif event.get("targets"):
+                reservation_targets = [dict(target) for target in event["targets"]]
             if event.get("dependencies"):
                 dependencies = list(dict.fromkeys(event["dependencies"]))
             mode = event.get("coordination_mode", mode)
             cooperates = list(dict.fromkeys(event.get("cooperates_with", cooperates)))
 
+        reservation_targets = list({(t["repo"], t["path"]): t for t in reservation_targets}.values())
+        active_targets = [] if stale or terminal else reservation_targets
         row = {
             "session_id": sid,
             "actor": session["actor"],
@@ -244,8 +286,10 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
             "latest_summary": latest["summary"] if latest else session["goal"],
             "last_event_at_utc": latest["at_utc"] if latest else session["started_at_utc"],
             "dependencies": dependencies,
-            "reserved_paths": [] if stale or terminal else reservations,
-            "declared_paths": reservations,
+            "reserved_targets": active_targets,
+            "declared_targets": reservation_targets,
+            "reserved_paths": [target["path"] for target in active_targets],
+            "declared_paths": [target["path"] for target in reservation_targets],
             "coordination_mode": mode,
             "cooperates_with": cooperates,
             "stale": stale,
@@ -254,16 +298,21 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
         (terminal_rows if terminal else rows).append(row)
 
     collisions: list[dict[str, Any]] = []
-    live_rows = [row for row in rows if not row["stale"] and row["reserved_paths"]]
+    live_rows = [row for row in rows if not row["stale"] and row["reserved_targets"]]
     for idx, left in enumerate(live_rows):
         for right in live_rows[idx + 1:]:
             if _mutual_cooperation(left, right):
                 continue
-            pairs = sorted({(lp, rp) for lp in left["reserved_paths"] for rp in right["reserved_paths"] if _overlap(lp, rp)})
-            if pairs:
+            by_repo: dict[str, set[tuple[str, str]]] = {}
+            for lt in left["reserved_targets"]:
+                for rt in right["reserved_targets"]:
+                    if lt["repo"] == rt["repo"] and _overlap(lt["path"], rt["path"]):
+                        by_repo.setdefault(lt["repo"], set()).add((lt["path"], rt["path"]))
+            for repo, pairs in sorted(by_repo.items()):
                 collisions.append({
                     "sessions": [left["session_id"], right["session_id"]],
-                    "path_pairs": [[a, b] for a, b in pairs],
+                    "repo": repo,
+                    "path_pairs": [[a, b] for a, b in sorted(pairs)],
                     "severity": "collision",
                 })
 
@@ -293,22 +342,22 @@ def render_active(state: dict[str, Any]) -> str:
         f"Stale/reclaimable: **{state.get('counts', {}).get('stale', 0)}** · "
         f"Collisions: **{state.get('counts', {}).get('collisions', 0)}**",
         "",
-        "| Session | Phase | Repo / branch | Latest note | Dependencies | Reserved paths |",
+        "| Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |",
         "|---|---|---|---|---|---|",
     ]
     for row in state.get("active_sessions", []):
         stale = " ⚠️ STALE/RECLAIMABLE" if row.get("stale") else ""
         deps = "<br>".join(row.get("dependencies") or []) or "—"
-        paths = "<br>".join(row.get("reserved_paths") or []) or "—"
+        targets = "<br>".join(f"{t['repo']}:{t['path']}" for t in row.get("reserved_targets") or []) or "—"
         lines.append(
             f"| `{row['session_id']}`{stale} | {row['phase']} | "
-            f"`{row['home_repo']}` / `{row['branch']}` | {row['latest_summary']} | {deps} | {paths} |"
+            f"`{row['home_repo']}` / `{row['branch']}` | {row['latest_summary']} | {deps} | {targets} |"
         )
     if state.get("collisions"):
         lines += ["", "## Active collisions", ""]
         for item in state["collisions"]:
             pairs = ", ".join(f"`{a}` ↔ `{b}`" for a, b in item["path_pairs"])
-            lines.append(f"- **{' ↔ '.join(item['sessions'])}**: {pairs}")
+            lines.append(f"- **{' ↔ '.join(item['sessions'])}** in `{item['repo']}`: {pairs}")
     return "\n".join(lines) + "\n"
 
 
