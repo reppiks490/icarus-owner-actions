@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Audit all three Databento corpus paths and protect the paid encrypted depth vault when a standalone archive key is introduced; investigate missing primary sweep data without new spend.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "codex/databento-vault-key-compat-20261016",
+  "pr": "pending",
+  "started_at_utc": "2026-10-16T20:02:58Z",
+  "stale_after_minutes": 240,
+  "capabilities": [
+    "github",
+    "data-audit",
+    "vault-maintenance"
+  ],
+  "initial_dependencies": [
+    "owner:three-databento-keys-with-separate-corpora",
+    "constraint:no-new-provider-spend",
+    "constraint:no-plaintext-secret-output"
+  ]
+}

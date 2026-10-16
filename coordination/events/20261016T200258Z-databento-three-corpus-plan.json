@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T200258Z-databento-three-corpus-plan",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "at_utc": "2026-10-16T20:02:58Z",
+  "type": "PLAN",
+  "phase": "audit-and-repair",
+  "summary": "Audit primary, secondary, and third Databento corpus persistence separately. Make existing depth vault choose its recorded key source even when a new standalone archive key is supplied, preserving authenticated restore. Search caches/artifacts for the missing primary sweep feature before declaring it unrecoverable.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/depth_vault.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_depth_vault.py"
+    }
+  ],
+  "dependencies": [
+    "vault:key-source=HKDF(DATABENTO_API_KEY)",
+    "primary-sweep:feature-gap"
+  ],
+  "evidence": [
+    "main:data/depth_vault/manifest.json:135-corpus-entries",
+    "main:automation_intelligence/sentinel/vault_verify.json:135-authenticated",
+    "actions-cache:databento-sweep-prefix=0"
+  ],
+  "next_action": "Search remaining primary data locations, then implement and verify key-source compatibility.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
