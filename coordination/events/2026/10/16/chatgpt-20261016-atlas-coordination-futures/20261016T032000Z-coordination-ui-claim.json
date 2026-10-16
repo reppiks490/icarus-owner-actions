@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T032000Z-coordination-ui-claim",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:20:00Z",
+  "type": "CLAIM",
+  "phase": "coordination-ui",
+  "summary": "Cross-repo coordination policy is on main or under exact-head verification. Building a read-only Engine coordination snapshot/API/dashboard tab so every operator/agent can see active chats, phases, waits, dependencies, repo-qualified reservations, stale/reclaimable work, Claude status, and collisions. No mutation or live execution controls.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [
+    "icarus_engine/coordination_view.py",
+    "icarus_engine/coordination-ui.js",
+    "icarus_engine/server.py",
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_coordination_view.py",
+    "tests_engine/test_dashboard_js.py",
+    "tests/test_multichat_coordination_entrypoint.py"
+  ],
+  "dependencies": ["coordination-bus:main", "pr:reppiks490/Icarus#397"],
+  "evidence": ["owner-actions-main:ef6ae205a260424ed45da7a45dab6f92eb96b401", "engine-main:central-coordination-adopted"],
+  "next_action": "Write failing fixture/API/UI contracts, then implement bounded cached read-only coordination state and modular dashboard rendering.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
