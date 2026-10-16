@@ -151,14 +151,13 @@
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#443@df735353bea4f8b6fd8e97e3e6972ebbf0efafab exact-head runs 38959013195 and 38959003877",
-        "provider-evidence:A200 authoritative mapping and product entitlement",
-        "provider-evidence:licensed durable per-instrument history and qualified live feed"
+        "pr:reppiks490/Icarus#443@0e772ec4541cc3b26e34da13de3a7832a614e3c0 exact-head run 38959236508",
+        "A200 provider mapping, entitlement, qualified history and live feed evidence"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T20:25:00Z",
-      "latest_summary": "Addressed both exact-head review findings on A200 runtime bridge PR #443. Head df735353 copies mutable bar inputs to an immutable tuple and recomputes the canonical OHLCV SHA-256 against the receipt, with regressions for same-count OHLCV substitution and caller-list mutation. Focused bridge/market-universe suite passes (48 tests); compileall and diff-check pass. GitHub reports mergeState CLEAN; exact-head Linux/Windows runs 38959013195 and 38959003877 are queued. Prior Linux runs on 2270e67 passed; prior Windows runs remain active.",
+      "last_event_at_utc": "2026-10-16T20:31:00Z",
+      "latest_summary": "Tightened A200 bridge PR #443 to head 0e772ec after another review finding. The bridge now requires literal boolean True for external identity/live-feed attestations, rejects non-boolean historical qualification on forged receipts, recomputes the exact OHLCV checksum, and copies mutable inputs into a tuple. Focused bridge+market-universe tests pass (52 tests); compileall and diff-check pass. The latest exact-head run 38959236508 is queued. Previous Linux full suite passed on 2270e67; full Linux/Windows runs for df73535 remain in progress.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "provider-qualification-and-runtime-connection",
@@ -515,7 +514,7 @@
     "stale": 9,
     "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T20:00:27.160173Z",
+  "generated_at_utc": "2026-10-16T20:02:00.125803Z",
   "owner_status": {
     "claude": {
       "active": false,
