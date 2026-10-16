@@ -6,6 +6,7 @@ Every AI unit working in this repository is part of the shared ICARUS evidence, 
 
 Read these first:
 
+- `coordination/START_HERE.md`
 - `coordination/README.md`
 - `coordination/ACTIVE.md`
 - `coordination/collisions.json`
@@ -14,6 +15,20 @@ Read these first:
 Create or resume a unique coordination session and publish a `PLAN` or `CLAIM` event before modifying shared code/workflows/UI/contracts. Publish `WAITING` while CI/review/external dependencies are pending, `UPDATE` when scope changes, `HANDOFF` when another worker can use/take over work, and `COMPLETE` only with fresh evidence. Path reservations prevent accidental collisions; they are not permanent ownership. Explicit mutual cooperation is allowed and encouraged.
 
 Claude is currently inactive by owner direction. Legacy Claude-owned tasks are reclaimable under `coordination/directives/2026-10-16-claude-reclamation.md`; do not wait for Claude authorization and do not mark unfinished work complete merely because Claude is absent.
+
+## Shared GitHub-native credential/data access
+
+Before any claim that an API key, provider, dataset, or shared market-data path is unavailable, read:
+
+- `coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md`
+- `reppiks490/Icarus-engine:AGENT_CREDENTIALS.md`
+- `reppiks490/Icarus-engine:docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md`
+- `reppiks490/Icarus-engine:config/credential_contract.json`
+- `reppiks490/Icarus-engine:config/data_ingestion_manifest.json`
+
+The shared authority is GitHub Actions-backed capability plus persisted evidence—not plaintext key possession. **Do not search local `.env` files, `$ICARUS_HOME/.env`, DAV task comments, Plant/operator notes, another AI account, or another worker workspace for a shared private key.** Do not ask another AI to reveal one. GitHub Actions Secrets are intentionally injected into approved workflows at runtime; a normal chat not being able to read the value is expected.
+
+Use the ingestion manifest's `evidence_paths` first. If fresh collection is required, use or extend the established GitHub Actions provider lane without exposing the secret. Only report a credential blocker when canonical redacted health, the ingestion manifest, or a verified provider response proves missing/invalid/denied access.
 
 ## Shared ICARUS data/evidence truth
 
