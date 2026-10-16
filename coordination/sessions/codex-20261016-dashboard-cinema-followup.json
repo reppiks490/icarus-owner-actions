@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-dashboard-cinema-followup",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Complete and verify the RT01 read-only dashboard UI integration after the browser contract exposed a cinema settings popover overflow; merge only exact green heads and keep broker arming disabled.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/rt01-shadow-dashboard-20261015",
+  "started_at_utc": "2026-10-16T06:38:17Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "ui-integration",
+    "testing"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#377 exact-head CI",
+    "reppiks490/Icarus#403 exact-head CI",
+    "local browser cinema contract"
+  ]
+}
