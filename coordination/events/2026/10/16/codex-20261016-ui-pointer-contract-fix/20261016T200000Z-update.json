@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261016-ui-pointer-contract-fix-20261016T200000Z-update",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "type": "UPDATE",
+  "at_utc": "2026-10-16T20:00:00Z",
+  "actor": "ChatGPT / Codex",
+  "summary": "Browser contract fix was verified on exact commit 17c7aeb with UI, Linux/Windows engine, configuration, source-data, intelligence-feed, and federation-consumer workflows green. The change is superseded because owner merged PR #421 and #423 and closed stacked #424.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    "tests_engine/browser_depth.cjs"
+  ],
+  "evidence": [
+    "PR #424 exact-head commit 17c7aeb: workflow runs 38906554608 UI visual success, 38906554948 engine Linux/Windows success, 38906555206 configuration success, 38906554781 source-data contract success, 38906555079 intelligence-feed contract success, 38906554923 federation-consumer contract success.",
+    "Owner closed #424 as superseded after merges #421 and #423; the test-only fix remains on the closed PR branch and is not required on main."
+  ],
+  "coordination_mode": "cooperate",
+  "status": "superseded"
+}
