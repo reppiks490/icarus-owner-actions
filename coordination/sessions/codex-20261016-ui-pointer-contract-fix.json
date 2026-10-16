@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/command-center-stack-421",
+  "started_at_utc": "2026-10-16T13:13:13Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "ui-integration",
+    "testing"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#424 current stack and #421 backend parent",
+    "GitHub Actions ui-visual-contract exact-head run"
+  ]
+}
