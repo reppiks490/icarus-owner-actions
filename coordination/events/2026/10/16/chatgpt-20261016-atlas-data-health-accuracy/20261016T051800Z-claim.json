@@ -1,0 +1,21 @@
+{
+  "schema_version":"icarus-coordination-event-v2",
+  "event_id":"chatgpt-20261016-atlas-data-health-accuracy-claim",
+  "session_id":"chatgpt-20261016-atlas-data-health-accuracy",
+  "at_utc":"2026-10-16T05:18:00Z",
+  "type":"CLAIM",
+  "phase":"audit-repair",
+  "summary":"Repair Sentinel health accuracy after the ingestion closure audit. The generic provider sampler can report BLOCKED even when a dedicated GitHub-native collector is delivering FMP/EODHD/Tiingo data. Also repair stale evidence-path metadata. No vendor calls, no paid acquisition, no live broker arming.",
+  "repos":["reppiks490/Icarus-engine"],
+  "paths":["tools/data_sentinel.py","tests/test_data_sentinel.py","config/data_ingestion_manifest.json"],
+  "targets":[
+    {"repo":"reppiks490/Icarus-engine","path":"tools/data_sentinel.py"},
+    {"repo":"reppiks490/Icarus-engine","path":"tests/test_data_sentinel.py"},
+    {"repo":"reppiks490/Icarus-engine","path":"config/data_ingestion_manifest.json"}
+  ],
+  "dependencies":["evidence:automation_intelligence/cl_lab/external_data_fabric.json","evidence:provider_collection_v1/latest"],
+  "evidence":["provider:fmp generic=BLOCKED but external fabric status=ok","provider:eodhd generic=BLOCKED but external fabric status=ok"],
+  "next_action":"Write failing tests proving dedicated live evidence overrides one blocked generic sampler without hiding plan limitations; then implement aggregation and correct manifest paths.",
+  "coordination_mode":"cooperative",
+  "cooperates_with":["chatgpt-20261016-atlas-coordination-ui-182"]
+}
