@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261016-current-head-builds",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Revalidate current-main package builds and requested software suites across Icarus, Icarus-engine, and Divine Providence; report exact evidence and any local limitations.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "verification/current-main-read-only",
+  "pr": null,
+  "started_at_utc": "2026-10-16T18:38:58Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github",
+    "python",
+    "uv"
+  ],
+  "initial_dependencies": [
+    "Latest main refs for Icarus, Icarus-engine, and Divine Providence"
+  ]
+}
