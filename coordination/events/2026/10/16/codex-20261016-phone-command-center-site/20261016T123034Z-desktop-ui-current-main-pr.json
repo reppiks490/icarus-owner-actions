@@ -1,0 +1,67 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123034Z-desktop-ui-current-main-pr",
+  "session_id": "codex-20261016-phone-command-center-site",
+  "at_utc": "2026-10-16T12:30:34Z",
+  "type": "UPDATE",
+  "phase": "ci-and-backend-integration",
+  "summary": "The desktop UI is now proposed on current main as PR #423 after preserving the intervening trade-history (#379) and Style-popup (#ec44170) updates. Independent Chromium review on the current-main cherry-pick passed desktop and mobile mock screens and viewport checks. PR #423 visual, test, and configuration workflows are queued. PR #421 adds the backend P&L/feed API and partial-flatten receipt; its workflows are also queued. Phone Site v14 is already deployed privately.",
+  "repos": [
+    "reppiks490/Icarus",
+    "sites/icarus-command-center-mobile"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/command-centers-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-aura.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-cinema.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-motion.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/dashboard.html"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/command-centers-ui.js"
+    }
+  ],
+  "dependencies": [
+    "PR #421 backend CI and merge",
+    "PR #423 UI visual/test/configuration CI"
+  ],
+  "evidence": [
+    "PR #421 head 3fc7cc5478c3e2b2e6671028a5380e278090f5b3 is mergeable and focused 100-test suite passed locally",
+    "PR #423 head d2c1878cd5f4671c3f08d66ead04c9df969fd6e3 is based on current origin/main ce271f1923c3841a7acb4a66102e820a36fc4705",
+    "Independent current-main Chromium smoke passed 1440x900 and 390x844 for galaxy, cyberpunk, and chibi themes with no page errors or horizontal overflow",
+    "Phone Site version 14 deployed to https://icarus-command-center-mobile.cloudyrook1.chatgpt.site with owner-only access"
+  ],
+  "next_action": "Wait for PR #421 and PR #423 exact-head CI to leave queued state. After checks pass, merge the backend contract first and then the UI PR; verify the exact merged heads and refresh/activate the engine and private phone tunnel."
+}
