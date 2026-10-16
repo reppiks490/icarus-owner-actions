@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T201243Z-databento-bars-baseline-plan",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "at_utc": "2026-10-16T20:12:43Z",
+  "type": "PLAN",
+  "phase": "bar-baseline-durability",
+  "summary": "The primary 34-instrument feed manifest has 32 successful five-minute bar files and NQ/ES historical backfills are finished, but their data lives in an evictable 157 MB CL Actions cache. Add a one-time encrypted baseline per account and restore it before CL refresh so this paid history survives cache eviction without committing plaintext vendor rows or rewriting the entire baseline daily.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/databento-bars-vault.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/cl-lab.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/databento_bar_baseline.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_databento_bar_baseline.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "data/depth_vault/sources.json"
+    }
+  ],
+  "dependencies": [
+    "merged:reppiks490/Icarus-engine#202",
+    "merged:reppiks490/Icarus-engine#203",
+    "constraint:no-new-provider-spend"
+  ],
+  "evidence": [
+    "actions-cache:cl-feeds-prefix=25",
+    "feeds_manifest:32-databento-ok-2-entitlement-error",
+    "history_status:ES-primary-NQ-third-finished",
+    "vault:bar-baseline-absent"
+  ],
+  "next_action": "Implement account-scoped one-time baseline staging, separate bars-vault workflow, and CL restore; run focused tests and exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
