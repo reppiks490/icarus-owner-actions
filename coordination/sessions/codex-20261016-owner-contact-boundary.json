@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-owner-contact-boundary",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Persist the owner's explicit no-routine-contact preference for active ICARUS work so agents continue independently, coordinate through the bus, and do not ask the owner to perform manual steps while work remains.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/owner-contact-boundary-20261016",
+  "started_at_utc": "2026-10-16T07:09:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "coordination", "documentation"],
+  "initial_dependencies": ["explicit owner instruction in current session", "coordination ACTIVE.md and collisions.json checked before path reservation"]
+}

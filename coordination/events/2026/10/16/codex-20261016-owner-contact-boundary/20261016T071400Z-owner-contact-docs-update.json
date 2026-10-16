@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T071400Z-owner-contact-docs-update",
+  "session_id": "codex-20261016-owner-contact-boundary",
+  "at_utc": "2026-10-16T07:14:00Z",
+  "type": "UPDATE",
+  "phase": "documentation",
+  "summary": "Added the owner no-routine-contact directive and linked it from the coordination entrypoint and mass-chat operating contract. The new session and event validate individually. Full-tree validation currently stops on a pre-existing Atlas event whose coordination_mode is 'cooperative', which the validator rejects.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/START_HERE.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/2026-10-16-mass-chat-operating-contract.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/2026-10-16-owner-contact-boundary.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json"}
+  ],
+  "dependencies": ["baseline coordination validator fix for pre-existing invalid event"],
+  "evidence": ["owner-contact session passes _validate_session", "owner-contact plan/update events pass _validate_event", "python -m coordination_fabric validate fails on existing event chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061500Z-red-note.json: invalid coordination_mode cooperative"],
+  "next_action": "Commit the directive as a reviewable PR, keep unrelated validator repair out of this change, and retry full-tree validation after the baseline event is corrected.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

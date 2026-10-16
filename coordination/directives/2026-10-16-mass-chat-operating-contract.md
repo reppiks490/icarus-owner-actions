@@ -20,6 +20,8 @@ No task is exclusive to Claude, ChatGPT, Codex, Grok, Atlas, or a named model be
 
 ## Required communication discipline
 
+Follow the owner's no-routine-contact preference in `coordination/directives/2026-10-16-owner-contact-boundary.md`. Keep the coordination bus current for other agents, but do not send the owner progress pings, routine questions, or requests for manual steps while applicable authorized work remains.
+
 Each chat must keep the shared bus current enough that another chat can answer, without guessing:
 
 - What are you doing now?
