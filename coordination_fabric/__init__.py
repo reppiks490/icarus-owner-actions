@@ -310,10 +310,12 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
                     if lt["repo"] == rt["repo"] and _overlap(lt["path"], rt["path"]):
                         by_repo.setdefault(lt["repo"], set()).add((lt["path"], rt["path"]))
             for repo, pairs in sorted(by_repo.items()):
+                target_pairs = [[a, b] for a, b in sorted(pairs)]
                 collisions.append({
                     "sessions": [left["session_id"], right["session_id"]],
                     "repo": repo,
-                    "path_pairs": [[a, b] for a, b in sorted(pairs)],
+                    "target_pairs": target_pairs,
+                    "path_pairs": target_pairs,
                     "severity": "collision",
                 })
 
@@ -357,7 +359,7 @@ def render_active(state: dict[str, Any]) -> str:
     if state.get("collisions"):
         lines += ["", "## Active collisions", ""]
         for item in state["collisions"]:
-            pairs = ", ".join(f"`{a}` ↔ `{b}`" for a, b in item["path_pairs"])
+            pairs = ", ".join(f"`{a}` ↔ `{b}`" for a, b in item["target_pairs"])
             lines.append(f"- **{' ↔ '.join(item['sessions'])}** in `{item['repo']}`: {pairs}")
     return "\n".join(lines) + "\n"
 
