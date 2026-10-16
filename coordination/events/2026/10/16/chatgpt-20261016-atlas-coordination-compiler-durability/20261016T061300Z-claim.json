@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "chatgpt-20261016-atlas-coordination-compiler-durability-claim",
+  "session_id": "chatgpt-20261016-atlas-coordination-compiler-durability",
+  "at_utc": "2026-10-16T06:13:00Z",
+  "type": "CLAIM",
+  "phase": "repair",
+  "summary": "Repair central coordination compiler freshness. Connector-authored coordination events have accumulated after the last compiled ACTIVE/index snapshot, so new chats can read stale active-session and collision state. Add a shifted five-minute schedule as a fallback while preserving push/manual compilation and existing collision validation.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [".github/workflows/coordination-maintenance.yml", "tests/test_coordination_automation.py"],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": ".github/workflows/coordination-maintenance.yml"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "tests/test_coordination_automation.py"}
+  ],
+  "dependencies": ["current compiled snapshot:2026-10-16T04:51:27.767228Z", "new coordination events through 2026-10-16T06:10Z"],
+  "evidence": ["coordination/ACTIVE.md still lists completed PR #182 session", "new Codex phone Command Center session exists but is absent from compiled ACTIVE.md"],
+  "next_action": "Create isolated branch, add RED schedule-fallback contract, implement shifted five-minute maintenance schedule, verify CI and post-merge compiled state.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": ["codex-20261016-phone-command-center-site", "chatgpt-20261016-atlas-data-health-accuracy"]
+}
