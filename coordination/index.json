@@ -55,31 +55,11 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "tools/probe_a200_hybrid.py",
-        "icarus_engine/market_universe.py",
-        "tests_engine/test_market_universe.py",
-        "coordination/sessions/codex-20261016-a200-provider-scope.json",
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json"
+        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json"
       ],
       "declared_targets": [
         {
-          "path": "tools/probe_a200_hybrid.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/sessions/codex-20261016-a200-provider-scope.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json",
+          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -88,39 +68,19 @@
       ],
       "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T07:17:14Z",
-      "latest_summary": "Add an explicit provider allowlist to the A200 hybrid probe so a bounded Yahoo-only observation cannot accidentally invoke FMP. Keep the complete provider/instrument ledger, mark excluded providers NOT_REQUESTED, and preserve all runtime qualification flags as false. Review exact-head CI before treating this change as integrated.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-16T07:19:30Z",
+      "latest_summary": "Addressed the least-privilege review finding: Yahoo-only runs now construct the provider adapter with Yahoo scope, so an FMP key in the environment cannot cause FmpHistory to be initialized. Added a regression test that fails if FMP connector construction occurs. PR #411 is now at df18391 with 41 focused tests passing; prior CI on 971c835 is superseded and exact-head checks for df18391 are pending.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "a200-provider-scope",
+      "phase": "exact-head-verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "tools/probe_a200_hybrid.py",
-        "icarus_engine/market_universe.py",
-        "tests_engine/test_market_universe.py",
-        "coordination/sessions/codex-20261016-a200-provider-scope.json",
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json"
+        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json"
       ],
       "reserved_targets": [
         {
-          "path": "tools/probe_a200_hybrid.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/sessions/codex-20261016-a200-provider-scope.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json",
+          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -506,7 +466,7 @@
     "stale": 0,
     "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T07:18:31.471285Z",
+  "generated_at_utc": "2026-10-16T07:20:09.513171Z",
   "owner_status": {
     "claude": {
       "active": false,
