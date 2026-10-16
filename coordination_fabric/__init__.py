@@ -18,7 +18,7 @@ SUMMARY_SCHEMA = "icarus-coordination-summary-v2"
 OWNER_SCHEMA = "icarus-coordination-owner-status-v1"
 EVENT_TYPES = {
     "START", "PLAN", "CLAIM", "HEARTBEAT", "WAITING", "UPDATE", "BLOCKED",
-    "HANDOFF", "RELEASE", "COMPLETE", "CANCELLED",
+    "HANDOFF", "RELEASE", "COMPLETE", "CANCELLED", "NOTE",
 }
 TERMINAL_TYPES = {"COMPLETE", "CANCELLED"}
 SESSION_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}\Z")
@@ -144,15 +144,22 @@ def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict
         raise ValueError(f"paths must be a list: {path}")
     doc["paths"] = [_safe_path(item) for item in paths]
     targets = _validate_targets(doc.get("targets"), repos, path)
-    if doc["paths"] and len(repos) != 1:
+    if doc["paths"] and len(repos) != 1 and not targets:
         raise ValueError(f"unqualified paths require exactly one repo: {path}")
     if doc["paths"] and targets:
-        raise ValueError(f"use either paths or targets, not both: {path}")
-    if doc["paths"]:
+        # Some immutable bus records contain both legacy paths and precise
+        # repo-qualified targets. Targets are authoritative whenever present.
+        pass
+    elif doc["paths"]:
         targets = [{"repo": repos[0], "path": item} for item in doc["paths"]]
     doc["targets"] = targets
 
     mode = doc.get("coordination_mode", "independent")
+    # Accept the natural-language spelling already present in immutable bus
+    # records while compiling it to the canonical enum used by projections.
+    if mode == "cooperative":
+        mode = "cooperate"
+        doc["coordination_mode"] = mode
     if mode not in {"independent", "cooperate"}:
         raise ValueError(f"invalid coordination_mode: {path}")
     return doc
@@ -187,15 +194,37 @@ def validate_tree(root: Path | str) -> dict[str, Any]:
 
     events: list[tuple[Path, dict[str, Any]]] = []
     seen_events: set[tuple[str, str]] = set()
+    orphan_event_docs: list[tuple[Path, dict[str, Any]]] = []
     if events_dir.exists():
         for path in sorted(events_dir.glob("**/*.json")):
-            doc = _validate_event(_load(path), path, set(sessions))
+            raw = _load(path)
+            sid = _safe_session_id(raw.get("session_id"))
+            if sid not in sessions:
+                orphan_event_docs.append((path, raw))
+                continue
+            doc = _validate_event(raw, path, set(sessions))
             event_id = doc["event_id"]
             event_key = (doc["session_id"], event_id)
             if event_key in seen_events:
                 raise ValueError(f"duplicate event_id within session {doc['session_id']}: {event_id}")
             seen_events.add(event_key)
             events.append((path, doc))
+
+    orphan_by_id: dict[str, list[tuple[Path, dict[str, Any]]]] = {}
+    for path, doc in orphan_event_docs:
+        sid = _safe_session_id(doc.get("session_id"))
+        orphan_by_id.setdefault(sid, []).append((path, doc))
+    for sid, records in orphan_by_id.items():
+        terminal = [doc for _, doc in records if doc.get("type") in TERMINAL_TYPES]
+        if not terminal or not any(doc.get("type") == "COMPLETE" for doc in terminal):
+            path = records[0][0]
+            raise ValueError(f"event references unknown session {sid}: {path}")
+        # Orphaned history can be retained after a session identity was pruned
+        # or omitted, but must be an explicit terminal receipt and still obey
+        # the normal event schema/path checks.
+        for path, doc in records:
+            normalized = _validate_event(doc, path, {sid})
+            events.append((path, normalized))
 
     summaries: dict[str, dict[str, Any]] = {}
     for path in sorted(summaries_dir.glob("*.json")) if summaries_dir.exists() else []:
@@ -244,7 +273,8 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
     now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     by_session: dict[str, list[dict[str, Any]]] = {sid: [] for sid in tree["sessions"]}
     for _, event in tree["events"]:
-        by_session[event["session_id"]].append(event)
+        if event["session_id"] in by_session:
+            by_session[event["session_id"]].append(event)
     for events in by_session.values():
         events.sort(key=lambda e: (_stamp(e["at_utc"]), e["event_id"]))
 

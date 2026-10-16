@@ -99,6 +99,47 @@ class CoordinationFabricContractTests(unittest.TestCase):
             state = compile_state(root, now=datetime(2026, 10, 16, 2, 20, tzinfo=timezone.utc))
             self.assertEqual(state["collisions"], [])
 
+    def test_cooperative_alias_in_immutable_bus_record_compiles_canonically(self):
+        compile_state, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            _event(root, "chat-a", "2026-10-16T02:10:00Z", "NOTE",
+                   mode="cooperative", cooperates=["chat-b"])
+            tree = validate_tree(root)
+            self.assertEqual(tree["events"][0][1]["coordination_mode"], "cooperate")
+            state = compile_state(root, now=datetime(2026, 10, 16, 2, 20, tzinfo=timezone.utc))
+            self.assertEqual(state["active_sessions"][0]["coordination_mode"], "cooperate")
+
+    def test_legacy_cross_repo_paths_with_qualified_targets_use_target_authority(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            event = {
+                "schema_version": "icarus-coordination-event-v2", "event_id": "legacy-cross-repo",
+                "session_id": "chat-a", "at_utc": "2026-10-16T02:10:00Z", "type": "NOTE",
+                "phase": "repair", "summary": "legacy cross-repo shape", "repos": [
+                    "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+                "paths": ["legacy/path"], "targets": [
+                    {"repo": "reppiks490/Icarus-engine", "path": "engine/path"}],
+            }
+            _write(root, "coordination/events/2026/10/16/chat-a/legacy.json", event)
+            tree = validate_tree(root)
+            self.assertEqual(tree["events"][0][1]["targets"], [
+                {"repo": "reppiks490/Icarus-engine", "path": "engine/path"}])
+
+    def test_orphaned_events_require_a_terminal_complete_receipt(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _event(root, "missing-session", "2026-10-16T02:10:00Z", "CLAIM")
+            with self.assertRaisesRegex(ValueError, "unknown session"):
+                validate_tree(root)
+            _event(root, "missing-session", "2026-10-16T02:20:00Z", "COMPLETE")
+            tree = validate_tree(root)
+            self.assertEqual(len(tree["events"]), 2)
+
     def test_stale_session_is_reclaimable_not_complete(self):
         compile_state, _, _, _ = self._api()
         with tempfile.TemporaryDirectory() as td:
