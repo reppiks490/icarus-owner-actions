@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T032700Z-coordination-ui-provenance",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:27:00Z",
+  "type": "UPDATE",
+  "phase": "coordination-ui-verification",
+  "summary": "Implementation revealed the Engine MCP same-changeset provenance contract. Adding the required source-qualified INTEGRATION event for the coordination mirror/MCP UI changes before CI verification; this is a discovered repository invariant, not a new functional scope.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [
+    ".github/workflows/coordination-mirror.yml",
+    "icarus_engine/mcp_control.py",
+    "icarus_engine/mcp-ui.js",
+    "tests_engine/test_mcp_control.py",
+    "automation_intelligence/mcp_interface/events/20261016T032700Z-multichat-coordination-ui.json"
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#182"],
+  "evidence": ["github-run:38845135614:TDD_RED_expected_four_failures"],
+  "next_action": "Add the same-changeset MCP integration event and run exact-head full CI; repair any new internal failure before merge.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
