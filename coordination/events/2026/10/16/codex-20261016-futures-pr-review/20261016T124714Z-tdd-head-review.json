@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124714Z-tdd-head-review",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T12:47:14Z",
+  "type": "UPDATE",
+  "phase": "review",
+  "summary": "Re-reviewed #415 exact head 1f58f37dc9f58c5a8c0bf6d1a50d579db289da1a. Its new 23-case contract-family suite is intentionally red at this TDD checkpoint; the selected exact-head run totals 25 failures, with the two pre-existing Databento continuous-identity mapping failures still present. Commented on the PR to preserve an explicit per-root execution gate for new structural candidates and to separate provider identity mapping from Pulse/strategy admission. Exact-head Linux/Windows runs remain queued.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#415@1f58f37dc9f58c5a8c0bf6d1a50d579db289da1a",
+    "github-run:reppiks490/Icarus#38902772980",
+    "github-run:reppiks490/Icarus#38902764387"
+  ],
+  "evidence": [
+    "Exact-head local command: uv run --extra dev --extra databento pytest tests_engine/test_futures.py tests_engine/test_futures_catalog.py tests_engine/test_futures_contract_families.py tests_engine/test_system_index.py tests_engine/test_asset_command_center.py tests_engine/test_brain_evidence.py tests_engine/test_databento.py -q --tb=short — 25 failures: 23 in the new TDD family suite, plus two Databento mapping failures.",
+    "Review follow-up: https://github.com/reppiks490/Icarus/pull/415#issuecomment-6215819591",
+    "Current merge blockers: red implementation tests and Databento identity mapping; no branch selected for merge because #414/#415 still define duplicate authorities."
+  ],
+  "next_action": "Review the next implementation head; verify the 32 structural specs, per-root execution gate, continuous data mapping and Pulse admission independently before considering merge."
+}
