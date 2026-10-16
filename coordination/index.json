@@ -416,9 +416,9 @@
     "active": 4,
     "collisions": 1,
     "stale": 0,
-    "terminal": 3
+    "terminal": 4
   },
-  "generated_at_utc": "2026-10-16T07:06:09.301148Z",
+  "generated_at_utc": "2026-10-16T07:11:22.340508Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -481,6 +481,32 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "Unknown (terminal event history)",
+      "branch": "unknown",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "evidence:automation_intelligence/cl_lab/external_data_fabric.json",
+        "evidence:provider_collection_v1/latest"
+      ],
+      "goal": "Repair Sentinel health accuracy after the ingestion closure audit. The generic provider sampler can report BLOCKED even when a dedicated GitHub-native collector is delivering FMP/EODHD/Tiingo data. Also repair stale evidence-path metadata. No vendor calls, no paid acquisition, no live broker arming.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T06:40:00Z",
+      "latest_summary": "Data-health accuracy repair is merged and runtime-proven. Icarus-engine PR #187 merged as cfa66db5af672f7ff869487a2f67cb78f7b77ca0. The post-merge Sentinel rebuilt at 2026-10-16T06:36:48Z and correctly reports live dedicated FMP/EODHD delivery as DEGRADED while preserving generic-sampler plan denials and keeping missing credentials BLOCKED. The transient Databento BTC/GC Unknown feed rows self-cleared in the fresh snapshot. Databento depth research-context remains fail-closed for a legitimate completeness reason: secondary/third corpus features are present, while the primary sweep manifest has held days but zero bought primary feature slices and the sweep cache was absent. No integrity gate was weakened and no Databento spend was added for cosmetic health. Reservations released.",
+      "latest_type": "COMPLETE",
+      "model_family": "unknown",
+      "phase": "data-health-accuracy",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261016-atlas-data-health-accuracy",
       "stale": false,
       "status": "complete"
     },
