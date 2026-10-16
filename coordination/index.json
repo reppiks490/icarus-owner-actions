@@ -545,16 +545,17 @@
         }
       ],
       "dependencies": [
-        "provider response: Unusual Whales API HTTP 401 in run supplemental-38902990406-unusual_whales",
-        "external: provider credential/account authorization required to restore UW API calls"
+        "CI: reppiks490/Icarus-engine#197 exact-head verification",
+        "external: restore already-paid primary depth feature data or record additional recovery budget",
+        "external: repair/replace Unusual Whales Actions credential/authorization"
       ],
       "goal": "Correct shared provider evidence truth and repair the provider manifest contract that currently fails Engine verification.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T13:03:49Z",
-      "latest_summary": "Update provider truth to reflect current Unusual Whales HTTP 401 while preserving prior data evidence; correct manifest state for staged Yahoo corpus; adjust contract test to accept truthful staged/blocked states; verify with focused contract suite and workflow run.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-16T13:10:27Z",
+      "latest_summary": "Expanded the status repair after auditing Databento depth. Current vault restores through HKDF(DATABENTO_API_KEY); the real integrity gap is a missing primary-account feature file after a prior paid 165-row partial-day slice, with 156,928 secondary/third rows. Updated manifest and ledger to name the precise budget-gated recovery. Local JSON/status checks pass; PR #197 exact-head CI is running.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "repair",
+      "phase": "verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -588,7 +589,7 @@
     "stale": 4,
     "terminal": 14
   },
-  "generated_at_utc": "2026-10-16T13:09:09.418044Z",
+  "generated_at_utc": "2026-10-16T13:11:20.304265Z",
   "owner_status": {
     "claude": {
       "active": false,
