@@ -1,8 +1,8 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-16T13:14:08.135611Z`
+Generated: `2026-10-16T13:14:24.669039Z`
 
-Active sessions: **9** · Stale/reclaimable: **4** · Collisions: **0**
+Active sessions: **10** · Stale/reclaimable: **4** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
@@ -15,3 +15,4 @@ Active sessions: **9** · Stale/reclaimable: **4** · Collisions: **0**
 | `codex-20261016-owner-contact-boundary` ⚠️ STALE/RECLAIMABLE | documentation | `reppiks490/icarus-owner-actions` / `codex/owner-contact-boundary-20261016` | Added the owner no-routine-contact directive and linked it from the coordination entrypoint and mass-chat operating contract. The new session and event validate individually. Full-tree validation currently stops on a pre-existing Atlas event whose coordination_mode is 'cooperative', which the validator rejects. | baseline coordination validator fix for pre-existing invalid event | — |
 | `codex-20261016-phone-command-center-site` | ci-and-backend-integration | `sites/icarus-command-center-mobile` / `feat/mobile-worlds-command-center` | The desktop UI is now proposed on current main as PR #423 after preserving the intervening trade-history (#379) and Style-popup (#ec44170) updates. Independent Chromium review on the current-main cherry-pick passed desktop and mobile mock screens and viewport checks. PR #423 visual, test, and configuration workflows are queued. PR #421 adds the backend P&L/feed API and partial-flatten receipt; its workflows are also queued. Phone Site v14 is already deployed privately. | PR #421 backend CI and merge<br>PR #423 UI visual/test/configuration CI | reppiks490/Icarus:icarus_engine/command-centers-ui.js<br>reppiks490/Icarus:icarus_engine/dashboard.html<br>reppiks490/Icarus:icarus_engine/experience-ui.css<br>reppiks490/Icarus:icarus_engine/experience-ui.js<br>reppiks490/Icarus:icarus_engine/world-aura.js<br>reppiks490/Icarus:icarus_engine/world-cinema.js<br>reppiks490/Icarus:icarus_engine/world-immersion.js<br>reppiks490/Icarus:icarus_engine/world-motion.js<br>sites/icarus-command-center-mobile:assets/dashboard.html<br>sites/icarus-command-center-mobile:assets/command-centers-ui.js |
 | `codex-20261016-provider-data-hardening` | verification | `reppiks490/Icarus-engine` / `codex/provider-data-hardening-20261016` | Add ICARUS_STATE.md to the repair scope because its data access section is dated 2026-10-11 and now contradicts the current 2026-10-16 health/provider/depth receipts. The repo's own instructions require updating that source of truth when facts change. | PR #198 exact-head verification is running | reppiks490/Icarus-engine:ICARUS_STATE.md |
+| `codex-20261016-ui-pointer-contract-fix` | registered | `reppiks490/Icarus` / `codex/command-center-stack-421` | Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks. | reppiks490/Icarus#424 current stack and #421 backend parent<br>GitHub Actions ui-visual-contract exact-head run | — |

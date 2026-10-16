@@ -561,16 +561,42 @@
       "session_id": "codex-20261016-provider-data-hardening",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/command-center-stack-421",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "reppiks490/Icarus#424 current stack and #421 backend parent",
+        "GitHub Actions ui-visual-contract exact-head run"
+      ],
+      "goal": "Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T13:13:13Z",
+      "latest_summary": "Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks.",
+      "latest_type": "REGISTERED",
+      "model_family": "openai",
+      "phase": "registered",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-ui-pointer-contract-fix",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 9,
+    "active": 10,
     "collisions": 0,
     "stale": 4,
     "terminal": 15
   },
-  "generated_at_utc": "2026-10-16T13:14:08.135611Z",
+  "generated_at_utc": "2026-10-16T13:14:24.669039Z",
   "owner_status": {
     "claude": {
       "active": false,
