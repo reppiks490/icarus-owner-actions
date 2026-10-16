@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T070900Z-owner-contact-plan",
+  "session_id": "codex-20261016-owner-contact-boundary",
+  "at_utc": "2026-10-16T07:09:00Z",
+  "type": "PLAN",
+  "phase": "planning",
+  "summary": "Document the owner's explicit preference that agents do not send progress pings, routine questions, or manual-work requests while authorized ICARUS tasks remain. Agents should keep working on non-conflicting scope, coordinate through the shared bus, record external blockers, and reserve owner contact for when the applicable work queue is complete or truly requires owner-only authority.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/START_HERE.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/2026-10-16-mass-chat-operating-contract.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/2026-10-16-owner-contact-boundary.md"}
+  ],
+  "dependencies": [],
+  "evidence": ["Owner explicitly requested no contact until current and future work is complete and said not to ask them to do manual tasks."],
+  "next_action": "Add a concise durable owner-contact directive, link it from the common entrypoint and operating contract, then validate and open a reviewable PR.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
