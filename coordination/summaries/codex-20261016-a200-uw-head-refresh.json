@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-a200-uw-head-refresh",
+  "completed_at_utc": "2026-10-16T12:45:48Z",
+  "result": "complete",
+  "summary": "Refreshed A200/UW status at Icarus 2c06c6d3 and Engine 6c1a0f3c7. A200 remains 200 catalogued and 0 qualified/connected/Pulse-enabled; current probes are 200 Yahoo response receipts plus 200 FMP NOT_CONFIGURED receipts, without historical qualification. UW is partially collected and separately blocked on its native authentication canary; the Icarus intake is metadata-only with no direct Pulse/champion adapter.",
+  "evidence": ["coordination/events/2026/10/16/codex-20261016-a200-uw-head-refresh/20261016T124548Z-complete.json"],
+  "limits": ["Only repository metadata and persisted receipts were read; no new provider collection was requested.", "The connector observation and provider response receipts do not establish legal entitlement, full endpoint coverage, or downstream strategy consumption."]
+}
