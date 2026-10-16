@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-subsystem-status-matrix",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Publish an evidence-bounded reality matrix for the recorded 22-subsystem target, separating catalog entries, implemented source systems, scheduled automation, and currently verified runtime activity. Avoid conflicts with active implementation PRs.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/subsystem-status-matrix-20261016",
+  "started_at_utc": "2026-10-16T19:18:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "documentation",
+    "audit"
+  ],
+  "initial_dependencies": [
+    "four Oct 15 screen recordings and transcript",
+    "current Icarus and Icarus-engine GitHub state",
+    "coordination ACTIVE.md and collisions.json checked before reserving paths"
+  ]
+}

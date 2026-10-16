@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T191800Z-plan-codex-subsystem-status-matrix",
+  "session_id": "codex-20261016-subsystem-status-matrix",
+  "at_utc": "2026-10-16T19:18:00Z",
+  "type": "PLAN",
+  "phase": "inventory",
+  "summary": "Publish a documentation-only status matrix for subsystem claims using recording, repo, and CI evidence. Do not modify active subsystem, futures, command-center, or provider implementation paths.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [
+    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md"
+  ],
+  "dependencies": [
+    "Current open PR reservations #414/#415/#435/#438; engine #198; exact source for 22 target is not enumerated in the recordings."
+  ],
+  "evidence": [
+    "Four recordings analyzed",
+    "Current Icarus main at 085c6555",
+    "Icarus-engine inventory and manifest inspected"
+  ],
+  "next_action": "Document only claims that can be tied to repository paths or current CI; label runtime-only questions UNVERIFIED.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

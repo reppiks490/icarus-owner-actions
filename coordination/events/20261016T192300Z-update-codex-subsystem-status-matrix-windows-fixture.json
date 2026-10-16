@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T192300Z-update-codex-subsystem-status-matrix-windows-fixture",
+  "session_id": "codex-20261016-subsystem-status-matrix",
+  "at_utc": "2026-10-16T19:23:00Z",
+  "type": "UPDATE",
+  "phase": "repair-and-inventory",
+  "summary": "The current Divine Providence Observatory Windows run failed only in an existing Icarus test fixture: Journal(\":memory:\") is treated as a filesystem path and Windows rejects the colon. Extend this session with a one-line fixture correction using pytest tmp_path, then document the evidence-bound system inventory.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/divine-providence"
+  ],
+  "paths": [
+    "reppiks490/Icarus:tests_engine/test_ibkr_paper_venue.py",
+    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md"
+  ],
+  "dependencies": [
+    "Windows Observatory failure 38877590590 / job 116896264159",
+    "Existing Icarus current-main test fixture, no active path reservation found"
+  ],
+  "evidence": [
+    "Windows traceback at icarus_futures\\journal.py:33: OSError [Errno 22] Invalid argument: \":memory:\"",
+    "The fixture is the only failing step; collection and publishing succeeded."
+  ],
+  "next_action": "Replace the platform-invalid pseudo-path with a temporary filesystem path. Do not change the journal implementation or execution behavior.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
