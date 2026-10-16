@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+  "completed_at_utc": "2026-10-16T06:27:05Z",
+  "result": "complete",
+  "summary": "Completed the read-only multi-chat coordination observability surface in Icarus-engine. PR #182 exposes central active/waiting/stale/collision/owner state through the existing MCP / Automation UI without granting coordination mutation or broker authority. Exact-head tests run 38845896424 passed on 4b4861138f88e1f87fba19427daa80c826ba0df7, and the feature merged as 7d8da5fcea4afbb4fcc65d62ef31c7a0621d9624. The coordination mirror is hardened with an off-boundary five-minute cron, restored-five-local-shadow workflow_run fallback, manual dispatch, bounded fetch validation, and retry-on-main-movement publishing.",
+  "evidence": [
+    "engine:coordination-ui-pr:#182",
+    "engine:coordination-ui-merge:7d8da5fcea4afbb4fcc65d62ef31c7a0621d9624",
+    "engine:tested-head:4b4861138f88e1f87fba19427daa80c826ba0df7",
+    "engine:tests-run:38845896424",
+    "engine:tests-conclusion:success",
+    "engine:workflow:.github/workflows/coordination-mirror.yml"
+  ],
+  "follow_ups": [
+    "Every new AI/chat must use the canonical owner-actions START_HERE and directives rather than legacy model-specific board ownership.",
+    "Credential/provider discoverability is a separate federation bootstrap concern; agents must consume GitHub-native execution/evidence rather than search for plaintext keys.",
+    "Live broker arming remains disabled until explicit owner authorization."
+  ]
+}
