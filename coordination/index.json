@@ -195,7 +195,8 @@
       "coordination_mode": "independent",
       "declared_paths": [
         "icarus_engine/market_universe.py",
-        "tests_engine/test_a200_listing_crosswalk.py"
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
       ],
       "declared_targets": [
         {
@@ -205,16 +206,20 @@
         {
           "path": "tests_engine/test_a200_listing_crosswalk.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
         "pr:reppiks490/Icarus#428",
-        "exact-head-ci:da66c0450bffe148beff0f4214f60ec574b29231"
+        "exact-head-ci:636c65d"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T13:15:00Z",
-      "latest_summary": "Hardened PR #428 to validate exact identity-only schemas, source endpoints and source retrieval timestamps, and to expire any source snapshot older than 24 hours. Added stale-source coverage. Exact head is da66c0450bffe148beff0f4214f60ec574b29231; the earlier ee06b2c workflows are still completing/cancelable and the new exact-head run is queued.",
+      "last_event_at_utc": "2026-10-16T13:20:00Z",
+      "latest_summary": "Independent review of PR #428 found no false qualification path and one timestamp edge case: naive report retrieval times were accepted. Exact-head fix rejects naive timestamps, adds malformed timestamp/digest cases, and documents that source response hashes are format-checked but cannot be recomputed offline because raw source responses are intentionally not persisted. Current exact head is 636c65d.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "ci-and-qualification-boundary",
@@ -222,7 +227,8 @@
       "reclaimable": false,
       "reserved_paths": [
         "icarus_engine/market_universe.py",
-        "tests_engine/test_a200_listing_crosswalk.py"
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
       ],
       "reserved_targets": [
         {
@@ -231,6 +237,10 @@
         },
         {
           "path": "tests_engine/test_a200_listing_crosswalk.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -766,7 +776,7 @@
     "stale": 3,
     "terminal": 9
   },
-  "generated_at_utc": "2026-10-16T13:06:59.094487Z",
+  "generated_at_utc": "2026-10-16T13:09:39.566147Z",
   "owner_status": {
     "claude": {
       "active": false,
