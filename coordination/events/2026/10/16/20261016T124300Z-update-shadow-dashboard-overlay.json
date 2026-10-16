@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124300Z-update-shadow-dashboard-overlay",
+  "session_id": "codex-20261016-shadow-dashboard-overlay",
+  "at_utc": "2026-10-16T12:43:00Z",
+  "type": "UPDATE",
+  "phase": "ci",
+  "summary": "PR #417 browser visual contract has passed on the exact head. The Linux engine job also passed; Windows and cross-repository historical-context consumer checks remain pending.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["icarus_engine/shadow-twin-ui.js", "tests_engine/browser_shadow_twin.cjs", "tests_engine/test_dashboard_js.py", ".github/workflows/ui-visual-contract.yml"],
+  "dependencies": ["PR #417 Windows engine check", "PR #417 historical-context consumer check"],
+  "evidence": ["browser run 38900872435 passed on ae5feba74b390822ca483a9a907016cac0526b3e", "Linux engine run 38900866281 passed", "101 focused tests and local browser fixture passed"],
+  "next_action": "Wait for remaining exact-head checks, then merge or address any concrete failure.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

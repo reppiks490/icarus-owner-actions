@@ -700,13 +700,14 @@
         }
       ],
       "dependencies": [
-        "PR #417 hosted browser, Windows engine, and historical-context consumer checks"
+        "PR #417 Windows engine check",
+        "PR #417 historical-context consumer check"
       ],
       "goal": "Finish the RT01 Shadow Twin dashboard overlay follow-up, preserve existing cinematic layout, and verify the exact shared PR head while keeping all execution read-only.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T12:37:00Z",
-      "latest_summary": "PR #417 exact-head validation is still running. The local browser fixture and focused test suites pass; no execution authority is enabled.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-16T12:43:00Z",
+      "latest_summary": "PR #417 browser visual contract has passed on the exact head. The Linux engine job also passed; Windows and cross-repository historical-context consumer checks remain pending.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "ci",
       "pr": 417,
@@ -747,7 +748,7 @@
     "stale": 4,
     "terminal": 6
   },
-  "generated_at_utc": "2026-10-16T12:36:20.383058Z",
+  "generated_at_utc": "2026-10-16T12:37:46.112137Z",
   "owner_status": {
     "claude": {
       "active": false,
