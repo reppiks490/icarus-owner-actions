@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T130430Z-ci-contract-unverified-states",
+  "session_id": "codex-20261016-intrinio-ledger-refresh",
+  "at_utc": "2026-10-16T13:04:30Z",
+  "type": "UPDATE",
+  "phase": "ci-contract-repair",
+  "summary": "The focused CI revealed additional documented states used by staged archives: STAGED_CONTENT_UNVERIFIED ingestion and UNVERIFIED consumption, plus an explicit workspace-scoped verification value. Adding those exact states to the manifest contract test.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_ingestion_surface_contract.py"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#192", "run:reppiks490/Icarus-engine#38904933071"],
+  "evidence": ["Run 38904933071 failed the same contract on documented STAGED_CONTENT_UNVERIFIED and UNVERIFIED values in config/data_ingestion_manifest.json."],
+  "next_action": "Allow precisely the existing staged/unverified manifest values and rerun the focused contract suite and exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

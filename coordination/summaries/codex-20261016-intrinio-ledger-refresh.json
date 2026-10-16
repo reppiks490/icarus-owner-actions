@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-intrinio-ledger-refresh",
+  "completed_at_utc": "2026-10-16T13:07:34Z",
+  "result": "complete",
+  "summary": "Updated the Icarus-engine data-gap ledger with the latest Intrinio receipt, correctly partial Databento primary coverage, and successful post-merge Native Five/SEC cadence evidence. Exact-head CI revealed the manifest contract test rejected legitimate STAGED/STAGED_CONTENT_UNVERIFIED/UNVERIFIED values; the test now accepts those documented states without claiming ingestion or consumption success. Focused contract test passed 9 tests. PR #192 merged with all exact-head Python 3.11–3.13, CLI, MCP provenance, zero-dependency, and verify checks green.",
+  "evidence": ["pr:reppiks490/Icarus-engine#192", "merge:c3b66802285e57efd6178eccbd2deb2bcce5447d", "head:26789c53bec8f2485acce81783f07d0e3a074a5d", "run:38905117825", "run:38905126086"],
+  "follow_ups": ["Monitor the separate futures convergence PRs under their active session."]
+}
