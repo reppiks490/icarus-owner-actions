@@ -38,16 +38,41 @@
       "session_id": "chatgpt-20261016-atlas-coordination-futures",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Atlas",
+      "branch": "atlas/coordination-dashboard",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "coordination-bus:main"
+      ],
+      "goal": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T03:29:00Z",
+      "latest_summary": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
+      "latest_type": "REGISTERED",
+      "model_family": "openai",
+      "phase": "registered",
+      "pr": "reppiks490/Icarus-engine#182",
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 1,
+    "active": 2,
     "collisions": 0,
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:26:41.910949Z",
+  "generated_at_utc": "2026-10-16T03:28:00.765161Z",
   "owner_status": {
     "claude": {
       "active": false,
