@@ -7,6 +7,7 @@ on:
       - 'tests/test_coordination*.py'
       - 'AGENTS.md'
       - '.github/workflows/coordination-fabric.yml'
+      - '.github/workflows/coordination-maintenance.yml'
   push:
     branches: [main]
     paths:
@@ -15,6 +16,7 @@ on:
       - 'tests/test_coordination*.py'
       - 'AGENTS.md'
       - '.github/workflows/coordination-fabric.yml'
+      - '.github/workflows/coordination-maintenance.yml'
   workflow_dispatch:
 
 permissions:
@@ -45,3 +47,46 @@ jobs:
       - name: Refuse undeclared active path collisions
         run: >-
           python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: contract
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: coordination-generated-state-publisher
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Recompute and publish generated coordination state from fresh main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6 7 8; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m coordination_fabric validate
+            python -m coordination_fabric compile
+            python -c "import json; d=json.load(open('coordination/collisions.json')); assert not d['collisions'], d['collisions']"
+            git add coordination/ACTIVE.md coordination/index.json coordination/collisions.json
+            if git diff --cached --quiet; then
+              echo 'Generated coordination state is already current.'
+              exit 0
+            fi
+            git commit -m 'coordination: refresh compiled active state [skip ci]'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          echo 'Unable to publish a fresh coordination snapshot after retries.' >&2
+          exit 1
