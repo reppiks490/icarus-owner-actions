@@ -80,13 +80,13 @@
       ],
       "dependencies": [
         "pr:reppiks490/Icarus-engine#182",
-        "github-run:38845526089"
+        "github-run:38845896424"
       ],
       "goal": "Integrate the central many-chat coordination state into the Engine MCP / Automation UI through a read-only local mirror and verify it end-to-end without live broker arming.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T03:29:05Z",
-      "latest_summary": "Split from the reused futures session after detecting hidden intra-session workstream overlap. PR #182 now has its own unique session and retains the coordination mirror/MCP UI paths while full exact-head tests run.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-16T03:32:00Z",
+      "latest_summary": "Waiting on Engine PR #182 exact-head run 38845896424. MCP provenance, zero-dependency core, CLI, brain-federation, and Python 3.12 are green; Python 3.11 and 3.13 are still running. Static backend/JS audit found no runtime network writes, admin controls, unescaped coordination strings, or authority escalation.",
+      "latest_type": "WAITING",
       "model_family": "openai",
       "phase": "verification",
       "pr": "reppiks490/Icarus-engine#182",
@@ -137,7 +137,7 @@
     "stale": 0,
     "terminal": 0
   },
-  "generated_at_utc": "2026-10-16T03:28:14.853208Z",
+  "generated_at_utc": "2026-10-16T03:32:00.856401Z",
   "owner_status": {
     "claude": {
       "active": false,
