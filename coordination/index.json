@@ -55,11 +55,11 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json"
+        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json"
       ],
       "declared_targets": [
         {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json",
+          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -68,19 +68,19 @@
       ],
       "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T07:19:30Z",
-      "latest_summary": "Addressed the least-privilege review finding: Yahoo-only runs now construct the provider adapter with Yahoo scope, so an FMP key in the environment cannot cause FmpHistory to be initialized. Added a regression test that fails if FMP connector construction occurs. PR #411 is now at df18391 with 41 focused tests passing; prior CI on 971c835 is superseded and exact-head checks for df18391 are pending.",
+      "last_event_at_utc": "2026-10-16T07:23:04Z",
+      "latest_summary": "Extended provider isolation to the remaining A200 history call sites: the authenticated history API now constructs only the explicitly requested provider, and the legacy Yahoo sweep initializes Yahoo only. PR #411 is at 95db3db. The expanded focused market-universe suite still passes 41 tests; exact-head CI will restart on this head.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "exact-head-verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json"
+        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json"
       ],
       "reserved_targets": [
         {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json",
+          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -466,7 +466,7 @@
     "stale": 0,
     "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T07:20:09.513171Z",
+  "generated_at_utc": "2026-10-16T07:24:12.111344Z",
   "owner_status": {
     "claude": {
       "active": false,
