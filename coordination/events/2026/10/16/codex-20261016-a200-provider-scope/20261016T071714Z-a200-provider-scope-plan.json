@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T071714Z-a200-provider-scope-plan",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:17:14Z",
+  "type": "PLAN",
+  "phase": "a200-provider-scope",
+  "summary": "Add an explicit provider allowlist to the A200 hybrid probe so a bounded Yahoo-only observation cannot accidentally invoke FMP. Keep the complete provider/instrument ledger, mark excluded providers NOT_REQUESTED, and preserve all runtime qualification flags as false. Review exact-head CI before treating this change as integrated.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "tools/probe_a200_hybrid.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/market_universe.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_market_universe.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/sessions/codex-20261016-a200-provider-scope.json"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus#411"],
+  "evidence": ["A200 catalog has 200 instruments but none are Pulse-enabled or history-qualified", "Icarus-engine FMP reports show credential presence but repeated HTTP 402 and zero A200 rows", "A200 probe scope change uses a mocked test and performs no live provider requests"],
+  "next_action": "Wait for exact-head PR #411 checks, fix any failures, then merge only if required checks pass; keep provider entitlement and runtime gates explicit.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
