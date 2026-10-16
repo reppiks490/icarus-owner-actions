@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T131110Z-current-reviews",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T13:11:10Z",
+  "type": "WAITING",
+  "phase": "exact-head-review",
+  "summary": "Re-reviewed Atlas convergence PR #415 at 6c60e18d6e1225dc284c8429dbc9ed3ba7638276. The stale CL qualification test is corrected. Calendar-coverage and simulated-paper-control projection findings remain blocking; exact-head run 38905446953 was cancelled by a superseding commit, so await the current run after fixes. Separately reviewed A200 public-listing crosswalk PR #428: per-source freshness finding from ee06b2ce81fad0a1c43345362768b7fd0cda3c2f is corrected at 636c65de5212fb714a89e2be6f2c15536a73a097 and exact-head CI run 38905721195 is in progress.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#415@6c60e18d6e1225dc284c8429dbc9ed3ba7638276",
+    "github-run:38905446953",
+    "pr:reppiks490/Icarus#428@636c65de5212fb714a89e2be6f2c15536a73a097",
+    "github-run:38905721195"
+  ],
+  "evidence": [
+    "Codex review comment https://github.com/reppiks490/Icarus/pull/415#issuecomment-6216234500",
+    "Codex review comment https://github.com/reppiks490/Icarus/pull/428#issuecomment-6216175412; issue corrected in latest head, fresh source-age test still under review."
+  ],
+  "next_action": "Re-fetch both PR heads after CI updates; verify #428 freshness tests and await exact-head tests. Do not approve or merge #415 while calendar-coverage and paper-control projection findings remain."
+}

@@ -10,13 +10,25 @@
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "icarus_engine/brain.py",
-    "icarus_engine/unusual_whales_intake.py",
-    "tests_engine/test_brain.py",
-    "tests_engine/test_unusual_whales_intake.py"
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/unusual_whales_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_unusual_whales_intake.py"
+    }
   ],
-  "targets": [],
   "dependencies": [
     "pr:reppiks490/Icarus#369@3e2ef806b35883db6a8b143cb75b8c657f23d261",
     "github-run:38789304122",
