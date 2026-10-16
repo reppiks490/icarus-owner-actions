@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T032700Z-mcp-provenance-claim",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:27:00Z",
+  "type": "UPDATE",
+  "phase": "futures-universe-expansion",
+  "summary": "Engine MCP provenance gate correctly rejected the futures registry change because icarus_engine/assets.py is a critical interface path without a same-changeset MCP event. Extending the claim to the required provenance event; the gate will not be weakened or bypassed.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "automation_intelligence/mcp_interface/events/20261016T032700Z-futures-universe-integration.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#181"],
+  "evidence": ["github-job:116794852751:mcp-provenance-gate-failure", "github-run:38845410144:23-of-23-public-delayed-connected"],
+  "next_action": "Add an INTEGRATION provenance event covering icarus_engine/assets.py with execution_authorized=false, then require the exact-head MCP gate to pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
