@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261016-ui-pointer-contract-fix-20261016T200100Z-release",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "type": "RELEASE",
+  "at_utc": "2026-10-16T20:01:00Z",
+  "actor": "ChatGPT / Codex",
+  "summary": "Release the superseded UI test target paths; the owner merged the underlying paper workspace API and desktop UI through PRs #421 and #423, and closed #424. Exact #424 head checks including the browser contract were green before closure.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    "tests_engine/browser_depth.cjs"
+  ],
+  "evidence": [
+    "#424 head 17c7aeb exact workflow runs all green; #421 merge 805764f and #423 merge 7eb0a88."
+  ],
+  "coordination_mode": "cooperate",
+  "status": "released"
+}
