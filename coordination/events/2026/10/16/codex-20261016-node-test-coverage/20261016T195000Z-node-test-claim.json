@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T195000Z-node-test-claim",
+  "session_id": "codex-20261016-node-test-coverage",
+  "at_utc": "2026-10-16T19:50:00Z",
+  "type": "CLAIM",
+  "phase": "implementation",
+  "summary": "Provision Node 22 for workflows that run skip-capable Node tests, and ensure renderer/UI lifecycle tests are included in the Node-backed UI contract. Audit all workflows that invoke these tests, then verify and open a narrow PR.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/source-data-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/intelligence-feed-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/engine-federation-consumer-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnivision-stage0.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/ui-visual-contract.yml"
+    }
+  ],
+  "dependencies": [
+    "Node 22 is already provisioned by ui-visual-contract; other CI workflows may skip tests when Node is absent"
+  ],
+  "evidence": [
+    "Current coordination snapshot 2026-10-16T13:14:24Z reports zero collisions",
+    "Main at b99f7e0 still lacks setup-node in the core and selected contract workflows",
+    "Six Node-dependent test modules use pytest skip guards; tests must be exercised in required CI"
+  ],
+  "next_action": "Add Node 22 setup to every affected workflow and include the uncovered lifecycle modules in the UI contract, then verify via focused tests and exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
