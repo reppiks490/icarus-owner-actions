@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-16T12:27:25Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "pr:reppiks490/Icarus#419 exact-head CI"
+  ],
+  "event_id": "20261016T122725Z-cancelled-codex-a200-timezone-provenance",
+  "evidence": [
+    "pr:reppiks490/Icarus#418 closed duplicate",
+    "pr:reppiks490/Icarus#419",
+    "tests:47 passed",
+    "build:uv build succeeded"
+  ],
+  "next_action": "No further work on the duplicate branch; PR #419 owns the integration result.",
+  "paths": [],
+  "phase": "cancelled",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "summary": "This duplicate follow-up was cancelled after PR #419 independently covered the same timezone provenance handoff and adapter regression. Local implementation checks on the duplicate branch passed before it was closed.",
+  "targets": [
+    {
+      "path": "icarus_engine/calendar.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "icarus_engine/market_universe_adapter.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_a200_schedule_cadence.py",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "CANCELLED"
+}

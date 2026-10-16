@@ -1,0 +1,37 @@
+{
+  "at_utc": "2026-10-16T12:27:25Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "pr:reppiks490/Icarus#419 exact-head CI"
+  ],
+  "event_id": "20261016T122725Z-handoff-codex-a200-timezone-provenance",
+  "evidence": [
+    "pr:reppiks490/Icarus#418 closed duplicate",
+    "pr:reppiks490/Icarus#419"
+  ],
+  "next_action": "Use PR #419 as the single integration path; monitor its checks and verify merge.",
+  "paths": [],
+  "phase": "handoff",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "summary": "The same timezone-provenance integration was independently implemented on PR #419; PR #418 was closed as a duplicate. PR #419 carries the authoritative timezone through the adapter and adds adapter-level coverage.",
+  "targets": [
+    {
+      "path": "icarus_engine/calendar.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "icarus_engine/market_universe_adapter.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_market_universe.py",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "HANDOFF"
+}

@@ -1,0 +1,13 @@
+{
+  "completed_at_utc": "2026-10-16T12:27:25Z",
+  "evidence": [
+    "pr:reppiks490/Icarus#418 closed as duplicate",
+    "pr:reppiks490/Icarus#419",
+    "tests:47 passed",
+    "build:uv build succeeded"
+  ],
+  "result": "cancelled",
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "summary": "Duplicate timezone-provenance PR was closed after PR #419 independently implemented the same integration and adapter-level test."
+}
