@@ -1,0 +1,17 @@
+{
+  "schema_version":"icarus-coordination-event-v2",
+  "event_id":"chatgpt-20261016-atlas-coordination-ui-182-complete",
+  "session_id":"chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc":"2026-10-16T05:20:00Z",
+  "type":"COMPLETE",
+  "phase":"complete",
+  "summary":"Coordination UI and mirror durability work is complete. PR #182 merged the read-only MCP/Automation coordination UI. PR #185 merged as 81b6642c676508fb52c057dea8db1b5aa03db867 after exact-head Python 3.11/3.12/3.13, CLI, core, and MCP provenance verification. Post-merge coordination-mirror run 38855084053 succeeded and refreshed Engine's local index to the canonical bus snapshot. Mirror now has shifted 5-minute cron, trusted restored-five-local-shadow workflow_run fallback, manual dispatch, bounded canonical fetch, and no execution authority. Live broker arming remains disabled.",
+  "repos":["reppiks490/Icarus-engine","reppiks490/icarus-owner-actions"],
+  "paths":[],
+  "targets":[],
+  "dependencies":["merged:reppiks490/Icarus-engine#182","merged:reppiks490/Icarus-engine#185","merge-sha:81b6642c676508fb52c057dea8db1b5aa03db867","mirror-run:38855084053"],
+  "evidence":["tests-run:38854945344","mirror-run:38855084053","local-index-generated:2026-10-16T04:51:27.767228Z","collisions:0"],
+  "next_action":"None for this session; reservations released. Future chats use the central bus and read-only Engine mirror.",
+  "coordination_mode":"cooperative",
+  "cooperates_with":["chatgpt-20261016-atlas-data-health-accuracy"]
+}
