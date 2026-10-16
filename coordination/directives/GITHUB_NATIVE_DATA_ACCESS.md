@@ -10,10 +10,24 @@ The shared capability is the **GitHub-native execution and evidence plane**: app
 
 Therefore:
 
-- **Do not search local `.env` files, DAV task comments, another ChatGPT account, another agent's workspace, or Plant/operator notes for a private API key.** Those are not federation credential authority.
+- **Do not search local `.env` files, DAV task comments, another ChatGPT account, another agent's workspace, or Plant/operator notes for a private provider API key.** Those are not federation provider-credential authority.
 - **Do not ask another AI to paste or reveal a key.**
 - If your current runtime cannot see a secret string, that is expected and is not proof that ICARUS lacks access.
 - Check credential availability through the redacted GitHub-native health workflow and check actual data availability through the ingestion manifest and persisted evidence receipts.
+
+## Two different secret planes — do not confuse them
+
+### Shared provider credentials
+
+Provider API credentials used by ICARUS collection belong in **GitHub Actions Secrets** and are resolved through the canonical Engine credential contract. They power shared collection/evidence; agents normally never see the plaintext values.
+
+### Local Plant / bridge runtime controls
+
+`ADMIN_TOKEN` / `ICARUS_ADMIN_TOKEN`, webhook secrets, and machine-local broker/runtime credentials are **privileged local runtime controls**, not the shared provider credential plane. Legacy Plant/bridge code may correctly load those from the operator's local `.env` because the bridge is a localhost process.
+
+A cloud worker that cannot read the Plant `ADMIN_TOKEN` must **not** conclude that API/provider data is inaccessible. It should use the shared GitHub-native evidence plane for data/research. If a task truly requires a privileged Plant operation, report `LOCAL_RUNTIME_CAPABILITY_REQUIRED` and use an explicitly approved/brokered runtime-control path; never copy the admin token into a chat, issue, coordination note, or repository file.
+
+The current owner boundary keeps **live broker arming disabled**. Read-only research/observability and paper/shadow work may continue within their verified scope, but the existence of a Plant credential never grants live-order authority.
 
 ## Canonical credential authority
 
@@ -86,13 +100,15 @@ Always prefer the live health/manifest state over this explanatory example if th
 
 That statement by itself is not a blocker. Follow this sequence:
 
-1. Read `AGENT_CREDENTIALS.md` and `docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md` in `reppiks490/Icarus-engine`.
-2. Read `config/data_ingestion_manifest.json` and the relevant provider receipt/evidence path.
-3. Check the redacted `github-native-credential-health` result if credential presence matters.
-4. Consume the existing shared evidence if it satisfies the task.
-5. If fresh collection is required, use/extend the established GitHub Actions collector for that provider without exposing the secret.
-6. Only report a credential blocker when the canonical health/manifest says missing/invalid/denied—not because the current chat cannot read plaintext.
+1. Determine whether the task means a **provider API credential** or a **local Plant/bridge runtime-control token**. Do not conflate them.
+2. For provider/data work, read `AGENT_CREDENTIALS.md` and `docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md` in `reppiks490/Icarus-engine`.
+3. Read `config/data_ingestion_manifest.json` and the relevant provider receipt/evidence path.
+4. Check the redacted `github-native-credential-health` result if credential presence matters.
+5. Consume the existing shared evidence if it satisfies the task.
+6. If fresh collection is required, use/extend the established GitHub Actions collector for that provider without exposing the secret.
+7. Only report a provider credential blocker when the canonical health/manifest says missing/invalid/denied—not because the current chat cannot read plaintext.
+8. If the task genuinely requires Plant admin control, report the local-runtime capability boundary precisely; do not request or distribute `ADMIN_TOKEN`.
 
 ## Security boundary
 
-No AI unit should ever need plaintext API-key possession for normal ICARUS work. Never print, copy, commit, artifact, or place private credential values into coordination notes, PR comments, issues, dashboards, or shared files. The federation shares **capability, collection, status, and evidence**—not secret strings.
+No AI unit should ever need plaintext provider API-key possession for normal ICARUS work. Never print, copy, commit, artifact, or place private credential values into coordination notes, PR comments, issues, dashboards, or shared files. The federation shares **capability, collection, status, and evidence**—not secret strings.
