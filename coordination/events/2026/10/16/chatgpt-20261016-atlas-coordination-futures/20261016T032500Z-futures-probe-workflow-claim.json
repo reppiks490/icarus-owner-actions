@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T032500Z-futures-probe-workflow-claim",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:25:00Z",
+  "type": "UPDATE",
+  "phase": "futures-universe-expansion",
+  "summary": "Extending the futures universe claim to a no-credential GitHub Actions probe workflow. It will run the public Yahoo evidence probe on PR #181, preserve the JSON as an artifact, and never authorize live execution or expose credentials.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/assets.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_engine/test_futures_universe_expansion.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/futures_universe_probe.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/FUTURES_UNIVERSE_2026_10_16.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": ".github/workflows/futures-universe-probe.yml"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#181"],
+  "evidence": ["github-run:38844849546:red-as-designed"],
+  "next_action": "Add the isolated probe workflow, inspect its artifact/status separately from deterministic unit-test gates, and never label provider reachability as live trading authority.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
