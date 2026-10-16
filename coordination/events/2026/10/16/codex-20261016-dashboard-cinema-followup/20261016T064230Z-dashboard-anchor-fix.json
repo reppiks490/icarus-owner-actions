@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T064230Z-dashboard-anchor-fix",
+  "session_id": "codex-20261016-dashboard-cinema-followup",
+  "at_utc": "2026-10-16T06:42:30Z",
+  "type": "UPDATE",
+  "phase": "fixing",
+  "summary": "The max-height CSS fix passed one local run but exact-head CI proved the settings popover is still horizontally clipped (left x≈−220 at 1440px). Updating scope to include experience-ui.js so the open drawer is positioned within the viewport and tethered to its summary; retaining the test geometry assertions.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/experience-ui.css",
+    "icarus_engine/experience-ui.js",
+    "tests_engine/browser_cinema.cjs"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_cinema.cjs"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#377",
+    "github-run:38861946952"
+  ],
+  "evidence": [
+    "exact-head browser run 38861946952 failed at viewport assertion with soundBounds.x=-203.53 and drawerBounds.x=-220.53; local full browser run passed, showing environment/layout-sensitive geometry"
+  ],
+  "next_action": "Anchor the open popover to viewport coordinates derived from the summary, then reproduce the CI geometry locally and rerun browser contracts."
+}
