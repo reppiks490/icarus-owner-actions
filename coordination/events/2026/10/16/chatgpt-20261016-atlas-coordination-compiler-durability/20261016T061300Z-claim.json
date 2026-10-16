@@ -7,7 +7,6 @@
   "phase": "repair",
   "summary": "Repair central coordination compiler freshness. Connector-authored coordination events have accumulated after the last compiled ACTIVE/index snapshot, so new chats can read stale active-session and collision state. Add a shifted five-minute schedule as a fallback while preserving push/manual compilation and existing collision validation.",
   "repos": ["reppiks490/icarus-owner-actions"],
-  "paths": [".github/workflows/coordination-maintenance.yml", "tests/test_coordination_automation.py"],
   "targets": [
     {"repo": "reppiks490/icarus-owner-actions", "path": ".github/workflows/coordination-maintenance.yml"},
     {"repo": "reppiks490/icarus-owner-actions", "path": "tests/test_coordination_automation.py"}
