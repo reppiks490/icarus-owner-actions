@@ -1,0 +1,70 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T060500Z-mobile-site-plan",
+  "session_id": "codex-20261016-phone-command-center-site",
+  "at_utc": "2026-10-16T06:05:00Z",
+  "type": "PLAN",
+  "phase": "mobile-command-center-integration",
+  "summary": "Port the current four-profile isolated paper portfolios, their explicit aggregate P&L semantics, and current atmosphere cleanup from Icarus into the owner-private phone Site. Keep engine pairing and token protections; do not enable broker execution. Verify the Worker bundle and exact Site publication.",
+  "repos": [
+    "sites/icarus-command-center-mobile"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/dashboard.html"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/command-centers-ui.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/experience-ui.css"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/experience-ui.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/world-aura.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/world-cinema.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/world-immersion.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "assets/world-motion.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "scripts/build-worker.mjs"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "worker/index.js"
+    },
+    {
+      "repo": "sites/icarus-command-center-mobile",
+      "path": "dist/server/index.js"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus current main",
+    "four independent portfolios contract",
+    "Sites project appgprj_6ad008c680a08191815f123b75bf04d8"
+  ],
+  "evidence": [
+    "Dropbox screen recordings dated 2026-10-15",
+    "current desktop UI source in /workspace/icarus-command-center-desktop",
+    "phone Site currently at v13 with no command-centers-ui.js"
+  ],
+  "next_action": "Wait for the desktop UI source commit, copy only the agreed dashboard/UI modules, build the Site Worker, inspect generated references and state labels, publish the exact source, then record deployment evidence."
+}
