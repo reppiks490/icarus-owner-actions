@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "chatgpt-20261016-atlas-coordination-compiler-durability-red",
+  "session_id": "chatgpt-20261016-atlas-coordination-compiler-durability",
+  "at_utc": "2026-10-16T06:15:00Z",
+  "type": "UPDATE",
+  "phase": "tdd-red",
+  "summary": "RED contract committed on atlas/coordination-compiler-freshness. It requires a shifted five-minute maintenance fallback so stale compiled coordination cannot persist when connector-authored event pushes do not wake Actions. No runtime behavior changed yet.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["branch:atlas/coordination-compiler-freshness", "commit:4bb6654bae87a65519e9cc808728b7b75cd1fcdc"],
+  "evidence": ["current workflow schedule is daily 03:47 only", "current ACTIVE.md predates multiple event commits by over one hour"],
+  "next_action": "Open PR and confirm the new test fails for schedule cadence only, then implement the smallest workflow fix.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": ["codex-20261016-phone-command-center-site", "chatgpt-20261016-atlas-data-health-accuracy"]
+}
