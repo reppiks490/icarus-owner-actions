@@ -42,25 +42,148 @@
       "branch": "atlas/icarus-system-convergence-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "declared_paths": [
+        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+        "icarus_engine/system_index.py",
+        "icarus_engine/futures_catalog.py",
+        "icarus_engine/assets.py",
+        "icarus_futures/contracts.py",
+        "icarus_engine/asset_command_center.py",
+        "icarus_engine/brain_evidence.py",
+        "tests_engine/test_system_index.py",
+        "tests_engine/test_futures_catalog.py",
+        "tests_engine/test_asset_command_center.py",
+        "tests_engine/test_brain_evidence.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_futures/contracts.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "dependencies": [
         "coordination:reppiks490/icarus-owner-actions:coordination/ACTIVE.md",
         "pr:reppiks490/Icarus#411",
-        "pr:reppiks490/Icarus#377",
         "policy:live-execution-disabled"
       ],
       "goal": "Converge ICARUS discovery, futures, corpus/Brain provenance, and asset-centric paper-trading state without colliding with active dashboard UI work; preserve fail-closed continuous research identities and live-disabled execution policy.",
       "home_repo": "reppiks490/Icarus",
       "last_event_at_utc": "2026-10-16T12:05:16Z",
-      "latest_summary": "Converge ICARUS discovery, futures, corpus/Brain provenance, and asset-centric paper-trading state without colliding with active dashboard UI work; preserve fail-closed continuous research identities and live-disabled execution policy.",
-      "latest_type": "REGISTERED",
+      "latest_summary": "Implement the post-audit convergence layer: canonical capability index, unified 32-root futures authority/execution qualification, backend asset-centric paper dashboard state, corpus-to-Brain provenance contracts, and rigid exact-head tests while avoiding active command-center UI collision paths.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "registered",
+      "phase": "system-convergence",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+        "icarus_engine/system_index.py",
+        "icarus_engine/futures_catalog.py",
+        "icarus_engine/assets.py",
+        "icarus_futures/contracts.py",
+        "icarus_engine/asset_command_center.py",
+        "icarus_engine/brain_evidence.py",
+        "tests_engine/test_system_index.py",
+        "tests_engine/test_futures_catalog.py",
+        "tests_engine/test_asset_command_center.py",
+        "tests_engine/test_brain_evidence.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_futures/contracts.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "session_id": "chatgpt-20261016-atlas-system-convergence",
       "stale": false,
       "status": "active"
@@ -315,7 +438,7 @@
     "stale": 5,
     "terminal": 5
   },
-  "generated_at_utc": "2026-10-16T12:05:52.838355Z",
+  "generated_at_utc": "2026-10-16T12:06:05.799847Z",
   "owner_status": {
     "claude": {
       "active": false,
