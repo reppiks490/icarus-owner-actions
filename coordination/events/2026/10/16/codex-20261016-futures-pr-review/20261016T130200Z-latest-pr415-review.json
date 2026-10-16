@@ -1,8 +1,8 @@
 {
   "schema_version": "icarus-coordination-event-v2",
-  "event_id": "20261016T130200Z-latest-pr415-review",
+  "event_id": "20261016T130042Z-latest-pr415-review",
   "session_id": "codex-20261016-futures-pr-review",
-  "at_utc": "2026-10-16T13:02:00Z",
+  "at_utc": "2026-10-16T13:00:42Z",
   "type": "WAITING",
   "phase": "review",
   "summary": "Reviewed Atlas PR #415 at exact head 315073a88f1abbda8789562abcbed4ae8572cf61 and posted updated blocking findings. The date-rule code now includes bounded CME and London holiday tables, but the catalog asserts all 32 roots execution_qualified and resolves candidates through year+3 without enforcing calendar coverage. The command-center test still asserts CL is unqualified while the catalog defaults CL qualified. The canonical system index also marks simulated-paper controls eligible from resolver presence alone, while asset_command_center requires fresh verified data, risk controls, and journal readiness. The exact-head tests workflow run 38904182081 is in progress.",
