@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124027Z-exact-head-rereview",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T12:40:27Z",
+  "type": "UPDATE",
+  "phase": "review",
+  "summary": "Re-reviewed current futures branches after the author separated runtime admission from dated-contract execution qualification. PR #414 head f566e083 passes the focused futures catalog/regression set locally (43/43), but it still duplicates the canonical catalog/resolver work and lacks the #415 per-root qualification contract; hosted Linux/Windows checks are pending. PR #415 head be24c73bee improves the distinction but a focused 6-file run still fails 2 Databento tests because continuous identity mapping and prepare_live call assets.resolve(), which rejects registered roots such as HG when runtime_qualified is false. Review comments on both PR threads ask for one catalog and separate mapping/feed setup from Pulse/runtime and dated-execution admission. No merge recommendation while exact-head failures and duplicate authority remain.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#414@f566e0835db0aacdcd427b1b62388ab253840c91",
+    "pr:reppiks490/Icarus#415@be24c73beeef0a6e9355b0df9a04442a19fa7af4",
+    "github-run:reppiks490/Icarus#38901628949",
+    "github-run:reppiks490/Icarus#38901624251",
+    "github-run:reppiks490/Icarus#38901993205",
+    "github-run:reppiks490/Icarus#38901988243"
+  ],
+  "evidence": [
+    "#414 local command: uv run --extra dev pytest tests_engine/test_futures_product_authority.py tests_engine/test_futures.py -q --tb=short — 43 collected, all passed",
+    "#415 local command: uv run --extra dev --extra databento pytest tests_engine/test_futures.py tests_engine/test_futures_catalog.py tests_engine/test_system_index.py tests_engine/test_asset_command_center.py tests_engine/test_brain_evidence.py tests_engine/test_databento.py -q --tb=short — two failures: test_every_registered_future_maps_to_databento_continuous_front and test_all_registered_futures_share_one_core_live_session_and_depth_is_separate",
+    "Review comments: https://github.com/reppiks490/Icarus/pull/414#issuecomment-6215683278, https://github.com/reppiks490/Icarus/pull/415#issuecomment-6215644893, https://github.com/reppiks490/Icarus/pull/415#issuecomment-6215698743"
+  ],
+  "next_action": "Wait for one-authority consolidation and corrected exact-head tests; re-run the affected DataBento and futures suites, then verify hosted Linux/Windows checks before updating the merge recommendation."
+}

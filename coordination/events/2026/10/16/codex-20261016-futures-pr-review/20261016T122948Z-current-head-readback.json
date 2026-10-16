@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122948Z-current-head-readback",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T12:29:48Z",
+  "type": "UPDATE",
+  "phase": "review",
+  "summary": "Fresh comparison: PR #414 head d02e3c105ccba8156341614e603bd1196592f225 now passes the focused 32-root authority contract (9/9); exact-head hosted Linux/Windows checks are still running. PR #415 head d5dbacf4d9be93af7f74c39fc090e756aabf1721 remains the stronger research-authority design because it distinguishes all 32 registered roots from the 12 execution-qualified families and keeps the other roots fail-closed. Its earlier full-suite runs failed on stale CL/ZN negative expectations; test-only PR #420 is stacked on #415 and updates that assertion, with hosted checks pending. PR #416 merged the A200 DST cadence fix with Linux/Windows success.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["pr:reppiks490/Icarus#414@d02e3c105ccba8156341614e603bd1196592f225", "pr:reppiks490/Icarus#415@d5dbacf4d9be93af7f74c39fc090e756aabf1721", "pr:reppiks490/Icarus#420@2aa7c1479e3b97c1d3cbece0806b606ea1b8ff60", "merged:reppiks490/Icarus#416@8f405847896a02d7324dfa05c1ffd851f4a72a8e"],
+  "evidence": ["#414 focused command: uv run --extra dev pytest tests_engine/test_futures_product_authority.py -q — 9 passed", "#415 catalog focused review: tests_engine/test_futures_catalog.py — 9 passed at head 292be819fffd57d18bbaee25a3edbe6732bc6b63", "#415 earlier Linux exact-head CI failure: tests_engine/test_futures.py::test_assets_registry_and_spec_tokens expected registered CL/ZN continuous identities to be unsupported", "PR #420 changes only tests_engine/test_futures.py and is based on the #415 feature branch"],
+  "next_action": "Recheck exact-hosted checks for #414, #415 and stacked #420; review the unified futures catalog after consolidation and preserve the separation between research identity, execution qualification, and live authority."
+}

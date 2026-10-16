@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-latest-main-readback",
+  "completed_at_utc": "2026-10-16T12:52:10Z",
+  "result": "complete",
+  "summary": "Latest readback at Icarus 3c32947 and Engine 3e29e95: A200 remains 200 catalogued but zero connected/qualified/Pulse-enabled; UW remains partially collected with a separate authentication-blocked canary and no Pulse/champion consumer. C04 has 1,132 requests, 1,127 unresolved, five resolved and zero invalid across four active lanes; persisted health matches the full-population recomputation.",
+  "evidence": ["coordination/events/2026/10/16/codex-20261016-latest-main-readback/20261016T125210Z-complete.json"],
+  "limits": ["Read-only persisted evidence only; no provider calls or Engine/Icarus mutations.", "The A200 probe contains response receipts, not qualified historical/live bars or strategy inputs.", "C04 backlog counts are not market-asset counts or completed research work."]
+}

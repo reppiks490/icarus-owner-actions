@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T125210Z-complete",
+  "session_id": "codex-20261016-latest-main-readback",
+  "at_utc": "2026-10-16T12:52:10Z",
+  "type": "COMPLETE",
+  "phase": "read-only-audit",
+  "summary": "Reconciled Icarus main 3c32947 and Engine main 3e29e95. A200 remains 200 catalogued with zero source-connected, entitlement-verified, historical/live-qualified, Pulse-enabled or strategy-qualified assets; the 400-row probe has 200 Yahoo RESPONSE_RECEIVED rows (2,000 summarized rows) and 200 FMP NOT_CONFIGURED rows, with provisional identities, unverified mappings, unknown entitlements and zero historical qualification. Unusual Whales remains COLLECTED_PARTIAL (5 requests/pages, 111 rows, 11/21 operations across 500 assets, one pending page, encrypted checkpoint); its native canary remains BLOCKED_AUTHENTICATION despite credential_present=true, and no direct UW-to-Pulse/champion feature consumer is present. Four active hybrid lanes now contain 1,132 immutable requests, 1,127 unresolved, five resolved and zero invalid; each is BACKLOG with 24 unresolved in its hot window. Persisted health counts match the read-only recomputation; execution_authorized remains false.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["reppiks490/Icarus@3c32947f516156c95eee1df9b8ec8157bf346bb1", "reppiks490/Icarus-engine@3e29e9527f9e9a8eb20346e38ee807616d8b7a6a"],
+  "evidence": [
+    "Icarus market-universe-200.json: 200 assets; all seven connection, entitlement, history, live, Pulse and strategy qualification counts are zero.",
+    "Icarus a200-hybrid-history-probe.json: 400 receipts, 200 Yahoo RESPONSE_RECEIVED with 2,000 summarized rows, 200 FMP NOT_CONFIGURED; Yahoo identity PROVISIONAL, mapping UNVERIFIED, entitlement UNKNOWN, historical qualification false.",
+    "Engine provider_collection_v1/latest/unusual_whales.json: supplemental-38873907446-unusual_whales, COLLECTED_PARTIAL, 5 requests/pages, 111 rows, 11 of 21 operations, 500 assets, one pending page, encrypted checkpoint, execution_authorized false.",
+    "Engine provider_collection_v1/native_access/latest/unusual_whales.json: native-38897165047-1, BLOCKED_AUTHENTICATION, credential_present true, one request.",
+    "Canonical tools.hybrid_loop_bridge.build_health() at 2026-10-16T12:50:45Z: robustness_guardian 283/283 unresolved; advanced_csv 283/282; alpha_synthesis 283/283; microstructure_sensor_grid 283/279. Total 1,132 requests, 1,127 unresolved, five resolved, zero invalid. Persisted lane counts/status/oldest/latest identities match; execution_authorized is false.",
+    "No provider call, workflow trigger, secret-value read, or Engine/Icarus data mutation was performed."
+  ],
+  "next_action": "Complete A200 source identity, entitlement, historical/live and Pulse qualification; finish UW operation/page/auth coverage and explicit feature consumption. Process hybrid backlog oldest-first under its typed-result and execution-disabled contract."
+}

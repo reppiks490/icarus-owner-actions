@@ -326,14 +326,13 @@
       "declared_paths": [],
       "declared_targets": [],
       "dependencies": [
-        "pr:reppiks490/Icarus#414@c44d0bea85171375dd8c7733827cc5c6dc79d97f",
-        "pr:reppiks490/Icarus#415@292be819fffd57d18bbaee25a3edbe6732bc6b63"
+        "pr:reppiks490/Icarus#415@1f58f37dc9f58c5a8c0bf6d1a50d579db289da1a"
       ],
       "goal": "Independently review the in-progress canonical 32-root futures PRs for contract failures and cross-PR collisions, and provide exact-head findings to their author.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T12:24:00Z",
-      "latest_summary": "Independent exact-head review found that PR #414 currently fails its futures authority contract tests: ContractSpec drops product.execution_root and the code formatter uses the research root, while the CL representative expectation also disagrees with the documented roll rule. PR #415 independently adds a second 32-root catalog and edits the same assets.py/contracts.py paths, so the two drafts conflict and should converge on one authority before merge. Findings and reproduction were posted on both PR threads.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-16T12:48:41Z",
+      "latest_summary": "Added an execution-boundary finding on #415 TDD head 1f58f37: the new contract-family test requires all 32 catalog products to enter SPECS/parse_continuous, but the current module contract defines these as execution-qualified dated-contract APIs and intentionally limits SPECS to 12 qualified roots. Keep that execution subset; if 32-root static roll candidates are needed, expose a separate structural catalog/resolver with an explicit execution_qualified=false flag and a tested paper-admission rejection. The focused exact-head run has 23 expected TDD failures plus two unresolved Databento mapping failures. Hosted checks are still pending.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "review",
       "pr": null,
@@ -570,115 +569,16 @@
       "session_id": "codex-20261016-phone-command-center-site",
       "stale": false,
       "status": "active"
-    },
-    {
-      "actor": "ChatGPT / Codex",
-      "branch": "codex/real-price-shadow-twin-v1",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "icarus_engine/shadow_twin.py",
-        "icarus_engine/shadow_evidence_events.py",
-        "icarus_engine/runtime.py",
-        "icarus_engine/cli.py",
-        "tests_engine/test_shadow_twin.py",
-        "tests_engine/test_shadow_evidence_events.py",
-        "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
-      ],
-      "declared_targets": [
-        {
-          "path": "icarus_engine/shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/runtime.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/cli.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "dependencies": [
-        "reppiks490/Icarus design PR #148"
-      ],
-      "goal": "Complete exact-head review, regression validation, and draft publication for the default-off real-price shadow twin without changing live execution authority.",
-      "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T12:21:09Z",
-      "latest_summary": "Resume the existing default-off real-price shadow twin implementation from its checked-in plan. Audit the complete branch diff against the design, run focused and relevant regressions, repair any verified defects, and publish a draft PR for independent review while preserving the primary emulator and execution-authority boundaries.",
-      "latest_type": "CLAIM",
-      "model_family": "openai",
-      "phase": "verification",
-      "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/shadow_twin.py",
-        "icarus_engine/shadow_evidence_events.py",
-        "icarus_engine/runtime.py",
-        "icarus_engine/cli.py",
-        "tests_engine/test_shadow_twin.py",
-        "tests_engine/test_shadow_evidence_events.py",
-        "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/runtime.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/cli.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_twin.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_shadow_evidence_events.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-15-real-price-shadow-twin-v1.md",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "session_id": "codex-20261016-real-price-shadow-twin",
-      "stale": false,
-      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 10,
+    "active": 9,
     "collisions": 0,
     "stale": 4,
-    "terminal": 7
+    "terminal": 12
   },
-  "generated_at_utc": "2026-10-16T12:49:43.502811Z",
+  "generated_at_utc": "2026-10-16T12:52:42.684244Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -851,6 +751,110 @@
       "status": "complete"
     },
     {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/icarus-review-baton-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "reppiks490/Icarus@2c06c6d3e29696eaa7f079e621b768b835c94eb5",
+        "reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"
+      ],
+      "goal": "Refresh A200 and Unusual Whales source-to-Pulse status against the latest merged Icarus and Engine main commits, without making provider calls or changing UI/data.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T12:45:48Z",
+      "latest_summary": "Latest merged Icarus main 2c06c6d3 includes PR #425's explicit A200 history-provider selection UI, but provider selection has not qualified any source: the 200-asset catalog still reports 0 connected, entitled, historical-qualified, live-qualified, Pulse-enabled, or strategy-qualified assets. The stored A200 probe remains 200 Yahoo response receipts (2,000 rows total, 10 each) and 200 FMP NOT_CONFIGURED receipts; every Yahoo identity remains PROVISIONAL, mapping UNVERIFIED, entitlement UNKNOWN, and historical qualification false. Latest Engine main 6c1a0f3c retains Unusual Whales supplemental status COLLECTED_PARTIAL (5 requests/pages, 111 rows, 11/21 catalog operations across 500 assets, one pending page) and a separate native canary status BLOCKED_AUTHENTICATION despite credential_present=true. Icarus intake remains metadata-only and no UW-to-Pulse/champion adapter was found. The UI change and credential presence are not evidence of a fully connected strategy source.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "read-only-audit",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-uw-head-refresh",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/icarus-review-baton-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"
+      ],
+      "goal": "Recompute the active hybrid-lane backlog from immutable requests and validated result receipts on exact Engine main, and publish current C04 evidence without mutating Engine data.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T12:43:30Z",
+      "latest_summary": "Recomputed C04 from all immutable active-lane request files and matching result receipts on Engine main 6c1a0f3c7dc8cb8844628cd398a12205de3bb52d. The four active lanes contain 1,120 requests in total; 1,115 remain unresolved, five have valid resolving receipts, and zero requests have invalid identity/clock diagnostics. Each lane is BACKLOG with 24 unresolved items in its bounded hot window. Persisted health counts/status/latest/oldest fields match the recomputation; their observation timestamp is 09:38Z, while the independent read-only calculation was 12:43Z. All four health records and the registry retain execution_authorized=false.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "read-only-audit",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-c04-population-audit",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/icarus-review-baton-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "reppiks490/Icarus@3c32947f516156c95eee1df9b8ec8157bf346bb1",
+        "reppiks490/Icarus-engine@3e29e9527f9e9a8eb20346e38ee807616d8b7a6a"
+      ],
+      "goal": "Refresh C04 full-population backlog and A200/Unusual Whales qualification against the latest merged main snapshots, using persisted evidence only.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T12:52:10Z",
+      "latest_summary": "Reconciled Icarus main 3c32947 and Engine main 3e29e95. A200 remains 200 catalogued with zero source-connected, entitlement-verified, historical/live-qualified, Pulse-enabled or strategy-qualified assets; the 400-row probe has 200 Yahoo RESPONSE_RECEIVED rows (2,000 summarized rows) and 200 FMP NOT_CONFIGURED rows, with provisional identities, unverified mappings, unknown entitlements and zero historical qualification. Unusual Whales remains COLLECTED_PARTIAL (5 requests/pages, 111 rows, 11/21 operations across 500 assets, one pending page, encrypted checkpoint); its native canary remains BLOCKED_AUTHENTICATION despite credential_present=true, and no direct UW-to-Pulse/champion feature consumer is present. Four active hybrid lanes now contain 1,132 immutable requests, 1,127 unresolved, five resolved and zero invalid; each is BACKLOG with 24 unresolved in its hot window. Persisted health counts match the read-only recomputation; execution_authorized remains false.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "read-only-audit",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-latest-main-readback",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/real-price-shadow-twin-v1",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "merged:reppiks490/Icarus#361",
+        "merged:reppiks490/Icarus#386",
+        "merged:reppiks490/Icarus#391"
+      ],
+      "goal": "Complete exact-head review, regression validation, and draft publication for the default-off real-price shadow twin without changing live execution authority.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:30:31Z",
+      "latest_summary": "Confirmed the real-price shadow twin v1 implementation is already integrated: PR #361 merged as commit 4c2c9c8; later closed-excursion evidence follow-ups #386 and #391 are also merged. Revalidated current Icarus main at ce271f1: 32 focused shadow/evidence tests and 96 execution-control, emulator-regression, and activation-runtime tests pass. No additional shadow-twin source change is needed in this session; releasing its runtime reservation so the active paper-workspace session has no collision.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "verification",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-real-price-shadow-twin",
+      "stale": false,
+      "status": "complete"
+    },
+    {
       "actor": "Codex",
       "branch": "codex/shadow-dashboard-fixed-overlay-20261016",
       "cooperates_with": [],
@@ -873,6 +877,31 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-shadow-dashboard-overlay",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/icarus-review-baton-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "handoff:reppiks490/Icarus-engine:coordination/inbox/to-chatgpt/20261016T0212Z-atlas-federated-data-closure.md"
+      ],
+      "goal": "Read the latest A200 and Unusual Whales shared evidence plane and verify the distinction between credential, ingestion, qualification, and downstream Pulse consumption.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-16T12:31:45Z",
+      "latest_summary": "Current Icarus main ce271f192 has 200 catalogued equities but 0 source-connected, entitlement-verified, historically qualified, live-qualified, Pulse-enabled, or strategy-qualified assets. Its A200 receipt (updated 2026-10-16T06:17:50Z) has 200 Yahoo RESPONSE_RECEIVED rows and 200 FMP NOT_CONFIGURED rows, but all Yahoo mappings/identities are unverified/provisional and no raw bars persist. Engine main fadac657d confirms Unusual Whales credential presence in the shared secret contract, while the latest supplemental collector is PARTIAL (5 requests/pages, 111 rows, 11 of 21 operations, 500 assets, one page pending) and the separate native canary is BLOCKED_AUTHENTICATION. Icarus unusual_whales_intake.py is metadata-only: it hashes connector responses, declares rights and entitlement unknown, excludes raw payloads, marks PIT and candidate eligibility false, and writes a learning event; no direct UW-to-Pulse/champion feature adapter was found. This is not proof that every plugin call or every provider endpoint is unavailable; it is an explicit incomplete downstream-use and qualification gap.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "research",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-uw-pulse-consumption-audit",
       "stale": false,
       "status": "complete"
     }
