@@ -189,38 +189,6 @@
       "status": "active"
     },
     {
-      "actor": "ChatGPT / Codex",
-      "branch": "codex/a200-probe-provider-scope-20261016",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json"
-      ],
-      "declared_targets": [
-        {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
-      "dependencies": [
-        "pr:reppiks490/Icarus#411"
-      ],
-      "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
-      "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T07:23:04Z",
-      "latest_summary": "Extended provider isolation to the remaining A200 history call sites: the authenticated history API now constructs only the explicitly requested provider, and the legacy Yahoo sweep initializes Yahoo only. PR #411 is at 95db3db. The expanded focused market-universe suite still passes 41 tests; exact-head CI will restart on this head.",
-      "latest_type": "UPDATE",
-      "model_family": "openai",
-      "phase": "exact-head-verification",
-      "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
-      "session_id": "codex-20261016-a200-provider-scope",
-      "stale": true,
-      "status": "active"
-    },
-    {
       "actor": "Codex",
       "branch": "codex/a200-receipt-timezone-evidence",
       "cooperates_with": [],
@@ -743,12 +711,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 11,
+    "active": 10,
     "collisions": 0,
-    "stale": 4,
-    "terminal": 6
+    "stale": 3,
+    "terminal": 9
   },
-  "generated_at_utc": "2026-10-16T12:41:53.906100Z",
+  "generated_at_utc": "2026-10-16T12:45:29.554531Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -896,6 +864,31 @@
     },
     {
       "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-calendar-timezone-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#419"
+      ],
+      "goal": "Wire the authoritative exchange-calendar timezone into A200 bar receipts so cadence validation uses the same timezone as the expected schedule.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:39:00Z",
+      "latest_summary": "A200 calendar timezone receipt wiring PR #419 merged at b99f7e0ee3ceb2e211b404f57fef6e3fa79ee243 after Linux and Windows exact-head CI passed on both push and PR workflows.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-calendar-timezone",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
       "branch": "codex/a200-ledger-validation-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -917,6 +910,56 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-a200-ledger-hardening",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-provider-history-ui-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#425"
+      ],
+      "goal": "Expose declared A200 provider choices in the authenticated Market Data history preview without coupling preview receipts to Pulse or runtime feeds.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:45:00Z",
+      "latest_summary": "PR #425 exposing declared A200 provider choices in the authenticated Market Data history preview merged at 2c06c6d3e29696eaa7f079e621b768b835c94eb5 after exact-head Linux, Windows, browser visual, and Icarus-engine historical-context consumer checks passed.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-provider-history-ui",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-probe-provider-scope-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#413"
+      ],
+      "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T07:33:00Z",
+      "latest_summary": "A200 hybrid probe provider scope is merged. Default probing is Yahoo-only and fails closed if Yahoo is unavailable; FMP requires explicit selection. Provider-specific call sites are scoped, omitted providers remain visible as NOT_REQUESTED, and subset results report PARTIAL.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged-provider-scope",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-provider-scope",
       "stale": false,
       "status": "complete"
     }
