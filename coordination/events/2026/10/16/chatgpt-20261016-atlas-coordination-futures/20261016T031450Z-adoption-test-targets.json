@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T031450Z-adoption-test-targets",
+  "session_id": "chatgpt-20261016-atlas-coordination-futures",
+  "at_utc": "2026-10-16T03:14:50Z",
+  "type": "UPDATE",
+  "phase": "cross-repo-adoption",
+  "summary": "Expanding the declared coordination-adoption reservation to include its TDD contract files as well as agent entrypoints, so future workers cannot collide in verification while avoiding the documented paths.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/Icarus",
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/icarus-csv-evidence-lab"
+  ],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "AGENTS.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/README.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_multichat_coordination_entrypoint.py"},
+    {"repo": "reppiks490/Icarus", "path": "AGENTS.md"},
+    {"repo": "reppiks490/Icarus", "path": "tests/test_github_native_provider_credentials.py"},
+    {"repo": "reppiks490/divine-providence", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-causal-router", "path": "AGENTS.md"},
+    {"repo": "reppiks490/icarus-csv-evidence-lab", "path": "AGENTS.md"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus-engine#180", "pr:reppiks490/Icarus#397"],
+  "evidence": ["coordination-bus:main"],
+  "next_action": "Complete Engine and Icarus TDD entrypoint updates, then propagate central-bus pointers to auxiliary AGENTS files.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
