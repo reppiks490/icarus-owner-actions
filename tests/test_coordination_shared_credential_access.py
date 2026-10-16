@@ -1,8 +1,18 @@
 from pathlib import Path
 
 
+AGENTS = Path("AGENTS.md")
 START_HERE = Path("coordination/START_HERE.md")
 DIRECTIVE = Path("coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md")
+
+
+def test_root_agent_entrypoint_routes_to_shared_access_directive():
+    text = AGENTS.read_text(encoding="utf-8").lower()
+    assert "coordination/start_here.md" in text
+    assert "github_native_data_access.md" in text
+    assert "do not search" in text and ".env" in text
+    assert "github actions" in text
+    assert "plaintext" in text
 
 
 def test_start_here_routes_every_chat_to_github_native_data_plane():
