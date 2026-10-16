@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123400Z-a200-provider-history-ui-ci-wait",
+  "session_id": "codex-20261016-a200-provider-history-ui",
+  "at_utc": "2026-10-16T12:34:00Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci",
+  "summary": "Provider selection UI is committed to PR #425 at e543303. Provider choices are drawn from per-instrument candidates; changing the selector does not fetch; the existing button sends the selected allowed provider. Full dashboard JavaScript tests, diff check, and package builds passed locally. CI is pending.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-history-ui/20261016T123400Z-a200-provider-history-ui-ci-wait.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#425"
+  ],
+  "evidence": [
+    "PR #425 head e543303",
+    "full dashboard JavaScript test module passed",
+    "git diff --check passed",
+    "wheel and source distribution built successfully",
+    "no live provider requests made"
+  ],
+  "next_action": "Review exact-head CI and merge only after all required checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

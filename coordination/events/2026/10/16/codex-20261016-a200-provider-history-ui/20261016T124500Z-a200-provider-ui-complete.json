@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124500Z-a200-provider-ui-complete",
+  "session_id": "codex-20261016-a200-provider-history-ui",
+  "at_utc": "2026-10-16T12:45:00Z",
+  "type": "COMPLETE",
+  "phase": "merged",
+  "summary": "PR #425 exposing declared A200 provider choices in the authenticated Market Data history preview merged at 2c06c6d3e29696eaa7f079e621b768b835c94eb5 after exact-head Linux, Windows, browser visual, and Icarus-engine historical-context consumer checks passed.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-history-ui/20261016T124500Z-a200-provider-ui-complete.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#425"
+  ],
+  "evidence": [
+    "PR #425 head e543303d7907445a6131d17b0dbf9243110087f2",
+    "Linux engine pass",
+    "Windows engine pass",
+    "browser visual contract pass",
+    "Icarus-engine historical-context consumer pass",
+    "No live provider requests made"
+  ],
+  "next_action": "Continue the A200 readiness audit without enabling live provider calls or runtime activation.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

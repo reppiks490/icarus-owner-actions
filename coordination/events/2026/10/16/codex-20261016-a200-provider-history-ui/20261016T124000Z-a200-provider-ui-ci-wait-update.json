@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124000Z-a200-provider-ui-ci-wait-update",
+  "session_id": "codex-20261016-a200-provider-history-ui",
+  "at_utc": "2026-10-16T12:40:00Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci",
+  "summary": "PR #425 remains at exact head e543303d7907445a6131d17b0dbf9243110087f2. Engine (Linux and Windows), browser visual contract, and federation historical-context consumer checks are still pending; no failures reported.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-history-ui/20261016T124000Z-a200-provider-ui-ci-wait-update.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#425"
+  ],
+  "evidence": [
+    "Exact PR head e543303d7907445a6131d17b0dbf9243110087f2",
+    "Required checks queried; all pending",
+    "No live provider calls made"
+  ],
+  "next_action": "Poll exact-head required checks; investigate and fix any failures before merge.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

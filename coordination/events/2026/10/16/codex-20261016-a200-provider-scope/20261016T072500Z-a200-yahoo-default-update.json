@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T072500Z-a200-yahoo-default-update",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:25:00Z",
+  "type": "UPDATE",
+  "phase": "provider-safety-default",
+  "summary": "Made the A200 hybrid probe Yahoo-only by default. An FMP request now requires explicit --providers fmp selection; the implementation runbook documents provider selection and request-budget implications. This prevents a routine one-instrument probe from contacting an injected FMP provider key by default. PR #411 is now at cde027a; 41 focused tests pass, and exact-head CI will restart.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072500Z-a200-yahoo-default-update.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus#411"],
+  "evidence": ["targeted market-universe suite: 41 passed", "CLI help identifies Yahoo-only default and explicit FMP selection", "no provider request made"],
+  "next_action": "Review exact-head Linux and Windows checks for cde027a; merge only when all required checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T132500Z-a200-crosswalk-merged-runtime-gates",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "at_utc": "2026-10-16T13:25:00Z",
+  "type": "WAITING",
+  "phase": "provider-qualification-and-runtime-connection",
+  "summary": "A200 listing identity evidence merged to Icarus main as 6e40d0b5ef27c4835a011480cec2f39c830f39ef via PR #428 after Linux/Windows exact-head checks passed. Current main snapshot validates the fresh crosswalk at 200/200 while provider connection, entitlement, historical/live qualification, Pulse, and strategy counts remain 0. Runtime/asset integration PRs #415, #421, and #424 remain open; canonical provider evidence still lacks per-A200 mapped/entitled datasets and qualified durable bars.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#415 asset registry integration",
+    "pr:reppiks490/Icarus#421 runtime/server integration",
+    "pr:reppiks490/Icarus#424 runtime/server integration",
+    "provider-evidence:A200 mapping and product entitlement",
+    "provider-evidence:qualified licensed durable history and live bars"
+  ],
+  "evidence": [
+    "PR #428 merged 2026-10-16 at 6e40d0b5ef27c4835a011480cec2f39c830f39ef; both Linux and Windows checks passed",
+    "post-merge snapshot: listing crosswalk CURRENT 200/200; all provider and operational qualification counts 0",
+    "Yahoo 200/200 response/symbol echo evidence remains provisional identity with unknown entitlement",
+    "Engine Massive collector has no A200 asset datasets and FMP endpoint entitlement is blocked"
+  ],
+  "next_action": "When active registry/runtime PR paths are released and authoritative provider mapping, account entitlement, licensed durable history, and live-bar evidence arrive, implement the receipt-preserving A200 bridge with fail-closed qualification gates. Do not inject the public listing crosswalk into provider/runtime qualification.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

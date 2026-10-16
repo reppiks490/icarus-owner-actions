@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T073100Z-a200-yahoo-fail-closed-update",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:31:00Z",
+  "type": "UPDATE",
+  "phase": "exact-head-verification",
+  "summary": "Closed stale PR #412 and opened PR #413 at ecffe15e9cf4d3e833856b5996cd7f8c47c8e2b2. Added a regression guard: the default hybrid probe now fails closed when the catalog lacks Yahoo, rather than selecting another provider; explicit provider scopes still work.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T073100Z-a200-yahoo-fail-closed-update.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#413"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#412 closed as superseded",
+    "pr:reppiks490/Icarus#413 head ecffe15e9cf4d3e833856b5996cd7f8c47c8e2b2",
+    "42 focused tests pass locally",
+    "git diff --check passed",
+    "package build had passed on the underlying provider-scope commit",
+    "no live provider requests made"
+  ],
+  "next_action": "Review PR #413 checks against exact head; merge only after all required checks pass.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": [
+    "/root/a200_probe_review"
+  ]
+}

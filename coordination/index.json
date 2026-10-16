@@ -119,105 +119,71 @@
       "model_family": "openai",
       "phase": "system-convergence",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
-        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
-        "icarus_engine/system_index.py",
-        "icarus_engine/futures_catalog.py",
-        "icarus_engine/assets.py",
-        "icarus_futures/contracts.py",
-        "icarus_engine/asset_command_center.py",
-        "icarus_engine/brain_evidence.py",
-        "tests_engine/test_system_index.py",
-        "tests_engine/test_futures_catalog.py",
-        "tests_engine/test_asset_command_center.py",
-        "tests_engine/test_brain_evidence.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/system_index.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/futures_catalog.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/assets.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_futures/contracts.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/asset_command_center.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_system_index.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_futures_catalog.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_asset_command_center.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "chatgpt-20261016-atlas-system-convergence",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
       "actor": "ChatGPT / Codex",
-      "branch": "codex/a200-probe-provider-scope-20261016",
+      "branch": "codex/a200-provider-history-ui-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json"
+        "icarus_engine/a200_runtime_bridge.py",
+        "tests_engine/test_a200_runtime_bridge.py",
+        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
       ],
       "declared_targets": [
         {
-          "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#411"
+        "pr:reppiks490/Icarus#443@0e772ec4541cc3b26e34da13de3a7832a614e3c0 exact-head run 38959236508",
+        "A200 provider mapping, entitlement, qualified history and live feed evidence"
       ],
-      "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
+      "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T07:23:04Z",
-      "latest_summary": "Extended provider isolation to the remaining A200 history call sites: the authenticated history API now constructs only the explicitly requested provider, and the legacy Yahoo sweep initializes Yahoo only. PR #411 is at 95db3db. The expanded focused market-universe suite still passes 41 tests; exact-head CI will restart on this head.",
+      "last_event_at_utc": "2026-10-16T20:31:00Z",
+      "latest_summary": "Tightened A200 bridge PR #443 to head 0e772ec after another review finding. The bridge now requires literal boolean True for external identity/live-feed attestations, rejects non-boolean historical qualification on forged receipts, recomputes the exact OHLCV checksum, and copies mutable inputs into a tuple. Focused bridge+market-universe tests pass (52 tests); compileall and diff-check pass. The latest exact-head run 38959236508 is queued. Previous Linux full suite passed on 2270e67; full Linux/Windows runs for df73535 remain in progress.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "exact-head-verification",
+      "phase": "provider-qualification-and-runtime-connection",
       "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
-      "session_id": "codex-20261016-a200-provider-scope",
-      "stale": true,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/a200_runtime_bridge.py",
+        "tests_engine/test_a200_runtime_bridge.py",
+        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261016-a200-listing-qualification",
+      "stale": false,
       "status": "active"
     },
     {
@@ -255,28 +221,11 @@
       "model_family": "openai",
       "phase": "handoff",
       "pr": 418,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/calendar.py",
-        "icarus_engine/market_universe_adapter.py",
-        "tests_engine/test_market_universe.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/calendar.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/market_universe_adapter.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_market_universe.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-a200-timezone-provenance",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -339,11 +288,11 @@
       "model_family": "openai",
       "phase": "exact-head-review",
       "pr": null,
-      "reclaimable": false,
+      "reclaimable": true,
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-futures-pr-review",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -464,63 +413,11 @@
       "model_family": "openai",
       "phase": "ci-and-backend-integration",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "icarus_engine/command-centers-ui.js",
-        "icarus_engine/dashboard.html",
-        "icarus_engine/experience-ui.css",
-        "icarus_engine/experience-ui.js",
-        "icarus_engine/world-aura.js",
-        "icarus_engine/world-cinema.js",
-        "icarus_engine/world-immersion.js",
-        "icarus_engine/world-motion.js",
-        "assets/dashboard.html",
-        "assets/command-centers-ui.js"
-      ],
-      "reserved_targets": [
-        {
-          "path": "icarus_engine/command-centers-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.css",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-aura.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-cinema.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-immersion.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/world-motion.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "assets/dashboard.html",
-          "repo": "sites/icarus-command-center-mobile"
-        },
-        {
-          "path": "assets/command-centers-ui.js",
-          "repo": "sites/icarus-command-center-mobile"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-phone-command-center-site",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -529,63 +426,84 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
+        "tools/provider_research_context.py",
+        "tests/test_provider_research_context.py",
+        "config/data_ingestion_manifest.json",
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md",
         "ICARUS_STATE.md"
       ],
       "declared_targets": [
+        {
+          "path": "tools/provider_research_context.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_provider_research_context.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "config/data_ingestion_manifest.json",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
         {
           "path": "ICARUS_STATE.md",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "PR #198 exact-head verification is running"
+        "PR #198 exact-head checks are running"
       ],
       "goal": "Correct shared provider evidence truth and repair the provider manifest contract that currently fails Engine verification.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T13:13:47Z",
-      "latest_summary": "Add ICARUS_STATE.md to the repair scope because its data access section is dated 2026-10-11 and now contradicts the current 2026-10-16 health/provider/depth receipts. The repo's own instructions require updating that source of truth when facts change.",
+      "last_event_at_utc": "2026-10-16T13:16:00Z",
+      "latest_summary": "Add shared last-successful safe receipt projection from cycles/ into research_context.json. The latest Unusual Whales receipt is blocked, but successful 111-row derived features remain committed in cycle history; the standard context currently hides them because it reads only latest/. Keep current blocked status authoritative and mark prior features historical only.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "verification",
+      "phase": "implementation",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "ICARUS_STATE.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "ICARUS_STATE.md",
-          "repo": "reppiks490/Icarus-engine"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261016-provider-data-hardening",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
       "actor": "ChatGPT / Codex",
       "branch": "codex/command-center-stack-421",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "cooperates_with": [
+        "codex-20261016-phone-command-center-site"
+      ],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "tests_engine/browser_depth.cjs"
+      ],
+      "declared_targets": [
+        {
+          "path": "tests_engine/browser_depth.cjs",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "dependencies": [
-        "reppiks490/Icarus#424 current stack and #421 backend parent",
-        "GitHub Actions ui-visual-contract exact-head run"
+        "reppiks490/Icarus#424 UI visual contract rerun"
       ],
       "goal": "Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T13:13:13Z",
-      "latest_summary": "Repair browser-depth topology pointer reconciliation contract at the current command-center UI stack after repeat CI failures, then verify exact-head UI checks.",
-      "latest_type": "REGISTERED",
+      "last_event_at_utc": "2026-10-16T13:16:00Z",
+      "latest_summary": "Claim a narrow test-only repair for the recurring browser-depth topology pointerout assertion on the current #424 command-center stack.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "registered",
+      "phase": "verification",
       "pr": null,
-      "reclaimable": false,
+      "reclaimable": true,
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-ui-pointer-contract-fix",
-      "stale": false,
+      "stale": true,
       "status": "active"
     }
   ],
@@ -593,10 +511,10 @@
   "counts": {
     "active": 10,
     "collisions": 0,
-    "stale": 4,
-    "terminal": 15
+    "stale": 9,
+    "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T13:14:24.669039Z",
+  "generated_at_utc": "2026-10-16T20:02:00.125803Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -743,6 +661,56 @@
       "status": "complete"
     },
     {
+      "actor": "ChatGPT",
+      "branch": "verification/current-main-read-only",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "Latest main refs for Icarus, Icarus-engine, and Divine Providence"
+      ],
+      "goal": "Revalidate current-main package builds and requested software suites across Icarus, Icarus-engine, and Divine Providence; report exact evidence and any local limitations.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T18:39:30Z",
+      "latest_summary": "Fresh package builds and scoped software suites passed on current main for Icarus, Icarus-engine, and Divine Providence. Exact SHAs, counts, skips/warnings, and local-only limits are in the session summary.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "complete",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261016-current-head-builds",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-calendar-timezone-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#419"
+      ],
+      "goal": "Wire the authoritative exchange-calendar timezone into A200 bar receipts so cadence validation uses the same timezone as the expected schedule.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:39:00Z",
+      "latest_summary": "A200 calendar timezone receipt wiring PR #419 merged at b99f7e0ee3ceb2e211b404f57fef6e3fa79ee243 after Linux and Windows exact-head CI passed on both push and PR workflows.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-calendar-timezone",
+      "stale": false,
+      "status": "complete"
+    },
+    {
       "actor": "ChatGPT / Codex",
       "branch": "codex/a200-ledger-validation-20261016",
       "cooperates_with": [],
@@ -765,6 +733,56 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-a200-ledger-hardening",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-provider-history-ui-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#425"
+      ],
+      "goal": "Expose declared A200 provider choices in the authenticated Market Data history preview without coupling preview receipts to Pulse or runtime feeds.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T12:45:00Z",
+      "latest_summary": "PR #425 exposing declared A200 provider choices in the authenticated Market Data history preview merged at 2c06c6d3e29696eaa7f079e621b768b835c94eb5 after exact-head Linux, Windows, browser visual, and Icarus-engine historical-context consumer checks passed.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-provider-history-ui",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/a200-probe-provider-scope-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#413"
+      ],
+      "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-16T07:33:00Z",
+      "latest_summary": "A200 hybrid probe provider scope is merged. Default probing is Yahoo-only and fails closed if Yahoo is unavailable; FMP requires explicit selection. Provider-specific call sites are scoped, omitted providers remain visible as NOT_REQUESTED, and subset results report PARTIAL.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "merged-provider-scope",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-a200-provider-scope",
       "stale": false,
       "status": "complete"
     },

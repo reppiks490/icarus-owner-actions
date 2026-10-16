@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122800Z-a200-calendar-timezone-review-update",
+  "session_id": "codex-20261016-a200-calendar-timezone",
+  "at_utc": "2026-10-16T12:28:00Z",
+  "type": "UPDATE",
+  "phase": "exact-head-ci",
+  "summary": "Independent review confirmed timezone wiring does not affect qualification gates and identified that Friday-to-Monday test data did not exercise a shortened interval. Updated PR #419 to test a 23-hour spring-forward interval end-to-end through MarketUniverseAdapter; exact head is now e13c86fbb758692686d6dad5c611e4012d774cf7.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-calendar-timezone/20261016T122800Z-a200-calendar-timezone-review-update.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#419"
+  ],
+  "evidence": [
+    "PR #419 head e13c86fbb758692686d6dad5c611e4012d774cf7",
+    "49 focused market-universe and A200 cadence tests passed after updated integration coverage",
+    "git diff --check passed",
+    "wheel and source distribution built on implementation commit 6e652fa",
+    "review found no qualification bypass; mapping and entitlement remain unqualified",
+    "no live provider requests made"
+  ],
+  "next_action": "Wait for exact-head CI; merge only after all required checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

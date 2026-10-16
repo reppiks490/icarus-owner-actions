@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T130600Z-a200-listing-crosswalk-pr-waiting",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "at_utc": "2026-10-16T13:06:00Z",
+  "type": "WAITING",
+  "phase": "ci-and-qualification-boundary",
+  "summary": "Implemented and published A200 public listing identity crosswalk PR #428 at exact head ee06b2c. Fresh Nasdaq screener evidence matched 200/200 catalog identity tuples; fail-closed loader and UI report this separately while provider connectivity and all qualification/Pulse counts remain zero. Focused tests passed locally. Linux contract check passed; Windows and engine checks are running.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "tools/a200_listing_crosswalk.py",
+    "icarus_engine/a200-listing-crosswalk.json",
+    "icarus_engine/market_universe.py",
+    "icarus_engine/market-data-ui.js",
+    "tests_engine/test_a200_listing_crosswalk.py",
+    "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#428",
+    "exact-head-ci:ee06b2c"
+  ],
+  "evidence": [
+    "public listing crosswalk: 200/200 exact identity matches",
+    "pytest: tests_engine/test_a200_listing_crosswalk.py tests_engine/test_market_universe.py tests_engine/test_dashboard_js.py passed",
+    "python compileall, Node syntax, runtime snapshot, and git diff --check passed",
+    "PR #428 Linux contract passed; Windows contract and engine checks in progress"
+  ],
+  "next_action": "Track PR #428 exact-head checks and address failures. Once merged, re-check A200 feed qualification blockers and prepare a separate non-overlapping runtime handoff only when the active integration paths are released and authoritative provider mapping, entitlement, durable history, and live feed evidence exist.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
