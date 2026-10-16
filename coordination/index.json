@@ -100,11 +100,10 @@
         "tools/depth_vault.py",
         "tools/asset_panel.py",
         "tools/data_sentinel.py",
-        "tests/test_depth_vault.py",
-        "tests/test_asset_panel_vault.py",
-        "tests/test_data_sentinel.py",
+        "tests/test_vendor_panel_vault.py",
         "data/depth_vault",
-        "data/panel"
+        "data/panel",
+        "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md"
       ],
       "declared_targets": [
         {
@@ -124,15 +123,7 @@
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "tests/test_depth_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_asset_panel_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_data_sentinel.py",
+          "path": "tests/test_vendor_panel_vault.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
@@ -142,19 +133,22 @@
         {
           "path": "data/panel",
           "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md",
+          "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
         "closed-unmerged:reppiks490/Icarus-engine#135",
-        "merged-current-main:3ca0959a57d8585cb44be4af5a1d7c13ec23a5bb",
         "constraint:authenticated-recovery-before-panel-delete",
         "constraint:no-history-rewrite"
       ],
       "goal": "Reclaim and safely complete L1/J02 vendor-panel containment from superseded Icarus-engine PR #135: prove authenticated encrypted recovery on current main before removing public working-tree vendor CSVs, preserve provenance, and avoid history rewriting or secret exposure.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T03:43:10Z",
-      "latest_summary": "Reclaiming the useful L1/J02 security slice from superseded PR #135 on current Icarus-engine main. Work is fail-closed: first prove authenticated encrypted/private recoverability and origin coverage; only after that evidence may the 13 public working-tree panel CSVs be removed. No Git history rewrite, no plaintext secret output, and no live execution changes.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-16T03:45:00Z",
+      "latest_summary": "Current-main audit confirms the 13 panel CSVs remain public and the vault manifest has no panel inventory. PR #135 contains useful primitives but is stale. Scope is refined to add a focused current-main security contract test and implementation plan rather than replacing existing regression tests wholesale.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "l1-j02-vendor-panel-containment",
       "pr": "pending",
@@ -164,11 +158,10 @@
         "tools/depth_vault.py",
         "tools/asset_panel.py",
         "tools/data_sentinel.py",
-        "tests/test_depth_vault.py",
-        "tests/test_asset_panel_vault.py",
-        "tests/test_data_sentinel.py",
+        "tests/test_vendor_panel_vault.py",
         "data/depth_vault",
-        "data/panel"
+        "data/panel",
+        "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md"
       ],
       "reserved_targets": [
         {
@@ -188,15 +181,7 @@
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "tests/test_depth_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_asset_panel_vault.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests/test_data_sentinel.py",
+          "path": "tests/test_vendor_panel_vault.py",
           "repo": "reppiks490/Icarus-engine"
         },
         {
@@ -205,6 +190,10 @@
         },
         {
           "path": "data/panel",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
@@ -220,7 +209,7 @@
     "stale": 0,
     "terminal": 1
   },
-  "generated_at_utc": "2026-10-16T03:44:00.184169Z",
+  "generated_at_utc": "2026-10-16T03:46:28.367792Z",
   "owner_status": {
     "claude": {
       "active": false,
