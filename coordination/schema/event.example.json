@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "YYYYMMDDTHHMMSSZ-plan-unique",
+  "session_id": "chatgpt-YYYYMMDD-short-task-unique",
+  "at_utc": "2026-10-16T00:00:00Z",
+  "type": "PLAN",
+  "phase": "planning",
+  "summary": "What this chat is about to do and why",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": ["path/to/intended/file.py"],
+  "dependencies": [],
+  "evidence": [],
+  "next_action": "Write failing tests before implementation",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
