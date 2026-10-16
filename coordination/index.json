@@ -349,33 +349,43 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+        "tests/test_ingestion_surface_contract.py"
       ],
       "declared_targets": [
         {
           "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
           "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_ingestion_surface_contract.py",
+          "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
         "pr:reppiks490/Icarus-engine#192",
-        "run:reppiks490/Icarus#38865138563"
+        "run:reppiks490/Icarus-engine#38904540531"
       ],
       "goal": "Refresh the stale Intrinio, Databento primary-sweep, and post-merge cadence claims on Icarus-engine PR #192 against persisted receipts.",
       "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T12:59:00Z",
-      "latest_summary": "Refresh stale evidence statements in the Engine data-gap ledger using current persisted receipts and exact merged-workflow evidence.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-16T13:02:43Z",
+      "latest_summary": "Exact-head CI for PR #192 revealed a pre-existing ingestion-contract test that rejects the newly valid STAGED manifest state for yahoo_cme_futures_seed; expanding the claim to update the contract enum only.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "documentation-evidence-refresh",
+      "phase": "ci-contract-repair",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+        "tests/test_ingestion_surface_contract.py"
       ],
       "reserved_targets": [
         {
           "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_ingestion_surface_contract.py",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
@@ -568,7 +578,7 @@
     "stale": 4,
     "terminal": 13
   },
-  "generated_at_utc": "2026-10-16T13:01:20.841675Z",
+  "generated_at_utc": "2026-10-16T13:02:51.581229Z",
   "owner_status": {
     "claude": {
       "active": false,
