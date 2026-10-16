@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Advance the 200-asset feed integration while ensuring provider probes can be explicitly scoped, evidenced, and kept separate from Pulse/runtime qualification.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/a200-probe-provider-scope-20261016",
+  "started_at_utc": "2026-10-16T07:17:14Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "a200", "provider-probe", "integration"],
+  "initial_dependencies": ["no conflicting A200 probe reservation found in current coordination snapshot", "provider credentials and entitlement must remain isolated from probe scope"]
+}
