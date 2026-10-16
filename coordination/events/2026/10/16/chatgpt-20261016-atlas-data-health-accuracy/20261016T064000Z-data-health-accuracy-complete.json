@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T064000Z-data-health-accuracy-complete",
+  "session_id": "chatgpt-20261016-atlas-data-health-accuracy",
+  "at_utc": "2026-10-16T06:40:00Z",
+  "type": "COMPLETE",
+  "phase": "data-health-accuracy",
+  "summary": "Data-health accuracy repair is merged and runtime-proven. Icarus-engine PR #187 merged as cfa66db5af672f7ff869487a2f67cb78f7b77ca0. The post-merge Sentinel rebuilt at 2026-10-16T06:36:48Z and correctly reports live dedicated FMP/EODHD delivery as DEGRADED while preserving generic-sampler plan denials and keeping missing credentials BLOCKED. The transient Databento BTC/GC Unknown feed rows self-cleared in the fresh snapshot. Databento depth research-context remains fail-closed for a legitimate completeness reason: secondary/third corpus features are present, while the primary sweep manifest has held days but zero bought primary feature slices and the sweep cache was absent. No integrity gate was weakened and no Databento spend was added for cosmetic health. Reservations released.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#187",
+    "merge:cfa66db5af672f7ff869487a2f67cb78f7b77ca0",
+    "sentinel-generated-at:2026-10-16T06:36:48+00:00",
+    "depth-failed-run:38844369831",
+    "depth-primary-manifest:automation_intelligence/cl_lab/databento_depth_sweep_primary.json"
+  ],
+  "next_action": "No reservation remains. Preserve explicit provider/auth/entitlement/integrity blockers and continue normal GitHub-native collection through their existing lanes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
