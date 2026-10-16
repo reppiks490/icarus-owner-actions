@@ -1,0 +1,71 @@
+name: coordination-maintenance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coordination/sessions/**'
+      - 'coordination/events/**'
+      - 'coordination/summaries/**'
+      - 'coordination/owner_status.json'
+      - '.github/workflows/coordination-maintenance.yml'
+  workflow_dispatch:
+    inputs:
+      prune_days:
+        description: 'Prune terminal event files older than this many days after durable summaries exist; 0 disables pruning'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coordination-maintenance-main
+  cancel-in-progress: false
+
+jobs:
+  compile-and-maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate coordination records
+        run: python -m coordination_fabric validate
+      - name: Optional summary-gated event pruning
+        if: github.event_name == 'workflow_dispatch' && inputs.prune_days != '0'
+        env:
+          PRUNE_DAYS: ${{ inputs.prune_days }}
+        run: |
+          case "$PRUNE_DAYS" in
+            ''|*[!0-9]*) echo 'prune_days must be a non-negative integer' >&2; exit 2 ;;
+          esac
+          if [ "$PRUNE_DAYS" -lt 1 ] || [ "$PRUNE_DAYS" -gt 3650 ]; then
+            echo 'prune_days must be between 1 and 3650 when pruning is enabled' >&2
+            exit 2
+          fi
+          python -m coordination_fabric prune --days "$PRUNE_DAYS"
+      - name: Compile active coordination view
+        run: python -m coordination_fabric compile
+      - name: Verify generated coordination surfaces
+        run: |
+          test -f coordination/ACTIVE.md
+          test -f coordination/index.json
+          test -f coordination/collisions.json
+          python -c "import json; d=json.load(open('coordination/collisions.json')); assert isinstance(d.get('collisions'), list)"
+      - name: Persist generated state and approved prune deletions
+        run: |
+          git config user.name 'icarus-coordination-bot'
+          git config user.email '162067269+reppiks490@users.noreply.github.com'
+          git add coordination/ACTIVE.md coordination/index.json coordination/collisions.json
+          git add -A coordination/events
+          if git diff --cached --quiet; then
+            echo 'Coordination state already current.'
+            exit 0
+          fi
+          git commit -m 'coordination: refresh compiled state [skip ci]'
+          git push origin HEAD:main
