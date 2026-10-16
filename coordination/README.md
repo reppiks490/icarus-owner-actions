@@ -41,6 +41,14 @@ A chat waiting on CI should say so explicitly, for example: `waiting on Icarus-e
 
 Use `python -m coordination_fabric validate` to validate records and `python -m coordination_fabric compile` to rebuild the generated views. `python -m coordination_fabric prune --days 14` may remove old terminal event files from the working tree only after a durable session summary exists. Git history remains the provenance record.
 
+## Automatic refresh and retention cleanup
+
+The `coordination-maintenance` GitHub Actions workflow automatically refreshes the compiled coordination surfaces when session, event, summary, or owner-status records change on `main`. Each publication attempt fetches the latest `main`, performs `git reset --hard origin/main`, validates the record tree, recompiles `coordination/ACTIVE.md`, `coordination/index.json`, and `coordination/collisions.json`, and refuses to publish while an undeclared active collision exists. If another worker moves `main` before the push succeeds, the workflow discards that stale derived snapshot and recomputes from the newer main before retrying.
+
+Retention is summary-gated. The workflow runs daily with a 14-day retention window and is also available through `workflow_dispatch` with a configurable `retention_days` value. Pruning calls `python -m coordination_fabric prune --days N`; only old terminal sessions that already have a durable summary are eligible. Active, waiting, blocked, stale-but-reclaimable, or unsummarized work is not deleted. After pruning, the workflow validates and recompiles the shared views again before pushing.
+
+For an easy manual cleanup, run the `coordination-maintenance` workflow with `workflow_dispatch` and choose the desired retention window. Local operators may run `python -m coordination_fabric prune --days N`, followed by validate/compile, but the Actions workflow is preferred because it applies the fresh-main concurrency retry rules automatically. Working-tree event cleanup never rewrites Git history; Git history remains the durable provenance trail for notes that have been pruned from the current tree.
+
 ## Scale rules for 50+ chats
 
 - Session IDs must be unique and stable for the life of the chat/workstream.
