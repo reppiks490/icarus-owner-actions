@@ -7,8 +7,7 @@
   "phase": "complete",
   "summary": "Completed independent exact-head review of Atlas draft PR #141 at ba05a182b4aa947d81b26b6c4063e33adec9f147. No Critical/Important correctness finding in reviewed scope. Submitted GitHub COMMENT review 5547580914. Standard-library tests passed (84); pytest unavailable in this environment, so collection shim and combined pytest suite were not independently rerun. Review does not certify runtime, data, market, or integration behavior.",
   "repos": [
-    "reppiks490/Icarus-engine",
-    "reppiks490/icarus-owner-actions"
+    "reppiks490/Icarus-engine"
   ],
   "paths": [
     "research_allocation/**",
