@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T034500Z-scope-plan-tests",
+  "session_id": "chatgpt-20261016-atlas-vendor-panel-vault",
+  "at_utc": "2026-10-16T03:45:00Z",
+  "type": "UPDATE",
+  "phase": "l1-j02-vendor-panel-containment",
+  "summary": "Current-main audit confirms the 13 panel CSVs remain public and the vault manifest has no panel inventory. PR #135 contains useful primitives but is stale. Scope is refined to add a focused current-main security contract test and implementation plan rather than replacing existing regression tests wholesale.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": ".github/workflows/depth-vault.yml"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/depth_vault.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/asset_panel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/data_sentinel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_vendor_panel_vault.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "data/depth_vault"},
+    {"repo": "reppiks490/Icarus-engine", "path": "data/panel"},
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/superpowers/plans/2026-10-16-vendor-panel-vault.md"}
+  ],
+  "dependencies": [
+    "closed-unmerged:reppiks490/Icarus-engine#135",
+    "constraint:authenticated-recovery-before-panel-delete",
+    "constraint:no-history-rewrite"
+  ],
+  "evidence": [
+    "main:data/panel:13-public-csvs-present",
+    "main:data/depth_vault/manifest.json:no-panel-cache",
+    "pr135:depth-vault-security-patch-reviewed",
+    "pr135:asset-panel-fail-closed-patch-reviewed"
+  ],
+  "next_action": "Write the current-main implementation plan, then add failing security contract tests before any vault implementation code."
+}
