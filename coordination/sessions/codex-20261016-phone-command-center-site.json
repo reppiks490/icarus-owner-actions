@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-phone-command-center-site",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Bring the current four-isolated-paper-portfolio Command Center, combined net P&L, and current atmosphere assets into the owner-private phone Site, then validate and publish the same source state.",
+  "home_repo": "sites/icarus-command-center-mobile",
+  "branch": "feat/mobile-worlds-command-center",
+  "started_at_utc": "2026-10-16T06:04:21Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "sites",
+    "ui-integration",
+    "testing"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus desktop UI commit",
+    "four-profile /api/command-centers contract",
+    "owner-private Site access"
+  ]
+}
