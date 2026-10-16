@@ -345,6 +345,46 @@
     },
     {
       "actor": "ChatGPT / Codex",
+      "branch": "atlas/intrinio-federated-auth-truth-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "dependencies": [
+        "pr:reppiks490/Icarus-engine#192",
+        "run:reppiks490/Icarus#38865138563"
+      ],
+      "goal": "Refresh the stale Intrinio, Databento primary-sweep, and post-merge cadence claims on Icarus-engine PR #192 against persisted receipts.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T12:59:00Z",
+      "latest_summary": "Refresh stale evidence statements in the Engine data-gap ledger using current persisted receipts and exact merged-workflow evidence.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "documentation-evidence-refresh",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "session_id": "codex-20261016-intrinio-ledger-refresh",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "ChatGPT / Codex",
       "branch": "codex/owner-contact-boundary-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -523,12 +563,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 8,
+    "active": 9,
     "collisions": 0,
     "stale": 4,
     "terminal": 13
   },
-  "generated_at_utc": "2026-10-16T13:00:48.242675Z",
+  "generated_at_utc": "2026-10-16T13:01:20.841675Z",
   "owner_status": {
     "claude": {
       "active": false,
