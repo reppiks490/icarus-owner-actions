@@ -345,56 +345,6 @@
     },
     {
       "actor": "ChatGPT / Codex",
-      "branch": "codex/intrinio-repo-scoped-credential-truth-20261016",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-        "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"
-      ],
-      "declared_targets": [
-        {
-          "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
-      "dependencies": [
-        "run:reppiks490/Icarus#38861416940",
-        "pr:reppiks490/Icarus-engine#192"
-      ],
-      "goal": "Align canonical credential handoff with verified repository-scoped Intrinio credential and authentication evidence without exposing secrets.",
-      "home_repo": "reppiks490/Icarus-engine",
-      "last_event_at_utc": "2026-10-16T12:28:00Z",
-      "latest_summary": "Update the Engine GitHub-native credential handoff and central data-access directive to distinguish Intrinio credential presence by repository from its HTTP 401 data-access failure, matching the verified shared ledger and collector receipt.",
-      "latest_type": "CLAIM",
-      "model_family": "openai",
-      "phase": "documentation-consistency",
-      "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-        "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
-      "session_id": "codex-20261016-intrinio-doc-consistency",
-      "stale": false,
-      "status": "active"
-    },
-    {
-      "actor": "ChatGPT / Codex",
       "branch": "codex/owner-contact-boundary-20261016",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -573,12 +523,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 9,
+    "active": 8,
     "collisions": 0,
     "stale": 4,
-    "terminal": 12
+    "terminal": 13
   },
-  "generated_at_utc": "2026-10-16T12:58:26.877011Z",
+  "generated_at_utc": "2026-10-16T13:00:48.242675Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -798,6 +748,32 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-c04-population-audit",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "ChatGPT / Codex",
+      "branch": "codex/intrinio-repo-scoped-credential-truth-20261016",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "run:reppiks490/Icarus#38865138563",
+        "pr:reppiks490/Icarus-engine#192"
+      ],
+      "goal": "Align canonical credential handoff with verified repository-scoped Intrinio credential and authentication evidence without exposing secrets.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-16T12:51:32Z",
+      "latest_summary": "Merged the repository-scoped Intrinio credential/authentication correction into both canonical handoff surfaces. Icarus reports its present-but-rejected credential (401); Icarus-engine accurately states its local secret set lacks Intrinio. Neither doc implies secrets are readable or shared. The separate DATA_GAP_LEDGER update remains under review in PR #192 and was not changed by this session.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "documentation-consistency",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261016-intrinio-doc-consistency",
       "stale": false,
       "status": "complete"
     },
