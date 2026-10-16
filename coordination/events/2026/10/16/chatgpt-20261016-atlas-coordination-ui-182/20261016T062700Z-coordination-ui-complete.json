@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T062700Z-coordination-ui-complete",
+  "session_id": "chatgpt-20261016-atlas-coordination-ui-182",
+  "at_utc": "2026-10-16T06:27:00Z",
+  "type": "COMPLETE",
+  "phase": "coordination-ui",
+  "summary": "Coordination observability is merged and verified in Icarus-engine. PR #182 merged as 7d8da5fcea4afbb4fcc65d62ef31c7a0621d9624 after exact-head tests run 38845896424 completed successfully on head 4b4861138f88e1f87fba19427daa80c826ba0df7. The MCP / Automation UI consumes a bounded read-only mirror of the central many-chat coordination index; the mirror workflow now has shifted cron, workflow_run fallback, manual dispatch, and retry-on-main-movement durability. No live broker authority was enabled. All reservations from this completed UI session are released.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#182",
+    "merge:7d8da5fcea4afbb4fcc65d62ef31c7a0621d9624",
+    "tested-head:4b4861138f88e1f87fba19427daa80c826ba0df7",
+    "tests-run:38845896424",
+    "tests-conclusion:success",
+    "workflow:.github/workflows/coordination-mirror.yml",
+    "mirror:read-only-bounded-central-index"
+  ],
+  "next_action": "No further reservation from this session. New coordination/data-access work must use a new session/claim and the canonical central START_HERE/directives.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
