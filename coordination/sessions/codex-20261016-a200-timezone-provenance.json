@@ -1,0 +1,22 @@
+{
+  "actor": "Codex",
+  "branch": "codex/a200-receipt-timezone-evidence",
+  "capabilities": [
+    "github",
+    "filesystem",
+    "pytest",
+    "build"
+  ],
+  "goal": "Carry authoritative US equities timezone through the A200 history adapter into receipt provenance and verify the follow-up PR.",
+  "home_repo": "reppiks490/Icarus",
+  "initial_dependencies": [
+    "pr:reppiks490/Icarus#416 merged",
+    "pr:reppiks490/Icarus#418 exact-head CI"
+  ],
+  "model_family": "openai",
+  "pr": 418,
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "stale_after_minutes": 120,
+  "started_at_utc": "2026-10-16T12:20:00Z"
+}

@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-16T12:25:47Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "pr:reppiks490/Icarus#418 exact-head CI"
+  ],
+  "event_id": "20261016T122547Z-waiting-codex-a200-timezone-provenance",
+  "evidence": [
+    "pr:reppiks490/Icarus#418",
+    "commit:dbe55e8",
+    "tests:47 passed",
+    "build:uv build succeeded"
+  ],
+  "next_action": "Monitor PR #418 exact-head checks and resolve any failures.",
+  "paths": [],
+  "phase": "waiting",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "summary": "PR #418 is waiting on exact-head Linux and Windows CI; the local 47-test focused set, package build, and diff check passed.",
+  "targets": [
+    {
+      "path": "icarus_engine/calendar.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "icarus_engine/market_universe_adapter.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_a200_schedule_cadence.py",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "WAITING"
+}
