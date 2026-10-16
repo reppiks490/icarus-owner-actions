@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261016-ui-pointer-contract-fix-20261016T200300Z-heartbeat",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "type": "HEARTBEAT",
+  "at_utc": "2026-10-16T20:03:00Z",
+  "actor": "ChatGPT / Codex",
+  "summary": "Durable summary and corrected schema-v2 events are present. Session is terminal and its UI path is released after successful exact-head verification.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    "tests_engine/browser_depth.cjs",
+    "coordination/summaries/codex-20261016-ui-pointer-contract-fix.json"
+  ],
+  "evidence": [
+    "Summary records all six successful exact-head workflow IDs for #424 commit 17c7aeb.",
+    "Schema correction event documents malformed initial claim and points to the corrected UPDATE/RELEASE records."
+  ],
+  "coordination_mode": "cooperate",
+  "status": "superseded"
+}
