@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "chatgpt-20261016-atlas-coordination-compiler-durability-copy-branch-note",
+  "session_id": "chatgpt-20261016-atlas-coordination-compiler-durability",
+  "at_utc": "2026-10-16T06:17:00Z",
+  "type": "NOTE",
+  "phase": "repair",
+  "summary": "Operator note: an unnecessary copy branch atlas/coordination-compiler-freshness-copy was created at the same RED commit. It contains no unique work and will not be used. Canonical branch remains atlas/coordination-compiler-freshness.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["canonical-branch:atlas/coordination-compiler-freshness", "unused-branch:atlas/coordination-compiler-freshness-copy"],
+  "evidence": ["both branch refs point to RED commit 4bb6654bae87a65519e9cc808728b7b75cd1fcdc"],
+  "next_action": "Open PR from canonical branch and continue TDD. Ignore unused copy branch.",
+  "coordination_mode": "cooperative",
+  "cooperates_with": []
+}
