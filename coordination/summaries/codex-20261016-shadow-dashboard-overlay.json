@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-shadow-dashboard-overlay",
+  "created_at_utc": "2026-10-16T12:46:33Z",
+  "goal": "Complete the read-only RT01 Shadow Twin dashboard overlay follow-up without disturbing cinematic layout or execution-authority boundaries.",
+  "result": "complete",
+  "verification": [
+    "PR #417 merged to main as 0d14a37382fefe47aa11eb1fe814a419822c2081.",
+    "Exact-head Linux and Windows engine run 38900872219 passed.",
+    "Browser visual contract run 38900872435 passed.",
+    "Cross-repository historical-context consumer run 38900872221 passed.",
+    "101 focused shadow dashboard/evidence tests passed on the merged main checkout.",
+    "git diff --check passed; merged main worktree is clean."
+  ],
+  "limitations": [
+    "The panel displays RT01 shadow evidence and does not authorize or place trades.",
+    "Local machine runtime state is not present in this cloud checkout, so this session cannot attest to a specific user's active champion roster."
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/417",
+    "GitHub Actions run 38900872219",
+    "GitHub Actions run 38900872435",
+    "GitHub Actions run 38900872221"
+  ],
+  "next_action": "Continue remaining independently scoped user work such as validating champion data flow and demo/paper broker adapter coverage.",
+  "completed_at_utc": "2026-10-16T12:46:33Z"
+}
