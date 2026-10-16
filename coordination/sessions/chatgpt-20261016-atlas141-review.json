@@ -1,0 +1,18 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261016-atlas141-review",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Review Atlas draft PR #141 at exact published head and record evidence-based findings for the federation.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "review/atlas141-exact-head",
+  "pr": 141,
+  "started_at_utc": "2026-10-16T12:10:53Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github"
+  ],
+  "initial_dependencies": [
+    "PR #141 exact head ba05a182b4aa947d81b26b6c4063e33adec9f147"
+  ]
+}
