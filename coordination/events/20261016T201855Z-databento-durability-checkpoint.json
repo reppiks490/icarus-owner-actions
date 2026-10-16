@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T201855Z-databento-durability-checkpoint",
+  "session_id": "codex-20261016-databento-three-corpus-recovery",
+  "at_utc": "2026-10-16T20:18:55Z",
+  "type": "UPDATE",
+  "phase": "runtime-verification",
+  "summary": "Merged existing-vault key-source compatibility (#202), same-run three-account sweep sealing (#203), account-scoped paid-bar baseline/restore (#204), and ledger-versus-vault sweep integrity receipt (#205). Main depth-vault post-merge run succeeded; sweep sealing ran but existing cache was empty; bar baseline first run is in progress. Redacted health confirms Databento primary/secondary/third/fourth present and standalone archive key absent.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "merged:reppiks490/Icarus-engine#202",
+    "merged:reppiks490/Icarus-engine#203",
+    "merged:reppiks490/Icarus-engine#204",
+    "merged:reppiks490/Icarus-engine#205",
+    "run:38961103574:bars-baseline-in-progress"
+  ],
+  "evidence": [
+    "depth-vault-run:38959835652:success",
+    "sweep-run:38960505869:seal-step-success-but-no-sweep-files",
+    "credential-health-run:38961139173:standalone-archive-key-absent",
+    "inventory-local:primary=18/0,secondary=1/0,third=3/0-paid/vaulted"
+  ],
+  "next_action": "Verify bar baseline ciphertext was committed and authenticated, then dispatch sweep inventory to publish the 22-day gap and hand off recovery requirements.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
