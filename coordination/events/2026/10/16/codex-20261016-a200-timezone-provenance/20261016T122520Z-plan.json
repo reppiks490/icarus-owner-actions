@@ -1,0 +1,38 @@
+{
+  "at_utc": "2026-10-16T12:25:20Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "pr:reppiks490/Icarus#416 merged",
+    "pr:reppiks490/Icarus#418 exact-head CI"
+  ],
+  "event_id": "20261016T122520Z-plan-codex-a200-timezone-provenance",
+  "evidence": [
+    "pr:reppiks490/Icarus#418",
+    "commit:dbe55e8"
+  ],
+  "next_action": "Wait for exact-head Linux and Windows checks; resolve any failures, then merge after successful verification.",
+  "paths": [],
+  "phase": "verification",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261016-a200-timezone-provenance",
+  "summary": "Follow up merged A200 DST cadence work so the authoritative US equities IANA timezone is included in adapter-generated bar receipt evidence; PR #418 is open and exact-head CI is pending.",
+  "targets": [
+    {
+      "path": "icarus_engine/calendar.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "icarus_engine/market_universe_adapter.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_a200_schedule_cadence.py",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "PLAN"
+}
