@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-a200-calendar-timezone",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Wire the authoritative exchange-calendar timezone into A200 bar receipts so cadence validation uses the same timezone as the expected schedule.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/a200-calendar-timezone-20261016",
+  "started_at_utc": "2026-10-16T12:21:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "a200",
+    "bar-receipts",
+    "calendar"
+  ],
+  "initial_dependencies": [
+    "reviewed main commit 9835083 cadence change",
+    "no overlapping reservation in refreshed coordination snapshot"
+  ]
+}
