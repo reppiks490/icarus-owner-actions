@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124548Z-complete",
+  "session_id": "codex-20261016-a200-uw-head-refresh",
+  "at_utc": "2026-10-16T12:45:48Z",
+  "type": "COMPLETE",
+  "phase": "read-only-audit",
+  "summary": "Latest merged Icarus main 2c06c6d3 includes PR #425's explicit A200 history-provider selection UI, but provider selection has not qualified any source: the 200-asset catalog still reports 0 connected, entitled, historical-qualified, live-qualified, Pulse-enabled, or strategy-qualified assets. The stored A200 probe remains 200 Yahoo response receipts (2,000 rows total, 10 each) and 200 FMP NOT_CONFIGURED receipts; every Yahoo identity remains PROVISIONAL, mapping UNVERIFIED, entitlement UNKNOWN, and historical qualification false. Latest Engine main 6c1a0f3c retains Unusual Whales supplemental status COLLECTED_PARTIAL (5 requests/pages, 111 rows, 11/21 catalog operations across 500 assets, one pending page) and a separate native canary status BLOCKED_AUTHENTICATION despite credential_present=true. Icarus intake remains metadata-only and no UW-to-Pulse/champion adapter was found. The UI change and credential presence are not evidence of a fully connected strategy source.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "reppiks490/Icarus@2c06c6d3e29696eaa7f079e621b768b835c94eb5",
+    "reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"
+  ],
+  "evidence": [
+    "Icarus 2c06c6d3: icarus_engine/market-universe-200.json counts; icarus_engine/a200-hybrid-history-probe.json (400 rows: 200 Yahoo RESPONSE_RECEIVED, 200 FMP NOT_CONFIGURED; Yahoo row_count totals 2,000).",
+    "Engine 6c1a0f3c7: automation_intelligence/provider_collection_v1/latest/unusual_whales.json and research_context.json (supplemental-38873907446-unusual_whales; credential_present true; COLLECTED_PARTIAL; 5 pages/111 rows; 11 operations of 21; 500 assets; one pending page; encrypted checkpoint).",
+    "Engine 6c1a0f3c7: automation_intelligence/provider_collection_v1/native_access/latest/unusual_whales.json (native-38897165047-1; BLOCKED_AUTHENTICATION; credential_present true; one canary request).",
+    "Icarus 2c06c6d3: icarus_engine/unusual_whales_intake.py remains metadata-only; rights/entitlement and PIT eligibility are not established; no direct Pulse/champion feature consumer found.",
+    "No provider call, secret-value read, or UI/data mutation was performed."
+  ],
+  "next_action": "Keep A200 source selection separate from connection/entitlement/history qualification. Complete source identity mapping, authorized historical/live bars, and measured Pulse consumption before enabling candidates; finish the UW operation/asset/page/time-range and authentication gaps before strategy use."
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124633Z-complete-shadow-dashboard-overlay",
+  "session_id": "codex-20261016-shadow-dashboard-overlay",
+  "at_utc": "2026-10-16T12:46:33Z",
+  "type": "COMPLETE",
+  "phase": "complete",
+  "summary": "RT01 Shadow Twin dashboard overlay follow-up merged to main. The launcher is fixed-position and hidden during the cinematic intro; the separate portfolio/per-asset evidence panel remains read-only.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["icarus_engine/shadow-twin-ui.js", "tests_engine/browser_shadow_twin.cjs", "tests_engine/test_dashboard_js.py", ".github/workflows/ui-visual-contract.yml"],
+  "dependencies": [],
+  "evidence": ["PR #417 merged as 0d14a37382fefe47aa11eb1fe814a419822c2081", "exact-head engine Linux/Windows run 38900872219 passed", "browser run 38900872435 passed", "historical-context consumer run 38900872221 passed", "101 focused tests passed on merged main", "merged main worktree is clean"],
+  "next_action": "Continue the separate champion-data and broker-adapter workstreams under their own coordination claims; preserve paper/shadow-only authority.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

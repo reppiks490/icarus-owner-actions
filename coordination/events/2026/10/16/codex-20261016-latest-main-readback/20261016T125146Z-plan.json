@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T125146Z-plan",
+  "session_id": "codex-20261016-latest-main-readback",
+  "at_utc": "2026-10-16T12:51:46Z",
+  "type": "PLAN",
+  "phase": "read-only-audit",
+  "summary": "Refresh C04 backlog and A200/UW qualification at the latest merged main SHAs. Recompute hybrid health from immutable requests/results and inspect persisted market/provider receipts only; trigger no workflow or connector calls and mutate no Engine/Icarus data.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["reppiks490/Icarus@3c32947f516156c95eee1df9b8ec8157bf346bb1", "reppiks490/Icarus-engine@3e29e9527f9e9a8eb20346e38ee807616d8b7a6a"],
+  "evidence": ["Read-only Engine worktree at 3e29e9527f9e9a8eb20346e38ee807616d8b7a6a and persisted Icarus origin/main snapshot at 3c32947f516156c95eee1df9b8ec8157bf346bb1."],
+  "next_action": "Recompute every active hybrid lane across the full request population and compare current A200/UW receipts with their qualification counts."
+}

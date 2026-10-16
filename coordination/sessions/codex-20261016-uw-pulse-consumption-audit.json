@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-uw-pulse-consumption-audit",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Read the latest A200 and Unusual Whales shared evidence plane and verify the distinction between credential, ingestion, qualification, and downstream Pulse consumption.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/icarus-review-baton-20261016",
+  "started_at_utc": "2026-10-16T12:31:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["read-only-data-review", "provider-evidence"],
+  "initial_dependencies": ["reppiks490/Icarus main readback", "reppiks490/Icarus-engine canonical manifest and receipts"]
+}

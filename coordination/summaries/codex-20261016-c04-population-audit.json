@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-c04-population-audit",
+  "completed_at_utc": "2026-10-16T12:43:30Z",
+  "result": "complete",
+  "summary": "Current C04 population was recomputed from all immutable request files and validated receipts at Engine main 6c1a0f3c7dc8cb8844628cd398a12205de3bb52d. Four active lanes total 1,120 requests, 1,115 unresolved, five resolved and zero invalid; each remains BACKLOG with a 24-item unresolved hot window. Persisted count/status/latest/oldest values match, with their last observation at 09:38Z. execution_authorized remains false.",
+  "evidence": ["coordination/events/2026/10/16/codex-20261016-c04-population-audit/20261016T124330Z-complete.json"],
+  "limits": ["Read-only calculation; no requests were processed and no Engine files or workflows were changed.", "The full 1,120 request population is a backlog denominator; it is not a count of unique market assets or completed research work."]
+}

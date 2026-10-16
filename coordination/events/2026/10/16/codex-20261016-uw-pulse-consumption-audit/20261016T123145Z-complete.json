@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123145Z-complete",
+  "session_id": "codex-20261016-uw-pulse-consumption-audit",
+  "at_utc": "2026-10-16T12:31:45Z",
+  "type": "COMPLETE",
+  "phase": "research",
+  "summary": "Current Icarus main ce271f192 has 200 catalogued equities but 0 source-connected, entitlement-verified, historically qualified, live-qualified, Pulse-enabled, or strategy-qualified assets. Its A200 receipt (updated 2026-10-16T06:17:50Z) has 200 Yahoo RESPONSE_RECEIVED rows and 200 FMP NOT_CONFIGURED rows, but all Yahoo mappings/identities are unverified/provisional and no raw bars persist. Engine main fadac657d confirms Unusual Whales credential presence in the shared secret contract, while the latest supplemental collector is PARTIAL (5 requests/pages, 111 rows, 11 of 21 operations, 500 assets, one page pending) and the separate native canary is BLOCKED_AUTHENTICATION. Icarus unusual_whales_intake.py is metadata-only: it hashes connector responses, declares rights and entitlement unknown, excludes raw payloads, marks PIT and candidate eligibility false, and writes a learning event; no direct UW-to-Pulse/champion feature adapter was found. This is not proof that every plugin call or every provider endpoint is unavailable; it is an explicit incomplete downstream-use and qualification gap.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "Icarus main ce271f1923c3841a7acb4a66102e820a36fc4705: icarus_engine/market-universe-200.json counts and icarus_engine/a200-hybrid-history-probe.json",
+    "Engine main fadac657d0e6f4cbe4829e1ced5d62256283c174: config/data_ingestion_manifest.json, config/credential_contract.json, automation_intelligence/provider_collection_v1/latest/unusual_whales.json, automation_intelligence/provider_collection_v1/native_access/latest/unusual_whales.json, automation_intelligence/provider_collection_v1/research_context.json",
+    "Icarus main: icarus_engine/unusual_whales_intake.py and tests_engine/test_unusual_whales_intake.py",
+    "Unusual Whales connector identity sample: search_tickers('NVIDIA Corporation') returned NVDA; this is a single connector observation, not a persistence or qualification receipt."
+  ],
+  "next_action": "Treat A200 identity/entitlement/history/live qualification and UW complete-coverage/source-to-Pulse integration as open packages. Preserve raw-data licensing boundaries and keep strategy/execution authority false until the specific source and feature contract is qualified."
+}

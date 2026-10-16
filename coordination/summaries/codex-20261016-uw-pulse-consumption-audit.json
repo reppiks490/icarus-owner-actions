@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-uw-pulse-consumption-audit",
+  "completed_at_utc": "2026-10-16T12:31:45Z",
+  "result": "complete",
+  "summary": "Read-only current A200 and Unusual Whales audit recorded. Catalog presence, provider response, entitlement, qualification, and downstream strategy consumption are separate states; the current receipts do not support a claim that all 200 assets are connected or that UW data directly feeds Pulse/champions.",
+  "evidence": ["Icarus main ce271f1923c3841a7acb4a66102e820a36fc4705", "Engine main fadac657d0e6f4cbe4829e1ced5d62256283c174", "Receipt paths and exact counts are listed in event 20261016T123145Z-complete."],
+  "limits": ["No provider collection was triggered.", "The single Unusual Whales ticker lookup is not a data-ingestion or entitlement qualification receipt.", "No live broker or strategy authority was changed."]
+}

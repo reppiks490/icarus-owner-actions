@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124841Z-execution-boundary",
+  "session_id": "codex-20261016-futures-pr-review",
+  "at_utc": "2026-10-16T12:48:41Z",
+  "type": "UPDATE",
+  "phase": "review",
+  "summary": "Added an execution-boundary finding on #415 TDD head 1f58f37: the new contract-family test requires all 32 catalog products to enter SPECS/parse_continuous, but the current module contract defines these as execution-qualified dated-contract APIs and intentionally limits SPECS to 12 qualified roots. Keep that execution subset; if 32-root static roll candidates are needed, expose a separate structural catalog/resolver with an explicit execution_qualified=false flag and a tested paper-admission rejection. The focused exact-head run has 23 expected TDD failures plus two unresolved Databento mapping failures. Hosted checks are still pending.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["pr:reppiks490/Icarus#415@1f58f37dc9f58c5a8c0bf6d1a50d579db289da1a"],
+  "evidence": [
+    "Exact-head test command/result is recorded in event 20261016T124714Z-tdd-head-review.",
+    "Execution-registry boundary comment: https://github.com/reppiks490/Icarus/pull/415#issuecomment-6215843479",
+    "Current module contract: icarus_futures/contracts.py states SPECS contains only execution-qualified products; tests_engine/test_futures_catalog.py asserts set(SPECS) equals the products with execution_qualified=true."
+  ],
+  "next_action": "Review the next implementation head; verify structural all-root analysis is separate from the adapter-facing execution resolver and that unqualified candidates cannot enter paper routes."
+}

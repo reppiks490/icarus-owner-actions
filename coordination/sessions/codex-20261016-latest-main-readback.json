@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-latest-main-readback",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Refresh C04 full-population backlog and A200/Unusual Whales qualification against the latest merged main snapshots, using persisted evidence only.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/icarus-review-baton-20261016",
+  "started_at_utc": "2026-10-16T12:51:46Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "read-only-audit", "coordination"],
+  "initial_dependencies": ["reppiks490/Icarus@3c32947f516156c95eee1df9b8ec8157bf346bb1", "reppiks490/Icarus-engine@3e29e9527f9e9a8eb20346e38ee807616d8b7a6a"]
+}

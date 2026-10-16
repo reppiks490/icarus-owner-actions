@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261016-ui-pointer-contract-fix-20261016T131600Z-claim",
+  "session_id": "codex-20261016-ui-pointer-contract-fix",
+  "event_type": "CLAIM",
+  "created_at_utc": "2026-10-16T13:16:00Z",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "summary": "Claim a narrow test-only repair for the recurring browser-depth topology pointerout assertion on the current #424 command-center stack.",
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_depth.cjs"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#424 UI visual contract rerun"
+  ],
+  "evidence": [
+    "#424 exact head 8c84e6a UI visual run 38903224466 failed at browser_depth.cjs:193; focused config/tests/engine runs passed."
+  ],
+  "coordination_mode": "cooperate",
+  "collaborators": [
+    "codex-20261016-phone-command-center-site"
+  ],
+  "status": "active",
+  "type": "CLAIM",
+  "at_utc": "2026-10-16T13:16:00Z",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "tests_engine/browser_depth.cjs"
+  ],
+  "cooperates_with": [
+    "codex-20261016-phone-command-center-site"
+  ],
+  "phase": "verification"
+}

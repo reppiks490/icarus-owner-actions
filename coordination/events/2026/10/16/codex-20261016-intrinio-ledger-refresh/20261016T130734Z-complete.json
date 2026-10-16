@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T130734Z-intrinio-ledger-refresh-complete",
+  "session_id": "codex-20261016-intrinio-ledger-refresh",
+  "at_utc": "2026-10-16T13:07:34Z",
+  "type": "COMPLETE",
+  "phase": "merged",
+  "summary": "Refreshed the stale provider/depth/cadence claims and repaired the ingestion contract test for valid staged/unverified source states. PR #192 merged at exact head after the focused test and all exact-head CI checks passed.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_ingestion_surface_contract.py"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#192",
+    "merge:c3b66802285e57efd6178eccbd2deb2bcce5447d",
+    "head:26789c53bec8f2485acce81783f07d0e3a074a5d",
+    "checks:run-38905117825-and-38905126086:python-3.11-3.13-cli-mcp-zero-dependency-verify-success",
+    "test:uv-run-extra-dev-pytest-tests-test_ingestion_surface_contract.py-q:9-passed"
+  ],
+  "next_action": "No further reservation; monitor the separate futures convergence PRs under their active session.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

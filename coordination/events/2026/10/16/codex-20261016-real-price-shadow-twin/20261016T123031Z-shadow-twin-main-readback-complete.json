@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123031Z-shadow-twin-main-readback-complete",
+  "session_id": "codex-20261016-real-price-shadow-twin",
+  "at_utc": "2026-10-16T12:30:31Z",
+  "type": "COMPLETE",
+  "phase": "verification",
+  "summary": "Confirmed the real-price shadow twin v1 implementation is already integrated: PR #361 merged as commit 4c2c9c8; later closed-excursion evidence follow-ups #386 and #391 are also merged. Revalidated current Icarus main at ce271f1: 32 focused shadow/evidence tests and 96 execution-control, emulator-regression, and activation-runtime tests pass. No additional shadow-twin source change is needed in this session; releasing its runtime reservation so the active paper-workspace session has no collision.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["icarus_engine/shadow_twin.py", "icarus_engine/shadow_evidence_events.py", "icarus_engine/runtime.py", "icarus_engine/cli.py", "tests_engine/test_shadow_twin.py", "tests_engine/test_shadow_evidence_events.py"],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/shadow_twin.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/shadow_evidence_events.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/runtime.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/cli.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_shadow_twin.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_shadow_evidence_events.py"}
+  ],
+  "dependencies": ["merged:reppiks490/Icarus#361", "merged:reppiks490/Icarus#386", "merged:reppiks490/Icarus#391"],
+  "evidence": ["Current main SHA ce271f1", "uv run --extra dev pytest tests_engine/test_shadow_twin.py tests_engine/test_shadow_evidence_events.py -q — 32 passed", "uv run --extra dev pytest tests_engine/test_execution_controls.py tests_engine/test_emulator_regressions.py tests_engine/test_activation_runtime.py -q — 96 passed"],
+  "next_action": "No further implementation in v1. Continue with the non-overlapping futures/data-review workstream; keep forward performance qualification and live execution gated."
+}

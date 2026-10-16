@@ -92,7 +92,8 @@ Never infer all three from one green workflow wrapper.
 - **Unusual Whales:** GitHub-native credential present; supplemental collection is live/partial/resumable. Shared receipts live under `automation_intelligence/provider_collection_v1/latest/unusual_whales.json` and the shared research context.
 - **Alpha Vantage:** credential present; accessible endpoints return data, while some endpoint families are entitlement-limited.
 - **Finnhub:** a stored credential exists, but the verified provider response is HTTP **401** using documented authentication. Treat this as `BLOCKED_AUTHENTICATION`, not as accessible data, until the stored secret is repaired/replaced.
-- **Intrinio / Quiver / Alpaca / Tickstream:** remain explicit missing-credential blockers unless the current health/manifest state has changed.
+- **Intrinio:** repository-scoped state changed. The preferred `reppiks490/Icarus` Actions collector reported its credential present, then received HTTP **401** from `/companies` in run `38861416940`; treat that source as `BLOCKED_AUTHENTICATION`, not `BLOCKED_MISSING_CREDENTIAL`. `reppiks490/Icarus-engine` does not have a local Intrinio secret, and secrets are not shared or readable across repositories. Data access remains blocked until the preferred repository's credential/account authorization is repaired. See the Engine handoff and data-gap ledger for the current repository-specific evidence.
+- **Quiver / Alpaca / Tickstream:** remain explicit missing-credential blockers unless current repository-scoped health evidence changes.
 
 Always prefer the live health/manifest state over this explanatory example if they differ later.
 

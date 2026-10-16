@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124315Z-plan",
+  "session_id": "codex-20261016-c04-population-audit",
+  "at_utc": "2026-10-16T12:43:15Z",
+  "type": "PLAN",
+  "phase": "read-only-audit",
+  "summary": "Recompute active C04 hybrid request totals and unresolved obligations with the current Engine-main build_health implementation; compare results with persisted health receipts. No Engine files will be mutated.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"],
+  "evidence": ["Read-only worktree at exact origin/main SHA 6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"],
+  "next_action": "Run the canonical full-population health calculation for each active lane and compare all total, unresolved, invalid, latest, oldest, and authority fields against persisted health records."
+}

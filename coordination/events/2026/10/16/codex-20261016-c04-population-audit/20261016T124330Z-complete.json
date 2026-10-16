@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124330Z-complete",
+  "session_id": "codex-20261016-c04-population-audit",
+  "at_utc": "2026-10-16T12:43:30Z",
+  "type": "COMPLETE",
+  "phase": "read-only-audit",
+  "summary": "Recomputed C04 from all immutable active-lane request files and matching result receipts on Engine main 6c1a0f3c7dc8cb8844628cd398a12205de3bb52d. The four active lanes contain 1,120 requests in total; 1,115 remain unresolved, five have valid resolving receipts, and zero requests have invalid identity/clock diagnostics. Each lane is BACKLOG with 24 unresolved items in its bounded hot window. Persisted health counts/status/latest/oldest fields match the recomputation; their observation timestamp is 09:38Z, while the independent read-only calculation was 12:43Z. All four health records and the registry retain execution_authorized=false.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"
+  ],
+  "evidence": [
+    "Canonical read-only invocation: tools.hybrid_loop_bridge.load_registry() and build_health() over the exact Engine-main checkout, which counts every immutable request rather than applying the 24-item hot-window bound.",
+    "robustness_guardian: 280 total, 280 unresolved, 0 invalid; oldest robustness_guardian-20261004T200000Z; latest robustness_guardian-20261016T090000Z.",
+    "advanced_csv: 280 total, 279 unresolved, 0 invalid; oldest advanced_csv-20261004T201000Z; latest advanced_csv-20261016T091000Z.",
+    "alpha_synthesis: 280 total, 280 unresolved, 0 invalid; oldest alpha_synthesis-20261004T192000Z; latest alpha_synthesis-20261016T092000Z.",
+    "microstructure_sensor_grid: 280 total, 276 unresolved, 0 invalid; oldest microstructure_sensor_grid-20261004T223000Z; latest microstructure_sensor_grid-20261016T093000Z.",
+    "All four lane records report BACKLOG and 24 unresolved in the hot window; summed full-population unresolved total is 1,115, not 478.",
+    "Read-only recomputation changes no Engine request/result/health file and preserves execution_authorized=false."
+  ],
+  "next_action": "Use the full 1,120-request denominator and 1,115 unresolved count in C04 planning; process each lane oldest-first under its existing typed-result and no-execution contract."
+}

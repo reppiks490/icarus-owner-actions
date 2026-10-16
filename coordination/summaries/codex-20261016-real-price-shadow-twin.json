@@ -1,0 +1,9 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-real-price-shadow-twin",
+  "completed_at_utc": "2026-10-16T12:30:31Z",
+  "result": "complete",
+  "summary": "Real-price shadow twin v1 was already merged and later extended by merged excursion evidence PRs #386 and #391. Current main readback and focused regression suites are green. The original runtime path reservation has been released to avoid the active phone paper-workspace session collision.",
+  "evidence": ["main:ce271f1", "PR #361 merge commit 4c2c9c8", "PR #386 merged", "PR #391 merged", "tests_engine/test_shadow_twin.py + tests_engine/test_shadow_evidence_events.py: 32 passed", "tests_engine/test_execution_controls.py + tests_engine/test_emulator_regressions.py + tests_engine/test_activation_runtime.py: 96 passed"],
+  "limits": ["Shadow evidence remains read-only and does not qualify a strategy or enable broker/live execution.", "MAE/MFE and synchronized multi-asset drawdown remain out of v1 scope."]
+}

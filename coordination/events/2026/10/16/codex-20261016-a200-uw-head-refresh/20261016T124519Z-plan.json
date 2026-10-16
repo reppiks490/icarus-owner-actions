@@ -1,0 +1,18 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T124519Z-plan",
+  "session_id": "codex-20261016-a200-uw-head-refresh",
+  "at_utc": "2026-10-16T12:45:19Z",
+  "type": "PLAN",
+  "phase": "read-only-audit",
+  "summary": "Refresh the evidence-based A200 and Unusual Whales status against the latest main SHAs after recent source-selection and peer-intelligence merges. Read persisted metadata only; do not trigger collection, reveal credentials, or modify UI/data.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "reppiks490/Icarus@2c06c6d3e29696eaa7f079e621b768b835c94eb5",
+    "reppiks490/Icarus-engine@6c1a0f3c7dc8cb8844628cd398a12205de3bb52d"
+  ],
+  "evidence": ["Read-only inspection of current main snapshots; no connector or provider request was executed."],
+  "next_action": "Compare latest A200 catalog/probe qualification counts and persisted Unusual Whales receipts/intake behavior, then publish one current status record."
+}
