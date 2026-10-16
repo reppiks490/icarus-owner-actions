@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T072647Z-a200-scope-pr-resync-update",
+  "session_id": "codex-20261016-a200-provider-scope",
+  "at_utc": "2026-10-16T07:26:47Z",
+  "type": "UPDATE",
+  "phase": "exact-head-verification",
+  "summary": "GitHub kept PR #411's pull-request head ref at 95db3db after the source branch advanced. Closed the stale PR and opened PR #412 at the verified final source commit cde027ab7e46ed5bba716be149dba757cf20335c so review and CI target the final Yahoo-only default and complete provider isolation.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072647Z-a200-scope-pr-resync-update.json"}
+  ],
+  "dependencies": ["pr:reppiks490/Icarus#412"],
+  "evidence": ["pr:reppiks490/Icarus#411 closed as stale", "pr:reppiks490/Icarus#412 head cde027ab7e46ed5bba716be149dba757cf20335c", "41 focused tests pass", "no live provider request made"],
+  "next_action": "Review #412 exact-head CI; merge only after all required checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
