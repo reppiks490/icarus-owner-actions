@@ -5,10 +5,13 @@
   "at_utc": "2026-10-16T12:28:00Z",
   "type": "CLAIM",
   "phase": "documentation-consistency",
-  "summary": "Update the Engine GitHub-native credential handoff to distinguish Intrinio credential presence by repository from its HTTP 401 data-access failure, matching the verified shared ledger and collector receipt.",
-  "repos": ["reppiks490/Icarus-engine"],
+  "summary": "Update the Engine GitHub-native credential handoff and central data-access directive to distinguish Intrinio credential presence by repository from its HTTP 401 data-access failure, matching the verified shared ledger and collector receipt.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
   "paths": [],
-  "targets": [{"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md"}],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/GITHUB_NATIVE_CREDENTIALS.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/directives/GITHUB_NATIVE_DATA_ACCESS.md"}
+  ],
   "dependencies": ["run:reppiks490/Icarus#38861416940", "pr:reppiks490/Icarus-engine#192"],
   "evidence": ["PR #192 ledger says preferred Icarus credential present and rejected with HTTP 401", "Engine handoff still labels Intrinio missing and contradicts the ledger"],
   "next_action": "Clarify repository scope and authentication-vs-presence state, then run exact documentation/federation checks.",
