@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-a200-ledger-hardening",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Harden the read-only A200 hybrid history receipt validator so malformed or out-of-window provider evidence cannot be labeled CURRENT; preserve 200 catalog status separation and all broker/Pulse execution gates.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/a200-ledger-validation-20261016",
+  "started_at_utc": "2026-10-16T06:45:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "data-validation",
+    "testing"
+  ],
+  "initial_dependencies": [
+    "merged PR reppiks490/Icarus#403 at e8d463e3cb31e09ada3d1c931acec85e73348c4d",
+    "read-only independent review found receipt validation gaps",
+    "no FMP credentials configured in local process"
+  ]
+}
