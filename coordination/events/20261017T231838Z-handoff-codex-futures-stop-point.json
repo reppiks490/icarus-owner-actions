@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231838Z-handoff-codex-futures-stop-point",
+  "session_id": "codex-20261017-futures-stop-point",
+  "at_utc": "2026-10-17T23:18:38Z",
+  "type": "HANDOFF",
+  "phase": "stop-point-recorded",
+  "summary": "Recorded the current futures PR stack, exact-head CI results, unresolved #415 Linux and Brain evidence findings, and next-agent actions.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "docs/agent-handoffs/futures-stop-point-2026-10-17.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/handoffs/futures-stop-point-2026-10-17.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/summaries/codex-20261017-futures-stop-point.json"}
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#415 current head and exact-head CI rerun",
+    "reppiks490/Icarus#432 and #435 integration into #438 after rechecking exact-head CI",
+    "Brain evidence authorization type review finding"
+  ],
+  "evidence": [
+    "#415 head cfa97333bbccbb0a62da4802b3d9b495f9ec347d: workflow run 38910087247 failed Linux engine and passed Windows engine-windows",
+    "#438 head 75079156357070dfa6f20d8fbe22354e27a795a7: workflow run 38959193080 passed Linux and Windows",
+    "#432 head e77dae0fb1d3860be677f6d2761e1bf75d065513: workflow run 38959268985 passed Linux and Windows",
+    "#435 head 3250e42043c21f593e120532c5e440b5821a614b: workflow run 38959284263 passed Linux and Windows",
+    "Owner discussion on #415 records unresolved truthy non-boolean authorization input finding in icarus_engine/brain_evidence.py"
+  ],
+  "next_action": "Re-fetch live PR state, fix and test the Brain evidence finding, integrate green #432/#435 follow-ups into #438, then rerun #438 and #415 exact-head checks.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
