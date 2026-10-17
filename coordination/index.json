@@ -838,53 +838,44 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination_fabric/__init__.py",
-        "tests/test_coordination_fabric.py",
-        "coordination/README.md"
+        ".github/workflows/test.yml",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
       ],
       "declared_targets": [
         {
-          "path": "coordination_fabric/__init__.py",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests/test_coordination_fabric.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/README.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "github-run:39079629066"
+        "pr:reppiks490/Icarus#450",
+        "pr:reppiks490/icarus-owner-actions#51"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:37:06Z",
-      "latest_summary": "Futures repair delivered as draft Icarus450@c908872f; hosted39079629066 pending. Release futures implementation paths while awaiting review. Repair coordination Markdown headline: counts.active currently includes11stale sessions and labels14 as Active despite3fresh workers. Keep machine schema/backward-compatible nonterminal count; display current and stale totals separately with regression. Do not mark historical sessions complete or alter leases. Knowledge delta: coordination/README.md count semantics.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-17T23:38:16Z",
+      "latest_summary": "Coordination count repair delivered as owner-actions51@1837a3a;53tests pass. Release its source paths while hosted check runs. Inspecting Icarus450's Windows job revealed the explicit pytest list omits newly added Brain/futures/index/command-state and A200 fixture modules. Claim workflow test list only plus integration verification doc; append those seven modules so hosted green exercises new contracts. Runtime Python source unchanged from full2975pass codea017. This supersedes incomplete assumptions about Windows coverage without changing authority, jobs, cadence or providers.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "coordination-count-repair",
+      "phase": "cross-platform-test-coverage",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination_fabric/__init__.py",
-        "tests/test_coordination_fabric.py",
-        "coordination/README.md"
+        ".github/workflows/test.yml",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
       ],
       "reserved_targets": [
         {
-          "path": "coordination_fabric/__init__.py",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests/test_coordination_fabric.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/README.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261017-task-inventory-start",
@@ -899,7 +890,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:37:17.143981Z",
+  "generated_at_utc": "2026-10-17T23:38:26.997208Z",
   "owner_status": {
     "claude": {
       "active": false,
