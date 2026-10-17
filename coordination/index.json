@@ -838,25 +838,51 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
+        ".github/workflows/atlas-diagnostic-pytest.yml",
+        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+        "icarus_engine/asset_command_center.py",
+        "icarus_engine/assets.py",
         "icarus_engine/brain_evidence.py",
-        "tests_engine/test_brain_evidence.py",
-        "icarus_engine/calendar.py",
         "icarus_engine/futures_catalog.py",
+        "icarus_engine/system_index.py",
+        "icarus_futures/contracts.py",
+        "tests_engine/_futures_regression_legacy.py",
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "tests_engine/test_a200_runtime_feed.py",
+        "tests_engine/test_asset_command_center.py",
+        "tests_engine/test_brain_evidence.py",
+        "tests_engine/test_databento.py",
+        "tests_engine/test_futures.py",
         "tests_engine/test_futures_catalog.py",
-        "tests_engine/test_execution_controls.py",
-        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+        "tests_engine/test_futures_contract_families.py",
+        "tests_engine/test_system_index.py",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        "coordination/README.md"
       ],
       "declared_targets": [
         {
+          "path": ".github/workflows/atlas-diagnostic-pytest.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
           "path": "icarus_engine/brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/calendar.py",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -864,15 +890,59 @@
           "repo": "reppiks490/Icarus"
         },
         {
+          "path": "icarus_engine/system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_futures/contracts.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/_futures_regression_legacy.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_listing_crosswalk.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_feed.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_databento.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
           "path": "tests_engine/test_futures_catalog.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_execution_controls.py",
+          "path": "tests_engine/test_futures_contract_families.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_system_index.py",
           "repo": "reppiks490/Icarus"
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/README.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -881,33 +951,59 @@
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:32:32Z",
-      "latest_summary": "For hub-integration-lead: PR59@ee8d91ba04c435f849c34908f9bd0bcd0811f57c has successful dedicated lifecycle/subsystem runs but Observatory39078762673 fails windows-collector job117531250781 during full-system bootstrap. Exact failure: tests/test_runner_lifecycle.py:74 test_successful_suite_does_not_leave_windows_descendant; marker exists after run returns0/timed_outFalse/cleanup_error empty. 1failed174passed1skipped. Dedicated lifecycle green is not enough to close Windows containment. Preserve failure; root retains futures/inventory only and does not edit hub paths.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-17T23:35:17Z",
+      "latest_summary": "Isolated futures branch merges438+432+435+currentmain+447 without rewriting originals, and fixes strict Brain evidence authorization. Fifteen malformed-flag regressions failed before fix;30Brain tests/167focused passed. Full integrated Linux suite2975passed3skipped111subtests in147.46s at a017008717d4ed130e9bfe58edb55e7d127a828f. Expand reservation to exact imported-stack paths plus verification record and coordination index link. These backend contracts do not prove actual Brain/UI integration; no main merge or live authority.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "cross-repository-review",
+      "phase": "futures-exact-head-verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
+        ".github/workflows/atlas-diagnostic-pytest.yml",
+        "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+        "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+        "icarus_engine/asset_command_center.py",
+        "icarus_engine/assets.py",
         "icarus_engine/brain_evidence.py",
-        "tests_engine/test_brain_evidence.py",
-        "icarus_engine/calendar.py",
         "icarus_engine/futures_catalog.py",
+        "icarus_engine/system_index.py",
+        "icarus_futures/contracts.py",
+        "tests_engine/_futures_regression_legacy.py",
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "tests_engine/test_a200_runtime_feed.py",
+        "tests_engine/test_asset_command_center.py",
+        "tests_engine/test_brain_evidence.py",
+        "tests_engine/test_databento.py",
+        "tests_engine/test_futures.py",
         "tests_engine/test_futures_catalog.py",
-        "tests_engine/test_execution_controls.py",
-        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+        "tests_engine/test_futures_contract_families.py",
+        "tests_engine/test_system_index.py",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        "coordination/README.md"
       ],
       "reserved_targets": [
         {
+          "path": ".github/workflows/atlas-diagnostic-pytest.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/assets.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
           "path": "icarus_engine/brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_brain_evidence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/calendar.py",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -915,15 +1011,59 @@
           "repo": "reppiks490/Icarus"
         },
         {
+          "path": "icarus_engine/system_index.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_futures/contracts.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/_futures_regression_legacy.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_listing_crosswalk.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_feed.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_asset_command_center.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_databento.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
           "path": "tests_engine/test_futures_catalog.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_execution_controls.py",
+          "path": "tests_engine/test_futures_contract_families.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_system_index.py",
           "repo": "reppiks490/Icarus"
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/README.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -939,7 +1079,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:32:43.016673Z",
+  "generated_at_utc": "2026-10-17T23:35:28.432968Z",
   "owner_status": {
     "claude": {
       "active": false,
