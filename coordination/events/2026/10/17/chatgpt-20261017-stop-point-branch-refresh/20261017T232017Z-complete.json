@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232017Z-complete-branch-refresh",
+  "session_id": "chatgpt-20261017-stop-point-branch-refresh",
+  "at_utc": "2026-10-17T23:20:17Z",
+  "type": "COMPLETE",
+  "phase": "complete",
+  "summary": "The stop-point handoff has been updated to route next agents to the active legacy-record migration branch without duplicating its claimed code paths.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-legacy-event-normalization"
+  ],
+  "evidence": [
+    "coordination/summaries/chatgpt-20261017-stop-point-branch-refresh.json",
+    "branch b48f5723d99629c61f4f9b6e6128489d7f6a8b78"
+  ],
+  "next_action": "Next worker should wait for the claimed migration to be rebased/published, then review exact-head tests while continuing only unclaimed work.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
