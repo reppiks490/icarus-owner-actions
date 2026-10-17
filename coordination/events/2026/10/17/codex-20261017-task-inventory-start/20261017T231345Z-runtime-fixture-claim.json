@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231345Z-runtime-fixture-claim",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-17T23:13:45Z",
+  "phase": "repair",
+  "summary": "Five runtime-feed positives also inherit the dated production listing crosswalk through snapshot(). Extend PR447 test-only scope to construct explicit synthetic current identity in _qualified_snapshot and test missing/stale/mismatched crosswalk rejection. Runtime gates remain unchanged. Earlier PLAN/CLAIM times were manually estimated ahead of actual clock; event ordering within these non-overlapping paths does not establish execution evidence.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_listing_crosswalk.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_feed.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#447"
+  ],
+  "evidence": [
+    "pytest test_a200_runtime_feed.py: 5 failed / 7 passed; positives rejected on IDENTITY_NOT_VERIFIED"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Verify synthetic listing identity and negative controls."
+}
