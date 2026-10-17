@@ -1,0 +1,12 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261017-legacy-event-normalization",
+  "completed_at_utc": "2026-10-17T23:24:24Z",
+  "result": "complete",
+  "evidence": [
+    "pr:reppiks490/icarus-owner-actions#47 merge d4a5610ed9630d8feff90d27d4f023f689843aae",
+    "github-run:39078705344 exact head c1fc5505516ad59b17ca831edd2a1e65605459ca",
+    "python -m unittest discover -s tests: 51 passed",
+    "python -m coordination_fabric validate: 129 events, 31 sessions, 18 summaries valid before subsequent coordination updates"
+  ]
+}
