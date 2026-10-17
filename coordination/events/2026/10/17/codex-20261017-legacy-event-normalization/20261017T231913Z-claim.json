@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231913Z-claim-codex-legacy-event-normalization",
+  "session_id": "codex-20261017-legacy-event-normalization",
+  "at_utc": "2026-10-17T23:19:13Z",
+  "type": "CLAIM",
+  "phase": "implementation",
+  "summary": "Normalize known immutable legacy coordination events and summaries in memory; preserve raw event history and validate malformed/conflicting paths strictly.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination_fabric/__init__.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "tests/test_coordination_fabric.py"}
+  ],
+  "dependencies": [],
+  "evidence": ["Current main's immutable event/summary history rejects existing schema-v2 records; local compatibility validation covers 127 events, 30 sessions, and 18 summaries."],
+  "next_action": "Run exact-head CI and merge the compatibility repair after review.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
