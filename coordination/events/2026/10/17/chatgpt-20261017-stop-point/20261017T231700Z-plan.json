@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231700Z-plan-stop-point",
+  "session_id": "chatgpt-20261017-stop-point",
+  "at_utc": "2026-10-17T23:17:00Z",
+  "type": "PLAN",
+  "phase": "handoff",
+  "summary": "Create a concise durable handoff for the next ICARUS agents in an unreserved coordination path. Preserve prior exact revisions, verification evidence, open review status, current active work references, and the known coordination compiler failure.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "summary:chatgpt-20261016-current-head-builds"
+  ],
+  "evidence": [
+    "Current main 211759b8548f708f1eb5df408be4f62a30a0ab58",
+    "Current coordination validate fails at immutable 20261016T131600Z-claim.json"
+  ],
+  "next_action": "Publish the handoff note and terminal summary without editing any active worker targets or immutable historical event.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
