@@ -1239,7 +1239,14 @@
     "subtests_passed": 111,
     "seconds": 147.46,
     "draft": true,
-    "hosted_verification": "run39079800021 in_progress",
+    "hosted_verification": {
+      "run_id": 39079800021,
+      "source_head": "4f6ef403ab187bccb57a64800638a8675a1af128",
+      "linux": "success",
+      "windows_with_added_modules": "success",
+      "independent_semantic_review": "pending",
+      "main_merge": "not performed"
+    },
     "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546",
     "windows_added_test_modules": 7,
     "windows_added_cases_collected": 110
@@ -1253,5 +1260,19 @@
     "hosted_conclusion": "success",
     "change": "Headline current3/stale11/nonterminal14; machine schema and histories preserved",
     "merged": false
+  },
+  "canonical_repository_registry": {
+    "repository": "reppiks490/Icarus-engine",
+    "commit": "2680123fa0245b8d8f740febc01f2d92afb89cfb",
+    "path": "config/federated_repo_evidence.json",
+    "repositories": [
+      "reppiks490/Icarus",
+      "reppiks490/Icarus-engine",
+      "reppiks490/divine-providence",
+      "reppiks490/icarus-csv-evidence-lab",
+      "reppiks490/icarus-causal-router",
+      "reppiks490/icarus-owner-actions"
+    ],
+    "connected_twelve_system_hub": "Hub/GRU integration is the active peer lane; this PR audit does not independently certify its subsystem implementations."
   }
 }
