@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-legacy-event-compat",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Restore the owner-actions coordination validator for immutable v2 events written by earlier producers, without editing event history or weakening path/collision checks.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/legacy-event-normalization-20261017",
+  "started_at_utc": "2026-10-17T23:16:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "python",
+    "coordination",
+    "testing"
+  ],
+  "initial_dependencies": [
+    "current owner-actions main 68c97fab",
+    "full-tree validation failure in PR #40 caused by existing v2 event using event_type/created_at_utc/targets",
+    "stale compiler-freshness PR #19 is scoped to tests/test_coordination_automation.py"
+  ]
+}
