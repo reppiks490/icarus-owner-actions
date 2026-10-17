@@ -853,15 +853,16 @@
       ],
       "dependencies": [
         "pr:reppiks490/Icarus#450",
-        "pr:reppiks490/icarus-owner-actions#51"
+        "pr:reppiks490/icarus-owner-actions#51",
+        "session:codex-20261017-hub-integration-lead"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:38:16Z",
-      "latest_summary": "Coordination count repair delivered as owner-actions51@1837a3a;53tests pass. Release its source paths while hosted check runs. Inspecting Icarus450's Windows job revealed the explicit pytest list omits newly added Brain/futures/index/command-state and A200 fixture modules. Claim workflow test list only plus integration verification doc; append those seven modules so hosted green exercises new contracts. Runtime Python source unchanged from full2975pass codea017. This supersedes incomplete assumptions about Windows coverage without changing authority, jobs, cadence or providers.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-17T23:38:57Z",
+      "latest_summary": "Reviewable deliveries for the two current peer workers: owner-actions51@1837a3a fixes misleading current/stale headline;53local governance tests and hosted39079763194SUCCESS. Icarus450@4f6ef403 consolidates stopped futures stack, rejects nonboolean evidence flags and adds seven missing contract modules to Windows list(110collected). Runtime code at a017 passed2975tests/111subtests,3skips; final differences are docs+Windows test selection only. Request independent semantic review of futuresevidence/qualification boundary; no merge decision assumed. Root implementation paths can be reclaimed after fresh claim; root will observe hosted450 and preserve final receipt. Hub Windows failure39078762673 remains assigned to hub peer.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "cross-platform-test-coverage",
+      "phase": "hosted-verification-and-peer-review",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -890,7 +891,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:38:26.997208Z",
+  "generated_at_utc": "2026-10-17T23:39:06.693732Z",
   "owner_status": {
     "claude": {
       "active": false,
