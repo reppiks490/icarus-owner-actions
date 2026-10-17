@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T233816Z-windows-module-coverage",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-17T23:38:16Z",
+  "phase": "cross-platform-test-coverage",
+  "summary": "Coordination count repair delivered as owner-actions51@1837a3a;53tests pass. Release its source paths while hosted check runs. Inspecting Icarus450's Windows job revealed the explicit pytest list omits newly added Brain/futures/index/command-state and A200 fixture modules. Claim workflow test list only plus integration verification doc; append those seven modules so hosted green exercises new contracts. Runtime Python source unchanged from full2975pass codea017. This supersedes incomplete assumptions about Windows coverage without changing authority, jobs, cadence or providers.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#450",
+    "pr:reppiks490/icarus-owner-actions#51"
+  ],
+  "evidence": [
+    "run39079629066 Windows job117533756209 lists legacy modules but no test_brain_evidence/test_futures_catalog/test_asset_command_center/test_system_index"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Append missing module paths, verify they collect, and observe new exact-head hosted checks."
+}
