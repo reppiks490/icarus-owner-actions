@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-legacy-event-normalization",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Restore coordination bus validation for immutable legacy event and summary dialects without rewriting historical records.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/legacy-event-normalization-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:19:13Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["github", "python"],
+  "initial_dependencies": []
+}
