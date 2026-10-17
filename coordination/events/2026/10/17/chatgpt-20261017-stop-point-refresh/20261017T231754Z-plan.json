@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231754Z-plan-stop-point-refresh",
+  "session_id": "chatgpt-20261017-stop-point-refresh",
+  "at_utc": "2026-10-17T23:17:54Z",
+  "type": "PLAN",
+  "phase": "handoff-refresh",
+  "summary": "Add the task-inventory compiler handoff and the new integration-lead session to the just-published next-agent stop-point note. No code or active target paths are touched.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "New main records at 211759b8548f708f1eb5df408be4f62a30a0ab58"
+  ],
+  "next_action": "Update the note, record an evidence-backed summary, then stop this handoff workstream.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
