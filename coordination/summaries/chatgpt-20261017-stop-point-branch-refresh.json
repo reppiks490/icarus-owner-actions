@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261017-stop-point-branch-refresh",
+  "completed_at_utc": "2026-10-17T23:20:07Z",
+  "result": "complete",
+  "evidence": [
+    "Updated coordination/handoffs/2026-10-17-chatgpt-stop-point.md with active legacy-event migration claim.",
+    "Branch codex/legacy-event-normalization-20261017 at b48f5723d99629c61f4f9b6e6128489d7f6a8b78 changes coordination_fabric/__init__.py and tests/test_coordination_fabric.py; its claim is on that branch, not main.",
+    "At compare time, branch was 3 commits ahead and 6 behind then-current main; no PR existed."
+  ],
+  "next_agent_actions": [
+    "Do not duplicate the migration; wait for the claimed agent's reviewable updated head/PR.",
+    "Once available, inspect exact diff and require tests proving historical record bytes remain untouched while validator compatibility is restored.",
+    "Rebase against fresh main and rerun full coordination validation before refreshing generated views."
+  ],
+  "status_notes": [
+    "This refresh only updated handoff docs and coordination metadata; no code was changed."
+  ]
+}
