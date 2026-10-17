@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231824Z-update-stop-point-refresh",
+  "session_id": "chatgpt-20261017-stop-point-refresh",
+  "at_utc": "2026-10-17T23:18:24Z",
+  "type": "UPDATE",
+  "phase": "handoff-refresh",
+  "summary": "Refreshed the handoff with new task-inventory and Divine Providence co-lead records. Also disclosed that the first stop-point completion note used a manually estimated future timestamp; this event is time-stamped from the UTC clock and is the authoritative update.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "PR #447 head a9217cc; run 39078186866 in progress at last read",
+    "Six schema-drift records reported by task-inventory session",
+    "Linux-only runner/hub test result; Windows remains unverified"
+  ],
+  "next_action": "Refresh terminal summary using the clock after this handoff update, then close this documentation-only session.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
