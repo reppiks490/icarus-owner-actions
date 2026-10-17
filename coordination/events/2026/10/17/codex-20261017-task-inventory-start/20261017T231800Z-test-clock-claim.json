@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231800Z-test-clock-claim",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "CLAIM",
+  "at_utc": "2026-10-17T23:18:00Z",
+  "phase": "repair",
+  "summary": "Current-main listing-crosswalk positive tests expire after 24h because fixture timestamps are fixed but validation uses wall time. Reproduced CURRENT vs STALE failure. Claim only test clock; preserve runtime freshness thresholds and all malformed/stale rejection assertions.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_listing_crosswalk.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+    "pytest tests_engine -x: test_crosswalk_reports_all_200_listing_identities_without_feed_qualification fails STALE vs CURRENT"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Freeze fixture clock and prove positive and negative cases."
+}
