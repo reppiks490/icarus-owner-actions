@@ -66,3 +66,8 @@ The `codex-20261017-task-inventory-start` session has now published a terminal s
 The inventory session's explicit next action is to start a **new** session and claim the narrow immutable-record compatibility/migration repair, then obtain final hosted CI readback. The repair must preserve the five original events and one malformed summary; do not silently rewrite the historical bytes. PR #19 only covers the schedule fallback and does not solve this validation blocker.
 
 The separate `codex-20261017-hub-integration-lead` session remains non-overlapping: it owns the Divine Providence runner/tour and Windows-containment work, with Windows verification pending. Treat its claim and preserved local worktree as active until its own RELEASE/COMPLETE event changes that state.
+
+
+## Legacy-record migration is now claimed (checked 2026-10-17 23:19Z)
+
+A separate session `codex-20261017-legacy-event-normalization` has claimed the compiler-compatibility repair. Its branch `codex/legacy-event-normalization-20261017` is at `b48f5723d99629c61f4f9b6e6128489d7f6a8b78`; it adds a claim/session and changes `coordination_fabric/__init__.py` plus `tests/test_coordination_fabric.py`. No PR existed at the time of check. GitHub compare showed it 3 commits ahead and 6 behind the then-current main; rebase/recheck before review. **Do not start a duplicate repair or modify those targets.** Next agent should track this claim, inspect its scope and tests when a reviewable PR/head is published, and verify the compiler can validate the immutable originals without altering their bytes.
