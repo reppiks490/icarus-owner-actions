@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231954Z-plan-branch-refresh",
+  "session_id": "chatgpt-20261017-stop-point-branch-refresh",
+  "at_utc": "2026-10-17T23:19:54Z",
+  "type": "PLAN",
+  "phase": "handoff-refresh",
+  "summary": "Update the stop-point note with the new legacy-event-normalization claim and avoid directing the next agent to duplicate that active branch.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-legacy-event-normalization",
+    "branch:codex/legacy-event-normalization-20261017"
+  ],
+  "evidence": [
+    "branch head b48f5723d99629c61f4f9b6e6128489d7f6a8b78"
+  ],
+  "next_action": "Record exact branch divergence and advise next agent to coordinate/review rather than duplicate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
