@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Add a regression test proving provider row-count changes trigger a Sentinel health report refresh even when provider verdicts remain unchanged.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "codex/sentinel-row-refresh-fingerprint",
+  "pr": 201,
+  "started_at_utc": "2026-10-17T23:19:51Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["github", "local-tests", "code-review"],
+  "initial_dependencies": ["reppiks490/Icarus-engine#201", "reppiks490/icarus-owner-actions#47"]
+}

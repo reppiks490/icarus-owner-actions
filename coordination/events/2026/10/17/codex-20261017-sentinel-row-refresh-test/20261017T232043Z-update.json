@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232043Z-sentinel-row-refresh-regression-update",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "at_utc": "2026-10-17T23:20:43Z",
+  "type": "UPDATE",
+  "phase": "focused-test-passed",
+  "summary": "Added a regression test on Icarus-engine PR #201. It holds the generated timestamp and provider verdict constant, increments the provider row count, and asserts changed() requests refresh. The test fails against #201's pre-fix base and passes on the updated PR head.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    }
+  ],
+  "dependencies": ["reppiks490/Icarus-engine#201", "reppiks490/icarus-owner-actions#47"],
+  "evidence": [
+    "base-control:75be5aaf802067c48f0fdbef02049bf8bcc63228:test_provider_row_count_change_triggers_refresh_with_same_verdict=failed-as-expected",
+    "focused-tests:python -m pytest tests/test_data_sentinel.py -q:9-passed",
+    "icarus-engine-head:37c6817ccb903abc15e0fa554ce60b654235ee64"
+  ],
+  "next_action": "Await exact-head CI for Icarus-engine PR #201 and the coordination claim PR; review the final checks without merging.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
