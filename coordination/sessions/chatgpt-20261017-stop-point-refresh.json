@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261017-stop-point-refresh",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Update the next-agent stop-point note with the latest coordination handoffs discovered after its first publication.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "coordination/stop-point-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:17:53Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github"
+  ],
+  "initial_dependencies": [
+    "chatgpt-20261017-stop-point",
+    "codex-20261017-task-inventory-start",
+    "codex-20261017-hub-integration-lead"
+  ]
+}
