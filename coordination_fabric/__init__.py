@@ -79,6 +79,31 @@ def _string_list(value: Any, field: str) -> list[str]:
     return list(value)
 
 
+def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
+    """Map the one immutable pre-canonical event dialect to canonical keys."""
+    doc = dict(doc)
+    legacy_dialect = "event_type" in doc or "created_at_utc" in doc
+    aliases = {
+        "type": "event_type",
+        "at_utc": "created_at_utc",
+        "cooperates_with": "collaborators",
+    }
+    for canonical, legacy in aliases.items():
+        if canonical in doc and legacy in doc and doc[canonical] != doc[legacy]:
+            raise ValueError(f"conflicting event fields: {canonical} and {legacy}")
+        if canonical not in doc and legacy in doc:
+            doc[canonical] = doc[legacy]
+    if legacy_dialect and "phase" not in doc:
+        doc["phase"] = "legacy"
+    doc.setdefault("paths", [])
+    targets = doc.get("targets")
+    if legacy_dialect and not doc.get("repos") and isinstance(targets, list):
+        doc["repos"] = list(dict.fromkeys(
+            item.get("repo") for item in targets if isinstance(item, dict) and isinstance(item.get("repo"), str)
+        ))
+    return doc
+
+
 def _validate_session(doc: dict[str, Any], path: Path) -> dict[str, Any]:
     if doc.get("schema_version") != SESSION_SCHEMA:
         raise ValueError(f"unsupported session schema: {path}")
@@ -115,6 +140,7 @@ def _validate_targets(value: Any, repos: list[str], path: Path) -> list[dict[str
 
 
 def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict[str, Any]:
+    doc = _normalize_event(doc)
     if doc.get("schema_version") != EVENT_SCHEMA:
         raise ValueError(f"unsupported event schema: {path}")
     sid = _safe_session_id(doc.get("session_id"))
@@ -197,7 +223,7 @@ def validate_tree(root: Path | str) -> dict[str, Any]:
     orphan_event_docs: list[tuple[Path, dict[str, Any]]] = []
     if events_dir.exists():
         for path in sorted(events_dir.glob("**/*.json")):
-            raw = _load(path)
+            raw = _normalize_event(_load(path))
             sid = _safe_session_id(raw.get("session_id"))
             if sid not in sessions:
                 orphan_event_docs.append((path, raw))
