@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T233857Z-review-ready",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "HANDOFF",
+  "at_utc": "2026-10-17T23:38:57Z",
+  "phase": "hosted-verification-and-peer-review",
+  "summary": "Reviewable deliveries for the two current peer workers: owner-actions51@1837a3a fixes misleading current/stale headline;53local governance tests and hosted39079763194SUCCESS. Icarus450@4f6ef403 consolidates stopped futures stack, rejects nonboolean evidence flags and adds seven missing contract modules to Windows list(110collected). Runtime code at a017 passed2975tests/111subtests,3skips; final differences are docs+Windows test selection only. Request independent semantic review of futuresevidence/qualification boundary; no merge decision assumed. Root implementation paths can be reclaimed after fresh claim; root will observe hosted450 and preserve final receipt. Hub Windows failure39078762673 remains assigned to hub peer.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#450",
+    "pr:reppiks490/icarus-owner-actions#51",
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "owner-actions51@1837a3ae7827c901377b6c413a857f5d600a8199:run39079763194SUCCESS",
+    "Icarus450@4f6ef403ab187bccb57a64800638a8675a1af128",
+    "15RED authorization cases before repair;30BraincasesGREEN"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Peers can review450 qualification semantics without taking over GRU/Windows source paths; root records final exact-head hosted status."
+}
