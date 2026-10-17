@@ -10,9 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/Icarus-engine"
   ],
-  "paths": [
-    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md"
-  ],
+  "paths": [],
   "dependencies": [
     "Current open PR reservations #414/#415/#435/#438; engine #198; exact source for 22 target is not enumerated in the recordings."
   ],
@@ -23,5 +21,11 @@
   ],
   "next_action": "Document only claims that can be tied to repository paths or current CI; label runtime-only questions UNVERIFIED.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/audits/2026-10-16-subsystem-reality-matrix.md"
+    }
+  ]
 }

@@ -10,10 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/divine-providence"
   ],
-  "paths": [
-    "reppiks490/Icarus:tests_engine/test_ibkr_paper_venue.py",
-    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md"
-  ],
+  "paths": [],
   "dependencies": [
     "Windows Observatory failure 38877590590 / job 116896264159",
     "Existing Icarus current-main test fixture, no active path reservation found"
@@ -24,5 +21,15 @@
   ],
   "next_action": "Replace the platform-invalid pseudo-path with a temporary filesystem path. Do not change the journal implementation or execution behavior.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_ibkr_paper_venue.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/audits/2026-10-16-subsystem-reality-matrix.md"
+    }
+  ]
 }

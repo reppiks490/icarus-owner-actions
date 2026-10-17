@@ -10,10 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "reppiks490/Icarus:docs/audits/2026-10-16-subsystem-reality-matrix.md",
-    "reppiks490/Icarus:tests_engine/test_ibkr_paper_venue.py"
-  ],
+  "paths": [],
   "dependencies": [
     "Icarus PR #439 head 112754896b5e3ba43a91b0979350b15183d354c4 CI",
     "Icarus PR #441 head 659a17fa169773e6f1160af5165325cd94265b54 CI",
@@ -26,5 +23,15 @@
   ],
   "next_action": "Wait for exact-head Icarus checks and resume after the coordination baseline defect is fixed or safely superseded.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/audits/2026-10-16-subsystem-reality-matrix.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_ibkr_paper_venue.py"
+    }
+  ]
 }
