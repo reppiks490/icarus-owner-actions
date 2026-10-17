@@ -1231,15 +1231,27 @@
   },
   "integration_delivery": {
     "pr": "https://github.com/reppiks490/Icarus/pull/450",
-    "head": "c908872f7193e7188d218504eafa882ae6dca41b",
+    "head": "4f6ef403ab187bccb57a64800638a8675a1af128",
     "tested_code": "a017008717d4ed130e9bfe58edb55e7d127a828f",
-    "difference_since_code_test": "documentation only",
+    "difference_since_code_test": "documentation and Windows test selection only; runtime Python source unchanged",
     "full_local_passed": 2975,
     "full_local_skipped": 3,
     "subtests_passed": 111,
     "seconds": 147.46,
     "draft": true,
-    "hosted_verification": "pending",
-    "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546"
+    "hosted_verification": "run39079800021 in_progress",
+    "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546",
+    "windows_added_test_modules": 7,
+    "windows_added_cases_collected": 110
+  },
+  "coordination_count_delivery": {
+    "pr": "https://github.com/reppiks490/icarus-owner-actions/pull/51",
+    "head": "1837a3ae7827c901377b6c413a857f5d600a8199",
+    "regression_failed_before_fix": true,
+    "local_tests_passed": 53,
+    "hosted_run": 39079763194,
+    "hosted_conclusion": "success",
+    "change": "Headline current3/stale11/nonterminal14; machine schema and histories preserved",
+    "merged": false
   }
 }

@@ -3209,12 +3209,21 @@
         "focused_tests_passed": 167,
         "contract_only_not_runtime_integration": true,
         "pr": "https://github.com/reppiks490/Icarus/pull/450",
-        "head": "c908872f7193e7188d218504eafa882ae6dca41b",
+        "head": "4f6ef403ab187bccb57a64800638a8675a1af128",
         "full_local_passed": 2975,
         "full_local_skipped": 3,
-        "subtests_passed": 111
+        "subtests_passed": 111,
+        "windows_added_test_modules": 7,
+        "hosted_run": 39079800021
       },
-      "remaining_authority": "Control-plane requires separate merge/release decision. Live broker arming remains disabled."
+      "remaining_authority": "Control-plane requires separate merge/release decision. Live broker arming remains disabled.",
+      "coordination_count_fix": {
+        "pr": "reppiks490/icarus-owner-actions#51",
+        "head": "1837a3ae7827c901377b6c413a857f5d600a8199",
+        "local_tests_passed": 53,
+        "hosted_run": 39079763194,
+        "conclusion": "success"
+      }
     }
   ]
 }
