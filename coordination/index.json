@@ -837,24 +837,47 @@
       "branch": "codex/task-inventory-20261017",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "declared_paths": [
+        "mission/continuations/2026-10-17-task-audit.md",
+        "mission/current-pr-audit-20261017.json"
+      ],
+      "declared_targets": [
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
       "dependencies": [
-        "independent-review:Icarus#450",
-        "separate-merge-decision:coordination/CONTROL_PLANE_CONTRACT.md",
-        "session:codex-20261017-hub-integration-lead"
+        "review:futures450@4f6ef403ab187bccb57a64800638a8675a1af128",
+        "review:Engine142@dfb18e96805faa905b687eaa4633d349a9f82eb2"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:49:07Z",
-      "latest_summary": "Release root implementation paths after verified deliveries: Icarus450 strict evidence flags and futures stack passes exact-head Linux/expanded Windows run39079800021; owner-actions51 current/stale count repair passes53tests and hosted39079763194; updated inventory45 includes35PR source heads and actual remaining gates. Full Icarus objective remains incomplete. Independent semantic review and the control-plane's separate merge decision are pending; hub Windows escape remains with its peer. No additional agents, main merge, broker connection or live authority.",
-      "latest_type": "RELEASE",
+      "last_event_at_utc": "2026-10-17T23:51:42Z",
+      "latest_summary": "Owner explicitly requests continued parallel work. Two parent-owned read-only reviewers are running: futures450/count51 semantic review, and Engine FR-1 preregistration137/code142 synthetic-only review. Parent handles source writes/coordination and verifies connected causal-router/CSV services. Preserve existing hub/GRU peer reservations. Do not treat review or pre-registration as merge/research execution authority; no broker, spend, real holdout, or scheduler changes.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "awaiting-independent-review",
+      "phase": "parallel-independent-review",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        "mission/continuations/2026-10-17-task-audit.md",
+        "mission/current-pr-audit-20261017.json"
+      ],
+      "reserved_targets": [
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
       "session_id": "codex-20261017-task-inventory-start",
       "stale": false,
       "status": "active"
@@ -867,7 +890,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:49:26.975965Z",
+  "generated_at_utc": "2026-10-17T23:51:52.907246Z",
   "owner_status": {
     "claude": {
       "active": false,
