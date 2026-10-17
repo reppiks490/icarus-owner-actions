@@ -1,0 +1,3184 @@
+{
+  "schema_version": "icarus-task-audit-v1",
+  "observed_at_utc": "2026-10-17T23:13:58.349716+00:00",
+  "scope": "All 202 registered requirements, O01-O19, every task-table row on three legacy boards, and current open federation PRs. This is an inventory and first repair tranche, not a whole-system completion certificate.",
+  "source_heads": {
+    "reppiks490/Icarus": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+    "reppiks490/Icarus-engine": "a08aaf0c217f923b474216ded87ade6835d91957",
+    "reppiks490/icarus-owner-actions": "30a0bb7b1090fc935be23e1c5b47c644b1055825"
+  },
+  "source_hashes": {
+    "mission/register.json": "c084d66d978cb9529ef2522ba41973bfcf69c05f579a6523aa74e1aa7db05cf6",
+    "coordination/ACTIVE.md": "0431c0d1ff6eb5561c90f660aeae674f905be50795ee206850b59d39a7fb6331",
+    "coordination/collisions.json": "9f760f6286c7ecb531430a7ce5b1e23a973e4f382a872be62e571c1716e1c675"
+  },
+  "authority": {
+    "execution_authorized": false,
+    "broker_connection_work_excluded": true,
+    "purchases_authorized": false,
+    "scheduler_changes": false
+  },
+  "counts": {
+    "requirements": 202,
+    "owner_tasks": 19,
+    "owner_reported_checked": 6,
+    "legacy_board_rows": 46,
+    "open_federation_prs_at_inventory": 30
+  },
+  "requirements": [
+    {
+      "id": 1,
+      "title": "Assume primary end-to-end engineering responsibility",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 2,
+      "title": "Preserve existing ChatGPT automations and loops",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 3,
+      "title": "Preserve existing engineering work",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 4,
+      "title": "Protect data, authority, licensing and credentials",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 5,
+      "title": "Require verifiable substantive completion",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 6,
+      "title": "Inventory the entire relevant repository and artifact universe",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 7,
+      "title": "Reconstruct the actual implemented system architecture",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 8,
+      "title": "Recover authentic surviving history first",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 9,
+      "title": "Preserve immutable historical identity and provenance",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 10,
+      "title": "State irrecoverable gaps truthfully",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 11,
+      "title": "Reconcile historical CSV and representation corpora",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 12,
+      "title": "Apply the maximum permitted collection mandate",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 13,
+      "title": "Discover every relevant legitimate provider",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 14,
+      "title": "Exhaust eligible endpoint, entitlement and metadata discovery",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 15,
+      "title": "Cover the entire relevant cross-market universe",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 16,
+      "title": "Exhaust useful native temporal resolutions and representations",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 17,
+      "title": "Acquire maximum authenticated historical depth",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 18,
+      "title": "Engineer for huge, durable, resumable collection",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 19,
+      "title": "Prove acquisition and integration completeness",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 20,
+      "title": "Begin from actual current provider state",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 21,
+      "title": "Verify encrypted checkpoints and durable recovery",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 22,
+      "title": "Maximize legitimate existing provider entitlements",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 23,
+      "title": "Read and reconcile authoritative hybrid control contracts",
+      "work_package_id": "WP-hybrid",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 24,
+      "title": "Preserve exact request-to-result identity and oldest-first recovery",
+      "work_package_id": "WP-hybrid",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 25,
+      "title": "Make backlog reconciliation restart-safe",
+      "work_package_id": "WP-hybrid",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 26,
+      "title": "Diagnose all CURRENT-HEAD failures, not obsolete noise",
+      "work_package_id": "WP-repair",
+      "reported_state": "IMPLEMENTED_UNVERIFIED",
+      "independent_completion_verified": false,
+      "existing_evidence": [
+        {
+          "id": "F-ENGINE-CI",
+          "status": "REPAIRED_IN_UNMERGED_PR",
+          "baseline_run_id": 37694866418,
+          "baseline_failure": "cryptography absent from pytest-only dependency install; authenticated cache-eviction test fails",
+          "head": "8fbddc0a874fc47c6b0e2023c7c06ce2c23f5df6",
+          "pull_request": "https://github.com/reppiks490/Icarus-engine/pull/123",
+          "ci_run_id": 37706697693,
+          "ci_result": "all six jobs success, Python 3.11-3.13 full suite, zero-dependency core, CLI, MCP provenance",
+          "exact_source_readback": true,
+          "databento_pr84_overlap": false
+        }
+      ],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 27,
+      "title": "Repair verified Causal Router missing journal contract",
+      "work_package_id": "WP-repair",
+      "reported_state": "IMPLEMENTED_UNVERIFIED",
+      "independent_completion_verified": false,
+      "existing_evidence": [
+        {
+          "id": "F-ROUTER-IMPORT",
+          "status": "REPAIRED_IN_UNMERGED_PR",
+          "baseline_head": "5c46a2f0879da4a2ca3ea30d9893ad06397728a8",
+          "baseline_tests": {
+            "total": 38,
+            "passed": 37,
+            "failed": 1
+          },
+          "existing_restoration_preserved": "4734bf10731adab0cc9ec94db930bce14e08a240",
+          "head": "8d2549d96be0f1741b3e2068453557277df61de0",
+          "pull_request": "https://github.com/reppiks490/icarus-causal-router/pull/9",
+          "tests": {
+            "total": 50,
+            "passed": 50,
+            "failed": 0
+          },
+          "ci_run_id": 37706533890,
+          "ci_result": "success across Python 3.10-3.13, determinism/firewall, installed wheel/sdist and assurance",
+          "additional_defect": "Missing journal schema/policy witness now rejected transactionally without altering existing evidence",
+          "consumer_integration": "UNVERIFIED",
+          "execution_authorized": false
+        }
+      ],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 28,
+      "title": "Verify cross-repository contracts and compatibility",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 29,
+      "title": "Require RESTORE \u2192 COMPLETE \u2192 INTEGRATE \u2192 EVOLVE \u2192 VERIFY for every subsystem",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 30,
+      "title": "Explore major scientific, computational and engineering advancements",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 31,
+      "title": "Demand measurable value from evolution",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 32,
+      "title": "Discover all actual agents and historical concepts",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 33,
+      "title": "Improve coordinated research and ML rigor",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 34,
+      "title": "Make self-improvement controlled, traceable and research-only",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 35,
+      "title": "Investigate genuinely new mechanisms and combinations",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 36,
+      "title": "Create rigorous strategy research pipelines",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 37,
+      "title": "Distinguish backtest profit from robust economic evidence",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 38,
+      "title": "Implement auditable challenger/champion gates",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 39,
+      "title": "Build the end-to-end evidence-to-intelligence fabric",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 40,
+      "title": "Implement essential Master Pump services",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 41,
+      "title": "Prove end-to-end delivery and failure semantics",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 42,
+      "title": "Design an extensible future-facing architecture",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 43,
+      "title": "Audit, secure and evolve every relevant MCP capability",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 44,
+      "title": "Verify the real intended consumers of all outputs",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 45,
+      "title": "Assume system-wide UI functional responsibility without colliding with assigned visual work",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 46,
+      "title": "Build an accurate operational overview",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 47,
+      "title": "Build meaningful, mathematically defined gauges",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 48,
+      "title": "Evolve visual immersion beyond cosmetic recoloring",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 49,
+      "title": "Test every displayed feature end-to-end",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 50,
+      "title": "Optimize real resource and architectural bottlenecks",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 51,
+      "title": "Leave durable handoffs for every completed work package",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 52,
+      "title": "Audit repository exposure and historical secrets",
+      "work_package_id": "WP-security",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 53,
+      "title": "Protect repository, provider and model boundaries",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 54,
+      "title": "Test all layers and negative paths",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 55,
+      "title": "Prove data completeness beyond diagnostic test samples",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 56,
+      "title": "Require independent assurance and reproducibility",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 57,
+      "title": "Demand a capability/value record for every component",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 58,
+      "title": "Search for high-leverage cross-system improvements",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 59,
+      "title": "Implement isolated, verifiable work packages",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 60,
+      "title": "Prioritize critical risk, leverage and feasibility",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 61,
+      "title": "Maintain a canonical, machine-readable master register",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 62,
+      "title": "Report every substantial pass in falsifiable terms",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 63,
+      "title": "Work toward a complete scientific intelligence platform",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 64,
+      "title": "Require independently proven completion within defined scope",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 65,
+      "title": "Explicitly authorize thinking beyond conventional solutions",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 66,
+      "title": "Investigate seven levels of problem solving",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 67,
+      "title": "Import useful ideas from other disciplines",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 68,
+      "title": "Challenge hidden architectural assumptions",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 69,
+      "title": "Establish isolated experiments for unconventional hypotheses",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 70,
+      "title": "Seek disproportionate verifiable improvements",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 71,
+      "title": "Allow ambitious architecture redesign proposals",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 72,
+      "title": "Transfer proven inventions to suitable consumers",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 73,
+      "title": "Expand data horizons beyond current strategies",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 74,
+      "title": "Maintain operational restraints during creative experiments",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 75,
+      "title": "Make innovation a permanent measured program",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 76,
+      "title": "Maintain one authoritative machine-readable system map",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 77,
+      "title": "Build an intelligent engineering priority system",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 78,
+      "title": "Develop a universal honest quality/health framework",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 79,
+      "title": "Predict and prevent infrastructure failures where possible",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 80,
+      "title": "Engineer complete disaster recovery and continuity",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 81,
+      "title": "Design for very large historical data and future growth",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 82,
+      "title": "Produce a permanent proof of collection completeness",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 83,
+      "title": "Enforce point-in-time correctness everywhere",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 84,
+      "title": "Build a scientific adversarial testing program",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 85,
+      "title": "Coordinate agent/repo ownership safely",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 86,
+      "title": "Create an isolated unconventional engineering laboratory",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 87,
+      "title": "Systematically transfer verified innovations",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 88,
+      "title": "Establish controlled releases, migrations and rollbacks",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 89,
+      "title": "Defend against security, supply-chain and malicious external inputs",
+      "work_package_id": "WP-security",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 90,
+      "title": "Build durable engineering memory",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 91,
+      "title": "Require a bounded, measurable end state per work package",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 92,
+      "title": "Prove where and how every component actually executes",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 93,
+      "title": "Publish the explicit engineering authority matrix",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 94,
+      "title": "Maintain data rights and entitlements per provider and use",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 95,
+      "title": "Prove coverage over the complete eligible multidimensional domain",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 96,
+      "title": "Establish canonical instrument and market identity",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 97,
+      "title": "Build an explicit clock and availability model",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 98,
+      "title": "Prove full source-to-UI pathways independently",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 99,
+      "title": "Engineer compute/storage economics transparently",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 100,
+      "title": "Keep independently restorable authorized copies of critical evidence",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 101,
+      "title": "Perform causal root-cause analysis for repeated incidents",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 102,
+      "title": "Simulate change impact on the dependency network",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 103,
+      "title": "Maintain a scientific model risk register",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 104,
+      "title": "Build operator-level decision intelligence, not decoration",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 105,
+      "title": "Define appropriate service-level objectives for meaningful services",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 106,
+      "title": "Red-team the architecture as well as the strategies",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 107,
+      "title": "Provide explicit owner acceptance and handoff",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 108,
+      "title": "Prove real-world useful productivity",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 109,
+      "title": "Create the entire precision intelligence instrumentation architecture",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 110,
+      "title": "Build a reusable universal precision-gauge engine",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 111,
+      "title": "Require five simultaneous meaning layers",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 112,
+      "title": "Build the supreme overview instrument cluster",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 113,
+      "title": "Engineer a scientifically honest Edge Discovery suite",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 114,
+      "title": "Engineer Challenger and Champion readiness instruments",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 115,
+      "title": "Create exhaustive acquisition and historical data gauges",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 116,
+      "title": "Create scientifically defensible market-state instruments",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 117,
+      "title": "Measure substantive agent and ML advancement",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 118,
+      "title": "Visualize robustness, risk and economic evidence",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 119,
+      "title": "Visualize real infrastructure and Master Pump delivery",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 120,
+      "title": "Enforce precise mathematical semantics and gate behavior",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 121,
+      "title": "Add a dynamic evidence-grounded interpretation engine",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 122,
+      "title": "Add anomaly and early-warning instruments",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 123,
+      "title": "Pursue premium, original, cinematic instrument design",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 124,
+      "title": "Enable deep interactive evidence exploration",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 125,
+      "title": "Organize instruments hierarchically",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 126,
+      "title": "Test gauge math, UX and runtime thoroughly",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 127,
+      "title": "Audit every subsystem for the most valuable instruments",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 128,
+      "title": "Invent novel instruments where old UI patterns are inadequate",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 129,
+      "title": "Require operational and scientific instrument acceptance",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 130,
+      "title": "Convert the entire directive into an executable engineering program",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 131,
+      "title": "Build the requirement-to-evidence traceability graph",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 132,
+      "title": "Plan based on real engineering dependencies",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 133,
+      "title": "Define Done before changing anything",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 134,
+      "title": "Track verified improvement velocity, not activity",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 135,
+      "title": "Analyze bottlenecks, dependencies and blast radius",
+      "work_package_id": "WP-observability",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 136,
+      "title": "Treat gauge design as scientific metrology",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 137,
+      "title": "Certify every important gauge against a trust standard",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 138,
+      "title": "Invent a Data Horizon Aperture instrument",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 139,
+      "title": "Invent a Research Frontier map",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 140,
+      "title": "Invent a Champion Burden-of-Proof instrument",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 141,
+      "title": "Invent a Signal Survivability instrument",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 142,
+      "title": "Invent an Information Integrity Field",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 143,
+      "title": "Invent a Master Pump Truth-Flow visualization",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 144,
+      "title": "Invent a System Evolution Differential",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 145,
+      "title": "Invent evidence freshness and knowledge-decay metrics",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 146,
+      "title": "Invent a Recovery Completeness Constellation",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 147,
+      "title": "Invent a Research Productivity-to-Compute metric",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 148,
+      "title": "Implement a visual misinterpretation firewall",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 149,
+      "title": "Develop a Data Value-of-Information assessment",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 150,
+      "title": "Build a universal temporal provenance graph",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 151,
+      "title": "Analyze information independence and semantic duplicates",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 152,
+      "title": "Develop multi-resolution information fusion safely",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 153,
+      "title": "Build a causal information-availability shield",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 154,
+      "title": "Establish a market-mechanism science lab",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 155,
+      "title": "Treat model disagreement as uncertainty evidence",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 156,
+      "title": "Use counterfactual, adversarial and stress research",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 157,
+      "title": "Make falsification a primary productive result",
+      "work_package_id": "WP-research",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 158,
+      "title": "Create a novelty and redundancy firewall",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 159,
+      "title": "Build an execution-reality map",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 160,
+      "title": "Enforce capability-versus-authority separation",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 161,
+      "title": "Engineer verifiable independent backup/restore",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 162,
+      "title": "Create an artifact retention and expiry defense",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 163,
+      "title": "Build a change-impact simulation service",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 164,
+      "title": "Plan economics for complete data and computational research",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 165,
+      "title": "Test failures through safe chaos and resilience experiments",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 166,
+      "title": "Establish system-wide tracing and observability",
+      "work_package_id": "WP-pump",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 167,
+      "title": "Independently verify security and license compliance",
+      "work_package_id": "WP-repair",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 168,
+      "title": "Establish an architectural challenger program",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 169,
+      "title": "Coordinate cross-disciplinary invention",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 170,
+      "title": "Continuously discover the system's limitations",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 171,
+      "title": "Experiment with useful intelligence composition",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 172,
+      "title": "Maintain durable cross-agent knowledge transfer",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 173,
+      "title": "Require independent supreme assurance for major deliverables",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 174,
+      "title": "Make every engineering cycle substantively valuable",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 175,
+      "title": "Create a Capability Passport for every major component",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 176,
+      "title": "Detect and classify capability gaps",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 177,
+      "title": "Identify high-leverage dependency unlocks",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 178,
+      "title": "Detect outdated assumptions and superior replacements",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 179,
+      "title": "Enforce zero arbitrary truncation as completion",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 180,
+      "title": "Build a multidimensional Data Universe Explorer",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 181,
+      "title": "Issue scoped, auditable coverage-proof certificates",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 182,
+      "title": "Develop petascale-ready interfaces when workloads warrant",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 183,
+      "title": "Plan every genuine historical gap's recovery route",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 184,
+      "title": "Investigate and preserve conflicting provider observations",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 185,
+      "title": "Certify actual source-to-research readiness",
+      "work_package_id": "WP-data",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 186,
+      "title": "Search for superior underlying computational paradigms",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 187,
+      "title": "Run the ICARUS Impossibility Challenge",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 188,
+      "title": "Establish a Cross-Disciplinary Translation Lab",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 189,
+      "title": "Transfer proven innovations systematically",
+      "work_package_id": "WP-evolution",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 190,
+      "title": "Investigate previously unknown unknowns",
+      "work_package_id": "WP-inventory",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 191,
+      "title": "Build a declarative Intelligence Instrument Design Language",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 192,
+      "title": "Calibrate operator interpretations, not just gauge numbers",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 193,
+      "title": "Invent the Limitation Pressure Map",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 194,
+      "title": "Invent the Breakthrough Readiness Matrix",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 195,
+      "title": "Invent the Intelligence Convergence instrument",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 196,
+      "title": "Invent the Future Capability Frontier visualization",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 197,
+      "title": "Build a measurement-to-action explanation layer",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 198,
+      "title": "Deliver exceptional performant and accessible visual quality",
+      "work_package_id": "WP-ui",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 199,
+      "title": "Create a universal requirement-level acceptance harness",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 200,
+      "title": "Maintain a scoped Mission Completeness Certificate",
+      "work_package_id": "WP-mission",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 201,
+      "title": "Protect critical invariants mechanically where feasible",
+      "work_package_id": "WP-governance",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    },
+    {
+      "id": 202,
+      "title": "Enforce an enduring exact continuation protocol",
+      "work_package_id": "WP-preservation",
+      "reported_state": "DISCOVERED",
+      "independent_completion_verified": false,
+      "existing_evidence": [],
+      "next_action": "Verify component acceptance against current source and consumer evidence before claiming completion."
+    }
+  ],
+  "owner_tasks": [
+    {
+      "id": "O01",
+      "title": "Freeze the reference run (free).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "On the exact NQ chart that\n  produced the result you trust, record the Pine script name/version, current\n  code text or a file hash, `NQ1!`/contract ticker, `20m`, exchange timezone,\n  chart timezone, Heikin Ashi chart type, RTH vs ETH, continuous-contract\n  adjustment/roll setting, and the visible date range. Do not silently switch\n  from the 20-minute customized run to the older 10-minute test. **Proof:**\n  screenshots of the chart header, symbol/session settings, and script name.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O02",
+      "title": "Freeze all strategy inputs and properties (free).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Open the\n  strategy settings and record every changed input, order size, initial\n  capital, commission, slippage, pyramiding, margin, limit-fill rule, bar\n  magnifier/detalization setting, execution delay, and Heikin Ashi mode.\n  On HA, explicitly capture whether fills use **Heikin Ashi bars** or\n  **Standard bars**. Both reports are useful, but they answer different\n  questions. **Proof:** a complete screen recording or screenshots that show\n  every settings group, with no cropped values.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O03",
+      "title": "Export the NQ parity packet (free or current TV plan).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "From\n  the **same symbol, session and time span**, download the 20m HA chart CSV,\n  20m standard OHLC CSV, Strategy Report **List of trades** CSV, and the\n  performance summary. Also export standard 1m, 5m, 60m, 240m and daily\n  chart data as available; scroll the chart left to load older history before\n  export. Follow [EXPORT_MATRIX.md](EXPORT_MATRIX.md). **Proof:** filenames,\n  first/last timestamp, row count, SHA-256 hashes. Do not edit the raw files.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O04",
+      "title": "Export a second, real-fill comparison run (free).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Keep the\n  same HA signal chart and inputs but select **Standard bars** as the HA\n  execution-price mode. Export its List of trades and summary separately.\n  Keep the original synthetic-fill result too; label both. Do not interpret\n  the synthetic-fill report as broker-achievable P&L. **Proof:** both reports\n  with the settings screenshot for each.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O05",
+      "title": "Confirm session behavior (free).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "On NQ 20m, note whether\n  the first bar is 08:30 CT (RTH) or an overnight bar (ETH). Export one\n  complete regular trading day and one holiday/early-close day if available.\n  TradingView documents RTH and ETH as different intraday data streams.\n  **Proof:** chart CSV and session-toggle screenshot.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O06",
+      "title": "Preserve raw data provenance (free).",
+      "reported_checked": true,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Keep the CSVs in a local\n  private folder. Use the command in [EXPORT_MATRIX.md](EXPORT_MATRIX.md) to\n  generate a checksum manifest, and provide the manifest without altering\n  CSVs. **Proof:** manifest plus the original files through a permitted,\n  private channel. Do not commit licensed CSVs to this repository.",
+      "disposition": "REPORTED_COMPLETE_NEEDS_PROOF_READBACK"
+    },
+    {
+      "id": "O07",
+      "title": "Check the chart's exchange-data entitlement (may cost money).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "On each futures chart, click its market-status/`Data is delayed` label and\n  inspect the needed exchange package (CME, CBOT, COMEX, NYMEX as applicable).\n  In TradingView, avatar -> **Settings and billing** -> **Subscriptions** ->\n  **Real-time market data** is the other route. If a supported broker already\n  carries the entitlement, verify it in TradingView's **Trading Panel** before\n  buying duplicate access. Record whether each chart is real-time. This\n  removes the exchange's ten-minute delay; it cannot remove bar-close time,\n  network latency, or webhook delivery failures. **Proof:** the chart status\n  for NQ, ES, YM, GC, SI, PL, PA, BTC futures.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O08",
+      "title": "Choose the live-bar source (decision, possible cost).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Preferred\n  low-friction research path: TradingView **closed 1-minute standard bars**\n  over a secure HTTPS webhook, preserving the exact chart/exchange/session\n  identity. Alternative: a licensed direct futures feed with timestamped\n  trades and bars. Decide only after comparing price, license, coverage,\n  latency, and connection reliability in\n  [PROVIDERS_AND_COSTS.md](PROVIDERS_AND_COSTS.md). **Proof:** chosen source,\n  entitlement, exchange list, and measured event-to-receipt lag. No source\n  guarantees literally zero latency.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O09",
+      "title": "Enable the TradingView webhook only after the endpoint is ready\n  (current plan may be required).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Turn on TradingView two-factor\n  authentication. With the engine in **shadow/paper-only** mode, create a\n  one-minute **bar-close** alert for each required chart using the reviewed\n  JSON payload and HTTPS endpoint. TradingView accepts destination ports 80\n  and 443 and can occasionally miss delivery. Do not put broker keys or\n  passwords in the alert body. In the alert log, inspect the **Webhook\n  status** column and compare received bar timestamps to the chart.\n  **Proof:** a redacted alert screenshot and a 1-hour latency/gap report.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O10",
+      "title": "Recreate stale strategy alerts after any change (free).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "A\n  TradingView strategy alert keeps a server-side snapshot of the code and\n  settings at alert creation. Editing the chart later does not update it.\n  Delete and recreate each alert after changing the script, inputs, symbol,\n  timeframe, or session. **Proof:** alert creation time/version recorded.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O11",
+      "title": "Pick an actual futures paper venue (broker account may be\n  required).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Alpaca's published asset list covers US securities/options\n  and crypto, not CME futures; its QQQ proxy is **not** an NQ fill. If you\n  want NQ, metals, ES, YM and BTC futures paper fills, choose a broker or\n  platform offering these actual contracts, an accessible paper API, and\n  exchange entitlements. IBKR is one documented option, but its paper\n  account depends on an approved live account and mirrors its permissions\n  and market-data subscriptions. Do not create live API credentials yet.\n  **Proof:** broker name, paper-account status, supported contracts, API\n  terms, exchange data status, fee/margin schedule.",
+      "disposition": "EXCLUDED_BROKER_CONNECTION"
+    },
+    {
+      "id": "O12",
+      "title": "Record prop-firm automation rules before connecting one\n  (possibly paid).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "If a prop firm is intended, ask it in writing about\n  API/third-party automation, copy trading, news trading, overnight holds,\n  daily loss, trailing drawdown, order-rate limits, permitted contract sizes,\n  and data rights. Do not route orders until the rules and paper parity are\n  reviewed. **Proof:** current rules and written permission/terms.",
+      "disposition": "EXCLUDED_BROKER_CONNECTION"
+    },
+    {
+      "id": "O13",
+      "title": "Set paper risk approvals (decision).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Choose a **single\n  portfolio** starting equity, per-asset risk cap, aggregate open risk,\n  allowed sessions, flat-on-disconnect behavior, daily loss guard, and\n  contract-count ceiling. Confirm micro contracts are separate instruments.\n  The engine's historical per-asset capital figures are not a shared\n  brokerage balance. **Proof:** signed risk sheet, then paper-only order\n  reconciliation across several sessions.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O14",
+      "title": "Export the wider asset matrix (time; maybe exchange fees).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Work through [EXPORT_MATRIX.md](EXPORT_MATRIX.md) in priority order.\n  Execution assets and micro contracts need their **own** OHLCV and contract\n  metadata. Context symbols (stocks/ETFs/rates) are sensors only, never\n  futures execution prices. Avoid re-downloading byte-identical files.\n  **Proof:** source/ticker/venue/session/timeframe/date-span manifest.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O15",
+      "title": "Decide whether true order-flow research merits a paid feed.",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "TradingView chart CSV OHLCV cannot reconstruct market-by-order queues,\n  cancellations, iceberg attribution or precise depth. If this is a priority,\n  obtain licensed CME trades + level-2/level-3 MBO history and live access,\n  specify product/contract/time range, and check export/retention rights.\n  Databento and CME DataMine are examples, **not** purchases requested now.\n  **Proof:** provider quote, schema sample, license, timestamp quality.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O16",
+      "title": "Supply macro and company-event records (mostly free).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Use\n  primary released-time sources for FOMC, CPI, payrolls, PPI, PCE/GDP and\n  SEC company filings, not a retrospectively revised value without its\n  original publication timestamp. A mere list of future event dates is\n  insufficient to train event reactions. **Proof:** event ID, announced-at\n  timestamp/timezone, original value, revision, source URL/version.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O17",
+      "title": "Supply loss and execution journals (free).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "For each paper\n  trade, retain decision time, candidate/config ID, known features at that\n  time, chosen action, order/ack/fill timestamps, prices, fees, slippage,\n  session, roll, and eventual outcome. This lets a separate failure-analysis\n  model study **causes** without training on future information or merely\n  banning losses. **Proof:** sample redacted ledger and reconciliation.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O18",
+      "title": "Review data rights and privacy before sharing (decision).",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Check each provider's personal-use, API, derived-data, retention and\n  redistribution rules. Keep this repository private and free of keys and\n  market-data dumps. **Proof:** license/plan name and permitted use noted.",
+      "disposition": "OWNER_DECISION_OR_EXTERNAL_PROOF_REQUIRED"
+    },
+    {
+      "id": "O19",
+      "title": "Explicitly approve any transition beyond shadow mode.",
+      "reported_checked": false,
+      "proof_independently_reverified": false,
+      "source": "https://github.com/reppiks490/icarus-owner-actions/issues/1",
+      "requirements": "Only\n  after source freshness, parity, broker-paper fills, risk stops, kill switch,\n  restart/recovery, and independent review pass should an operator consider\n  any live mode. This checklist is **not** that approval. **Proof:** a\n  separate dated decision and go/no-go report.",
+      "disposition": "EXCLUDED_BROKER_CONNECTION"
+    }
+  ],
+  "legacy_board_tasks": [
+    {
+      "id": "AT01",
+      "task": "Metadata-only dependency planner: minimal missing-evidence bundles, counterfactual unblock impact, owner routing",
+      "reported_status": "waiting",
+      "reported_evidence": "[Engine141](https://github.com/reppiks490/Icarus-engine/pull/141), original prototype preserved; peer review pending",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/atlas.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "AT03",
+      "task": "Explicit-model advisory evaluator, joint/sequential policies and prospective local receipts",
+      "reported_status": "waiting",
+      "reported_evidence": "[Engine141](https://github.com/reppiks490/Icarus-engine/pull/141), ba05a182; verified implementation, fresh peer review required",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/atlas.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "AT04",
+      "task": "Owner-transferred canonical discovery-registry foundation, Tasks6\u201311",
+      "reported_status": "waiting",
+      "reported_evidence": "[Icarus333](https://github.com/reppiks490/Icarus/pull/333), 39cdb5e8; verified implementation, peer/human integration review required",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/atlas.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "AT02",
+      "task": "Third-worker registration in coordinator, owned by Claude; request via existing inbox",
+      "reported_status": "waiting",
+      "reported_evidence": "20261011T1547Z-atlas-registration-and-scope.md",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/atlas.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "X1-Codex",
+      "task": "Board/replies delivered in138; refreshed reviews and Atlas replies",
+      "reported_status": "in progress",
+      "reported_evidence": "codex/coordination-atlas-resume-20261011",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "IB01",
+      "task": "Beyond-IB intelligence fabric: durable causal event bus, semantic threading, deterministic priority and replay/query over Unified Intelligence",
+      "reported_status": "in progress",
+      "reported_evidence": "chatgpt/beyond-ib-intelligence-fabric-20261012",
+      "updated": "2026-10-12",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "IB04",
+      "task": "Beyond-IB Phase 4A Semantic Work Fabric: machine-verifiable work requests/responses, deterministic lifecycle projection, evidence/delegation/challenge semantics over immutable Intelligence Fabric events",
+      "reported_status": "in progress",
+      "reported_evidence": "chatgpt/beyond-ib-semantic-work-spec-20261013",
+      "updated": "2026-10-13",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "RT01",
+      "task": "Real-price shadow twin v1: default-off mirrored Pulse intents, source-provenanced standard-bar evidence, outcomes and explicit Intelligence Fabric publishing; risk attribution remains follow-up",
+      "reported_status": "waiting",
+      "reported_evidence": "[Icarus361](https://github.com/reppiks490/Icarus/pull/361), exact head `ff684e6ae1062f072e32f7cdb60826ba615044f7`; admin closes are excluded from market evidence, shadow-only state is censored without a fabricated mark, and missing/nonfinite primary marks fail closed with a structured HTTP 409. Focused execution/shadow/evidence tests passed; all listed Linux/Windows config, contract, and engine checks pass. Independent latest-head review pending; draft and execution remains unauthorized.",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "REVIEW01",
+      "task": "Review active leader PRs for concrete correctness gaps and carry fixes through exact-head validation",
+      "reported_status": "in progress",
+      "reported_evidence": "[Icarus367](https://github.com/reppiks490/Icarus/pull/367) `2a6d34e4`: overflow guard/regression, targeted tests and exact-head CI green. [#368](https://github.com/reppiks490/Icarus/pull/368) `25238bc4`: Databento SharedFeed identity fixed, reviewer found no issue, checks green. [#371](https://github.com/reppiks490/Icarus/pull/371) `54c05996`: shutdown now attempts every service and guarantees base server close; focused and contract tests passed, reviewer found no issue, exact-head Linux/Windows checks green. [#372](https://github.com/reppiks490/Icarus/pull/372) `1fc3eb54`: warning/fatal callback handling and legacy cancel compatibility, 15 focused tests and review passed, no checks reported. [#373](https://github.com/reppiks490/Icarus/pull/373) `bda5f20e`: schedule-aware receipt qualification, reviewer found no issue, Linux/Windows engine checks green. Reviewing the latest #361 HTTP 409 refinement now.",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "A200",
+      "task": "Deliver a source-qualified 200-identity manifest and route only qualified bars into Pulse; separate price from analytical context",
+      "reported_status": "in progress",
+      "reported_evidence": "Atlas draft [Icarus #368](https://github.com/reppiks490/Icarus/pull/368), head `25238bc47886cfafea0b203b5ecd5267eded50b8`; 200 candidate rows exist, but catalog reports zero connected/qualified. Databento wrapper identity and session boundary coverage are fixed and all listed checks pass; source/entitlement/session attestations remain unverified, so Pulse routing stays gated.",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "BKR",
+      "task": "Implement broker transports and firm-specific verified rule profiles using the merged capability contract",
+      "reported_status": "waiting",
+      "reported_evidence": "Contract merged #363 (`639a3a51`). [Icarus #372](https://github.com/reppiks490/Icarus/pull/372) `1fc3eb54c0853a9ba76cdb1a4257f015328850cf` adds an explicit-account IBKR paper adapter with warning/fatal callback classification and legacy cancel compatibility; 15 focused tests passed and independent review found no concrete issue. PR remains draft, no CI checks reported, no broker account/session verified, and the other platform transports/firm-specific policy profiles await Atlas's exact source branch and reservation.",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "SYS22",
+      "task": "Reconcile the all-work directive against the 22-system scope summarized in clip a and build verified missing requirements",
+      "reported_status": "in progress",
+      "reported_evidence": "Clip a at 00:56\u201301:03: the 22-system question is explicitly only a question; the later user directive is \u201cYou will start building all of what I asked for.\u201d The assistant then supplies the 22-system/agent/UI scope, but no canonical 22-item user list is visible. The 202-requirement owner register snapshot is Oct 8 and needs later-continuation reconciliation; cross-repo scope mapping is complete, with implementation ownership still unresolved for overlapping lanes",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "VID01",
+      "task": "Transcribe all four owner-provided recordings and preserve timecoded source references for all agents",
+      "reported_status": "done",
+      "reported_evidence": "All four separate 2 fps, 1200 px visible-text logs, coverage/timecode mapping, URL redaction, and terminal-frame checks are on main via `codex/transcripts-followup-main-20261015` commit `7b606594a8e66400a4a2d6dbed36e186c54097f7`. [#169](https://github.com/reppiks490/Icarus-engine/pull/169) had all CI green but duplicated the merged files and was closed as superseded; its branch remains preserved. The earlier #162/#165 transcription remains in history.",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C01",
+      "task": "Reviewed clock validation merged; exact-head Linux/Windows and merged readback pass",
+      "reported_status": "done",
+      "reported_evidence": "[Icarus329](https://github.com/reppiks490/Icarus/pull/329), merged3ae97b4d4f0228e6e815c3dd59cd02e0986c50f0; reviewed head282db0d9",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C02",
+      "task": "Process-safe Brain journal and Unusual Whales intake persistence on current main",
+      "reported_status": "in progress",
+      "reported_evidence": "[Icarus369](https://github.com/reppiks490/Icarus/pull/369), head `3e2ef806`; 113 focused + 62 dependent tests pass locally; exact-head Linux/Windows CI pending, Claude review requested. Original draft #330 and snapshot `4f85e135` preserved",
+      "updated": "2026-10-15",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C03",
+      "task": "Original draft backed up; integrate after C02",
+      "reported_status": "waiting",
+      "reported_evidence": "[Icarus331](https://github.com/reppiks490/Icarus/pull/331), headda3357f155717fc3cf265c2afe10b7893e963060; original609a67c8 preserved",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "J01-consumer",
+      "task": "Implement legacy-four/complete-modern-six consumer; pin v2 fixtures and exact-head test",
+      "reported_status": "waiting",
+      "reported_evidence": "[Icarus339](https://github.com/reppiks490/Icarus/pull/339): Linux/Windows green; peer review and Engine producer contract remain; live gate fails closed",
+      "updated": "2026-10-14",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C04",
+      "task": "Full-population reconciliation delivered; recovery/invalid-result disposition await owner action",
+      "reported_status": "waiting",
+      "reported_evidence": "[owner-actions14](https://github.com/reppiks490/icarus-owner-actions/pull/14): 939 immutable requests; 5 valid BLOCKED, 934 unresolved",
+      "updated": "2026-10-14",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C05/J03",
+      "task": "Useful licensed Unusual Whales source-to-consumer qualification",
+      "reported_status": "planned",
+      "reported_evidence": "Icarus328 intake merged; dependent on C02 integration",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "J02-originals",
+      "task": "Authenticate original archives; lawful restoration, full coverage and point-in-time qualification",
+      "reported_status": "planned",
+      "reported_evidence": "ZIP/ciphertext preservation and owner-actions11 complete within scope",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "M01",
+      "task": "Oct11 continuation delivered; append later receipts without inflated credit",
+      "reported_status": "in progress",
+      "reported_evidence": "[owner-actions12](https://github.com/reppiks490/icarus-owner-actions/pull/12), merged4e2fb9dc; frozen register unchanged",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "M02",
+      "task": "Component acceptance, independent leakage review and traceability/certification",
+      "reported_status": "planned",
+      "reported_evidence": "owner-actions mission; no global success claim",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "S01",
+      "task": "Containment re-review passes; rights and history exposure remain unresolved",
+      "reported_status": "waiting",
+      "reported_evidence": "[Engine135](https://github.com/reppiks490/Icarus-engine/pull/135), approved97677bef; owner-actions12 exposure receipt",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "P01",
+      "task": "Master Pump identity, delivery, restart and truthful observability",
+      "reported_status": "planned",
+      "reported_evidence": "reserve bounded repository-qualified paths first",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "U01",
+      "task": "Original sculpted cosmic choreography, complete opening timing and scoped interaction polish merged; browser and engine verification complete within stated limits",
+      "reported_status": "done",
+      "reported_evidence": "[Icarus337](https://github.com/reppiks490/Icarus/pull/337), head7d502ea3; mergedb6aa7333",
+      "updated": "2026-10-14",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "E01",
+      "task": "Measured architecture experiments and verified transfer",
+      "reported_status": "planned",
+      "reported_evidence": "define hypothesis, baseline and bounded paths first",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "DB84",
+      "task": "Keep original intact; agree P2/P3, defer P1 under no-automation-change limit",
+      "reported_status": "waiting",
+      "reported_evidence": "[Engine84](https://github.com/reppiks490/Icarus-engine/pull/84), open head8ad1d7eb08305011a43d32dc0c696bc0bd69ecdf",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "MAX-Pine",
+      "task": "Parked; preserve source/design/plan and incomplete original transport",
+      "reported_status": "waiting",
+      "reported_evidence": "max-pine-implementation add4d62211aadfa09924db589842c9bb94943c20",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "L5-preserve",
+      "task": "Preserve existing owner loops/settings; no automation mutation",
+      "reported_status": "waiting",
+      "reported_evidence": "historical reported states not freshly verified here",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/chatgpt.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "X1",
+      "task": "Claude \u2194 ChatGPT coordination: this folder, `tools/coordination.py`, coordinator routine",
+      "reported_status": "in progress",
+      "reported_evidence": "claude/verification-conversation-ebkh15",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "L1",
+      "task": "Move `data/panel/*.csv` (raw vendor ETF bars, restored 2026-10-10) out of the public tree into the encrypted vault",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C2",
+      "task": "Win-rate frontier: win rate vs expectancy over TP/SL/time-stop per setup, against a random-entry null",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "P1",
+      "task": "Shadow trader: forward paper trades of the noise-boundary rule on MNQ",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C4",
+      "task": "Regime cartographer: regime labels known in advance; which rules are on today",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C3",
+      "task": "Meta-labeler: take/skip model on the Icarus entry",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "I1",
+      "task": "Red team: look-ahead, Heikin-Ashi fills, roll jumps, cost stress on every claimed result",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "I2",
+      "task": "Fragility scanner: 1,000 small perturbations per setup",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "R1",
+      "task": "Claims referee: ledger of every AI claim, checked against repo and CI",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "T6",
+      "task": "Optional-dependency test skips and cleanup",
+      "reported_status": "planned",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "CL-84",
+      "task": "Port PR 84's useful Databento guards to current `cl_lab` (allowlist, manifest identity, stable corpus fingerprint) as a draft for Codex; PR 84 stays open and intact",
+      "reported_status": "in progress",
+      "reported_evidence": "claude/cl84-port",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "D1",
+      "task": "Order-flow test D1 (`docs/DEPTH_PREREG_D1.md`)",
+      "reported_status": "waiting",
+      "reported_evidence": "needs 20 vaulted NQ MBP-10 days",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "S1",
+      "task": "Data-health sentinel",
+      "reported_status": "done",
+      "reported_evidence": "#131",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "C8",
+      "task": "Daily phone briefing routine",
+      "reported_status": "done",
+      "reported_evidence": "-",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "R2",
+      "task": "`ICARUS_STATE.md` single source of truth",
+      "reported_status": "done",
+      "reported_evidence": "#131",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "F1",
+      "task": "ALFRED vintages requested as of FRED's date (daily CL lab failure)",
+      "reported_status": "done",
+      "reported_evidence": "#132",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    },
+    {
+      "id": "F2",
+      "task": "SEC EDGAR fair-access contact",
+      "reported_status": "done",
+      "reported_evidence": "#133",
+      "updated": "2026-10-11",
+      "source": "reppiks490/Icarus-engine:coordination/board/claude.md",
+      "source_head": "a08aaf0c217f923b474216ded87ade6835d91957",
+      "verified_in_this_pass": false,
+      "ownership_rule": "Historical model assignment superseded by central bus"
+    }
+  ],
+  "open_pull_requests": [
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/43",
+      "title": "docs: record A200 Pulse stopping handoff",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/201",
+      "title": "fix: refresh Sentinel on provider row changes",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/42",
+      "title": "coordination: track Node test coverage repair",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/445",
+      "title": "Refresh broker and prop-firm integration baseline",
+      "disposition": "EXCLUDED_BROKER_CONNECTION"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/443",
+      "title": "A200: preserve history receipts at runtime boundary",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/41",
+      "title": "Coordination: claim A200 to Pulse runtime admission",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/40",
+      "title": "coordination: register subsystem status matrix",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/438",
+      "title": "Separate paper readiness from futures qualification",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/435",
+      "title": "Fail closed outside futures calendar coverage",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/432",
+      "title": "Tests: separate Databento admission from execution qualification",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/415",
+      "title": "Converge canonical futures, discovery, and Brain evidence",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/414",
+      "title": "Canonicalize ICARUS 32-root futures authority",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/28",
+      "title": "Record Yahoo-only A200 probe default",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/19",
+      "title": "Harden coordination compiler freshness",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/186",
+      "title": "Make Sentinel provider health multi-lane accurate",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/173",
+      "title": "Coordination: record browser fix and current reviews",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/387",
+      "title": "Claim GRU holdout before loading terminal rows",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/167",
+      "title": "Coordination: refresh asset, shadow, and transcript status",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/353",
+      "title": "Research-only deep learning challenger for ICARUS",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/148",
+      "title": "RT01 design: real-price shadow execution twin",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/142",
+      "title": "R01-C2 FR-1 code (draft): frontier engine, trial ledger, leakage tests",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/332",
+      "title": "Design: ICARUS Capability & Data Discovery Registry",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/141",
+      "title": "Atlas: advisory finite-model decision value and prospective evidence",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/140",
+      "title": "CL-84 (draft): port PR 84's Databento guards onto current cl_lab",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/330",
+      "title": "DRAFT C02: process-safe Brain journal and intake persistence",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/137",
+      "title": "R01-C2: pre-register FR-1, the win-rate frontier (for Codex review)",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/7",
+      "title": "ICARUS: preserve recovery evidence and correct research assurance status",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/84",
+      "title": "Harden Databento scheduled corpus activation and cost controls",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/295",
+      "title": "Surface private research-satellite Actions allocation hold",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/198",
+      "title": "mobile: ICARUS native app foundation",
+      "disposition": "REVIEW_CURRENT_HEAD_BEFORE_MERGE"
+    }
+  ],
+  "prioritized_next_work": [
+    {
+      "priority": "P0",
+      "task": "Restore coordination validation without rewriting immutable history",
+      "evidence": "validate fails unknown event type None at 20261016T131600Z-claim.json; 4 later events lack phase and use unqualified target strings; summary lacks completed_at_utc/result",
+      "dependency": "PR19 exact head 2bb9e8ed901f0ca5f07ec46f1efcfbf409a37019 changes the schedule test only; immutable-event schema repair remains a distinct unimplemented task. Publish a narrow compiler claim before repair."
+    },
+    {
+      "priority": "P1",
+      "task": "Repair expired positive listing and runtime-feed test fixtures",
+      "delivery": "https://github.com/reppiks490/Icarus/pull/447",
+      "head": "a9217cc16086130a30883162903bccb3f67e9357",
+      "verification": "26 focused tests pass; runtime policy unchanged; hosted CI pending"
+    },
+    {
+      "priority": "P1",
+      "task": "Read final exact-head hosted tests before merge",
+      "evidence": "Local full suite passes2890/3skipped/111subtests. Hosted run39078186866 was in_progress; PR447 remains unmerged."
+    },
+    {
+      "priority": "P1",
+      "task": "Reconcile requirement-level acceptance with newer merged implementations",
+      "constraint": "Do not relabel all 200 DISCOVERED entries as absent implementations; current register is an older evidence index"
+    },
+    {
+      "priority": "P2",
+      "task": "Reclaim unfinished research lanes only after checking current PRs, prerequisites and global trial ledger",
+      "constraint": "No market trials, holdout access, purchases or schedule changes made here"
+    }
+  ],
+  "verification": {
+    "governance_unittest": {
+      "command": "python -m unittest discover -s tests -q",
+      "passed": 47
+    },
+    "mission_validate": {
+      "valid": true,
+      "scope": "OFFLINE_RECORD_CONSISTENCY_ONLY"
+    },
+    "mission_certificate": {
+      "declared_verified_count": 0,
+      "declared_integrated_count": 0,
+      "entire_system_certified": false
+    },
+    "coordination_validate": {
+      "status": "BLOCKED_INTERNAL",
+      "first_error": "unknown event type None: 20261016T131600Z-claim.json",
+      "known_schema_drift_records": 5,
+      "summary_schema_drift": true,
+      "immutable_history_preserved": true
+    },
+    "focused_application": {
+      "passed": 26,
+      "command": ".venv/bin/python -m pytest tests_engine/test_a200_listing_crosswalk.py tests_engine/test_a200_runtime_feed.py -q",
+      "source_head": "a9217cc16086130a30883162903bccb3f67e9357",
+      "hosted_run": 39078186866,
+      "hosted_status_at_observation": "in_progress"
+    },
+    "broader_application": {
+      "status": "PASSED",
+      "command": "timeout 300 .venv/bin/python -m pytest tests_engine -q -o addopts='' --tb=short",
+      "tested_source_head": "a9217cc16086130a30883162903bccb3f67e9357",
+      "remote_branch_bytes_match": true,
+      "passed": 2890,
+      "skipped": 3,
+      "subtests_passed": 111,
+      "seconds": 138.57,
+      "output_sha256": "33be5a95263bc88195b3e949c882cc378b97f519f73910f16eccea3b9e713692",
+      "scope": "Local Linux Python 3.12 and Node 24; installed CI ML/bridge/Databento extras. This is not independent Windows or browser visual verification."
+    },
+    "smoke": {
+      "plant_setup": "PASS in isolated scratch root; no services started",
+      "control_cli_help": "PASS",
+      "doctor": {
+        "ok": true,
+        "fails": 0,
+        "warns": 2,
+        "warning_scope": "No local TradingView CSV exports or local .env in this clean worker; not a federation credential-access claim"
+      }
+    }
+  },
+  "work_packages": [
+    {
+      "id": "WP-preservation",
+      "requirement_ids": [
+        8,
+        9,
+        10,
+        21,
+        51,
+        80,
+        100,
+        161,
+        162,
+        183,
+        202
+      ],
+      "priority": "P0",
+      "dependencies": [],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Restore exact hashed artifacts without public disclosure; record source identity, encryption constraints and original/reacquired distinction."
+    },
+    {
+      "id": "WP-governance",
+      "requirement_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        59,
+        60,
+        74,
+        85,
+        88,
+        91,
+        93,
+        107,
+        160,
+        201
+      ],
+      "priority": "P1",
+      "dependencies": [],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Compare exact pre/post authority and branch state; assert no scheduler, broker, deployment, spend or protected-holdout expansion."
+    },
+    {
+      "id": "WP-inventory",
+      "requirement_ids": [
+        6,
+        7,
+        32,
+        43,
+        57,
+        61,
+        76,
+        90,
+        92,
+        159,
+        175,
+        176,
+        177,
+        178,
+        190
+      ],
+      "priority": "P1",
+      "dependencies": [],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Enumerate accessible surfaces, canonical owners and real producer-consumer dependencies at pinned HEAD; inaccessible scope remains explicit."
+    },
+    {
+      "id": "WP-data",
+      "requirement_ids": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        55,
+        81,
+        82,
+        94,
+        95,
+        96,
+        97,
+        99,
+        149,
+        151,
+        164,
+        179,
+        180,
+        181,
+        182,
+        184,
+        185
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "WP-inventory",
+        "WP-preservation"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Reconcile every eligible partition and original hash, page/row/byte/time dimension; verify rights and consumer read-back; unknown denominator prohibits completeness."
+    },
+    {
+      "id": "WP-hybrid",
+      "requirement_ids": [
+        23,
+        24,
+        25
+      ],
+      "priority": "P2",
+      "dependencies": [
+        "WP-inventory"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Match immutable request/result identity and substantive schema evidence oldest-first; test replay/conflicts without scheduler changes."
+    },
+    {
+      "id": "WP-repair",
+      "requirement_ids": [
+        26,
+        27,
+        28,
+        53,
+        54,
+        56,
+        101,
+        102,
+        163,
+        165,
+        167
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "WP-inventory"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Reproduce current-HEAD failure, test isolated correction and negative paths; require exact-commit CI, preservation and affected-consumer proof."
+    },
+    {
+      "id": "WP-evolution",
+      "requirement_ids": [
+        29,
+        30,
+        31,
+        50,
+        58,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        75,
+        86,
+        87,
+        106,
+        158,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        186,
+        187,
+        188,
+        189
+      ],
+      "priority": "P4",
+      "dependencies": [
+        "WP-repair",
+        "WP-data"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Pin baseline and hypothesis; reproduce before/after correctness, resources, cost, negative results and compatible rollback before promotion."
+    },
+    {
+      "id": "WP-research",
+      "requirement_ids": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        83,
+        84,
+        103,
+        139,
+        141,
+        147,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157
+      ],
+      "priority": "P4",
+      "dependencies": [
+        "WP-data"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Pinned authorized point-in-time corpus, protected splits, realistic costs, leakage negatives, reproducible OOS/robustness and independent assurance; research only."
+    },
+    {
+      "id": "WP-pump",
+      "requirement_ids": [
+        39,
+        40,
+        41,
+        42,
+        44,
+        98,
+        150,
+        166
+      ],
+      "priority": "P3",
+      "dependencies": [
+        "WP-data",
+        "WP-repair"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Trace authentic source artifacts to actual consumers; verify ACK, failure isolation, idempotent effects, restart, quarantine and schema compatibility."
+    },
+    {
+      "id": "WP-ui",
+      "requirement_ids": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        104,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        136,
+        137,
+        138,
+        140,
+        142,
+        143,
+        144,
+        145,
+        146,
+        148,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198
+      ],
+      "priority": "P3",
+      "dependencies": [
+        "WP-pump",
+        "WP-research"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Test central math/source/time/coverage/uncertainty/veto semantics and real API-to-rendered UI including stale/unknown/errors, drill-down, accessibility, reduced motion and performance."
+    },
+    {
+      "id": "WP-security",
+      "requirement_ids": [
+        52,
+        89
+      ],
+      "priority": "P0",
+      "dependencies": [
+        "WP-inventory"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Review history, logs, public artifacts, rights, workflow token and untrusted inputs with redacted findings; owner-mediated credential/privilege changes."
+    },
+    {
+      "id": "WP-observability",
+      "requirement_ids": [
+        77,
+        78,
+        79,
+        105,
+        108,
+        134,
+        135
+      ],
+      "priority": "P3",
+      "dependencies": [
+        "WP-inventory",
+        "WP-pump"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "Derive measures from justified workload-specific denominators and pinned evidence; prevent heartbeat/activity from counting as useful work or hiding critical failures."
+    },
+    {
+      "id": "WP-mission",
+      "requirement_ids": [
+        62,
+        63,
+        64,
+        73,
+        130,
+        131,
+        132,
+        133,
+        199,
+        200
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "WP-inventory"
+      ],
+      "state": "DISCOVERED",
+      "owner": "UNASSIGNED_DOMAIN_OWNER",
+      "acceptance": "All 202 unique requirements plus new discoveries remain represented, with explicit owners, dependencies, package acceptance and scoped evidence; reject unsupported completion."
+    }
+  ],
+  "coordination_record_errors": [
+    {
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200300Z-heartbeat.json",
+      "error": "missing phase: coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200300Z-heartbeat.json"
+    },
+    {
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200100Z-release.json",
+      "error": "missing phase: coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200100Z-release.json"
+    },
+    {
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200200Z-schema-correction.json",
+      "error": "missing phase: coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200200Z-schema-correction.json"
+    },
+    {
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200000Z-update.json",
+      "error": "missing phase: coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200000Z-update.json"
+    },
+    {
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json",
+      "error": "unknown event type None: coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json"
+    },
+    {
+      "path": "coordination/summaries/codex-20261016-ui-pointer-contract-fix.json",
+      "error": "timestamp must be a non-empty ISO-8601 string"
+    }
+  ]
+}
