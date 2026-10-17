@@ -3229,6 +3229,31 @@
         "hosted_run": 39079763194,
         "conclusion": "success"
       }
+    },
+    {
+      "observed_at_utc": "2026-10-17T23:57:42.790544+00:00",
+      "owner_direction": "Keep working in parallel across all tasks",
+      "parallel_execution": "Parent repairs futures risk; two short-lived reviewers independently inspect futures/count and frontier research; research reviewer continues assigned synthetic repairs. External hub/GRU peer reservations preserved.",
+      "futures_integration": {
+        "head": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+        "pr": 450,
+        "tested_code": "e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+        "full_local_passed": 2983,
+        "subtests_passed": 111,
+        "skipped": 3,
+        "risk_review": "CLEAR",
+        "hosted_run": 39080943838,
+        "hosted_status": "in_progress",
+        "merged": false
+      },
+      "connected_services": {
+        "causal_router_tests": 50,
+        "causal_router_subtests": 42,
+        "replay_digest_match": true,
+        "csv_evidence_tests": 17
+      },
+      "research_review": "12 synthetic regressions reproduced; mechanical repairs in progress; preregistration approval and real-data gates preserved",
+      "requirement_states_changed": false
     }
   ]
 }

@@ -1231,25 +1231,34 @@
   },
   "integration_delivery": {
     "pr": "https://github.com/reppiks490/Icarus/pull/450",
-    "head": "4f6ef403ab187bccb57a64800638a8675a1af128",
-    "tested_code": "a017008717d4ed130e9bfe58edb55e7d127a828f",
-    "difference_since_code_test": "documentation and Windows test selection only; runtime Python source unchanged",
-    "full_local_passed": 2975,
+    "head": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+    "tested_code": "e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+    "difference_since_code_test": "verification documentation only",
+    "full_local_passed": 2983,
     "full_local_skipped": 3,
     "subtests_passed": 111,
-    "seconds": 147.46,
+    "seconds": 144.57,
     "draft": true,
+    "independent_review": {
+      "initial_result": "IMPORTANT metals cluster risk regression",
+      "repaired_source_result": "CLEAR",
+      "reviewed_source": "e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+      "reviewer_tests_passed": 88,
+      "reviewer_subtests_passed": 21
+    },
+    "risk_regressions_failed_before_fix": 4,
+    "focused_tests_passed": 174,
+    "focused_subtests_passed": 21,
     "hosted_verification": {
-      "run_id": 39079800021,
-      "source_head": "4f6ef403ab187bccb57a64800638a8675a1af128",
-      "linux": "success",
-      "windows_with_added_modules": "success",
-      "independent_semantic_review": "pending",
+      "run_id": 39080943838,
+      "source_head": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+      "status": "in_progress",
+      "conclusion": null,
       "main_merge": "not performed"
     },
-    "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546",
+    "log_sha256": "abf138788e2d577668d0c7059ef2c0ea7cc986e51951d5be5c9b185512aa41a6",
     "windows_added_test_modules": 7,
-    "windows_added_cases_collected": 110
+    "windows_added_cases_collected_before_risk_tests": 110
   },
   "coordination_count_delivery": {
     "pr": "https://github.com/reppiks490/icarus-owner-actions/pull/51",
@@ -1259,7 +1268,8 @@
     "hosted_run": 39079763194,
     "hosted_conclusion": "success",
     "change": "Headline current3/stale11/nonterminal14; machine schema and histories preserved",
-    "merged": false
+    "merged": false,
+    "independent_review": "CLEAR"
   },
   "canonical_repository_registry": {
     "repository": "reppiks490/Icarus-engine",
@@ -1274,5 +1284,69 @@
       "reppiks490/icarus-owner-actions"
     ],
     "connected_twelve_system_hub": "Hub/GRU integration is the active peer lane; this PR audit does not independently certify its subsystem implementations."
+  },
+  "prior_integration_checkpoints": [
+    {
+      "pr": "https://github.com/reppiks490/Icarus/pull/450",
+      "head": "4f6ef403ab187bccb57a64800638a8675a1af128",
+      "tested_code": "a017008717d4ed130e9bfe58edb55e7d127a828f",
+      "difference_since_code_test": "documentation and Windows test selection only; runtime Python source unchanged",
+      "full_local_passed": 2975,
+      "full_local_skipped": 3,
+      "subtests_passed": 111,
+      "seconds": 147.46,
+      "draft": true,
+      "hosted_verification": {
+        "run_id": 39079800021,
+        "source_head": "4f6ef403ab187bccb57a64800638a8675a1af128",
+        "linux": "success",
+        "windows_with_added_modules": "success",
+        "independent_semantic_review": "pending",
+        "main_merge": "not performed"
+      },
+      "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546",
+      "windows_added_test_modules": 7,
+      "windows_added_cases_collected": 110
+    }
+  ],
+  "parallel_review_checkpoint": {
+    "observed_at_utc": "2026-10-17T23:57:42.790544+00:00",
+    "engine_frontier": {
+      "prerequisite_pr": 137,
+      "draft_code_pr": 142,
+      "reviewed_head": "dfb18e96805faa905b687eaa4633d349a9f82eb2",
+      "synthetic_regressions_reproduced": 12,
+      "repair_status": "in_progress",
+      "findings": [
+        "causal input provenance missing from data identity",
+        "historical trial undercount",
+        "concurrent duplicate ledger append",
+        "Holm missing-p family shrinkage",
+        "mixed-contract fill contamination"
+      ],
+      "scientific_parameters_changed": false,
+      "complete_day_policy": "unchanged; explicit design approval question",
+      "real_data_run": false
+    },
+    "connected_service_assurance": {
+      "causal_router": {
+        "head": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+        "tests_passed": 50,
+        "subtests_passed": 42,
+        "synthetic_replay_steps": 240,
+        "replay_count": 2,
+        "processed_events_per_replay": 489,
+        "matching_result_digest": "4e7af5620b3c94c73ba856f1f04f008ab9d8dbbce071a5e794cd363c4fec5367",
+        "verified_replay": true,
+        "authority": "research_only",
+        "execution_allowed": false,
+        "market_validation": false
+      },
+      "csv_evidence_lab": {
+        "head": "5929f05396c0d63663ef876b92bc00119d2f3923",
+        "tests_passed": 17,
+        "authority": "structural diagnostics only; no data admission or promotion"
+      }
+    }
   }
 }

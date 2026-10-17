@@ -1,5 +1,15 @@
 # Icarus task review and first repair tranche — 2026-10-17
 
+## Parallel review and repair checkpoint
+
+The owner renewed parallel work across all tasks. The parent used two short-lived independent reviewers and retained the external hub/GRU peer's separate reservations. This checkpoint supersedes the earlier review-pending state below; it does not replace the dated evidence.
+
+Independent futures review found a production regression missed by the original suite: catalog `metal` had replaced the established `metals` portfolio-budget key. Four failing cases proved that full/micro gold and silver combinations bypassed the $500,000 cap. The repair restores the risk key while preserving the catalog classification. All four combinations reject $600,000 and allow exactly $500,000. Source `e2fff7f379dbb278477a0cda9d8b260c16f51c87` passes **2,983 tests, 111 subtests, with 3 skips**, in 144.57 seconds. Independent re-review is **CLEAR**. Published #450 head `63e238f4aedf06744b0581281727cdafb7f0e0a1` adds only verification documentation; fresh hosted run `39080943838` is in progress. Older green `39079800021` predates this risk repair. The PR remains draft until current checks finish; no main merge occurred. Count PR #51 independently reviewed CLEAR.
+
+Independent synthetic review of Engine draft #142 at `dfb18e96805faa905b687eaa4633d349a9f82eb2` reproduced causal input identity omissions, historical trial undercount, concurrent ledger duplication, missing-p Holm family shrinkage and mixed-contract fill contamination. Twelve new regressions fail before repair. A worker is implementing bounded mechanical repairs and fail-closed historical accounting; it is not running real market data. Preregistration #137 approval/merge, scientific parameters and protected splits remain unchanged. The complete-day policy remains an explicit design/approval question.
+
+Connected-service verification is source-pinned: causal-router main `cba6e187589853b69d80ee74a63c323b2564ecb1` passes 50 tests and 42 subtests. Two seed17/240-step synthetic runs each process489 events, match digest `4e7af5620b3c94c73ba856f1f04f008ab9d8dbbce071a5e794cd363c4fec5367`, and pass journal replay verification with research-only/non-execution flags. CSV Evidence Lab main `5929f05396c0d63663ef876b92bc00119d2f3923` passes17 tests. These checks provide synthetic/structural assurance, not market validation or data promotion. No requirement receives new VERIFIED status from this checkpoint.
+
 ## Continued three-worker pass
 
 Owner direction: continue across the federation; only this worker and two other agents are currently working. Historical stale sessions are stopping points, not permanent reservations. This worker retains inventory and futures verification; the active hub/GRU peer's reserved files remain separate. No extra worker was spawned.
