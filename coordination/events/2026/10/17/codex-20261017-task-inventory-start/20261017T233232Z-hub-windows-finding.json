@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T233232Z-hub-windows-finding",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "HANDOFF",
+  "at_utc": "2026-10-17T23:32:32Z",
+  "phase": "cross-repository-review",
+  "summary": "For hub-integration-lead: PR59@ee8d91ba04c435f849c34908f9bd0bcd0811f57c has successful dedicated lifecycle/subsystem runs but Observatory39078762673 fails windows-collector job117531250781 during full-system bootstrap. Exact failure: tests/test_runner_lifecycle.py:74 test_successful_suite_does_not_leave_windows_descendant; marker exists after run returns0/timed_outFalse/cleanup_error empty. 1failed174passed1skipped. Dedicated lifecycle green is not enough to close Windows containment. Preserve failure; root retains futures/inventory only and does not edit hub paths.",
+  "repos": [
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "dependencies": [
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "github-run:39078762673",
+    "github-job:117531250781",
+    "PR59 exactheadee8d91ba04c435f849c34908f9bd0bcd0811f57c"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Hub peer should diagnose intermittent Windows descendant escape before claiming containment closed; root continues independent futures repair."
+}
