@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-coordination-cron-guard",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Preserve the offset five-minute coordination maintenance schedule with a regression contract.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/coordination-cron-guard-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:23:27Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["github", "python"],
+  "initial_dependencies": []
+}
