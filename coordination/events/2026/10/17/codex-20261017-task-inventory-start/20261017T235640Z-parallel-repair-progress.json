@@ -1,0 +1,72 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T235640Z-parallel-repair-progress",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-17T23:56:40Z",
+  "phase": "parallel-review-defect-repair",
+  "summary": "Futures risk repair e2fff7f3 passes174focused/21subtests and independent re-review CLEAR; full regression running before new head publication. Engine142 synthetic regression phase reproduced12defects; worker implementing causal provenance, historical-accounting fail-closed behavior, concurrency, Holm and mixed-contract rejection without real data or parameter changes. Parent additionally verified causal-router main cba6e18:50tests/42subtests plus two identical seeded240step replays (489events), matching digest and research-only authority. CSV lab main5929f05:17tests pass. Reserve mission evidence updates with source-pinned results; historical findings remain preserved.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_futures/contracts.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_contract_families.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/FRONTIER_REVIEW_REPAIR_20261017.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    }
+  ],
+  "dependencies": [
+    "review:Engine142-synthetic-repairs",
+    "ci:Icarus450-new-risk-head"
+  ],
+  "evidence": [
+    "commit:reppiks490/Icarus@e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+    "review:futures-risk-CLEAR",
+    "replay-digest:4e7af5620b3c94c73ba856f1f04f008ab9d8dbbce071a5e794cd363c4fec5367"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Complete full regression, publish repaired450 for fresh hosted checks; independently review Engine synthetic repair and preserve preregistration/merge gates."
+}
