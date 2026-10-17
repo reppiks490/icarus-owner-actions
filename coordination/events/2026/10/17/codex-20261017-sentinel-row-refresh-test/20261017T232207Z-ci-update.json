@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232207Z-sentinel-row-refresh-ci-update",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "at_utc": "2026-10-17T23:22:07Z",
+  "type": "UPDATE",
+  "phase": "exact-head-ci-passed",
+  "summary": "Icarus-engine PR #201 exact-head CI passed on commit 37c6817ccb903abc15e0fa554ce60b654235ee64. All six workflow jobs succeeded. The owner-actions claim remains an open follow-up PR based on validator PR #47.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    }
+  ],
+  "dependencies": ["reppiks490/Icarus-engine#201", "reppiks490/icarus-owner-actions#47", "reppiks490/icarus-owner-actions#48"],
+  "evidence": [
+    "engine-run:39078660950:success-all-six-jobs",
+    "engine-focused-tests:9-passed",
+    "coordination-claim-pr:reppiks490/icarus-owner-actions#48:open-head-b72c3bd266a95303fff4b4f60bd33ca04a5f3e82"
+  ],
+  "next_action": "Wait for the owner-actions claim PR #48 to become mergeable after validator PR #47; do not merge Icarus-engine PR #201 from this lane.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

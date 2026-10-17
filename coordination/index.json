@@ -765,9 +765,9 @@
     "active": 14,
     "collisions": 0,
     "stale": 11,
-    "terminal": 20
+    "terminal": 21
   },
-  "generated_at_utc": "2026-10-17T23:23:25.705768Z",
+  "generated_at_utc": "2026-10-17T23:23:42.274360Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -1299,6 +1299,32 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-uw-pulse-consumption-audit",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "Codex",
+      "branch": "codex/sentinel-row-refresh-fingerprint",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "merged:reppiks490/Icarus-engine#201",
+        "merged:reppiks490/icarus-owner-actions#47"
+      ],
+      "goal": "Add a regression test proving provider row-count changes trigger a Sentinel health report refresh even when provider verdicts remain unchanged.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-17T23:23:29Z",
+      "latest_summary": "Completed the Sentinel provider-row refresh regression test on Icarus-engine PR #201. The test failed against the pre-fix base and passed with the fix. PR #201 merged at 8e9f8f42e1c4d9f6a8c21569d948c5df90b20ca6 after all six exact-head jobs passed.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "complete",
+      "pr": 201,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261017-sentinel-row-refresh-test",
       "stale": false,
       "status": "complete"
     }

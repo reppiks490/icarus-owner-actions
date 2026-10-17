@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231951Z-sentinel-row-refresh-test-claim",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "at_utc": "2026-10-17T23:19:51Z",
+  "type": "CLAIM",
+  "phase": "regression-test",
+  "summary": "Claim the isolated Sentinel regression test path for PR #201. Preserve the existing implementation branch; add one test that changes provider rows while keeping the verdict stable and verifies that `changed()` detects the change.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    }
+  ],
+  "dependencies": ["reppiks490/Icarus-engine#201", "reppiks490/icarus-owner-actions#47"],
+  "evidence": ["PR #201 exact-head workflow run 38959527020 succeeded; targeted row-change regression is absent from the existing tests."],
+  "next_action": "Publish this claim against the validator compatibility branch, then add and run the focused Sentinel regression test on PR #201's existing branch.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

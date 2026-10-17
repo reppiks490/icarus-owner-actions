@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232329Z-sentinel-row-refresh-test-complete",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "at_utc": "2026-10-17T23:23:29Z",
+  "type": "COMPLETE",
+  "phase": "complete",
+  "summary": "Completed the Sentinel provider-row refresh regression test on Icarus-engine PR #201. The test failed against the pre-fix base and passed with the fix. PR #201 merged at 8e9f8f42e1c4d9f6a8c21569d948c5df90b20ca6 after all six exact-head jobs passed.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/codex-20261017-sentinel-row-refresh-test.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261017-sentinel-row-refresh-test.json"
+    }
+  ],
+  "dependencies": ["merged:reppiks490/Icarus-engine#201", "merged:reppiks490/icarus-owner-actions#47"],
+  "evidence": [
+    "Icarus-engine-PR-201-head:37c6817ccb903abc15e0fa554ce60b654235ee64",
+    "Icarus-engine-PR-201-merge:8e9f8f42e1c4d9f6a8c21569d948c5df90b20ca6",
+    "exact-head-workflow-run:39078660950:all-six-jobs-passed",
+    "focused-tests:python -m pytest tests/test_data_sentinel.py -q:9-passed",
+    "base-regression-control:75be5aaf802067c48f0fdbef02049bf8bcc63228:failed-as-expected",
+    "coordination-claim-PR-48:rebase-required-on-latest-main"
+  ],
+  "next_action": "Release the claim after this completion record is merged; no further Sentinel regression work is pending in this session.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

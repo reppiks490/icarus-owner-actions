@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261017-sentinel-row-refresh-test",
+  "completed_at_utc": "2026-10-17T23:23:29Z",
+  "result": "complete",
+  "summary": "Added a regression for Sentinel report refreshes when provider row counts change but verdict and generated timestamp remain unchanged. The test failed on Icarus-engine base 75be5aaf and passed with PR #201's row-count fingerprint. PR #201 merged at 8e9f8f42 after six exact-head checks passed.",
+  "evidence": [
+    "Icarus-engine PR #201 head 37c6817ccb903abc15e0fa554ce60b654235ee64",
+    "Icarus-engine PR #201 merge 8e9f8f42e1c4d9f6a8c21569d948c5df90b20ca6",
+    "workflow run 39078660950: six jobs succeeded",
+    "python -m pytest tests/test_data_sentinel.py -q: 9 passed",
+    "base control failed as expected on 75be5aaf802067c48f0fdbef02049bf8bcc63228",
+    "coordination validation/compilation was rerun on current main after PR #47 merged"
+  ],
+  "next_agent_actions": [],
+  "status_notes": [
+    "No engine code was changed during coordination refresh.",
+    "Live broker arming remains disabled and was outside this task."
+  ]
+}
