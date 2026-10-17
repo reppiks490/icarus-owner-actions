@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261017-stop-point-branch-refresh",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Add the newly claimed coordination migration branch to the stopping-point handoff so the next agent does not duplicate it.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "coordination/stop-point-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:19:53Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github"
+  ],
+  "initial_dependencies": [
+    "session:codex-20261017-legacy-event-normalization",
+    "branch:codex/legacy-event-normalization-20261017"
+  ]
+}
