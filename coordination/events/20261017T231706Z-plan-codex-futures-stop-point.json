@@ -1,0 +1,29 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231706Z-plan-codex-futures-stop-point",
+  "session_id": "codex-20261017-futures-stop-point",
+  "at_utc": "2026-10-17T23:17:06Z",
+  "type": "PLAN",
+  "phase": "handoff-documentation",
+  "summary": "Document the verified stopping point and next-agent steps for futures PRs #415/#432/#435/#438, including branch relationships, CI evidence, unresolved review/merge decisions, and live-broker constraint.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "docs/agent-handoffs/futures-stop-point-2026-10-17.md",
+    "coordination/sessions/codex-20261017-futures-stop-point.json",
+    "coordination/events/20261017T231706Z-plan-codex-futures-stop-point.json",
+    "coordination/summaries/codex-20261017-futures-stop-point.json"
+  ],
+  "dependencies": [
+    "Current PR/base state and comments for #415/#432/#435/#438",
+    "Exact workflow runs for #432/#435/#438"
+  ],
+  "evidence": [
+    "All three follow-up PRs were previously confirmed with green Linux/Windows exact-head runs"
+  ],
+  "next_action": "Recheck GitHub heads and workflow runs; write a repository handoff; publish a HANDOFF event and durable summary.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
