@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232008Z-update-branch-owner",
+  "session_id": "chatgpt-20261017-stop-point-branch-refresh",
+  "at_utc": "2026-10-17T23:20:08Z",
+  "type": "UPDATE",
+  "phase": "handoff-refresh",
+  "summary": "A separate active session has claimed the immutable legacy-event normalization repair. The handoff now directs subsequent agents to avoid duplication and review that branch once it is rebased and published.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md"
+  ],
+  "dependencies": [
+    "session:codex-20261017-legacy-event-normalization",
+    "branch:codex/legacy-event-normalization-20261017"
+  ],
+  "evidence": [
+    "branch head b48f5723d99629c61f4f9b6e6128489d7f6a8b78",
+    "compare: 3 ahead/6 behind at observation time"
+  ],
+  "next_action": "Close the documentation refresh; next worker should inspect the migration PR at its exact updated head.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
