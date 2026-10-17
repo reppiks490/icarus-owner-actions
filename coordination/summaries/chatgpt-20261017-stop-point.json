@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261017-stop-point",
+  "completed_at_utc": "2026-10-17T23:18:40Z",
+  "result": "complete",
+  "evidence": [
+    "Published human-readable handoff at coordination/handoffs/2026-10-17-chatgpt-stop-point.md.",
+    "Prior build/test evidence is linked at coordination/summaries/chatgpt-20261016-current-head-builds.json and is explicitly labeled historical (2026-10-16 heads).",
+    "PR #141 exact-head review recorded at GitHub review 5547580914; PR remains draft at the checked SHA ba05a182b4aa947d81b26b6c4063e33adec9f147.",
+    "Current owner-actions main validation was rerun and fails on immutable malformed event coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json.",
+    "Current active inventory work is codex-20261017-task-inventory-start; its A200 test claims and PR #447 are called out as non-overlap boundaries."
+  ],
+  "next_agent_actions": [
+    "Start from fresh main heads; earlier local build/test results do not certify 2026-10-17 main.",
+    "Resume the task inventory session only after reading current coordination state and repo AGENTS instructions.",
+    "Coordinate a non-destructive repair for coordination validation; preserve the malformed historical event and respect PR #19 compiler ownership.",
+    "Keep live broker arming disabled; distinguish software pass from runtime/data/strategy/user-machine readiness."
+  ],
+  "status_notes": [
+    "No source code was changed in this session.",
+    "Icarus overall program and remaining task inventory are not complete.",
+    "The handoff covers this chat's bounded work only; its temporary worktrees do not persist."
+  ]
+}
