@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T123000Z-a200-provider-history-ui-plan",
+  "session_id": "codex-20261016-a200-provider-history-ui",
+  "at_utc": "2026-10-16T12:30:00Z",
+  "type": "PLAN",
+  "phase": "provider-choice-ui",
+  "summary": "Replace the Market Data history preview\u2019s hardcoded Yahoo selection with a per-instrument chooser populated from declared provider candidates. Keep fetch explicitly user-triggered; render provider-specific missing/unavailable and receipt results. Do not add automatic collection, raw-bar persistence, Pulse/runtime integration, or change identity/entitlement qualification.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/market-data-ui.js",
+    "tests_engine/test_dashboard_js.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market-data-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_dashboard_js.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/codex-20261016-a200-provider-history-ui.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-history-ui/20261016T123000Z-a200-provider-history-ui-plan.json"
+    }
+  ],
+  "dependencies": [
+    "A200 backend validates declared providers and constructs only requested provider",
+    "runtime trace confirmed history endpoint does not feed Pulse or runtime"
+  ],
+  "evidence": [
+    "independent read-only trace found no catalog history to Pulse/runtime ingress",
+    "market-data-ui.js currently hardcodes provider yahoo",
+    "server history endpoint supports declared catalog provider selection",
+    "no provider request has been made"
+  ],
+  "next_action": "Inspect UI and endpoint contract, implement explicit provider choice and provider-specific result display, add UI contract coverage, then run exact-head checks.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

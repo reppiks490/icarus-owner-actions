@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T194700Z-a200-provider-evidence-refresh",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "at_utc": "2026-10-16T19:47:00Z",
+  "type": "UPDATE",
+  "phase": "provider-qualification-and-runtime-connection",
+  "summary": "Refreshed canonical provider and PR state after A200 crosswalk merge. PR #421 merged as 805764f, PR #423 merged as 7eb0a88, and stacked PR #424 closed unmerged. PR #440 remains open and owns runtime.py; PR #415 remains open and owns assets.py. Current provider receipts still do not qualify A200: Massive has 20k generic rows but asset_datasets_collected=0; FMP has 0 rows in its latest generic receipt and 85 endpoint denials. Engine's external data fabric has EODHD 1-year daily bars for 10 A200 symbols, a partial research sample only. Icarus A200 ledger remains Yahoo responses 200/200 but PROVISIONAL identity, UNKNOWN entitlement, zero historical qualification, FMP NOT_CONFIGURED. Public listing identity crosswalk remains separate at 200/200.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine"],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#440 runtime.py feed freshness integration",
+    "pr:reppiks490/Icarus#415 assets.py registry integration",
+    "provider-evidence:A200 authoritative mapping and product entitlement",
+    "provider-evidence:licensed durable 200-instrument history and qualified live feed"
+  ],
+  "evidence": [
+    "Icarus main 085c655 includes PR #428 crosswalk merge 6e40d0b and remains 200/200 public listing match with all provider/operational qualification counts zero",
+    "Engine Sentinel current generated_at 2026-10-16T13:08:43Z: Massive DEGRADED/20k rows and FMP DEGRADED/0 rows; latest collection receipts are more recent and still show no A200 asset datasets",
+    "Engine external_data_fabric EODHD eod_1y sample: 10 symbols with 251 daily rows each from 2025-10-16 through 2026-10-15; insufficient for 200-instrument qualification and no EODHD live entitlement",
+    "A200 hybrid history ledger 2026-10-16T06:17:50Z: Yahoo 200 responses but PROVISIONAL identity/UNKNOWN entitlement/false history qualification; FMP NOT_CONFIGURED 200"
+  ],
+  "next_action": "After PR #440 releases runtime.py and PR #415 releases assets.py, use only licensed, authoritative per-instrument mapping and entitlement evidence to build the receipt-preserving bridge. Keep the EODHD 10-symbol sample visibly partial and unqualified; do not infer 200-asset or live readiness from it.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

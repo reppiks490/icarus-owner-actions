@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T122100Z-a200-calendar-timezone-plan",
+  "session_id": "codex-20261016-a200-calendar-timezone",
+  "at_utc": "2026-10-16T12:21:00Z",
+  "type": "PLAN",
+  "phase": "calendar-timezone-receipt-wiring",
+  "summary": "Wire a timezone identifier from the authoritative calendar into A200 history receipts. The new cadence validator on main requires this evidence to admit genuine DST-shortened daily-or-slower schedules; the adapter currently omits the field. Preserve fail-closed identity, entitlement, schedule, and broker controls.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/market_universe_adapter.py",
+    "icarus_engine/calendar.py",
+    "tests_engine/test_market_universe.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market_universe_adapter.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/calendar.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_market_universe.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/codex-20261016-a200-calendar-timezone.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-calendar-timezone/20261016T122100Z-a200-calendar-timezone-plan.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#413 merged",
+    "main:reppiks490/Icarus@98350832734df74b004e99d09dd34daa0a8ef5ef"
+  ],
+  "evidence": [
+    "main cadence change adds calendar_timezone to BarBatchReceipt but MarketUniverseAdapter does not pass it",
+    "independent review confirmed the wiring caveat; current A200 daily schedule has no DST-weekend adjacent shortened gap, so no current unsafe qualification path"
+  ],
+  "next_action": "Expose timezone name through the authoritative calendar and pass it through adapter receipts; add adapter-path regression coverage and exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

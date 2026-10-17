@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/a200-provider-history-ui-20261016",
+  "started_at_utc": "2026-10-16T12:53:09Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "a200",
+    "public-listing-crosswalk",
+    "market-data-ui"
+  ],
+  "initial_dependencies": [
+    "origin/main 3c32947f516156c95eee1df9b8ec8157bf346bb1",
+    "PR #415 owns runtime asset registry paths",
+    "PR #421 and PR #424 own runtime feed/server integration paths",
+    "provider entitlement and license evidence remains external"
+  ]
+}

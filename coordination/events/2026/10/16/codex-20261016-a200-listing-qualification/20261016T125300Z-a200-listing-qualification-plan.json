@@ -1,0 +1,58 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T125300Z-a200-listing-qualification-plan",
+  "session_id": "codex-20261016-a200-listing-qualification",
+  "at_utc": "2026-10-16T12:53:00Z",
+  "type": "PLAN",
+  "phase": "listing-identity-evidence",
+  "summary": "Verify the 200 catalog rows against fresh Nasdaq screener source records and add a source-hash-anchored listing-identity crosswalk that the Market Data view can report separately from provider mapping, account entitlement, bar qualification, runtime connection, and strategy qualification. Do not touch assets.py, runtime.py, server.py, or bar_receipts.py while active PRs own those integration paths; do not issue new provider OHLC calls.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/a200_listing_crosswalk.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200-listing-crosswalk.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market_universe.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market-data-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_listing_crosswalk.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-listing-qualification/20261016T125300Z-a200-listing-qualification-plan.json"
+    }
+  ],
+  "dependencies": [
+    "Icarus main 3c32947f516156c95eee1df9b8ec8157bf346bb1",
+    "PR #415 asset registry integration remains active",
+    "PRs #421/#424 runtime/server integration remains active"
+  ],
+  "evidence": [
+    "Fresh Nasdaq screener cross-check found all 200 existing venue/symbol/name records",
+    "Latest A200 Yahoo receipts report matching ticker echoes but provisional provider identity and unknown entitlement",
+    "Canonical Engine data-health evidence shows Massive has no A200 asset datasets and FMP endpoints are plan-denied",
+    "Independent runtime trace found no A200 catalog-to-Pulse feed path"
+  ],
+  "next_action": "Implement and verify listing-only crosswalk evidence; leave data-feed qualification and Pulse connection fail-closed pending per-provider mapping, product entitlement, licensed durable bar receipts, and non-overlapping runtime integration.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

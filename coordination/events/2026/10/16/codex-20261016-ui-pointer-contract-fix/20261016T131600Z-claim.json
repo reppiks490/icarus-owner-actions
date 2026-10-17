@@ -23,5 +23,17 @@
   "collaborators": [
     "codex-20261016-phone-command-center-site"
   ],
-  "status": "active"
+  "status": "active",
+  "type": "CLAIM",
+  "at_utc": "2026-10-16T13:16:00Z",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "tests_engine/browser_depth.cjs"
+  ],
+  "cooperates_with": [
+    "codex-20261016-phone-command-center-site"
+  ],
+  "phase": "verification"
 }
