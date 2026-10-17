@@ -132,53 +132,54 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "icarus_engine/a200_runtime_bridge.py",
-        "tests_engine/test_a200_runtime_bridge.py",
-        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+        "icarus_engine/server.py",
+        "icarus_engine/dashboard.html",
+        "icarus_plant/cli.py"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/a200_runtime_bridge.py",
+          "path": "icarus_engine/server.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
+          "path": "icarus_plant/cli.py",
           "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#443@0e772ec4541cc3b26e34da13de3a7832a614e3c0 exact-head run 38959236508",
-        "A200 provider mapping, entitlement, qualified history and live feed evidence"
+        "pr:reppiks490/Icarus#443@0e772ec4541cc3b26e34da13de3a7832a614e3c0 exact-head CI",
+        "verification:private mobile access gateway compatible with loopback-only Host guard",
+        "verification:Git Bash-only checkout discovery and dashboard start instructions"
       ],
       "goal": "Close the public listing-identity evidence gap for the A200 catalog and expose that evidence without claiming provider entitlement, qualified price history, Pulse readiness, or execution authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-16T20:31:00Z",
-      "latest_summary": "Tightened A200 bridge PR #443 to head 0e772ec after another review finding. The bridge now requires literal boolean True for external identity/live-feed attestations, rejects non-boolean historical qualification on forged receipts, recomputes the exact OHLCV checksum, and copies mutable inputs into a tuple. Focused bridge+market-universe tests pass (52 tests); compileall and diff-check pass. The latest exact-head run 38959236508 is queued. Previous Linux full suite passed on 2270e67; full Linux/Windows runs for df73535 remain in progress.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-17T23:10:00Z",
+      "latest_summary": "Checkpoint for owner request to restore the ICARUS desktop dashboard and make the complete dashboard viewable on a phone using Git Bash commands. Local repository inspection confirms responsive dashboard CSS exists, but the HTTP server binds only to 127.0.0.1 and its Host guard accepts only localhost/loopback. No mobile gateway package was found in the inspected workspace. A generic Tailscale Serve reverse proxy was previously suggested but has not been tested against this Host guard, so no phone URL or remote-access recipe is verified yet. Desktop start guidance was identified in the plant README/CLI; user-local repository path is not discoverable from this workspace, so the eventual Git Bash-only instructions must locate the checkout rather than assume a drive/path.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "provider-qualification-and-runtime-connection",
+      "phase": "dashboard-local-start-and-mobile-access",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/a200_runtime_bridge.py",
-        "tests_engine/test_a200_runtime_bridge.py",
-        "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md"
+        "icarus_engine/server.py",
+        "icarus_engine/dashboard.html",
+        "icarus_plant/cli.py"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/a200_runtime_bridge.py",
+          "path": "icarus_engine/server.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "docs/superpowers/specs/2026-10-15-market-universe-200-implementation.md",
+          "path": "icarus_plant/cli.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -514,7 +515,7 @@
     "stale": 9,
     "terminal": 19
   },
-  "generated_at_utc": "2026-10-16T20:02:00.125803Z",
+  "generated_at_utc": "2026-10-17T23:06:55.202245Z",
   "owner_status": {
     "claude": {
       "active": false,
