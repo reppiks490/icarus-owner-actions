@@ -3180,5 +3180,36 @@
       "path": "coordination/summaries/codex-20261016-ui-pointer-contract-fix.json",
       "error": "timestamp must be a non-empty ISO-8601 string"
     }
+  ],
+  "continuations": [
+    {
+      "observed_at_utc": "2026-10-17T23:33:49.061154+00:00",
+      "owner_scope": "Continue federation work with this worker plus two other current workers; historical stale sessions are reclaimable.",
+      "coordination_repair": {
+        "status": "RESOLVED_ON_MAIN",
+        "pr": "reppiks490/icarus-owner-actions#47",
+        "verified_main": "7196802bac0bb064f0e3b2752faf4e4791c0f957",
+        "valid_events": 143,
+        "valid_sessions": 35,
+        "valid_summaries": 22,
+        "governance_tests_passed": 52
+      },
+      "fixture_repair": {
+        "pr": "reppiks490/Icarus#447",
+        "head": "a9217cc16086130a30883162903bccb3f67e9357",
+        "hosted_run": 39078186866,
+        "conclusion": "success",
+        "merged": false
+      },
+      "current_pr_audit": "mission/current-pr-audit-20261017.json",
+      "futures_integration": {
+        "branch": "codex/futures-convergence-review-20261017",
+        "status": "LOCAL_FOCUSED_TESTS_PASS_FULL_SUITE_IN_PROGRESS",
+        "new_authorization_regressions_failed_before_fix": 15,
+        "focused_tests_passed": 167,
+        "contract_only_not_runtime_integration": true
+      },
+      "remaining_authority": "Control-plane requires separate merge/release decision. Live broker arming remains disabled."
+    }
   ]
 }

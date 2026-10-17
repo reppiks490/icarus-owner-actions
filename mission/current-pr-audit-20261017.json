@@ -1,0 +1,1357 @@
+{
+  "schema_version": "icarus-current-pr-audit-v1",
+  "observed_at_utc": "2026-10-17T23:33:12.034077+00:00",
+  "scope": "All open PRs returned by user-scoped query for Icarus/Icarus-engine/owner-actions/divine-providence/causal-router/evidence-lab. Not all repositories or workflow pages.",
+  "query": "user:reppiks490 is:open; topn100;35federationPRs returned;no pagination cursor exposed",
+  "limitations": [
+    "Workflow tool lists PR-triggered first page only. Missing entries are not proof of no workflow.",
+    "Mergeable reports GitHub merge mechanics, not policy approval.",
+    "Historical failed run remains failed even after newer source repairs.",
+    "Metadata review is not evidence that implementation meets scientific or runtime acceptance."
+  ],
+  "pr_count": 35,
+  "counts_by_disposition": {
+    "REVIEW_REQUIRED": 8,
+    "ACTIVE_PEER_LANE": 3,
+    "STOPPING_HANDOFF_NOT_COMPLETION": 2,
+    "PRE_REPAIR_COORDINATION_BASE": 6,
+    "DRAFT_REVIEW_REQUIRED": 9,
+    "EXCLUDED_BROKER_CONNECTION": 1,
+    "FUTURES_INTEGRATION_IN_PROGRESS": 5,
+    "SUPERSESSION_REVIEW_REQUIRED": 1
+  },
+  "records": [
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/50",
+      "title": "coordination: close cron guard workstream",
+      "head": "aec5cdff18cc2fc0814003c633c5240d90b2ab07",
+      "base": "7196802bac0bb064f0e3b2752faf4e4791c0f957",
+      "branch": "codex/coordination-cron-guard-closeout-20261017",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 2,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 50,
+      "runs": [
+        {
+          "id": 39079001700,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 288,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39079001700/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39079001700/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/divine-providence/pull/59",
+      "title": "Contain hub child processes and verify tour continuity",
+      "head": "ee8d91ba04c435f849c34908f9bd0bcd0811f57c",
+      "base": "27ae69c593ede3019957100cd401625bd2424f43",
+      "branch": "chatgpt/hub-windows-job-containment",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 11,
+      "repository": "reppiks490/divine-providence",
+      "number": 59,
+      "runs": [
+        {
+          "id": 39078762722,
+          "name": "Runner lifecycle",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1,
+          "jobs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762722/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762722/logs",
+          "workflow_id": 388046318
+        },
+        {
+          "id": 39078762609,
+          "name": "subsystem-evolution-tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 538,
+          "jobs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762609/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762609/logs",
+          "workflow_id": 371740763
+        },
+        {
+          "id": 39078762673,
+          "name": "ICARUS Observatory",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 30,
+          "jobs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762673/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/divine-providence/actions/runs/39078762673/logs",
+          "workflow_id": 384003206
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Coordinate with hub-integration-lead; preserve its reserved paths.",
+      "disposition": "ACTIVE_PEER_LANE",
+      "failed_runs_preserved": [
+        39078762673
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/449",
+      "title": "Docs: record futures integration stopping point",
+      "head": "606f0f70d255a34d81e4140bad433b12c8a8c19f",
+      "base": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+      "branch": "codex/futures-stop-point-20261017",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus",
+      "number": 449,
+      "runs": [
+        {
+          "id": 39078581601,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 6444,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078581601/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078581601/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Preserve dated handoff. Fixtures447 and newer integration source are the continuation, not the older docs head.",
+      "disposition": "STOPPING_HANDOFF_NOT_COMPLETION",
+      "failed_runs_preserved": [
+        39078581601
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/46",
+      "title": "Coordination: futures integration stopping point",
+      "head": "60a869027fedb68cda10abffc146cb7dcfd66379",
+      "base": "eda08ca8b570eb417ce2c96260189f169fadec93",
+      "branch": "codex/futures-stop-point-20261017",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 5,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 46,
+      "runs": [
+        {
+          "id": 39078630603,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 273,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078630603/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078630603/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        39078630603
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/45",
+      "title": "Inventory Icarus tasks and record the first verified repair tranche",
+      "head": "b9cb0cb4bef082046de9d187a9c5bdf3df8f7f11",
+      "base": "f5b692bf2118d91d4e2f21ea40a185be49de215e",
+      "branch": "codex/task-inventory-20261017",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 2,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 45,
+      "runs": [
+        {
+          "id": 39078465512,
+          "name": "Mission register consistency",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 15,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078465512/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078465512/logs",
+          "workflow_id": 377949797
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/44",
+      "title": "coordination: register champion stopping point",
+      "head": "ce6e20aa7dd94ee00e2958bf78498de37f711684",
+      "base": "211759b8548f708f1eb5df408be4f62a30a0ab58",
+      "branch": "codex/champion-stopping-point-20261017",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 3,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 44,
+      "runs": [
+        {
+          "id": 39078409997,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 240,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078409997/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39078409997/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        39078409997
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/448",
+      "title": "docs: add champion qualification handoff",
+      "head": "5a2db92671ad2e1cabaebfc09742020a652ef67e",
+      "base": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+      "branch": "codex/champion-stopping-point-20261017",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus",
+      "number": 448,
+      "runs": [
+        {
+          "id": 39078380448,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 6442,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078380448/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078380448/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Preserve dated handoff. Fixtures447 and newer integration source are the continuation, not the older docs head.",
+      "disposition": "STOPPING_HANDOFF_NOT_COMPLETION",
+      "failed_runs_preserved": [
+        39078380448
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/447",
+      "title": "Make A200 qualification tests independent of aged listing evidence",
+      "head": "a9217cc16086130a30883162903bccb3f67e9357",
+      "base": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+      "branch": "codex/task-completion-test-clock-20261017",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 2,
+      "repository": "reppiks490/Icarus",
+      "number": 447,
+      "runs": [
+        {
+          "id": 39078186866,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6440,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078186866/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39078186866/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/43",
+      "title": "docs: record A200 Pulse stopping handoff",
+      "head": "ca73597d8d1d5b8a8aa39d1c67a6fdea872e3d09",
+      "base": "a0301bb7e90178824804c03a948ce3aad69f6066",
+      "branch": "codex/a200-stopping-handoff-20261017",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 6,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 43,
+      "runs": [
+        {
+          "id": 39077820807,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 232,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39077820807/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39077820807/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        39077820807
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/42",
+      "title": "coordination: track Node test coverage repair",
+      "head": "08b15b243e5e2e68730cec3e15b870f472777bfe",
+      "base": "30b18e707acc3ee084c44e4288e4c710b76761cf",
+      "branch": "codex/node-test-coverage-20261016",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 6,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 42,
+      "runs": [
+        {
+          "id": 38960605035,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 226,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/38960605035/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/38960605035/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        38960605035
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/445",
+      "title": "Refresh broker and prop-firm integration baseline",
+      "head": "979973e837b94c4c663c5ef2fda3583b58826009",
+      "base": "4c7ef2c34d83ecc0d2a921485c2497a683a9b304",
+      "branch": "codex/broker-propfirm-baseline-refresh-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus",
+      "number": 445,
+      "runs": [
+        {
+          "id": 38958587077,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6414,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38958587077/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38958587077/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "EXCLUDED_BROKER_CONNECTION"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/443",
+      "title": "A200: preserve history receipts at runtime boundary",
+      "head": "0e772ec4541cc3b26e34da13de3a7832a614e3c0",
+      "base": "4c7ef2c34d83ecc0d2a921485c2497a683a9b304",
+      "branch": "codex/a200-runtime-bridge-plan-20261016",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 3,
+      "repository": "reppiks490/Icarus",
+      "number": 443,
+      "runs": [
+        {
+          "id": 38959245849,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6424,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959245849/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959245849/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/41",
+      "title": "Coordination: claim A200 to Pulse runtime admission",
+      "head": "3df007617a39726d94d43126efb1581aac702ec4",
+      "base": "59c62daf6dc887fcf4ba3a96fb5c421fd66c3fdd",
+      "branch": "codex/a200-runtime-pulse-20261016",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 2,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 41,
+      "runs": [
+        {
+          "id": 38958163609,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 209,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/38958163609/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/38958163609/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        38958163609
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/438",
+      "title": "Separate paper readiness from futures qualification",
+      "head": "75079156357070dfa6f20d8fbe22354e27a795a7",
+      "base": "cfa97333bbccbb0a62da4802b3d9b495f9ec347d",
+      "branch": "codex/system-index-paper-readiness-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 4,
+      "repository": "reppiks490/Icarus",
+      "number": 438,
+      "runs": [
+        {
+          "id": 38959193080,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6422,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959193080/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959193080/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Verify consolidated branch codex/futures-convergence-review-20261017 including strict authorization regression; original branches preserved.",
+      "disposition": "FUTURES_INTEGRATION_IN_PROGRESS"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/435",
+      "title": "Fail closed outside futures calendar coverage",
+      "head": "3250e42043c21f593e120532c5e440b5821a614b",
+      "base": "75079156357070dfa6f20d8fbe22354e27a795a7",
+      "branch": "codex/futures-calendar-coverage-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 2,
+      "repository": "reppiks490/Icarus",
+      "number": 435,
+      "runs": [
+        {
+          "id": 38959284263,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6428,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959284263/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959284263/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Verify consolidated branch codex/futures-convergence-review-20261017 including strict authorization regression; original branches preserved.",
+      "disposition": "FUTURES_INTEGRATION_IN_PROGRESS"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/432",
+      "title": "Tests: separate Databento admission from execution qualification",
+      "head": "e77dae0fb1d3860be677f6d2761e1bf75d065513",
+      "base": "75079156357070dfa6f20d8fbe22354e27a795a7",
+      "branch": "codex/databento-runtime-gate-tests-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus",
+      "number": 432,
+      "runs": [
+        {
+          "id": 38959268985,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6426,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959268985/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38959268985/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Verify consolidated branch codex/futures-convergence-review-20261017 including strict authorization regression; original branches preserved.",
+      "disposition": "FUTURES_INTEGRATION_IN_PROGRESS"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/415",
+      "title": "Converge canonical futures, discovery, and Brain evidence",
+      "head": "cfa97333bbccbb0a62da4802b3d9b495f9ec347d",
+      "base": "a313592867277be260f6ea4f0ab4c879a7c673d4",
+      "branch": "atlas/icarus-system-convergence-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 16,
+      "repository": "reppiks490/Icarus",
+      "number": 415,
+      "runs": [
+        {
+          "id": 38910087247,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 6329,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38910087247/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38910087247/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Verify consolidated branch codex/futures-convergence-review-20261017 including strict authorization regression; original branches preserved.",
+      "disposition": "FUTURES_INTEGRATION_IN_PROGRESS",
+      "failed_runs_preserved": [
+        38910087247
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/414",
+      "title": "Canonicalize ICARUS 32-root futures authority",
+      "head": "f566e0835db0aacdcd427b1b62388ab253840c91",
+      "base": "a313592867277be260f6ea4f0ab4c879a7c673d4",
+      "branch": "atlas/icarus-futures-canonical-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 8,
+      "repository": "reppiks490/Icarus",
+      "number": 414,
+      "runs": [
+        {
+          "id": 38901628949,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6251,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38901628949/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38901628949/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Verify consolidated branch codex/futures-convergence-review-20261017 including strict authorization regression; original branches preserved.",
+      "disposition": "FUTURES_INTEGRATION_IN_PROGRESS"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/28",
+      "title": "Record Yahoo-only A200 probe default",
+      "head": "e39570f4a2c36b629e6ef5a005b24bf7524dab49",
+      "base": "59c62daf6dc887fcf4ba3a96fb5c421fd66c3fdd",
+      "branch": "codex/a200-yahoo-default-20261016",
+      "draft": false,
+      "mergeable": false,
+      "changed_files": 27,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 28,
+      "runs": [
+        {
+          "id": 39077759456,
+          "name": "coordination-fabric",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 229,
+          "jobs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39077759456/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/icarus-owner-actions/actions/runs/39077759456/logs",
+          "workflow_id": 386235957
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Validate against current main after merged schema repair47; do not relabel the old failed run or rerun an unchanged stale tree as a repair.",
+      "disposition": "PRE_REPAIR_COORDINATION_BASE",
+      "failed_runs_preserved": [
+        39077759456
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/186",
+      "title": "Make Sentinel provider health multi-lane accurate",
+      "head": "dfd873e122398a9787e0c4de5bc54c878a7fa21f",
+      "base": "3a658c8106e3ffd48ce76212218d26c4ac550fdb",
+      "branch": "atlas/data-health-accuracy",
+      "draft": true,
+      "mergeable": false,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 186,
+      "runs": [
+        {
+          "id": 38855052599,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 2373,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38855052599/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38855052599/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Current data-gap ledger says multi-lane implementation187 supersedes this old test-only branch. Verify current tests/source before adopting anything.",
+      "disposition": "SUPERSESSION_REVIEW_REQUIRED",
+      "failed_runs_preserved": [
+        38855052599
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/173",
+      "title": "Coordination: record browser fix and current reviews",
+      "head": "0164438dc6fd4a96c00f5606f4a158d43ab1de16",
+      "base": "8632a0d046bf153dcc627cdd3f82fbf88f6a41db",
+      "branch": "chatgpt/review-status-20261015",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 3,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 173,
+      "runs": [
+        {
+          "id": 38826578684,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 2057,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38826578684/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38826578684/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/387",
+      "title": "Claim GRU holdout before loading terminal rows",
+      "head": "d3ff4cd1de3856025813009319dd7960d1179866",
+      "base": "527d6efce40c3718c7d8c1c4dfa51ae56247d136",
+      "branch": "codex/holdout-claim-before-labels-20261016",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 5,
+      "repository": "reppiks490/Icarus",
+      "number": 387,
+      "runs": [
+        {
+          "id": 38947717129,
+          "name": "deep-learning-contract",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 29,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717129/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717129/logs",
+          "workflow_id": 385100001
+        },
+        {
+          "id": 38947717104,
+          "name": "source-data-contract",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 107,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717104/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717104/logs",
+          "workflow_id": 374234020
+        },
+        {
+          "id": 38947717139,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 6343,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717139/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38947717139/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Coordinate with hub-integration-lead; preserve its reserved paths.",
+      "disposition": "ACTIVE_PEER_LANE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/167",
+      "title": "Coordination: refresh asset, shadow, and transcript status",
+      "head": "55f73bbcd7a3e645ba398a71ef93e4b224f5b903",
+      "base": "8632a0d046bf153dcc627cdd3f82fbf88f6a41db",
+      "branch": "chatgpt/board-refresh-20261015",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 7,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 167,
+      "runs": [
+        {
+          "id": 38860985639,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 2393,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38860985639/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38860985639/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/353",
+      "title": "Research-only deep learning challenger for ICARUS",
+      "head": "527d6efce40c3718c7d8c1c4dfa51ae56247d136",
+      "base": "7eca749c73f03fd440cb09b4dc83168bdf6c3bd7",
+      "branch": "feature/deep-learning-challenger-20261015",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 10,
+      "repository": "reppiks490/Icarus",
+      "number": 353,
+      "runs": [
+        {
+          "id": 38824618439,
+          "name": "deep-learning-contract",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 21,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618439/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618439/logs",
+          "workflow_id": 385100001
+        },
+        {
+          "id": 38824618352,
+          "name": "source-data-contract",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 74,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618352/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618352/logs",
+          "workflow_id": 374234020
+        },
+        {
+          "id": 38824618389,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 5919,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618389/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38824618389/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Coordinate with hub-integration-lead; preserve its reserved paths.",
+      "disposition": "ACTIVE_PEER_LANE"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/148",
+      "title": "RT01 design: real-price shadow execution twin",
+      "head": "811022f5aa84d6f1d5d3a809ff2dd64a0b77b041",
+      "base": "e958d1568379a39c89504ae7b5c69a47b6ac738c",
+      "branch": "chatgpt/real-price-shadow-twin-spec-20261014",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 148,
+      "runs": [
+        {
+          "id": 38599038157,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1927,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38599038157/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38599038157/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/142",
+      "title": "R01-C2 FR-1 code (draft): frontier engine, trial ledger, leakage tests",
+      "head": "dfb18e96805faa905b687eaa4633d349a9f82eb2",
+      "base": "72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+      "branch": "claude/r01-fr1-code",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 3,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 142,
+      "runs": [
+        {
+          "id": 38167557414,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1882,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38167557414/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38167557414/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/332",
+      "title": "Design: ICARUS Capability & Data Discovery Registry",
+      "head": "71a726a3678d87b4c5b72350d944b71c38c3919f",
+      "base": "0bf06e98c9fbda627116578f8686a178e6837d68",
+      "branch": "design/capability-data-discovery-registry-2026-10-11",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 3,
+      "repository": "reppiks490/Icarus",
+      "number": 332,
+      "runs": [
+        {
+          "id": 38166704291,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "failure",
+          "run_number": 5494,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38166704291/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38166704291/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED",
+      "failed_runs_preserved": [
+        38166704291
+      ]
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/141",
+      "title": "Atlas: advisory finite-model decision value and prospective evidence",
+      "head": "ba05a182b4aa947d81b26b6c4063e33adec9f147",
+      "base": "3febb41bfacf4f4166e991c50e7c033306521753",
+      "branch": "codex/atlas-research-allocation-20261011",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 29,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 141,
+      "runs": [
+        {
+          "id": 38179293403,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1894,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38179293403/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38179293403/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/140",
+      "title": "CL-84 (draft): port PR 84's Databento guards onto current cl_lab",
+      "head": "ad73dfff313ae2eb66d6f3bda9e74077e183e059",
+      "base": "a8cee8c2cc6a5c17e0df568a2da7dcdb0e84de3b",
+      "branch": "claude/cl84-port",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 7,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 140,
+      "runs": [
+        {
+          "id": 38149507907,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1871,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38149507907/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38149507907/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/330",
+      "title": "DRAFT C02: process-safe Brain journal and intake persistence",
+      "head": "8b7cf387d23b3e6043304b501db5a107aff10da6",
+      "base": "3ae97b4d4f0228e6e815c3dd59cd02e0986c50f0",
+      "branch": "codex/c02-process-journal-draft-20261011",
+      "draft": true,
+      "mergeable": false,
+      "changed_files": 4,
+      "repository": "reppiks490/Icarus",
+      "number": 330,
+      "runs": [
+        {
+          "id": 38175325166,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 5513,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38175325166/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/38175325166/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/137",
+      "title": "R01-C2: pre-register FR-1, the win-rate frontier (for Codex review)",
+      "head": "72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+      "base": "8c77d9af9ce595e25143fe94e6882c6448b594a4",
+      "branch": "claude/r01-c2-prereg",
+      "draft": false,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 137,
+      "runs": [
+        {
+          "id": 38148319038,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1864,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38148319038/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/38148319038/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/icarus-owner-actions/pull/7",
+      "title": "ICARUS: preserve recovery evidence and correct research assurance status",
+      "head": "283250580361ba02ccd1824ad60ef8194844ddc5",
+      "base": "e3a10878c356af8d1b68764e6cf6153d31005f82",
+      "branch": "chatgpt/recovery-reconciliation-20261007",
+      "draft": false,
+      "mergeable": false,
+      "changed_files": 4,
+      "repository": "reppiks490/icarus-owner-actions",
+      "number": 7,
+      "runs": [],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus-engine/pull/84",
+      "title": "Harden Databento scheduled corpus activation and cost controls",
+      "head": "8ad1d7eb08305011a43d32dc0c696bc0bd69ecdf",
+      "base": "e97b7b3d24cb9e07d27cc4f46f1680027530870c",
+      "branch": "chatgpt/databento-scheduled-cost-guard-20261004",
+      "draft": false,
+      "mergeable": false,
+      "changed_files": 8,
+      "repository": "reppiks490/Icarus-engine",
+      "number": 84,
+      "runs": [
+        {
+          "id": 37329360716,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 1664,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/37329360716/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus-engine/actions/runs/37329360716/logs",
+          "workflow_id": 362434102
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/295",
+      "title": "Surface private research-satellite Actions allocation hold",
+      "head": "f1f99d8599bb8999b0d57b5b018b4cbc047f7b8f",
+      "base": "87f738a932499b821bdb1d97d6140ec60b88b3c0",
+      "branch": "chatgpt/private-satellite-ci-hold-20261002",
+      "draft": true,
+      "mergeable": true,
+      "changed_files": 1,
+      "repository": "reppiks490/Icarus",
+      "number": 295,
+      "runs": [
+        {
+          "id": 37077163237,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4553,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/37077163237/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/37077163237/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    },
+    {
+      "url": "https://github.com/reppiks490/Icarus/pull/198",
+      "title": "mobile: ICARUS native app foundation",
+      "head": "b2a747c767551034162c7174a9b9b5b071d09915",
+      "base": "03e9b082e2a0d9434fe165c0b7024b398a6e957a",
+      "branch": "mobile/icarus-foundation-20261001",
+      "draft": true,
+      "mergeable": false,
+      "changed_files": 35,
+      "repository": "reppiks490/Icarus",
+      "number": 198,
+      "runs": [
+        {
+          "id": 36938182605,
+          "name": "tests",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 3312,
+          "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/36938182605/jobs",
+          "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/36938182605/logs",
+          "workflow_id": 362919046
+        }
+      ],
+      "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
+      "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
+      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "disposition": "DRAFT_REVIEW_REQUIRED"
+    }
+  ],
+  "urgent_peer_finding": {
+    "pr": "https://github.com/reppiks490/divine-providence/pull/59",
+    "head": "ee8d91ba04c435f849c34908f9bd0bcd0811f57c",
+    "run": 39078762673,
+    "job": 117531250781,
+    "test": "tests/test_runner_lifecycle.py::test_successful_suite_does_not_leave_windows_descendant",
+    "result": "1failed174passed1skipped; successful parent left background marker; independent lifecycle green does not close full Windows failure",
+    "handoff": "central bus task-inventory-start HANDOFF to hub-integration-lead"
+  },
+  "current_research_observation": {
+    "source_repository": "reppiks490/Icarus-engine",
+    "source_commit": "2680123fa0245b8d8f740febc01f2d92afb89cfb",
+    "health_generated_at": "2026-10-17T23:22:59+00:00",
+    "cl_run_id": "cl-lab-5cca62155ac606c6",
+    "cl_finished_at": "2026-10-17T06:21:26.707185+00:00",
+    "research": {
+      "champions": 0,
+      "cl_last_run": "2026-10-17T06:21:26.707185+00:00",
+      "pulse": {
+        "CANDLES": "REJECTED",
+        "HA_HA_FILLS": "ARTIFACT_REFERENCE",
+        "HA_REAL_FILLS": "REJECTED"
+      },
+      "pulse_forward": {
+        "CANDLES": {
+          "after": "2026-10-05",
+          "net_usd": -1533.9,
+          "trades": 15
+        },
+        "HA_HA_FILLS": {
+          "after": "2026-10-05",
+          "net_usd": 9438.5,
+          "trades": 13
+        },
+        "HA_REAL_FILLS": {
+          "after": "2026-10-05",
+          "net_usd": -1569.0,
+          "trades": 13
+        }
+      }
+    },
+    "assets": {
+      "BTCUSDT": {
+        "data": {
+          "first": "2024-09-01T00:00:00+00:00",
+          "last": "2026-10-16T23:55:00+00:00",
+          "rows": 223488,
+          "sha256": "cadc76b61a83a98fdb20160ef3d17703896c4627cf7cbbfa548cc4643202f792",
+          "source": "cache:btcusdt_5m",
+          "status": "OK"
+        },
+        "champions": 0,
+        "challengers": 0,
+        "diagnostics": {
+          "bh_rejections": 0,
+          "candidates": 492,
+          "forward_sessions": 10,
+          "hold_sessions": 263,
+          "m_eff": 125.0,
+          "metric": "returns",
+          "pbo": 0.3349,
+          "prior_trials": 0,
+          "reached_hold": 0,
+          "spa_p": 0.992,
+          "tune_sessions": 282,
+          "var_sr": 0.01010582
+        },
+        "status_counts": {
+          "REJECTED": 492
+        },
+        "explorer_status_counts": {
+          "REJECTED": 24
+        }
+      },
+      "ETHUSDT": {
+        "data": {
+          "first": "2024-09-01T00:00:00+00:00",
+          "last": "2026-10-16T23:55:00+00:00",
+          "rows": 223488,
+          "sha256": "ae58daeb1b29b741c3dae04b9e2ce581c5dc0a991db98c8c6817129f88cebeba",
+          "source": "cache:ethusdt_5m",
+          "status": "OK"
+        },
+        "champions": 0,
+        "challengers": 0,
+        "diagnostics": {
+          "bh_rejections": 0,
+          "candidates": 492,
+          "forward_sessions": 10,
+          "hold_sessions": 263,
+          "m_eff": 118.0,
+          "metric": "returns",
+          "pbo": 0.2074,
+          "prior_trials": 0,
+          "reached_hold": 0,
+          "spa_p": 0.571,
+          "tune_sessions": 282,
+          "var_sr": 0.01137161
+        },
+        "status_counts": {
+          "REJECTED": 492
+        },
+        "explorer_status_counts": {
+          "REJECTED": 24
+        }
+      },
+      "MNQ": {
+        "data": {
+          "extension_sha256": "b2910cc176765faabd679c20adffe4697a3a4b109fc462e22d8baee9181d41d7",
+          "first": "2024-09-20T04:00:00+00:00",
+          "instrument_switches": [],
+          "integrity": {
+            "basis_check": {
+              "jumps": [],
+              "max_abs_dbasis": 108.92,
+              "median_abs_dbasis": 7.18,
+              "sessions": 519,
+              "status": "OK",
+              "threshold_points": 150.0
+            },
+            "data_version": "cl-data-3",
+            "detected": [
+              {
+                "bar_jump": 274.75,
+                "bp": 122.1,
+                "delta": 267.46,
+                "method": "basis",
+                "quarter": "2024-12",
+                "session": "2024-12-12",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2024-12-12T05:00:00+00:00"
+              },
+              {
+                "bar_jump": 42.0,
+                "bp": 110.9,
+                "delta": 215.79,
+                "method": "basis",
+                "quarter": "2025-03",
+                "session": "2025-03-13",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "session_boundary",
+                "ts": "2025-03-12T22:00:00+00:00"
+              },
+              {
+                "bar_jump": 196.5,
+                "bp": 100.0,
+                "delta": 221.73,
+                "method": "basis",
+                "quarter": "2025-06",
+                "session": "2025-06-12",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2025-06-12T04:00:00+00:00"
+              },
+              {
+                "bar_jump": 245.75,
+                "bp": 92.8,
+                "delta": 224.96,
+                "method": "basis",
+                "quarter": "2025-09",
+                "session": "2025-09-11",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2025-09-11T04:00:00+00:00"
+              },
+              {
+                "bar_jump": 33.75,
+                "bp": 101.5,
+                "delta": 263.51,
+                "method": "basis",
+                "quarter": "2025-12",
+                "session": "2025-12-11",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "session_boundary",
+                "ts": "2025-12-10T23:00:00+00:00"
+              },
+              {
+                "bar_jump": 149.0,
+                "bp": 88.1,
+                "delta": 218.18,
+                "method": "basis",
+                "quarter": "2026-03",
+                "session": "2026-03-12",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2026-03-12T04:00:00+00:00"
+              },
+              {
+                "bar_jump": 656.75,
+                "bp": 94.6,
+                "delta": 281.35,
+                "method": "basis",
+                "quarter": "2026-06",
+                "session": "2026-06-11",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2026-06-11T04:00:00+00:00"
+              },
+              {
+                "bar_jump": 257.75,
+                "bp": 97.6,
+                "delta": 287.04,
+                "method": "basis",
+                "quarter": "2026-09",
+                "session": "2026-09-10",
+                "sized_by": null,
+                "status": "DETECTED",
+                "switch": "bar",
+                "ts": "2026-09-10T04:00:00+00:00"
+              }
+            ],
+            "min_jump_bp": 40.0,
+            "not_detected": []
+          },
+          "last": "2026-10-16T20:55:00+00:00",
+          "rows": 146115,
+          "sha256": "2fba11ce4e0a0297602630a8642ac1e67e3d59691beb22d4799d8842d945b486",
+          "source": "data/mnq_5m_full.csv",
+          "status": "OK",
+          "tape": {
+            "base": {
+              "first": "2024-09-20T04:00:00+00:00",
+              "last": "2026-09-18T20:55:00+00:00",
+              "rows": 140609
+            },
+            "extension": {
+              "first": "2026-09-20T22:00:00+00:00",
+              "last": "2026-10-16T20:55:00+00:00",
+              "rows": 5506,
+              "source": "cache:databento_mnq_5m (MNQ.v.0)"
+            }
+          }
+        },
+        "champions": 0,
+        "challengers": 0,
+        "diagnostics": {
+          "bh_rejections": 0,
+          "candidates": 492,
+          "forward_sessions": 10,
+          "hold_sessions": 260,
+          "m_eff": 114.0,
+          "metric": "points",
+          "pbo": 0.4773,
+          "prior_trials": 0,
+          "reached_hold": 0,
+          "spa_p": 0.93,
+          "tune_sessions": 264,
+          "var_sr": 0.00347077
+        },
+        "status_counts": {
+          "REJECTED": 492
+        },
+        "explorer_status_counts": {
+          "REJECTED": 24
+        }
+      }
+    },
+    "interpretation": "No champion is reported in this pinned snapshot. Rejected candidates and zero reached_hold are research outcomes, not proof of a software failure; do not weaken gates or rerun dead ideas without new preregistered evidence."
+  }
+}

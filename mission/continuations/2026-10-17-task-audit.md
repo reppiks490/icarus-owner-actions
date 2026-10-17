@@ -1,5 +1,23 @@
 # Icarus task review and first repair tranche — 2026-10-17
 
+## Continued three-worker pass
+
+Owner direction: continue across the federation; only this worker and two other agents are currently working. Historical stale sessions are stopping points, not permanent reservations. This worker retains inventory and futures verification; the active hub/GRU peer's reserved files remain separate. No extra worker was spawned.
+
+The initial compiler blocker below is now **resolved on main** by owner-actions PR #47. Current-main validation at `7196802bac0bb064f0e3b2752faf4e4791c0f957` passed with 143 events, 35 sessions and 22 summaries; all 52 governance tests passed. The original malformed records remain preserved. PR #49 also carries the offset cron regression. Do not rebuild these repairs from the historical list.
+
+Icarus PR #447's exact-head hosted run `39078186866` completed successfully at `a9217cc16086130a30883162903bccb3f67e9357`. It remains unmerged; successful tests do not override the control-plane requirement for a separate merge decision.
+
+The [refreshed PR audit](../current-pr-audit-20261017.json) covers all 35 open federation PRs returned by the user-scoped query at the observation time, including head SHAs, branch relationships, draft state, and exact-head PR-triggered workflow results. The tool exposes only the first workflow page; no missing workflow is silently treated as green. Historical failing runs remain failures even where main now contains a repair.
+
+The stopped futures stack is being consolidated on `codex/futures-convergence-review-20261017`: #438's paper-readiness correction, #432's Databento tests, #435's calendar coverage, current main, and #447's deterministic fixtures. A confirmed Brain evidence defect accepted truthy strings as decision authorization and false-like non-booleans as disabled execution. Fifteen failing regression cases reproduced before strict checks were added; all 30 Brain evidence tests and 167 focused stack tests now pass. Whole-branch verification is recorded separately before any completion claim. This evidence contract currently has no production caller; contract tests are not source-to-runtime integration proof.
+
+An exact-head cross-repository finding was handed to the hub peer: Divine Providence PR #59's Observatory run `39078762673`, Windows job `117531250781`, failed `test_successful_suite_does_not_leave_windows_descendant` (1 failed, 174 passed, 1 skipped), despite its separate lifecycle run passing. Preserve that failure until the peer resolves it; do not claim whole-Windows containment from the narrower green workflow.
+
+The initial observations below remain a dated record. Their old compiler-blocked and hosted-pending states are superseded by this continuation.
+
+## Initial inventory
+
 The source-pinned [inventory](../task-audit-20261017.json) includes every one of the 202 mission requirements, all 19 owner-checklist tasks, all 46 task-table entries on the three legacy Engine boards, and 30 open federation PRs observed before this tranche. These sources overlap; their counts must not be added as unique tasks. Every baseline requirement keeps its original reported state. None is newly certified by this inventory.
 
 ## Work delivered
