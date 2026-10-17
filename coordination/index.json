@@ -838,33 +838,63 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "tests_engine/test_a200_listing_crosswalk.py"
+        "mission/task-audit-20261017.json",
+        "mission/continuations/2026-10-17-task-audit.md",
+        "mission/current-pr-audit-20261017.json",
+        "mission/README.md"
       ],
       "declared_targets": [
         {
-          "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
+          "path": "mission/task-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/README.md",
+          "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
-        "github-run:39078186866"
+        "session:codex-20261017-hub-integration-lead"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:18:00Z",
-      "latest_summary": "Current-main listing-crosswalk positive tests expire after 24h because fixture timestamps are fixed but validation uses wall time. Reproduced CURRENT vs STALE failure. Claim only test clock; preserve runtime freshness thresholds and all malformed/stale rejection assertions.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-17T23:30:47Z",
+      "latest_summary": "Owner directs continued work across all Icarus aspects and says only this worker plus two others are currently working; historical stale sessions are stopping points, not locks. No additional workers spawned. Respect current hub/GRU and coordinator peer reservations. Refresh every open Icarus-federation PR's head and latest exact-source checks; update PR45 inventory/continuation to distinguish historical compiler failure from merged PR47 repair. Current coordination validation passes143events/35sessions/22summaries and52tests. Icarus447 hosted tests39078186866 succeed. Continue non-conflicting internal repairs when found; no broker connection, live arming, spend or protected-holdout expansion.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "repair",
+      "phase": "federation-current-head-audit",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "tests_engine/test_a200_listing_crosswalk.py"
+        "mission/task-audit-20261017.json",
+        "mission/continuations/2026-10-17-task-audit.md",
+        "mission/current-pr-audit-20261017.json",
+        "mission/README.md"
       ],
       "reserved_targets": [
         {
-          "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
+          "path": "mission/task-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/README.md",
+          "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "session_id": "codex-20261017-task-inventory-start",
@@ -879,7 +909,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:25:51.843158Z",
+  "generated_at_utc": "2026-10-17T23:30:59.962141Z",
   "owner_status": {
     "claude": {
       "active": false,
