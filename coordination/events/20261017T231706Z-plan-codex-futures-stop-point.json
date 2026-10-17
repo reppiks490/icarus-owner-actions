@@ -10,12 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "docs/agent-handoffs/futures-stop-point-2026-10-17.md",
-    "coordination/sessions/codex-20261017-futures-stop-point.json",
-    "coordination/events/20261017T231706Z-plan-codex-futures-stop-point.json",
-    "coordination/summaries/codex-20261017-futures-stop-point.json"
-  ],
+  "paths": [],
   "dependencies": [
     "Current PR/base state and comments for #415/#432/#435/#438",
     "Exact workflow runs for #432/#435/#438"
@@ -25,5 +20,23 @@
   ],
   "next_action": "Recheck GitHub heads and workflow runs; write a repository handoff; publish a HANDOFF event and durable summary.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/agent-handoffs/futures-stop-point-2026-10-17.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/codex-20261017-futures-stop-point.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/20261017T231706Z-plan-codex-futures-stop-point.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261017-futures-stop-point.json"
+    }
+  ]
 }
