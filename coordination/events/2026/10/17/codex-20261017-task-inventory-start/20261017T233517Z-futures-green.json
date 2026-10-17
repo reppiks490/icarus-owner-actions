@@ -1,0 +1,107 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T233517Z-futures-green",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-17T23:35:17Z",
+  "phase": "futures-exact-head-verification",
+  "summary": "Isolated futures branch merges438+432+435+currentmain+447 without rewriting originals, and fixes strict Brain evidence authorization. Fifteen malformed-flag regressions failed before fix;30Brain tests/167focused passed. Full integrated Linux suite2975passed3skipped111subtests in147.46s at a017008717d4ed130e9bfe58edb55e7d127a828f. Expand reservation to exact imported-stack paths plus verification record and coordination index link. These backend contracts do not prove actual Brain/UI integration; no main merge or live authority.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/atlas-diagnostic-pytest.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-16-icarus-system-convergence.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-16-icarus-system-convergence-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/asset_command_center.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/assets.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/futures_catalog.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/system_index.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_futures/contracts.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/_futures_regression_legacy.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_listing_crosswalk.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_feed.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_asset_command_center.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_databento.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_catalog.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_contract_families.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_system_index.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/README.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "remote branch codex/futures-convergence-review-20261017@a017008717d4ed130e9bfe58edb55e7d127a828f",
+    "full Linux suite2975passed3skipped111subtests",
+    "15failing regression cases before strictboolean fix"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Publish linked integration verification and reviewable draft; require hosted exact-head checks and independent review before separate merge decision."
+}
