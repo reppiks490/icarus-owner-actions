@@ -3204,10 +3204,15 @@
       "current_pr_audit": "mission/current-pr-audit-20261017.json",
       "futures_integration": {
         "branch": "codex/futures-convergence-review-20261017",
-        "status": "LOCAL_FOCUSED_TESTS_PASS_FULL_SUITE_IN_PROGRESS",
+        "status": "FULL_LOCAL_SUITE_PASS_HOSTED_REVIEW_PENDING",
         "new_authorization_regressions_failed_before_fix": 15,
         "focused_tests_passed": 167,
-        "contract_only_not_runtime_integration": true
+        "contract_only_not_runtime_integration": true,
+        "pr": "https://github.com/reppiks490/Icarus/pull/450",
+        "head": "c908872f7193e7188d218504eafa882ae6dca41b",
+        "full_local_passed": 2975,
+        "full_local_skipped": 3,
+        "subtests_passed": 111
       },
       "remaining_authority": "Control-plane requires separate merge/release decision. Live broker arming remains disabled."
     }

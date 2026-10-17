@@ -839,7 +839,7 @@
       ],
       "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
       "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
-      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "next_action": "Review synthetic code only. Original PR explicitly prohibits merge or real-data execution until preregistration137 is approved and merged, followed by independent leakage/null/cost/fill/ledger review. No real run authorized by this inventory.",
       "disposition": "DRAFT_REVIEW_REQUIRED"
     },
     {
@@ -898,7 +898,7 @@
       ],
       "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
       "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
-      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "next_action": "Fresh exact-head review of finite/joint/stopping semantics. Original PR says keep draft/unmerged; runtime adapters, market packages and scientific trial accounting remain separate acceptance.",
       "disposition": "DRAFT_REVIEW_REQUIRED"
     },
     {
@@ -1027,7 +1027,7 @@
       ],
       "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
       "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
-      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "next_action": "Preserve original branch. Compare useful guard concepts against current cl_lab and draft140; no workflow activation or paid collection merely to resolve this PR.",
       "disposition": "REVIEW_REQUIRED"
     },
     {
@@ -1055,7 +1055,7 @@
       ],
       "workflow_query_scope": "PR-triggered first page only; absence is not proof of no CI",
       "review_scope": "metadata_and_exact_head_first_page_PR_workflows; not semantic code approval",
-      "next_action": "Review acceptance, dependency/base graph and code before integration; CI is not semantic approval.",
+      "next_action": "Read current satellite allocation evidence. Do not purchase Actions capacity or equate hosted-billing blockage with implementation completion.",
       "disposition": "DRAFT_REVIEW_REQUIRED"
     },
     {
@@ -1131,12 +1131,12 @@
     "assets": {
       "BTCUSDT": {
         "data": {
+          "status": "OK",
+          "source": "cache:btcusdt_5m",
+          "rows": 223488,
           "first": "2024-09-01T00:00:00+00:00",
           "last": "2026-10-16T23:55:00+00:00",
-          "rows": 223488,
-          "sha256": "cadc76b61a83a98fdb20160ef3d17703896c4627cf7cbbfa548cc4643202f792",
-          "source": "cache:btcusdt_5m",
-          "status": "OK"
+          "sha256": "cadc76b61a83a98fdb20160ef3d17703896c4627cf7cbbfa548cc4643202f792"
         },
         "champions": 0,
         "challengers": 0,
@@ -1163,12 +1163,12 @@
       },
       "ETHUSDT": {
         "data": {
+          "status": "OK",
+          "source": "cache:ethusdt_5m",
+          "rows": 223488,
           "first": "2024-09-01T00:00:00+00:00",
           "last": "2026-10-16T23:55:00+00:00",
-          "rows": 223488,
-          "sha256": "ae58daeb1b29b741c3dae04b9e2ce581c5dc0a991db98c8c6817129f88cebeba",
-          "source": "cache:ethusdt_5m",
-          "status": "OK"
+          "sha256": "ae58daeb1b29b741c3dae04b9e2ce581c5dc0a991db98c8c6817129f88cebeba"
         },
         "champions": 0,
         "challengers": 0,
@@ -1195,138 +1195,13 @@
       },
       "MNQ": {
         "data": {
-          "extension_sha256": "b2910cc176765faabd679c20adffe4697a3a4b109fc462e22d8baee9181d41d7",
-          "first": "2024-09-20T04:00:00+00:00",
-          "instrument_switches": [],
-          "integrity": {
-            "basis_check": {
-              "jumps": [],
-              "max_abs_dbasis": 108.92,
-              "median_abs_dbasis": 7.18,
-              "sessions": 519,
-              "status": "OK",
-              "threshold_points": 150.0
-            },
-            "data_version": "cl-data-3",
-            "detected": [
-              {
-                "bar_jump": 274.75,
-                "bp": 122.1,
-                "delta": 267.46,
-                "method": "basis",
-                "quarter": "2024-12",
-                "session": "2024-12-12",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2024-12-12T05:00:00+00:00"
-              },
-              {
-                "bar_jump": 42.0,
-                "bp": 110.9,
-                "delta": 215.79,
-                "method": "basis",
-                "quarter": "2025-03",
-                "session": "2025-03-13",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "session_boundary",
-                "ts": "2025-03-12T22:00:00+00:00"
-              },
-              {
-                "bar_jump": 196.5,
-                "bp": 100.0,
-                "delta": 221.73,
-                "method": "basis",
-                "quarter": "2025-06",
-                "session": "2025-06-12",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2025-06-12T04:00:00+00:00"
-              },
-              {
-                "bar_jump": 245.75,
-                "bp": 92.8,
-                "delta": 224.96,
-                "method": "basis",
-                "quarter": "2025-09",
-                "session": "2025-09-11",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2025-09-11T04:00:00+00:00"
-              },
-              {
-                "bar_jump": 33.75,
-                "bp": 101.5,
-                "delta": 263.51,
-                "method": "basis",
-                "quarter": "2025-12",
-                "session": "2025-12-11",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "session_boundary",
-                "ts": "2025-12-10T23:00:00+00:00"
-              },
-              {
-                "bar_jump": 149.0,
-                "bp": 88.1,
-                "delta": 218.18,
-                "method": "basis",
-                "quarter": "2026-03",
-                "session": "2026-03-12",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2026-03-12T04:00:00+00:00"
-              },
-              {
-                "bar_jump": 656.75,
-                "bp": 94.6,
-                "delta": 281.35,
-                "method": "basis",
-                "quarter": "2026-06",
-                "session": "2026-06-11",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2026-06-11T04:00:00+00:00"
-              },
-              {
-                "bar_jump": 257.75,
-                "bp": 97.6,
-                "delta": 287.04,
-                "method": "basis",
-                "quarter": "2026-09",
-                "session": "2026-09-10",
-                "sized_by": null,
-                "status": "DETECTED",
-                "switch": "bar",
-                "ts": "2026-09-10T04:00:00+00:00"
-              }
-            ],
-            "min_jump_bp": 40.0,
-            "not_detected": []
-          },
-          "last": "2026-10-16T20:55:00+00:00",
-          "rows": 146115,
-          "sha256": "2fba11ce4e0a0297602630a8642ac1e67e3d59691beb22d4799d8842d945b486",
-          "source": "data/mnq_5m_full.csv",
           "status": "OK",
-          "tape": {
-            "base": {
-              "first": "2024-09-20T04:00:00+00:00",
-              "last": "2026-09-18T20:55:00+00:00",
-              "rows": 140609
-            },
-            "extension": {
-              "first": "2026-09-20T22:00:00+00:00",
-              "last": "2026-10-16T20:55:00+00:00",
-              "rows": 5506,
-              "source": "cache:databento_mnq_5m (MNQ.v.0)"
-            }
-          }
+          "source": "data/mnq_5m_full.csv",
+          "rows": 146115,
+          "first": "2024-09-20T04:00:00+00:00",
+          "last": "2026-10-16T20:55:00+00:00",
+          "sha256": "2fba11ce4e0a0297602630a8642ac1e67e3d59691beb22d4799d8842d945b486",
+          "extension_sha256": "b2910cc176765faabd679c20adffe4697a3a4b109fc462e22d8baee9181d41d7"
         },
         "champions": 0,
         "challengers": 0,
@@ -1353,5 +1228,18 @@
       }
     },
     "interpretation": "No champion is reported in this pinned snapshot. Rejected candidates and zero reached_hold are research outcomes, not proof of a software failure; do not weaken gates or rerun dead ideas without new preregistered evidence."
+  },
+  "integration_delivery": {
+    "pr": "https://github.com/reppiks490/Icarus/pull/450",
+    "head": "c908872f7193e7188d218504eafa882ae6dca41b",
+    "tested_code": "a017008717d4ed130e9bfe58edb55e7d127a828f",
+    "difference_since_code_test": "documentation only",
+    "full_local_passed": 2975,
+    "full_local_skipped": 3,
+    "subtests_passed": 111,
+    "seconds": 147.46,
+    "draft": true,
+    "hosted_verification": "pending",
+    "log_sha256": "3ea01baf79ba4971719c334722470cb34c3a8cc8b962294080821c2c79002546"
   }
 }
