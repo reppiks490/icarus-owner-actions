@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T234907Z-release-review-boundary",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "RELEASE",
+  "at_utc": "2026-10-17T23:49:07Z",
+  "phase": "awaiting-independent-review",
+  "summary": "Release root implementation paths after verified deliveries: Icarus450 strict evidence flags and futures stack passes exact-head Linux/expanded Windows run39079800021; owner-actions51 current/stale count repair passes53tests and hosted39079763194; updated inventory45 includes35PR source heads and actual remaining gates. Full Icarus objective remains incomplete. Independent semantic review and the control-plane's separate merge decision are pending; hub Windows escape remains with its peer. No additional agents, main merge, broker connection or live authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "dependencies": [
+    "independent-review:Icarus#450",
+    "separate-merge-decision:coordination/CONTROL_PLANE_CONTRACT.md",
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "owner-actions PR45@ca0add1f3f4793eb955edadf553b6e32c09dceee",
+    "Icarus PR450@4f6ef403ab187bccb57a64800638a8675a1af128: hosted39079800021 Linux and Windows SUCCESS",
+    "Icarus runtime code a017008717d4ed130e9bfe58edb55e7d127a828f:2975passed/3skipped/111subtests",
+    "owner-actions PR51@1837a3ae7827c901377b6c413a857f5d600a8199:53local tests and hosted39079763194SUCCESS"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Use PR45 continuation for the next authorized work. New implementation must publish a fresh narrow claim; do not treat this release as whole-system completion."
+}
