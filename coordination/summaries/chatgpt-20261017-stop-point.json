@@ -1,7 +1,7 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "chatgpt-20261017-stop-point",
-  "completed_at_utc": "2026-10-17T23:18:40Z",
+  "completed_at_utc": "2026-10-17T23:18:31Z",
   "result": "complete",
   "evidence": [
     "Published human-readable handoff at coordination/handoffs/2026-10-17-chatgpt-stop-point.md.",
@@ -19,6 +19,7 @@
   "status_notes": [
     "No source code was changed in this session.",
     "Icarus overall program and remaining task inventory are not complete.",
-    "The handoff covers this chat's bounded work only; its temporary worktrees do not persist."
+    "The handoff covers this chat's bounded work only; its temporary worktrees do not persist.",
+    "Timestamp correction: the original COMPLETE event/summmary used an estimated future UTC time. The correction event 20261017T231824Z-update-stop-point-refresh is authoritative; initial event ordering must not be treated as evidence."
   ]
 }
