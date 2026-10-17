@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T233706Z-coord-count-claim",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "CLAIM",
+  "at_utc": "2026-10-17T23:37:06Z",
+  "phase": "coordination-count-repair",
+  "summary": "Futures repair delivered as draft Icarus450@c908872f; hosted39079629066 pending. Release futures implementation paths while awaiting review. Repair coordination Markdown headline: counts.active currently includes11stale sessions and labels14 as Active despite3fresh workers. Keep machine schema/backward-compatible nonterminal count; display current and stale totals separately with regression. Do not mark historical sessions complete or alter leases. Knowledge delta: coordination/README.md count semantics.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination_fabric/__init__.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_coordination_fabric.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/README.md"
+    }
+  ],
+  "dependencies": [
+    "github-run:39079629066"
+  ],
+  "evidence": [
+    "main7196802 ACTIVE displays14active/11stale while only3fresh",
+    "compile_state counts.active=len(nonterminal rows); stale rows correctly do not reserve"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Failing render regression, then accurate headline; leave session histories and machine fields unchanged."
+}
