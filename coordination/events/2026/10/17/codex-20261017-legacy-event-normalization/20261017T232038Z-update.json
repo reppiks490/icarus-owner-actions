@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232038Z-update-codex-legacy-event-normalization",
+  "session_id": "codex-20261017-legacy-event-normalization",
+  "at_utc": "2026-10-17T23:20:38Z",
+  "type": "UPDATE",
+  "phase": "review-hardening",
+  "summary": "Exact-head CI passed on PR #47; independent review found and prompted stricter rejection of conflicting legacy summary aliases, now covered by regression tests. Awaiting fresh exact-head CI and final review.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination_fabric/__init__.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "tests/test_coordination_fabric.py"}
+  ],
+  "dependencies": ["review:reppiks490/icarus-owner-actions#47 exact-head code review"],
+  "evidence": ["github-run:39078583183 passed all three supported Python versions at b48f5723d99629c61f4f9b6e6128489d7f6a8b78", "Local compatibility check against current main: 127 events, 30 sessions, 18 summaries valid."],
+  "next_action": "Run updated exact-head CI and resolve any final review findings.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

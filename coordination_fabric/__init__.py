@@ -104,7 +104,7 @@ def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
         qualified: list[dict[str, str]] = []
         if len(repos) == 1:
             qualified = [{"repo": repos[0], "path": item} for item in targets]
-        elif "status" in doc and legacy_phase_missing:
+        elif doc.get("status") == "superseded" and legacy_phase_missing:
             # A superseded 2026-10-16 producer wrote cross-repository paths
             # without repo qualifiers. Its coordination/ paths identify the
             # owner-actions bus; when one repo remains, the other paths belong
@@ -218,6 +218,11 @@ def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict
 
 def _validate_summary(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict[str, Any]:
     doc = dict(doc)
+    if ("completed_at_utc" in doc and "finished_at_utc" in doc
+            and doc["completed_at_utc"] != doc["finished_at_utc"]):
+        raise ValueError(f"conflicting summary fields: completed_at_utc and finished_at_utc: {path}")
+    if doc.get("status") == "superseded" and "result" in doc and doc["result"] != "cancelled":
+        raise ValueError(f"conflicting summary fields: status and result: {path}")
     if "completed_at_utc" not in doc and "finished_at_utc" in doc:
         doc["completed_at_utc"] = doc["finished_at_utc"]
     if "result" not in doc and doc.get("status") == "superseded":
