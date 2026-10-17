@@ -838,63 +838,95 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "mission/task-audit-20261017.json",
-        "mission/continuations/2026-10-17-task-audit.md",
-        "mission/current-pr-audit-20261017.json",
-        "mission/README.md"
+        "icarus_engine/brain_evidence.py",
+        "tests_engine/test_brain_evidence.py",
+        "icarus_engine/calendar.py",
+        "icarus_engine/futures_catalog.py",
+        "tests_engine/test_futures_catalog.py",
+        "tests_engine/test_execution_controls.py",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
       ],
       "declared_targets": [
         {
-          "path": "mission/task-audit-20261017.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/brain_evidence.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/continuations/2026-10-17-task-audit.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/current-pr-audit-20261017.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/calendar.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/README.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_execution_controls.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "session:codex-20261017-hub-integration-lead"
+        "pr:reppiks490/Icarus#438@75079156357070dfa6f20d8fbe22354e27a795a7",
+        "pr:reppiks490/Icarus#432@e77dae0fb1d3860be677f6d2761e1bf75d065513",
+        "pr:reppiks490/Icarus#435@3250e42043c21f593e120532c5e440b5821a614b"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:30:47Z",
-      "latest_summary": "Owner directs continued work across all Icarus aspects and says only this worker plus two others are currently working; historical stale sessions are stopping points, not locks. No additional workers spawned. Respect current hub/GRU and coordinator peer reservations. Refresh every open Icarus-federation PR's head and latest exact-source checks; update PR45 inventory/continuation to distinguish historical compiler failure from merged PR47 repair. Current coordination validation passes143events/35sessions/22summaries and52tests. Icarus447 hosted tests39078186866 succeed. Continue non-conflicting internal repairs when found; no broker connection, live arming, spend or protected-holdout expansion.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-17T23:31:41Z",
+      "latest_summary": "Reclaim stopped futures #415/#438/#432/#435 review lane under owner three-worker instruction. Existing branch438 contains the CL paper-readiness correction. Verify reported truthy nonboolean Brain authorization defect with failing tests, fix strict boolean checks, and integrate green sibling432/435 in an isolated new branch without rewriting original branches or merging main. Hub/GRU peer paths stay untouched. Knowledge delta: new dated futures integration verification record linked from existing handoff; update mission continuation to fresh compiler/CI facts.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "federation-current-head-audit",
+      "phase": "futures-integration-repair",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "mission/task-audit-20261017.json",
-        "mission/continuations/2026-10-17-task-audit.md",
-        "mission/current-pr-audit-20261017.json",
-        "mission/README.md"
+        "icarus_engine/brain_evidence.py",
+        "tests_engine/test_brain_evidence.py",
+        "icarus_engine/calendar.py",
+        "icarus_engine/futures_catalog.py",
+        "tests_engine/test_futures_catalog.py",
+        "tests_engine/test_execution_controls.py",
+        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
       ],
       "reserved_targets": [
         {
-          "path": "mission/task-audit-20261017.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/brain_evidence.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/continuations/2026-10-17-task-audit.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "tests_engine/test_brain_evidence.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/current-pr-audit-20261017.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/calendar.py",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "mission/README.md",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "icarus_engine/futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_futures_catalog.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_execution_controls.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261017-task-inventory-start",
@@ -909,7 +941,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:30:59.962141Z",
+  "generated_at_utc": "2026-10-17T23:31:53.094305Z",
   "owner_status": {
     "claude": {
       "active": false,
