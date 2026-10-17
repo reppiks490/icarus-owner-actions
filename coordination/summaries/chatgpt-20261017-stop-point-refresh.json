@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261017-stop-point-refresh",
+  "completed_at_utc": "2026-10-17T23:18:31Z",
+  "result": "complete",
+  "evidence": [
+    "Updated coordination/handoffs/2026-10-17-chatgpt-stop-point.md with the 2026-10-17 task-inventory and hub-integration status.",
+    "Task inventory reports PR #447 head a9217cc16086130a30883162903bccb3f67e9357, 26 focused tests passing, and workflow run 39078186866 still in progress at last read.",
+    "Task inventory reports six immutable coordination schema-drift records; the known failing event remains coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json.",
+    "New independent session codex-20261017-hub-integration-lead owns a separate Divine Providence runner/tour and Windows-containment patch; Windows remains unverified.",
+    "Published time-correction UPDATE event 20261017T231824Z-update-stop-point-refresh; first session COMPLETE event had an estimated future timestamp and must not be treated as ordering evidence."
+  ],
+  "next_agent_actions": [
+    "Refresh GitHub main and workflow status before acting; current generated coordination views still have a 2026-10-16 timestamp.",
+    "Avoid the two PR #447 A200 test files claimed by codex-20261017-task-inventory-start.",
+    "Coordinate with codex-20261017-hub-integration-lead before Divine Providence or /workspace/icarus-institution activity; preserve its worktree.",
+    "Resolve schema migration separately from PR #19 scheduling-only scope; preserve immutable source record bytes.",
+    "The Oct 16 builds remain historical, not current-main qualification. Keep live broker arming disabled."
+  ],
+  "status_notes": [
+    "This session only refreshed a handoff document and made no application source changes.",
+    "ICARUS is not globally complete."
+  ]
+}
