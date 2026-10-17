@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261017-stop-point-final-refresh",
+  "completed_at_utc": "2026-10-17T23:19:25Z",
+  "result": "complete",
+  "evidence": [
+    "Updated coordination/handoffs/2026-10-17-chatgpt-stop-point.md after the task-inventory initial tranche terminal summary appeared.",
+    "Current source records: owner-actions PR #45 open at b9cb0cb4bef082046de9d187a9c5bdf3df8f7f11; Icarus PR #447 open at a9217cc16086130a30883162903bccb3f67e9357; GitHub Actions run 39078186866 remains in_progress at 2026-10-17T23:19Z.",
+    "Task-inventory summary reports 2890 full local tests passed, 3 skipped, 111 subtests, and governance 47 passed; these are local results, not the hosted exact-head result.",
+    "Published update event 20261017T231918Z-update-final-stop-point with current next-agent routing.",
+    "Previously observed full coordination validate failure remains: unknown event type None in the immutable 20261016T131600Z pointer claim; task inventory identifies six schema-drift records total."
+  ],
+  "next_agent_actions": [
+    "Start a new stable coordination session to claim the narrow event/summary compatibility migration and exact-head hosted-CI readback; do not resume the completed task-inventory session.",
+    "Follow the current active hub-integration-lead scope and preserve /workspace/icarus-institution.",
+    "Treat PR447/PR45 as open and run 39078186866 as in progress at last read; refresh status before action.",
+    "Do not rely on stale 2026-10-16 generated views or historical build heads; recompile after validation is repaired.",
+    "Keep live broker arming disabled and do not claim global system completion."
+  ],
+  "status_notes": [
+    "No source-code changes were made in either stop-point documentation session.",
+    "The first stop-point COMPLETE record used a manually estimated future timestamp; this is disclosed in the handoff. Its event ordering is not evidence.",
+    "The initial task-inventory session is terminal for its first tranche only; federation work remains active."
+  ]
+}
