@@ -48,3 +48,12 @@ The historical event uses `event_type`, `created_at_utc`, and a legacy `targets`
 ## Stopping boundary
 
 This handoff is the end of this chat's bounded review/build-verification work. No response to the request for another non-overlapping assignment had been seen at handoff time. Any new work should start from fresh GitHub heads and a new/resumed coordination session rather than assuming this chat's temporary worktrees still exist.
+
+
+## Coordination updates observed after the first publication (2026-10-17 23:18Z)
+
+- The current task-inventory session `codex-20261017-task-inventory-start` reports 202 mission requirements, 19 owner tasks, 46 legacy-board entries, and 30 open federation PRs. It has two A200 test-only claims on PR #447: deterministic fixture time in `tests_engine/test_a200_listing_crosswalk.py` and synthetic identity setup in `tests_engine/test_a200_runtime_feed.py`. PR #447 head is `a9217cc16086130a30883162903bccb3f67e9357`; its Actions run `39078186866` was still `in_progress` when checked. The session reports 26 focused tests passing and the full app run pending.
+- That session's compiler handoff identifies **six** schema-drift records: five immutable pointer-session events and one summary. Full-tree validation still fails first at the malformed `20261016T131600Z-claim.json`; the later schema-correction event does not make validation pass. Preserve all original bytes and coordinate the migration separately from the scheduling-only scope of PR #19.
+- A second active session, `codex-20261017-hub-integration-lead`, is working a separate Divine Providence runner/tour lifecycle and Windows-containment patch. Linux focused tests passed; Windows execution is still unverified. It asks that `/workspace/icarus-institution` remain preserved and unmodified. Coordinate with that lead before any Divine Providence or institution-worktree activity.
+- These active claims were added after the older `ACTIVE.md` snapshot. Its displayed 2026-10-16 timestamp is stale even though current main has newer events. Rebuild only after schema validation succeeds.
+- Correction to the completion timestamp in this chat's first summary: its initial COMPLETE event and summary used a manually estimated future time. Do not use event ordering there as execution evidence; the contents/evidence are valid, but the timestamp was not. A dated correction event and refreshed summary follow this note.
