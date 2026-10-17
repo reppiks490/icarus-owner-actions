@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261017-stop-point",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Document a bounded stopping point and reusable handoff for subsequent ICARUS agents.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "coordination/stop-point-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:16:48Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github"
+  ],
+  "initial_dependencies": [
+    "coordination/sessions/codex-20261017-task-inventory-start.json",
+    "coordination/summaries/chatgpt-20261016-current-head-builds.json"
+  ]
+}
