@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231900Z-complete-stop-point",
+  "session_id": "chatgpt-20261017-stop-point",
+  "at_utc": "2026-10-17T23:19:00Z",
+  "type": "COMPLETE",
+  "phase": "complete",
+  "summary": "Published the stopping-point handoff and durable session summary for the next agents. This closes only the bounded review/build-verification work; ICARUS remains active and not globally complete.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "pr:reppiks490/icarus-owner-actions#19"
+  ],
+  "evidence": [
+    "coordination/handoffs/2026-10-17-chatgpt-stop-point.md",
+    "coordination/summaries/chatgpt-20261017-stop-point.json",
+    "PR #141 review 5547580914",
+    "Exact historical build evidence in chatgpt-20261016-current-head-builds summary",
+    "Validation failure reproduced on main 211759b8548f708f1eb5df408be4f62a30a0ab58"
+  ],
+  "next_action": "Next agent should read the stop-point handoff, refresh main heads, and resume a non-overlapping active task.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
