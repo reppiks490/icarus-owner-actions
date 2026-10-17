@@ -170,6 +170,33 @@ class CoordinationFabricContractTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "conflicting event fields"):
                 validate_tree(root)
 
+    def test_immutable_legacy_string_targets_and_status_get_canonicalized(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            event = {
+                "schema_version": "icarus-coordination-event-v2", "event_id": "old-string-targets",
+                "session_id": "chat-a", "type": "UPDATE", "at_utc": "2026-10-16T02:10:00Z",
+                "status": "superseded", "summary": "old immutable string targets",
+                "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+                "targets": ["tests_engine/browser_depth.cjs", "coordination/summaries/chat-a.json"],
+            }
+            _write(root, "coordination/events/2026/10/16/chat-a/old.json", event)
+            _write(root, "coordination/summaries/chat-a.json", {
+                "schema_version": "icarus-coordination-summary-v2", "session_id": "chat-a",
+                "status": "superseded", "finished_at_utc": "2026-10-16T02:11:00Z",
+                "summary": "legacy superseded summary",
+            })
+            normalized = validate_tree(root)["events"][0][1]
+            self.assertEqual(normalized["phase"], "legacy")
+            self.assertEqual(normalized["targets"], [
+                {"repo": "reppiks490/Icarus", "path": "tests_engine/browser_depth.cjs"},
+                {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/summaries/chat-a.json"}])
+            validated_summary = validate_tree(root)["summaries"]["chat-a"]
+            self.assertEqual(validated_summary["completed_at_utc"], "2026-10-16T02:11:00Z")
+            self.assertEqual(validated_summary["result"], "cancelled")
+
     def test_orphaned_events_require_a_terminal_complete_receipt(self):
         compile_state, _, _, validate_tree = self._api()
         with tempfile.TemporaryDirectory() as td:

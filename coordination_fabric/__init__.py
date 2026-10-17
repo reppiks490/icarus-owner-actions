@@ -80,9 +80,10 @@ def _string_list(value: Any, field: str) -> list[str]:
 
 
 def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
-    """Map the one immutable pre-canonical event dialect to canonical keys."""
+    """Map immutable pre-canonical event dialects to canonical keys in memory."""
     doc = dict(doc)
     legacy_dialect = "event_type" in doc or "created_at_utc" in doc
+    legacy_phase_missing = "phase" not in doc
     aliases = {
         "type": "event_type",
         "at_utc": "created_at_utc",
@@ -93,10 +94,34 @@ def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
             raise ValueError(f"conflicting event fields: {canonical} and {legacy}")
         if canonical not in doc and legacy in doc:
             doc[canonical] = doc[legacy]
-    if legacy_dialect and "phase" not in doc:
+    if "phase" not in doc and (legacy_dialect or "status" in doc):
         doc["phase"] = "legacy"
     doc.setdefault("paths", [])
     targets = doc.get("targets")
+    repos = doc.get("repos")
+    if (isinstance(targets, list) and targets and all(isinstance(item, str) for item in targets)
+            and isinstance(repos, list)):
+        qualified: list[dict[str, str]] = []
+        if len(repos) == 1:
+            qualified = [{"repo": repos[0], "path": item} for item in targets]
+        elif "status" in doc and legacy_phase_missing:
+            # A superseded 2026-10-16 producer wrote cross-repository paths
+            # without repo qualifiers. Its coordination/ paths identify the
+            # owner-actions bus; when one repo remains, the other paths belong
+            # to that declared repo. No general multi-repo guessing is allowed.
+            bus_repo = "reppiks490/icarus-owner-actions"
+            for item in targets:
+                other_repos = [candidate for candidate in repos if candidate != bus_repo]
+                repo = bus_repo if item.startswith("coordination/") and bus_repo in repos else None
+                if repo is None and len(other_repos) == 1:
+                    repo = other_repos[0]
+                if repo is None:
+                    qualified = []
+                    break
+                qualified.append({"repo": repo, "path": item})
+        if qualified:
+            doc["targets"] = qualified
+            targets = qualified
     if legacy_dialect and not doc.get("repos") and isinstance(targets, list):
         doc["repos"] = list(dict.fromkeys(
             item.get("repo") for item in targets if isinstance(item, dict) and isinstance(item.get("repo"), str)
@@ -192,6 +217,11 @@ def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict
 
 
 def _validate_summary(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict[str, Any]:
+    doc = dict(doc)
+    if "completed_at_utc" not in doc and "finished_at_utc" in doc:
+        doc["completed_at_utc"] = doc["finished_at_utc"]
+    if "result" not in doc and doc.get("status") == "superseded":
+        doc["result"] = "cancelled"
     if doc.get("schema_version") != SUMMARY_SCHEMA:
         raise ValueError(f"unsupported summary schema: {path}")
     sid = _safe_session_id(doc.get("session_id"))
