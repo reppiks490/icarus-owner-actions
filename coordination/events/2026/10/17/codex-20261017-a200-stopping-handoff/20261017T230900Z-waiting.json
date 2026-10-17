@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T230900Z-waiting-a200-stopping-handoff",
+  "session_id": "codex-20261017-a200-stopping-handoff",
+  "at_utc": "2026-10-17T23:09:00Z",
+  "type": "WAITING",
+  "phase": "waiting",
+  "summary": "The documentation PR is published, but exact-head coordination-fabric checks fail in all three supported Python versions while validating live records. The failure is the pre-existing malformed immutable event from 2026-10-16 with no event type. This handoff does not change that unrelated record; PR #43 remains open pending an authorized repair or a safe validator path that can validate the new records without mutating historical evidence.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": ["coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json"],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"}
+  ],
+  "dependencies": ["pr:reppiks490/icarus-owner-actions#43", "github-run:39077786280"],
+  "evidence": [
+    "github-run:39077786280:contract-failure-on-validate-live-coordination-records-python-3.11-3.12-3.13",
+    "local coordination_fabric validate reports unknown event type None in 20261016T131600Z-claim.json"
+  ],
+  "next_action": "Keep the handoff available in PR #43; do not alter the unrelated immutable event. Merge only after exact-head checks can pass without weakening record validation.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
