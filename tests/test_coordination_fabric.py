@@ -199,16 +199,21 @@ class CoordinationFabricContractTests(unittest.TestCase):
 
     def test_legacy_summary_rejects_conflicting_canonical_fields(self):
         _, _, _, validate_tree = self._api()
-        with tempfile.TemporaryDirectory() as td:
-            root = Path(td)
-            _session(root, "chat-a")
-            _write(root, "coordination/summaries/chat-a.json", {
-                "schema_version": "icarus-coordination-summary-v2", "session_id": "chat-a",
-                "status": "superseded", "result": "complete",
-                "finished_at_utc": "2026-10-16T02:11:00Z", "completed_at_utc": "2026-10-16T02:12:00Z",
-            })
-            with self.assertRaisesRegex(ValueError, "conflicting summary fields"):
-                validate_tree(root)
+        conflicting_fields = [
+            {"finished_at_utc": "2026-10-16T02:11:00Z", "completed_at_utc": "2026-10-16T02:12:00Z"},
+            {"status": "superseded", "result": "complete"},
+        ]
+        for summary_fields in conflicting_fields:
+            with self.subTest(summary_fields=summary_fields), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                _session(root, "chat-a")
+                _write(root, "coordination/summaries/chat-a.json", {
+                    "schema_version": "icarus-coordination-summary-v2", "session_id": "chat-a",
+                    "status": "superseded", "finished_at_utc": "2026-10-16T02:11:00Z",
+                    "completed_at_utc": "2026-10-16T02:11:00Z", **summary_fields,
+                })
+                with self.assertRaisesRegex(ValueError, "conflicting summary fields"):
+                    validate_tree(root)
 
     def test_orphaned_events_require_a_terminal_complete_receipt(self):
         compile_state, _, _, validate_tree = self._api()
