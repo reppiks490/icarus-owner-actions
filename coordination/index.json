@@ -837,48 +837,24 @@
       "branch": "codex/task-inventory-20261017",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [
-        ".github/workflows/test.yml",
-        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
-      ],
-      "declared_targets": [
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "declared_paths": [],
+      "declared_targets": [],
       "dependencies": [
-        "pr:reppiks490/Icarus#450",
-        "pr:reppiks490/icarus-owner-actions#51",
+        "independent-review:Icarus#450",
+        "separate-merge-decision:coordination/CONTROL_PLANE_CONTRACT.md",
         "session:codex-20261017-hub-integration-lead"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:38:57Z",
-      "latest_summary": "Reviewable deliveries for the two current peer workers: owner-actions51@1837a3a fixes misleading current/stale headline;53local governance tests and hosted39079763194SUCCESS. Icarus450@4f6ef403 consolidates stopped futures stack, rejects nonboolean evidence flags and adds seven missing contract modules to Windows list(110collected). Runtime code at a017 passed2975tests/111subtests,3skips; final differences are docs+Windows test selection only. Request independent semantic review of futuresevidence/qualification boundary; no merge decision assumed. Root implementation paths can be reclaimed after fresh claim; root will observe hosted450 and preserve final receipt. Hub Windows failure39078762673 remains assigned to hub peer.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-17T23:49:07Z",
+      "latest_summary": "Release root implementation paths after verified deliveries: Icarus450 strict evidence flags and futures stack passes exact-head Linux/expanded Windows run39079800021; owner-actions51 current/stale count repair passes53tests and hosted39079763194; updated inventory45 includes35PR source heads and actual remaining gates. Full Icarus objective remains incomplete. Independent semantic review and the control-plane's separate merge decision are pending; hub Windows escape remains with its peer. No additional agents, main merge, broker connection or live authority.",
+      "latest_type": "RELEASE",
       "model_family": "openai",
-      "phase": "hosted-verification-and-peer-review",
+      "phase": "awaiting-independent-review",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [
-        ".github/workflows/test.yml",
-        "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261017-task-inventory-start",
       "stale": false,
       "status": "active"
@@ -891,7 +867,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:39:06.693732Z",
+  "generated_at_utc": "2026-10-17T23:49:17.463297Z",
   "owner_status": {
     "claude": {
       "active": false,
