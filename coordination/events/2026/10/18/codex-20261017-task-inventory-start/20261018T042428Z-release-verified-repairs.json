@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261017-task-inventory-start",
+  "at_utc": "2026-10-18T04:24:28Z",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "dependencies": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "event_id": "20261018T042428Z-release-verified-repairs",
+  "type": "RELEASE",
+  "phase": "repair-delivery-closeout",
+  "summary": "Release current code repair leases:45063e238f4 hosted39080943838SUCCESS;45101671568 hosted39096488204SUCCESS;Engine2099298ac6b synthetic39096705635 andapplication39096705515SUCCESS. IndependentreviewCLEAR. Originalbranches preserved; no mainmerge, realFR1 orlivearming. Mission checkpoint55627d1 published; move to owner-orderedcorpusgoal.",
+  "targets": [],
+  "evidence": [
+    "pr:Icarus450@63e238f4",
+    "pr:Icarus451@01671568",
+    "pr:Engine209@9298ac6b",
+    "health:39096842728:success"
+  ],
+  "next_action": "Finish secure corpus consumer design and bounded mirror repairs, then prove actual source-backed runtime consumption before dashboard work."
+}
