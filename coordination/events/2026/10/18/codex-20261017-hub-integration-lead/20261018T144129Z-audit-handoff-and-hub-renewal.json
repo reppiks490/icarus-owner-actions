@@ -1,0 +1,131 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T144129Z-audit-handoff-and-hub-renewal",
+  "session_id": "codex-20261017-hub-integration-lead",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T14:41:29Z",
+  "phase": "debugging-and-review",
+  "summary": "Owner expanded next priorities to ten genuinely new free-access futures/micros, A200 all dashboards, truthful four-ledger P&L and correct manual broker/prop setup. Read-only agents found material P&L availability/staleness/currency defects and program-specific automation restrictions; hand off to task-inventory and dashboard-integration-audit, retaining their source ownership. Root renews only hub/GRU source scope and its new durable audit handoff file. Hub Windows diagnostic proved marker existed before runner return, so replace timing fixture with DEVNULL+ready-PID live-process assertion; production containment behavior is unchanged pending verification.",
+  "repos": [
+    "reppiks490/divine-providence",
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "docs/ARCHITECTURE.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/cli.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/drivers/nexus_to_oracle.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/mcp_server.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/runner.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/tour.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/validate.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_hub.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_runner_lifecycle.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": ".github/workflows/runner-lifecycle.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/deep-learning-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "ICARUS_CHAT_HANDOFF_DEEP_LEARNING_20261015.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/__main__.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/dataset.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/deep_challenger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/integrity.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/metrics.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/run.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/trainers/sequence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "pyproject.toml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_deep_learning_challenger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_review_fixes.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/divine-providence#59",
+    "pr:reppiks490/Icarus#353",
+    "pr:reppiks490/Icarus#387",
+    "session:codex-20261017-task-inventory-start"
+  ],
+  "evidence": [
+    "run:39096423089 marker written_ns432270158500 before returned_ns432279813700; runtime0.91s",
+    "read-only-audit:command_center_integration_audit pinned Icarus c993130534126a352c766fb7abc0de3145fc110f",
+    "read-only-audit:futures_expansion_audit",
+    "read-only-audit:broker_prop_capability_audit",
+    "central-fresh-collisions:empty"
+  ],
+  "next_action": "Publish handoff to peer-owned dashboard/account work, strengthen hub regression, pass all CI, continue complete PR387 integration. No overlapping dashboard modifications by root.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "codex-20261017-task-inventory-start",
+    "codex-20261018-dashboard-integration-audit"
+  ]
+}
