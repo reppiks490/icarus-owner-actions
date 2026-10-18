@@ -561,9 +561,7 @@
         "pyproject.toml",
         "tests_engine/test_deep_learning_challenger.py",
         "tests_engine/test_review_fixes.py",
-        "coordination/handoffs/2026-10-18-hub-integration-audit.md",
-        "tests_engine/test_a200_listing_crosswalk.py",
-        "tests_engine/test_a200_runtime_feed.py"
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
       ],
       "declared_targets": [
         {
@@ -661,14 +659,6 @@
         {
           "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_a200_runtime_feed.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -679,11 +669,11 @@
       ],
       "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
       "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-18T14:48:26Z",
-      "latest_summary": "All7 broad GRU integration failures reproduce identically on isolated clean main1d3f38ce: dated A200 listing-crosswalk/runtime synthetic fixtures. Existing peer PR447 a9217cc fixes exactly those2 test files, is mergeable and its published CI39078186866 passed. Root claims narrow review/current-main integration verification and merge of that existing repair, preserving its branch and all runtime freshness gates; no duplicate implementation. GRU independent review also found persisted-model replay not reading disk and empty-label regression; fixing only those owned trainer/test paths with synthetic tests. Hub final fixture f63347c9 passes lifecycle/subsystem checks; Windows full bootstrap still runs.",
+      "last_event_at_utc": "2026-10-18T14:51:02Z",
+      "latest_summary": "Merged existing peer PR447 at e4daa751 after green published CI and independent26-test current-main verification; all7 prior engine failures were reproduced on clean main first. Release the two A200 fixture-test reservations. GRU integration now based on e4daa751 at local3d8b9f70 includes reviewed disk-read/digest/preprocessing replay verification and empty-history compatibility;56 focused synthetic realTorch/temporal/trainer/spec tests passed. Full engine suite and package build are running after rebase. Hub final fixture f63347c9 has green Linux/Windows3.11+3.13 lifecycle and subsystem validation; Windows full bootstrap still runs. Shared P&L/futures/prop findings are posted to PR452 comment6251218869; root has not modified peer-owned dashboard/account files.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "merge-review",
+      "phase": "validation",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -710,9 +700,7 @@
         "pyproject.toml",
         "tests_engine/test_deep_learning_challenger.py",
         "tests_engine/test_review_fixes.py",
-        "coordination/handoffs/2026-10-18-hub-integration-audit.md",
-        "tests_engine/test_a200_listing_crosswalk.py",
-        "tests_engine/test_a200_runtime_feed.py"
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
       ],
       "reserved_targets": [
         {
@@ -810,14 +798,6 @@
         {
           "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests_engine/test_a200_listing_crosswalk.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_a200_runtime_feed.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261017-hub-integration-lead",
@@ -1140,7 +1120,7 @@
     "stale": 14,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T14:48:35.413509Z",
+  "generated_at_utc": "2026-10-18T14:51:25.836248Z",
   "owner_status": {
     "claude": {
       "active": false,
