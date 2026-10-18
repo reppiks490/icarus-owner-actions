@@ -1,0 +1,88 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T041319Z-ordered-continuation",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T04:13:19Z",
+  "phase": "finish-repairs-before-corpus-and-dashboards",
+  "summary": "Owner expanded ordered goal: finish current repairs; make API/corpora securely accessible/readable/usable by Icarus for multiple beneficial purposes; then three separate accessible dashboards trading differently, with real corpus use. Check Copilot work before shared edits. Read-only discovery found exact starred cporter202/API-mega-list. No new corpus/product mutation yet. Futures450 exact63e238f4 hosted39080943838 Linux+WindowsSUCCESS, independent reviewCLEAR, readyforreview unmerged. A200 repair7b0b818d independentlyCLEAR/70focused; original443 fullsuite2894pass/2oldexpiredlistingfail/3skip, now merged verified450 in isolatedbranch to retain currentfixtures and rerunningfullsuite. Add bridge module to explicitWindowsselection. Engine synthetic repairs finishing stale-snapshot/unversioned-overlap guards. One reviewer usage failure before any edits; root took implementation and replacement reviewer verified it.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_futures/contracts.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_contract_families.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/FRONTIER_REVIEW_REPAIR_20261017.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    }
+  ],
+  "dependencies": [
+    "ci:A200-integrated-repair",
+    "review:Engine-frontier-repair"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#450@63e238f4aedf06744b0581281727cdafb7f0e0a1",
+    "run:39080943838:success",
+    "review:A200@7b0b818d95df2270449a50ef0a8448203537799c:CLEAR"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Finish repair publication/verification then claim exact corpus+dashboard paths after Copilot reconciliation. Never expose credentials or enable live execution."
+}
