@@ -999,17 +999,199 @@
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T09:36:20Z",
-      "latest_summary": "Independent native evidence review verified exact three artifact bytes and found oversized numeric input exception; root captured failing case then bounded before finite conversion,31tests pass at8c8a37b4. Dedicated routes, controlled workspace selection and connection/rule modules progressing in disjoint lanes. Claim runtime native interval compatibility and retired-runner safety: existing poll hardcodes60s while corpus is300s; in-flight poll after flat removal can mutate orphan runner because on_sub_bar lacks retirement guard. Preserve default60s behavior, reject unsupported finer charts and prevent post-removal mutation without holding locks across provider I/O.",
+      "last_event_at_utc": "2026-10-18T15:06:19Z",
+      "latest_summary": "Renew unchanged disjoint reservations after local integration/review. Parent Icarus branch codex/four-workspace-delivery-20261018 includes four dedicated routes, actual pinned metadata from all three successful native corpora, persistent controlled 32-root selection, incomplete-ledger/mark accounting flags, retirement safety and native300s polling. Independent review reproduced contract-roll bypass and unclosed fallback mark; three RED controls then repair63a70efe and re-review CLEAR18cases. Private account store has immutable credential versions, crossfield readback validation, no false connected status, whole-contract policy checks; read-only ProjectX login/account adapter d4195b7e uses official fixed endpoints and explicit hashed account selection. No order methods, purchases or live authority. Local earlier integrated3344tests/3skips/111subtests; newer changes require final full run. A200 research panel854d2cf5 passes25HTTP/browser tests; all200remain unqualified for Pulse. Ten-family plus eight-micro corpus-only expansion is under implementation, no default paid subscriptions. Actual Topstep official FAQ confirms separate API fee and server order-routing ban; current broker secrets absent. Read peer PR452 findings next and preserve peer hub/GRU guard/provenance scopes. No main merge or deployment performed by this session.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "four-workspace-runtime-integration",
       "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reclaimable": false,
+      "reserved_paths": [
+        "tools/provider_exhaustive_collection.py",
+        "tests/test_provider_exhaustive_collection.py",
+        "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md",
+        ".github/workflows/corpus-consumer-plane.yml",
+        "tests/test_corpus_consumer_workflow.py",
+        "tools/provider_archive.py",
+        "tests/test_provider_archive.py",
+        "tools/provider_exhaustive_collection.py",
+        "tests/test_provider_exhaustive_collection.py",
+        "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md",
+        "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md",
+        "icarus_engine/corpus_intake.py",
+        "tools/provider_corpus_intake.py",
+        "tests_engine/test_corpus_intake.py",
+        "tests/test_provider_corpus_intake.py",
+        "mission/current-pr-audit-20261017.json",
+        "mission/task-audit-20261017.json",
+        "mission/continuations/2026-10-17-task-audit.md",
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+        "icarus_engine/corpus_evidence.py",
+        "icarus_engine/corpus-consumption.json",
+        "tests_engine/test_corpus_evidence.py",
+        "icarus_engine/server.py",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "icarus_engine/workspace-dashboard.js",
+        "tests_engine/test_command_center_routes.py",
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
+        "tests_engine/test_paper_workspaces_runtime.py",
+        "icarus_engine/account_connections.py",
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/propfirm-rules.json",
+        "tests_engine/test_account_connections.py",
+        "icarus_engine/runtime.py",
+        "tests_engine/test_corpus_runtime_poll.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "tools/provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": ".github/workflows/corpus-consumer-plane.yml",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_corpus_consumer_workflow.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/provider_archive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_archive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tools/provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tools/provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/task-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus-consumption.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/command-centers-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_command_center_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces_runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/account_connections.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/propfirm-rules.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_account_connections.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_runtime_poll.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "session_id": "codex-20261017-task-inventory-start",
-      "stale": true,
+      "stale": false,
       "status": "active"
     },
     {
@@ -1117,10 +1299,10 @@
   "counts": {
     "active": 15,
     "collisions": 0,
-    "stale": 14,
+    "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T14:51:25.836248Z",
+  "generated_at_utc": "2026-10-18T15:06:30.407275Z",
   "owner_status": {
     "claude": {
       "active": false,
