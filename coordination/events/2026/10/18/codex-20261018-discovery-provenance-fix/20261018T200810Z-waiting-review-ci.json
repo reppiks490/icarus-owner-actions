@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T200810Z-waiting-review-ci",
+  "session_id": "codex-20261018-discovery-provenance-fix",
+  "at_utc": "2026-10-18T20:08:10.435257Z",
+  "type": "WAITING",
+  "phase": "exact-head-review-and-verification",
+  "summary": "Opened draft Icarus455 at760e6539: conservative API-origin/query-variant provenance repair, regression coverage, behavior docs and original330/332 supersession evidence. Registry+CLI 131tests passed; default tests_engine is running with external sockets blocked and localhost allowed. Root independent review requested; no merge, provider calls or execution authority changes.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/discovery_registry/federation.py",
+    "tests_engine/test_discovery_registry_federation.py",
+    "tests/test_catalog_registry_ingest.py",
+    "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+    "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/discovery_registry/federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_discovery_registry_federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_catalog_registry_ingest.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#455",
+    "session:codex-20261018-dashboard-integration-audit"
+  ],
+  "evidence": [
+    "head:reppiks490/Icarus@760e6539e5993312c46ac04b264c976ee0b628de",
+    "test:131-registry-cli-passed",
+    "red:10-expected-provenance-failures-plus-ambiguous-descriptor-failure"
+  ],
+  "next_action": "Collect full-suite result and exact-head hosted checks; incorporate review within scope; leave PR unmerged.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "codex-20261018-dashboard-integration-audit"
+  ]
+}
