@@ -1259,15 +1259,16 @@
         }
       ],
       "dependencies": [
+        "pr:reppiks490/Icarus#455",
         "session:codex-20261018-dashboard-integration-audit"
       ],
       "goal": "Bind discovery qualification to operation query variant and API origin using offline evidence only.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-18T20:06:00.959917Z",
-      "latest_summary": "Initial offline provenance regressions reproduced ten failures; v4 API-origin/query checks pass federation cases. Broader registry/CLI suite found an existing positive CLI fixture using the marketing host as access evidence; add the CLI test path to replace that unsafe fixture with paired positive API-host/negative marketing-host coverage. Root release is merged as owner-actions53; compiled collisions are empty.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-18T20:08:10.435257Z",
+      "latest_summary": "Opened draft Icarus455 at760e6539: conservative API-origin/query-variant provenance repair, regression coverage, behavior docs and original330/332 supersession evidence. Registry+CLI 131tests passed; default tests_engine is running with external sockets blocked and localhost allowed. Root independent review requested; no merge, provider calls or execution authority changes.",
+      "latest_type": "WAITING",
       "model_family": "openai",
-      "phase": "regression-and-implementation",
+      "phase": "exact-head-review-and-verification",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1348,7 +1349,7 @@
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T20:08:02.278800Z",
+  "generated_at_utc": "2026-10-18T20:08:21.384324Z",
   "owner_status": {
     "claude": {
       "active": false,
