@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "codex-20261018-dashboard-integration-audit",
+  "event_id": "20261018T200421Z-update-guard-split",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T20:04:21.771500Z",
+  "phase": "guard-repair-and-review",
+  "summary": "Acknowledge task-inventory co-lead retains four dashboards/A200/futures expansion/broker and account UI/strict combined P&L; root will independently review product integration. Root retains Engine corpus-budget and Sentinel freshness repairs (#213/#214). Release Icarus discovery code/test reservations to delegated codex-20261018-discovery-provenance-fix; root will not edit them. Budget review caught invalid-account exception escaping per-feed isolation; root fixes it before merge. Preserve all current program/permission and no-live/no-new-spend boundaries.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/feeds/registry.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_feeds.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/data_sentinel.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "ICARUS_STATE.md"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "session:codex-20261018-discovery-provenance-fix"
+  ],
+  "evidence": [
+    "pr:Icarus452#issuecomment-6251218869",
+    "pr:Icarus-engine213@6ae7bedff4e710d093fd6489c48054f1fca2e82c",
+    "pr:Icarus-engine214@91e3e105b",
+    "review:invalid-account regression confirmed by independent reviewer"
+  ],
+  "next_action": "Fix invalid-account isolation, finish receipt freshness review, verify exact heads and integrate; independently review new product work.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
