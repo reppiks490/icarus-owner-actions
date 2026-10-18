@@ -1,0 +1,58 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T201117Z-final-head-waiting",
+  "session_id": "codex-20261018-discovery-provenance-fix",
+  "at_utc": "2026-10-18T20:11:17.960474Z",
+  "type": "WAITING",
+  "phase": "exact-head-review-and-verification",
+  "summary": "PR #455 final head 763ed677 rejects blank variant descriptors as well as ambiguous queries and marketing origins. Final offline registry/CLI suite: 133 passed. Initial repair full project suite: 2897 passed, 3 skipped, 111 subtests passed, 7 A200 failures; all seven independently reproduce on untouched base c9931305. No A200 edits. Exact-head Linux/Windows CI and read-only independent review are running.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/discovery_registry/federation.py",
+    "tests_engine/test_discovery_registry_federation.py",
+    "tests/test_catalog_registry_ingest.py",
+    "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+    "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/discovery_registry/federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_discovery_registry_federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_catalog_registry_ingest.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#455",
+    "github-run:39162079257",
+    "github-run:39162075870",
+    "session:codex-20261018-dashboard-integration-audit"
+  ],
+  "evidence": [
+    "head:reppiks490/Icarus@763ed6770a233ba0d0794bbd1caefffe9ea16044",
+    "test:133-registry-cli-passed",
+    "baseline:c993130534126a352c766fb7abc0de3145fc110f:seven-identical-A200-failures",
+    "handoff:docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+  ],
+  "next_action": "Collect exact-head CI and independent review. Keep PR draft and unmerged; preserve original draft branches and live broker disabled.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "codex-20261018-dashboard-integration-audit"
+  ]
+}
