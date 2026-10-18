@@ -1,0 +1,84 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T000032Z-a200-receipt-review",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "CLAIM",
+  "at_utc": "2026-10-18T00:00:32Z",
+  "phase": "parallel-receipt-and-research-repair",
+  "summary": "Continue parallel tasks after risk repair. Parent independently reviewed A200443 exact0e772ec4:58focused tests pass but synthetic same-receipt fractional timestamp substitution is accepted (1799999700->1799999700.5) because bridge int-casts before hashing, violating validator's exact integer timestamp rule. Assign idle parent-owned reviewer bounded failing-first repair in isolated worktree; preserve original443. Research worker continues synthetic-only historical accounting and provenance repairs. Root handles independent review, exact-head CI and evidence publication.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_futures/contracts.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_contract_families.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/FRONTIER_REVIEW_REPAIR_20261017.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    }
+  ],
+  "dependencies": [
+    "ci:Icarus450@63e238f4",
+    "review:Engine142-repairs"
+  ],
+  "evidence": [
+    "review:A200443@0e772ec4541cc3b26e34da13de3a7832a614e3c0",
+    "local:A20058pass-fractional-timestamp-reproducer-accepted",
+    "review:mission45@91b028f-CLEAR"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Repair receipt canonical timestamp/type boundary without policy promotion; review Engine synthetic repair and finish hosted futures checks."
+}
