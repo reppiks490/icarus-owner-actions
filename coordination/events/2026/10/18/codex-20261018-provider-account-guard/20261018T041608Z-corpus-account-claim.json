@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T041608Z-corpus-account-claim",
+  "session_id": "codex-20261018-provider-account-guard",
+  "type": "CLAIM",
+  "at_utc": "2026-10-18T04:16:08Z",
+  "phase": "offline-regression",
+  "summary": "Repair only effective OHLCV account resolution and refusal without an approved corpus ledger lane. No allocations, provider calls, purchases, live authority or merges. Knowledge delta: regression names and PR description document the account invariant; no additional repository docs within this two-file delegated scope.",
+  "repos": [
+    "reppiks490/Icarus-engine"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/feeds/registry.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_feeds.py"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "main:9ba6e21f9086362a636bf13fc5f5d6498a9b3754",
+    "registry._corpus_lane returns None for third while adapter accepts third"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Run offline failing tests for third account and secondary-only credentials, implement, verify focused suite, and open PR without merging."
+}

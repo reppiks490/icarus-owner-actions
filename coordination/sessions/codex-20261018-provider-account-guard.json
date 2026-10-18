@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261018-provider-account-guard",
+  "actor": "Codex provider-account guard subagent",
+  "model_family": "openai",
+  "goal": "Fail closed on OHLCV accounts without approved corpus spend lanes and align account resolution.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "codex/databento-corpus-account-guard-20261018",
+  "pr": null,
+  "started_at_utc": "2026-10-18T04:16:08Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github",
+    "python"
+  ],
+  "initial_dependencies": [
+    "session:codex-20261017-hub-integration-lead"
+  ]
+}
