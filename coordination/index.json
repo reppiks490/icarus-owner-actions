@@ -554,18 +554,11 @@
       "model_family": "openai",
       "phase": "implementation",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "tests/test_coordination_automation.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "tests/test_coordination_automation.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261017-coordination-cron-guard",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -708,128 +701,11 @@
       "model_family": "openai",
       "phase": "integration",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "README.md",
-        "docs/ARCHITECTURE.md",
-        "src/divine_providence/cli.py",
-        "src/divine_providence/drivers/nexus_to_oracle.py",
-        "src/divine_providence/mcp_server.py",
-        "src/divine_providence/runner.py",
-        "src/divine_providence/tour.py",
-        "src/divine_providence/validate.py",
-        "tests/test_hub.py",
-        "tests/test_runner_lifecycle.py",
-        ".github/workflows/runner-lifecycle.yml",
-        ".github/workflows/deep-learning-contract.yml",
-        "ICARUS_CHAT_HANDOFF_DEEP_LEARNING_20261015.md",
-        "icarus_engine/trainers/__main__.py",
-        "icarus_engine/trainers/dataset.py",
-        "icarus_engine/trainers/deep_challenger.py",
-        "icarus_engine/trainers/integrity.py",
-        "icarus_engine/trainers/metrics.py",
-        "icarus_engine/trainers/run.py",
-        "icarus_engine/trainers/sequence.py",
-        "pyproject.toml",
-        "tests_engine/test_deep_learning_challenger.py",
-        "tests_engine/test_review_fixes.py"
-      ],
-      "reserved_targets": [
-        {
-          "path": "README.md",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "docs/ARCHITECTURE.md",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/cli.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/drivers/nexus_to_oracle.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/mcp_server.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/runner.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/tour.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "src/divine_providence/validate.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "tests/test_hub.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "tests/test_runner_lifecycle.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": ".github/workflows/runner-lifecycle.yml",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": ".github/workflows/deep-learning-contract.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "ICARUS_CHAT_HANDOFF_DEEP_LEARNING_20261015.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/__main__.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/dataset.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/deep_challenger.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/integrity.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/metrics.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/run.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/trainers/sequence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "pyproject.toml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_deep_learning_challenger.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_review_fixes.py",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261017-hub-integration-lead",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -841,6 +717,7 @@
         "icarus_futures/contracts.py",
         "tests_engine/test_futures_contract_families.py",
         "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        ".github/workflows/test.yml",
         "icarus_engine/a200_runtime_bridge.py",
         "tests_engine/test_a200_runtime_bridge.py",
         "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
@@ -864,6 +741,10 @@
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -912,22 +793,23 @@
         }
       ],
       "dependencies": [
-        "ci:Icarus450@63e238f4",
-        "review:Engine142-repairs"
+        "ci:A200-integrated-repair",
+        "review:Engine-frontier-repair"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T00:00:32Z",
-      "latest_summary": "Continue parallel tasks after risk repair. Parent independently reviewed A200443 exact0e772ec4:58focused tests pass but synthetic same-receipt fractional timestamp substitution is accepted (1799999700->1799999700.5) because bridge int-casts before hashing, violating validator's exact integer timestamp rule. Assign idle parent-owned reviewer bounded failing-first repair in isolated worktree; preserve original443. Research worker continues synthetic-only historical accounting and provenance repairs. Root handles independent review, exact-head CI and evidence publication.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-18T04:13:19Z",
+      "latest_summary": "Owner expanded ordered goal: finish current repairs; make API/corpora securely accessible/readable/usable by Icarus for multiple beneficial purposes; then three separate accessible dashboards trading differently, with real corpus use. Check Copilot work before shared edits. Read-only discovery found exact starred cporter202/API-mega-list. No new corpus/product mutation yet. Futures450 exact63e238f4 hosted39080943838 Linux+WindowsSUCCESS, independent reviewCLEAR, readyforreview unmerged. A200 repair7b0b818d independentlyCLEAR/70focused; original443 fullsuite2894pass/2oldexpiredlistingfail/3skip, now merged verified450 in isolatedbranch to retain currentfixtures and rerunningfullsuite. Add bridge module to explicitWindowsselection. Engine synthetic repairs finishing stale-snapshot/unversioned-overlap guards. One reviewer usage failure before any edits; root took implementation and replacement reviewer verified it.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "parallel-receipt-and-research-repair",
+      "phase": "finish-repairs-before-corpus-and-dashboards",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_futures/contracts.py",
         "tests_engine/test_futures_contract_families.py",
         "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        ".github/workflows/test.yml",
         "icarus_engine/a200_runtime_bridge.py",
         "tests_engine/test_a200_runtime_bridge.py",
         "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
@@ -951,6 +833,10 @@
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1007,10 +893,10 @@
   "counts": {
     "active": 14,
     "collisions": 0,
-    "stale": 11,
+    "stale": 13,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-18T00:54:06.952462Z",
+  "generated_at_utc": "2026-10-18T04:13:32.827470Z",
   "owner_status": {
     "claude": {
       "active": false,
