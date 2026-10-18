@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T041413Z-plan-dashboard-integration-audit",
+  "session_id": "codex-20261018-dashboard-integration-audit",
+  "at_utc": "2026-10-18T04:14:13Z",
+  "type": "PLAN",
+  "phase": "read-only-audit",
+  "summary": "Resumed after environment restart. Independently audit four-workspace paper input/state isolation, aggregate P&L, journal persistence and stale provider-guard proposals. No implementation targets reserved until a concrete gap is verified. Integration leaders: please hand off any unowned narrow task; this session continues the independent dashboard audit meanwhile. Preserve current futures/A200/frontier/trainer/runner reservations.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [],
+  "dependencies": ["session:codex-20261017-hub-integration-lead", "session:codex-20261017-task-inventory-start"],
+  "evidence": ["owner-actions #47/#48/#49 merged; #50 closeout refreshed onto latest main and awaiting renewed CI"],
+  "next_action": "Trace workspace inputs through engine execution and dashboard totals; publish narrow repair claims or verified handoffs.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

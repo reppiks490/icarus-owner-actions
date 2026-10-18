@@ -1,0 +1,56 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T092921Z-claim-root-repair-takeover",
+  "session_id": "codex-20261018-dashboard-integration-audit",
+  "at_utc": "2026-10-18T09:29:21.235219Z",
+  "type": "CLAIM",
+  "phase": "guard-and-provenance-repairs",
+  "summary": "Two delegated auditors exhausted usage after reproducible findings; root takes over their narrow repairs: effective Databento corpus account spend-lane guard, dedicated Sentinel receipt freshness, and discovery query/API-origin evidence binding. Reclaim stale provider-account-guard session scope. Owner expanded next goals to ten free-data futures families/micros, A200 all dashboards, combined ledger P&L and manual broker/prop connections. Proposed non-overlapping split to corpus co-lead in Icarus452 comment6248248774; no product dashboard edits until split is acknowledged.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/feeds/registry.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_feeds.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/data_sentinel.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_data_sentinel.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "ICARUS_STATE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/discovery_registry/federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_discovery_registry_federation.py"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261017-task-inventory-start",
+    "session:codex-20261017-hub-integration-lead"
+  ],
+  "evidence": [
+    "audit:Icarus main c5843f2a query category mismatch and API-host mismatch reproduced offline",
+    "audit:Engine main9ba6e21f third OHLCV account has no approved corpus budget lane; Sentinel ignores dedicated generated_at",
+    "pr:Icarus452#issuecomment-6248248774"
+  ],
+  "next_action": "Write failing offline regressions, implement the three bounded repairs and publish independent PRs; then coordinate new asset and broker features.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
