@@ -1,0 +1,88 @@
+{
+  "schema_version": "icarus-recovery-evidence-v1",
+  "observed_on_utc_date": "2026-10-07",
+  "status": "PARTIAL_RECOVERY_IN_PROGRESS",
+  "execution_authorized": false,
+  "public_repositories_seen": 18,
+  "hybrid_fabric": {
+    "repository": "reppiks490/Icarus-engine",
+    "registry_path": "automation_intelligence/hybrid_loop_fabric_v1/registry.json",
+    "request_count": 306,
+    "matched_result_count": 5,
+    "unmatched_on_main": 301,
+    "lanes": {
+      "robustness_guardian": {
+        "requests": 77,
+        "results": 0
+      },
+      "advanced_csv": {
+        "requests": 77,
+        "results": 0
+      },
+      "alpha_synthesis": {
+        "requests": 76,
+        "results": 1
+      },
+      "microstructure_sensor_grid": {
+        "requests": 76,
+        "results": 4
+      }
+    },
+    "semantics": "Requests and deterministic receipts are not substantive ChatGPT results."
+  },
+  "assurance": {
+    "aion": {
+      "run_id": 37637564370,
+      "conclusion": "success"
+    },
+    "daedalus": {
+      "run_id": 37639188767,
+      "attempt": 3,
+      "conclusion": "success",
+      "runner": "started"
+    },
+    "causal_router": {
+      "run_id": 37644317860,
+      "attempt": 3,
+      "conclusion": "failure",
+      "runner": "started",
+      "failure": "ModuleNotFoundError: No module named 'causal_router.journal'"
+    }
+  },
+  "provider_latest_engine": {
+    "fred": {
+      "status": "COLLECTED_PARTIAL",
+      "rows": 2794,
+      "encrypted": true
+    },
+    "tiingo": {
+      "status": "COLLECTED_PARTIAL",
+      "rows": 27453,
+      "encrypted": true
+    },
+    "fmp": {
+      "status": "COLLECTED_PARTIAL",
+      "rows": 6853,
+      "encrypted": true
+    },
+    "eodhd": {
+      "status": "COLLECTED_PARTIAL",
+      "rows": 70,
+      "encrypted": true
+    }
+  },
+  "provider_artifact_run": {
+    "repository": "reppiks490/Icarus",
+    "run_id": 37694893733,
+    "receipts_recovered": 11,
+    "raw_market_rows_recovered": 0,
+    "expires_at_utc_date": "2026-10-14",
+    "note": "Receipt artifacts only; do not confuse with different engine provider collection."
+  },
+  "audit_boundaries": [
+    "Only current main tree was counted for hybrid match",
+    "All-branch all-artifact comprehensive catalog remains pending",
+    "Public GitHub metadata only; never commit private or licensed raw payloads",
+    "Event/availability/retrieval time cannot be retroactively fabricated"
+  ]
+}
