@@ -531,38 +531,6 @@
     },
     {
       "actor": "Codex",
-      "branch": "codex/coordination-cron-guard-20261017",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "tests/test_coordination_automation.py"
-      ],
-      "declared_targets": [
-        {
-          "path": "tests/test_coordination_automation.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
-      "dependencies": [
-        "coordination maintenance cron 2-57/5 is already in current main"
-      ],
-      "goal": "Preserve the offset five-minute coordination maintenance schedule with a regression contract.",
-      "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:23:27Z",
-      "latest_summary": "Port the useful cron regression assertion from stale coordination compiler PR #19 onto current main; the maintenance schedule already uses an offset five-minute expression.",
-      "latest_type": "CLAIM",
-      "model_family": "openai",
-      "phase": "implementation",
-      "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
-      "session_id": "codex-20261017-coordination-cron-guard",
-      "stale": true,
-      "status": "active"
-    },
-    {
-      "actor": "Codex",
       "branch": "chatgpt/hub-windows-job-containment",
       "cooperates_with": [
         "codex-20261017-task-inventory-start"
@@ -1004,16 +972,65 @@
       "session_id": "codex-20261017-task-inventory-start",
       "stale": false,
       "status": "active"
+    },
+    {
+      "actor": "Codex provider-account guard subagent",
+      "branch": "codex/databento-corpus-account-guard-20261018",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests_cl/test_feeds.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "cl_lab/feeds/registry.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_feeds.py",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "dependencies": [
+        "session:codex-20261017-hub-integration-lead"
+      ],
+      "goal": "Fail closed on OHLCV accounts without approved corpus spend lanes and align account resolution.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-18T04:16:08Z",
+      "latest_summary": "Repair only effective OHLCV account resolution and refusal without an approved corpus ledger lane. No allocations, provider calls, purchases, live authority or merges. Knowledge delta: regression names and PR description document the account invariant; no additional repository docs within this two-file delegated scope.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "offline-regression",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests_cl/test_feeds.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "cl_lab/feeds/registry.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_feeds.py",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
+      "session_id": "codex-20261018-provider-account-guard",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
     "active": 14,
     "collisions": 0,
-    "stale": 12,
-    "terminal": 22
+    "stale": 11,
+    "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T04:13:47.323087Z",
+  "generated_at_utc": "2026-10-18T04:16:18.919438Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -1545,6 +1562,31 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261016-uw-pulse-consumption-audit",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "Codex",
+      "branch": "codex/coordination-cron-guard-20261017",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "coordination maintenance cron 2-57/5 is already in current main"
+      ],
+      "goal": "Preserve the offset five-minute coordination maintenance schedule with a regression contract.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-17T23:25:44Z",
+      "latest_summary": "The offset five-minute coordination cron guard was ported to current main and merged in PR #49 after exact-head CI passed.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "complete",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261017-coordination-cron-guard",
       "stale": false,
       "status": "complete"
     },
