@@ -907,16 +907,17 @@
         }
       ],
       "dependencies": [
-        "review:context-only-corpus-intake",
-        "run:native-corpus-proof"
+        "pr:reppiks490/Icarus#456",
+        "run:39162615234",
+        "run:39162561600"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T20:07:51.145Z",
-      "latest_summary": "Extend root reservation to existing dashboard JS test: migrate its old anonymous four-row aggregate fixture to the strict versioned four-ledger contract; preserve invalid-value negatives and add stale/duplicate/currency controls. No other test semantics or peer scopes changed.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-18T20:18:49.764Z",
+      "latest_summary": "Published draft Icarus456 at19093b23a8b4853a6ee3e697029085986d871146 stacked452: dedicated4routes,32-root assetselection, all200researchpanel, strictfreshsamecurrency4-ledgerP&L, native300s roll/retirement safeguards, official-source8firm/42program localinventory and Topstepdeferred. Free inventory is not free accounts/API; allfirmintentsblocked. Root acknowledges peer guard/provenance scopes. Independent final P&L/security/source reviews running; exact-head fullsuite and hostedLinux/Windows/UI checks pending. Engine211 nowced31fcfcdf75e4ff2f4181315f462aa5d59a76b pins19093 and enables requested10-family expansion. Native39162615234 secondary/thirdsuccess primaryconsuming. Rootdidnotmerge main/deploy/order/purchase. Existing primary proves fulltenroots physicallyretained; sixmicrodatasets absent remainunavailable.",
+      "latest_type": "WAITING",
       "model_family": "openai",
-      "phase": "four-workspace-runtime-integration",
+      "phase": "four-workspace-exact-head-review",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1351,7 +1352,7 @@
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T20:11:27.384827Z",
+  "generated_at_utc": "2026-10-18T20:19:03.771637Z",
   "owner_status": {
     "claude": {
       "active": false,
