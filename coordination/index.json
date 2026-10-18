@@ -776,13 +776,13 @@
         }
       ],
       "dependencies": [
-        "review:Engine84e4f2c",
-        "review:Icarusarchive-private-write"
+        "review:context-only-corpus-intake",
+        "run:native-corpus-proof"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T09:16:20Z",
-      "latest_summary": "Resume authorized parallel implementation. Core native bar intake and collector operation receipts under independent review. Claim manual read-only Engine vault-to-Icarus workflow and offline workflow contract tests: no acquisition, purchases, new schedules, holdout evaluation or live arming. Latest owner scope retains current corpus/dashboards first, then ten additional free-access futures with micros, A200 runtime integration, four-dashboard aggregate true PnL, propfirm/broker connection tab and enforced official rules, and cross-repository verification. Read-only asset/broker gap audit proceeds independently. Other active hub/GRU and account-guard reservations preserved.",
+      "last_event_at_utc": "2026-10-18T09:24:09Z",
+      "latest_summary": "Independent operation receipt review CLEAR: Engine242c5b9 77tests, Icarus8329b59 155tests. Core provenance/recursion findings repaired in4328b436;95core+12CLI regressions under final context-only followup. Prior integration fullsuite3198passed/3skip/111subtests; source advanced afterward so fresh full/exact-headCI still required. Actual vault coverage primary33, secondaryDX/VXM2, thirdhistoricalNQ1 revealed uncatalogued archive roots and historical naming: admit exact retained context identities without fabricated tick economics or execution promotion; separate coverage reads from chart warmup. Native workflow6aa8b145 proves each cache in isolated jobs with offline consumer/no acquisition/metadata-only artifact; source cycle explicitly repinned by merge to Engine2ab6d6cc fresh retained vault (no application code drift). Hub peer FYI main Observatory39113003702 Windows7aged A200fixture failures match unmerged verified447/451 repairs; PR59 current47e419dd Windows failure remains peer-owned. Depth39110488385/39110488338 correctly block22missingpaidfeaturedays/primaryfeatures; no spend or gate weakening.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "secure-corpus-consumer-plane",
@@ -931,7 +931,7 @@
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T09:16:32.821521Z",
+  "generated_at_utc": "2026-10-18T09:24:20.692095Z",
   "owner_status": {
     "claude": {
       "active": false,
