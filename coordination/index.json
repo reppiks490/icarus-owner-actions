@@ -845,7 +845,11 @@
         "icarus_engine/propfirm-rules.json",
         "tests_engine/test_account_connections.py",
         "icarus_engine/runtime.py",
-        "tests_engine/test_corpus_runtime_poll.py"
+        "tests_engine/test_corpus_runtime_poll.py",
+        "icarus_engine/paper_pnl.py",
+        "tests_engine/test_paper_pnl.py",
+        "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+        "tests_engine/test_paper_pnl_browser.py"
       ],
       "declared_targets": [
         {
@@ -991,6 +995,22 @@
         {
           "path": "tests_engine/test_corpus_runtime_poll.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl_browser.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -999,8 +1019,8 @@
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T15:06:19Z",
-      "latest_summary": "Renew unchanged disjoint reservations after local integration/review. Parent Icarus branch codex/four-workspace-delivery-20261018 includes four dedicated routes, actual pinned metadata from all three successful native corpora, persistent controlled 32-root selection, incomplete-ledger/mark accounting flags, retirement safety and native300s polling. Independent review reproduced contract-roll bypass and unclosed fallback mark; three RED controls then repair63a70efe and re-review CLEAR18cases. Private account store has immutable credential versions, crossfield readback validation, no false connected status, whole-contract policy checks; read-only ProjectX login/account adapter d4195b7e uses official fixed endpoints and explicit hashed account selection. No order methods, purchases or live authority. Local earlier integrated3344tests/3skips/111subtests; newer changes require final full run. A200 research panel854d2cf5 passes25HTTP/browser tests; all200remain unqualified for Pulse. Ten-family plus eight-micro corpus-only expansion is under implementation, no default paid subscriptions. Actual Topstep official FAQ confirms separate API fee and server order-routing ban; current broker secrets absent. Read peer PR452 findings next and preserve peer hub/GRU guard/provenance scopes. No main merge or deployment performed by this session.",
+      "last_event_at_utc": "2026-10-18T15:13:11.330Z",
+      "latest_summary": "Acknowledge peer dashboard audit split: root retains implemented broker/account UI, four-workspace dashboards, A200 and combined P&L; peer keeps Engine spend/Sentinel guards and Icarus discovery provenance, with read-only product review welcome. Claim strict paper_pnl contract and regression paths. New direct owner instruction: deeply research eight prop firms available for no-charge integration, all documented account types, TopstepX deferred configuration. Distinguish free software integration from firm account/API fees; no enrollment/purchase/orders. Continue parallel corpus expansion review and pure ledger validation.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "four-workspace-runtime-integration",
@@ -1042,7 +1062,11 @@
         "icarus_engine/propfirm-rules.json",
         "tests_engine/test_account_connections.py",
         "icarus_engine/runtime.py",
-        "tests_engine/test_corpus_runtime_poll.py"
+        "tests_engine/test_corpus_runtime_poll.py",
+        "icarus_engine/paper_pnl.py",
+        "tests_engine/test_paper_pnl.py",
+        "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+        "tests_engine/test_paper_pnl_browser.py"
       ],
       "reserved_targets": [
         {
@@ -1188,6 +1212,22 @@
         {
           "path": "tests_engine/test_corpus_runtime_poll.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl_browser.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261017-task-inventory-start",
@@ -1302,7 +1342,7 @@
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T15:06:30.407275Z",
+  "generated_at_utc": "2026-10-18T15:13:24.551344Z",
   "owner_status": {
     "claude": {
       "active": false,
