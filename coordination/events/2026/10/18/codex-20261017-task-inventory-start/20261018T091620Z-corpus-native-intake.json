@@ -1,0 +1,97 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261017-task-inventory-start-20261018T091620Z-corpus-native-intake",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T09:16:20Z",
+  "phase": "secure-corpus-consumer-plane",
+  "summary": "Resume authorized parallel implementation. Core native bar intake and collector operation receipts under independent review. Claim manual read-only Engine vault-to-Icarus workflow and offline workflow contract tests: no acquisition, purchases, new schedules, holdout evaluation or live arming. Latest owner scope retains current corpus/dashboards first, then ten additional free-access futures with micros, A200 runtime integration, four-dashboard aggregate true PnL, propfirm/broker connection tab and enforced official rules, and cross-repository verification. Read-only asset/broker gap audit proceeds independently. Other active hub/GRU and account-guard reservations preserved.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "run:reppiks490/Icarus-engine:39096842728",
+    "commit:reppiks490/Icarus-engine:242c5b92494945d763f1ee69c2905ca0eccc0355",
+    "commit:reppiks490/Icarus:8329b59e01b8c115161bb79a38df98750bf7ea04"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Review and integrate corpus core; run actual native restore and intake with metadata-only consumption receipt."
+}
