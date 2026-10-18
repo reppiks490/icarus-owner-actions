@@ -1,0 +1,91 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T041808Z-research-hosted-synthetic-gate",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "CLAIM",
+  "at_utc": "2026-10-18T04:18:08Z",
+  "phase": "finish-exact-head-repair-verification",
+  "summary": "Engine repair5921bbc independently reviewed; reviewer found inherited first-RTH switch context mismatch. Parent reproduced2failures and conservativelyblocks allRTHswitches at54edacb0; exact followup reviewCLEAR,47focusedpass, fullCLrunning. Existing Engine tests.yml omits tests_cl, so claim dedicated PR/push synthetic-only contract workflow (47tests, no data directories/providersecret/evaluation) for exact-head hosted proof. No schedules, acquisition or scientific rules change. A20045101671568 published, CI39096488204running, local integrated3004pass/3skip/111subtests. User-ordered corpus/dashboard work remains read-only discovery until current repairs close.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_futures/contracts.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures_contract_families.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "cl_lab/trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_frontier.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_cl/test_trial_ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/FRONTIER_REVIEW_REPAIR_20261017.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/fr1-synthetic-contract.yml"
+    }
+  ],
+  "dependencies": [
+    "ci:A200451",
+    "ci:Engine-FR1-synthetic"
+  ],
+  "evidence": [
+    "review:Engine@54edacb05760a085062c7be4bfba1f3be4701691:CLEAR",
+    "pr:reppiks490/Icarus#451@016715683d5029e52e1a1e4d578231694dfb17f4"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Publish reviewedresearch repair with explicitly synthetic CI, finish current checks/evidence, then claimboundedsecurecorpusintegration."
+}
