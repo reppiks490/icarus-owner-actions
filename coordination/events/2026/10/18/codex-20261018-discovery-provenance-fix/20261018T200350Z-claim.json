@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T200350Z-claim",
+  "session_id": "codex-20261018-discovery-provenance-fix",
+  "at_utc": "2026-10-18T20:03:50.694807Z",
+  "type": "CLAIM",
+  "phase": "regression-and-implementation",
+  "summary": "Resume delegated provenance repair under explicit parent cooperation. Bind same-path query variants and restrict qualification transport to approved API hosts; offline synthetic receipts only. Main c9931305; preserve draft330/332 and no merge/provider calls/live authority. Knowledge delta: registry behavior documentation and exact supersession/verification handoff.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/discovery_registry/federation.py",
+    "tests_engine/test_discovery_registry_federation.py",
+    "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+    "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/discovery_registry/federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_discovery_registry_federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261018-dashboard-integration-audit"
+  ],
+  "evidence": [
+    "base:reppiks490/Icarus@c993130534126a352c766fb7abc0de3145fc110f",
+    "merged:reppiks490/icarus-owner-actions#52",
+    "audit:spot receipt qualified option query and marketing-host URL"
+  ],
+  "next_action": "Add offline failing qualification regressions, implement conservative operation and origin binding, verify and open PR without merge.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "codex-20261018-dashboard-integration-audit"
+  ]
+}
