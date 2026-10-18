@@ -1047,6 +1047,106 @@
       "status": "active"
     },
     {
+      "actor": "Codex",
+      "branch": "codex/dashboard-integration-audit-20261018",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests_cl/test_feeds.py",
+        "tools/data_sentinel.py",
+        "tests/test_data_sentinel.py",
+        "ICARUS_STATE.md",
+        "icarus_engine/discovery_registry/federation.py",
+        "tests_engine/test_discovery_registry_federation.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "cl_lab/feeds/registry.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_feeds.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "ICARUS_STATE.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/discovery_registry/federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_discovery_registry_federation.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "session:codex-20261017-task-inventory-start",
+        "session:codex-20261017-hub-integration-lead"
+      ],
+      "goal": "Audit the four independent paper workspaces and aggregate dashboard P&L, and reconcile independent journal/provider guard review findings with the integration leads.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-18T09:29:21.235219Z",
+      "latest_summary": "Two delegated auditors exhausted usage after reproducible findings; root takes over their narrow repairs: effective Databento corpus account spend-lane guard, dedicated Sentinel receipt freshness, and discovery query/API-origin evidence binding. Reclaim stale provider-account-guard session scope. Owner expanded next goals to ten free-data futures families/micros, A200 all dashboards, combined ledger P&L and manual broker/prop connections. Proposed non-overlapping split to corpus co-lead in Icarus452 comment6248248774; no product dashboard edits until split is acknowledged.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "guard-and-provenance-repairs",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests_cl/test_feeds.py",
+        "tools/data_sentinel.py",
+        "tests/test_data_sentinel.py",
+        "ICARUS_STATE.md",
+        "icarus_engine/discovery_registry/federation.py",
+        "tests_engine/test_discovery_registry_federation.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "cl_lab/feeds/registry.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_feeds.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "ICARUS_STATE.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/discovery_registry/federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_discovery_registry_federation.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261018-dashboard-integration-audit",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "Codex provider-account guard subagent",
       "branch": "codex/databento-corpus-account-guard-20261018",
       "cooperates_with": [],
@@ -1086,12 +1186,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 14,
+    "active": 15,
     "collisions": 0,
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T09:29:14.674210Z",
+  "generated_at_utc": "2026-10-18T09:30:22.020554Z",
   "owner_status": {
     "claude": {
       "active": false,
