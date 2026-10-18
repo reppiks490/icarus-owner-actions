@@ -1,5 +1,15 @@
 # Icarus task review and first repair tranche — 2026-10-17
 
+## Completed code repairs and ordered corpus continuation
+
+Futures #450 at `63e238f4aedf06744b0581281727cdafb7f0e0a1` is independently reviewed and ready for separate merge review: hosted `39080943838` passes Linux and expanded Windows tests. It remains unmerged.
+
+A200 #451 at `016715683d5029e52e1a1e4d578231694dfb17f4`, stacked on #450, preserves #443 and repairs receipt-checksum coercion aliases. Independent review is CLEAR. The integrated code passes **3,004 tests and 111 subtests, with 3 skips**; the Windows selection now includes its 21-case module. Hosted `39096488204` passes Linux and Windows at the exact published head. The PR is ready for separate merge review after #450. The original-branch full run's two expired listing-fixture failures remain historical evidence; #447's deterministic fixtures resolve them in the integrated tree.
+
+Engine draft #209 at `9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba`, stacked on unchanged #142, closes the reproduced mechanical provenance/accounting defects. Independent review additionally found the inherited first-RTH-bar contract-switch edge; conservative dataset rejection fixes it without changing registered scientific rules. Re-review is CLEAR. Local **47 focused synthetic cases** and **212 CL tests** pass, with two existing tape-dependent skips. Exact-head hosted synthetic `39096705635` and standard application `39096705515` pass; the latter covers Python 3.11/3.12/3.13, CLI, stdlib and MCP contracts. Local sparse-checkout artifact failures are retained separately, not rewritten as local passes. Preregistration approval, complete-day policy, historical evidence recovery and outer single-writer gates still block real FR-1. No empirical FR-1 statistic was computed.
+
+The owner then ordered secure API/corpus usability and actual Icarus consumption, followed by three separately accessible dashboards that trade differently. They request agent-operated setup and flagged Copilot work. Read-only discovery identified the exact starred `cporter202/API-mega-list`, already supported by the discovery registry; discovery does not establish usable provider access. Engine `copilots-updates@bad51c35` is five commits behind and zero ahead of inspected main `9ba6e21f9086362a636bf13fc5f5d6498a9b3754`; it has no unique changes to duplicate. Existing cc1/cc2/cc4 profiles offer three distinct paper behaviors and separate journals, but need distinct routes and verified corpus binding. No dashboard or new acquisition is certified by this checkpoint. Secrets remain in GitHub Actions; live arming remains disabled.
+
 ## Parallel review and repair checkpoint
 
 The owner renewed parallel work across all tasks. The parent used two short-lived independent reviewers and retained the external hub/GRU peer's separate reservations. This checkpoint supersedes the earlier review-pending state below; it does not replace the dated evidence.

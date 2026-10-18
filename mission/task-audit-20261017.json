@@ -3254,6 +3254,121 @@
       },
       "research_review": "12 synthetic regressions reproduced; mechanical repairs in progress; preregistration approval and real-data gates preserved",
       "requirement_states_changed": false
+    },
+    {
+      "observed_at_utc": "2026-10-18T04:22:47.216234+00:00",
+      "futures_delivery": {
+        "pr": "https://github.com/reppiks490/Icarus/pull/450",
+        "head": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+        "tested_code": "e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+        "difference_since_code_test": "verification documentation only",
+        "full_local_passed": 2983,
+        "full_local_skipped": 3,
+        "subtests_passed": 111,
+        "seconds": 144.57,
+        "draft": false,
+        "independent_review": {
+          "initial_result": "IMPORTANT metals cluster risk regression",
+          "repaired_source_result": "CLEAR",
+          "reviewed_source": "e2fff7f379dbb278477a0cda9d8b260c16f51c87",
+          "reviewer_tests_passed": 88,
+          "reviewer_subtests_passed": 21
+        },
+        "risk_regressions_failed_before_fix": 4,
+        "focused_tests_passed": 174,
+        "focused_subtests_passed": 21,
+        "hosted_verification": {
+          "run_id": 39080943838,
+          "source_head": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+          "status": "completed",
+          "conclusion": "success",
+          "main_merge": "not performed",
+          "linux": "success",
+          "windows_with_added_modules": "success"
+        },
+        "log_sha256": "abf138788e2d577668d0c7059ef2c0ea7cc986e51951d5be5c9b185512aa41a6",
+        "windows_added_test_modules": 7,
+        "windows_added_cases_collected_before_risk_tests": 110,
+        "merge_state": "ready for separate merge review; unmerged"
+      },
+      "a200_receipt_delivery": {
+        "pr": "https://github.com/reppiks490/Icarus/pull/451",
+        "head": "016715683d5029e52e1a1e4d578231694dfb17f4",
+        "base_pr": 450,
+        "preserved_source_pr": 443,
+        "runtime_source": "4173e38586d4425303b73ae629d748b97634adf5",
+        "repair_source": "7b0b818d95df2270449a50ef0a8448203537799c",
+        "independent_review": "CLEAR",
+        "focused_passed": 70,
+        "full_passed": 3004,
+        "skipped": 3,
+        "subtests_passed": 111,
+        "seconds": 140.59,
+        "windows_added_cases": 21,
+        "hosted_run": 39096488204,
+        "hosted_status": "completed",
+        "hosted_linux": "success",
+        "hosted_windows": "success",
+        "merged": false,
+        "full_log_sha256": "834f1047db53cc94712f7aba0f270c9a2653f86a16c3547bc6b2a49faef9e72a",
+        "hosted_conclusion": "success",
+        "draft": false
+      },
+      "research_mechanical_delivery": {
+        "pr": "https://github.com/reppiks490/Icarus-engine/pull/209",
+        "head": "9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba",
+        "stacked_base_pr": 142,
+        "reviewed_runtime_source": "54edacb05760a085062c7be4bfba1f3be4701691",
+        "independent_review": "CLEAR",
+        "focused_synthetic_passed": 47,
+        "full_cl_passed": 212,
+        "full_cl_skipped": 2,
+        "hosted_synthetic_run": 39096705635,
+        "hosted_synthetic_conclusion": "success",
+        "hosted_standard_run": 39096705515,
+        "hosted_standard_conclusion": "success",
+        "local_sparse_broad_attempt": {
+          "passed": 1066,
+          "failed_excluded_artifacts": 64,
+          "subtests_passed": 17
+        },
+        "no_real_FR1_statistic": true,
+        "scientific_parameters_changed": false,
+        "remaining_research_gates": [
+          "preregistration137approval/merge",
+          "complete-day policy decision",
+          "original historical archive/fingerprint recovery",
+          "outer single-writer orchestration"
+        ],
+        "draft": true,
+        "merged": false
+      },
+      "next_owner_sequence": {
+        "observed_at_utc": "2026-10-18T04:22:47.216234+00:00",
+        "sequence": [
+          "finish current repairs",
+          "secure usable API/corpus integration into Icarus with several actual consumers",
+          "three distinct separately accessible corpus-backed dashboards"
+        ],
+        "manual_work_preference": "Owner requests agent-operated setup; never request plaintext API keys in chat.",
+        "starred_api_catalog": {
+          "repo": "cporter202/API-mega-list",
+          "head": "7d16023d8f9a5292e5731bd62f8b16f408734748",
+          "existing_intake": "Icarus discovery registry; discovery metadata alone is not qualified access"
+        },
+        "copilot": {
+          "repo": "reppiks490/Icarus-engine",
+          "branch": "copilots-updates",
+          "head": "bad51c357db5cfd4efc0bb786b71fae8554fdbf6",
+          "inspected_main": "9ba6e21f9086362a636bf13fc5f5d6498a9b3754",
+          "ahead": 0,
+          "behind": 5,
+          "note": "No unique branch commits; unknown uncommitted Copilot work is not excluded."
+        },
+        "implementation_status": "Read-only discovery only while final repair CI finishes",
+        "live_broker_arming": false
+      },
+      "requirements_newly_verified": 0
     }
   ]
 }
