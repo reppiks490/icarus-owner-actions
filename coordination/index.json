@@ -715,7 +715,9 @@
         "icarus_engine/account_connections.py",
         "icarus_engine/connections-ui.js",
         "icarus_engine/propfirm-rules.json",
-        "tests_engine/test_account_connections.py"
+        "tests_engine/test_account_connections.py",
+        "icarus_engine/runtime.py",
+        "tests_engine/test_corpus_runtime_poll.py"
       ],
       "declared_targets": [
         {
@@ -853,6 +855,14 @@
         {
           "path": "tests_engine/test_account_connections.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_runtime_poll.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -861,8 +871,8 @@
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T09:29:03Z",
-      "latest_summary": "Native corpus proof run39115319263 SUCCESS at Engine a6054cb9 and Icarus7b42eaa5 across all three retained caches. Primary32 selected datasets/4,633,264 source rows/192,000 retained rows and12 real warm assets in each of4 workspaces; secondary DX/VXM actual context reads, no false paper warmup; third historical NQ real reads and4 warm workspaces. No blocked datasets, provider requests, purchases, raw artifacts or execution authority. Final local suite3211 passed,3 skipped,111 subtests. Claim dedicated per-workspace routes/UI, safe persisted corpus evidence, controlled asset selection and separate connection/rule capability modules. Preserve all existing controls, paper journal separation and external peer lanes. No deployment/main merge/live arming authorized by this claim.",
+      "last_event_at_utc": "2026-10-18T09:36:20Z",
+      "latest_summary": "Independent native evidence review verified exact three artifact bytes and found oversized numeric input exception; root captured failing case then bounded before finite conversion,31tests pass at8c8a37b4. Dedicated routes, controlled workspace selection and connection/rule modules progressing in disjoint lanes. Claim runtime native interval compatibility and retired-runner safety: existing poll hardcodes60s while corpus is300s; in-flight poll after flat removal can mutate orphan runner because on_sub_bar lacks retirement guard. Preserve default60s behavior, reject unsupported finer charts and prevent post-removal mutation without holding locks across provider I/O.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "four-workspace-runtime-integration",
@@ -902,7 +912,9 @@
         "icarus_engine/account_connections.py",
         "icarus_engine/connections-ui.js",
         "icarus_engine/propfirm-rules.json",
-        "tests_engine/test_account_connections.py"
+        "tests_engine/test_account_connections.py",
+        "icarus_engine/runtime.py",
+        "tests_engine/test_corpus_runtime_poll.py"
       ],
       "reserved_targets": [
         {
@@ -1039,6 +1051,14 @@
         },
         {
           "path": "tests_engine/test_account_connections.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_runtime_poll.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1191,7 +1211,7 @@
     "stale": 13,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T09:30:22.020554Z",
+  "generated_at_utc": "2026-10-18T09:36:30.726226Z",
   "owner_status": {
     "claude": {
       "active": false,
