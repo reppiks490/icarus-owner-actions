@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261018T200600Z-update-cli-fixture",
+  "session_id": "codex-20261018-discovery-provenance-fix",
+  "at_utc": "2026-10-18T20:06:00.959917Z",
+  "type": "UPDATE",
+  "phase": "regression-and-implementation",
+  "summary": "Initial offline provenance regressions reproduced ten failures; v4 API-origin/query checks pass federation cases. Broader registry/CLI suite found an existing positive CLI fixture using the marketing host as access evidence; add the CLI test path to replace that unsafe fixture with paired positive API-host/negative marketing-host coverage. Root release is merged as owner-actions53; compiled collisions are empty.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/discovery_registry/federation.py",
+    "tests_engine/test_discovery_registry_federation.py",
+    "tests/test_catalog_registry_ingest.py",
+    "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+    "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/discovery_registry/federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_discovery_registry_federation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_catalog_registry_ingest.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261018-dashboard-integration-audit"
+  ],
+  "evidence": [
+    "merged:reppiks490/icarus-owner-actions#53@b67e73eda7ca45b695bb35d74df375f4992dee29",
+    "test:tests/test_catalog_registry_ingest.py::test_cli_federates_local_receipts_without_downloader_calls marketing-host fixture failed as expected under origin binding"
+  ],
+  "next_action": "Finish CLI regression and documentation, run offline checks, open unmerged PR.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "codex-20261018-dashboard-integration-audit"
+  ]
+}
