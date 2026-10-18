@@ -1,0 +1,100 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261017-task-inventory-start-20261018T092409Z-corpus-review-gaps",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T09:24:09Z",
+  "phase": "secure-corpus-consumer-plane",
+  "summary": "Independent operation receipt review CLEAR: Engine242c5b9 77tests, Icarus8329b59 155tests. Core provenance/recursion findings repaired in4328b436;95core+12CLI regressions under final context-only followup. Prior integration fullsuite3198passed/3skip/111subtests; source advanced afterward so fresh full/exact-headCI still required. Actual vault coverage primary33, secondaryDX/VXM2, thirdhistoricalNQ1 revealed uncatalogued archive roots and historical naming: admit exact retained context identities without fabricated tick economics or execution promotion; separate coverage reads from chart warmup. Native workflow6aa8b145 proves each cache in isolated jobs with offline consumer/no acquisition/metadata-only artifact; source cycle explicitly repinned by merge to Engine2ab6d6cc fresh retained vault (no application code drift). Hub peer FYI main Observatory39113003702 Windows7aged A200fixture failures match unmerged verified447/451 repairs; PR59 current47e419dd Windows failure remains peer-owned. Depth39110488385/39110488338 correctly block22missingpaidfeaturedays/primaryfeatures; no spend or gate weakening.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    }
+  ],
+  "dependencies": [
+    "review:context-only-corpus-intake",
+    "run:native-corpus-proof"
+  ],
+  "evidence": [
+    "commit:reppiks490/Icarus:91c0d95d9437e1525e931e5e34434fef1b797f76",
+    "commit:reppiks490/Icarus-engine:6aa8b1454cc67f433b3bc815c1ea66d955c152aa",
+    "run:reppiks490/divine-providence:39113003702"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Finish bounded archive-context intake, exact-head verification and native consumption; then runtime/dedicated dashboards, asset expansion and broker-rule integration."
+}
