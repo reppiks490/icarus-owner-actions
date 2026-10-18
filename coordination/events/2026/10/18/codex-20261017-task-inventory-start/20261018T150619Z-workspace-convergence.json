@@ -1,0 +1,172 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261017-task-inventory-start-20261018T150619Z-workspace-convergence",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T15:06:19Z",
+  "phase": "four-workspace-runtime-integration",
+  "summary": "Renew unchanged disjoint reservations after local integration/review. Parent Icarus branch codex/four-workspace-delivery-20261018 includes four dedicated routes, actual pinned metadata from all three successful native corpora, persistent controlled 32-root selection, incomplete-ledger/mark accounting flags, retirement safety and native300s polling. Independent review reproduced contract-roll bypass and unclosed fallback mark; three RED controls then repair63a70efe and re-review CLEAR18cases. Private account store has immutable credential versions, crossfield readback validation, no false connected status, whole-contract policy checks; read-only ProjectX login/account adapter d4195b7e uses official fixed endpoints and explicit hashed account selection. No order methods, purchases or live authority. Local earlier integrated3344tests/3skips/111subtests; newer changes require final full run. A200 research panel854d2cf5 passes25HTTP/browser tests; all200remain unqualified for Pulse. Ten-family plus eight-micro corpus-only expansion is under implementation, no default paid subscriptions. Actual Topstep official FAQ confirms separate API fee and server order-routing ban; current broker secrets absent. Read peer PR452 findings next and preserve peer hub/GRU guard/provenance scopes. No main merge or deployment performed by this session.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus-consumption.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/command-centers-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/account_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/connections-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/propfirm-rules.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_account_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_runtime_poll.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "pr:reppiks490/Icarus#452",
+    "pr:reppiks490/Icarus-engine#211",
+    "run:reppiks490/Icarus-engine:39115319263",
+    "commit:reppiks490/Icarus:63a70efe",
+    "commit:reppiks490/Icarus:d4195b7e",
+    "commit:reppiks490/Icarus:854d2cf5"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Review peer findings, converge isolated A200/futures lanes, verify complete package and publish reviewable delivery with exact remaining external blockers."
+}
