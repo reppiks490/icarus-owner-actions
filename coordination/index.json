@@ -841,6 +841,9 @@
         "icarus_futures/contracts.py",
         "tests_engine/test_futures_contract_families.py",
         "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        "icarus_engine/a200_runtime_bridge.py",
+        "tests_engine/test_a200_runtime_bridge.py",
+        "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
         "cl_lab/frontier.py",
         "cl_lab/trial_ledger.py",
         "tests_cl/test_frontier.py",
@@ -861,6 +864,18 @@
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -897,22 +912,25 @@
         }
       ],
       "dependencies": [
-        "review:Engine142-synthetic-repairs",
-        "ci:Icarus450-new-risk-head"
+        "ci:Icarus450@63e238f4",
+        "review:Engine142-repairs"
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-17T23:56:40Z",
-      "latest_summary": "Futures risk repair e2fff7f3 passes174focused/21subtests and independent re-review CLEAR; full regression running before new head publication. Engine142 synthetic regression phase reproduced12defects; worker implementing causal provenance, historical-accounting fail-closed behavior, concurrency, Holm and mixed-contract rejection without real data or parameter changes. Parent additionally verified causal-router main cba6e18:50tests/42subtests plus two identical seeded240step replays (489events), matching digest and research-only authority. CSV lab main5929f05:17tests pass. Reserve mission evidence updates with source-pinned results; historical findings remain preserved.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-18T00:00:32Z",
+      "latest_summary": "Continue parallel tasks after risk repair. Parent independently reviewed A200443 exact0e772ec4:58focused tests pass but synthetic same-receipt fractional timestamp substitution is accepted (1799999700->1799999700.5) because bridge int-casts before hashing, violating validator's exact integer timestamp rule. Assign idle parent-owned reviewer bounded failing-first repair in isolated worktree; preserve original443. Research worker continues synthetic-only historical accounting and provenance repairs. Root handles independent review, exact-head CI and evidence publication.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "parallel-review-defect-repair",
+      "phase": "parallel-receipt-and-research-repair",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_futures/contracts.py",
         "tests_engine/test_futures_contract_families.py",
         "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+        "icarus_engine/a200_runtime_bridge.py",
+        "tests_engine/test_a200_runtime_bridge.py",
+        "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
         "cl_lab/frontier.py",
         "cl_lab/trial_ledger.py",
         "tests_cl/test_frontier.py",
@@ -933,6 +951,18 @@
         },
         {
           "path": "coordination/FUTURES_INTEGRATION_VERIFICATION_20261017.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_bridge.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/A200_RUNTIME_BRIDGE_REVIEW_20261018.md",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -980,7 +1010,7 @@
     "stale": 11,
     "terminal": 22
   },
-  "generated_at_utc": "2026-10-17T23:56:55.247403Z",
+  "generated_at_utc": "2026-10-18T00:00:44.707412Z",
   "owner_status": {
     "claude": {
       "active": false,
