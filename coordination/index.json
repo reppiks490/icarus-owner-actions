@@ -533,7 +533,8 @@
       "actor": "Codex",
       "branch": "chatgpt/hub-windows-job-containment",
       "cooperates_with": [
-        "codex-20261017-task-inventory-start"
+        "codex-20261017-task-inventory-start",
+        "codex-20261018-dashboard-integration-audit"
       ],
       "coordination_mode": "independent",
       "declared_paths": [
@@ -559,7 +560,8 @@
         "icarus_engine/trainers/sequence.py",
         "pyproject.toml",
         "tests_engine/test_deep_learning_challenger.py",
-        "tests_engine/test_review_fixes.py"
+        "tests_engine/test_review_fixes.py",
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
       ],
       "declared_targets": [
         {
@@ -653,6 +655,10 @@
         {
           "path": "tests_engine/test_review_fixes.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
@@ -663,17 +669,139 @@
       ],
       "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
       "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-18T04:13:13Z",
-      "latest_summary": "Resume co-lead integration after interruption. PR59 full twelve-system and subsystem jobs passed; lifecycle Python3.11 passed on Windows/Linux, but full Windows bootstrap selected Python3.13 and failed the successful-descendant marker assertion. Investigate whether marker was written before runner returned due output-handle lifetime or after return due containment failure; add version-specific diagnostics before a behavioral fix. Keep existing runner/tour and GRU integration reservations; peer task-inventory retains A200/futures/research accounting paths.",
+      "last_event_at_utc": "2026-10-18T14:41:29Z",
+      "latest_summary": "Owner expanded next priorities to ten genuinely new free-access futures/micros, A200 all dashboards, truthful four-ledger P&L and correct manual broker/prop setup. Read-only agents found material P&L availability/staleness/currency defects and program-specific automation restrictions; hand off to task-inventory and dashboard-integration-audit, retaining their source ownership. Root renews only hub/GRU source scope and its new durable audit handoff file. Hub Windows diagnostic proved marker existed before runner return, so replace timing fixture with DEVNULL+ready-PID live-process assertion; production containment behavior is unchanged pending verification.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "debugging",
+      "phase": "debugging-and-review",
       "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reclaimable": false,
+      "reserved_paths": [
+        "README.md",
+        "docs/ARCHITECTURE.md",
+        "src/divine_providence/cli.py",
+        "src/divine_providence/drivers/nexus_to_oracle.py",
+        "src/divine_providence/mcp_server.py",
+        "src/divine_providence/runner.py",
+        "src/divine_providence/tour.py",
+        "src/divine_providence/validate.py",
+        "tests/test_hub.py",
+        "tests/test_runner_lifecycle.py",
+        ".github/workflows/runner-lifecycle.yml",
+        ".github/workflows/deep-learning-contract.yml",
+        "ICARUS_CHAT_HANDOFF_DEEP_LEARNING_20261015.md",
+        "icarus_engine/trainers/__main__.py",
+        "icarus_engine/trainers/dataset.py",
+        "icarus_engine/trainers/deep_challenger.py",
+        "icarus_engine/trainers/integrity.py",
+        "icarus_engine/trainers/metrics.py",
+        "icarus_engine/trainers/run.py",
+        "icarus_engine/trainers/sequence.py",
+        "pyproject.toml",
+        "tests_engine/test_deep_learning_challenger.py",
+        "tests_engine/test_review_fixes.py",
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "README.md",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "docs/ARCHITECTURE.md",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/cli.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/drivers/nexus_to_oracle.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/mcp_server.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/runner.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/tour.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "src/divine_providence/validate.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "tests/test_hub.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": "tests/test_runner_lifecycle.py",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": ".github/workflows/runner-lifecycle.yml",
+          "repo": "reppiks490/divine-providence"
+        },
+        {
+          "path": ".github/workflows/deep-learning-contract.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "ICARUS_CHAT_HANDOFF_DEEP_LEARNING_20261015.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/__main__.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/dataset.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/deep_challenger.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/integrity.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/metrics.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/run.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/trainers/sequence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "pyproject.toml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_deep_learning_challenger.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_review_fixes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
       "session_id": "codex-20261017-hub-integration-lead",
-      "stale": true,
+      "stale": false,
       "status": "active"
     },
     {
@@ -989,10 +1117,10 @@
   "counts": {
     "active": 15,
     "collisions": 0,
-    "stale": 15,
+    "stale": 14,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T13:40:45.239697Z",
+  "generated_at_utc": "2026-10-18T14:41:39.067324Z",
   "owner_status": {
     "claude": {
       "active": false,
