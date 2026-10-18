@@ -974,6 +974,77 @@
       "status": "active"
     },
     {
+      "actor": "Codex",
+      "branch": "codex/discovery-operation-provenance-20261018",
+      "cooperates_with": [
+        "codex-20261018-dashboard-integration-audit"
+      ],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "icarus_engine/discovery_registry/federation.py",
+        "tests_engine/test_discovery_registry_federation.py",
+        "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+        "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/discovery_registry/federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_discovery_registry_federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "session:codex-20261018-dashboard-integration-audit"
+      ],
+      "goal": "Bind discovery qualification to operation query variant and API origin using offline evidence only.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-18T20:03:50.694807Z",
+      "latest_summary": "Resume delegated provenance repair under explicit parent cooperation. Bind same-path query variants and restrict qualification transport to approved API hosts; offline synthetic receipts only. Main c9931305; preserve draft330/332 and no merge/provider calls/live authority. Knowledge delta: registry behavior documentation and exact supersession/verification handoff.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "regression-and-implementation",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/discovery_registry/federation.py",
+        "tests_engine/test_discovery_registry_federation.py",
+        "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+        "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/discovery_registry/federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_discovery_registry_federation.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/icarus/CAPABILITY_DATA_DISCOVERY_REGISTRY.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/icarus/DISCOVERY_PROVENANCE_REVIEW_20261018.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261018-discovery-provenance-fix",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "Codex provider-account guard subagent",
       "branch": "codex/databento-corpus-account-guard-20261018",
       "cooperates_with": [],
@@ -1013,12 +1084,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 15,
+    "active": 16,
     "collisions": 0,
     "stale": 15,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T19:22:26.659524Z",
+  "generated_at_utc": "2026-10-18T20:04:01.015847Z",
   "owner_status": {
     "claude": {
       "active": false,
