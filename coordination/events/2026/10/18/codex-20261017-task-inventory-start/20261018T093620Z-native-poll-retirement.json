@@ -1,0 +1,168 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "codex-20261017-task-inventory-start-20261018T093620Z-native-poll-retirement",
+  "session_id": "codex-20261017-task-inventory-start",
+  "type": "UPDATE",
+  "at_utc": "2026-10-18T09:36:20Z",
+  "phase": "four-workspace-runtime-integration",
+  "summary": "Independent native evidence review verified exact three artifact bytes and found oversized numeric input exception; root captured failing case then bounded before finite conversion,31tests pass at8c8a37b4. Dedicated routes, controlled workspace selection and connection/rule modules progressing in disjoint lanes. Claim runtime native interval compatibility and retired-runner safety: existing poll hardcodes60s while corpus is300s; in-flight poll after flat removal can mutate orphan runner because on_sub_bar lacks retirement guard. Preserve default60s behavior, reject unsupported finer charts and prevent post-removal mutation without holding locks across provider I/O.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_archive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/current-pr-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/task-audit-20261017.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "mission/continuations/2026-10-17-task-audit.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/corpus-consumption.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_evidence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/command-centers-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/account_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/connections-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/propfirm-rules.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_account_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_corpus_runtime_poll.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "commit:reppiks490/Icarus:8c8a37b4",
+    "review:workspace-inflight-removal"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "next_action": "Observe native300s and in-flight removal regressions; repair narrowly and verify combined lanes."
+}
