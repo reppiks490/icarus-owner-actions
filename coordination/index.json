@@ -920,9 +920,7 @@
         "tests_cl/test_feeds.py",
         "tools/data_sentinel.py",
         "tests/test_data_sentinel.py",
-        "ICARUS_STATE.md",
-        "icarus_engine/discovery_registry/federation.py",
-        "tests_engine/test_discovery_registry_federation.py"
+        "ICARUS_STATE.md"
       ],
       "declared_targets": [
         {
@@ -944,33 +942,52 @@
         {
           "path": "ICARUS_STATE.md",
           "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "icarus_engine/discovery_registry/federation.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_discovery_registry_federation.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
         "session:codex-20261017-task-inventory-start",
-        "session:codex-20261017-hub-integration-lead"
+        "session:codex-20261018-discovery-provenance-fix"
       ],
       "goal": "Audit the four independent paper workspaces and aggregate dashboard P&L, and reconcile independent journal/provider guard review findings with the integration leads.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-18T09:29:21.235219Z",
-      "latest_summary": "Two delegated auditors exhausted usage after reproducible findings; root takes over their narrow repairs: effective Databento corpus account spend-lane guard, dedicated Sentinel receipt freshness, and discovery query/API-origin evidence binding. Reclaim stale provider-account-guard session scope. Owner expanded next goals to ten free-data futures families/micros, A200 all dashboards, combined ledger P&L and manual broker/prop connections. Proposed non-overlapping split to corpus co-lead in Icarus452 comment6248248774; no product dashboard edits until split is acknowledged.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-18T20:04:21.771500Z",
+      "latest_summary": "Acknowledge task-inventory co-lead retains four dashboards/A200/futures expansion/broker and account UI/strict combined P&L; root will independently review product integration. Root retains Engine corpus-budget and Sentinel freshness repairs (#213/#214). Release Icarus discovery code/test reservations to delegated codex-20261018-discovery-provenance-fix; root will not edit them. Budget review caught invalid-account exception escaping per-feed isolation; root fixes it before merge. Preserve all current program/permission and no-live/no-new-spend boundaries.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "guard-and-provenance-repairs",
+      "phase": "guard-repair-and-review",
       "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reclaimable": false,
+      "reserved_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests_cl/test_feeds.py",
+        "tools/data_sentinel.py",
+        "tests/test_data_sentinel.py",
+        "ICARUS_STATE.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "cl_lab/feeds/registry.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_feeds.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_data_sentinel.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "ICARUS_STATE.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "session_id": "codex-20261018-dashboard-integration-audit",
-      "stale": true,
+      "stale": false,
       "status": "active"
     },
     {
@@ -1086,10 +1103,10 @@
   "counts": {
     "active": 16,
     "collisions": 0,
-    "stale": 15,
+    "stale": 14,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T20:04:01.015847Z",
+  "generated_at_utc": "2026-10-18T20:05:38.836646Z",
   "owner_status": {
     "claude": {
       "active": false,
