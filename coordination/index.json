@@ -561,7 +561,9 @@
         "pyproject.toml",
         "tests_engine/test_deep_learning_challenger.py",
         "tests_engine/test_review_fixes.py",
-        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md",
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "tests_engine/test_a200_runtime_feed.py"
       ],
       "declared_targets": [
         {
@@ -659,6 +661,14 @@
         {
           "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
           "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests_engine/test_a200_listing_crosswalk.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_feed.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -669,11 +679,11 @@
       ],
       "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
       "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-18T14:41:29Z",
-      "latest_summary": "Owner expanded next priorities to ten genuinely new free-access futures/micros, A200 all dashboards, truthful four-ledger P&L and correct manual broker/prop setup. Read-only agents found material P&L availability/staleness/currency defects and program-specific automation restrictions; hand off to task-inventory and dashboard-integration-audit, retaining their source ownership. Root renews only hub/GRU source scope and its new durable audit handoff file. Hub Windows diagnostic proved marker existed before runner return, so replace timing fixture with DEVNULL+ready-PID live-process assertion; production containment behavior is unchanged pending verification.",
+      "last_event_at_utc": "2026-10-18T14:48:26Z",
+      "latest_summary": "All7 broad GRU integration failures reproduce identically on isolated clean main1d3f38ce: dated A200 listing-crosswalk/runtime synthetic fixtures. Existing peer PR447 a9217cc fixes exactly those2 test files, is mergeable and its published CI39078186866 passed. Root claims narrow review/current-main integration verification and merge of that existing repair, preserving its branch and all runtime freshness gates; no duplicate implementation. GRU independent review also found persisted-model replay not reading disk and empty-label regression; fixing only those owned trainer/test paths with synthetic tests. Hub final fixture f63347c9 passes lifecycle/subsystem checks; Windows full bootstrap still runs.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "debugging-and-review",
+      "phase": "merge-review",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -700,7 +710,9 @@
         "pyproject.toml",
         "tests_engine/test_deep_learning_challenger.py",
         "tests_engine/test_review_fixes.py",
-        "coordination/handoffs/2026-10-18-hub-integration-audit.md"
+        "coordination/handoffs/2026-10-18-hub-integration-audit.md",
+        "tests_engine/test_a200_listing_crosswalk.py",
+        "tests_engine/test_a200_runtime_feed.py"
       ],
       "reserved_targets": [
         {
@@ -798,6 +810,14 @@
         {
           "path": "coordination/handoffs/2026-10-18-hub-integration-audit.md",
           "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests_engine/test_a200_listing_crosswalk.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_a200_runtime_feed.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261017-hub-integration-lead",
@@ -1120,7 +1140,7 @@
     "stale": 14,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T14:41:39.067324Z",
+  "generated_at_utc": "2026-10-18T14:48:35.413509Z",
   "owner_status": {
     "claude": {
       "active": false,
