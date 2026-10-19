@@ -127,6 +127,31 @@
       "status": "active"
     },
     {
+      "actor": "ChatGPT",
+      "branch": "chatgpt/guest-sandbox-access-20261019",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "policy:live-execution-disabled"
+      ],
+      "goal": "Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime.",
+      "home_repo": "reppiks490/Icarus-engine",
+      "last_event_at_utc": "2026-10-19T00:55:00Z",
+      "latest_summary": "Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime.",
+      "latest_type": "REGISTERED",
+      "model_family": "openai",
+      "phase": "registered",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "chatgpt-20261019-guest-sandbox-access",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "ChatGPT / Codex",
       "branch": "codex/a200-probe-provider-scope-20261016",
       "cooperates_with": [],
@@ -1091,12 +1116,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 16,
+    "active": 17,
     "collisions": 0,
     "stale": 16,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-18T23:40:25.922144Z",
+  "generated_at_utc": "2026-10-19T00:54:52.530221Z",
   "owner_status": {
     "claude": {
       "active": false,

@@ -1,13 +1,14 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-18T23:40:25.922144Z`
+Generated: `2026-10-19T00:54:52.530221Z`
 
-Active sessions: **16** · Stale/reclaimable: **16** · Collisions: **0**
+Active sessions: **17** · Stale/reclaimable: **16** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
 | `chatgpt-20261016-atlas-coordination-compiler-durability` ⚠️ STALE/RECLAIMABLE | repair | `reppiks490/icarus-owner-actions` / `atlas/coordination-compiler-freshness` | No further tooling meta-notes will be emitted. Continue only with canonical branch implementation, CI, merge, and runtime verification. | branch:atlas/coordination-compiler-freshness | — |
 | `chatgpt-20261016-atlas-system-convergence` ⚠️ STALE/RECLAIMABLE | system-convergence | `reppiks490/Icarus` / `atlas/icarus-system-convergence-20261016` | Implement the post-audit convergence layer: canonical capability index, unified 32-root futures authority/execution qualification, backend asset-centric paper dashboard state, corpus-to-Brain provenance contracts, and rigid exact-head tests while avoiding active command-center UI collision paths. | coordination:reppiks490/icarus-owner-actions:coordination/ACTIVE.md<br>pr:reppiks490/Icarus#411<br>policy:live-execution-disabled | — |
+| `chatgpt-20261019-guest-sandbox-access` | registered | `reppiks490/Icarus-engine` / `chatgpt/guest-sandbox-access-20261019` | Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime. | policy:live-execution-disabled | — |
 | `codex-20261016-a200-provider-scope` ⚠️ STALE/RECLAIMABLE | exact-head-verification | `reppiks490/Icarus` / `codex/a200-probe-provider-scope-20261016` | Extended provider isolation to the remaining A200 history call sites: the authenticated history API now constructs only the explicitly requested provider, and the legacy Yahoo sweep initializes Yahoo only. PR #411 is at 95db3db. The expanded focused market-universe suite still passes 41 tests; exact-head CI will restart on this head. | pr:reppiks490/Icarus#411 | — |
 | `codex-20261016-a200-timezone-provenance` ⚠️ STALE/RECLAIMABLE | handoff | `reppiks490/Icarus` / `codex/a200-receipt-timezone-evidence` | The same timezone-provenance integration was independently implemented on PR #419; PR #418 was closed as a duplicate. PR #419 carries the authoritative timezone through the adapter and adds adapter-level coverage. | pr:reppiks490/Icarus#419 exact-head CI | — |
 | `codex-20261016-dashboard-cinema-followup` ⚠️ STALE/RECLAIMABLE | verification | `reppiks490/Icarus` / `codex/rt01-shadow-dashboard-20261015` | Merged concurrent same-branch popover clamp commit 256570e with the local vertical clamp and reflow-safe placement. The open panel is viewport-fixed and anchored to the summary with left/top clamped; mobile keeps its bottom-sheet rules. Standalone browser_cinema passed after merge. Pushed exact dashboard head ca75790; hosted checks are the next gate. | pr:reppiks490/Icarus#377<br>github-run:38861946952<br>concurrent-commit:256570eba593c8abed96f401e4495c88828fd107 | — |
