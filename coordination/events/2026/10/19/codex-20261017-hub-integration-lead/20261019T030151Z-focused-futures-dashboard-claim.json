@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T030151Z-focused-futures-dashboard-claim",
+  "session_id": "codex-20261017-hub-integration-lead",
+  "at_utc": "2026-10-19T03:01:51Z",
+  "type": "CLAIM",
+  "phase": "focused-dashboard-implementation",
+  "summary": "Owner explicitly narrowed work to ten futures/micros and four portfolio views with original assets, performance and restarts. Build new disjoint modules on reviewed PR456; preserve peer-owned source until cooperation acknowledged at PR456 comment6258709124. Prior hub/GRU work preserved; no live arming/no paid acquisition.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "reppiks490/Icarus:icarus_engine/workspace_performance.py",
+    "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
+    "reppiks490/Icarus:icarus_engine/workspace_universe.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
+    "reppiks490/Icarus:scripts/restart-command-centers.ps1",
+    "reppiks490/Icarus:scripts/restart-command-centers.sh",
+    "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#456",
+    "session:codex-20261017-task-inventory-start"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/456#issuecomment-6258709124"
+  ],
+  "next_action": "Test actual persisted per-workspace trade performance and complete original asset coverage; produce minimal integration hooks after coordination.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
