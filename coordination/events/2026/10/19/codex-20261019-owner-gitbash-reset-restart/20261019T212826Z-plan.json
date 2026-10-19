@@ -1,0 +1,16 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T212826Z-plan",
+  "session_id": "codex-20261019-owner-gitbash-reset-restart",
+  "at_utc": "2026-10-19T21:28:26Z",
+  "type": "PLAN",
+  "phase": "owner-restart-repair",
+  "summary": "Add one Git Bash script for the owner: exact 35-asset paper config, 10m Heikin Ashi chart and chart fills, futures RTH at 08:30 Chicago, mini/micro 5/20, safe plant stop, Yahoo-connected restart with browser. Do not touch file-mode command-center restart helper.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["reppiks490/Icarus:scripts/restart-owner-paper-yahoo.sh"],
+  "dependencies": [],
+  "evidence": [],
+  "next_action": "Implement and review a single command entrypoint, then publish it to main.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
