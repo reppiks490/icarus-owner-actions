@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T031136Z-cross-platform-verification-claim",
+  "session_id": "codex-20261017-hub-integration-lead",
+  "at_utc": "2026-10-19T03:11:36Z",
+  "type": "UPDATE",
+  "phase": "focused-dashboard-implementation",
+  "summary": "Focused integration + safe restart CLI implemented; scoped suite126passed, new maintenance9passed; full project run reached85% with no failures at check. Independent review found optional browser dependency CI gap; add dedicated Ubuntu Chromium and Linux/Windows new-feature gates, keeping ordinary engine suite browser-optional.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "reppiks490/Icarus:icarus_engine/workspace_performance.py",
+    "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
+    "reppiks490/Icarus:icarus_engine/workspace_universe.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
+    "reppiks490/Icarus:scripts/restart-command-centers.ps1",
+    "reppiks490/Icarus:scripts/restart-command-centers.sh",
+    "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
+    "reppiks490/Icarus:icarus_engine/server.py",
+    "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
+    "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
+    "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
+    "reppiks490/Icarus:icarus_engine/dashboard.html",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
+    "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+    "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#456",
+    "session:codex-20261017-task-inventory-start"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/456#issuecomment-6258709124"
+  ],
+  "next_action": "Complete regression, build package, verify exact published tree and native checks.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
