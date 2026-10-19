@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T031847Z-four-dashboard-release-waiting",
+  "session_id": "codex-20261017-hub-integration-lead",
+  "at_utc": "2026-10-19T03:18:47Z",
+  "type": "WAITING",
+  "phase": "release-verification",
+  "summary": "Published owner-focused PR459 at0b5068372f2b8fce39bf3503f3bdc395ec083b9d/treeb2088b35. Preserves reviewed450/451/452/456 source and current main through ordinary merge; peer branches untouched. All4 defaults35 identities retain shipped16; per-ledger persisted trade performance and selector wired; combined P&L remains outside. Safe file-only restart/control inventory implemented. Full pre-main run3453passed3skips111subtests; focused65pass; real temporary-root restartsmoke all4x35/nohistory/nofeed acquisition/ownedcleanupPASS; source+wheelbuildPASS. Exact native Windows/browser/general CI and final merged-main rerun pending.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "reppiks490/Icarus:icarus_engine/workspace_performance.py",
+    "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
+    "reppiks490/Icarus:icarus_engine/workspace_universe.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
+    "reppiks490/Icarus:scripts/restart-command-centers.ps1",
+    "reppiks490/Icarus:scripts/restart-command-centers.sh",
+    "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
+    "reppiks490/Icarus:icarus_engine/server.py",
+    "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
+    "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
+    "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
+    "reppiks490/Icarus:icarus_engine/dashboard.html",
+    "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
+    "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+    "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#456",
+    "session:codex-20261017-task-inventory-start"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/459",
+    "https://github.com/reppiks490/Icarus/actions/runs/39193983926",
+    "/tmp/four-dashboard-final.log",
+    "/tmp/icarus-four-dashboard-smoke.log"
+  ],
+  "next_action": "Inspect every exact-head CI result, resolve real failures, merge reviewed candidate under standing owner authorization; publish concrete safe GitBash update/restart instructions.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
