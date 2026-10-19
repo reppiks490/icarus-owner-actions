@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261019-guest-sandbox-access",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime.",
+  "home_repo": "reppiks490/Icarus-engine",
+  "branch": "chatgpt/guest-sandbox-access-20261019",
+  "pr": null,
+  "started_at_utc": "2026-10-19T00:55:00Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["github"],
+  "initial_dependencies": ["policy:live-execution-disabled"]
+}
