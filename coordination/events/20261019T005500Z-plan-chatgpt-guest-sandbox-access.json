@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T005500Z-plan-chatgpt-guest-sandbox-access",
+  "session_id": "chatgpt-20261019-guest-sandbox-access",
+  "at_utc": "2026-10-19T00:55:00Z",
+  "type": "PLAN",
+  "phase": "implementation",
+  "summary": "Add a hard server-side guest permission boundary: live state is view-only; guest inputs, presets, backtests, replay rewarm/reset and export operate only on isolated in-memory replay state. Explicitly deny all live-runtime mutation, execution, broker, asset-management, credential and research-activation controls. Add a separate guest UI/port and tunnel launcher path.",
+  "repos": ["reppiks490/Icarus-engine"],
+  "paths": [
+    "icarus_engine/guest_server.py",
+    "icarus_engine/guest_dashboard.html",
+    "icarus_engine/cli.py",
+    "tests_engine/test_guest_sandbox.py",
+    "docs/GUEST_SANDBOX.md"
+  ],
+  "dependencies": ["policy:live-execution-disabled"],
+  "evidence": ["Icarus-engine backtest.py already freezes/copies live replay state and runs isolated AssetRunner instances"],
+  "next_action": "Create a feature branch, write failing guest access-boundary tests, verify red CI, then implement the minimal guest server/UI and verify the full suite.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
