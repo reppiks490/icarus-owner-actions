@@ -812,7 +812,14 @@
         "tests_engine/test_dashboard_js.py",
         "icarus_engine/corpus_expansion.py",
         "icarus_engine/corpus-expansion.json",
-        "tests_engine/test_corpus_expansion.py"
+        "tests_engine/test_corpus_expansion.py",
+        ".github/workflows/test.yml",
+        "icarus_engine/provider_corpus.py",
+        "tests_engine/test_provider_corpus.py",
+        "icarus_engine/brain_sync.py",
+        "tests_engine/test_brain_sync.py",
+        "icarus_engine/provider-corpus.json",
+        "docs/superpowers/specs/2026-10-19-provider-corpus-consumption.md"
       ],
       "declared_targets": [
         {
@@ -998,6 +1005,34 @@
         {
           "path": "tests_engine/test_corpus_expansion.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/provider_corpus.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_provider_corpus.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/provider-corpus.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-19-provider-corpus-consumption.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1007,17 +1042,284 @@
       ],
       "goal": "Inventory all registered Icarus tasks and begin evidence-backed completion without duplicating active work",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-18T20:22:37.917Z",
-      "latest_summary": "Native39162615234 all3success. Primary exact receipt SHA67c948545419792f86200af4139963943f3184a9f726150892921e71b458b8c2 proves all10fullfamilies plusMCL/MBT consumed/warm onall4 (24totalwarmassets each,228readreceipts),sixrequestedmicros absent no synthesis. Claim separate bounded expansion evidence reader/bundle/tests; preserve original3-corpus receipts unchanged. IndependentP&LreviewCLEAR192tests; sourceauditscorrectedstage/choicefacts and addedGoatLive to46documentedfamilies, allfirmrulesstillUNVERIFIED/noexecution. Full19093 localengine/tools suite3440collected exits0 with3skips; exact-countverification recordedwithoutclaimingdeployment.",
+      "last_event_at_utc": "2026-10-19T01:19:57.951Z",
+      "latest_summary": "Resume root session; final dashboards456@79909475 verified3496passed3skips111subtests and independent118focused CLEAR, hostedchecks green/complete inspectexacthead next. Native10family proof39162615234 all3success preserved. New verified gap: actual provider research context (44,709upstreamrows) becomes hash/coverage-only inIcarus brain_sync, not actualtyped featureconsumption. Claim boundedprovider_corpus reader/bundle/tests, brain_sync hook and Windowscoverage workflow; preserve rawexclusion/temporal/source/operationlineage and all research/trading gates. No acquisition, budgets, schedules, orders, mainmerge or deployment. Peer213/214/455/hubGRU scopes stay untouched.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "four-workspace-exact-head-review",
+      "phase": "provider-corpus-consumption",
       "pr": null,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reclaimable": false,
+      "reserved_paths": [
+        "tools/provider_exhaustive_collection.py",
+        "tests/test_provider_exhaustive_collection.py",
+        "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md",
+        ".github/workflows/corpus-consumer-plane.yml",
+        "tests/test_corpus_consumer_workflow.py",
+        "tools/provider_archive.py",
+        "tests/test_provider_archive.py",
+        "tools/provider_exhaustive_collection.py",
+        "tests/test_provider_exhaustive_collection.py",
+        "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md",
+        "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md",
+        "icarus_engine/corpus_intake.py",
+        "tools/provider_corpus_intake.py",
+        "tests_engine/test_corpus_intake.py",
+        "tests/test_provider_corpus_intake.py",
+        "mission/current-pr-audit-20261017.json",
+        "mission/task-audit-20261017.json",
+        "mission/continuations/2026-10-17-task-audit.md",
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+        "icarus_engine/corpus_evidence.py",
+        "icarus_engine/corpus-consumption.json",
+        "tests_engine/test_corpus_evidence.py",
+        "icarus_engine/server.py",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "icarus_engine/workspace-dashboard.js",
+        "tests_engine/test_command_center_routes.py",
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
+        "tests_engine/test_paper_workspaces_runtime.py",
+        "icarus_engine/account_connections.py",
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/propfirm-rules.json",
+        "tests_engine/test_account_connections.py",
+        "icarus_engine/runtime.py",
+        "tests_engine/test_corpus_runtime_poll.py",
+        "icarus_engine/paper_pnl.py",
+        "tests_engine/test_paper_pnl.py",
+        "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+        "tests_engine/test_paper_pnl_browser.py",
+        "icarus_engine/paper-pnl-ui.js",
+        "icarus_engine/dashboard.html",
+        "tests_engine/test_dashboard_js.py",
+        "icarus_engine/corpus_expansion.py",
+        "icarus_engine/corpus-expansion.json",
+        "tests_engine/test_corpus_expansion.py",
+        ".github/workflows/test.yml",
+        "icarus_engine/provider_corpus.py",
+        "tests_engine/test_provider_corpus.py",
+        "icarus_engine/brain_sync.py",
+        "tests_engine/test_brain_sync.py",
+        "icarus_engine/provider-corpus.json",
+        "docs/superpowers/specs/2026-10-19-provider-corpus-consumption.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "tools/provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": ".github/workflows/corpus-consumer-plane.yml",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests/test_corpus_consumer_workflow.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tools/provider_archive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_archive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tools/provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_exhaustive_collection.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-18-corpus-consumer-plane-design.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-18-corpus-consumer-plane.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tools/provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests/test_provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "mission/current-pr-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/task-audit-20261017.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "mission/continuations/2026-10-17-task-audit.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus-consumption.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_evidence.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/command-centers-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_command_center_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces_runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/account_connections.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/propfirm-rules.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_account_connections.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_runtime_poll.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_pnl_browser.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper-pnl-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_dashboard_js.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus_expansion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/corpus-expansion.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_corpus_expansion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/provider_corpus.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_provider_corpus.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/provider-corpus.json",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-19-provider-corpus-consumption.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "session_id": "codex-20261017-task-inventory-start",
-      "stale": true,
+      "stale": false,
       "status": "active"
     },
     {
@@ -1172,10 +1474,10 @@
   "counts": {
     "active": 17,
     "collisions": 0,
-    "stale": 16,
+    "stale": 15,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-19T00:55:12.474030Z",
+  "generated_at_utc": "2026-10-19T01:20:12.692497Z",
   "owner_status": {
     "claude": {
       "active": false,
