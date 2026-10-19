@@ -601,7 +601,9 @@
         "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
         "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
         "reppiks490/Icarus:icarus_engine/dashboard.html",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py"
+        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
+        "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+        "reppiks490/Icarus:tests_engine/test_workspace_tools.py"
       ],
       "declared_targets": [
         {
@@ -663,6 +665,14 @@
         {
           "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -671,8 +681,8 @@
       ],
       "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
       "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-19T03:07:33Z",
-      "latest_summary": "Owner has explicitly assigned this co-lead immediate implementation of futures plus four dashboard performance within remaining weekly budget. Take over only minimal integration hunks on isolated branch based on frozen reviewed456:e96da3f4; preserve peer branch and all provider/account work, no force update. New modules pass47 focused cases including8 real browser viewports/IDs. Publish follow-up stacked on456 for independent consumption; do not overwrite peer source branch.",
+      "last_event_at_utc": "2026-10-19T03:09:20Z",
+      "latest_summary": "Minimal dashboard hooks implemented on isolated456 follow-up. Add safe loopback status/control inventory, flat-guarded full-universe selection and file-feed-only plant restart helper. Preserve journals/configs and other processes. Existing full engine regression is running.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "focused-dashboard-implementation",
@@ -693,7 +703,9 @@
         "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
         "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
         "reppiks490/Icarus:icarus_engine/dashboard.html",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py"
+        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
+        "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+        "reppiks490/Icarus:tests_engine/test_workspace_tools.py"
       ],
       "reserved_targets": [
         {
@@ -754,6 +766,14 @@
         },
         {
           "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:icarus_engine/workspace_tools.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1607,7 +1627,7 @@
     "stale": 15,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-19T03:07:43.660100Z",
+  "generated_at_utc": "2026-10-19T03:09:29.898205Z",
   "owner_status": {
     "claude": {
       "active": false,
