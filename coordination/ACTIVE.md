@@ -1,8 +1,8 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-19T20:11:27.480647Z`
+Generated: `2026-10-19T21:28:50.494843Z`
 
-Active sessions: **16** · Stale/reclaimable: **16** · Collisions: **0**
+Active sessions: **17** · Stale/reclaimable: **16** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
@@ -22,3 +22,4 @@ Active sessions: **16** · Stale/reclaimable: **16** · Collisions: **0**
 | `codex-20261018-dashboard-integration-audit` ⚠️ STALE/RECLAIMABLE | guard-repair-and-review | `reppiks490/Icarus` / `codex/dashboard-integration-audit-20261018` | Acknowledge task-inventory co-lead retains four dashboards/A200/futures expansion/broker and account UI/strict combined P&L; root will independently review product integration. Root retains Engine corpus-budget and Sentinel freshness repairs (#213/#214). Release Icarus discovery code/test reservations to delegated codex-20261018-discovery-provenance-fix; root will not edit them. Budget review caught invalid-account exception escaping per-feed isolation; root fixes it before merge. Preserve all current program/permission and no-live/no-new-spend boundaries. | session:codex-20261017-task-inventory-start<br>session:codex-20261018-discovery-provenance-fix | — |
 | `codex-20261018-discovery-provenance-fix` ⚠️ STALE/RECLAIMABLE | exact-head-review-and-verification | `reppiks490/Icarus` / `codex/discovery-operation-provenance-20261018` | PR #455 final head 763ed677 rejects blank variant descriptors as well as ambiguous queries and marketing origins. Final offline registry/CLI suite: 133 passed. Initial repair full project suite: 2897 passed, 3 skipped, 111 subtests passed, 7 A200 failures; all seven independently reproduce on untouched base c9931305. No A200 edits. Exact-head Linux/Windows CI and read-only independent review are running. | pr:reppiks490/Icarus#455<br>github-run:39162079257<br>github-run:39162075870<br>session:codex-20261018-dashboard-integration-audit | — |
 | `codex-20261018-provider-account-guard` ⚠️ STALE/RECLAIMABLE | offline-regression | `reppiks490/Icarus-engine` / `codex/databento-corpus-account-guard-20261018` | Repair only effective OHLCV account resolution and refusal without an approved corpus ledger lane. No allocations, provider calls, purchases, live authority or merges. Knowledge delta: regression names and PR description document the account invariant; no additional repository docs within this two-file delegated scope. | session:codex-20261017-hub-integration-lead | — |
+| `codex-20261019-owner-gitbash-reset-restart` | owner-restart-repair | `reppiks490/Icarus` / `codex/owner-gitbash-reset-restart-20261019` | Add one Git Bash script for the owner: exact 35-asset paper config, 10m Heikin Ashi chart and chart fills, futures RTH at 08:30 Chicago, mini/micro 5/20, safe plant stop, Yahoo-connected restart with browser. Do not touch file-mode command-center restart helper. | — | reppiks490/Icarus:reppiks490/Icarus:scripts/restart-owner-paper-yahoo.sh |
