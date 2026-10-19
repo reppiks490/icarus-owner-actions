@@ -583,216 +583,6 @@
     },
     {
       "actor": "Codex",
-      "branch": "chatgpt/hub-windows-job-containment",
-      "cooperates_with": [],
-      "coordination_mode": "independent",
-      "declared_paths": [
-        "reppiks490/Icarus:icarus_engine/workspace_performance.py",
-        "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
-        "reppiks490/Icarus:icarus_engine/workspace_universe.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
-        "reppiks490/Icarus:scripts/restart-command-centers.ps1",
-        "reppiks490/Icarus:scripts/restart-command-centers.sh",
-        "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
-        "reppiks490/Icarus:icarus_engine/server.py",
-        "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
-        "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
-        "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
-        "reppiks490/Icarus:icarus_engine/dashboard.html",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
-        "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
-        "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
-      ],
-      "declared_targets": [
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_performance.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:scripts/restart-command-centers.ps1",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:scripts/restart-command-centers.sh",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/server.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:.github/workflows/workspace-performance.yml",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "dependencies": [
-        "pr:reppiks490/Icarus#456",
-        "session:codex-20261017-task-inventory-start"
-      ],
-      "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
-      "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-19T03:18:47Z",
-      "latest_summary": "Published owner-focused PR459 at0b5068372f2b8fce39bf3503f3bdc395ec083b9d/treeb2088b35. Preserves reviewed450/451/452/456 source and current main through ordinary merge; peer branches untouched. All4 defaults35 identities retain shipped16; per-ledger persisted trade performance and selector wired; combined P&L remains outside. Safe file-only restart/control inventory implemented. Full pre-main run3453passed3skips111subtests; focused65pass; real temporary-root restartsmoke all4x35/nohistory/nofeed acquisition/ownedcleanupPASS; source+wheelbuildPASS. Exact native Windows/browser/general CI and final merged-main rerun pending.",
-      "latest_type": "WAITING",
-      "model_family": "openai",
-      "phase": "release-verification",
-      "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "reppiks490/Icarus:icarus_engine/workspace_performance.py",
-        "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
-        "reppiks490/Icarus:icarus_engine/workspace_universe.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
-        "reppiks490/Icarus:scripts/restart-command-centers.ps1",
-        "reppiks490/Icarus:scripts/restart-command-centers.sh",
-        "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
-        "reppiks490/Icarus:icarus_engine/server.py",
-        "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
-        "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
-        "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
-        "reppiks490/Icarus:icarus_engine/dashboard.html",
-        "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
-        "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
-        "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
-      ],
-      "reserved_targets": [
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_performance.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-performance-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_browser.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_universe.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:scripts/restart-command-centers.ps1",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:scripts/restart-command-centers.sh",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:docs/COMMAND_CENTER_RESTARTS.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/server.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace-dashboard.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "reppiks490/Icarus:.github/workflows/workspace-performance.yml",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
-      "session_id": "codex-20261017-hub-integration-lead",
-      "stale": false,
-      "status": "active"
-    },
-    {
-      "actor": "Codex",
       "branch": "codex/task-inventory-20261017",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -1632,12 +1422,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 17,
+    "active": 16,
     "collisions": 0,
     "stale": 15,
-    "terminal": 23
+    "terminal": 24
   },
-  "generated_at_utc": "2026-10-19T03:18:55.625879Z",
+  "generated_at_utc": "2026-10-19T03:25:32.177925Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -2194,6 +1984,32 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261017-coordination-cron-guard",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "Codex",
+      "branch": "chatgpt/hub-windows-job-containment",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "pr:reppiks490/Icarus#456",
+        "session:codex-20261017-task-inventory-start"
+      ],
+      "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
+      "home_repo": "reppiks490/divine-providence",
+      "last_event_at_utc": "2026-10-19T03:25:21Z",
+      "latest_summary": "Owner-focused futures/four-dashboard features implemented and merged viaPR459, merge6fc07b3b56bb49622a17691ec4f39fc31fca517b; original branch ancestry retained. All6 exact-head workflows green, final local3456pass3Windows-onlyskips111subtests, new65focused and real file-only restart smoke all4x35PASS. Original16launcher assets retained, ten expanded family selection+registered micros acrossall4defaults, persisted per-ledger performance/switcher, strict combinedpaperP&L, non-destructive restart/control inventory. COMPLETE applies to narrowed feature implementation, not the federation mission, freshfeed entitlements or profitable trading. Six missing micro histories remain explicit; no live activation. Release root code reservations; peer branches unchanged; durablehandoff follows.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "focused-feature-release-complete",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261017-hub-integration-lead",
       "stale": false,
       "status": "complete"
     },
