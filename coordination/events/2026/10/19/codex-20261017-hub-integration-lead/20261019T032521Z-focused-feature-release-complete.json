@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261019T032521Z-focused-feature-release-complete",
+  "session_id": "codex-20261017-hub-integration-lead",
+  "at_utc": "2026-10-19T03:25:21Z",
+  "type": "COMPLETE",
+  "phase": "focused-feature-release-complete",
+  "summary": "Owner-focused futures/four-dashboard features implemented and merged viaPR459, merge6fc07b3b56bb49622a17691ec4f39fc31fca517b; original branch ancestry retained. All6 exact-head workflows green, final local3456pass3Windows-onlyskips111subtests, new65focused and real file-only restart smoke all4x35PASS. Original16launcher assets retained, ten expanded family selection+registered micros acrossall4defaults, persisted per-ledger performance/switcher, strict combinedpaperP&L, non-destructive restart/control inventory. COMPLETE applies to narrowed feature implementation, not the federation mission, freshfeed entitlements or profitable trading. Six missing micro histories remain explicit; no live activation. Release root code reservations; peer branches unchanged; durablehandoff follows.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "dependencies": [],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/459",
+    "merge:6fc07b3b56bb49622a17691ec4f39fc31fca517b",
+    "head:0b5068372f2b8fce39bf3503f3bdc395ec083b9d",
+    "tree:b2088b35b27060ec907de9642a505f6652bf3016",
+    "run:39193983849",
+    "run:39193983878",
+    "run:39193983926"
+  ],
+  "next_action": "Owner installs/restarts current main using preserved ICARUS_HOME. Other co-lead can incorporate main into457/provider work. Do not deploy hosted phone Site or enable paid/live feeds implicitly.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
