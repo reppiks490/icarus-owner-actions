@@ -131,22 +131,76 @@
       "branch": "chatgpt/guest-sandbox-access-20261019",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "declared_paths": [
+        "icarus_engine/guest_server.py",
+        "icarus_engine/guest_dashboard.html",
+        "icarus_engine/cli.py",
+        "tests_engine/test_guest_sandbox.py",
+        "docs/GUEST_SANDBOX.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/guest_server.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/guest_dashboard.html",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/cli.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_guest_sandbox.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/GUEST_SANDBOX.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "dependencies": [
         "policy:live-execution-disabled"
       ],
       "goal": "Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime.",
       "home_repo": "reppiks490/Icarus-engine",
       "last_event_at_utc": "2026-10-19T00:55:00Z",
-      "latest_summary": "Build a viewer-plus-isolated-experiment access surface for Icarus so a guest can inspect live state and run personal input/backtest/rewarm experiments without mutating the owner's live runtime.",
-      "latest_type": "REGISTERED",
+      "latest_summary": "Add a hard server-side guest permission boundary: live state is view-only; guest inputs, presets, backtests, replay rewarm/reset and export operate only on isolated in-memory replay state. Explicitly deny all live-runtime mutation, execution, broker, asset-management, credential and research-activation controls. Add a separate guest UI/port and tunnel launcher path.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "registered",
+      "phase": "implementation",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        "icarus_engine/guest_server.py",
+        "icarus_engine/guest_dashboard.html",
+        "icarus_engine/cli.py",
+        "tests_engine/test_guest_sandbox.py",
+        "docs/GUEST_SANDBOX.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/guest_server.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/guest_dashboard.html",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "icarus_engine/cli.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_engine/test_guest_sandbox.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "docs/GUEST_SANDBOX.md",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "session_id": "chatgpt-20261019-guest-sandbox-access",
       "stale": false,
       "status": "active"
@@ -1121,7 +1175,7 @@
     "stale": 16,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-19T00:54:52.530221Z",
+  "generated_at_utc": "2026-10-19T00:55:12.474030Z",
   "owner_status": {
     "claude": {
       "active": false,
