@@ -603,7 +603,8 @@
         "reppiks490/Icarus:icarus_engine/dashboard.html",
         "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
         "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_tools.py"
+        "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+        "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
       ],
       "declared_targets": [
         {
@@ -673,6 +674,10 @@
         {
           "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:.github/workflows/workspace-performance.yml",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -681,8 +686,8 @@
       ],
       "goal": "Co-lead integration and release readiness; close Divine Providence runner lifecycle defects, preserve other worktrees, and verify repository/CI evidence.",
       "home_repo": "reppiks490/divine-providence",
-      "last_event_at_utc": "2026-10-19T03:09:20Z",
-      "latest_summary": "Minimal dashboard hooks implemented on isolated456 follow-up. Add safe loopback status/control inventory, flat-guarded full-universe selection and file-feed-only plant restart helper. Preserve journals/configs and other processes. Existing full engine regression is running.",
+      "last_event_at_utc": "2026-10-19T03:11:36Z",
+      "latest_summary": "Focused integration + safe restart CLI implemented; scoped suite126passed, new maintenance9passed; full project run reached85% with no failures at check. Independent review found optional browser dependency CI gap; add dedicated Ubuntu Chromium and Linux/Windows new-feature gates, keeping ordinary engine suite browser-optional.",
       "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "focused-dashboard-implementation",
@@ -705,7 +710,8 @@
         "reppiks490/Icarus:icarus_engine/dashboard.html",
         "reppiks490/Icarus:tests_engine/test_workspace_performance_routes.py",
         "reppiks490/Icarus:icarus_engine/workspace_tools.py",
-        "reppiks490/Icarus:tests_engine/test_workspace_tools.py"
+        "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+        "reppiks490/Icarus:.github/workflows/workspace-performance.yml"
       ],
       "reserved_targets": [
         {
@@ -774,6 +780,10 @@
         },
         {
           "path": "reppiks490/Icarus:tests_engine/test_workspace_tools.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "reppiks490/Icarus:.github/workflows/workspace-performance.yml",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1627,7 +1637,7 @@
     "stale": 15,
     "terminal": 23
   },
-  "generated_at_utc": "2026-10-19T03:09:29.898205Z",
+  "generated_at_utc": "2026-10-19T03:11:47.322249Z",
   "owner_status": {
     "claude": {
       "active": false,
