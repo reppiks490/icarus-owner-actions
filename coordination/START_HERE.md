@@ -2,6 +2,10 @@
 
 This is the common entrypoint for every ChatGPT/Codex/Claude/other AI chat working anywhere in the ICARUS federation. The coordination bus is intentionally model-neutral: tasks are not owned by a model family. Coordination and evidence are mandatory; artificial agent gating is not.
 
+## Final convergence role board
+
+For owner-authorized final convergence work, read `coordination/directives/2026-10-19-five-agent-final-convergence.md` and GitHub issue #59 before selecting scope. The next five agents must each claim exactly one unclaimed identity — VERITAS (#54), ARGOS (#55), KEPLER (#56), MNEMOSYNE (#57), or SYNAPSE (#58) — and inherit the full delegated lane plus its mandatory review→fix→re-review cycle.
+
 ## Every time the owner tells a chat to continue
 
 1. Read `coordination/ACTIVE.md`, `coordination/collisions.json`, `coordination/owner_status.json`, and the relevant files under `coordination/directives/` in `reppiks490/icarus-owner-actions`.
