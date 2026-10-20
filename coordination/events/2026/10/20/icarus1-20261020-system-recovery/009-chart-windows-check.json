@@ -1,0 +1,83 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-chart-windows-check",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:38:24.617Z",
+  "type": "UPDATE",
+  "phase": "chart-repair-windows-verification",
+  "summary": "Chart repair at d47c41ff21302c6086894c1f8012c3a2ba91425f passes local full3475tests/4skips/111subtests and independent exact-commit review with matching hashes. Final-head hosted checks running. Add the new platform-neutral12case offline HTTP chart module to the existing explicit Windows selection because the owner operates on a PC; no new workflow or provider lane. Shared-dashboard architecture proposal is published and independently reviewed; human written-spec approval requested asynchronously and still pending. Existing live/no-spend/no-restart boundaries unchanged.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified",
+    "review:shared-dashboard-written-spec"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@d47c41ff21302c6086894c1f8012c3a2ba91425f",
+    "independent-review:d47c41f:no-material-findings",
+    "local-full-tests:3475passed,4skipped,111subtests"
+  ],
+  "next_action": "Include new regression module in Windows selection, validate workflow, publish verification/handoff. Await shared-dashboard design approval before architectural planning.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
