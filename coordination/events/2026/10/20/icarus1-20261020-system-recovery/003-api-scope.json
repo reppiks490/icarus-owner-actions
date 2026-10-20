@@ -1,0 +1,66 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-api-scope",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:06:57.894Z",
+  "type": "UPDATE",
+  "phase": "independent-accounting-review",
+  "summary": "Independent review confirms further raw-vs-dedicated accounting inconsistency when a different workspace runtime is unavailable. Extend the same defect boundary to server workspace projection and HTTP regression. All-workspace aggregate/profile projection now uses canonical validator; five new adverse/healthy cases pass. Latest four failing Engine workflows independently traced to GitHub job-not-started billing/spending annotations, not strategy errors; no rerun or spending change.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    }
+  ],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "artifact:cloud:/workspace/scratch/icarus-pnl-red.log",
+    "artifact:cloud:/workspace/scratch/federation-inventory/workflow-failure-annotations.json"
+  ],
+  "next_action": "Capture HTTP regression before endpoint fix; preserve missing-runtime combined totals as unavailable and valid individual realized amounts.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
