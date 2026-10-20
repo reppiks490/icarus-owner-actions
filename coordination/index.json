@@ -1123,13 +1123,43 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
+        "tests_engine/test_paper_workspaces_runtime.py",
+        "README.md",
+        "docs/recovery",
+        "coordination/START_HERE.md",
+        "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
         "coordination/summaries/icarus1-20261020-system-recovery.json"
       ],
       "declared_targets": [
         {
-          "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+          "path": "icarus_engine/paper_workspaces.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces_runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "README.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/START_HERE.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
+          "repo": "reppiks490/icarus-owner-actions"
         },
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
@@ -1142,21 +1172,51 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T17:58:18.394Z",
-      "latest_summary": "Owner appoints Icarus 1 and a forthcoming Icarus 2 as primary workers, requests all repositories examined, Windows PC/Git Bash browser startup, and no full restart until it is meaningful. Current two-worker direction supersedes mandatory selection of an old five-agent identity for this session. Read-only audit first; no restart, live arming, provider purchases or secret copying. Knowledge delta: this session's recovery audit and evidence index; source fixes will receive narrower claims after reproduction.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-20T18:01:59.858Z",
+      "latest_summary": "All 20 connected repository entries inventoried at exact refs (17 nonempty trees inspected, 3 report size zero); inspection is not full verification. Main runtime has separate main/workspace dashboard implementations. Identified raw all-workspace API aggregate computed independently of strict freshness validation: reproduce before fixing. Restore current owner's two-worker/no-premature-restart instruction in the existing coordination entrypoint. One canonical recovery status and evidence inventory; no parallel starting-point sprawl. Full tests running after declared dependency installation. Firecrawl lookup rejected for insufficient credits; no retry/purchase.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "repository-and-runtime-audit",
+      "phase": "baseline-and-pnl-reproduction",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "icarus_engine/paper_workspaces.py",
+        "tests_engine/test_paper_workspaces.py",
+        "tests_engine/test_paper_workspaces_runtime.py",
+        "README.md",
+        "docs/recovery",
+        "coordination/START_HERE.md",
+        "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
         "coordination/summaries/icarus1-20261020-system-recovery.json"
       ],
       "reserved_targets": [
         {
-          "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+          "path": "icarus_engine/paper_workspaces.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_paper_workspaces_runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "README.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/START_HERE.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
+          "repo": "reppiks490/icarus-owner-actions"
         },
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
@@ -1175,7 +1235,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T17:58:59.958419Z",
+  "generated_at_utc": "2026-10-20T18:02:10.875868Z",
   "owner_status": {
     "claude": {
       "active": false,
