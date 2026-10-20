@@ -1136,7 +1136,8 @@
         "icarus_engine/server.py",
         "tests_engine/test_command_center_routes.py",
         "tests_engine/test_workspace_chart_routes.py",
-        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+        ".github/workflows/test.yml"
       ],
       "declared_targets": [
         {
@@ -1186,20 +1187,25 @@
         {
           "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
         "session:icarus2-20261020-federation-integration",
         "pr:reppiks490/Icarus#462",
-        "external:owner-PC-runtime-unverified"
+        "external:owner-PC-runtime-unverified",
+        "review:shared-dashboard-written-spec"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:31:07.131Z",
-      "latest_summary": "Use a dated amendment to the existing four-workspace-delivery spec, not a second dashboard authority. Preserve existing profile/journal/P&L/corpus/firm contracts; document the newly requested identical-main-renderer semantics and explicit API/persistence boundaries before architectural implementation. Internal backend worker repairs only already-reproduced chart paging. Release unused new-spec path. Current public-repository workflow correction is historical-vs-current, not a claim all provider lanes recovered.",
+      "last_event_at_utc": "2026-10-20T18:38:24.617Z",
+      "latest_summary": "Chart repair at d47c41ff21302c6086894c1f8012c3a2ba91425f passes local full3475tests/4skips/111subtests and independent exact-commit review with matching hashes. Final-head hosted checks running. Add the new platform-neutral12case offline HTTP chart module to the existing explicit Windows selection because the owner operates on a PC; no new workflow or provider lane. Shared-dashboard architecture proposal is published and independently reviewed; human written-spec approval requested asynchronously and still pending. Existing live/no-spend/no-restart boundaries unchanged.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "shared-ui-contract-amendment",
+      "phase": "chart-repair-windows-verification",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1214,7 +1220,8 @@
         "icarus_engine/server.py",
         "tests_engine/test_command_center_routes.py",
         "tests_engine/test_workspace_chart_routes.py",
-        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+        ".github/workflows/test.yml"
       ],
       "reserved_targets": [
         {
@@ -1263,6 +1270,10 @@
         },
         {
           "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1418,7 +1429,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:31:17.316381Z",
+  "generated_at_utc": "2026-10-20T18:38:34.608276Z",
   "owner_status": {
     "claude": {
       "active": false,
