@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "actor": "Icarus 2 / Codex",
+  "model_family": "openai",
+  "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "icarus2/federation-integration-20261020",
+  "pr": null,
+  "started_at_utc": "2026-10-20T18:13:50.114225Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "github",
+    "cloud-shell",
+    "parallel-agents",
+    "recurring-automation"
+  ],
+  "initial_dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled",
+    "external:github-actions-job-start-billing-hold"
+  ]
+}
