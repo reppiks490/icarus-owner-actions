@@ -1,0 +1,68 @@
+{
+  "schema_version": "icarus-integration-worker-v1",
+  "worker_id": "icarus2",
+  "display_name": "Icarus 2",
+  "role": "federation_integration_brain",
+  "state": "BOOTSTRAPPING",
+  "owner_directed": true,
+  "primary_session_id": "icarus2-20261020-federation-integration",
+  "coordination_repository": "reppiks490/icarus-owner-actions",
+  "collaborator": {
+    "worker_id": "icarus1",
+    "session_id": "icarus1-20261020-system-recovery",
+    "scope": "restart readiness, accounting, owner-PC recovery and reserved runtime files"
+  },
+  "canonical_manifest": {
+    "repository": "reppiks490/Icarus-engine",
+    "path": "config/federated_repo_evidence.json",
+    "authority": "existing canonical repository/evidence registry"
+  },
+  "code": {
+    "repository": "reppiks490/icarus-owner-actions",
+    "branch": "icarus2/federation-integration-20261020",
+    "pull_request": null,
+    "integration_state": "REVIEW_PENDING"
+  },
+  "swarms": [
+    {
+      "id": "VERITAS",
+      "scope": "authority, architecture and coordination"
+    },
+    {
+      "id": "HERMES",
+      "legacy_alias": "ARGOS",
+      "scope": "providers, corpora and data lineage"
+    },
+    {
+      "id": "KEPLER",
+      "scope": "markets, execution qualification and accounting boundaries"
+    },
+    {
+      "id": "MNEMOSYNE",
+      "scope": "Brain, models, science and temporal evidence"
+    },
+    {
+      "id": "SYNAPSE",
+      "scope": "integration, resilience and cross-repository verification"
+    }
+  ],
+  "swarm_identity_semantics": "Subordinate functional scopes, not acquisition of the five external role issues or proof of active agents.",
+  "cycles_root": "coordination/icarus2/cycles",
+  "stop_requested": false,
+  "automation": {
+    "id": null,
+    "cadence_minutes": 60,
+    "timezone": "America/Chicago",
+    "state": "NOT_CREATED",
+    "runtime": "scheduled agent; no guarantee of continuous residence or future success"
+  },
+  "authority": {
+    "execution_authorized": false,
+    "new_spend_authorized": false,
+    "automatic_main_merge_authorized": false,
+    "automatic_deployment_authorized": false,
+    "restart_owner_pc_authorized": false
+  },
+  "capability_semantics": "ultracode is the owner-requested working style; no exposed runtime switch by that name has been observed.",
+  "updated_at_utc": "2026-10-20T18:19:24.681816+00:00"
+}
