@@ -1,20 +1,23 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-20T18:18:23.383Z",
+  "completed_at_utc": "2026-10-20T18:43:19.648Z",
   "result": "blocked",
-  "scope": "Initial recovery checkpoint; full system recovery remains active and incomplete.",
+  "scope": "Verified accounting and chart repair checkpoint; full system recovery remains active and incomplete.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
-  "source_reviewed_sha": "bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
-  "latest_documentation_sha": "ae38967",
+  "source_reviewed_sha": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
+  "latest_documentation_sha": "4368a33fda4000a40f281b4c4c883cb32c8ad56b",
   "restart_decision": "NO_GO",
   "delivered": [
-    "Consistent raw/dedicated strict four-workspace accounting projection with red-green regressions",
-    "Pinned inventory of all20connectedrepositories/19trees/1emptyremote and55manifestsourceentries",
-    "Full runtime3463passed/4skipped/111subtests; focused133pass; independent6casespass",
-    "Hub12subsystems2179pass,hub165cases,compile12/adversarial5/connections10;4satellite suitespass",
-    "Current two-worker direction replaces old mandatoryfive-name entrypoint for recovery",
-    "Explicit Icarus2 session handoff; no overlapping claims"
+    "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
+    "Scoped chart pagination and page-size repair, 12 offline HTTP regressions, no parent/sibling fallback.",
+    "Final source suite: 3475 passed, 4 skipped, 111 subtests; accounting selection 133; chart selection 52; independent source review clear.",
+    "Windows CI now selects the chart module; YAML and 67 module paths validate; platform execution tracked separately.",
+    "All 20 connected repositories inventoried; 55 manifest declarations retained without claiming universal downstream consumption.",
+    "Twelve subsystem suites: 2179 passed; hub 165 collected; compile/adversarial/connection fixtures and four satellite suites passed.",
+    "Shared main-dashboard architecture amendment published in existing spec and independently reviewed; explicit owner approval pending.",
+    "Both Icarus repositories verified public; a newer Engine cl-lab job is executing, correcting the earlier blanket billing-block interpretation.",
+    "Two-worker coordination established with independently registered Icarus 2; no reservation collisions."
   ],
   "remaining_internal_work": [
     "Four-dashboard parity with main trading surface",
@@ -25,20 +28,41 @@
     "Relevant open PR exact-head disposition"
   ],
   "external_dependencies": [
-    "Owner PC checkout/interpreter/configuration/runtime not connected or observed",
-    "Historical4Engine workflows proven not-started by GitHub billing/spending annotations",
-    "Firecrawl lookup blocked by HTTP402 insufficientcredits; no researchresult"
+    "Owner PC checkout, interpreter, configuration, data root and actual runtime remain unobserved.",
+    "Historical four Engine attempts were rejected at job start by billing/spending annotations; current blanket billing block is not established. New lab executing; three lanes have no newer observed result.",
+    "Shared-dashboard written architecture requires explicit owner review under the previously read brainstorming skill; request pending.",
+    "Firecrawl lookup returned HTTP 402 insufficient credits; direct primary-source/GitHub tools remain independently available."
   ],
   "evidence": [
-    "pr:reppiks490/Icarus#462",
-    "source-reviewed:bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
-    "docs-followup:ae38967",
-    "local-tests:3463passed,4skipped,111subtests",
-    "focused-tests:133passed",
-    "independent-review:6newcasespassed,no-material-findings",
+    "pr:reppiks490/Icarus#462@4368a33fda4000a40f281b4c4c883cb32c8ad56b",
+    "independent-source-review:d47c41ff21302c6086894c1f8012c3a2ba91425f",
+    "local-runtime:3475passed,4skipped,111subtests",
+    "local-chart-selection:52passed",
+    "independent-chart:12passed",
+    "windows-workflow-selection:67modules-validated",
+    "local-config:12passed",
+    "coordination/events/2026/10/20/icarus1-20261020-system-recovery/010-chart-verified-handoff.json",
     "coordination/sessions/icarus2-20261020-federation-integration.json"
   ],
-  "next_action": "Continue runtime/dashboard recovery and consume Icarus2 specialist findings; use current exact-head checks and operator-runtime evidence before revising NO_GO.",
+  "next_action": "Inspect current-head hosted/Windows outcomes and configuration-start failure; continue non-conflicting recovery. Shared-dashboard implementation planning waits for explicit written-spec approval. Restart remains NO_GO until PC/runtime and all readiness gates have current evidence.",
   "full_system_restart_performed": false,
-  "live_broker_arming": false
+  "live_broker_arming": false,
+  "hosted_verification": {
+    "head": "4368a33fda4000a40f281b4c4c883cb32c8ad56b",
+    "observed_runs": [
+      39477036149,
+      39477036068,
+      39477036212,
+      39477036119
+    ],
+    "status_at_checkpoint": "in progress or pending; not declared green",
+    "prior_head_windows_configuration_failure": {
+      "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
+      "run_id": 39476264660,
+      "job_id": 118812901733,
+      "failure": "test_config_jobs.py:107 returned 202 but did not observe blocked fixture entry within 3 seconds; conflicting second request never sent.",
+      "counter_evidence": "Same-source push Windows job 118812863987 passed; local full configuration module passes 12 tests in 6.99s.",
+      "disposition": "Unresolved asynchronous-start timeout; not proven billing, regression or harmless scheduling flake."
+    }
+  }
 }
