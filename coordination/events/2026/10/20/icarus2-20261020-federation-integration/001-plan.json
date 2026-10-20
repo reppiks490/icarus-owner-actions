@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus2-integration-plan",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-20T18:13:50.114225Z",
+  "type": "PLAN",
+  "phase": "icarus2-establishment",
+  "summary": "Owner now assigns this worker identity Icarus2 and authorizes perpetual GitHub integration with separate parallel swarms, in tandem with Icarus1. Icarus1 restart/accounting/server/readme/recovery/directive paths are explicitly untouched. Icarus2 extends existing federation/coordination/hybrid contracts rather than replacing canonical manifests; creates bounded source-pinned cycle/handoff and recurring task runtime. Latest approved20261018perpetual design is reused; no claim all legacytasks resumed or complete. No purchases, unrestricted secret access, live arming, automaticmainmerge/deployment or endless nested self-triggering. GitHub job-start billing blocker stays explicit; no massworkflow reruns.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "integration_brain"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain_transport.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_icarus2_workflow.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "docs/icarus2-integration-brain.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": ".github/workflows/icarus2-integration-brain.yml"
+    }
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled",
+    "external:github-actions-job-start-billing-hold"
+  ],
+  "evidence": [
+    "owner:2026-10-20-current-message",
+    "coordination:icarus1-20261020-system-recovery/003-api-scope.json",
+    "spec:docs/superpowers/specs/2026-10-18-icarus-perpetual-saturation-convergence-design.md"
+  ],
+  "next_action": "Parallel specialist swarms inspect authority/data/execution/science/integration; root builds recurring runtime and source-pinned bounded integration contract. Icarus1 may consume this claim as a direct handoff of nonconflicting scope.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
