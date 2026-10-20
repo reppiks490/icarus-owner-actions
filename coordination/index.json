@@ -1132,7 +1132,9 @@
         "docs/recovery",
         "coordination/START_HERE.md",
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
-        "coordination/summaries/icarus1-20261020-system-recovery.json"
+        "coordination/summaries/icarus1-20261020-system-recovery.json",
+        "icarus_engine/server.py",
+        "tests_engine/test_command_center_routes.py"
       ],
       "declared_targets": [
         {
@@ -1166,6 +1168,14 @@
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
           "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_command_center_routes.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1176,12 +1186,12 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:16:34.514Z",
-      "latest_summary": "Icarus 1 publishes draft Icarus#462 at bf582b8e69536d3dd734f34c9ae2b1594a42f20f. P&L projection consistency repaired; dedicated endpoint retains valid individual realized P&L when another runtime absent; observed red-green; final local3463passed/4skipped/111subtests, focused133passed, independent final review no material findings and6newcasespassed. All20repo entries examined (19trees/1verifiedempty),55manifest declarations preserved;12hub suites2179passed plus hub165cases/compile12/adversarial5/connections10 and4satellite suites green. No PC/runtime/accuracy/dashboard parity/full recovery claim. Acknowledge Icarus2 session now registered, nonconflicting integration-brain/federation scope. Existing source repair claims stay with Icarus1; data-to-consumer/futures/account/accuracy evidence gaps remain available for explicit specialist claims. Full restart remains NO_GO. Current PR-triggered checks are in progress; historical4Engine jobs were proven not-started billing/spending blocked. Shell transport disconnected after all source was committed/pushed/reviewed; GitHub access remains available.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-20T18:18:23.383Z",
+      "latest_summary": "Icarus#462 source repair independently reviewed at bf582b8e69536d3dd734f34c9ae2b1594a42f20f; no material findings, six new scenarios independently passed. Documentation-only follow-up ae38967 records Icarus2 registration; code/test hashes unchanged from full3463passed/4skips/111subtests and focused133pass. Icarus2 claim remains nonoverlapping. Current recovery record/README and owner START_HERE route to one NO_GO ledger. Full task is not complete: dashboard parity, actual consumer links/freshness, futures/firm wiring, matched accuracy investigation, operator runtime and recovery rehearsal remain open. Historical GitHub billing failures stay explicit; current draft CI is observed separately. A transient cloud shell transport failure recovered; it is not an outstanding blocker. No merge, deployment or full restart.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "draft-repair-and-recovery-gates",
-      "pr": null,
+      "phase": "reviewed-draft-recovery-checkpoint",
+      "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_engine/paper_workspaces.py",
@@ -1191,7 +1201,9 @@
         "docs/recovery",
         "coordination/START_HERE.md",
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
-        "coordination/summaries/icarus1-20261020-system-recovery.json"
+        "coordination/summaries/icarus1-20261020-system-recovery.json",
+        "icarus_engine/server.py",
+        "tests_engine/test_command_center_routes.py"
       ],
       "reserved_targets": [
         {
@@ -1225,6 +1237,14 @@
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
           "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_command_center_routes.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1340,7 +1360,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:16:52.745586Z",
+  "generated_at_utc": "2026-10-20T18:18:39.450883Z",
   "owner_status": {
     "claude": {
       "active": false,
