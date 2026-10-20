@@ -3,7 +3,7 @@
   "worker_id": "icarus2",
   "display_name": "Icarus 2",
   "role": "federation_integration_brain",
-  "state": "BOOTSTRAPPING",
+  "state": "SCHEDULED",
   "owner_directed": true,
   "primary_session_id": "icarus2-20261020-federation-integration",
   "coordination_repository": "reppiks490/icarus-owner-actions",
@@ -50,11 +50,13 @@
   "cycles_root": "coordination/icarus2/cycles",
   "stop_requested": false,
   "automation": {
-    "id": null,
+    "id": "6ad7b206db408191bfd5aeccfddde143",
     "cadence_minutes": 60,
     "timezone": "America/Chicago",
-    "state": "NOT_CREATED",
-    "runtime": "scheduled agent; no guarantee of continuous residence or future success"
+    "state": "ENABLED_SCHEDULE_CONFIRMED",
+    "runtime": "scheduled agent; no guarantee of continuous residence or future success",
+    "next_run_time": null,
+    "successful_future_cycles_verified": false
   },
   "authority": {
     "execution_authorized": false,
@@ -64,5 +66,5 @@
     "restart_owner_pc_authorized": false
   },
   "capability_semantics": "ultracode is the owner-requested working style; no exposed runtime switch by that name has been observed.",
-  "updated_at_utc": "2026-10-20T18:19:24.681816+00:00"
+  "updated_at_utc": "2026-10-20T18:25:34.718880+00:00"
 }
