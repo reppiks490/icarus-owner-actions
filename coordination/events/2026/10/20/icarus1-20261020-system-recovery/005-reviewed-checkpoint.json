@@ -1,0 +1,75 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-reviewed-draft-checkpoint",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:18:23.383Z",
+  "type": "UPDATE",
+  "phase": "reviewed-draft-recovery-checkpoint",
+  "summary": "Icarus#462 source repair independently reviewed at bf582b8e69536d3dd734f34c9ae2b1594a42f20f; no material findings, six new scenarios independently passed. Documentation-only follow-up ae38967 records Icarus2 registration; code/test hashes unchanged from full3463passed/4skips/111subtests and focused133pass. Icarus2 claim remains nonoverlapping. Current recovery record/README and owner START_HERE route to one NO_GO ledger. Full task is not complete: dashboard parity, actual consumer links/freshness, futures/firm wiring, matched accuracy investigation, operator runtime and recovery rehearsal remain open. Historical GitHub billing failures stay explicit; current draft CI is observed separately. A transient cloud shell transport failure recovered; it is not an outstanding blocker. No merge, deployment or full restart.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified",
+    "external:github-actions-job-start-billing-hold"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462",
+    "source-reviewed:bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
+    "docs-followup:ae38967",
+    "local-tests:3463passed,4skipped,111subtests",
+    "focused-tests:133passed",
+    "independent-review:6newcasespassed,no-material-findings",
+    "coordination/sessions/icarus2-20261020-federation-integration.json"
+  ],
+  "next_action": "Continue runtime/dashboard recovery and consume Icarus2 specialist findings; use current exact-head checks and operator-runtime evidence before revising NO_GO.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}

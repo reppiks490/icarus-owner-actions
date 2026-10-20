@@ -35,3 +35,15 @@ cannot stand in for the missing level of evidence.
 
 No new provider purchase, billing change, live execution, destructive reset,
 licensed-data publication or runtime-token transfer is authorized by this record.
+
+## Observed registration update
+
+Icarus 2 subsequently registered the separate
+`icarus2-20261020-federation-integration` session at
+`2026-10-20T18:13:50.114225Z`. Its first PLAN leaves Icarus 1's accounting,
+server, restart, README, recovery record and directive paths untouched and claims
+nonoverlapping federation/integration work. The initial “forthcoming” status above
+records the original instruction; the observed session now supersedes that status.
+This is evidence of registration, not proof of an operating integration loop or
+closure of any restart gate. Icarus 1's reviewed source repair is draft Icarus PR
+#462; no merge, deployment or system restart is implied.

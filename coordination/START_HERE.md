@@ -4,7 +4,7 @@ This is the common entrypoint for every ChatGPT/Codex/Claude/other AI chat worki
 
 ## Current recovery direction
 
-Read [the 2026-10-20 Icarus two-worker recovery direction](directives/2026-10-20-icarus-two-worker-recovery.md) first. Icarus 1 leads this recovery; Icarus 2 is the forthcoming second primary worker. A full restart waits for verified readiness. The runtime recovery record is `reppiks490/Icarus:docs/recovery/ICARUS_RECOVERY_STATUS.md` on `icarus1/restart-readiness-20261020` until reviewed and released.
+Read [the 2026-10-20 Icarus two-worker recovery direction](directives/2026-10-20-icarus-two-worker-recovery.md) first. Icarus 1 leads runtime recovery; Icarus 2 has registered the separate `icarus2-20261020-federation-integration` session. A full restart waits for verified readiness. The runtime recovery record is `reppiks490/Icarus:docs/recovery/ICARUS_RECOVERY_STATUS.md` on `icarus1/restart-readiness-20261020` (draft PR #462) until reviewed and released.
 
 The earlier five-agent board in issue #59 and `coordination/directives/2026-10-19-five-agent-final-convergence.md` remains historical scope/evidence. Its mandatory identity selection is superseded for this recovery workstream by the owner's newer direction. Keep its unresolved audit questions visible without assigning those names to Icarus 1 or Icarus 2.
 

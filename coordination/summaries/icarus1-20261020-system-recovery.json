@@ -1,0 +1,44 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "completed_at_utc": "2026-10-20T18:18:23.383Z",
+  "result": "blocked",
+  "scope": "Initial recovery checkpoint; full system recovery remains active and incomplete.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
+  "source_reviewed_sha": "bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
+  "latest_documentation_sha": "ae38967",
+  "restart_decision": "NO_GO",
+  "delivered": [
+    "Consistent raw/dedicated strict four-workspace accounting projection with red-green regressions",
+    "Pinned inventory of all20connectedrepositories/19trees/1emptyremote and55manifestsourceentries",
+    "Full runtime3463passed/4skipped/111subtests; focused133pass; independent6casespass",
+    "Hub12subsystems2179pass,hub165cases,compile12/adversarial5/connections10;4satellite suitespass",
+    "Current two-worker direction replaces old mandatoryfive-name entrypoint for recovery",
+    "Explicit Icarus2 session handoff; no overlapping claims"
+  ],
+  "remaining_internal_work": [
+    "Four-dashboard parity with main trading surface",
+    "Required data-to-consumer completeness and source freshness qualification",
+    "Futures/prop-firm operational wiring and reconciliation",
+    "Matched real-input accuracy regression investigation",
+    "Isolated recovery rehearsal, state preservation and rollback",
+    "Relevant open PR exact-head disposition"
+  ],
+  "external_dependencies": [
+    "Owner PC checkout/interpreter/configuration/runtime not connected or observed",
+    "Historical4Engine workflows proven not-started by GitHub billing/spending annotations",
+    "Firecrawl lookup blocked by HTTP402 insufficientcredits; no researchresult"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462",
+    "source-reviewed:bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
+    "docs-followup:ae38967",
+    "local-tests:3463passed,4skipped,111subtests",
+    "focused-tests:133passed",
+    "independent-review:6newcasespassed,no-material-findings",
+    "coordination/sessions/icarus2-20261020-federation-integration.json"
+  ],
+  "next_action": "Continue runtime/dashboard recovery and consume Icarus2 specialist findings; use current exact-head checks and operator-runtime evidence before revising NO_GO.",
+  "full_system_restart_performed": false,
+  "live_broker_arming": false
+}

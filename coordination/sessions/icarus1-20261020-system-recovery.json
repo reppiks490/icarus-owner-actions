@@ -6,7 +6,7 @@
   "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
   "home_repo": "reppiks490/Icarus",
   "branch": "icarus1/restart-readiness-20261020",
-  "pr": null,
+  "pr": 462,
   "started_at_utc": "2026-10-20T17:58:18.394Z",
   "stale_after_minutes": 1440,
   "capabilities": [
