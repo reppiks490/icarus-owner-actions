@@ -1,0 +1,72 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-visibility-recheck",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:27:44.927Z",
+  "type": "UPDATE",
+  "phase": "visibility-and-current-workflow-recheck",
+  "summary": "Owner clarifies two repositories were temporarily made private yesterday and are public again. Independently confirmed Icarus and Icarus-engine currently public. At2026-10-20T18:25:37Z, Engine cl-lab run39471755340 (created18:05:44Z) was in_progress with17steps and no failing step, superseding its earlier job-not-started attempt. Latest runs of cl-depth-sweep39408129200,databento-depth-corpus39394829278,depth-vault39418451662 remain historical failures without a newer completed run in the query. Their original billing annotations remain valid historical evidence, but a blanket currently-active account billing block is NOT established. No workflow reruns, billing changes or provider acquisitions performed. Continue recovery; shared dashboard architecture read-only audits delegated while existing scope/NO_GO remains.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "github-repo:Icarus:public-current",
+    "github-repo:Icarus-engine:public-current",
+    "run:reppiks490/Icarus-engine#39471755340:in_progress,17steps",
+    "artifact:cloud:/workspace/scratch/engine-workflow-current-visibility-check.json",
+    "owner:2026-10-20 privacy clarification"
+  ],
+  "next_action": "Preserve historical failures while verifying fresh completion/receipts; Icarus2 should not treat the old billing dependency as a proven current blanket hold.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
