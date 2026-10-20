@@ -1,0 +1,61 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "003-bounded-cycle-claim",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-20T22:53:28.424194Z",
+  "type": "CLAIM",
+  "phase": "bounded-collector-regression-repair",
+  "summary": "Continue the existing Icarus2 integration in finite cycle icarus2-20261020T225043Z. Fresh source controls are valid, Icarus1 session remains separate, and no conflicting targets were found. Repair reproduced collector hostname, absent head-read receipt, unproven job-count and future-clock validation defects. Exclude worker.json, AUTOMATION.md and all workflows/schedulers from this cycle; preserve prior stopped tasks. Five native functional reviewers are active. No execution authority.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "integration_brain"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain_transport.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_icarus2_cli.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "docs/icarus2-integration-brain.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/DESIGN.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/PLAN.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/swarm-inputs"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/cycles/icarus2-20261020T225043Z.json"
+    }
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "commit:reppiks490/icarus-owner-actions@e7f29edc5938b87235bb301f2e20956872452e7e",
+    "manifest:reppiks490/Icarus-engine@8cf379fe77c4b705fcd603af0841541c411bb100:config/federated_repo_evidence.json"
+  ],
+  "next_action": "Capture failing regressions, repair narrowly, independently review, record exact six-repository evidence and publish reviewed branch plus immutable cycle.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
