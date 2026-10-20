@@ -1136,7 +1136,7 @@
         "icarus_engine/server.py",
         "tests_engine/test_command_center_routes.py",
         "tests_engine/test_workspace_chart_routes.py",
-        "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md"
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
       ],
       "declared_targets": [
         {
@@ -1184,7 +1184,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md",
+          "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1195,11 +1195,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:29:02.876Z",
-      "latest_summary": "Read-only specialists found that serving main dashboard directly would still call parent status/inputs/admin and broaden configuration mutations. Architectural reuse design is being prepared, not implemented speculatively. Independently reproduced an existing scoped chart defect with real offline runner and HTTP: offset=0 and offset=20 return identical latest20bars/history.offset0 while direct same-runner chart offset20 returns prior20bars correctly. Delegate bounded defect repair to internal backend worker under Icarus1 claim; align scoped offset forwarding/bounds with main chart contract and add real-data-structure synthetic offline regression. No providers, production data, restart or execution changes.",
+      "last_event_at_utc": "2026-10-20T18:31:07.131Z",
+      "latest_summary": "Use a dated amendment to the existing four-workspace-delivery spec, not a second dashboard authority. Preserve existing profile/journal/P&L/corpus/firm contracts; document the newly requested identical-main-renderer semantics and explicit API/persistence boundaries before architectural implementation. Internal backend worker repairs only already-reproduced chart paging. Release unused new-spec path. Current public-repository workflow correction is historical-vs-current, not a claim all provider lanes recovered.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "workspace-chart-history-repair",
+      "phase": "shared-ui-contract-amendment",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1214,7 +1214,7 @@
         "icarus_engine/server.py",
         "tests_engine/test_command_center_routes.py",
         "tests_engine/test_workspace_chart_routes.py",
-        "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md"
+        "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
       ],
       "reserved_targets": [
         {
@@ -1262,7 +1262,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md",
+          "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1418,7 +1418,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:29:14.084525Z",
+  "generated_at_utc": "2026-10-20T18:31:17.316381Z",
   "owner_status": {
     "claude": {
       "active": false,
