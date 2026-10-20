@@ -1134,7 +1134,9 @@
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
         "coordination/summaries/icarus1-20261020-system-recovery.json",
         "icarus_engine/server.py",
-        "tests_engine/test_command_center_routes.py"
+        "tests_engine/test_command_center_routes.py",
+        "tests_engine/test_workspace_chart_routes.py",
+        "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md"
       ],
       "declared_targets": [
         {
@@ -1176,6 +1178,14 @@
         {
           "path": "tests_engine/test_command_center_routes.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_chart_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1185,11 +1195,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:27:44.927Z",
-      "latest_summary": "Owner clarifies two repositories were temporarily made private yesterday and are public again. Independently confirmed Icarus and Icarus-engine currently public. At2026-10-20T18:25:37Z, Engine cl-lab run39471755340 (created18:05:44Z) was in_progress with17steps and no failing step, superseding its earlier job-not-started attempt. Latest runs of cl-depth-sweep39408129200,databento-depth-corpus39394829278,depth-vault39418451662 remain historical failures without a newer completed run in the query. Their original billing annotations remain valid historical evidence, but a blanket currently-active account billing block is NOT established. No workflow reruns, billing changes or provider acquisitions performed. Continue recovery; shared dashboard architecture read-only audits delegated while existing scope/NO_GO remains.",
+      "last_event_at_utc": "2026-10-20T18:29:02.876Z",
+      "latest_summary": "Read-only specialists found that serving main dashboard directly would still call parent status/inputs/admin and broaden configuration mutations. Architectural reuse design is being prepared, not implemented speculatively. Independently reproduced an existing scoped chart defect with real offline runner and HTTP: offset=0 and offset=20 return identical latest20bars/history.offset0 while direct same-runner chart offset20 returns prior20bars correctly. Delegate bounded defect repair to internal backend worker under Icarus1 claim; align scoped offset forwarding/bounds with main chart contract and add real-data-structure synthetic offline regression. No providers, production data, restart or execution changes.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "visibility-and-current-workflow-recheck",
+      "phase": "workspace-chart-history-repair",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1202,7 +1212,9 @@
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
         "coordination/summaries/icarus1-20261020-system-recovery.json",
         "icarus_engine/server.py",
-        "tests_engine/test_command_center_routes.py"
+        "tests_engine/test_command_center_routes.py",
+        "tests_engine/test_workspace_chart_routes.py",
+        "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md"
       ],
       "reserved_targets": [
         {
@@ -1243,6 +1255,14 @@
         },
         {
           "path": "tests_engine/test_command_center_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_chart_routes.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1398,7 +1418,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:27:55.034787Z",
+  "generated_at_utc": "2026-10-20T18:29:14.084525Z",
   "owner_status": {
     "claude": {
       "active": false,
