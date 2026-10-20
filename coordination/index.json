@@ -1120,7 +1120,9 @@
     {
       "actor": "Icarus 1 / Codex",
       "branch": "icarus1/restart-readiness-20261020",
-      "cooperates_with": [],
+      "cooperates_with": [
+        "icarus2-20261020-federation-integration"
+      ],
       "coordination_mode": "independent",
       "declared_paths": [
         "icarus_engine/paper_workspaces.py",
@@ -1130,9 +1132,7 @@
         "docs/recovery",
         "coordination/START_HERE.md",
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
-        "coordination/summaries/icarus1-20261020-system-recovery.json",
-        "icarus_engine/server.py",
-        "tests_engine/test_command_center_routes.py"
+        "coordination/summaries/icarus1-20261020-system-recovery.json"
       ],
       "declared_targets": [
         {
@@ -1166,27 +1166,21 @@
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "icarus_engine/server.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_command_center_routes.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "policy:live-execution-disabled",
-        "external:owner-PC-runtime-unverified"
+        "session:icarus2-20261020-federation-integration",
+        "pr:reppiks490/Icarus#462",
+        "external:owner-PC-runtime-unverified",
+        "external:github-actions-job-start-billing-hold"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:06:57.894Z",
-      "latest_summary": "Independent review confirms further raw-vs-dedicated accounting inconsistency when a different workspace runtime is unavailable. Extend the same defect boundary to server workspace projection and HTTP regression. All-workspace aggregate/profile projection now uses canonical validator; five new adverse/healthy cases pass. Latest four failing Engine workflows independently traced to GitHub job-not-started billing/spending annotations, not strategy errors; no rerun or spending change.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-20T18:16:34.514Z",
+      "latest_summary": "Icarus 1 publishes draft Icarus#462 at bf582b8e69536d3dd734f34c9ae2b1594a42f20f. P&L projection consistency repaired; dedicated endpoint retains valid individual realized P&L when another runtime absent; observed red-green; final local3463passed/4skipped/111subtests, focused133passed, independent final review no material findings and6newcasespassed. All20repo entries examined (19trees/1verifiedempty),55manifest declarations preserved;12hub suites2179passed plus hub165cases/compile12/adversarial5/connections10 and4satellite suites green. No PC/runtime/accuracy/dashboard parity/full recovery claim. Acknowledge Icarus2 session now registered, nonconflicting integration-brain/federation scope. Existing source repair claims stay with Icarus1; data-to-consumer/futures/account/accuracy evidence gaps remain available for explicit specialist claims. Full restart remains NO_GO. Current PR-triggered checks are in progress; historical4Engine jobs were proven not-started billing/spending blocked. Shell transport disconnected after all source was committed/pushed/reviewed; GitHub access remains available.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "independent-accounting-review",
+      "phase": "draft-repair-and-recovery-gates",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1197,9 +1191,7 @@
         "docs/recovery",
         "coordination/START_HERE.md",
         "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
-        "coordination/summaries/icarus1-20261020-system-recovery.json",
-        "icarus_engine/server.py",
-        "tests_engine/test_command_center_routes.py"
+        "coordination/summaries/icarus1-20261020-system-recovery.json"
       ],
       "reserved_targets": [
         {
@@ -1233,29 +1225,122 @@
         {
           "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "icarus_engine/server.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_command_center_routes.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "Icarus 2 / Codex",
+      "branch": "icarus2/federation-integration-20261020",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "integration_brain",
+        "tests/test_integration_brain.py",
+        "tests/test_integration_brain_transport.py",
+        "tests/test_icarus2_workflow.py",
+        "coordination/icarus2",
+        "docs/icarus2-integration-brain.md",
+        ".github/workflows/icarus2-integration-brain.yml"
+      ],
+      "declared_targets": [
+        {
+          "path": "integration_brain",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_integration_brain.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_integration_brain_transport.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_icarus2_workflow.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/icarus2-integration-brain.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": ".github/workflows/icarus2-integration-brain.yml",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "dependencies": [
+        "session:icarus1-20261020-system-recovery",
+        "policy:live-execution-disabled",
+        "external:github-actions-job-start-billing-hold"
+      ],
+      "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-20T18:13:50.114225Z",
+      "latest_summary": "Owner now assigns this worker identity Icarus2 and authorizes perpetual GitHub integration with separate parallel swarms, in tandem with Icarus1. Icarus1 restart/accounting/server/readme/recovery/directive paths are explicitly untouched. Icarus2 extends existing federation/coordination/hybrid contracts rather than replacing canonical manifests; creates bounded source-pinned cycle/handoff and recurring task runtime. Latest approved20261018perpetual design is reused; no claim all legacytasks resumed or complete. No purchases, unrestricted secret access, live arming, automaticmainmerge/deployment or endless nested self-triggering. GitHub job-start billing blocker stays explicit; no massworkflow reruns.",
+      "latest_type": "PLAN",
+      "model_family": "openai",
+      "phase": "icarus2-establishment",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "integration_brain",
+        "tests/test_integration_brain.py",
+        "tests/test_integration_brain_transport.py",
+        "tests/test_icarus2_workflow.py",
+        "coordination/icarus2",
+        "docs/icarus2-integration-brain.md",
+        ".github/workflows/icarus2-integration-brain.yml"
+      ],
+      "reserved_targets": [
+        {
+          "path": "integration_brain",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_integration_brain.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_integration_brain_transport.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_icarus2_workflow.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/icarus2-integration-brain.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": ".github/workflows/icarus2-integration-brain.yml",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "session_id": "icarus2-20261020-federation-integration",
       "stale": false,
       "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 18,
+    "active": 19,
     "collisions": 0,
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:07:10.443836Z",
+  "generated_at_utc": "2026-10-20T18:16:52.745586Z",
   "owner_status": {
     "claude": {
       "active": false,
