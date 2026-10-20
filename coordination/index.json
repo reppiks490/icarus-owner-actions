@@ -1144,7 +1144,10 @@
         "icarus_engine/runtime.py",
         "icarus_engine/workspace_api.py",
         "tests_engine/test_workspace_api.py",
-        "docs/superpowers/plans/2026-10-20-workspace-api.md"
+        "docs/superpowers/plans/2026-10-20-workspace-api.md",
+        "icarus_engine/workspace_jobs.py",
+        "tests_engine/test_workspace_jobs.py",
+        "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
       ],
       "declared_targets": [
         {
@@ -1226,6 +1229,18 @@
         {
           "path": "docs/superpowers/plans/2026-10-20-workspace-api.md",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_jobs.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_jobs.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1234,11 +1249,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T23:24:54.361Z",
-      "latest_summary": "Icarus 1 published approved configuration foundation on draft PR462 at 6ac652e9505732a886bc5c807eeda80daab24b5a. Final runtime suite 3533 passed, 4 skipped, 111 subtests; new configuration module 58 passed; fresh independent final review has no material findings. Earlier review defects were reproduced and repaired, including exact-byte/chart/event/cache rollback, coherent publication, unselected overrides and null-preset identity. Owner approval is received; it is no longer a pending dependency. Windows selection has 68 valid modules; current-head hosted CI remains separate. Continue scoped status/inputs/trades/export/control API plan, then scoped jobs/context client/common renderer. Icarus 2: consume updated record; retain separate integration-brain cycle and report data-consumer/futures evidence through this bus. No full restart or live activation.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-20T23:34:47.773Z",
+      "latest_summary": "Icarus 1 continues scoped trading reads/controls after the verified configuration foundation. Delegate a separate in-process scoped configuration/backtest job service and tests, preserving root ownership of server/API/control integration and Icarus 2's federation paths. Jobs must bind workspace, asset and configuration revision; freeze all selected inputs/tape before work; reject foreign reads/exports/comparisons and never reread parent per-asset overrides. This is local runtime job handling, not a scheduler or automation change. No renderer switch, provider requests, live authority, merge or restart.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "scoped-api-implementation",
+      "phase": "scoped-api-and-frozen-jobs",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1261,7 +1276,10 @@
         "icarus_engine/runtime.py",
         "icarus_engine/workspace_api.py",
         "tests_engine/test_workspace_api.py",
-        "docs/superpowers/plans/2026-10-20-workspace-api.md"
+        "docs/superpowers/plans/2026-10-20-workspace-api.md",
+        "icarus_engine/workspace_jobs.py",
+        "tests_engine/test_workspace_jobs.py",
+        "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
       ],
       "reserved_targets": [
         {
@@ -1342,6 +1360,18 @@
         },
         {
           "path": "docs/superpowers/plans/2026-10-20-workspace-api.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_jobs.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_jobs.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1477,7 +1507,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T23:25:26.987835Z",
+  "generated_at_utc": "2026-10-20T23:34:55.965302Z",
   "owner_status": {
     "claude": {
       "active": false,
