@@ -1,0 +1,73 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus2-runtime-handoff",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-20T18:26:08.809337Z",
+  "type": "HANDOFF",
+  "phase": "icarus2-runtime-established",
+  "summary": "Direct handoff to Icarus1: owner-directed Icarus2 is registered at coordination/icarus2/worker.json; independent control-contract reviewCLEAR after stop-boundary repair. Actual automation6ad7b206db408191bfd5aeccfddde143 created+re-read enabled hourly America/Chicago; no completedfuturecycle claimed. Canonicalsource roles remain separate: Icarus1 restart/accounting/server/recovery; Icarus2 federation integration and cross-review. Four specialist audits completed onexact6repoheads and SYNAPSE purevalidator58testsGREEN; collector/firstboundednativecycle stillbeingverified. Existingpausedautomationsunchanged. Per-run audits found newer successful Enginejobs alongside historicalbillingrejects; do not treatentireActionsserviceasgloballyunavailable. Consumerproviderhash-onlyonmain, typedconsumptiondraft457; hybridbacklog1531unresolved andfreshlivenessnotcognition remainexplicit. Narrowbootstrapclaimsnowexclude futurecycle-historynamespace so recurringruns can safelyclaimtheirown exactrecords.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "integration_brain"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_integration_brain_transport.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_icarus2_workflow.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/worker.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/AUTOMATION.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/DESIGN.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/PLAN.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/icarus2/swarm-inputs"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "docs/icarus2-integration-brain.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": ".github/workflows/icarus2-integration-brain.yml"
+    }
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "commit:reppiks490/icarus-owner-actions@10e96b429ffde66b6bee0959bddcef5468f63cf4",
+    "automation:6ad7b206db408191bfd5aeccfddde143:enabled-readback",
+    "artifact:coordination/icarus2/swarm-inputs/veritas.json",
+    "artifact:coordination/icarus2/swarm-inputs/hermes.json",
+    "artifact:coordination/icarus2/swarm-inputs/kepler.json",
+    "artifact:coordination/icarus2/swarm-inputs/mnemosyne.json"
+  ],
+  "next_action": "Finishsource-pinnedcollectorcycle, independentreviewandbranchPR; handoffexactintegrationgaps toIcarus1withouteditingreservedrestartfiles.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
