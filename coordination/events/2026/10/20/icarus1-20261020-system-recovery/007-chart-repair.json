@@ -1,0 +1,77 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-workspace-chart-repair",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:29:02.876Z",
+  "type": "UPDATE",
+  "phase": "workspace-chart-history-repair",
+  "summary": "Read-only specialists found that serving main dashboard directly would still call parent status/inputs/admin and broaden configuration mutations. Architectural reuse design is being prepared, not implemented speculatively. Independently reproduced an existing scoped chart defect with real offline runner and HTTP: offset=0 and offset=20 return identical latest20bars/history.offset0 while direct same-runner chart offset20 returns prior20bars correctly. Delegate bounded defect repair to internal backend worker under Icarus1 claim; align scoped offset forwarding/bounds with main chart contract and add real-data-structure synthetic offline regression. No providers, production data, restart or execution changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-20-shared-trading-dashboard-design.md"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "offline-reproduction:workspace_backend_audit:60bars,offset0and20duplicate;directrunneroffset20correct",
+    "source:icarus_engine/server.py:scoped-chart-versus-main-chart"
+  ],
+  "next_action": "Internal worker captures failing chart regression then fixes only scoped paging; root records current workflow correction and prepares shared UI design. Continue independent verification before publication.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
