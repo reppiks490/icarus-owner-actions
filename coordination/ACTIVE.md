@@ -1,8 +1,8 @@
 # ICARUS Active Coordination
 
-Generated: `2026-10-20T17:55:28.432814Z`
+Generated: `2026-10-20T17:58:59.958419Z`
 
-Active sessions: **17** · Stale/reclaimable: **17** · Collisions: **0**
+Active sessions: **18** · Stale/reclaimable: **17** · Collisions: **0**
 
 | Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |
 |---|---|---|---|---|---|
@@ -23,3 +23,4 @@ Active sessions: **17** · Stale/reclaimable: **17** · Collisions: **0**
 | `codex-20261018-discovery-provenance-fix` ⚠️ STALE/RECLAIMABLE | exact-head-review-and-verification | `reppiks490/Icarus` / `codex/discovery-operation-provenance-20261018` | PR #455 final head 763ed677 rejects blank variant descriptors as well as ambiguous queries and marketing origins. Final offline registry/CLI suite: 133 passed. Initial repair full project suite: 2897 passed, 3 skipped, 111 subtests passed, 7 A200 failures; all seven independently reproduce on untouched base c9931305. No A200 edits. Exact-head Linux/Windows CI and read-only independent review are running. | pr:reppiks490/Icarus#455<br>github-run:39162079257<br>github-run:39162075870<br>session:codex-20261018-dashboard-integration-audit | — |
 | `codex-20261018-provider-account-guard` ⚠️ STALE/RECLAIMABLE | offline-regression | `reppiks490/Icarus-engine` / `codex/databento-corpus-account-guard-20261018` | Repair only effective OHLCV account resolution and refusal without an approved corpus ledger lane. No allocations, provider calls, purchases, live authority or merges. Knowledge delta: regression names and PR description document the account invariant; no additional repository docs within this two-file delegated scope. | session:codex-20261017-hub-integration-lead | — |
 | `codex-20261019-owner-gitbash-reset-restart` ⚠️ STALE/RECLAIMABLE | owner-restart-repair | `reppiks490/Icarus` / `codex/owner-gitbash-reset-restart-20261019` | Add one Git Bash script for the owner: exact 35-asset paper config, 10m Heikin Ashi chart and chart fills, futures RTH at 08:30 Chicago, mini/micro 5/20, safe plant stop, Yahoo-connected restart with browser. Do not touch file-mode command-center restart helper. | — | — |
+| `icarus1-20261020-system-recovery` | repository-and-runtime-audit | `reppiks490/Icarus` / `icarus1/restart-readiness-20261020` | Owner appoints Icarus 1 and a forthcoming Icarus 2 as primary workers, requests all repositories examined, Windows PC/Git Bash browser startup, and no full restart until it is meaningful. Current two-worker direction supersedes mandatory selection of an old five-agent identity for this session. Read-only audit first; no restart, live arming, provider purchases or secret copying. Knowledge delta: this session's recovery audit and evidence index; source fixes will receive narrower claims after reproduction. | policy:live-execution-disabled<br>external:owner-PC-runtime-unverified | reppiks490/Icarus:docs/recovery/ICARUS_RECOVERY_STATUS.md<br>reppiks490/icarus-owner-actions:coordination/summaries/icarus1-20261020-system-recovery.json |

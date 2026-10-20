@@ -1116,16 +1116,66 @@
       "session_id": "codex-20261019-owner-gitbash-reset-restart",
       "stale": true,
       "status": "active"
+    },
+    {
+      "actor": "Icarus 1 / Codex",
+      "branch": "icarus1/restart-readiness-20261020",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "coordination/summaries/icarus1-20261020-system-recovery.json"
+      ],
+      "declared_targets": [
+        {
+          "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "dependencies": [
+        "policy:live-execution-disabled",
+        "external:owner-PC-runtime-unverified"
+      ],
+      "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-20T17:58:18.394Z",
+      "latest_summary": "Owner appoints Icarus 1 and a forthcoming Icarus 2 as primary workers, requests all repositories examined, Windows PC/Git Bash browser startup, and no full restart until it is meaningful. Current two-worker direction supersedes mandatory selection of an old five-agent identity for this session. Read-only audit first; no restart, live arming, provider purchases or secret copying. Knowledge delta: this session's recovery audit and evidence index; source fixes will receive narrower claims after reproduction.",
+      "latest_type": "PLAN",
+      "model_family": "openai",
+      "phase": "repository-and-runtime-audit",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "coordination/summaries/icarus1-20261020-system-recovery.json"
+      ],
+      "reserved_targets": [
+        {
+          "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "session_id": "icarus1-20261020-system-recovery",
+      "stale": false,
+      "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 17,
+    "active": 18,
     "collisions": 0,
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T17:55:28.432814Z",
+  "generated_at_utc": "2026-10-20T17:58:59.958419Z",
   "owner_status": {
     "claude": {
       "active": false,
