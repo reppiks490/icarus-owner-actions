@@ -1181,16 +1181,15 @@
       "dependencies": [
         "session:icarus2-20261020-federation-integration",
         "pr:reppiks490/Icarus#462",
-        "external:owner-PC-runtime-unverified",
-        "external:github-actions-job-start-billing-hold"
+        "external:owner-PC-runtime-unverified"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T18:18:23.383Z",
-      "latest_summary": "Icarus#462 source repair independently reviewed at bf582b8e69536d3dd734f34c9ae2b1594a42f20f; no material findings, six new scenarios independently passed. Documentation-only follow-up ae38967 records Icarus2 registration; code/test hashes unchanged from full3463passed/4skips/111subtests and focused133pass. Icarus2 claim remains nonoverlapping. Current recovery record/README and owner START_HERE route to one NO_GO ledger. Full task is not complete: dashboard parity, actual consumer links/freshness, futures/firm wiring, matched accuracy investigation, operator runtime and recovery rehearsal remain open. Historical GitHub billing failures stay explicit; current draft CI is observed separately. A transient cloud shell transport failure recovered; it is not an outstanding blocker. No merge, deployment or full restart.",
+      "last_event_at_utc": "2026-10-20T18:27:44.927Z",
+      "latest_summary": "Owner clarifies two repositories were temporarily made private yesterday and are public again. Independently confirmed Icarus and Icarus-engine currently public. At2026-10-20T18:25:37Z, Engine cl-lab run39471755340 (created18:05:44Z) was in_progress with17steps and no failing step, superseding its earlier job-not-started attempt. Latest runs of cl-depth-sweep39408129200,databento-depth-corpus39394829278,depth-vault39418451662 remain historical failures without a newer completed run in the query. Their original billing annotations remain valid historical evidence, but a blanket currently-active account billing block is NOT established. No workflow reruns, billing changes or provider acquisitions performed. Continue recovery; shared dashboard architecture read-only audits delegated while existing scope/NO_GO remains.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "reviewed-draft-recovery-checkpoint",
+      "phase": "visibility-and-current-workflow-recheck",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1261,7 +1260,11 @@
         "tests/test_integration_brain.py",
         "tests/test_integration_brain_transport.py",
         "tests/test_icarus2_workflow.py",
-        "coordination/icarus2",
+        "coordination/icarus2/worker.json",
+        "coordination/icarus2/AUTOMATION.md",
+        "coordination/icarus2/DESIGN.md",
+        "coordination/icarus2/PLAN.md",
+        "coordination/icarus2/swarm-inputs",
         "docs/icarus2-integration-brain.md",
         ".github/workflows/icarus2-integration-brain.yml"
       ],
@@ -1283,7 +1286,23 @@
           "repo": "reppiks490/icarus-owner-actions"
         },
         {
-          "path": "coordination/icarus2",
+          "path": "coordination/icarus2/worker.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/AUTOMATION.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/DESIGN.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/PLAN.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/swarm-inputs",
           "repo": "reppiks490/icarus-owner-actions"
         },
         {
@@ -1297,16 +1316,15 @@
       ],
       "dependencies": [
         "session:icarus1-20261020-system-recovery",
-        "policy:live-execution-disabled",
-        "external:github-actions-job-start-billing-hold"
+        "policy:live-execution-disabled"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-20T18:13:50.114225Z",
-      "latest_summary": "Owner now assigns this worker identity Icarus2 and authorizes perpetual GitHub integration with separate parallel swarms, in tandem with Icarus1. Icarus1 restart/accounting/server/readme/recovery/directive paths are explicitly untouched. Icarus2 extends existing federation/coordination/hybrid contracts rather than replacing canonical manifests; creates bounded source-pinned cycle/handoff and recurring task runtime. Latest approved20261018perpetual design is reused; no claim all legacytasks resumed or complete. No purchases, unrestricted secret access, live arming, automaticmainmerge/deployment or endless nested self-triggering. GitHub job-start billing blocker stays explicit; no massworkflow reruns.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-20T18:26:08.809337Z",
+      "latest_summary": "Direct handoff to Icarus1: owner-directed Icarus2 is registered at coordination/icarus2/worker.json; independent control-contract reviewCLEAR after stop-boundary repair. Actual automation6ad7b206db408191bfd5aeccfddde143 created+re-read enabled hourly America/Chicago; no completedfuturecycle claimed. Canonicalsource roles remain separate: Icarus1 restart/accounting/server/recovery; Icarus2 federation integration and cross-review. Four specialist audits completed onexact6repoheads and SYNAPSE purevalidator58testsGREEN; collector/firstboundednativecycle stillbeingverified. Existingpausedautomationsunchanged. Per-run audits found newer successful Enginejobs alongside historicalbillingrejects; do not treatentireActionsserviceasgloballyunavailable. Consumerproviderhash-onlyonmain, typedconsumptiondraft457; hybridbacklog1531unresolved andfreshlivenessnotcognition remainexplicit. Narrowbootstrapclaimsnowexclude futurecycle-historynamespace so recurringruns can safelyclaimtheirown exactrecords.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "icarus2-establishment",
+      "phase": "icarus2-runtime-established",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1314,7 +1332,11 @@
         "tests/test_integration_brain.py",
         "tests/test_integration_brain_transport.py",
         "tests/test_icarus2_workflow.py",
-        "coordination/icarus2",
+        "coordination/icarus2/worker.json",
+        "coordination/icarus2/AUTOMATION.md",
+        "coordination/icarus2/DESIGN.md",
+        "coordination/icarus2/PLAN.md",
+        "coordination/icarus2/swarm-inputs",
         "docs/icarus2-integration-brain.md",
         ".github/workflows/icarus2-integration-brain.yml"
       ],
@@ -1336,7 +1358,23 @@
           "repo": "reppiks490/icarus-owner-actions"
         },
         {
-          "path": "coordination/icarus2",
+          "path": "coordination/icarus2/worker.json",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/AUTOMATION.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/DESIGN.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/PLAN.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination/icarus2/swarm-inputs",
           "repo": "reppiks490/icarus-owner-actions"
         },
         {
@@ -1360,7 +1398,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T18:18:39.450883Z",
+  "generated_at_utc": "2026-10-20T18:27:55.034787Z",
   "owner_status": {
     "claude": {
       "active": false,
