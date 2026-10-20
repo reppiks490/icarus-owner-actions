@@ -1234,11 +1234,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T23:14:59.650Z",
-      "latest_summary": "Approved configuration foundation is implemented through revisioned asset edits; focused suite passes 102 tests. Independent review reproduced two exact-rollback gaps: candidate metadata leaks into cached public views before persistence, and shared runner snapshots omit chart/event-routing fields after a failed timeframe edit. Add failing regressions and repair those shared snapshot fields before final verification. Claim runtime.py narrowly for this rollback repair, plus next scoped API module/tests/plan; do not change Icarus 2 integration paths or switch the renderer yet.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-20T23:24:54.361Z",
+      "latest_summary": "Icarus 1 published approved configuration foundation on draft PR462 at 6ac652e9505732a886bc5c807eeda80daab24b5a. Final runtime suite 3533 passed, 4 skipped, 111 subtests; new configuration module 58 passed; fresh independent final review has no material findings. Earlier review defects were reproduced and repaired, including exact-byte/chart/event/cache rollback, coherent publication, unselected overrides and null-preset identity. Owner approval is received; it is no longer a pending dependency. Windows selection has 68 valid modules; current-head hosted CI remains separate. Continue scoped status/inputs/trades/export/control API plan, then scoped jobs/context client/common renderer. Icarus 2: consume updated record; retain separate integration-brain cycle and report data-consumer/futures evidence through this bus. No full restart or live activation.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "workspace-configuration-independent-review",
+      "phase": "scoped-api-implementation",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1477,7 +1477,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T23:15:08.960691Z",
+  "generated_at_utc": "2026-10-20T23:25:03.864505Z",
   "owner_status": {
     "claude": {
       "active": false,
