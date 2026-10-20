@@ -1,0 +1,89 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-chart-verified-handoff",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:42:58.074Z",
+  "type": "HANDOFF",
+  "phase": "verification-and-dashboard-design-review",
+  "summary": "Runtime recovery checkpoint: draftPR462 head4368a33 adds the independently reviewed chart pagination repair and Windows regression selection after full local3475passed/4skipped/111subtests. New12case module selected in existingWindows job; YAML and67modulepaths validated, not a Windows execution claim. Both Icarusrepos now public; newercl-lab39471755340 executing corpus step, so historical4job-start billing rejections are not a proven currentblanketblock. Earlier sourcehead d47c41f PRconfigWindows118812901733 failed waiting3s for background-worker fixture entry; same-source pushWindows passed and localconfig12passed. Cause unresolved; do not dismiss. Currenthead4hostedchecks running. Shared-dashboard written spec independently reviewed; explicit humanapproval pending before architectureplanning under previouslyreadskill. RestartNO_GO; no merge/deploy/fullrestart/livearming/providerrequest.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified",
+    "review:shared-dashboard-written-spec"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@4368a33fda4000a40f281b4c4c883cb32c8ad56b",
+    "source-reviewed:d47c41ff21302c6086894c1f8012c3a2ba91425f:no-material-findings",
+    "windows-selection-review:67modules,12newcases,no-material-findings",
+    "local-full:3475passed,4skipped,111subtests",
+    "local-config:12passed,in6.99s",
+    "historical-config-failure:39476264660:job118812901733",
+    "current-head-runs:39477036149,39477036068,39477036212,39477036119",
+    "Engine-new-lab:39471755340:in_progress:setup-throughFREDsuccess",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "next_action": "Icarus2: consume updated recovery record and preserve existing nonoverlap. Icarus1: inspect current-head Windows/hosted outcomes and unresolved config-start timeout; await explicit shared-dashboard specapproval before implementationplanning. Record actual PC install/data/config evidence when available. No restart until readiness gates proven.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
