@@ -2,9 +2,11 @@
 
 This is the common entrypoint for every ChatGPT/Codex/Claude/other AI chat working anywhere in the ICARUS federation. The coordination bus is intentionally model-neutral: tasks are not owned by a model family. Coordination and evidence are mandatory; artificial agent gating is not.
 
-## Final convergence role board
+## Current recovery direction
 
-For owner-authorized final convergence work, read `coordination/directives/2026-10-19-five-agent-final-convergence.md` and GitHub issue #59 before selecting scope. The next five agents must each claim exactly one unclaimed identity — VERITAS (#54), ARGOS (#55), KEPLER (#56), MNEMOSYNE (#57), or SYNAPSE (#58) — and inherit the full delegated lane plus its mandatory review→fix→re-review cycle.
+Read [the 2026-10-20 Icarus two-worker recovery direction](directives/2026-10-20-icarus-two-worker-recovery.md) first. Icarus 1 leads this recovery; Icarus 2 is the forthcoming second primary worker. A full restart waits for verified readiness. The runtime recovery record is `reppiks490/Icarus:docs/recovery/ICARUS_RECOVERY_STATUS.md` on `icarus1/restart-readiness-20261020` until reviewed and released.
+
+The earlier five-agent board in issue #59 and `coordination/directives/2026-10-19-five-agent-final-convergence.md` remains historical scope/evidence. Its mandatory identity selection is superseded for this recovery workstream by the owner's newer direction. Keep its unresolved audit questions visible without assigning those names to Icarus 1 or Icarus 2.
 
 ## Every time the owner tells a chat to continue
 
