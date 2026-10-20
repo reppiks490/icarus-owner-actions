@@ -1,0 +1,61 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-recovery-scope",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:01:59.858Z",
+  "type": "UPDATE",
+  "phase": "baseline-and-pnl-reproduction",
+  "summary": "All 20 connected repository entries inventoried at exact refs (17 nonempty trees inspected, 3 report size zero); inspection is not full verification. Main runtime has separate main/workspace dashboard implementations. Identified raw all-workspace API aggregate computed independently of strict freshness validation: reproduce before fixing. Restore current owner's two-worker/no-premature-restart instruction in the existing coordination entrypoint. One canonical recovery status and evidence inventory; no parallel starting-point sprawl. Full tests running after declared dependency installation. Firecrawl lookup rejected for insufficient credits; no retry/purchase.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    }
+  ],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "repo:reppiks490/Icarus@10a9e20",
+    "owner:2026-10-20 current chat direction",
+    "coordination/collisions.json:zero at initial read",
+    "repo:reppiks490/Icarus-engine@df67307a6923c1ff2d02047c74591d4e2dbe8963",
+    "artifact:cloud:/workspace/scratch/federation-inventory/repositories.json"
+  ],
+  "next_action": "Write failing P&L consistency regression, verify root cause, then fix only confirmed raw aggregate inconsistency and preserve passing independent ledger behavior.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
