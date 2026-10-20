@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-recovery-plan",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T17:58:18.394Z",
+  "type": "PLAN",
+  "phase": "repository-and-runtime-audit",
+  "summary": "Owner appoints Icarus 1 and a forthcoming Icarus 2 as primary workers, requests all repositories examined, Windows PC/Git Bash browser startup, and no full restart until it is meaningful. Current two-worker direction supersedes mandatory selection of an old five-agent identity for this session. Read-only audit first; no restart, live arming, provider purchases or secret copying. Knowledge delta: this session's recovery audit and evidence index; source fixes will receive narrower claims after reproduction.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    }
+  ],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "repo:reppiks490/Icarus@10a9e20",
+    "owner:2026-10-20 current chat direction",
+    "coordination/collisions.json:zero at initial read"
+  ],
+  "next_action": "Reproduce baseline tests; trace launchers, dashboards, P&L and source-consumption paths; inventory all accessible repository heads and open work.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
