@@ -1140,7 +1140,11 @@
         ".github/workflows/test.yml",
         "docs/superpowers/plans/2026-10-20-workspace-configuration.md",
         "icarus_engine/workspace_config.py",
-        "tests_engine/test_workspace_config.py"
+        "tests_engine/test_workspace_config.py",
+        "icarus_engine/runtime.py",
+        "icarus_engine/workspace_api.py",
+        "tests_engine/test_workspace_api.py",
+        "docs/superpowers/plans/2026-10-20-workspace-api.md"
       ],
       "declared_targets": [
         {
@@ -1206,6 +1210,22 @@
         {
           "path": "tests_engine/test_workspace_config.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-20-workspace-api.md",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1214,11 +1234,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-20T23:06:36.749Z",
-      "latest_summary": "Owner approved the published shared-dashboard specification and directed continued implementation without restarting or live trading. Icarus 1 resumes its stable identity and runtime branch. Recovery head 4368a33 now has all four PR workflows successful; earlier Windows configuration-start timeout stays recorded. Implement workspace-owned versioned per-asset settings and optimistic revision/rollback contracts first. Icarus 2 continues its separate integration-brain cycle. Inspect newly advanced runtime main before integrating it; no unreviewed old stack merge.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-20T23:14:59.650Z",
+      "latest_summary": "Approved configuration foundation is implemented through revisioned asset edits; focused suite passes 102 tests. Independent review reproduced two exact-rollback gaps: candidate metadata leaks into cached public views before persistence, and shared runner snapshots omit chart/event-routing fields after a failed timeframe edit. Add failing regressions and repair those shared snapshot fields before final verification. Claim runtime.py narrowly for this rollback repair, plus next scoped API module/tests/plan; do not change Icarus 2 integration paths or switch the renderer yet.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "approved-workspace-configuration-foundation",
+      "phase": "workspace-configuration-independent-review",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1237,7 +1257,11 @@
         ".github/workflows/test.yml",
         "docs/superpowers/plans/2026-10-20-workspace-configuration.md",
         "icarus_engine/workspace_config.py",
-        "tests_engine/test_workspace_config.py"
+        "tests_engine/test_workspace_config.py",
+        "icarus_engine/runtime.py",
+        "icarus_engine/workspace_api.py",
+        "tests_engine/test_workspace_api.py",
+        "docs/superpowers/plans/2026-10-20-workspace-api.md"
       ],
       "reserved_targets": [
         {
@@ -1302,6 +1326,22 @@
         },
         {
           "path": "tests_engine/test_workspace_config.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/runtime.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-20-workspace-api.md",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1437,7 +1477,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-20T23:06:47.422480Z",
+  "generated_at_utc": "2026-10-20T23:15:08.960691Z",
   "owner_status": {
     "claude": {
       "active": false,
