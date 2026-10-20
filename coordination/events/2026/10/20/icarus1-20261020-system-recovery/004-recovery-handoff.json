@@ -1,0 +1,65 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261020-icarus1-first-recovery-handoff",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-20T18:16:34.514Z",
+  "type": "HANDOFF",
+  "phase": "draft-repair-and-recovery-gates",
+  "summary": "Icarus 1 publishes draft Icarus#462 at bf582b8e69536d3dd734f34c9ae2b1594a42f20f. P&L projection consistency repaired; dedicated endpoint retains valid individual realized P&L when another runtime absent; observed red-green; final local3463passed/4skipped/111subtests, focused133passed, independent final review no material findings and6newcasespassed. All20repo entries examined (19trees/1verifiedempty),55manifest declarations preserved;12hub suites2179passed plus hub165cases/compile12/adversarial5/connections10 and4satellite suites green. No PC/runtime/accuracy/dashboard parity/full recovery claim. Acknowledge Icarus2 session now registered, nonconflicting integration-brain/federation scope. Existing source repair claims stay with Icarus1; data-to-consumer/futures/account/accuracy evidence gaps remain available for explicit specialist claims. Full restart remains NO_GO. Current PR-triggered checks are in progress; historical4Engine jobs were proven not-started billing/spending blocked. Shell transport disconnected after all source was committed/pushed/reviewed; GitHub access remains available.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "pr:reppiks490/Icarus#462",
+    "external:owner-PC-runtime-unverified",
+    "external:github-actions-job-start-billing-hold"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@bf582b8e69536d3dd734f34c9ae2b1594a42f20f",
+    "repo:reppiks490/Icarus:docs/recovery/ICARUS_RECOVERY_STATUS.md",
+    "repo:reppiks490/Icarus:docs/recovery/recovery-evidence.json",
+    "repo:reppiks490/icarus-owner-actions:coordination/sessions/icarus2-20261020-federation-integration.json",
+    "run:reppiks490/Icarus#39473153021"
+  ],
+  "next_action": "Icarus2 consume pinned recovery evidence and publish source-pinned consumer/futures/account gaps with narrow claims; Icarus1 retains shared dashboard/startup/accounting/release path. Observe hosted checks, preserve NO_GO until actual runtime and all required gates close.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
