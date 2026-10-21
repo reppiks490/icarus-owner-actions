@@ -1192,7 +1192,10 @@
         "tests_engine/test_execution_controls.py",
         "tests_engine/test_evolution_ui_status.py",
         "tests_engine/test_native_validation_ui.py",
-        ".github/workflows/ui-visual-contract.yml"
+        ".github/workflows/ui-visual-contract.yml",
+        "tests_engine/test_historical_trade_admission.py",
+        "tests_engine/test_intelligence_feed.py",
+        "tests_engine/test_source_data_contract.py"
       ],
       "declared_targets": [
         {
@@ -1466,6 +1469,18 @@
         {
           "path": ".github/workflows/ui-visual-contract.yml",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_historical_trade_admission.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_intelligence_feed.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_source_data_contract.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1474,11 +1489,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T18:23:39.888Z",
-      "latest_summary": "Actual five-route common renderer passes12desktop/mobile/identity cases; interim focused352passed. Two new real-browser editor regressions failed before repair and now pass: explicit discard reloads the current revision, unrelated configuration completion retains unsaved edits and original revision. Final full runtime and required-browser/cinema checks run against frozen32source/test/workflow hashes. Broad full has failures under investigation; no final current-source success claimed. Published91fb all6hosted success remains separate. No conflicting Icarus2 edits; its latest focused handoff preserved. Supporting documentation preparation is not independent review. No restart, release merge, deployment, provider acquisition or live activation.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-21T18:24:57.170Z",
+      "latest_summary": "Broad full runtime verification exposed existing standalone Learning and Ascendancy Node harnesses without the explicit IcarusClient transport now required by migrated linked modules. Claim three test harness paths only; preserve their original rendered-provenance and requalification assertions, supplying the same mocked transport through client.request. Actual immutable-client/browser isolation remains covered separately. No production fallback to raw parent fetch will be added. Final full remains pending and source generations stay separate.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "common-dashboard-final-source-verification",
+      "phase": "common-dashboard-linked-module-fixture-compatibility",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1549,7 +1564,10 @@
         "tests_engine/test_execution_controls.py",
         "tests_engine/test_evolution_ui_status.py",
         "tests_engine/test_native_validation_ui.py",
-        ".github/workflows/ui-visual-contract.yml"
+        ".github/workflows/ui-visual-contract.yml",
+        "tests_engine/test_historical_trade_admission.py",
+        "tests_engine/test_intelligence_feed.py",
+        "tests_engine/test_source_data_contract.py"
       ],
       "reserved_targets": [
         {
@@ -1823,6 +1841,18 @@
         {
           "path": ".github/workflows/ui-visual-contract.yml",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_historical_trade_admission.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_intelligence_feed.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_source_data_contract.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1876,7 +1906,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T18:23:52.859766Z",
+  "generated_at_utc": "2026-10-21T18:25:07.830815Z",
   "owner_status": {
     "claude": {
       "active": false,
