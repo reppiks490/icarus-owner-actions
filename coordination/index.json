@@ -1764,22 +1764,36 @@
       "branch": "icarus2/federation-integration-20261020",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "declared_paths": [
+        "coordination/handoffs/icarus2-prime-return-20261021.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "coordination/handoffs/icarus2-prime-return-20261021.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
       "dependencies": [
         "session:icarus1-20261020-system-recovery"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-21T14:38:20.718944Z",
-      "latest_summary": "Owner cancels the expensive broad prompted loop and designates Icarus1 as Icarus Prime. Icarus2 hourly automation6ad7b206db408191bfd5aeccfddde143 paused and read back disabled under this newer explicit owner direction. No native specialists remain active. Stop incomplete broad cycleicarus2-20261021T105603Z as-is; no further sweep or cycle publication is required. Release old broad reservations; retain Icarus2 identity. Icarus2 supports Prime restart critical path with minimal delta handoffs and focused verification. Prime notified directly on PR462; requested one disjoint blocker/currenthead review target.",
-      "latest_type": "RELEASE",
+      "last_event_at_utc": "2026-10-21T16:52:36.373200Z",
+      "latest_summary": "Deeper source-to-consumer check found persisted-journal provenance loss: NULL/text profit and future-dated closure yield complete combined PnL, while the performance reader rejects all three. New synthetic offline integration regressions:3 failed/1 valid control passed, independently rerun. Prime owns runtime/paper_workspaces; no code edits, extra PRs, provider collection, deployment, merge or restart. Exact portable reproduction sent to Prime and added to the return brief.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "focused-restart-support",
+      "phase": "focused-accounting-defect-reproduced-prime-owned-repair",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        "coordination/handoffs/icarus2-prime-return-20261021.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "coordination/handoffs/icarus2-prime-return-20261021.md",
+          "repo": "reppiks490/icarus-owner-actions"
+        }
+      ],
       "session_id": "icarus2-20261020-federation-integration",
       "stale": false,
       "status": "active"
@@ -1792,7 +1806,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T14:40:19.898513Z",
+  "generated_at_utc": "2026-10-21T16:58:45.299752Z",
   "owner_status": {
     "claude": {
       "active": false,
