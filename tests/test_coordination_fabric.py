@@ -76,6 +76,28 @@ class CoordinationFabricContractTests(unittest.TestCase):
             self.assertIn("github-run:123", first["active_sessions"][0]["dependencies"])
             self.assertIn("waiting on CI", render_active(first))
 
+    def test_active_headline_excludes_stale_workers_without_closing_their_history(self):
+        compile_state, _, render_active, _ = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for sid in ("current-a", "current-b", "stopped"):
+                _session(root, sid, stale=45)
+            _event(root, "current-a", "2026-10-16T03:00:00Z", "PLAN")
+            _event(root, "current-b", "2026-10-16T03:00:00Z", "WAITING")
+            _event(root, "stopped", "2026-10-16T02:00:00Z", "CLAIM", paths=["old/path"])
+            state = compile_state(root, now=datetime(2026, 10, 16, 3, 10, tzinfo=timezone.utc))
+
+            rendered = render_active(state)
+            self.assertIn("Current sessions: **2**", rendered)
+            self.assertIn("Stale/reclaimable: **1**", rendered)
+            self.assertIn("Non-terminal total: **3**", rendered)
+            self.assertIn("`stopped`", rendered)
+            self.assertEqual(state["counts"]["active"], 3)
+            self.assertEqual(state["terminal_sessions"], [])
+            stopped = next(r for r in state["active_sessions"] if r["session_id"] == "stopped")
+            self.assertTrue(stopped["reclaimable"])
+            self.assertEqual(stopped["reserved_targets"], [])
+
     def test_detects_exact_and_ancestor_path_collisions(self):
         compile_state, _, _, _ = self._api()
         with tempfile.TemporaryDirectory() as td:
