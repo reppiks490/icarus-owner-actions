@@ -1,12 +1,12 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T16:58:36.372Z",
+  "completed_at_utc": "2026-10-21T17:24:59.453Z",
   "result": "blocked",
-  "scope": "Verified workspace accounting/configuration/API/jobs/context client/bootstrap and selected replay; common-renderer integration continues.",
+  "scope": "Verified workspace accounting/configuration/API/jobs/context client and common core; contextual panels and five-route renderer switch remain open.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
   "source_reviewed_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
-  "latest_documentation_sha": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+  "latest_documentation_sha": "91fb8c7280a287012d3dce9004ad9833267b8b68",
   "restart_decision": "NO_GO",
   "delivered": [
     "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
@@ -23,7 +23,10 @@
     "Immutable explicit context client and main bootstrap: full3671passed; focused191passed; realChromiumstartup1passed.",
     "Selected replay and explicit revisioned rewarm: full3699passed,4skipped,111subtests; focused350passed. Unrelated sibling engine/cutover/cache identity retained.",
     "Context guard/BFCache foundation full3736passed,4skipped,111subtests; d3 runtime+4contracts success and actual desktop visual failure preserved separately.",
-    "Desktop containing-header settings repair68acaec: failing overflow regression corrected,2browsercases and unchanged cinema locally passed; all6hosted workflows succeeded."
+    "Desktop containing-header settings repair68acaec: failing overflow regression corrected,2browsercases and unchanged cinema locally passed; all6hosted workflows succeeded.",
+    "Core80c441d/persisted-row485d264/cached-reader ef30f3d published91fb8c7:3790passed,4skipped,111subtests;484focused and1shared-clock; unchangedcinema errors[]/writes[].",
+    "Icarus2 persisted-row finding reproduced and repaired: NULL/text/future closure cannot become trusted zero/profit; valid empty and healthy siblings retained.",
+    "Numeric futures, full control receipts, event acknowledgments, captured draft revisions/admission reservation, typed core/downloads and selected Shadow Twin verified."
   ],
   "remaining_internal_work": [
     "Four-dashboard parity with main trading surface",
@@ -52,22 +55,25 @@
     "local-full:3699passed,4skipped,111subtests",
     "coordination/events/2026/10/21/icarus1-20261020-system-recovery/019-common-renderer-claim.json",
     "pr:reppiks490/Icarus#462@68acaec0347a644ee09884fd3826dfadf897ee1d",
-    "common-core-focused:129passed"
+    "common-core-focused:129passed",
+    "pr:reppiks490/Icarus#462@91fb8c7280a287012d3dce9004ad9833267b8b68",
+    "full:3790passed,4skipped,111subtests:304.42s",
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/028-core-accounting-verified.json"
   ],
-  "next_action": "Finish browser historical-job source/CSV/comparison regression, inspect full core renderer suite, publish phase evidence, then contextual panels/evidence and five-route renderer switch. Fullrestart NO_GO; no live activation.",
+  "next_action": "Continue Task3explicit module reads/actions, scoped cached diagnostics, preserved corpus/A200/connections/performance; then Task4common CC rendering and five-route desktop/mobile isolation. Keep NO_GO. Icarus2 focused handoff preserved; broad loops paused.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
-    "head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+    "head": "91fb8c7280a287012d3dce9004ad9833267b8b68",
     "observed_runs": [
-      39612117366,
-      39612117381,
-      39612117369,
-      39612117418,
-      39612117400,
-      39612117382
+      39643360016,
+      39643359886,
+      39643360073,
+      39643359877,
+      39643359867,
+      39643360142
     ],
-    "status_at_checkpoint": "All6hosted workflows success. Subsequent common core renderer changes uncommitted; focused129passed; fullsuite running. Browser historical-job comparison case still under investigation.",
+    "status_at_checkpoint": "Current6started;consumer success,5inprogress. Prior68acaec all6success is separate.",
     "prior_head_windows_configuration_failure": {
       "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
       "run_id": 39476264660,
@@ -96,8 +102,49 @@
         39598192976,
         39598192894
       ]
+    },
+    "previous_all_six_success": {
+      "head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+      "observed_runs": [
+        39612117366,
+        39612117381,
+        39612117369,
+        39612117418,
+        39612117400,
+        39612117382
+      ],
+      "status_at_checkpoint": "All6hosted workflows success. Subsequent common core renderer changes uncommitted; focused129passed; fullsuite running. Browser historical-job comparison case still under investigation.",
+      "prior_head_windows_configuration_failure": {
+        "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
+        "run_id": 39476264660,
+        "job_id": 118812901733,
+        "failure": "test_config_jobs.py:107 returned 202 but did not observe blocked fixture entry within 3 seconds; conflicting second request never sent.",
+        "counter_evidence": "Same-source push Windows job 118812863987 passed; local full configuration module passes 12 tests in 6.99s. Subsequent configuration workflow39477036068 at4368a33 succeeded; historical failure remains separate.",
+        "disposition": "Unresolved asynchronous-start timeout; not proven billing, regression or harmless scheduling flake."
+      },
+      "previous_verified_head": "4368a33fda4000a40f281b4c4c883cb32c8ad56b",
+      "previous_6ac": {
+        "head": "6ac652e9505732a886bc5c807eeda80daab24b5a",
+        "run": 39514770172,
+        "linux": "success",
+        "windows": "failure",
+        "windows_job": 118944172965,
+        "three_other_workflows": "success",
+        "disposition": "Startup reset race independently reproduced; fixture now supplies localCSV, asserts warmup, locks seeded positions. New hosted execution required."
+      },
+      "previous_client_all_six_success": {
+        "head": "e9a33b79109f021fc6a32b7373bd52d30e4ebcae",
+        "tests": 39598192902,
+        "others": [
+          39598192978,
+          39598192909,
+          39598192960,
+          39598192976,
+          39598192894
+        ]
+      }
     }
   },
-  "source_verified_sha": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+  "source_verified_sha": "91fb8c7280a287012d3dce9004ad9833267b8b68",
   "review_limit": "Independent reviewer confirmed all3reported backend fixes (including2freshIOtests) then stopped at usage limit before final whole-diff check; root inspected diff/fullsuite. source_reviewed_sha retains prior fully cleared configuration phase; source_verified_sha is current tested backend."
 }
