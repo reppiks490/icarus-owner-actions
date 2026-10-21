@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-21T20:39:44.636742Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "019-restart-persistence-test-claim",
+  "evidence": [
+    "pr:reppiks490/Icarus#462@2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "engine-packet-blob:cb10bd9552b2445e18b60d80c4bdf766b847c374"
+  ],
+  "execution_authorized": false,
+  "next_action": "Create dedicated one-file test branch against Prime exact checkpoint, capture meaningful failure sensitivity, run focused checks and review before PR. Deliver exact receipts and explicit launcher/owner-PC limits. No main merge, scheduler/provider action, deployment or live activation.",
+  "phase": "automate-isolated-restart-persistence-regression",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Scratch rehearsal passed two clean process lifecycles with four real FileFeed portfolios, authenticated independent settings, exact config/row persistence and SQLite integrity. Convert this missing cross-process contract into one focused regression test, preserving all Prime source files. Current actual-clock peer handshake also passed with all six historical sources and3contract witnesses; old hosted failure remains historical, scheduling gap remains explicit.",
+  "targets": [
+    {
+      "path": "tests_engine/test_restart_persistence.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "CLAIM"
+}
