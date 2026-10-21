@@ -10,6 +10,13 @@ Pinned candidate: Icarus `2a2ec2a21a2426697259fd227b4c5db57d985bfb` (Prime PR462
 - **Two clean cloud process lifecycles PASS.** Real FileFeed portfolios, four separate journals, authenticated independent chart/input settings, selected-context endpoints and rejected bad authentication/cross-context requests. Exact config bytes and all synthetic trade/fill rows survived; SQLite integrity remained valid. No external-network or credential-file attempts; only owned processes stopped. Four source blobs independently matched the candidate.
 - **Persisted-row regression now 4 PASS on the candidate.** Reused Icarus2's three previously failing NULL/text/future-closure cases and the valid control. Prime's repair is independently confirmed at this boundary.
 
+## Repeatable regression and completed local visual checks
+
+- [Restart persistence PR464](https://github.com/reppiks490/Icarus/pull/464) at `dd052a8c4a46ac2811856a28eba735acd633e68e` contains one reviewed205-line test against Prime's recovery branch.90focused cases passed; parent independently reran the new subprocess test successfully. A scratch mutation discarding saved CC1 input failed at the intended assertion, then was restored. Two Linux hosted checks have passed; two Windows checks were still running at this update.
+- Actual Chromium route/performance selection:43passed, no skips. Required API/browser selection:4passed. Shadow Twin, Depth, Cinema and world contracts all exited0 with empty error/write reports. These exercise exact2a production files; the only added source delta is PR464's regression.
+- Initial local browser attempt had42skips because PythonPlaywright was absent; that is not counted as successful browser verification. Isolated PythonSDK and official Chromium were then installed for the actual run. The hosted visual workflow already installs PythonPlaywright at line51; missingSDK is not established as the hosted cancellation cause. Requiredmode's early importorskip remains an enforcement follow-up for Prime.
+- Observed terminal:Linux `/workspace`, no Windows drive mount or PowerShell. GitHub returned zero Codespaces. Prime has been asked to confirm actual installed-PC access; terminal availability alone does not establish that access.
+
 ## Remaining release gates and limits
 
 - The older hosted handshake failure39654368024 is preserved. Producer run39646638158 completed17:46:57Z; next scheduled export39657632968 was created18:59:17Z. This publication gap exceeded the unchanged1800-second freshness window. Later committed packets exist and one passed the consumer here. Freshness is an observation at a specified clock, not a permanent green state. No scheduler, timestamps or gates were changed and no workflow was rerun.
