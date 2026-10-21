@@ -1124,67 +1124,23 @@
         "icarus2-20261020-federation-integration"
       ],
       "coordination_mode": "independent",
-      "declared_paths": [
-        "tests/test_provider_corpus_intake.py",
-        ".github/workflows/test.yml",
-        "START_HERE.md",
-        "docs/recovery"
-      ],
-      "declared_targets": [
-        {
-          "path": "tests/test_provider_corpus_intake.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "START_HERE.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/recovery",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "declared_paths": [],
+      "declared_targets": [],
       "dependencies": [
         "github-ci:38d53283608d0134274a88b62db9a949280010c2",
         "external:owner-PC-local-execution"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T23:06:06.949Z",
-      "latest_summary": "Published 38d53283608d0134274a88b62db9a949280010c2 (PR462). Tests/CI/docs only; production guard and launcher/runtime unchanged. Nine Windows archive expectations failed on debf; on POSIX missing-capability reproduction also failed the mode test (ten failed/four passed). Ten capability-dependent cases now explicitly skip, four rejection cases and new no-output/input-integrity refusal test remain active. Focused124 passed; missing-capability5 passed/10 skipped. Same79unique Windows paths; new restart/intake cases run in early named step. Public main START_HERE updated cc4f0a9; foreground lifecycle and misleading sidecar help corrected. Current head hosted results pending. Root code/docs leases released for coordinated continuation; do not touch Icarus2 Brain claim.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-21T23:09:41.170Z",
+      "latest_summary": "Explicitly release root source/test/workflow/docs reservations after clean published38d5328. WAITING/HANDOFF with empty targets did not clear leases in compiler, so this RELEASE is authoritative. Actual hosted Windows job119537259528 named restart-persistence/private-intake step completed success; broad Windows and Linux runtime plus UI still running. Six current-head other contracts succeeded. No full-system completion or PC restart claimed. Icarus2's separate Brain sync/test reservation is unchanged; continue on exact current source with coordination.",
+      "latest_type": "RELEASE",
       "model_family": "openai",
-      "phase": "as-is-final-windows-verification",
+      "phase": "as-is-final-ci-observation",
       "pr": 462,
       "reclaimable": false,
-      "reserved_paths": [
-        "tests/test_provider_corpus_intake.py",
-        ".github/workflows/test.yml",
-        "START_HERE.md",
-        "docs/recovery"
-      ],
-      "reserved_targets": [
-        {
-          "path": "tests/test_provider_corpus_intake.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "START_HERE.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/recovery",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "icarus1-20261020-system-recovery",
       "stale": false,
       "status": "active"
@@ -1256,7 +1212,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T23:07:19.841075Z",
+  "generated_at_utc": "2026-10-21T23:09:51.711872Z",
   "owner_status": {
     "claude": {
       "active": false,
