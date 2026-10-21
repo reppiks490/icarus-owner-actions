@@ -22,7 +22,7 @@ A read-only Node probe on that published client rejects `6E`, `6J`, `6B`, `6A` w
 - Closed Icarus #452: consumer feature already on main; 8/10 files exact, remaining intake code/tests add the optional futures expansion. Original tests preserved. The stale added fixture is handled by #463.
 - Parked owner-actions #60 after the owner canceled broad integration loops; branch/code/old receipt remain preserved.
 - Closed Engine #213/#214 after consolidating their code/tests onto current main in #226.
-- Icarus #456: 20/32 changed files already match your published baseline. Of 12 remaining differences, 10 overlap #462; the other two are legacy dedicated renderer HTML/JS. Preserve unique behavior through parity checks; avoid a wholesale old-branch merge.
+- Closed Icarus #456 after independent parity review: 26/32 changed files match main exactly; six retain the original behavior with later additions. Main-equivalent workspace/accounting/routes/JS selection: 194 passed; Prime published head: 201 passed. The old feature branch remains preserved. No merge is needed.
 
 ## Work state and next action
 
