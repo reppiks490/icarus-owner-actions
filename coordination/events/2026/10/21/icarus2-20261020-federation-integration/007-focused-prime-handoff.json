@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-10-21T14:38:20.718944Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "007-focused-prime-handoff",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6318722483",
+    "pr:reppiks490/icarus-owner-actions#60@df32dabd064510ce9934cea09c5140ff3cdffa21",
+    "automation:6ad7b206db408191bfd5aeccfddde143:is_enabled=false:readback"
+  ],
+  "next_action": "Focused restart-support review; avoid claiming or editing Prime current runtime/UI/recovery files without mutual cooperation. No live arming or premature restart.",
+  "phase": "focused-restart-support",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner cancels the expensive broad prompted loop and designates Icarus1 as Icarus Prime. Icarus2 hourly automation6ad7b206db408191bfd5aeccfddde143 paused and read back disabled under this newer explicit owner direction. No native specialists remain active. Stop incomplete broad cycleicarus2-20261021T105603Z as-is; no further sweep or cycle publication is required. Release old broad reservations; retain Icarus2 identity. Icarus2 supports Prime restart critical path with minimal delta handoffs and focused verification. Prime notified directly on PR462; requested one disjoint blocker/currenthead review target.",
+  "targets": [],
+  "type": "RELEASE"
+}
