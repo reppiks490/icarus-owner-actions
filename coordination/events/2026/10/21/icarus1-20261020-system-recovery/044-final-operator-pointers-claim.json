@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-final-operator-pointer-refresh",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:10:07.260Z",
+  "type": "CLAIM",
+  "phase": "final-durable-operator-pointers",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    }
+  ],
+  "summary": "Refresh canonical bus operator source pointer from preceding debf checkpoint to final published38d5328 and preserve current Windows early-step pass/final CI disposition. Runtime/test/workflow paths remain released, Icarus2 Brain claim unaffected. Only own durable summary and shared operator entrypoint reserved for final documentation update.",
+  "evidence": [
+    "pr:reppiks490/Icarus#462@38d53283608d0134274a88b62db9a949280010c2",
+    "main-public-guide:cc4f0a9"
+  ],
+  "dependencies": [
+    "github-ci:38d53283608d0134274a88b62db9a949280010c2"
+  ],
+  "next_action": "Update source pointer and final exact-head verification, then explicitly RELEASE documentation leases; no code merge, owner-PC execution, provider purchase or live arming.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
