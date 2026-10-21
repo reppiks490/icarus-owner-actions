@@ -1126,11 +1126,21 @@
       "coordination_mode": "independent",
       "declared_paths": [
         "tests/test_provider_corpus_intake.py",
+        ".github/workflows/test.yml",
+        "START_HERE.md",
         "docs/recovery"
       ],
       "declared_targets": [
         {
           "path": "tests/test_provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "START_HERE.md",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1144,20 +1154,30 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T22:58:37.139Z",
-      "latest_summary": "Finaldebf hosted7workflowsgreen includingactualUI/worldchecks; Linuxfullgreen. New Windows coverage exposed9root private provider-corpus intake failures, while restart test and ordinaryruntime cases passed. Existing coreintake tests explicitlyskipnonPOSIX because descriptor/no-follow filesystem security is POSIX-only; inspect exact guard and align unsupported-platform expectations without bypassing it. Private archive intake support remains an explicit Windows operating gap, distinct from ordinary file-history/Yahoo paper startup. No source safetyguard weakening or blindrerun.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-21T23:00:44.151Z",
+      "latest_summary": "Exactguard confirmed: corpus_intake._snapshot failsclosed without descriptor-relative os.open and O_NOFOLLOW. Windows cannot satisfy it. Nine newlyselected root acceptance tests assumed successfuladmission; five purehelper cases passed. Existingcoreintake suite already marksPOSIX-only. Preserve productionguard; mark only nine successful-admission tests by requiredcapability, keep purecases and add unconditionallyrunnablefailclosed/no-output test. Move two new recovery/intake modules to an early named Windowsstep (same79unique paths, no duplicate broadrun) for visible coverage. Document actualWindowsprivate-vault-intake gap distinctfrom ordinaryCSV/file/Yahoo startup. Rootruntime/Windowsrestart succeeded before9archivefailures; sevenotherworkflowsgreen.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "final-Windows-private-intake-coverage",
+      "phase": "explicit-private-intake-platform-boundary",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
         "tests/test_provider_corpus_intake.py",
+        ".github/workflows/test.yml",
+        "START_HERE.md",
         "docs/recovery"
       ],
       "reserved_targets": [
         {
           "path": "tests/test_provider_corpus_intake.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "START_HERE.md",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1236,7 +1256,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T22:58:46.573058Z",
+  "generated_at_utc": "2026-10-21T23:00:55.080221Z",
   "owner_status": {
     "claude": {
       "active": false,
