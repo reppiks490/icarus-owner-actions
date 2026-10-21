@@ -1,21 +1,21 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T17:24:59.453Z",
+  "completed_at_utc": "2026-10-21T18:38:19.368Z",
   "result": "blocked",
-  "scope": "Verified workspace accounting/configuration/API/jobs/context client and common core; contextual panels and five-route renderer switch remain open.",
+  "scope": "Verified strict accounting and isolated configuration/API/jobs, explicit typed context transport, common main/CC1-CC4 renderer with preserved evidence/performance and real five-route acceptance; operating integrations and restart readiness remain open.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
   "source_reviewed_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
-  "latest_documentation_sha": "91fb8c7280a287012d3dce9004ad9833267b8b68",
+  "latest_documentation_sha": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
   "restart_decision": "NO_GO",
   "delivered": [
     "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
     "Scoped chart pagination and page-size repair, 12 offline HTTP regressions, no parent/sibling fallback.",
     "Configuration foundation suite: 3533 passed, 4 skipped, 111 subtests; new workspace-configuration module 58 passed; fresh independent final review clear.",
-    "Windows CI now selects70 existing modules; YAML/path validation passed; current-head hosted checks in progress.",
+    "Windows CI selects76 existing modules; YAML/all paths valid. Current exact-head hosted results remain separate.",
     "All 20 connected repositories inventoried; 55 manifest declarations retained without claiming universal downstream consumption.",
     "Twelve subsystem suites: 2179 passed; hub 165 collected; compile/adversarial/connection fixtures and four satellite suites passed.",
-    "Shared-dashboard design approved; configuration/APIs/jobs implemented; explicit context client and common renderer continue.",
+    "Approved common renderer implemented at main/CC1-CC4 with immutable selected data/actions; runtime panels without adapters remain explicitly unavailable.",
     "Both Icarus repositories verified public; a newer Engine cl-lab job is executing, correcting the earlier blanket billing-block interpretation.",
     "Two-worker coordination established with independently registered Icarus 2; no reservation collisions.",
     "Revisioned per-asset inputs/chart/preset persistence, private legacy-byte backup, exact state/file/cache rollback, explicit null-preset and atomic publication verified.",
@@ -26,10 +26,14 @@
     "Desktop containing-header settings repair68acaec: failing overflow regression corrected,2browsercases and unchanged cinema locally passed; all6hosted workflows succeeded.",
     "Core80c441d/persisted-row485d264/cached-reader ef30f3d published91fb8c7:3790passed,4skipped,111subtests;484focused and1shared-clock; unchangedcinema errors[]/writes[].",
     "Icarus2 persisted-row finding reproduced and repaired: NULL/text/future closure cannot become trusted zero/profit; valid empty and healthy siblings retained.",
-    "Numeric futures, full control receipts, event acknowledgments, captured draft revisions/admission reservation, typed core/downloads and selected Shadow Twin verified."
+    "Numeric futures, full control receipts, event acknowledgments, captured draft revisions/admission reservation, typed core/downloads and selected Shadow Twin verified.",
+    "Common dashboard2a2ec2a: fresh full3833passed,4skipped,111subtests in429.28s, exit0;37source/test/workflow hashes frozen. Browser/JS114passed plus4API/browser, original8legacy Performance cases and unchanged cinema errors[]/writes[].",
+    "Explicit linked-module transport, rejecting unsupported actions, selected cached-market diagnostics, truthful unobserved session health and shared evidence labels.",
+    "Same Performance component across five journals; corpus/selected-consumer/archived expansion/A200 research qualification and Connections preserved; research history owner-only.",
+    "Editor conflict discard reloads current revision and unrelated completed config jobs preserve drafts; both regressions failed before fix. Five old test transport assumptions aligned;53affected-module tests+86subtests pass."
   ],
   "remaining_internal_work": [
-    "Four-dashboard parity with main trading surface",
+    "Selected-runtime adapters for explicitly unavailable common panels; hosted/release and owner-PC parity verification",
     "Required data-to-consumer completeness and source freshness qualification",
     "Futures/prop-firm operational wiring and reconciliation",
     "Matched real-input accuracy regression investigation",
@@ -58,22 +62,27 @@
     "common-core-focused:129passed",
     "pr:reppiks490/Icarus#462@91fb8c7280a287012d3dce9004ad9833267b8b68",
     "full:3790passed,4skipped,111subtests:304.42s",
-    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/028-core-accounting-verified.json"
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/028-core-accounting-verified.json",
+    "pr:reppiks490/Icarus#462@2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "full:3833passed,4skipped,111subtests:429.28s",
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/033-common-dashboard-published.json"
   ],
-  "next_action": "Continue Task3explicit module reads/actions, scoped cached diagnostics, preserved corpus/A200/connections/performance; then Task4common CC rendering and five-route desktop/mobile isolation. Keep NO_GO. Icarus2 focused handoff preserved; broad loops paused.",
+  "next_action": "Inspect all8exact-head hosted workflows on2a2ec2a, including two newly triggered historical/source contracts; fix actual failures. Icarus2 may inspect published head; its separate Engine226/Icarus463/owner-actions51 reports remain distinct from root verification and release approval. Keep NO_GO and PC/accuracy/freshness/operating-adapter/account/rehearsal gaps explicit.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
-    "head": "91fb8c7280a287012d3dce9004ad9833267b8b68",
+    "head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
     "observed_runs": [
-      39643360016,
-      39643359886,
-      39643360073,
-      39643359877,
-      39643359867,
-      39643360142
+      39654367994,
+      39654368010,
+      39654368222,
+      39654368024,
+      39654368046,
+      39654368099,
+      39654368115,
+      39654368158
     ],
-    "status_at_checkpoint": "Current6started;consumer success,5inprogress. Prior68acaec all6success is separate.",
+    "status_at_checkpoint": "All8started/inprogress; no new-head hosted pass claimed yet.",
     "prior_head_windows_configuration_failure": {
       "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
       "run_id": 39476264660,
@@ -143,8 +152,20 @@
           39598192894
         ]
       }
+    },
+    "previous_core_all_six_success": {
+      "head": "91fb8c7280a287012d3dce9004ad9833267b8b68",
+      "runs": [
+        39643359886,
+        39643359867,
+        39643359877,
+        39643360016,
+        39643360073,
+        39643360142
+      ],
+      "conclusion": "all six success"
     }
   },
-  "source_verified_sha": "91fb8c7280a287012d3dce9004ad9833267b8b68",
-  "review_limit": "Independent reviewer confirmed all3reported backend fixes (including2freshIOtests) then stopped at usage limit before final whole-diff check; root inspected diff/fullsuite. source_reviewed_sha retains prior fully cleared configuration phase; source_verified_sha is current tested backend."
+  "source_verified_sha": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+  "review_limit": "Current2a2ec2a reviewed natively by Icarus1; fresh independent final whole-diff clearance remains unavailable. Supporting documentation preparation is not approval. source_reviewed_sha retains the last fully cleared independent checkpoint."
 }
