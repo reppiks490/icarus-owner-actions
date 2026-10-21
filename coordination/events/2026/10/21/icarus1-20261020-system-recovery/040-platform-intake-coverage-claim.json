@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-platform-intake-coverage",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:58:37.139Z",
+  "type": "CLAIM",
+  "phase": "final-Windows-private-intake-coverage",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    }
+  ],
+  "summary": "Finaldebf hosted7workflowsgreen includingactualUI/worldchecks; Linuxfullgreen. New Windows coverage exposed9root private provider-corpus intake failures, while restart test and ordinaryruntime cases passed. Existing coreintake tests explicitlyskipnonPOSIX because descriptor/no-follow filesystem security is POSIX-only; inspect exact guard and align unsupported-platform expectations without bypassing it. Private archive intake support remains an explicit Windows operating gap, distinct from ordinary file-history/Yahoo paper startup. No source safetyguard weakening or blindrerun.",
+  "evidence": [
+    "run39687883614:Windowsjob119526608283:9root-private-intakefailures",
+    "tests_engine/test_corpus_intake.py:module-nonPOSIX-boundary"
+  ],
+  "dependencies": [],
+  "next_action": "Verify failclosed POSIX guard locally, keep admission boundary unchanged, align rootacceptance test platform requirement and documentunsupportedWindowsprivatearchiveintake; publish boundedcorrection.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
