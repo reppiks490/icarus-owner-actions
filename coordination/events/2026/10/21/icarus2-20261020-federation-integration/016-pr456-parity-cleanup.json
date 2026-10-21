@@ -1,0 +1,345 @@
+{
+  "at_utc": "2026-10-21T16:45:24.498701Z",
+  "closure": {
+    "branch_preserved": true,
+    "head": "e96da3f466f6e027983dfbbc6e29a2e24ff55efa",
+    "merged": false,
+    "pr": 456,
+    "state": "closed"
+  },
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "016-pr456-parity-cleanup",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/456#issuecomment-6321395134",
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-prime-return-20261021.md@9583118b8c0ac48b5a4856e2ba68f7060d1e64bd"
+  ],
+  "execution_authorized": false,
+  "next_action": "Prime can omit PR456 from integration, review ready PR226/463 and preserve/publish existing renderer/client work in PR462. Restart readiness remains unverified. Broad automation remains paused.",
+  "phase": "focused-prime-support-redundant-pr-removed",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Closed already-integrated PR456 after independent static parity review and fresh offline tests: 194 on main-equivalent selected files, 201 on Prime published recovery head. All 32 file identities checked; 26 exact main blobs, six preserve original behavior with later additions. Branch retained; no merge or restart. Updated Prime return brief read back byte-exact.",
+  "targets": [],
+  "type": "HANDOFF",
+  "verification": {
+    "file_blobs": [
+      {
+        "main_blob": "108d4b242abfc163f1507aa76a57f140d00a0c54",
+        "path": ".github/workflows/test.yml",
+        "pr456_blob": "108d4b242abfc163f1507aa76a57f140d00a0c54",
+        "prime_blob": "166a2234f7c468977e8ef0d98cc59aeec3dbb2ba"
+      },
+      {
+        "main_blob": "a989b39229dd780e62248239f7cc38067b2f43c1",
+        "path": "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+        "pr456_blob": "a989b39229dd780e62248239f7cc38067b2f43c1",
+        "prime_blob": "a989b39229dd780e62248239f7cc38067b2f43c1"
+      },
+      {
+        "main_blob": "6b4c00a88f52175a95aad8a7e2b67b76bae232e7",
+        "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+        "pr456_blob": "6b4c00a88f52175a95aad8a7e2b67b76bae232e7",
+        "prime_blob": "6876ab21f40758c40ec38539369c7e892372c4e5"
+      },
+      {
+        "main_blob": "6c0537693d9fea621ecfff2941983704399cd448",
+        "path": "icarus_engine/account_connections.py",
+        "pr456_blob": "6c0537693d9fea621ecfff2941983704399cd448",
+        "prime_blob": "6c0537693d9fea621ecfff2941983704399cd448"
+      },
+      {
+        "main_blob": "2b743d827dc823e594026909334e12b72ec2e695",
+        "path": "icarus_engine/command-centers-ui.js",
+        "pr456_blob": "2b743d827dc823e594026909334e12b72ec2e695",
+        "prime_blob": "2b743d827dc823e594026909334e12b72ec2e695"
+      },
+      {
+        "main_blob": "821fb2d60879479e4a4b3427b0ec00afe312a49d",
+        "path": "icarus_engine/connections-ui.js",
+        "pr456_blob": "821fb2d60879479e4a4b3427b0ec00afe312a49d",
+        "prime_blob": "821fb2d60879479e4a4b3427b0ec00afe312a49d"
+      },
+      {
+        "main_blob": "f534038f0f5718429f2ec1e2b96fd82eb47cd50c",
+        "path": "icarus_engine/corpus-consumption.json",
+        "pr456_blob": "f534038f0f5718429f2ec1e2b96fd82eb47cd50c",
+        "prime_blob": "f534038f0f5718429f2ec1e2b96fd82eb47cd50c"
+      },
+      {
+        "main_blob": "a5ca7b483e65c3c2c0fe08c061c1eb59bcabcf07",
+        "path": "icarus_engine/corpus-expansion.json",
+        "pr456_blob": "a5ca7b483e65c3c2c0fe08c061c1eb59bcabcf07",
+        "prime_blob": "a5ca7b483e65c3c2c0fe08c061c1eb59bcabcf07"
+      },
+      {
+        "main_blob": "db34e715c862be4b255fa3e0ee0bb785f23db025",
+        "path": "icarus_engine/corpus_evidence.py",
+        "pr456_blob": "db34e715c862be4b255fa3e0ee0bb785f23db025",
+        "prime_blob": "db34e715c862be4b255fa3e0ee0bb785f23db025"
+      },
+      {
+        "main_blob": "957b4cb9f0bf311bf719e1ce2e28f69265b98828",
+        "path": "icarus_engine/corpus_expansion.py",
+        "pr456_blob": "957b4cb9f0bf311bf719e1ce2e28f69265b98828",
+        "prime_blob": "957b4cb9f0bf311bf719e1ce2e28f69265b98828"
+      },
+      {
+        "main_blob": "38027f05c3fbf81f0d4e52d42c89f0d472f9ebe6",
+        "path": "icarus_engine/dashboard.html",
+        "pr456_blob": "f4b6e507d3a5389b6f37e7b9c93be7eac2128b30",
+        "prime_blob": "79cc762599cd8851d4aff0d24a9ab6c7136e5f7b"
+      },
+      {
+        "main_blob": "0ed7820d98a46424bd7048c4c4de2d383c5d8cb3",
+        "path": "icarus_engine/paper-pnl-ui.js",
+        "pr456_blob": "0ed7820d98a46424bd7048c4c4de2d383c5d8cb3",
+        "prime_blob": "0ed7820d98a46424bd7048c4c4de2d383c5d8cb3"
+      },
+      {
+        "main_blob": "74ff92edd581e20fea681e2b27ceb07715ef5203",
+        "path": "icarus_engine/paper_pnl.py",
+        "pr456_blob": "74ff92edd581e20fea681e2b27ceb07715ef5203",
+        "prime_blob": "74ff92edd581e20fea681e2b27ceb07715ef5203"
+      },
+      {
+        "main_blob": "1dd9a353c54224fd2af89330ac132cd44a2de971",
+        "path": "icarus_engine/paper_workspaces.py",
+        "pr456_blob": "ceea837946abf7b095c863f8f90fd71d2402a224",
+        "prime_blob": "3df23df61123b5ea4530f4c776f09f71c954c3e1"
+      },
+      {
+        "main_blob": "09525c97981954aca22c2974c9770becb37a8192",
+        "path": "icarus_engine/propfirm-rules.json",
+        "pr456_blob": "09525c97981954aca22c2974c9770becb37a8192",
+        "prime_blob": "09525c97981954aca22c2974c9770becb37a8192"
+      },
+      {
+        "main_blob": "434e5acbca8ef9491213b29cfb7838d3d288e51f",
+        "path": "icarus_engine/runtime.py",
+        "pr456_blob": "cf09b92dd9e661cdaf007ac458db1fbebd4fb8cd",
+        "prime_blob": "5131fef22d385aa4d8ec5e17ce8c1218287f3ce7"
+      },
+      {
+        "main_blob": "7b0581f6fc328a0e459d1c29e7c390f6d9d48917",
+        "path": "icarus_engine/server.py",
+        "pr456_blob": "20e39244e6d1e15ef1eaf0d5d0781c7a01f540ff",
+        "prime_blob": "472059e37d6f953fcece8a8d73d27f6d7b074c4a"
+      },
+      {
+        "main_blob": "333f0cdc4990712f9c91f1370b2ae7e036faf6c2",
+        "path": "icarus_engine/workspace-dashboard.html",
+        "pr456_blob": "c0f29b90673e97ce41445b3850d02a39a8cf04ca",
+        "prime_blob": "333f0cdc4990712f9c91f1370b2ae7e036faf6c2"
+      },
+      {
+        "main_blob": "b35bdffcf8a256b5da9c383668d4965e59cb2b53",
+        "path": "icarus_engine/workspace-dashboard.js",
+        "pr456_blob": "b1249511fa3f0d430e44f8bb3a0537c8b734e8ea",
+        "prime_blob": "b35bdffcf8a256b5da9c383668d4965e59cb2b53"
+      },
+      {
+        "main_blob": "bf57878d81b583cbefd45f41dc37eba27fc8d06c",
+        "path": "tests/test_provider_corpus_intake.py",
+        "pr456_blob": "bf57878d81b583cbefd45f41dc37eba27fc8d06c",
+        "prime_blob": "bf57878d81b583cbefd45f41dc37eba27fc8d06c"
+      },
+      {
+        "main_blob": "36d580ab2c661253c5fe7cce69d7302f0b389d51",
+        "path": "tests_engine/browser_depth.cjs",
+        "pr456_blob": "36d580ab2c661253c5fe7cce69d7302f0b389d51",
+        "prime_blob": "36d580ab2c661253c5fe7cce69d7302f0b389d51"
+      },
+      {
+        "main_blob": "030e016921e5cdd2de86120fa53f48c1d190df85",
+        "path": "tests_engine/test_account_connections.py",
+        "pr456_blob": "030e016921e5cdd2de86120fa53f48c1d190df85",
+        "prime_blob": "030e016921e5cdd2de86120fa53f48c1d190df85"
+      },
+      {
+        "main_blob": "3ccc3d47c5f3569a809fbea2d56d9c3a9502c1df",
+        "path": "tests_engine/test_command_center_routes.py",
+        "pr456_blob": "3ccc3d47c5f3569a809fbea2d56d9c3a9502c1df",
+        "prime_blob": "7abec94b4b02f18d3f86a3e5609550916d82e174"
+      },
+      {
+        "main_blob": "3401ed6e1856f09b33bb9ec5fdbf382934af7ebc",
+        "path": "tests_engine/test_corpus_evidence.py",
+        "pr456_blob": "3401ed6e1856f09b33bb9ec5fdbf382934af7ebc",
+        "prime_blob": "3401ed6e1856f09b33bb9ec5fdbf382934af7ebc"
+      },
+      {
+        "main_blob": "6700149a4276e65717e010a0300f5e49b66aaf34",
+        "path": "tests_engine/test_corpus_expansion.py",
+        "pr456_blob": "6700149a4276e65717e010a0300f5e49b66aaf34",
+        "prime_blob": "6700149a4276e65717e010a0300f5e49b66aaf34"
+      },
+      {
+        "main_blob": "3a973802dae16c36908c649ac38d55204bbb12eb",
+        "path": "tests_engine/test_corpus_runtime_poll.py",
+        "pr456_blob": "3a973802dae16c36908c649ac38d55204bbb12eb",
+        "prime_blob": "3a973802dae16c36908c649ac38d55204bbb12eb"
+      },
+      {
+        "main_blob": "01c75a842e82df154673784297e4d05b1a64bcd0",
+        "path": "tests_engine/test_dashboard_js.py",
+        "pr456_blob": "01c75a842e82df154673784297e4d05b1a64bcd0",
+        "prime_blob": "b43b57747356dc579cca91a1cda6ebdc13661671"
+      },
+      {
+        "main_blob": "f0df3a5c0c781826092fc11f043fde01c504be5e",
+        "path": "tests_engine/test_paper_pnl.py",
+        "pr456_blob": "f0df3a5c0c781826092fc11f043fde01c504be5e",
+        "prime_blob": "f0df3a5c0c781826092fc11f043fde01c504be5e"
+      },
+      {
+        "main_blob": "5bb44961e489f95767c6fb33a24f70f2f8f57b70",
+        "path": "tests_engine/test_paper_pnl_browser.py",
+        "pr456_blob": "5bb44961e489f95767c6fb33a24f70f2f8f57b70",
+        "prime_blob": "5bb44961e489f95767c6fb33a24f70f2f8f57b70"
+      },
+      {
+        "main_blob": "3488755a9fefa7be13f371338e6893394649f1cb",
+        "path": "tests_engine/test_paper_workspaces.py",
+        "pr456_blob": "3488755a9fefa7be13f371338e6893394649f1cb",
+        "prime_blob": "ce6d29321628eeedac87a733ce3e2b7b1d096563"
+      },
+      {
+        "main_blob": "2852cda1495b4e51086811c62f874a5b7eb8280f",
+        "path": "tests_engine/test_paper_workspaces_runtime.py",
+        "pr456_blob": "2852cda1495b4e51086811c62f874a5b7eb8280f",
+        "prime_blob": "735ac3d5e517b7e52a31b56f5288326434db6a3a"
+      },
+      {
+        "main_blob": "21273f3091aebc0940f297037d26ff94f03116c4",
+        "path": "tools/provider_corpus_intake.py",
+        "pr456_blob": "21273f3091aebc0940f297037d26ff94f03116c4",
+        "prime_blob": "21273f3091aebc0940f297037d26ff94f03116c4"
+      }
+    ],
+    "independent_review": {
+      "execution": "No repository code/tests, providers or GitHub writes executed. Local reserved working-tree files untouched.",
+      "finding": "No useful PR456 behavior found absent in Prime or main baseline. Main is sufficient closure evidence; Prime is not required for the redundancy finding.",
+      "main_baseline": "617d3e4baf5bef337e0b1b43ad51bdc67ee420d7",
+      "main_comparison": {
+        "different_paths": [
+          "icarus_engine/dashboard.html",
+          "icarus_engine/paper_workspaces.py",
+          "icarus_engine/runtime.py",
+          "icarus_engine/server.py",
+          "icarus_engine/workspace-dashboard.html",
+          "icarus_engine/workspace-dashboard.js"
+        ],
+        "exact_blob_count": 26,
+        "exact_blob_paths": [
+          ".github/workflows/test.yml",
+          "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+          "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "icarus_engine/account_connections.py",
+          "icarus_engine/command-centers-ui.js",
+          "icarus_engine/connections-ui.js",
+          "icarus_engine/corpus-consumption.json",
+          "icarus_engine/corpus-expansion.json",
+          "icarus_engine/corpus_evidence.py",
+          "icarus_engine/corpus_expansion.py",
+          "icarus_engine/paper-pnl-ui.js",
+          "icarus_engine/paper_pnl.py",
+          "icarus_engine/propfirm-rules.json",
+          "tests/test_provider_corpus_intake.py",
+          "tests_engine/browser_depth.cjs",
+          "tests_engine/test_account_connections.py",
+          "tests_engine/test_command_center_routes.py",
+          "tests_engine/test_corpus_evidence.py",
+          "tests_engine/test_corpus_expansion.py",
+          "tests_engine/test_corpus_runtime_poll.py",
+          "tests_engine/test_dashboard_js.py",
+          "tests_engine/test_paper_pnl.py",
+          "tests_engine/test_paper_pnl_browser.py",
+          "tests_engine/test_paper_workspaces.py",
+          "tests_engine/test_paper_workspaces_runtime.py",
+          "tools/provider_corpus_intake.py"
+        ]
+      },
+      "pr456_base": "7b42eaa528d3137e87f8ae10ea0896944eb4b62b",
+      "pr456_head": "e96da3f466f6e027983dfbbc6e29a2e24ff55efa",
+      "prime_comparison": {
+        "different_paths": [
+          ".github/workflows/test.yml",
+          "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "icarus_engine/dashboard.html",
+          "icarus_engine/paper_workspaces.py",
+          "icarus_engine/runtime.py",
+          "icarus_engine/server.py",
+          "icarus_engine/workspace-dashboard.html",
+          "icarus_engine/workspace-dashboard.js",
+          "tests_engine/test_command_center_routes.py",
+          "tests_engine/test_dashboard_js.py",
+          "tests_engine/test_paper_workspaces.py",
+          "tests_engine/test_paper_workspaces_runtime.py"
+        ],
+        "exact_blob_count": 20,
+        "exact_blob_paths": [
+          "docs/agent-handoffs/PROPFIRM_RESEARCH_20261018.md",
+          "icarus_engine/account_connections.py",
+          "icarus_engine/command-centers-ui.js",
+          "icarus_engine/connections-ui.js",
+          "icarus_engine/corpus-consumption.json",
+          "icarus_engine/corpus-expansion.json",
+          "icarus_engine/corpus_evidence.py",
+          "icarus_engine/corpus_expansion.py",
+          "icarus_engine/paper-pnl-ui.js",
+          "icarus_engine/paper_pnl.py",
+          "icarus_engine/propfirm-rules.json",
+          "tests/test_provider_corpus_intake.py",
+          "tests_engine/browser_depth.cjs",
+          "tests_engine/test_account_connections.py",
+          "tests_engine/test_corpus_evidence.py",
+          "tests_engine/test_corpus_expansion.py",
+          "tests_engine/test_corpus_runtime_poll.py",
+          "tests_engine/test_paper_pnl.py",
+          "tests_engine/test_paper_pnl_browser.py",
+          "tools/provider_corpus_intake.py"
+        ]
+      },
+      "prime_differences": "Configuration becomes revisioned and transactional; scoped WorkspaceAPI preserves chart selection and partial-flatten receipts; accounting stricter; legacy dedicated routes and surfaces retained. Tests and workflow additions do not remove PR456 coverage.",
+      "prime_head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+      "remaining_main_differences": {
+        "dashboard.html": "Adds navigation to all four dashboards and Connections",
+        "paper_workspaces.py": "Only imports dashboard_assets and expands initial asset defaults; prior mini/micro assets and CC2 target/quantity/chart values retained",
+        "runtime.py": "Adds failed-startup reset/retry; prior corpus native interval, single-contract gates, removed-runner guards and poll logic remain",
+        "server.py": "Adds runtime_feed_mode plus persistent performance endpoint/script; original corpus/account-connection/dashboard/chart/control routes retained",
+        "workspace-dashboard.html": "Adds performance script and expand-assets control; all existing surfaces retained",
+        "workspace-dashboard.js": "Only adds expand-assets click handler"
+      },
+      "review_type": "independent static read-only parity review"
+    },
+    "main": {
+      "code_baseline": "617d3e4baf5bef337e0b1b43ad51bdc67ee420d7",
+      "commits": 11,
+      "main": "be46d4b9206001a44772976c98981bbdcf5a7ef3",
+      "metadata_only_files": 34
+    },
+    "main_tests": {
+      "passed": 194,
+      "seconds": 28.25
+    },
+    "modules": [
+      "test_paper_workspaces.py",
+      "test_paper_workspaces_runtime.py",
+      "test_command_center_routes.py",
+      "test_dashboard_js.py",
+      "test_paper_pnl.py"
+    ],
+    "prime_tests": {
+      "passed": 201,
+      "seconds": 25.46
+    }
+  }
+}
