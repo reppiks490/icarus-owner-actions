@@ -1,12 +1,12 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T12:41:00.516Z",
+  "completed_at_utc": "2026-10-21T16:58:36.372Z",
   "result": "blocked",
   "scope": "Verified workspace accounting/configuration/API/jobs/context client/bootstrap and selected replay; common-renderer integration continues.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
   "source_reviewed_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
-  "latest_documentation_sha": "fb98ce65aaeaa3c5a6d13d3c407976911804e0d8",
+  "latest_documentation_sha": "68acaec0347a644ee09884fd3826dfadf897ee1d",
   "restart_decision": "NO_GO",
   "delivered": [
     "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
@@ -21,7 +21,9 @@
     "Revisioned per-asset inputs/chart/preset persistence, private legacy-byte backup, exact state/file/cache rollback, explicit null-preset and atomic publication verified.",
     "Current backend source full suite3650passed,4skipped,111subtests; exact hashes in phased recovery evidence. Scoped job ownership, frozen replay, CSV/comparison/auth and independent workspace transactions verified.",
     "Immutable explicit context client and main bootstrap: full3671passed; focused191passed; realChromiumstartup1passed.",
-    "Selected replay and explicit revisioned rewarm: full3699passed,4skipped,111subtests; focused350passed. Unrelated sibling engine/cutover/cache identity retained."
+    "Selected replay and explicit revisioned rewarm: full3699passed,4skipped,111subtests; focused350passed. Unrelated sibling engine/cutover/cache identity retained.",
+    "Context guard/BFCache foundation full3736passed,4skipped,111subtests; d3 runtime+4contracts success and actual desktop visual failure preserved separately.",
+    "Desktop containing-header settings repair68acaec: failing overflow regression corrected,2browsercases and unchanged cinema locally passed; all6hosted workflows succeeded."
   ],
   "remaining_internal_work": [
     "Four-dashboard parity with main trading surface",
@@ -48,22 +50,24 @@
     "coordination/events/2026/10/21/icarus1-20261020-system-recovery/017-api-jobs-verified-handoff.json",
     "pr:reppiks490/Icarus#462@fb98ce65aaeaa3c5a6d13d3c407976911804e0d8",
     "local-full:3699passed,4skipped,111subtests",
-    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/019-common-renderer-claim.json"
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/019-common-renderer-claim.json",
+    "pr:reppiks490/Icarus#462@68acaec0347a644ee09884fd3826dfadf897ee1d",
+    "common-core-focused:129passed"
   ],
-  "next_action": "Diagnose current hosted browser failure, then execute claimed common-renderer context guard/client/module integration and five-route browser parity. No restart/live activation; Icarus2 separate federation cycle remains active.",
+  "next_action": "Finish browser historical-job source/CSV/comparison regression, inspect full core renderer suite, publish phase evidence, then contextual panels/evidence and five-route renderer switch. Fullrestart NO_GO; no live activation.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
-    "head": "fb98ce65aaeaa3c5a6d13d3c407976911804e0d8",
+    "head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
     "observed_runs": [
-      39600359927,
-      39600359952,
-      39600360032,
-      39600360033,
-      39600360004,
-      39600359929
+      39612117366,
+      39612117381,
+      39612117369,
+      39612117418,
+      39612117400,
+      39612117382
     ],
-    "status_at_checkpoint": "Fulltests inprogress;4contracts success;UIvisualcontract failed after setup/focused invariants, actual browser failure under investigation.",
+    "status_at_checkpoint": "All6hosted workflows success. Subsequent common core renderer changes uncommitted; focused129passed; fullsuite running. Browser historical-job comparison case still under investigation.",
     "prior_head_windows_configuration_failure": {
       "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
       "run_id": 39476264660,
@@ -94,6 +98,6 @@
       ]
     }
   },
-  "source_verified_sha": "fb98ce65aaeaa3c5a6d13d3c407976911804e0d8",
+  "source_verified_sha": "68acaec0347a644ee09884fd3826dfadf897ee1d",
   "review_limit": "Independent reviewer confirmed all3reported backend fixes (including2freshIOtests) then stopped at usage limit before final whole-diff check; root inspected diff/fullsuite. source_reviewed_sha retains prior fully cleared configuration phase; source_verified_sha is current tested backend."
 }
