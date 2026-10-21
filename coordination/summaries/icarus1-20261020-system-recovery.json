@@ -1,7 +1,7 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T23:26:50.000Z",
+  "completed_at_utc": "2026-10-21T23:29:37.887Z",
   "result": "blocked",
   "scope": "Published usable as-is paper startup, public default-main command guide and unified five-workspace dashboard; actual PC execution and full operating readiness remain distinct.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
@@ -39,7 +39,8 @@
     "Final presentation correctiondebf6e1: hosted6ed five-workspace43cases passed but delayed-resize drawer test failed. Forced containing header reproduced localnegativey; mobile CSS releases filter/transform containing block.4targeted browser+122UI/world/JS cases passed; unchanged cinema errors[]/writes[]. Separate receipt from startup3852full; no trading/config/account logic changed.",
     "Windows platform followup38d5328 changes tests/CI/docs only: nine Windows archive-admission failures traced to intentional safe-open guard. Original assertions retained under ten capability markers; new unconditional refusal/no-output/input-integrity test. Linux focused124passed, missing-capability5passed10skipped; same79unique Windows modules, new modules verified early.",
     "Public main guide cc4f0a9 clarifies Windows private archive limitation, foreground Ctrl+C before shortcut creation and removes sidecar --help that starts a service. ElevenBashblocks parse; six actual help commands exit0.",
-    "Final 38d5328 hosted Linux runtime and required browser/world checks passed. All six other contracts passed. Actual Windows restart-persistence/private-intake-boundary step passed; broad Windows suite remains running at this checkpoint, without an invented completion claim."
+    "Final 38d5328 hosted Linux runtime and required browser/world checks passed. All six other contracts passed. Actual Windows restart-persistence/private-intake-boundary step passed; broad Windows suite remains running at this checkpoint, without an invented completion claim.",
+    "Final exact recovery source38d5328: all eight hosted PR workflows completed successfully, including both Linux and Windows runtime jobs, the newly included Windows restart-persistence/private-intake boundary and required real Chromium/world-browser contracts. This supersedes the preceding pending Windows observation."
   ],
   "remaining_internal_work": [
     "Selected-runtime adapters for unavailable common panels; release and owner-PC parity verification",
@@ -91,14 +92,17 @@
     "run:39691119497:linux119537259625:success",
     "run:39691119575:required-ui-world:success",
     "job:119537259528:Windows-restart-intake-step:success",
-    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/043-release-final-source-leases.json"
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/043-release-final-source-leases.json",
+    "run:39691119497:both-Linux-Windows-success",
+    "all-eight-exact-head-workflows:success",
+    "coordination-repair:e133939:rejected-original-preserved"
   ],
-  "next_action": "Operator: public default-main START_HERE provides the stopped-state backup, separate source worktree, one-time setup, five dashboards and saved bash ~/icarus-start.sh command. Cloud cannot execute it on the PC. Icarus2: observe final Windows job119537259528 in run39691119497 (broad suite still running at this checkpoint); preserve exact failure logs and repair only demonstrated faults. Continue your separate Brain claim, missing operating adapters, real data consumers, matched accuracy investigation and state/stability/account gates. Use final recovery source38d5328 and current bus, without waiting for Prime model access, overwriting from an older PR or enabling live orders. Earlier recovery-record entries10–12 contain pre-switch phase language; current sections2 and15–18 plus START_HERE describe the implemented common renderer. New main3b99cb3 contains provider receipts only; merge-tree check is clean and no production delta was found. Do not endlessly chase metadata commits or treat freshness as permanent.",
+  "next_action": "Operator: use the public default-main START_HERE guide once for stopped-state backup, separate source worktree and setup; then use saved bash ~/icarus-start.sh. The local core does not require an active ChatGPT session. Cloud cannot execute on the PC. Icarus2: all final38d5328 hosted workflows now passed. Continue your separate Brain claim and durable remaining-access priorities: actual PC/root/source verification, runtime adapters, real consumer/freshness evidence, matched accuracy investigation, operating accounts and sustained/open-position recovery. Preserve exact current source and authority; do not wait for Prime model access, overwrite from old PRs, re-enable canceled broad automation or arm live brokers. Earlier status-record phase10–12 wording is superseded by current sections2/15–18 and START_HERE. New main3b99cb3 added provider receipts only and has a clean merge-tree; no production delta was found.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
     "head": "38d53283608d0134274a88b62db9a949280010c2",
-    "status_at_checkpoint": "Seven of eight exact-head PR workflows completed successfully; the tests workflow remains in progress because the broad Windows suite is still running. Linux runtime and required visual/world-browser checks passed. The actual Windows restart-persistence/private-intake-boundary step passed. Windows private archive intake remains unsupported; skipped admission tests are not operating support. Timed historical handshake is not permanent freshness.",
+    "status_at_checkpoint": "All eight exact-head PR workflows completed successfully, including full Linux and Windows runtime jobs and required Chromium/world-browser contracts. Actual Windows restart-persistence/private-intake-boundary step passed. Windows private archive intake remains intentionally unsupported; skipped admission cases do not certify support. Historical handshake is a timed observation, not permanent freshness.",
     "observed_workflows": [
       {
         "id": 39691119542,
@@ -119,16 +123,6 @@
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119576/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119576/logs",
         "workflow_id": 373745408
-      },
-      {
-        "id": 39691119497,
-        "name": "tests",
-        "status": "in_progress",
-        "conclusion": null,
-        "run_number": 6562,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119497/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119497/logs",
-        "workflow_id": 362919046
       },
       {
         "id": 39691119503,
@@ -179,6 +173,16 @@
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119575/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119575/logs",
         "workflow_id": 374925947
+      },
+      {
+        "id": 39691119497,
+        "name": "tests",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 6562,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119497/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39691119497/logs",
+        "workflow_id": 362919046
       }
     ],
     "previous_drawer_debf": {
@@ -422,12 +426,12 @@
     "observed_runs": [
       39691119542,
       39691119576,
-      39691119497,
       39691119503,
       39691119522,
       39691119610,
       39691119647,
-      39691119575
+      39691119575,
+      39691119497
     ],
     "linux": {
       "job": 119537259625,
@@ -436,22 +440,16 @@
     },
     "windows": {
       "job": 119537259528,
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "recovery_step": {
         "name": "Verify Windows restart persistence and private-intake boundary",
         "status": "completed",
         "conclusion": "success",
         "number": 6
-      },
-      "broad_suite": {
-        "name": "Run python -m pytest tests_engine/test_plant.py tests_engine/test_bars.py tests_engine/test_doctor.py tests_engine/test_futures.py tests_engine/test_execution_controls.py tests_engine/test_engine_control.py tests_engine/test_backtest_validation.py tests_engine/test_mcp_server.py tests_engine/test_dashboard_js.py tests_engine/test_pantheon_aether.py tests_engine/test_apex_kernel.py tests_engine/test_apex_server.py tests_engine/test_apex_store.py tests_engine/test_apex_ancestry.py tests_engine/test_sibyl.py tests_engine/test_databento.py tests_engine/test_possibility.py tests_engine/test_commissioning.py tests_engine/test_commissioning_integration.py tests_engine/test_brain.py tests_engine/test_brain_sync.py tests_engine/test_evolution_sync.py tests_engine/test_cross_repo_federation.py tests_engine/test_evidence_lab_sync.py tests_engine/test_unified_intelligence.py tests_engine/test_ascendancy_capabilities.py tests_engine/test_ascendancy_foundry.py tests_engine/test_ascendancy_evaluator.py tests_engine/test_ascendancy_mechanisms.py tests_engine/test_ascendancy_contribution.py tests_engine/test_ascendancy_archive.py tests_engine/test_ascendancy_brain.py tests_engine/test_ascendancy_frontier.py tests_engine/test_ascendancy_genome.py tests_engine/test_ascendancy_invention.py tests_engine/test_ascendancy_server.py tests_engine/test_ascendancy_unknowns.py tests_engine/test_ascendancy_governor.py tests_engine/test_ascendancy_executor.py tests_engine/test_ascendancy_autopilot.py tests_engine/test_ascendancy_work_orders.py tests_engine/test_native_validation.py tests_engine/test_execution_costs.py tests_engine/test_access_control.py tests_engine/test_qualification_receipts.py tests_engine/test_performance_proof.py tests_engine/test_futures_fee_reconciliation.py tests_engine/test_brain_evidence.py tests_engine/test_futures_catalog.py tests_engine/test_futures_contract_families.py tests_engine/test_asset_command_center.py tests_engine/test_system_index.py tests_engine/test_a200_listing_crosswalk.py tests_engine/test_a200_runtime_feed.py tests_engine/test_a200_runtime_bridge.py tests_engine/test_account_connections.py tests_engine/test_paper_workspaces.py tests_engine/test_paper_workspace_shared_feed.py tests_engine/test_paper_workspaces_runtime.py tests_engine/test_corpus_evidence.py tests_engine/test_corpus_expansion.py tests_engine/test_corpus_intake.py tests_engine/test_corpus_runtime_poll.py tests_engine/test_paper_pnl.py tests_engine/test_paper_pnl_browser.py tests_engine/test_command_center_routes.py tests_engine/test_workspace_chart_routes.py tests_engine/test_workspace_config.py tests_engine/test_workspace_api.py tests_engine/test_workspace_jobs.py tests_engine/test_workspace_client.py tests_engine/test_workspace_context.py tests_engine/test_workspace_ui.py tests_engine/test_workspace_dashboard_browser.py tests_engine/test_workspace_performance.py tests_engine/test_workspace_market_data.py tests_engine/test_as_is_launcher.py -q",
-        "status": "in_progress",
-        "conclusion": null,
-        "number": 7
       }
     },
-    "observed_at_utc": "2026-10-21T23:26:50.000Z"
+    "observed_at_utc": "2026-10-21T23:29:37.887Z"
   },
   "source_verified_sha": "38d53283608d0134274a88b62db9a949280010c2",
   "review_limit": "Root native bounded review at38d5328; prior independent checkpoint retained. Internal command inspection is supporting work, not independent whole-branch clearance.",
@@ -473,5 +471,12 @@
     "pr_draft": true,
     "pr_merged": false,
     "limit": "No decryption, provider collection, source merge or runtime restart performed by this check."
+  },
+  "coordination_record_repair": {
+    "commit": "e133939",
+    "scope": "Only newly invalid045 duplicate identifier corrected. Previously valid immutable events unchanged; original malformed bytes preserved verbatim in quarantine and Git history.",
+    "original_blob": "001670c87c6dafa60eec09f11c7dc01801fc2618",
+    "quarantined_original": "coordination/rejected/icarus1-20261020-system-recovery/045-duplicate-event-id.original.json",
+    "validation": "whole tree valid; zero collisions"
   }
 }
