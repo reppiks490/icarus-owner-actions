@@ -1181,7 +1181,9 @@
         "icarus_engine/command-centers-ui.js",
         "icarus_engine/paper-pnl-ui.js",
         "icarus_engine/shadow-twin-ui.js",
-        "icarus_engine/workspace-performance-ui.js"
+        "icarus_engine/workspace-performance-ui.js",
+        "icarus_engine/experience-ui.js",
+        "tests_engine/browser_cinema.cjs"
       ],
       "declared_targets": [
         {
@@ -1411,6 +1413,14 @@
         {
           "path": "icarus_engine/workspace-performance-ui.js",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_cinema.cjs",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1419,11 +1429,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T12:40:14.425Z",
-      "latest_summary": "Icarus1 published selected replay and explicit revisioned rewarm at draftPR462 headfb98ce65aaeaa3c5a6d13d3c407976911804e0d8: full3699passed,4skipped,111subtests; focused350passed; root diff review, no invented independent approval. All6hosted workflows at preceding e9a33b7 succeeded. Claim the approved common renderer/module integration now: explicit client calls, server scope rejection, stale observation clearing, same components on main/CC1\u20134, and preserved corpus/A200/connections/performance. Use safe read-only provider buffers only: inspected Yahoo.meta can fetch and Databento trades/depth methods can start subscriptions, so workspace diagnostics must not invoke them. No new provider acquisition, service/scheduler clones, live authority, merge or system restart. Icarus2 federation paths remain separate.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-21T12:43:20.645Z",
+      "latest_summary": "Currentfb98 hosted UIvisual job119223003324 failed real browser assertion 'Mobile settings must clear desktop inline placement' in browser_cinema.cjs after compact resize800to390. Focused invariants/install/preview passed; earlier DNS errors retried successfully and are not the browser failure. Main runtime full3699 and local browser startup remain separate engineering evidence. Extend root lease narrowly to experience-ui.js/browser_cinema.cjs, reproduce responsive event/placement state before changing app or test. Common renderer remains next; no unrelated world redesign or relaxed geometry assertions.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "common-renderer-context-integration",
+      "phase": "browser-mobile-settings-diagnosis",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1483,7 +1493,9 @@
         "icarus_engine/command-centers-ui.js",
         "icarus_engine/paper-pnl-ui.js",
         "icarus_engine/shadow-twin-ui.js",
-        "icarus_engine/workspace-performance-ui.js"
+        "icarus_engine/workspace-performance-ui.js",
+        "icarus_engine/experience-ui.js",
+        "tests_engine/browser_cinema.cjs"
       ],
       "reserved_targets": [
         {
@@ -1713,6 +1725,14 @@
         {
           "path": "icarus_engine/workspace-performance-ui.js",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_cinema.cjs",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1767,7 +1787,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T12:41:10.337077Z",
+  "generated_at_utc": "2026-10-21T12:43:31.695898Z",
   "owner_status": {
     "claude": {
       "active": false,
