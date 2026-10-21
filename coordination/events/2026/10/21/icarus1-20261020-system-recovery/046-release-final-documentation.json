@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:27:21.401Z",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "event_id": "20261021-icarus1-release-final-documentation",
+  "type": "RELEASE",
+  "phase": "operator-delivery-published-no-source-leases",
+  "summary": "Release final bus START_HERE and own summary documentation reservations. Source/runtime/tests/workflows were already explicitly released in043. Published paper startup and full public command guide are durable; no full mission completion, owner-PC restart or live authority claimed. Icarus2 retains only its separate declared reservation and may continue on current exact recovery source.",
+  "evidence": [
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/045-as-is-operator-delivery-handoff.json",
+    "coordination/summaries/icarus1-20261020-system-recovery.json"
+  ],
+  "dependencies": [
+    "external:owner-PC-local-execution"
+  ],
+  "next_action": "Continue from exact published source and current coordination summary; check actual CI status before making later success claims."
+}
