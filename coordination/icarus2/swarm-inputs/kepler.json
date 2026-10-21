@@ -1,0 +1,176 @@
+{
+  "schema_version": "icarus2-swarm-audit-v1",
+  "swarm_id": "KEPLER",
+  "observed_at_utc": "2026-10-20T18:18:35.852516Z",
+  "repository_heads": {
+    "reppiks490/Icarus": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+    "reppiks490/Icarus-engine": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+    "reppiks490/divine-providence": "27ae69c593ede3019957100cd401625bd2424f43"
+  },
+  "findings": [
+    {
+      "id": "KEPLER-EXECUTION-AUTHORITY",
+      "status": "OBSERVED",
+      "summary": "Static futures catalog contains 32 roots; only NQ, MNQ, ES, MES, YM, MYM, RTY, M2K, GC, MGC, SI and SIL qualify for the execution resolver. Resolver qualification is distinct from fresh market data, risk/journal readiness, broker contract/account readback and order authority. Live execution remains disabled.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/futures_catalog.py",
+          "blob_sha": "af312b301abcfdf8cf174f1b2f9098cac1650db3"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/asset_command_center.py",
+          "blob_sha": "96112212654c763afcd2c8601380dc5335676f59"
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-A200-ADMISSION",
+      "status": "BLOCKED",
+      "summary": "All 200 catalogued US equities have pulse_enabled=false and entitlement=UNKNOWN. Catalog visibility and research browsing do not establish tradability, corporate-action correctness, fresh feed rights or profitability. No account/provider read was performed.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/market-universe-200.json",
+          "blob_sha": "7716de4bc7c669211158f2dbfce16276703b0ee5"
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-PROPFIRM-READINESS",
+      "status": "BLOCKED",
+      "summary": "Eight researched firms contain 46 account types and 49 policies, all policies UNVERIFIED. Every firm has connection_verified=false, free_account_or_api_verified=false, faq_coverage_complete=false, new_intents_blocked=true and execution_authorized=false. Free local inventory does not establish free remote accounts or APIs. Topstep configuration remains LATER.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/propfirm-rules.json",
+          "blob_sha": "09525c97981954aca22c2974c9770becb37a8192"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/account_connections.py",
+          "blob_sha": "6c0537693d9fea621ecfff2941983704399cd448"
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-ACCOUNT-READBACK",
+      "status": "OBSERVED",
+      "summary": "Connection snapshots expire CONNECTED_READ_ONLY observations after 60 seconds and force policy_status=UNVERIFIED, blocked new intents and false execution authority. Manual inventory is local-only. Alpaca and ProjectX are coded/mock-tested read-only adapters; Rithmic, Tradovate and IBKR are unsupported in this manager. Source inspection is not proof of a live account connection.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/account_connections.py",
+          "blob_sha": "6c0537693d9fea621ecfff2941983704399cd448"
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-ACCOUNTING-ICARUS1-HANDOFF",
+      "status": "HANDOFF",
+      "summary": "Canonical paper P&L validator requires four unique explicit-currency runtime ledgers and snapshots/open marks no older than 90 seconds. Unknown marks suppress open/total while preserving independently valid realized P&L; missing runtime suppresses combined realized too. At this main snapshot, paper_workspaces.py still exposes unchecked raw aggregate/profile sums beside canonical paper_pnl. Icarus 1 already reserves this exact defect boundary and its server projection/tests; do not duplicate or overwrite that repair. Fees, broker reconciliation and owner-PC restart/runtime identity remain unverified.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/paper_pnl.py",
+          "blob_sha": "74ff92edd581e20fea681e2b27ceb07715ef5203"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/paper_workspaces.py",
+          "blob_sha": "1dd9a353c54224fd2af89330ac132cd44a2de971"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/server.py",
+          "blob_sha": "7b0581f6fc328a0e459d1c29e7c390f6d9d48917"
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-HISTORICAL-BILLING-REJECTION",
+      "status": "OBSERVED",
+      "summary": "Historical Engine run39450790616 at commit689a02fefc8cb1d084b6427461b6e736eacdbeb6 failed before job execution: job118724738504 has empty runner_name, zero steps and an explicit billing/spending job-not-started annotation. This is historical external infrastructure evidence, not a current-head code/test failure or proof the present account remains blocked. Preserve the old commit identity separately from current repository_heads.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "689a02fefc8cb1d084b6427461b6e736eacdbeb6",
+          "path": ".github/workflows/data-sentinel.yml",
+          "workflow_run": 39450790616,
+          "job_id": 118724738504
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-CURRENT-RUN-ACTUALLY-EXECUTED",
+      "status": "OBSERVED",
+      "summary": "At current Engine main2bf88a41, data-sentinel run39470784288/job118794154787 actually ran on a named GitHub runner, completed eight steps and succeeded at2026-10-20T18:00:07Z. cl-federation-watch run39470784445 also succeeded. These later observations prevent treating older billing rejections as a current global runtime blockade; they do not establish market-data freshness or substantive research completeness.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": ".github/workflows/data-sentinel.yml",
+          "workflow_run": 39470784288,
+          "job_id": 118794154787
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": ".github/workflows/cl-federation-watch.yml",
+          "workflow_run": 39470784445
+        }
+      ]
+    },
+    {
+      "id": "KEPLER-PUBLICATION-VERSUS-SUBSTANTIVE-COMPLETION",
+      "status": "BLOCKED",
+      "summary": "Divine Providence run39415577104 actually executed: contract-tests job118603640942 succeeded; research job118603972249 failed at Require complete evidence after18steps; publish job118604320279 succeeded. Successful publication must not erase failed substantive completeness or be misclassified as billing refusal. No restart, training, workflow rerun or spending change was performed.",
+      "evidence": [
+        {
+          "repository": "reppiks490/divine-providence",
+          "commit": "27ae69c593ede3019957100cd401625bd2424f43",
+          "path": ".github/workflows/icarus-institution.yml",
+          "workflow_run": 39415577104,
+          "job_id": 118603972249
+        },
+        {
+          "repository": "reppiks490/divine-providence",
+          "commit": "27ae69c593ede3019957100cd401625bd2424f43",
+          "path": ".github/workflows/icarus-institution.yml",
+          "workflow_run": 39415577104,
+          "job_id": 118604320279
+        }
+      ]
+    }
+  ],
+  "changes": [],
+  "tests": [
+    {
+      "name": "canonical_paper_pnl_healthy_four_ledgers",
+      "status": "PASS",
+      "basis": "Executed source-pinned pure validator from paper_pnl.py blob74ff92edd581e20fea681e2b27ceb07715ef5203 in memory using four synthetic cc1..cc4 USD ledgers at clock1000; realized100 plus open10 equals total110 and execution_authorized=false. Synthetic contract assurance only; no market/profitability evidence."
+    },
+    {
+      "name": "canonical_paper_pnl_stale_open_mark",
+      "status": "PASS",
+      "basis": "Same four synthetic ledgers, one oldest_open_mark_ts909 at as_of1000: total_pnl=None while combined realized remains100. No provider or broker requests."
+    },
+    {
+      "name": "canonical_paper_pnl_missing_runtime",
+      "status": "PASS",
+      "basis": "Same four synthetic ledgers with cc3 runtime_available=false: combined total_pnl=None and realized_pnl=None. Confirms unknown runtime cannot become fabricated aggregate zero."
+    }
+  ],
+  "next_action": "Consume source-pinned catalog/accounting/authority anchors, retain explicit asset and prop-firm blockers, hand canonical-versus-raw P&L consistency and post-restart owner-PC SHA/config/runtime proof to Icarus 1, and classify workflow health by actual job start/steps/annotations and substantive stages rather than overall publication or older billing failures.",
+  "execution_authorized": false
+}

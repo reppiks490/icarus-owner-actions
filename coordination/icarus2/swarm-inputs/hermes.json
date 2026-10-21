@@ -1,0 +1,159 @@
+{
+  "schema_version": "icarus2-swarm-audit-v1",
+  "swarm_id": "HERMES",
+  "observed_at_utc": "2026-10-20T18:18:33.621529Z",
+  "repository_heads": {
+    "reppiks490/Icarus-engine": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+    "reppiks490/Icarus": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7"
+  },
+  "findings": [
+    {
+      "id": "HERMES-CANONICAL-FEDERATION-SCOPE",
+      "status": "OBSERVED",
+      "summary": "The canonical Engine federation manifest identifies six repositories with distinct consumer, data-plane, research-producer, synthetic-assurance and governance roles. These are the current declared scope, not proof that no other relevant repository exists. The ingestion manifest defines 55 sources and the credential contract defines 52 credential families; definitions alone do not prove credential presence or usable access.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "config/federated_repo_evidence.json",
+          "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "config/data_ingestion_manifest.json",
+          "blob_sha": "1ce5c66892020ebd2831dfc78242dee525c6c2bc"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "config/credential_contract.json",
+          "blob_sha": "a531c669a86bbb06300390e0d79b950ca74fae7b"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-PRODUCER-COLLECTION-IS-PARTIAL",
+      "status": "PARTIAL",
+      "summary": "The source snapshot at 2026-10-20T17:29:53.290366+00:00 reports 141102 upstream rows, 63 pages and 127 requests across 14 providers. Seven providers report COLLECTED_PARTIAL, six are blocked, and Bybit reports NO_READY_JOBS. These are producer-reported processing/collection counts, not unique market observations or downstream consumption. Only Alpha Vantage currently supplies derived statistics: four records across five statistical columns.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/provider_collection_v1/research_context.json",
+          "blob_sha": "14b1ffd71dd66a4152aa002823fb5f494b474908"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-CURRENT-AUTH-VERSUS-HISTORICAL",
+      "status": "BLOCKED",
+      "summary": "At the pinned snapshot, Finnhub and Unusual Whales report BLOCKED_AUTHENTICATION with credentials present and zero current rows. Alpaca, Intrinio, Quiver and Tickstream report BLOCKED_MISSING_CREDENTIAL with zero rows. Unusual Whales has a separate historical-only 111-row receipt; it does not replace its current authentication blocker. This evidence is repository- and snapshot-scoped, not a claim about interactive connectors or every future runtime.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/provider_collection_v1/research_context.json",
+          "blob_sha": "14b1ffd71dd66a4152aa002823fb5f494b474908"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/sentinel/data_health.json",
+          "blob_sha": "d0eb17d9329c01adbaf007d054af4c8223880b89"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-HISTORICAL-CORPUS-PROOF-ON-MAIN",
+      "status": "OBSERVED",
+      "summary": "Icarus main already contains the corpus intake/reader and three original historical Databento consumption receipts. The bundle pins native run 39115319263, consumer 7b42eaa528d3137e87f8ae10ea0896944eb4b62b, Engine source a6054cb952c428c7cb2fa1cd9841e04f381666e6, and artifacts 12132181638/12132122538/12132291117 with exact receipt hashes. Historical read/warmup evidence is distinct from a currently running dashboard, fresh free feed entitlement, full history, profitability or live authority. PR 452 remaining open does not prove this capability is absent from main.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/corpus-consumption.json",
+          "blob_sha": "f534038f0f5718429f2ec1e2b96fd82eb47cd50c"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/corpus_evidence.py",
+          "blob_sha": "db34e715c862be4b255fa3e0ee0bb785f23db025"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/corpus_intake.py",
+          "blob_sha": "4944a86e628d0ed10c55abaf9bb4f81a9301e7f8"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-TYPED-PROVIDER-DELIVERY-BRANCH-ONLY",
+      "status": "BRANCH_ONLY",
+      "summary": "Icarus main provider-context normalization retains fields_present and fields_sha256 at brain_sync.py lines 510-511. provider_corpus.py, provider-corpus.json and provider_private_evidence.py were absent at the pinned main commit. Typed-value consumption remains in open draft PR 457 at 46e9306e71e1ece82d7e7eee9c1daa2111c73755; bounded private provider intake remains in open draft Engine 216 at 3e3482a50d6d73b3f7b13705b4c7ed35f42a56a4. Neither branch implementation nor upstream row counts prove main/runtime consumption. This is a handoff for future unreserved work, not resumption of stopped tasks.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/brain_sync.py",
+          "blob_sha": "b26e01d8df8309c7dd0e6be7c0f1be98a2b8787b"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "46e9306e71e1ece82d7e7eee9c1daa2111c73755",
+          "path": "icarus_engine/provider_corpus.py",
+          "blob_sha": "23a9c99e1a558f80a656e089de6e2fa802de2325"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "3e3482a50d6d73b3f7b13705b4c7ed35f42a56a4",
+          "path": "tools/provider_archive_intake.py",
+          "blob_sha": "517cde2be5b532bae718e203ca2c84b1247b6433"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-JOB-START-BILLING-BLOCKER",
+      "status": "BLOCKED",
+      "summary": "Engine depth-vault run 39418451662, job 118613128501, completed as failure without starting the job. Its check-run annotation explicitly reports failed recent account payments or a spending-limit problem. This is an external job-start blocker, not empirical strategy failure or proof of a data defect. No rerun, purchase or spending-limit change was performed.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "689a02fefc8cb1d084b6427461b6e736eacdbeb6",
+          "path": ".github/workflows/depth-vault.yml"
+        }
+      ]
+    },
+    {
+      "id": "HERMES-DATED-DOCUMENT-CLAIMS",
+      "status": "DATED",
+      "summary": "ICARUS_STATE.md and DATA_GAP_LEDGER.md retain October 16 provider summaries, while the pinned October 20 receipts and Sentinel are newer. Static LIVE/CLOSED_INTERNAL manifest or ledger labels must not override current partial collection, authentication failure, separate source-lane counts, unknown licensing or unverified consumer reads. Preserve dated history; evaluate each stage from its actual evidence and source-native freshness policy.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "ICARUS_STATE.md",
+          "blob_sha": "532daff8ffc587ef00d2974d1d1179201a39c5fe"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md",
+          "blob_sha": "23591df48aa70b5791dcb938f13eda48ef175b24"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/sentinel/data_health.json",
+          "blob_sha": "d0eb17d9329c01adbaf007d054af4c8223880b89"
+        }
+      ]
+    }
+  ],
+  "changes": [],
+  "tests": [],
+  "next_action": "Use these source-pinned observations in the Icarus 2 integration cycle. Keep credential presence, authentication, entitlement, reported collection, actual consumer reads, freshness, licensing and measured value separate; UNKNOWN stays UNKNOWN. Route branch-only delivery and dated-document gaps through new nonconflicting claims after checking Icarus 1 scope. Do not rerun billing-blocked workflows.",
+  "execution_authorized": false
+}

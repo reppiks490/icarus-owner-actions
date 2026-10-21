@@ -1,0 +1,157 @@
+{
+  "schema_version": "icarus2-swarm-audit-v1",
+  "swarm_id": "MNEMOSYNE",
+  "observed_at_utc": "2026-10-20T18:19:22.492071Z",
+  "repository_heads": {
+    "reppiks490/Icarus": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+    "reppiks490/Icarus-engine": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+    "reppiks490/divine-providence": "27ae69c593ede3019957100cd401625bd2424f43",
+    "reppiks490/icarus-causal-router": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+    "reppiks490/icarus-csv-evidence-lab": "b4bc06a378aade2d14e27bb289108a6f645f3fc4",
+    "reppiks490/icarus-owner-actions": "adee6b0842a253a4a4cdc8444c7932063720c08a"
+  },
+  "findings": [
+    {
+      "id": "MNEMOSYNE-HYBRID-SUBSTANTIVE-BACKLOG",
+      "status": "OPEN_INTEGRATION_GAP",
+      "summary": "The four canonical hybrid health records report 1531 unresolved requests: robustness_guardian 384, alpha_synthesis 384, microstructure_sensor_grid 380 and advanced_csv 383. The pinned tree contains 1536 immutable request files and six result files; health recognizes five resolved requests, so six files must not be reported as six verified completions. Recompute each request/result/read-back binding before closure; retain oldest-unresolved-first recovery without inventing missed observations.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/hybrid_loop_fabric_v1/health/robustness_guardian.json"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/hybrid_loop_fabric_v1/health/alpha_synthesis.json"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/hybrid_loop_fabric_v1/health/microstructure_sensor_grid.json"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/hybrid_loop_fabric_v1/health/advanced_csv.json"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/hybrid_loop_fabric_v1/CONTRACT.md",
+          "blob_sha": "a2aa7059288144217691a419bb7e9e47289c2056"
+        }
+      ]
+    },
+    {
+      "id": "MNEMOSYNE-LIVENESS-IS-NOT-RESEARCH",
+      "status": "OBSERVED_LIVENESS_ONLY",
+      "summary": "Native specialist and CSV finalizations are fresh on October20 and explicitly DURABILITY_RECEIPT_ONLY. The corresponding substantive latest records inspected remain dated September29. The Engine peer packet marks its four local lanes DURABILITY_ONLY with substantive_research_evidence=false and worker_execution_observed=false; advanced_csv is REMOTE_PEER_UNREAD. The latest accepted Icarus packet has peer_substantive_lane_count=0. A recurring integration cycle must report last liveness separately from last substantive evidence and may not call fresh persistence successful cognition.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/interrepo/latest.json",
+          "blob_sha": "77aa8b654c419072b76c324a0e63e54fc41f514f"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/agent_fabric/robustness_guardian/latest.json"
+        },
+        {
+          "repository": "reppiks490/icarus-csv-evidence-lab",
+          "commit": "b4bc06a378aade2d14e27bb289108a6f645f3fc4",
+          "path": "automation_intelligence/advanced_csv/latest.json"
+        },
+        {
+          "repository": "reppiks490/icarus-csv-evidence-lab",
+          "commit": "b4bc06a378aade2d14e27bb289108a6f645f3fc4",
+          "path": "automation_intelligence/advanced_csv/finalization_state.json"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "automation_intelligence/federation/icarus_engine_acceptance.json",
+          "blob_sha": "f325c118bcbbfd733a52e91db5ddc3c8868b2415"
+        }
+      ]
+    },
+    {
+      "id": "MNEMOSYNE-PROVIDER-VALUES-NOT-ON-MAIN",
+      "status": "OPEN_INTEGRATION_GAP",
+      "summary": "Current Icarus main brain_sync.py499-525 reduces provider_collection and SEC RESEARCH_CONTEXT_DOCUMENT values to fields_present, fields_sha256 and fields_bytes. This verifies provenance but does not retain typed feature values. provider_corpus.py is absent from the pinned main tree. PR457 remains open and draft at46e9306e71e1ece82d7e7eee9c1daa2111c73755; its provider-value implementation must not be described as deployed or merged consumption. This audit did not resume or modify that stopped task.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/brain_sync.py",
+          "blob_sha": "b26e01d8df8309c7dd0e6be7c0f1be98a2b8787b"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "46e9306e71e1ece82d7e7eee9c1daa2111c73755",
+          "path": "icarus_engine/provider_corpus.py"
+        }
+      ]
+    },
+    {
+      "id": "MNEMOSYNE-PACKET-ACKNOWLEDGEMENT-IS-REVISION-SPECIFIC",
+      "status": "REVISION_SPECIFIC_EVIDENCE",
+      "summary": "The current Engine packet source_commit=df67307a6923c1ff2d02047c74591d4e2dbe8963 and packet_id=a85ea032c3b4d7c94cd4ef1ddfef1bafabf4843e527136d63476243f9e9221aa differ from the Icarus acceptance's prior packet_id=4b99ac9a4abb77e674fe48d7a6bda1c92d35c7713ef268661cc8d94c7c98ce22. Engine explicitly labels that acknowledgement VERIFIED_PRIOR_PACKET. peer_packet_fresh=true in an acceptance is freshness at acceptance, not current freshness. Preserve source commit, exact Git blobs, packet hash, receipt availability,30-minute packet age and5-minute future-skew policy before attributing current acceptance; a newer unaccepted packet is not a code failure by itself.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/interrepo/latest.json",
+          "blob_sha": "77aa8b654c419072b76c324a0e63e54fc41f514f"
+        },
+        {
+          "repository": "reppiks490/Icarus-engine",
+          "commit": "2bf88a41c10cd0aa8fba5905dd0b12bf07339492",
+          "path": "automation_intelligence/mcp_interface/icarus_consumer_contract.json"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "automation_intelligence/federation/icarus_engine_acceptance.json",
+          "blob_sha": "f325c118bcbbfd733a52e91db5ddc3c8868b2415"
+        }
+      ]
+    },
+    {
+      "id": "MNEMOSYNE-SCIENTIFIC-AUTHORITY-CEILINGS",
+      "status": "RESEARCH_AUTHORITY_ONLY",
+      "summary": "Canonical local research Brain sync requires a clean exact source revision and retains causal, multiple-testing, latency, ablation, calibration, OOD, deterministic-rerun and independent-review gates as unresolved where its workflow does not establish them. LearningFabric.intelligence_snapshot is a read-only receipt-timed forecast consumer and explicitly does not harvest, train or settle on read. Observatory evidence is bounded fixture/engineering observation with live_engine=not_observed; causal-router is synthetic research assurance. None of those artifacts establishes a deployed engine, empirical alpha, automatic model promotion or live-order authority.",
+      "evidence": [
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/research_brain_sync.py",
+          "blob_sha": "24b1c154270fea861aa178bba53e10f11beadac8"
+        },
+        {
+          "repository": "reppiks490/Icarus",
+          "commit": "10a9e2072cb93b5e09f5396340f9c2ba19dd6dd7",
+          "path": "icarus_engine/learning_fabric.py",
+          "blob_sha": "5cff143a7789aa0c084bf1344ec2d824882be89e"
+        },
+        {
+          "repository": "reppiks490/divine-providence",
+          "commit": "27ae69c593ede3019957100cd401625bd2424f43",
+          "path": "docs/ICARUS_OBSERVATORY.md"
+        },
+        {
+          "repository": "reppiks490/icarus-causal-router",
+          "commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+          "path": "README.md"
+        }
+      ]
+    }
+  ],
+  "changes": [],
+  "tests": [],
+  "next_action": "For each bounded recurring cycle, pin all repository heads and verify source Git blobs; separately classify transport, persistence, actual typed consumption, substantive work and scientific authority. Validate exact oldest request/result/read-back bindings, expose unresolved backlog and liveness-versus-substantive ages, recompute peer packet freshness and revision-specific acceptance, and hand only an unreserved evidence-backed repair to its owning swarm. Keep draft provider features and the owner's unobserved runtime explicit. Do not invoke training, protected holdouts, provider collection or model promotion as part of this structural cycle.",
+  "execution_authorized": false
+}
