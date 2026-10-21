@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-047-invalid-handoff-id-repair",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:28:47.182862+00:00",
+  "type": "NOTE",
+  "phase": "final-coordination-record-validation",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "summary": "Repair only the newly rejected045 handoff identifier, which duplicated035. All previously valid immutable event records remain unchanged. Original malformed045 bytes preserved verbatim under coordination/rejected and Git commit988b07a. Corrected045 uses a unique identifier with provenance. Runtime/source/authority unaffected. Windows final broad suite has now completed successfully; final all-eight workflow receipt follows.",
+  "evidence": [
+    "coordination/rejected/icarus1-20261020-system-recovery/045-duplicate-event-id.original.json",
+    "git-blob:001670c87c6dafa60eec09f11c7dc01801fc2618",
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/045-as-is-operator-delivery-handoff.json",
+    "job:119537259528:success"
+  ],
+  "dependencies": [],
+  "next_action": "Validate and compile the whole coordination tree, publish exact final all-eight success, then leave every source/documentation lease released.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
