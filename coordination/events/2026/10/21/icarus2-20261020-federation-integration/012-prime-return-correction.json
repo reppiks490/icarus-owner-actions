@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-21T16:19:50.366715Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "012-prime-return-correction",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6320805708",
+    "supersedes:011-prestart-preflight-plan"
+  ],
+  "next_action": "Finish targeted PRvalidation andcompact Prime takeoverbrief. Do nottrigger orschedule softwarestartup.",
+  "phase": "prime-return-preparation",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner clarifies: Icarus Prime THE WORKER returns inabout40minutes. Supersedes011 interpretation of software startup/deadline. No systemrestart is announced or authorized bythis timing. Corrected ownPR462comment. Icarus2prepares verifiedPRdecisions andminimal takeoverqueue; preservePrimecurrentclaims andongoingrendererwork. Broadlooppause unchanged.",
+  "targets": [],
+  "type": "UPDATE"
+}
