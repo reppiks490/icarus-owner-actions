@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:30:15.121Z",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "event_id": "20261021-icarus1-049-final-no-leases",
+  "type": "RELEASE",
+  "phase": "published-operator-delivery-no-reservations",
+  "summary": "Final explicit release after all-eight-green receipt. Icarus1 holds no source, test, workflow or documentation path leases. Public startup guide, exact source verification and Icarus2 continuation are durable. Limited as-is paper use authorized; full-system readiness, real owner-PC operation, account integration and accuracy recovery remain open. No live broker authority.",
+  "evidence": [
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/048-final-hosted-verification-handoff.json",
+    "coordination/summaries/icarus1-20261020-system-recovery.json"
+  ],
+  "dependencies": [
+    "external:owner-PC-local-execution"
+  ],
+  "next_action": "Read current source/summary and coordinate new claims before further implementation. Keep live orders disabled."
+}
