@@ -1,0 +1,112 @@
+{
+  "at_utc": "2026-10-21T20:59:59.249941Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "event_id": "021-restart-test-and-visual-verification",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/464",
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-restart-verification-20261021.md@fb79a8a7cd28a7c63223ec9105f82d625789bef6"
+  ],
+  "execution_authorized": false,
+  "next_action": "Observe Windows CI without reruns; one agent is attempting a safely contained actual-launcher scratch rehearsal or will report inability. Prime must confirm actual installed-PC access and complete release/operating gates. No source scope expansion or new broad loop.",
+  "phase": "reviewed-restart-test-windows-ci-pending-independent-launcher-audit",
+  "pr": {
+    "base": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "base_branch": "icarus1/restart-readiness-20261020",
+    "head": "dd052a8c4a46ac2811856a28eba735acd633e68e",
+    "number": 464,
+    "url": "https://github.com/reppiks490/Icarus/pull/464"
+  },
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "scope_limit": "Not a deployed release, full owner-PC restart or universal data/adapter readiness.",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Reviewed restart persistence PR464 is pushed atdd052a8 (one205line test against Prime2a).90focused passed, independent newtest1passed, meaningful scratch mutation detected/reset. Actual local Chromium43cases and requiredAPI4cases passed; all4worldbrowser scripts exited0, errors/writes empty. Linux hosted2checks success; Windows2pending. ExistingCIcancellation is not rewritten. MissingPythonSDK was local setup only; hostedvisual workflow explicitly installs it. Required-import skip enforcement remains a Prime follow-up. ActualPCaccess still unverified; owner believed terminals included PC.",
+  "targets": [
+    {
+      "path": "tests_engine/test_restart_persistence.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "terminal_observations": {
+    "codespaces_total": 0,
+    "cwd": "/workspace",
+    "platform": "Linux",
+    "powershell_available": false,
+    "prime_pc_access_confirmed": false,
+    "windows_mount": false
+  },
+  "type": "WAITING",
+  "verification": {
+    "browser_cases_passed": 43,
+    "focused_passed": 90,
+    "mutation_detected": true,
+    "parent_newtest_passed": 1,
+    "required_api_browser_passed": 4,
+    "visual_scripts": [
+      {
+        "argv": [
+          "/workspace/Icarus/.venv/bin/python",
+          "-m",
+          "pytest",
+          "tests_engine/test_workspace_api.py",
+          "-k",
+          "real_browser or settings_ or cached_page",
+          "-q",
+          "-o",
+          "addopts="
+        ],
+        "exit_code": 0,
+        "name": "required-api-browser",
+        "seconds": 7.65
+      },
+      {
+        "argv": [
+          "node",
+          "tests_engine/browser_shadow_twin.cjs"
+        ],
+        "exit_code": 0,
+        "name": "shadow_twin",
+        "seconds": 6.86
+      },
+      {
+        "argv": [
+          "node",
+          "tests_engine/browser_depth.cjs"
+        ],
+        "exit_code": 0,
+        "name": "depth",
+        "seconds": 87.28
+      },
+      {
+        "argv": [
+          "node",
+          "tests_engine/browser_cinema.cjs"
+        ],
+        "exit_code": 0,
+        "name": "cinema",
+        "seconds": 57.01
+      },
+      {
+        "argv": [
+          "node",
+          "tests_engine/browser_worlds.cjs"
+        ],
+        "exit_code": 0,
+        "name": "worlds",
+        "seconds": 94.77
+      }
+    ]
+  }
+}
