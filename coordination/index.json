@@ -1764,37 +1764,22 @@
       "branch": "icarus2/federation-integration-20261020",
       "cooperates_with": [],
       "coordination_mode": "independent",
-      "declared_paths": [
-        "coordination/icarus2/cycles/icarus2-20261021T105603Z.json"
-      ],
-      "declared_targets": [
-        {
-          "path": "coordination/icarus2/cycles/icarus2-20261021T105603Z.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
+      "declared_paths": [],
+      "declared_targets": [],
       "dependencies": [
-        "session:icarus1-20261020-system-recovery",
-        "pr:reppiks490/icarus-owner-actions#60"
+        "session:icarus1-20261020-system-recovery"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-21T10:58:04.475593Z",
-      "latest_summary": "Begin finite Icarus2 cycle icarus2-20261021T105603Z from verified prior immutable cycle and fresh canonicalmanifest atEngine dfaf48f7f3782a7a28ba150fcd09c16fb4299c3a. Five native read-only specialist scopes spawned. Inspect all sixrepos,22anchors,openchanges/currentCI andsource-consumerlinks; challenge evidence and select only a reproduced unreserved defect. ExistingPR60 remainsdraft, Icarus1 exactsession015 reservedwork untouched. This PLAN reserves only thiscycle receipt; anycode mutation requires a separate narrowclaim. Permanentworker identity preserved; noautomation/stop-control/scheduler/liveauthority changes.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-21T14:38:20.718944Z",
+      "latest_summary": "Owner cancels the expensive broad prompted loop and designates Icarus1 as Icarus Prime. Icarus2 hourly automation6ad7b206db408191bfd5aeccfddde143 paused and read back disabled under this newer explicit owner direction. No native specialists remain active. Stop incomplete broad cycleicarus2-20261021T105603Z as-is; no further sweep or cycle publication is required. Release old broad reservations; retain Icarus2 identity. Icarus2 supports Prime restart critical path with minimal delta handoffs and focused verification. Prime notified directly on PR462; requested one disjoint blocker/currenthead review target.",
+      "latest_type": "RELEASE",
       "model_family": "openai",
-      "phase": "bounded-federation-revalidation",
+      "phase": "focused-restart-support",
       "pr": null,
       "reclaimable": false,
-      "reserved_paths": [
-        "coordination/icarus2/cycles/icarus2-20261021T105603Z.json"
-      ],
-      "reserved_targets": [
-        {
-          "path": "coordination/icarus2/cycles/icarus2-20261021T105603Z.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "icarus2-20261020-federation-integration",
       "stale": false,
       "status": "active"
@@ -1807,7 +1792,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T13:53:14.701507Z",
+  "generated_at_utc": "2026-10-21T14:40:19.898513Z",
   "owner_status": {
     "claude": {
       "active": false,
