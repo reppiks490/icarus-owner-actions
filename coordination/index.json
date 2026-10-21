@@ -1147,7 +1147,11 @@
         "docs/superpowers/plans/2026-10-20-workspace-api.md",
         "icarus_engine/workspace_jobs.py",
         "tests_engine/test_workspace_jobs.py",
-        "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
+        "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
+        "icarus_engine/workspace-client.js",
+        "tests_engine/test_workspace_client.py",
+        "docs/superpowers/plans/2026-10-21-workspace-client.md",
+        "icarus_engine/dashboard.html"
       ],
       "declared_targets": [
         {
@@ -1241,6 +1245,22 @@
         {
           "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_client.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-21-workspace-client.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1249,11 +1269,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T05:24:32.657Z",
-      "latest_summary": "Icarus 1 resumes stable runtime branch from published6ac and local71949 read APIs. Root now owns scoped jobs integration; the helper stopped at its usage limit, and no replacement will be launched. Per-workspace transaction locks replace global serialization: busy selected snapshots explicitly unavailable while healthy siblings remain readable. Independent backend review found invalid preset-cost admission and conflicting query-scope controls; both have observed failing regressions and are being corrected. Published6ac Linux tests and three contract workflows passed; Windows acceptance failed at a position assertion while background workers ran, under investigation. Icarus2 retains its separate federation integration paths. No renderer switch, provider requests, restart, merge or live authority.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-21T11:54:24.606Z",
+      "latest_summary": "Icarus 1 preserves runtime recovery identity/branch and consumes Icarus2 HANDOFF004/PLAN005, without touching its cycle or integration-brain paths. Backend full run caught one legacy flatten error-field regression (3649passed/1failed); the alias is restored and fresh full verification is running. Extend root scope only to a pure explicit workspace client and tests/plan, next bootstrap/main module integration. Context must be immutable before linked modules; no parent fallback, foreign jobs, stale revision substitution or unauthenticated downloads. Shared evidence is explicitly read-only; unsupported runtime/global actions remain unavailable. No CC renderer switch in the initial client task; no restart/merge/provider collection/live authority.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "scoped-controls-job-http-verification",
+      "phase": "context-client-before-common-renderer",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1279,7 +1299,11 @@
         "docs/superpowers/plans/2026-10-20-workspace-api.md",
         "icarus_engine/workspace_jobs.py",
         "tests_engine/test_workspace_jobs.py",
-        "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
+        "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
+        "icarus_engine/workspace-client.js",
+        "tests_engine/test_workspace_client.py",
+        "docs/superpowers/plans/2026-10-21-workspace-client.md",
+        "icarus_engine/dashboard.html"
       ],
       "reserved_targets": [
         {
@@ -1373,6 +1397,22 @@
         {
           "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_client.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-21-workspace-client.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1385,114 +1425,33 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "integration_brain",
-        "tests/test_integration_brain.py",
-        "tests/test_integration_brain_transport.py",
-        "tests/test_icarus2_cli.py",
-        "docs/icarus2-integration-brain.md",
-        "coordination/icarus2/DESIGN.md",
-        "coordination/icarus2/PLAN.md",
-        "coordination/icarus2/swarm-inputs",
-        "coordination/icarus2/cycles/icarus2-20261020T225043Z.json"
+        "coordination/icarus2/cycles/icarus2-20261021T105603Z.json"
       ],
       "declared_targets": [
         {
-          "path": "integration_brain",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_integration_brain.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_integration_brain_transport.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_icarus2_cli.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "docs/icarus2-integration-brain.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/DESIGN.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/PLAN.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/swarm-inputs",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/cycles/icarus2-20261020T225043Z.json",
+          "path": "coordination/icarus2/cycles/icarus2-20261021T105603Z.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
         "session:icarus1-20261020-system-recovery",
-        "pr:reppiks490/icarus-owner-actions#60",
-        "external:owner-PC-runtime-unverified"
+        "pr:reppiks490/icarus-owner-actions#60"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-21T09:24:44.113915Z",
-      "latest_summary": "Handoff to exact session icarus1-20261020-system-recovery: Icarus2 helper is reviewed at owner-actions PR60 df32dabd064510ce9934cea09c5140ff3cdffa21. Five concrete collector/evidence regressions repaired; local113focused and170full tests plus8subtests passed; existing coordination-fabric run39576505166 ran successfully onPython3.11/3.12/3.13 (not a hosted helper-test claim). Actual capture observed6repos/22anchors/46openPRs; five bounded CI-history gaps and Divine research/Windows failures remain. Latest Icarus1 event015/PR462 at6ac652e has actualWindows failure118944172965 alongside successfulLinux; earlier4368 green is historical. All Icarus1 reserved runtime/recovery paths left untouched. Later4repohead drift requires nextcycle; no all-system completion, runtime restart, providercollection or execution authority. Two specialist audits were interrupted by native usage limits; retained findings are partial. No scheduler or worker-control changes in this cycle.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-21T10:58:04.475593Z",
+      "latest_summary": "Begin finite Icarus2 cycle icarus2-20261021T105603Z from verified prior immutable cycle and fresh canonicalmanifest atEngine dfaf48f7f3782a7a28ba150fcd09c16fb4299c3a. Five native read-only specialist scopes spawned. Inspect all sixrepos,22anchors,openchanges/currentCI andsource-consumerlinks; challenge evidence and select only a reproduced unreserved defect. ExistingPR60 remainsdraft, Icarus1 exactsession015 reservedwork untouched. This PLAN reserves only thiscycle receipt; anycode mutation requires a separate narrowclaim. Permanentworker identity preserved; noautomation/stop-control/scheduler/liveauthority changes.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "bounded-cycle-complete-waiting-review",
+      "phase": "bounded-federation-revalidation",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "integration_brain",
-        "tests/test_integration_brain.py",
-        "tests/test_integration_brain_transport.py",
-        "tests/test_icarus2_cli.py",
-        "docs/icarus2-integration-brain.md",
-        "coordination/icarus2/DESIGN.md",
-        "coordination/icarus2/PLAN.md",
-        "coordination/icarus2/swarm-inputs",
-        "coordination/icarus2/cycles/icarus2-20261020T225043Z.json"
+        "coordination/icarus2/cycles/icarus2-20261021T105603Z.json"
       ],
       "reserved_targets": [
         {
-          "path": "integration_brain",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_integration_brain.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_integration_brain_transport.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_icarus2_cli.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "docs/icarus2-integration-brain.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/DESIGN.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/PLAN.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/swarm-inputs",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination/icarus2/cycles/icarus2-20261020T225043Z.json",
+          "path": "coordination/icarus2/cycles/icarus2-20261021T105603Z.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -1508,7 +1467,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T09:37:36.458231Z",
+  "generated_at_utc": "2026-10-21T11:54:34.423982Z",
   "owner_status": {
     "claude": {
       "active": false,
