@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-10-21T21:44:33.170072Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "025-brain-event-inventory-repair-claim",
+  "evidence": [
+    "blob:reppiks490/Icarus:icarus_engine/brain_sync.py@b26e01d8df8309c7dd0e6be7c0f1be98a2b8787b",
+    "commit:reppiks490/Icarus-engine@b83eb07e6e6cd4bb43e9326c46521013f54afe74",
+    "tree:reppiks490/Icarus-engine@54e042d732d3d7d2c7bf944e1326bf9faaaff3fc"
+  ],
+  "execution_authorized": false,
+  "next_action": "Capture red regression, minimal repair, focused+broader checks and independent review; dedicated PR only, no main merge, deployment, collection or live execution.",
+  "phase": "bounded-brain-event-inventory-repair",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Independently verified native Brain event inventory defect. At Engineb83, exact directory tree54e042d has1076JSON files, ContentsAPI returns1000, all76omissions are allowlisted MACRO_AUTOMATION audit envelopes. Consumer slices before processed checks and can reportgreen; owner-runtime actual misses unobserved. Claim only Brain sync and its existing test module for regression-first complete pinned-tree fallback, explicit truncation rejection and bounded unseen-blob progress; preserve hashes, strict contract, research-only authority and gates. No producer/scheduler/recovery/runtime server changes. Existing open BrainPR330 touches different files.",
+  "targets": [
+    {
+      "path": "icarus_engine/brain_sync.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_brain_sync.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "CLAIM"
+}
