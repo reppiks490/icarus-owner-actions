@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-21T10:58:04.475593Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/icarus-owner-actions#60"
+  ],
+  "event_id": "005-cycle2-plan",
+  "evidence": [
+    "cycle:coordination/icarus2/cycles/icarus2-20261020T225043Z.json",
+    "commit:reppiks490/icarus-owner-actions@7f499265f59b183fc8ab54a5e53a0637bc5a0e90",
+    "manifest:reppiks490/Icarus-engine@dfaf48f7f3782a7a28ba150fcd09c16fb4299c3a:config/federated_repo_evidence.json"
+  ],
+  "next_action": "Bounded read-only federationcapture andparallel cross-review; publish justifiedrepair or explicitNO_MATERIAL_DELTA/BLOCKED with immutable readback.",
+  "phase": "bounded-federation-revalidation",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Begin finite Icarus2 cycle icarus2-20261021T105603Z from verified prior immutable cycle and fresh canonicalmanifest atEngine dfaf48f7f3782a7a28ba150fcd09c16fb4299c3a. Five native read-only specialist scopes spawned. Inspect all sixrepos,22anchors,openchanges/currentCI andsource-consumerlinks; challenge evidence and select only a reproduced unreserved defect. ExistingPR60 remainsdraft, Icarus1 exactsession015 reservedwork untouched. This PLAN reserves only thiscycle receipt; anycode mutation requires a separate narrowclaim. Permanentworker identity preserved; noautomation/stop-control/scheduler/liveauthority changes.",
+  "targets": [
+    {
+      "path": "coordination/icarus2/cycles/icarus2-20261021T105603Z.json",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "PLAN"
+}
