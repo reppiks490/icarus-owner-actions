@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-10-21T16:24:20.878631Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/Icarus#452"
+  ],
+  "event_id": "013-corpus-fixture-claim",
+  "evidence": [
+    "main:reppiks490/Icarus@617d3e4baf5bef337e0b1b43ad51bdc67ee420d7",
+    "local-tests:corpus-selection:1failed166passed",
+    "pr:reppiks490/icarus-owner-actions#51@1837a3ae7827c901377b6c413a857f5d600a8199"
+  ],
+  "next_action": "Repaironlyexistingfixture, rerunexistingcorpusselection andindependentlyreview; preparecompactPrime takeoverbrief. No productionconfigurationchanges/providerrequests.",
+  "phase": "prime-return-corpus-test-repair",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Focused preparation beforePrimeworker returns. CurrentIcarusmain617d3e4corpus/intake/archive/collection selection reproduced1failure166passed: default-corpus fixture assumesCLabsent fromallcurrentdefaultprofiles, butdefaultuniverse includesCL. Existingtest must verify noopt-in expansion againsta controlled NQ-only baseline, ratherthan mutableoperator defaults. Claimonlytoolintake testfile; preserveproductioncode/defaults/rawdata boundaries. OwnerPR51review58tests8subtests passed; currentheadlines correctlyseparate2current/17stale/19nonterminal. PublishedPrime68numericfutures6E/6J/6B/6A stillreject inread-onlyNodeprobe, alreadyPrime024implementation scope; no takeover.",
+  "targets": [
+    {
+      "path": "tests/test_provider_corpus_intake.py",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "CLAIM"
+}
