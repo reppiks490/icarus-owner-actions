@@ -1189,7 +1189,10 @@
         "tests_engine/test_market_universe.py",
         "icarus_engine/workspace_performance.py",
         "tests_engine/test_workspace_performance.py",
-        "tests_engine/test_execution_controls.py"
+        "tests_engine/test_execution_controls.py",
+        "tests_engine/test_evolution_ui_status.py",
+        "tests_engine/test_native_validation_ui.py",
+        ".github/workflows/ui-visual-contract.yml"
       ],
       "declared_targets": [
         {
@@ -1451,6 +1454,18 @@
         {
           "path": "tests_engine/test_execution_controls.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_evolution_ui_status.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_native_validation_ui.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1459,11 +1474,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T17:24:06.500Z",
-      "latest_summary": "Published91fb8c7280a287012d3dce9004ad9833267b8b68 on draft Icarus PR462. Core80c441d, persisted-row validation485d264, standalone cached-reader ef30f3d; receipt-only34path merge5697e71 incorporates upstreambe46d4b without runtime/test changes. Fresh full3790passed,4skipped,111subtests in304.42s; focused484 and separate shared-clock1passed; unchanged cinema passed errors[]/writes[].20tested source hashes unchanged through publication. Numeric futures/control receipts, draft CAS/reservation, typed core/CSV/jobs, navigation-only ledger cards and selected Shadow Twin implemented. Icarus2 persisted-row finding reproduced3failed/2controls, now corrected by shared validation/as-of clock; valid empty ledgers stay zero. Independent final review remains limited, root native review only. CC production route switch still gated on Task3panels/evidence/performance and Task4parity; no system restart/live/provider acquisition/main release merge.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-21T17:57:16.344Z",
+      "latest_summary": "Published91fb8c7 now has all6hosted workflows success including Linux/Windows. Unpublished Task3: explicit21module/5inline readers, rejecting Commissioning POST, cached selected-market route and unknown-session truth, unavailable/shared panel labels, reusable5source performance and preserved corpus/A200/connections component. Red regressions observed before each boundary; current five-source evidence/history/performance12passed, module/scope32passed and original8legacy performance browser contracts passed with installedChromium. Extend narrow scope to2standalone UI harnesses so they provide explicit client transport after migration, plus ui-visual-contract workflow for required Python browser acceptance. Then enable common CC routes only after Task3checks, retain shared_dashboard=False rollback and verify actual server-injected5route desktop/mobile identity/parity. Do not infer live subsystem operation from unavailable panels or green fixtures; NO_GO remains.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "contextual-panels-and-evidence-integration",
+      "phase": "contextual-panels-and-five-route-acceptance",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1531,7 +1546,10 @@
         "tests_engine/test_market_universe.py",
         "icarus_engine/workspace_performance.py",
         "tests_engine/test_workspace_performance.py",
-        "tests_engine/test_execution_controls.py"
+        "tests_engine/test_execution_controls.py",
+        "tests_engine/test_evolution_ui_status.py",
+        "tests_engine/test_native_validation_ui.py",
+        ".github/workflows/ui-visual-contract.yml"
       ],
       "reserved_targets": [
         {
@@ -1793,6 +1811,18 @@
         {
           "path": "tests_engine/test_execution_controls.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_evolution_ui_status.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_native_validation_ui.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1846,7 +1876,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T17:25:10.351581Z",
+  "generated_at_utc": "2026-10-21T17:57:25.479731Z",
   "owner_status": {
     "claude": {
       "active": false,
