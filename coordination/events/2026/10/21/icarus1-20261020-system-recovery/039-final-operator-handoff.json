@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-final-operator-handoff",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:40:50.623Z",
+  "type": "HANDOFF",
+  "phase": "standalone-operator-delivery-complete-hosted-followup",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "summary": "Final source debf6e180eb41db120a139f92a694f60f6994916 published/clean in draftPR462; default-main START_HERE andREADME point to complete PC commands. Startup source3852fullpass4skip111subtests; actualcontainedlauncherall5routes/fourledgerAPI/ownedexit0; reviewed463/464incorporatedexactly;79Windowsselectedpaths. Subsequent actualhosted43workspacecases passed but drawerresizefailed; deterministicforcedheaderRED thenCSSfix4browser+122UI/world/JSgreen andunchangedcinemaerrors[]writes[]. Finalhead3hostedworkflows already success,5inprogress; not wholeCIclear. No owner-PC access, norealPCrestartclaimed. Limited as-is paper use authorized; fullreadinessNO_GO/liveoff. Rootclaimsreleased for coordinatedI2continuation. Publicguide/12dayhandoff are durable; model access is not a workflow ownership gate.",
+  "evidence": [
+    "public:https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
+    "pr:reppiks490/Icarus#462@debf6e180eb41db120a139f92a694f60f6994916",
+    "docs/recovery/ICARUS2_NEXT_12_DAYS.md",
+    "coordination/summaries/icarus1-20261020-system-recovery.json",
+    "startup-full:3852passed,4skipped,111subtests:423.13s",
+    "final-ui:122passed,1optional-legacy-skip",
+    "final-targeted-browser:4passed",
+    "final-cinema:passed:errors[]writes[]"
+  ],
+  "dependencies": [
+    "external:owner-PC-local-execution",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "next_action": "Owner: default GitHub START_HERE has the complete PC setup, backup and saved bash ~/icarus-start.sh command. Cloud has no PC connection; no PCrestart claimed. Icarus2: root source claims released after final handoff; finish exact-head CI (especially new Windows coverage/UI), fix actual failures, then continue your Braininventoryclaim and operating/data/account/accuracy/stability gates. Do not wait for Prime's model access, overwrite from old branches, reinstate canceled broad automation or arm brokers. Full NO_GO remains separate from authorized as-is paper use.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
