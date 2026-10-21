@@ -1185,7 +1185,8 @@
         "icarus_engine/experience-ui.js",
         "tests_engine/browser_cinema.cjs",
         "icarus_engine/experience-ui.css",
-        "tests_engine/test_workspace_ui.py"
+        "tests_engine/test_workspace_ui.py",
+        "tests_engine/test_market_universe.py"
       ],
       "declared_targets": [
         {
@@ -1431,6 +1432,10 @@
         {
           "path": "tests_engine/test_workspace_ui.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_market_universe.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1439,11 +1444,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T13:53:04.673Z",
-      "latest_summary": "Extend existing common renderer lease only by tests_engine/test_workspace_ui.py for a pure typed action/draft helper. Supporting implementer owns workspace-ui.js and that test file under this session; client prerequisite implementer owns workspace-client.js/test_workspace_client.py. Root owns dashboard.html/server.py/command-centers-ui.js/shadow-twin-ui.js and browser integration tests; no overlapping edits. Desktop containing-header regression reproduced overflow and now both desktop/mobile deterministic cases pass with inset origin correction; original cinema contract running. Preserve Icarus2 federation scope and quota-limited review evidence.",
+      "last_event_at_utc": "2026-10-21T17:03:59.362Z",
+      "latest_summary": "Core phase focused129passed; full run3770passed/4skipped/111subtests plus2failures. Historical-job browser fixture used omitted JSON csv rather than actual authenticated download; corrected case now passes. Market-universe hybrid fixture invents receipt received_at=fetched_now+1ms, which can lie in the future or beyond its rounded updated timestamp; diagnose under fixed clock and correct fixture only, preserving all production future-time rejection. Extend narrow reservation to tests_engine/test_market_universe.py, no market-universe runtime change. Published68acaec all6hosted success. Cached market adapter implementation continues natively after supporting worker usage limit; no replacement reviewer or final clear.",
       "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "common-core-renderer",
+      "phase": "core-renderer-full-verification",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1507,7 +1512,8 @@
         "icarus_engine/experience-ui.js",
         "tests_engine/browser_cinema.cjs",
         "icarus_engine/experience-ui.css",
-        "tests_engine/test_workspace_ui.py"
+        "tests_engine/test_workspace_ui.py",
+        "tests_engine/test_market_universe.py"
       ],
       "reserved_targets": [
         {
@@ -1753,6 +1759,10 @@
         {
           "path": "tests_engine/test_workspace_ui.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_market_universe.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1806,7 +1816,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T16:58:45.299752Z",
+  "generated_at_utc": "2026-10-21T17:04:10.204966Z",
   "owner_status": {
     "claude": {
       "active": false,
