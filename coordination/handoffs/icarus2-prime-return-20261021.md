@@ -7,7 +7,7 @@ Owner direction: Icarus1 is now **Icarus Prime**; stable session remains `icarus
 | PR | Verified result | Scope |
 |---|---|---|
 | [Engine #226](https://github.com/reppiks490/Icarus-engine/pull/226) `a02c781c` | 10 regressions reproduced; 57 local tests passed; independent review CLEAR; 12 CI checks reported successful | Four files: approved Databento account-budget binding and provider-evidence freshness. Replaces closed #213/#214. |
-| [Icarus #463](https://github.com/reppiks490/Icarus/pull/463) `aa6aaf10` | Main reproduced 1 failure/166 passes; repaired selection 167 passed; independent review CLEAR. Hosted engine CI pending at packet creation. | One test fixture; production code/defaults unchanged. Current defaults include CL; the non-expansion test now uses a controlled NQ-only baseline. |
+| [Icarus #463](https://github.com/reppiks490/Icarus/pull/463) `aa6aaf10` | Main reproduced 1 failure/166 passes; repaired selection 167 passed; independent review CLEAR. PR run 39634811507 passed Linux and Windows. Duplicate push run 39634803574 has Linux success; Windows remains in progress. | One test fixture; production code/defaults unchanged. Current defaults include CL; the non-expansion test now uses a controlled NQ-only baseline. |
 | [Owner-actions #51](https://github.com/reppiks490/icarus-owner-actions/pull/51) `1837a3ae` | Fresh 58 tests plus 8 subtests passed; current source compilation showed 2 current /17 stale /19 nonterminal sessions | Optional headline correction; preserves schema and leases. Recent records do not prove continuous execution. |
 
 ## Continue your existing work
@@ -29,3 +29,5 @@ A read-only Node probe on that published client rejects `6E`, `6J`, `6B`, `6A` w
 Icarus2 review worktrees are clean: `/workspace/Engine-restart-guards` on `icarus2/restart-data-guards-20261021`; `/workspace/Icarus-pr452-current-main` on `icarus2/corpus-default-fixture-20261021`. Python/pytest and Node were available for offline checks; your environment must be verified independently. No provider requests, spending, model training, live activation, code-main merge or owner-PC restart was performed.
 
 First review #226 and #463, preserve your current renderer work, then publish its exact head for the next targeted review. Broader research drafts stay parked. The hourly Icarus2 automation is paused and was read back disabled; historical worker configuration is not proof that the old loop is active. Owner-PC runtime and final software restart readiness remain unverified.
+
+Finalization rechecked Icarus main at `be46d4b9206001a44772976c98981bbdcf5a7ef3`: 11 commits/34 changed provider receipt or coverage-event files since the tested `617d3e4b` baseline, with no production-code or test changes. This drift was explicitly revalidated; receipt publication alone does not establish provider collection, authentication, entitlement, freshness or actual consumer use.
