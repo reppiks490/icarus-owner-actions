@@ -1125,22 +1125,12 @@
       ],
       "coordination_mode": "independent",
       "declared_paths": [
-        "icarus_engine/experience-ui.css",
-        "icarus_engine/experience-ui.js",
-        "tests_engine/test_workspace_api.py",
+        "tests/test_provider_corpus_intake.py",
         "docs/recovery"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/experience-ui.css",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_api.py",
+          "path": "tests/test_provider_corpus_intake.py",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1154,30 +1144,20 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T22:40:50.623Z",
-      "latest_summary": "Final source debf6e180eb41db120a139f92a694f60f6994916 published/clean in draftPR462; default-main START_HERE andREADME point to complete PC commands. Startup source3852fullpass4skip111subtests; actualcontainedlauncherall5routes/fourledgerAPI/ownedexit0; reviewed463/464incorporatedexactly;79Windowsselectedpaths. Subsequent actualhosted43workspacecases passed but drawerresizefailed; deterministicforcedheaderRED thenCSSfix4browser+122UI/world/JSgreen andunchangedcinemaerrors[]writes[]. Finalhead3hostedworkflows already success,5inprogress; not wholeCIclear. No owner-PC access, norealPCrestartclaimed. Limited as-is paper use authorized; fullreadinessNO_GO/liveoff. Rootclaimsreleased for coordinatedI2continuation. Publicguide/12dayhandoff are durable; model access is not a workflow ownership gate.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-21T22:58:37.139Z",
+      "latest_summary": "Finaldebf hosted7workflowsgreen includingactualUI/worldchecks; Linuxfullgreen. New Windows coverage exposed9root private provider-corpus intake failures, while restart test and ordinaryruntime cases passed. Existing coreintake tests explicitlyskipnonPOSIX because descriptor/no-follow filesystem security is POSIX-only; inspect exact guard and align unsupported-platform expectations without bypassing it. Private archive intake support remains an explicit Windows operating gap, distinct from ordinary file-history/Yahoo paper startup. No source safetyguard weakening or blindrerun.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "standalone-operator-delivery-complete-hosted-followup",
+      "phase": "final-Windows-private-intake-coverage",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/experience-ui.css",
-        "icarus_engine/experience-ui.js",
-        "tests_engine/test_workspace_api.py",
+        "tests/test_provider_corpus_intake.py",
         "docs/recovery"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/experience-ui.css",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "icarus_engine/experience-ui.js",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_api.py",
+          "path": "tests/test_provider_corpus_intake.py",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1256,7 +1236,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T22:41:07.160362Z",
+  "generated_at_utc": "2026-10-21T22:58:46.573058Z",
   "owner_status": {
     "claude": {
       "active": false,
