@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-resize-drawer-correction",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:31:10.522Z",
+  "type": "CLAIM",
+  "phase": "final-vital-resize-drawer-correction",
+  "summary": "Published as-is source6ed local3852passed/actualstartup; public guide live. Final hosted five-workspace browser43cases passed, but required resize API/browser case failed: mobile drawer y=-375.78125 when placement callbacks deliberately delayed. Investigate fixed-containing-header/mobileCSS anchoring, reproduce before changing, preserve assertion rather than rerunblind. Claim only presentation files and existing API/browser test; Icarus2 Brainclaim untouched. Source launcher/publiccommands alreadyusable; fullreadinessNO_GO.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "run:39686515357:job119521969306:resize-mobile-y-negative",
+    "required-five-route-browser:43passed"
+  ],
+  "next_action": "Reproduce containing-header mobile positioning, fix CSS fallback and run targeted browser+unchangedcinema. Publish narrow actualfix and preserve current operator handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
