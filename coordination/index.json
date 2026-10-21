@@ -1434,11 +1434,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T12:47:23.848Z",
-      "latest_summary": "Local installed Chromium reproduced stale desktop inline settings placement at390px with details.open true and matchMedia mobile true (one of8two-page resize probes). A second25-cycle single-page probe did not reproduce, so timing remains material. Add a deterministic delayed-viewport-callback browser regression and move measured desktop placement to CSS variables consumed only by the desktop media rule, letting mobile CSS bound the drawer immediately. Preserve existing browser_cinema geometry and inline-placement assertions unchanged; do not hide failure with longer sleeps. Extend lease only to experience-ui.css in addition to already claimed JS/tests.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-21T12:53:52.864Z",
+      "latest_summary": "Icarus1 published mobile settings repair0fbfbd9e31e88b2a36929afcc8990ebfb1eb4157 on draftPR462. Deterministic delayed-viewport-callback test failed before repair and now passes;2realChromium cases/132presentationchecks/unchanged browser_cinema contract passed, errors[]/writes[]. Desktop geometry is now media-scopedCSSvariables, preventing stale inline overrides on mobile. No browser assertions or waits were relaxed; browser_cinema source unchanged. Precedingfb98 full3699 and hosted Linux/Windows tests39600359927 passed; its actual visual failure39600359929 remains historical evidence. Current visual-source hosted checks pending. Resume claimed common renderer context guard/module integration, preserving Icarus2 separate cycle and all restart gaps.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "browser-responsive-settings-repair",
+      "phase": "common-renderer-context-integration",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1797,7 +1797,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T12:47:32.849326Z",
+  "generated_at_utc": "2026-10-21T12:54:02.822085Z",
   "owner_status": {
     "claude": {
       "active": false,
