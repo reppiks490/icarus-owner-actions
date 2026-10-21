@@ -1151,7 +1151,37 @@
         "icarus_engine/workspace-client.js",
         "tests_engine/test_workspace_client.py",
         "docs/superpowers/plans/2026-10-21-workspace-client.md",
-        "icarus_engine/dashboard.html"
+        "icarus_engine/dashboard.html",
+        "docs/superpowers/plans/2026-10-21-common-dashboard.md",
+        "icarus_engine/workspace_context.py",
+        "icarus_engine/workspace_market_data.py",
+        "icarus_engine/workspace-ui.js",
+        "icarus_engine/workspace-evidence-ui.js",
+        "tests_engine/test_workspace_context.py",
+        "tests_engine/test_workspace_market_data.py",
+        "tests_engine/test_workspace_dashboard_browser.py",
+        "tests_engine/test_dashboard_js.py",
+        "icarus_engine/research-ui.js",
+        "icarus_engine/sources-ui.js",
+        "icarus_engine/market-data-ui.js",
+        "icarus_engine/brain-ui.js",
+        "icarus_engine/evolution-ui.js",
+        "icarus_engine/parallax-ui.js",
+        "icarus_engine/possibility-ui.js",
+        "icarus_engine/pantheon-ui.js",
+        "icarus_engine/sibyl-ui.js",
+        "icarus_engine/apex-ui.js",
+        "icarus_engine/ascendancy-ui.js",
+        "icarus_engine/learning-ui.js",
+        "icarus_engine/chronofold-ui.js",
+        "icarus_engine/commissioning-ui.js",
+        "icarus_engine/integrity-ui.js",
+        "icarus_engine/engine-control-ui.js",
+        "icarus_engine/autopilot-ui.js",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/paper-pnl-ui.js",
+        "icarus_engine/shadow-twin-ui.js",
+        "icarus_engine/workspace-performance-ui.js"
       ],
       "declared_targets": [
         {
@@ -1261,6 +1291,126 @@
         {
           "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-21-common-dashboard.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_market_data.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-evidence-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_market_data.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_dashboard_browser.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_dashboard_js.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/research-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/sources-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/market-data-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/evolution-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/parallax-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/possibility-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/pantheon-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/sibyl-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/apex-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/ascendancy-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/learning-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/chronofold-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/commissioning-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/integrity-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/engine-control-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/autopilot-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/command-centers-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper-pnl-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/shadow-twin-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-performance-ui.js",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1269,11 +1419,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T12:16:39.470Z",
-      "latest_summary": "Icarus1 published explicit immutable client and server-owned main bootstrap at draftPR462 heade9a33b79109f021fc6a32b7373bd52d30e4ebcae. Full runtime3671passed,4skipped,111subtests; focused191passed and real Chromium startup1passed. All4hosted workflows at precedingce6a15f completed successfully, including Windows. Current client head checks remain separate. Common renderer/module migration remains open. Source review found per-asset override changes rebuild every old runner inside that workspace; reproduce before narrowing replay to changed symbols while keeping the conservative flat-workspace guard. Implement explicit revisioned scoped rewarm jobs for unchanged settings, required by the approved common renderer. No attribution of the reported accuracy decline, no provider requests or live authority.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-21T12:40:14.425Z",
+      "latest_summary": "Icarus1 published selected replay and explicit revisioned rewarm at draftPR462 headfb98ce65aaeaa3c5a6d13d3c407976911804e0d8: full3699passed,4skipped,111subtests; focused350passed; root diff review, no invented independent approval. All6hosted workflows at preceding e9a33b7 succeeded. Claim the approved common renderer/module integration now: explicit client calls, server scope rejection, stale observation clearing, same components on main/CC1\u20134, and preserved corpus/A200/connections/performance. Use safe read-only provider buffers only: inspected Yahoo.meta can fetch and Databento trades/depth methods can start subscriptions, so workspace diagnostics must not invoke them. No new provider acquisition, service/scheduler clones, live authority, merge or system restart. Icarus2 federation paths remain separate.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "selected-replay-and-scoped-rewarm",
+      "phase": "common-renderer-context-integration",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1303,7 +1453,37 @@
         "icarus_engine/workspace-client.js",
         "tests_engine/test_workspace_client.py",
         "docs/superpowers/plans/2026-10-21-workspace-client.md",
-        "icarus_engine/dashboard.html"
+        "icarus_engine/dashboard.html",
+        "docs/superpowers/plans/2026-10-21-common-dashboard.md",
+        "icarus_engine/workspace_context.py",
+        "icarus_engine/workspace_market_data.py",
+        "icarus_engine/workspace-ui.js",
+        "icarus_engine/workspace-evidence-ui.js",
+        "tests_engine/test_workspace_context.py",
+        "tests_engine/test_workspace_market_data.py",
+        "tests_engine/test_workspace_dashboard_browser.py",
+        "tests_engine/test_dashboard_js.py",
+        "icarus_engine/research-ui.js",
+        "icarus_engine/sources-ui.js",
+        "icarus_engine/market-data-ui.js",
+        "icarus_engine/brain-ui.js",
+        "icarus_engine/evolution-ui.js",
+        "icarus_engine/parallax-ui.js",
+        "icarus_engine/possibility-ui.js",
+        "icarus_engine/pantheon-ui.js",
+        "icarus_engine/sibyl-ui.js",
+        "icarus_engine/apex-ui.js",
+        "icarus_engine/ascendancy-ui.js",
+        "icarus_engine/learning-ui.js",
+        "icarus_engine/chronofold-ui.js",
+        "icarus_engine/commissioning-ui.js",
+        "icarus_engine/integrity-ui.js",
+        "icarus_engine/engine-control-ui.js",
+        "icarus_engine/autopilot-ui.js",
+        "icarus_engine/command-centers-ui.js",
+        "icarus_engine/paper-pnl-ui.js",
+        "icarus_engine/shadow-twin-ui.js",
+        "icarus_engine/workspace-performance-ui.js"
       ],
       "reserved_targets": [
         {
@@ -1412,6 +1592,126 @@
         },
         {
           "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/superpowers/plans/2026-10-21-common-dashboard.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_market_data.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-evidence-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_market_data.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_dashboard_browser.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_dashboard_js.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/research-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/sources-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/market-data-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/evolution-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/parallax-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/possibility-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/pantheon-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/sibyl-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/apex-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/ascendancy-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/learning-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/chronofold-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/commissioning-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/integrity-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/engine-control-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/autopilot-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/command-centers-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper-pnl-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/shadow-twin-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-performance-ui.js",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1467,7 +1767,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T12:16:49.635173Z",
+  "generated_at_utc": "2026-10-21T12:40:24.092112Z",
   "owner_status": {
     "claude": {
       "active": false,
