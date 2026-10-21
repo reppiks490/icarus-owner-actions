@@ -1,0 +1,140 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-context-client-claim",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T11:54:24.606Z",
+  "type": "PLAN",
+  "phase": "context-client-before-common-renderer",
+  "summary": "Icarus 1 preserves runtime recovery identity/branch and consumes Icarus2 HANDOFF004/PLAN005, without touching its cycle or integration-brain paths. Backend full run caught one legacy flatten error-field regression (3649passed/1failed); the alias is restored and fresh full verification is running. Extend root scope only to a pure explicit workspace client and tests/plan, next bootstrap/main module integration. Context must be immutable before linked modules; no parent fallback, foreign jobs, stale revision substitution or unauthenticated downloads. Shared evidence is explicitly read-only; unsupported runtime/global actions remain unavailable. No CC renderer switch in the initial client task; no restart/merge/provider collection/live authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-configuration.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-api.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-21-workspace-client.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "coordination:icarus2-20261020-federation-integration:004-reviewed-cycle-handoff",
+    "coordination:icarus2-20261020-federation-integration:005-cycle2-plan",
+    "review:costs/query fixes confirmed;63focusedpassed;I/O2passed;finalreview interrupted by usage limit",
+    "full-runtime:3649passed,4skipped,111subtests,1legacyerror-fieldfailure",
+    "flatten-compat:10passed",
+    "plan:approved-four-workspace-delivery"
+  ],
+  "next_action": "Record backend final full result and publish reviewed repairs; implement/test explicit client API with frozen context, revision/job validation, bounded cancellation, authenticated CSV and full-page scoped href. Prepare bootstrap/module integration separately before renderer switch.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
