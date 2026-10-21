@@ -1195,7 +1195,9 @@
         ".github/workflows/ui-visual-contract.yml",
         "tests_engine/test_historical_trade_admission.py",
         "tests_engine/test_intelligence_feed.py",
-        "tests_engine/test_source_data_contract.py"
+        "tests_engine/test_source_data_contract.py",
+        "tests_engine/test_chronofold_integration.py",
+        "tests_engine/test_commissioning_integration.py"
       ],
       "declared_targets": [
         {
@@ -1481,6 +1483,14 @@
         {
           "path": "tests_engine/test_source_data_contract.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_chronofold_integration.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_commissioning_integration.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1489,11 +1499,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T18:24:57.170Z",
-      "latest_summary": "Broad full runtime verification exposed existing standalone Learning and Ascendancy Node harnesses without the explicit IcarusClient transport now required by migrated linked modules. Claim three test harness paths only; preserve their original rendered-provenance and requalification assertions, supplying the same mocked transport through client.request. Actual immutable-client/browser isolation remains covered separately. No production fallback to raw parent fetch will be added. Final full remains pending and source generations stay separate.",
+      "last_event_at_utc": "2026-10-21T18:29:04.269Z",
+      "latest_summary": "Complete first current-source full result:5failed,3828passed,4skipped,111subtests in515.49s. All failures are existing test transport assumptions:3standalone Node harnesses omitted explicit page client (already corrected;49tests+86subtests pass), and2source wiring assertions require old raw fetch strings. Claim the2static contract tests and assert the explicit IcarusClient.request route calls instead, preserving remaining assertions. Runtime/browser114passed plus4required API browser cases and unchanged cinema passed. Fresh final full will follow these test-only alignments; no production raw parent fallback or weakened isolation.",
       "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "common-dashboard-linked-module-fixture-compatibility",
+      "phase": "common-dashboard-final-contract-alignment",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1567,7 +1577,9 @@
         ".github/workflows/ui-visual-contract.yml",
         "tests_engine/test_historical_trade_admission.py",
         "tests_engine/test_intelligence_feed.py",
-        "tests_engine/test_source_data_contract.py"
+        "tests_engine/test_source_data_contract.py",
+        "tests_engine/test_chronofold_integration.py",
+        "tests_engine/test_commissioning_integration.py"
       ],
       "reserved_targets": [
         {
@@ -1853,6 +1865,14 @@
         {
           "path": "tests_engine/test_source_data_contract.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_chronofold_integration.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_commissioning_integration.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1906,7 +1926,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T18:25:07.830815Z",
+  "generated_at_utc": "2026-10-21T18:29:14.259792Z",
   "owner_status": {
     "claude": {
       "active": false,
