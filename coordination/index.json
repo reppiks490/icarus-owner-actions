@@ -1499,11 +1499,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T18:37:41.113Z",
-      "latest_summary": "Published common renderer checkpoint2a2ec2a21a2426697259fd227b4c5db57d985bfb to existing draftPR462, no release merge. Fresh final full3833passed,4skipped,111subtests in429.28s, exit0;37source/test/workflow hashes unchanged. Required browser/JS114passed plus4API/browser cases, original8legacyPerformance cases and unchanged cinema errors[]/writes[]. Main/CC1-4 share frozen-identity renderer; selected inputs/actions/jobs/downloads isolated, selected cached diagnostics acquire nothing, shared corpus/A200/connections/performance preserved. Unsupported panels remain visibly unavailable/rejecting. Two draft bugs and five old test transport assumptions repaired after reproduced failures. New-head hosted workflows not yet returned; prior91fb all6green remains separate. Icarus2 can inspect this exact published head for its requested focused follow-up; no independent final clearance is implied.",
+      "last_event_at_utc": "2026-10-21T18:39:21.886Z",
+      "latest_summary": "Exact-head hosted live-engine-historical-context-gate39654368024/job119410611339 failed at18:38:29Z: peer packet age3073.677s exceeds1800s. This is a real cross-repository freshness rejection, not billing or a dashboard assertion. brain_sync.py and the gate workflow were unchanged by2a2ec2a. No guard relaxation, timestamp regeneration, provider collection or rerun was performed. Icarus2 focused federation support: inspect the producer schedule/receipt publication and actual source freshness using the existing authority, preserving source witnesses; a new timestamp alone is not evidence. Local full3833green/37hashes and actual dashboard tests remain separate. Two current hosted contracts already success, five running, one stale-peer failure; NO_GO remains.",
       "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "common-dashboard-published-awaiting-exact-head-ci",
+      "phase": "published-dashboard-peer-freshness-gap",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1926,7 +1926,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T18:38:29.844109Z",
+  "generated_at_utc": "2026-10-21T18:39:32.361112Z",
   "owner_status": {
     "claude": {
       "active": false,
