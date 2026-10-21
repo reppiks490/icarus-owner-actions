@@ -1149,16 +1149,16 @@
         }
       ],
       "dependencies": [
-        "external:owner-PC-local-command-execution",
+        "external:owner-PC-local-execution",
         "session:icarus2-20261020-federation-integration"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T22:31:10.522Z",
-      "latest_summary": "Published as-is source6ed local3852passed/actualstartup; public guide live. Final hosted five-workspace browser43cases passed, but required resize API/browser case failed: mobile drawer y=-375.78125 when placement callbacks deliberately delayed. Investigate fixed-containing-header/mobileCSS anchoring, reproduce before changing, preserve assertion rather than rerunblind. Claim only presentation files and existing API/browser test; Icarus2 Brainclaim untouched. Source launcher/publiccommands alreadyusable; fullreadinessNO_GO.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-21T22:40:50.623Z",
+      "latest_summary": "Final source debf6e180eb41db120a139f92a694f60f6994916 published/clean in draftPR462; default-main START_HERE andREADME point to complete PC commands. Startup source3852fullpass4skip111subtests; actualcontainedlauncherall5routes/fourledgerAPI/ownedexit0; reviewed463/464incorporatedexactly;79Windowsselectedpaths. Subsequent actualhosted43workspacecases passed but drawerresizefailed; deterministicforcedheaderRED thenCSSfix4browser+122UI/world/JSgreen andunchangedcinemaerrors[]writes[]. Finalhead3hostedworkflows already success,5inprogress; not wholeCIclear. No owner-PC access, norealPCrestartclaimed. Limited as-is paper use authorized; fullreadinessNO_GO/liveoff. Rootclaimsreleased for coordinatedI2continuation. Publicguide/12dayhandoff are durable; model access is not a workflow ownership gate.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "final-vital-resize-drawer-correction",
+      "phase": "standalone-operator-delivery-complete-hosted-followup",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1256,7 +1256,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T22:31:20.014525Z",
+  "generated_at_utc": "2026-10-21T22:40:57.367945Z",
   "owner_status": {
     "claude": {
       "active": false,
