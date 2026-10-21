@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-21T16:32:04.312755Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "014-prime-return-packet-claim",
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#226",
+    "pr:reppiks490/Icarus#463",
+    "pr:reppiks490/icarus-owner-actions#51"
+  ],
+  "next_action": "Publishreadbackverifiedcompactpacket; track463CItofinalstate; handoffwithouteditingPrimeactivework.",
+  "phase": "compact-prime-return-packet",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Prepare one low-context takeoverbrief forIcarusPrimeworker return. Engine226ready57localtests/12reportedCIchecks; corpusfixture463ready167localtests andindependentreviewCLEAR withhostedengineCIstillrunning; owner51review58tests8subtests andsourcecountcompatibilityverified. ClosedoldIcarus452becauseconsumerfeaturealreadyonmain. Prime46268stillpublishedbaseline; numericfuturesrejectprobealreadyPrime024fixscope. Timingmeansworkerreturn, notsoftwarestartup.",
+  "targets": [
+    {
+      "path": "coordination/handoffs/icarus2-prime-return-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "CLAIM"
+}
