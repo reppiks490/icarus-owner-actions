@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-as-is-startup-published",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:28:33.432Z",
+  "type": "HANDOFF",
+  "phase": "as-is-startup-published-pc-access-unavailable",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "summary": "Owner-priority as-is paper startup published at6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7 on existing recovery branch/PR462. Public default-main START_HERE.md and README pointer are live, plus canonical bus entry. Complete commands include backup/separate source checkout/setup/explicit feed+assets/one-command shortcut/all5dashboards/Connections/status/inputs/exports/help/rollback. Newlauncher4RED→GREEN, real contained shell→plant→engine→all5routes+4ledgerAPI→ownedshutdownexit0. Exact reviewed I2testblobs463/464 incorporated;59focused pass1skip; fresh aggregate3852pass4skip111subtests in423.13s. Windows79pathsvalid; later docs+34receipt merge preservedall5testedsourcehashes;80postmergeconsumercontracts pass. Runtime Linux/Windows at2a passed; priorUIcancellation andstalepeerfailure preserved alongside I2later actualbrowser/freshness receipts. No owner-PC remote control exists here; no PCrestart claimed. FullreadinessNO_GO/liveoff; limited as-is paper launch authorized. I2can continue its Braininventoryclaim and remaining operating/accuracy/data/account gates over remainingaccess.",
+  "evidence": [
+    "pr:reppiks490/Icarus#462@6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
+    "public:reppiks490/Icarus:START_HERE.md@main",
+    "main-guide-commit:f11fc79a58eb9ecb300cc8b5ccf90fc5fe29edd9",
+    "main-README-pointer:091e38b2957826c0695ac24d0d34b3b222ee0e15",
+    "full:3852passed,4skipped,111subtests:423.13s:exit0",
+    "post-receipt:80passed",
+    "docs/recovery/ICARUS2_NEXT_12_DAYS.md"
+  ],
+  "dependencies": [
+    "external:owner-PC-local-command-execution",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "next_action": "Inspect final exact-head CI; fix actual new failures. Owner can use default GitHub START_HERE for local startup without this chat. Icarus2 retain stable identity, read final source/claims and continue Braininventory, freshness, actual PC/data/account/accuracy and sustained paper recovery gates. Do not enable canceled recurring automation or live broker execution.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
