@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-intake-platform-disposition",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:00:44.151Z",
+  "type": "UPDATE",
+  "phase": "explicit-private-intake-platform-boundary",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    }
+  ],
+  "summary": "Exactguard confirmed: corpus_intake._snapshot failsclosed without descriptor-relative os.open and O_NOFOLLOW. Windows cannot satisfy it. Nine newlyselected root acceptance tests assumed successfuladmission; five purehelper cases passed. Existingcoreintake suite already marksPOSIX-only. Preserve productionguard; mark only nine successful-admission tests by requiredcapability, keep purecases and add unconditionallyrunnablefailclosed/no-output test. Move two new recovery/intake modules to an early named Windowsstep (same79unique paths, no duplicate broadrun) for visible coverage. Document actualWindowsprivate-vault-intake gap distinctfrom ordinaryCSV/file/Yahoo startup. Rootruntime/Windowsrestart succeeded before9archivefailures; sevenotherworkflowsgreen.",
+  "evidence": [
+    "job119526608283:9rootprivateintakefailures",
+    "icarus_engine/corpus_intake.py:199:no-follow-capabilityguard",
+    "tests_engine/test_corpus_intake.py:existingPOSIXboundary"
+  ],
+  "dependencies": [],
+  "next_action": "Reproduce absent-capability failures locally, align explicittestpreconditions, verifyLinuxandmissing-capabilitycases, publish and verifyearlyWindowsrecovery step. No unsafe ACL/no-follow bypass.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
