@@ -1184,7 +1184,8 @@
         "icarus_engine/workspace-performance-ui.js",
         "icarus_engine/experience-ui.js",
         "tests_engine/browser_cinema.cjs",
-        "icarus_engine/experience-ui.css"
+        "icarus_engine/experience-ui.css",
+        "tests_engine/test_workspace_ui.py"
       ],
       "declared_targets": [
         {
@@ -1426,6 +1427,10 @@
         {
           "path": "icarus_engine/experience-ui.css",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_ui.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1434,11 +1439,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T13:50:28.405Z",
-      "latest_summary": "Published context guard and client page lifecycle foundation65bc462, incorporated receipt-only upstream617d3e4 into currentd3a17207df07ff4ca878a25db787f8ec1e62fae2. Local full3736passed,4skipped,111subtests. Current hosted tests and four contracts succeeded; UIvisual39609414779 failed in browser_cinema line176, short desktop settings bottom629 exceeds600 viewport. Investigate containing-block/header geometry with deterministic browser regression before narrow fix; keep original assertions. Prior0fb all6hosted workflows passed. Continue common-renderer Task2 after placement repair. Delegate bounded client prerequisite implementation under root lease, not quota-review replacement; no independent final clearance claimed.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-21T13:53:04.673Z",
+      "latest_summary": "Extend existing common renderer lease only by tests_engine/test_workspace_ui.py for a pure typed action/draft helper. Supporting implementer owns workspace-ui.js and that test file under this session; client prerequisite implementer owns workspace-client.js/test_workspace_client.py. Root owns dashboard.html/server.py/command-centers-ui.js/shadow-twin-ui.js and browser integration tests; no overlapping edits. Desktop containing-header regression reproduced overflow and now both desktop/mobile deterministic cases pass with inset origin correction; original cinema contract running. Preserve Icarus2 federation scope and quota-limited review evidence.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "common-renderer-and-desktop-placement",
+      "phase": "common-core-renderer",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1501,7 +1506,8 @@
         "icarus_engine/workspace-performance-ui.js",
         "icarus_engine/experience-ui.js",
         "tests_engine/browser_cinema.cjs",
-        "icarus_engine/experience-ui.css"
+        "icarus_engine/experience-ui.css",
+        "tests_engine/test_workspace_ui.py"
       ],
       "reserved_targets": [
         {
@@ -1743,6 +1749,10 @@
         {
           "path": "icarus_engine/experience-ui.css",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_ui.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1797,7 +1807,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T13:50:39.653623Z",
+  "generated_at_utc": "2026-10-21T13:53:14.701507Z",
   "owner_status": {
     "claude": {
       "active": false,
