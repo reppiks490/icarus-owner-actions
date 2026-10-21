@@ -1,0 +1,148 @@
+{
+  "at_utc": "2026-10-21T21:05:54.369784Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/Icarus#464",
+    "external:owner-PC-access-unverified"
+  ],
+  "event_id": "022-actual-launcher-terminal-and-ci-handoff",
+  "evidence": [
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-restart-verification-20261021.md@439128bb380a5c5ca0d298e50e0d9c157f00779a",
+    "https://github.com/reppiks490/Icarus/pull/464",
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6326379374",
+    "source-event:icarus1-20261020-system-recovery/034-stale-peer-packet-handoff.json"
+  ],
+  "execution_authorized": false,
+  "hosted_checks": [
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673598165/job/119477565680",
+      "id": 119477565680,
+      "name": "engine-windows",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673598165/job/119477565484",
+      "id": 119477565484,
+      "name": "engine",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673586633/job/119477525589",
+      "id": 119477525589,
+      "name": "engine",
+      "status": "completed"
+    },
+    {
+      "conclusion": null,
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673586633/job/119477525044",
+      "id": 119477525044,
+      "name": "engine-windows",
+      "status": "in_progress"
+    }
+  ],
+  "hosted_checks_observed_at_utc": "2026-10-21T21:05:54.369784Z",
+  "launcher": {
+    "denied_summary": {
+      "socket.getaddrinfo:api.github.com": 3,
+      "socket.getaddrinfo:publicreporting.cftc.gov": 1,
+      "socket.getaddrinfo:raw.githubusercontent.com": 6,
+      "subprocess.Popen:git": 1
+    },
+    "elapsed_seconds": 1.73,
+    "engine_exited": true,
+    "health": "PASS",
+    "interpretation": "Actual plant/engine and four saved FileFeed workspaces started and stopped cleanly. Offline/file does not suppress remote background sync; blocked attempts prohibit a zero-network/full-readiness PASS.",
+    "launcher_core": "PASS",
+    "limits": [
+      "Synthetic local tape and settings; not owner PC or installed owner release.",
+      "Python audit containment is not an OS network sandbox; non-engine subprocesses are denied."
+    ],
+    "plant_exit_code": 0,
+    "plant_exited": true,
+    "platform": "linux",
+    "result": "NOT_FULLY_READY",
+    "settings_bytes_preserved": true,
+    "verified_source_blobs": {
+      "icarus_engine/cli.py": {
+        "actual": "1fea7bd278cfcafa95d17e43f90f9222337637bf",
+        "expected": "1fea7bd278cfcafa95d17e43f90f9222337637bf"
+      },
+      "icarus_engine/paper_workspaces.py": {
+        "actual": "86639f92f46274312ba0783984359461a67ceef3",
+        "expected": "86639f92f46274312ba0783984359461a67ceef3"
+      },
+      "icarus_engine/runtime.py": {
+        "actual": "49521a696310fcf4ced456244916dcba613ae886",
+        "expected": "49521a696310fcf4ced456244916dcba613ae886"
+      },
+      "icarus_engine/server.py": {
+        "actual": "172b09d0c3a368be0a65f4fc951c59e5c3352311",
+        "expected": "172b09d0c3a368be0a65f4fc951c59e5c3352311"
+      },
+      "icarus_plant/cli.py": {
+        "actual": "945e37753ee4965b5f395ef255b9477cc448fd0a",
+        "expected": "945e37753ee4965b5f395ef255b9477cc448fd0a"
+      },
+      "icarus_plant/supervisor.py": {
+        "actual": "6dba30505330fddf06a76cf5e936e207880e5e18",
+        "expected": "6dba30505330fddf06a76cf5e936e207880e5e18"
+      }
+    },
+    "workspace_readback": {
+      "cc1": {
+        "config_revision": 1,
+        "execution_authorized": false,
+        "feed_mode": "file",
+        "runtime_available": true
+      },
+      "cc2": {
+        "config_revision": 1,
+        "execution_authorized": false,
+        "feed_mode": "file",
+        "runtime_available": true
+      },
+      "cc3": {
+        "config_revision": 1,
+        "execution_authorized": false,
+        "feed_mode": "file",
+        "runtime_available": true
+      },
+      "cc4": {
+        "config_revision": 1,
+        "execution_authorized": false,
+        "feed_mode": "file",
+        "runtime_available": true
+      }
+    }
+  },
+  "launcher_report_sha256": "4ba6e7483a00f5bbf6c6248751924093ffa624a3043d29111f28e5c6878621b3",
+  "launcher_scope": "one actual startup/shutdown, synthetic state; not a production PC restart or steady-state service verification",
+  "next_action": "Prime: review/incorporate PR464, add new test to Windows selector, confirm installed-PC terminal access, and complete existing runtime/provider/release gates. Do not infer durable freshness from the time-bound handshake or rerun canceled workflows automatically.",
+  "phase": "reviewed-restart-verification-handed-to-prime",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "source_heads_reread": {
+    "Icarus_PR462": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "Icarus_PR464": "dd052a8c4a46ac2811856a28eba735acd633e68e",
+    "owner_actions_control": "5592711ae50327c14973e15f735a5a40c6d23fd0"
+  },
+  "summary": "Actual2a Plant/engine startup, saved four-workspace readback and owned shutdown verified in contained Linux scratch. No owner-PC/steady-state/provider readiness claimed. One git and10DNS attempts denied; offline denotes market-feed scope, not an established zero-network guarantee. PR464 remains reviewed/open; Windows selector omits the new regression even if hosted Windows checks pass. Terminal distinction and coverage action sent to Prime. Narrow source claim released; permanent worker retained.",
+  "targets": [],
+  "terminal": {
+    "codespaces_total_count": 0,
+    "owner_PC_access_verified": false,
+    "prime_PC_access_verified": false,
+    "runner_inventory": "HTTP403 Resource not accessible by integration; do not infer no runners",
+    "this_session": "Linux cloud /workspace"
+  },
+  "type": "HANDOFF"
+}
