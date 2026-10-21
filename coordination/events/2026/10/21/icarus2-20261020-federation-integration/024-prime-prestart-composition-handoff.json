@@ -1,0 +1,331 @@
+{
+  "at_utc": "2026-10-21T21:34:50.426520Z",
+  "composition": {
+    "base": "/workspace/scratch/prime-composition-na5uyagf",
+    "base_with_restart_test": "dd052a8c4a46ac2811856a28eba735acd633e68e",
+    "execution_authorized": false,
+    "external_network_permitted": false,
+    "fixture_blob": "fcfa344689dc8690b47a7b5fbe7ee44d69929505",
+    "fixture_head": "aa6aaf1053b90de80c6432244d4fe34c01d511aa",
+    "gate_commit": "0cf3dc78ef43183d21461ec33b8b69596e698248",
+    "prime_head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "results": {
+      "baseline_fixture": {
+        "command": [
+          "/workspace/Icarus/.venv/bin/python",
+          "/workspace/scratch/prime-composition-na5uyagf/network_bounded_pytest.py",
+          "-q",
+          "-o",
+          "addopts=",
+          "tests/test_provider_corpus_intake.py"
+        ],
+        "exit_code": 1,
+        "log": "/workspace/scratch/prime-composition-na5uyagf/baseline-fixture.log",
+        "log_sha256": "97b7b185f7afee68801368264f0312837731170601b1f0e8dcfdbfae57df27ce",
+        "seconds": 11.45
+      },
+      "composed": {
+        "command": [
+          "/workspace/Icarus/.venv/bin/python",
+          "/workspace/scratch/prime-composition-na5uyagf/network_bounded_pytest.py",
+          "-q",
+          "-o",
+          "addopts=",
+          "tests/test_provider_corpus_intake.py",
+          "tests_engine/test_restart_persistence.py",
+          "tests_engine/test_corpus_intake.py",
+          "tests_engine/test_paper_workspaces_runtime.py"
+        ],
+        "exit_code": 0,
+        "log": "/workspace/scratch/prime-composition-na5uyagf/composed-fixture-and-restart.log",
+        "log_sha256": "57f2a61ba7820a31a9884a740fbe24f93ba2d80250e71204ef87692457eee333",
+        "seconds": 15.67
+      }
+    },
+    "source": "/workspace/scratch/prime-composition-na5uyagf/source",
+    "worktree_diff": "tests/test_provider_corpus_intake.py | 14 ++++++++++----\n 1 file changed, 10 insertions(+), 4 deletions(-)"
+  },
+  "control_commit": "0cf3dc78ef43183d21461ec33b8b69596e698248",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "engine_applyability": {
+    "base_snapshot": "165f01b4af77892f969ade4882b46ad3e6b1b51d",
+    "candidate": "a02c781c4aba1c1139dd8806691239f72ece89a0",
+    "candidate_to_merge_changed_path_count": 370,
+    "candidate_to_merge_non_automation_paths": [],
+    "main": "b83eb07e6e6cd4bb43e9326c46521013f54afe74",
+    "manifest_blob": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+    "merge_tree": "836f52555c0d6d87c75f29e489e788e4d18ea034",
+    "paths": [
+      "cl_lab/feeds/registry.py",
+      "tests/test_data_sentinel.py",
+      "tests_cl/test_feeds.py",
+      "tools/data_sentinel.py"
+    ],
+    "repair_files_identical_in_merge": true
+  },
+  "event_id": "024-prime-prestart-composition-handoff",
+  "evidence": [
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-restart-verification-20261021.md@6fd5ef8e87ea5c43b8d3af058f12ccd5a1be58e2",
+    "pr:reppiks490/Icarus#463",
+    "pr:reppiks490/Icarus#464",
+    "pr:reppiks490/Icarus-engine#226"
+  ],
+  "execution_authorized": false,
+  "hosted_checks": {
+    "engine226": [
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300516447",
+        "id": 119300516447,
+        "name": "pytest (py3.13)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300514859",
+        "id": 119300514859,
+        "name": "core runs with zero dependencies",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300514820",
+        "id": 119300514820,
+        "name": "pytest (py3.12)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300514778",
+        "id": 119300514778,
+        "name": "pytest (py3.11)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300514635",
+        "id": 119300514635,
+        "name": "every CLI path",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622850925/job/119300514442",
+        "id": 119300514442,
+        "name": "MCP interface provenance contract",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300230598",
+        "id": 119300230598,
+        "name": "pytest (py3.13)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300230275",
+        "id": 119300230275,
+        "name": "pytest (py3.11)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300230261",
+        "id": 119300230261,
+        "name": "MCP interface provenance contract",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300230250",
+        "id": 119300230250,
+        "name": "pytest (py3.12)",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300230206",
+        "id": 119300230206,
+        "name": "core runs with zero dependencies",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus-engine/actions/runs/39622763224/job/119300229897",
+        "id": 119300229897,
+        "name": "every CLI path",
+        "status": "completed"
+      }
+    ],
+    "fixture463": [
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39634811507/job/119342324644",
+        "id": 119342324644,
+        "name": "engine-windows",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39634811507/job/119342323908",
+        "id": 119342323908,
+        "name": "engine",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39634803574/job/119342294666",
+        "id": 119342294666,
+        "name": "engine",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39634803574/job/119342294363",
+        "id": 119342294363,
+        "name": "engine-windows",
+        "status": "completed"
+      }
+    ],
+    "restart464": [
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673598165/job/119477565680",
+        "id": 119477565680,
+        "name": "engine-windows",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673598165/job/119477565484",
+        "id": 119477565484,
+        "name": "engine",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673586633/job/119477525589",
+        "id": 119477525589,
+        "name": "engine",
+        "status": "completed"
+      },
+      {
+        "conclusion": "success",
+        "html_url": "https://github.com/reppiks490/Icarus/actions/runs/39673586633/job/119477525044",
+        "id": 119477525044,
+        "name": "engine-windows",
+        "status": "completed"
+      }
+    ]
+  },
+  "hosted_checks_observed_at_utc": "2026-10-21T21:34:50.426520Z",
+  "independent_review": {
+    "engine_tree": {
+      "candidate": "a02c781c4aba1c1139dd8806691239f72ece89a0",
+      "candidate_to_merge_automation_only_differences": 370,
+      "data_ingestion_manifest_blob": "1ce5c66892020ebd2831dfc78242dee525c6c2bc",
+      "federated_repo_evidence_blob": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+      "four_repair_blobs_match": true,
+      "limits": "Clean tree composition and unchanged repair code do not mean current-main runtime was executed; automation data changes can affect consumers.",
+      "main": "b83eb07e6e6cd4bb43e9326c46521013f54afe74",
+      "main_to_merge_only_paths": [
+        "cl_lab/feeds/registry.py",
+        "tests/test_data_sentinel.py",
+        "tests_cl/test_feeds.py",
+        "tools/data_sentinel.py"
+      ],
+      "merge_tree": "836f52555c0d6d87c75f29e489e788e4d18ea034",
+      "metadata_note": "Input manifest_blob identifies federated_repo_evidence.json; it is not the data_ingestion_manifest.json blob."
+    },
+    "fixture_blob": "fcfa344689dc8690b47a7b5fbe7ee44d69929505",
+    "fixture_diff_exactly_matches_463": true,
+    "hosted_linux_selection": {
+      "command": "python -m pytest tests_engine -q",
+      "line": 22,
+      "root_case_omitted": true,
+      "workflow_blob": "98f32dc9341ff5e7bc8340ff05db8fa306db282d"
+    },
+    "input_receipt_hashes": {
+      "/workspace/scratch/prime-composition-paths.json": "fa3747d7417e586744a410000f4400c3d94a3a05283295487f0d9a4595b60e15",
+      "/workspace/scratch/prime-support-engine-heads.json": "6dff9e1cff83601e0d8ff5e5ea6be2ebcf8dd8e9c70f23e1c503ab6a4aa60185"
+    },
+    "network_guard": {
+      "limits": "Not an OS network sandbox; parent hook is not inherited automatically, no denial counters, no socket.sendto/native-network coverage. Do not claim proof of zero attempted external activity.",
+      "parent_guard": "Denies nonloopback socket.connect and ordinary DNS resolution before pytest execution.",
+      "restart_children": "Reviewed restart test installs its own audit hook in each child.",
+      "wrapper_sha256": "6a0c352074c080ece64c14e0794cf817c4e1fa82091973c1bc46c51c2465d97c"
+    },
+    "only_worktree_change": "M tests/test_provider_corpus_intake.py",
+    "operations": "Read files/git objects only; no tests/services/ref/worktree/PR changes.",
+    "restart_blob": "2f5b1177cc53491dc2867665f0311c8111311732",
+    "reviewed_utc": "2026-10-21T21:34:06.593177+00:00",
+    "source_head": "dd052a8c4a46ac2811856a28eba735acd633e68e",
+    "verdict": "CLEAR for the bounded source composition and recorded test outcomes; current-main runtime certification is not established.",
+    "verified_logs": {
+      "baseline_fixture": {
+        "exit_code": 1,
+        "matches": true,
+        "observed_summary": "1 failed, 13 passed in 11.14s",
+        "sha256": "97b7b185f7afee68801368264f0312837731170601b1f0e8dcfdbfae57df27ce"
+      },
+      "composed": {
+        "exit_code": 0,
+        "matches": true,
+        "observed_summary": "121 passed in 15.27s",
+        "sha256": "57f2a61ba7820a31a9884a740fbe24f93ba2d80250e71204ef87692457eee333"
+      }
+    }
+  },
+  "next_action": "Prime: integrate reviewed test deltas in its own candidate, include both changed test paths in intended CI coverage, verify aggregate head, resolve original freshness/visual/operating/PC gates. No automatic main merge or workflow rerun.",
+  "phase": "reviewed-prestart-support-handed-to-prime",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "scope_limit": "Reviewed source/test composition and metadata only; no all-federation health, new-main artifact ingestion, Windows execution of changed tests, deployment or PC restart proof.",
+  "session_id": "icarus2-20261020-federation-integration",
+  "source_heads": {
+    "engine_main": "b83eb07e6e6cd4bb43e9326c46521013f54afe74",
+    "observed_at_utc": "2026-10-21T21:33:18.229670+00:00",
+    "prs": {
+      "engine_pr": {
+        "base": "main",
+        "draft": false,
+        "head": "a02c781c4aba1c1139dd8806691239f72ece89a0",
+        "merged": false,
+        "state": "open"
+      },
+      "fixture": {
+        "base": "main",
+        "draft": false,
+        "head": "aa6aaf1053b90de80c6432244d4fe34c01d511aa",
+        "merged": false,
+        "state": "open"
+      },
+      "prime": {
+        "base": "main",
+        "draft": true,
+        "head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+        "merged": false,
+        "state": "open"
+      },
+      "restart": {
+        "base": "icarus1/restart-readiness-20261020",
+        "draft": false,
+        "head": "dd052a8c4a46ac2811856a28eba735acd633e68e",
+        "merged": false,
+        "state": "open"
+      }
+    }
+  },
+  "summary": "Prime prestart support: reproduced hidden root corpus fixture failure1fail13pass on Prime+restart464, then composed reviewed463 fixture and121relevant tests passed. Independent review CLEAR. Hosted463/464 each4green; Engine22612green with clean merge/code-identity proof against pinnedb83main. Coverage caveat: root fixture omitted by Linux+Windows jobs; new restart test omitted by Windows. Exact runtime/PC/release gates remain. Claims released, permanent worker preserved.",
+  "targets": [],
+  "type": "HANDOFF"
+}
