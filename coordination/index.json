@@ -1183,7 +1183,8 @@
         "icarus_engine/shadow-twin-ui.js",
         "icarus_engine/workspace-performance-ui.js",
         "icarus_engine/experience-ui.js",
-        "tests_engine/browser_cinema.cjs"
+        "tests_engine/browser_cinema.cjs",
+        "icarus_engine/experience-ui.css"
       ],
       "declared_targets": [
         {
@@ -1421,6 +1422,10 @@
         {
           "path": "tests_engine/browser_cinema.cjs",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.css",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1429,11 +1434,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T12:43:20.645Z",
-      "latest_summary": "Currentfb98 hosted UIvisual job119223003324 failed real browser assertion 'Mobile settings must clear desktop inline placement' in browser_cinema.cjs after compact resize800to390. Focused invariants/install/preview passed; earlier DNS errors retried successfully and are not the browser failure. Main runtime full3699 and local browser startup remain separate engineering evidence. Extend root lease narrowly to experience-ui.js/browser_cinema.cjs, reproduce responsive event/placement state before changing app or test. Common renderer remains next; no unrelated world redesign or relaxed geometry assertions.",
+      "last_event_at_utc": "2026-10-21T12:47:23.848Z",
+      "latest_summary": "Local installed Chromium reproduced stale desktop inline settings placement at390px with details.open true and matchMedia mobile true (one of8two-page resize probes). A second25-cycle single-page probe did not reproduce, so timing remains material. Add a deterministic delayed-viewport-callback browser regression and move measured desktop placement to CSS variables consumed only by the desktop media rule, letting mobile CSS bound the drawer immediately. Preserve existing browser_cinema geometry and inline-placement assertions unchanged; do not hide failure with longer sleeps. Extend lease only to experience-ui.css in addition to already claimed JS/tests.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "browser-mobile-settings-diagnosis",
+      "phase": "browser-responsive-settings-repair",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1495,7 +1500,8 @@
         "icarus_engine/shadow-twin-ui.js",
         "icarus_engine/workspace-performance-ui.js",
         "icarus_engine/experience-ui.js",
-        "tests_engine/browser_cinema.cjs"
+        "tests_engine/browser_cinema.cjs",
+        "icarus_engine/experience-ui.css"
       ],
       "reserved_targets": [
         {
@@ -1733,6 +1739,10 @@
         {
           "path": "tests_engine/browser_cinema.cjs",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/experience-ui.css",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1787,7 +1797,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T12:43:31.695898Z",
+  "generated_at_utc": "2026-10-21T12:47:32.849326Z",
   "owner_status": {
     "claude": {
       "active": false,
