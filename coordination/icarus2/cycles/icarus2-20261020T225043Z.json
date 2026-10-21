@@ -1,0 +1,3171 @@
+{
+  "actual_swarms": [
+    {
+      "agents": [
+        "/root/veritas",
+        "/root/review_finish"
+      ],
+      "outcome": "authority and evidence review; material defects reopened review, final helper review clear",
+      "scope": "VERITAS"
+    },
+    {
+      "agents": [
+        "/root/hermes"
+      ],
+      "outcome": "partial pinned audit; interrupted usage limit; parent completed selected current metadata and consumer reads",
+      "scope": "HERMES"
+    },
+    {
+      "agents": [
+        "/root/kepler",
+        "/root/federation_finish"
+      ],
+      "outcome": "Icarus1 CI handoff and remaining repository audit; later native quota interrupted continuation",
+      "scope": "KEPLER"
+    },
+    {
+      "agents": [
+        "/root/mnemosyne"
+      ],
+      "outcome": "spawned; final standalone report unavailable; earlier dated audit and bounded source follow-up retained",
+      "scope": "MNEMOSYNE"
+    },
+    {
+      "agents": [
+        "/root/synapse",
+        "/root/core_repair",
+        "/root/core_finish",
+        "/root/core_finish/core_challenge",
+        "/root/review_finish"
+      ],
+      "outcome": "meaningful RED, narrow repairs, focused GREEN, independent edge probes clear",
+      "scope": "SYNAPSE"
+    }
+  ],
+  "all_icarus_requirements_complete": false,
+  "automatic_main_merge_authorized": false,
+  "blockers": [
+    "Four post-capture repository heads drifted; nextcycle must re-pin.",
+    "Five CI histories exceed the bounded500runwindow; no complete-history claim.",
+    "Icarus and owner-actions exact captured heads lack observed CI in the boundedwindow.",
+    "Divine Providence actual research andWindows failures persist.",
+    "Icarus1 currentWindows failure andowner-PC runtime remain unverified/unresolved.",
+    "Native usage limits interrupted two audits; no substitute complete audit or outage observations fabricated.",
+    "Helper code remains on reviewed draftPR60, notmain; new helper tests have local proof only."
+  ],
+  "capabilities": {
+    "connected_github": true,
+    "live_trading_activated": false,
+    "local_tests": true,
+    "native_parallel_delegation": true,
+    "provider_requests": 0,
+    "scheduler_mutations": 0,
+    "shell": true,
+    "training_runs": 0,
+    "ultracode_switch": "NOT_EXPOSED",
+    "worker_control_mutations": 0
+  },
+  "captures": [
+    {
+      "completed_at_utc": "2026-10-20T22:55:00.553970Z",
+      "requests": 333,
+      "result": "Initial capture exposed numeric pagination incompatibility; later repaired.",
+      "started_at_utc": "2026-10-20T22:54:35.799911Z"
+    },
+    {
+      "completed_at_utc": "2026-10-21T04:18:55.830478Z",
+      "purpose": "Bounded revalidation after meaningful pagination regression repair.",
+      "raw_snapshot_published": false,
+      "snapshot_sha256": "227d9c072919cb0a151d2d6afacdf446ab4831287f01bbfb9a3a1f25ef3f3823",
+      "started_at_utc": "2026-10-21T04:18:14.602816Z",
+      "transport": {
+        "aggregate_byte_limit": 67108864,
+        "budget_exhausted": false,
+        "provider_requests": 0,
+        "read_only": true,
+        "request_limit": 500,
+        "requests": 357,
+        "response_byte_limit": 8388608,
+        "response_bytes": 35810801,
+        "wall_seconds_limit": 180
+      }
+    }
+  ],
+  "changes": {
+    "branch": "icarus2/federation-verification-20261021",
+    "commit": "df32dabd064510ce9934cea09c5140ff3cdffa21",
+    "draft": true,
+    "excluded": "All workflow/scheduler files, worker.json, AUTOMATION.md and all Icarus1 reserved targets.",
+    "files": [
+      "coordination/icarus2/DESIGN.md",
+      "coordination/icarus2/PLAN.md",
+      "coordination/icarus2/swarm-inputs/hermes.json",
+      "coordination/icarus2/swarm-inputs/kepler.json",
+      "coordination/icarus2/swarm-inputs/mnemosyne.json",
+      "coordination/icarus2/swarm-inputs/veritas.json",
+      "docs/icarus2-integration-brain.md",
+      "integration_brain/__init__.py",
+      "integration_brain/__main__.py",
+      "integration_brain/core.py",
+      "integration_brain/transport.py",
+      "tests/test_icarus2_cli.py",
+      "tests/test_integration_brain.py",
+      "tests/test_integration_brain_transport.py"
+    ],
+    "merged": false,
+    "pull_request": 60,
+    "pull_request_url": "https://github.com/reppiks490/icarus-owner-actions/pull/60",
+    "repository": "reppiks490/icarus-owner-actions"
+  },
+  "completed_at_utc": "2026-10-21T09:26:17.211787Z",
+  "controls": {
+    "checked_at_utc": "2026-10-21T09:26:17.206947+00:00",
+    "collisions": [],
+    "commit": "b7cb91759d9c49d65daf23096c5a9612506d0efa",
+    "owner_blob": "ea7074c966b2a711a3e1751db4b84fa36c668cf2",
+    "worker_blob": "3883408e5d305c9e42ef163f3e65321176b523ff"
+  },
+  "coordination_source_identities": [
+    {
+      "blob_sha": "b2782728f87db0408663024d84348949216af0b3",
+      "path": "coordination/events/2026/10/16/20261016T123550Z-plan-shadow-dashboard-overlay.json",
+      "size": 1136
+    },
+    {
+      "blob_sha": "c1d4a7340785abd80af041d4721211b71c89ed09",
+      "path": "coordination/events/2026/10/16/20261016T123700Z-waiting-shadow-dashboard-overlay.json",
+      "size": 1010
+    },
+    {
+      "blob_sha": "e8d707f44eb51cde2d918225dbabc4c42605fd96",
+      "path": "coordination/events/2026/10/16/20261016T124300Z-update-shadow-dashboard-overlay.json",
+      "size": 1097
+    },
+    {
+      "blob_sha": "9a9ab48df487b1d5120c91e2b45c22787ba55ec9",
+      "path": "coordination/events/2026/10/16/20261016T124633Z-complete-shadow-dashboard-overlay.json",
+      "size": 1227
+    },
+    {
+      "blob_sha": "51ad5c2135e8768bcd4467f918751abe6923aa49",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061300Z-claim.json",
+      "size": 1533
+    },
+    {
+      "blob_sha": "0fc7bcde75672c69d4932f54f200f37d96a1b842",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061500Z-red-note.json",
+      "size": 1172
+    },
+    {
+      "blob_sha": "5424d92dcbf8188bce4bee9e92567d7370cb862b",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061600Z-tool-routing-note.json",
+      "size": 869
+    },
+    {
+      "blob_sha": "22ce207007ad93dfc00227e5185f23544bd45aa7",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061700Z-copy-branch-note.json",
+      "size": 1018
+    },
+    {
+      "blob_sha": "6eb2866f452c112922bc97bee53566f1a0ba975d",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-compiler-durability/20261016T061800Z-no-more-meta-note.json",
+      "size": 723
+    },
+    {
+      "blob_sha": "37b590b05cc98a1d0decfd890b7f51873b7b4b87",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T025100Z-plan.json",
+      "size": 1059
+    },
+    {
+      "blob_sha": "026bf473f3b4073c79d4627874b14b5bd9e27ae2",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T025600Z-cross-repo-adoption.json",
+      "size": 1687
+    },
+    {
+      "blob_sha": "1cc2606de9ec9bd51549c094b6975094eb7360a1",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030200Z-postmerge-hardening.json",
+      "size": 1132
+    },
+    {
+      "blob_sha": "39dc5795740671a3fdf89dd94295bce4d2476852",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030230Z-bus-automation-hardening.json",
+      "size": 1143
+    },
+    {
+      "blob_sha": "e8dd68ba7c4ea6a5447a3e9d0f62561109cbf06d",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030330Z-branch-correction.json",
+      "size": 901
+    },
+    {
+      "blob_sha": "f6c23920ba973061a33ec58def98792b12f1357b",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030430Z-placeholder-clean.json",
+      "size": 832
+    },
+    {
+      "blob_sha": "a57c9b4951069bf8735ab0eafb5f6841088dee78",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030500Z-branch-api-correction.json",
+      "size": 793
+    },
+    {
+      "blob_sha": "e0a73ef9d4dda7d1c9504fa2903c8d1e9e935b6a",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T030700Z-federation-entrypoint-adoption.json",
+      "size": 1682
+    },
+    {
+      "blob_sha": "d41bec6100a349998a01323dcc5b45505cd13d39",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T031000Z-l1-j02-reclaim-handoff.json",
+      "size": 1491
+    },
+    {
+      "blob_sha": "dda236b327ee7b1437921e8f8694e612ee7c09c6",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T031000Z-waiting-maintenance-ci.json",
+      "size": 1099
+    },
+    {
+      "blob_sha": "0c572d6c789a748f7eecf31c28e060ca6dbcb08e",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T031300Z-crossrepo-adoption.json",
+      "size": 1930
+    },
+    {
+      "blob_sha": "94ad8c9cc393643f2fddd8780a437925b9da968f",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T031400Z-futures-universe-claim.json",
+      "size": 2149
+    },
+    {
+      "blob_sha": "07b74b5fd20c4c6f2c9c54817a1b824919994f32",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T031450Z-adoption-test-targets.json",
+      "size": 1634
+    },
+    {
+      "blob_sha": "bc365f7687e7014565d5b84f0fefb9a4cde144f1",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032000Z-coordination-ui-claim.json",
+      "size": 1378
+    },
+    {
+      "blob_sha": "abcbd8c393571a590b813bdae84573735baa0825",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032250Z-coordination-ui-scope-refine.json",
+      "size": 1355
+    },
+    {
+      "blob_sha": "e697b94c9b4eaf794276ea58e04e62ea50a28d46",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032400Z-waiting-coordination-ui-red.json",
+      "size": 1096
+    },
+    {
+      "blob_sha": "b2d9dfa560a1aa2b8edb86df3f96565d9df22c9c",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032500Z-futures-probe-workflow-claim.json",
+      "size": 1423
+    },
+    {
+      "blob_sha": "a50a263acaef4e7b38984af8f75650f57bd47f8a",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032700Z-coordination-ui-provenance.json",
+      "size": 1205
+    },
+    {
+      "blob_sha": "d8357eb2f5f5fc48cf18ada2955601bcab4582ea",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T032700Z-mcp-provenance-claim.json",
+      "size": 1195
+    },
+    {
+      "blob_sha": "f4f02bf502ad516bd5a6124dac7a203e5c3ac058",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-futures/20261016T034000Z-futures-universe-complete.json",
+      "size": 1515
+    },
+    {
+      "blob_sha": "f26d0f3cd9cba5eef39ab05d53e3665d7065f178",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T032905Z-ui-claim.json",
+      "size": 1239
+    },
+    {
+      "blob_sha": "998ce8d0313b586d522a72dcf207c7c9a08ec639",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T033200Z-waiting-exact-head.json",
+      "size": 1417
+    },
+    {
+      "blob_sha": "6ec620ffb6092826d519afced88fa69ef2f7c335",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050100Z-mirror-durability-repair.json",
+      "size": 1700
+    },
+    {
+      "blob_sha": "6afd698dbd05e699e5ad21c5df0394027cd0f19d",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050200Z-operator-correction.json",
+      "size": 908
+    },
+    {
+      "blob_sha": "a58dde259d841a32f134ec7e297c0088fb47c998",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050300Z-second-operator-correction.json",
+      "size": 927
+    },
+    {
+      "blob_sha": "eb7385e062478bfddba9d2ff998e9de9406a9358",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050400Z-branch-api-ready.json",
+      "size": 766
+    },
+    {
+      "blob_sha": "c664829337bd4ea9cd7764d397d6eaf84aac7f88",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050500Z-stop-marker-writes.json",
+      "size": 778
+    },
+    {
+      "blob_sha": "d21c47da93b421c748a2df2fb6af4287811c9b14",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050600Z-tool-routing-note.json",
+      "size": 681
+    },
+    {
+      "blob_sha": "9fa8668de76f922e977169b9d25509b0fdfb4cb7",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050700Z-branch-action-next.json",
+      "size": 672
+    },
+    {
+      "blob_sha": "2f798ccb920fab016e782c3bb0332cb2fe5a81d7",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050800Z-branch-action-required.json",
+      "size": 628
+    },
+    {
+      "blob_sha": "31d2c3a051f0a46632e346b384844d42e7d4abed",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T050900Z-no-engine-write.json",
+      "size": 642
+    },
+    {
+      "blob_sha": "615597db65dd3f632e565dc3c9e34a196024feda",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T051000Z-tooling-loop-stop.json",
+      "size": 721
+    },
+    {
+      "blob_sha": "6640fcdce01ba96d5358da4d7db495464cb93d5f",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T052000Z-complete.json",
+      "size": 1505
+    },
+    {
+      "blob_sha": "d2587bf3ea64362637eae62bee589b0376a994c3",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T062700Z-coordination-ui-complete.json",
+      "size": 1550
+    },
+    {
+      "blob_sha": "a645e2956d4b6e2c02c509e17faa7635188521f9",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-coordination-ui-182/20261016T063100Z-coordination-ui-complete.json",
+      "size": 1384
+    },
+    {
+      "blob_sha": "d5addd067f687c4a26ab3913210c0f22b20d107e",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-data-health-accuracy/20261016T051800Z-claim.json",
+      "size": 1549
+    },
+    {
+      "blob_sha": "774dd6bb8e6e492b9d21c9025d0b6ff8cf70a4fa",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-data-health-accuracy/20261016T064000Z-data-health-accuracy-complete.json",
+      "size": 1756
+    },
+    {
+      "blob_sha": "6fb94364a8d191f960020ed2970500f7a6fb94b8",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-system-convergence/20261016T120516Z-plan.json",
+      "size": 1715
+    },
+    {
+      "blob_sha": "a7a372d1ead8f531ed7ea53310501c5523888b50",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-vendor-panel-vault/20261016T034310Z-l1-j02-claim.json",
+      "size": 2113
+    },
+    {
+      "blob_sha": "9c9f8b75f4d9d0b84a3701dd59b7866986b27275",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-vendor-panel-vault/20261016T034500Z-scope-plan-tests.json",
+      "size": 1851
+    },
+    {
+      "blob_sha": "756452aefaa67313a741a4ea4fa2536471b605b4",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-atlas-vendor-panel-vault/20261016T045110Z-l1-j02-complete.json",
+      "size": 2024
+    },
+    {
+      "blob_sha": "24bdd6ed648e446416856084bf6dd2bf50ec4244",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-current-head-builds/20261016T183900Z-plan.json",
+      "size": 820
+    },
+    {
+      "blob_sha": "47d46528f24bd02d499fc41ce971e5f8ea4cadbf",
+      "path": "coordination/events/2026/10/16/chatgpt-20261016-current-head-builds/20261016T183930Z-complete.json",
+      "size": 1168
+    },
+    {
+      "blob_sha": "94c49a97d6b8c6f6941c36f8185a351387223c16",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-ledger-hardening/20261016T064505Z-a200-ledger-claim.json",
+      "size": 1638
+    },
+    {
+      "blob_sha": "8deba8966ca578eb1234815ec7a3769c0a0a949f",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-ledger-hardening/20261016T065015Z-a200-ledger-ci-wait.json",
+      "size": 1553
+    },
+    {
+      "blob_sha": "372c4e004ce886f3974e1b982954b6cb5029034e",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-ledger-hardening/20261016T065120Z-a200-credential-visibility-blocker.json",
+      "size": 1220
+    },
+    {
+      "blob_sha": "02afd8905cdaac859f6a3eaed53884294d92d7c5",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-ledger-hardening/20261016T071500Z-a200-main-verification-complete.json",
+      "size": 1584
+    },
+    {
+      "blob_sha": "bab0f566730bc234ec183af437d1175c1db23509",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071714Z-a200-provider-scope-plan.json",
+      "size": 1797
+    },
+    {
+      "blob_sha": "43ed64cf8f5ac6502beaed45ab25cb20f7b43c9f",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071826Z-a200-provider-scope-ci-wait.json",
+      "size": 1265
+    },
+    {
+      "blob_sha": "861c91caba0f9217205b0aa7ae2c24ba275f8e0b",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T071930Z-a200-provider-scope-head-update.json",
+      "size": 1386
+    },
+    {
+      "blob_sha": "bb92aa4c4a2331bd54594d91e563e473105c1fb4",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-provider-scope/20261016T072304Z-a200-provider-calls-update.json",
+      "size": 1367
+    },
+    {
+      "blob_sha": "2f5f3a1a69fc91dfb23d684de16ea7df43f0e995",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-timezone-provenance/20261016T122520Z-plan.json",
+      "size": 1222
+    },
+    {
+      "blob_sha": "ffb1a696113f7f17220a8965f8e9454cff97f375",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-timezone-provenance/20261016T122547Z-waiting.json",
+      "size": 1126
+    },
+    {
+      "blob_sha": "0505d5b055c45b6ca1cd2c300cee91076d109f15",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-timezone-provenance/20261016T122725Z-cancelled-codex-a200-timezone-provenance.json",
+      "size": 1270
+    },
+    {
+      "blob_sha": "14f278a89ee309cc73939e8aaebc554ded912f9a",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-timezone-provenance/20261016T122725Z-handoff-codex-a200-timezone-provenance.json",
+      "size": 1203
+    },
+    {
+      "blob_sha": "1b3fcd3381252c43cd88c36d2a8fc884c603438b",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-uw-head-refresh/20261016T124519Z-plan.json",
+      "size": 1068
+    },
+    {
+      "blob_sha": "4dd601a989f12ca57503694542b19a372b510ac8",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-uw-head-refresh/20261016T124548Z-complete.json",
+      "size": 2871
+    },
+    {
+      "blob_sha": "4b2012777864586d5d563cd6cd72e786d90b0a7b",
+      "path": "coordination/events/2026/10/16/codex-20261016-c02-brain-uw-merge/20261016T130247Z-plan.json",
+      "size": 1069
+    },
+    {
+      "blob_sha": "4c60ae2da10451bd5f53c539989fec80e1ccdfd4",
+      "path": "coordination/events/2026/10/16/codex-20261016-c02-brain-uw-merge/20261016T130317Z-complete.json",
+      "size": 2305
+    },
+    {
+      "blob_sha": "17b1533e0258ec22318471961ede479dad81c965",
+      "path": "coordination/events/2026/10/16/codex-20261016-c04-population-audit/20261016T124315Z-plan.json",
+      "size": 968
+    },
+    {
+      "blob_sha": "2e503e79a8efa5d8ebb27ce4b7cc2f0c6aa9e51b",
+      "path": "coordination/events/2026/10/16/codex-20261016-c04-population-audit/20261016T124330Z-complete.json",
+      "size": 2423
+    },
+    {
+      "blob_sha": "cda68d376764fa301c137db21c93bf3e0163e192",
+      "path": "coordination/events/2026/10/16/codex-20261016-dashboard-cinema-followup/20261016T063820Z-dashboard-cinema-plan.json",
+      "size": 1261
+    },
+    {
+      "blob_sha": "315b3bd52fa52f1e7c99d194bc78ea639231ddd2",
+      "path": "coordination/events/2026/10/16/codex-20261016-dashboard-cinema-followup/20261016T064230Z-dashboard-anchor-fix.json",
+      "size": 1529
+    },
+    {
+      "blob_sha": "eaea3e37aca52e038dd06f07c33398446ae53866",
+      "path": "coordination/events/2026/10/16/codex-20261016-dashboard-cinema-followup/20261016T064430Z-dashboard-anchor-merged.json",
+      "size": 1464
+    },
+    {
+      "blob_sha": "f41b4845ce1cb3f7ccd52b4be2deea3d7177f5d9",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T122400Z-overlap-and-tests-handoff.json",
+      "size": 1568
+    },
+    {
+      "blob_sha": "b0098ab7fa174a5fb174cb8d8692e899fd2e80b6",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T122948Z-current-head-readback.json",
+      "size": 2041
+    },
+    {
+      "blob_sha": "217d5728d4218cf80597da1b6a93866f2cf18942",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T124027Z-exact-head-rereview.json",
+      "size": 2667
+    },
+    {
+      "blob_sha": "f36771f21add5be3d52496f33272199474f7d789",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T124714Z-tdd-head-review.json",
+      "size": 1966
+    },
+    {
+      "blob_sha": "2e490a537a1a9356c9e6963395b0fbd833dfe047",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T124841Z-execution-boundary.json",
+      "size": 1746
+    },
+    {
+      "blob_sha": "ead8c382d0996c8876099d5840533f49671c2b67",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T130200Z-latest-pr415-review.json",
+      "size": 2014
+    },
+    {
+      "blob_sha": "14774e177bb7d1cfb378dca68f16eacc67832655",
+      "path": "coordination/events/2026/10/16/codex-20261016-futures-pr-review/20261016T131110Z-current-reviews.json",
+      "size": 1669
+    },
+    {
+      "blob_sha": "2adbb915c5d85bfa29ced087b67dabf72beef9a6",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-doc-consistency/20261016T122800Z-claim.json",
+      "size": 1319
+    },
+    {
+      "blob_sha": "dfd576cc44236dde5f4f9a8babfbce7e1d3d02a4",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-doc-consistency/20261016T125132Z-complete.json",
+      "size": 2026
+    },
+    {
+      "blob_sha": "9855e6d3fe27600dea052f3a86940d5e3c501718",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-ledger-refresh/20261016T125900Z-claim.json",
+      "size": 1053
+    },
+    {
+      "blob_sha": "4fca2f5b2f856e8a61e94f645505516e72e49f75",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-ledger-refresh/20261016T130243Z-ci-contract-update.json",
+      "size": 1241
+    },
+    {
+      "blob_sha": "428833bab075c4a43b9ea2c750e2296bd0dc1dee",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-ledger-refresh/20261016T130430Z-ci-contract-update.json",
+      "size": 1259
+    },
+    {
+      "blob_sha": "979b7b93ad960476d597b329319350425bb72e1e",
+      "path": "coordination/events/2026/10/16/codex-20261016-intrinio-ledger-refresh/20261016T130734Z-complete.json",
+      "size": 1317
+    },
+    {
+      "blob_sha": "32f3bf308504df93859499978af7a194447875dd",
+      "path": "coordination/events/2026/10/16/codex-20261016-latest-main-readback/20261016T125146Z-plan.json",
+      "size": 1125
+    },
+    {
+      "blob_sha": "b5d2025d7593327c36a675cf9ccf27df60502795",
+      "path": "coordination/events/2026/10/16/codex-20261016-latest-main-readback/20261016T125210Z-complete.json",
+      "size": 3089
+    },
+    {
+      "blob_sha": "35f523447aadd277317026de55913fb517ea1162",
+      "path": "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T070900Z-owner-contact-plan.json",
+      "size": 1459
+    },
+    {
+      "blob_sha": "fd2be7e826cfc5034d168a33579aabd2572c43b8",
+      "path": "coordination/events/2026/10/16/codex-20261016-owner-contact-boundary/20261016T071400Z-owner-contact-docs-update.json",
+      "size": 1830
+    },
+    {
+      "blob_sha": "c282de2ba92041a8799d957a1f24a66427ff8e63",
+      "path": "coordination/events/2026/10/16/codex-20261016-phone-command-center-site/20261016T060500Z-mobile-site-plan.json",
+      "size": 2437
+    },
+    {
+      "blob_sha": "779b1aa384dd2a3939fb22fc8d37191fc23c5c4d",
+      "path": "coordination/events/2026/10/16/codex-20261016-phone-command-center-site/20261016T061000Z-desktop-ui-update.json",
+      "size": 3403
+    },
+    {
+      "blob_sha": "5d36376ce8f2ad7910e526e8d3f6f3065addc668",
+      "path": "coordination/events/2026/10/16/codex-20261016-phone-command-center-site/20261016T121700Z-paper-flatten-claim.json",
+      "size": 2299
+    },
+    {
+      "blob_sha": "38e3f031483e037de92f28457f05a5d618c9c6bd",
+      "path": "coordination/events/2026/10/16/codex-20261016-phone-command-center-site/20261016T122900Z-phone-site-deployed-paper-api-pr.json",
+      "size": 2672
+    },
+    {
+      "blob_sha": "0eb7b29de0f211520985ed41c0b94115473cb2d8",
+      "path": "coordination/events/2026/10/16/codex-20261016-phone-command-center-site/20261016T123034Z-desktop-ui-current-main-pr.json",
+      "size": 2762
+    },
+    {
+      "blob_sha": "43208fb0969bb7895875a4d92eff3993d383f8f1",
+      "path": "coordination/events/2026/10/16/codex-20261016-provider-data-hardening/20261016T130349Z-provider-data-hardening-plan.json",
+      "size": 1442
+    },
+    {
+      "blob_sha": "755625356ac7cfff2a290dab9bd7cb3e3bba2b39",
+      "path": "coordination/events/2026/10/16/codex-20261016-provider-data-hardening/20261016T131027Z-provider-data-root-cause-update.json",
+      "size": 1972
+    },
+    {
+      "blob_sha": "29c6c5a9f199d27174b5ec32e707c33d956bf125",
+      "path": "coordination/events/2026/10/16/codex-20261016-provider-data-hardening/20261016T131347Z-add-current-state-record.json",
+      "size": 1055
+    },
+    {
+      "blob_sha": "36a9f8d2b3718ed477abb583f1fe5db9b83ea3d8",
+      "path": "coordination/events/2026/10/16/codex-20261016-provider-data-hardening/20261016T131600Z-preserve-safe-history-context.json",
+      "size": 1664
+    },
+    {
+      "blob_sha": "5c57d20f7c33203093edbf6eb6be23f28bd3fd4c",
+      "path": "coordination/events/2026/10/16/codex-20261016-real-price-shadow-twin/20261016T122109Z-shadow-twin-claim.json",
+      "size": 1954
+    },
+    {
+      "blob_sha": "5a9d4ad28b6b3daa9399b9c563483ea25d430c41",
+      "path": "coordination/events/2026/10/16/codex-20261016-real-price-shadow-twin/20261016T123031Z-shadow-twin-main-readback-complete.json",
+      "size": 2163
+    },
+    {
+      "blob_sha": "2afe9753d47e4e5463897d678cf3ab5e85fbc43c",
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json",
+      "size": 945
+    },
+    {
+      "blob_sha": "56f551635570abc7b0a68b7bb36b11cd32dad42b",
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200000Z-update.json",
+      "size": 1191
+    },
+    {
+      "blob_sha": "afc875c96b8ff4233d211822c51a092a838ebb70",
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200100Z-release.json",
+      "size": 812
+    },
+    {
+      "blob_sha": "224fbf0e3f100ee0147cd8d5fb5a48b20feb8700",
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200200Z-schema-correction.json",
+      "size": 1135
+    },
+    {
+      "blob_sha": "21cda8a1501fe6a65f7248e507b6df2066469d2a",
+      "path": "coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T200300Z-heartbeat.json",
+      "size": 953
+    },
+    {
+      "blob_sha": "7ef7650310d2261c8c1f93afedc0dbbfeaa4ccd5",
+      "path": "coordination/events/2026/10/16/codex-20261016-uw-pulse-consumption-audit/20261016T123100Z-plan.json",
+      "size": 1088
+    },
+    {
+      "blob_sha": "b06c82df2d805f860ba85b11cdb84833145da6c1",
+      "path": "coordination/events/2026/10/16/codex-20261016-uw-pulse-consumption-audit/20261016T123145Z-complete.json",
+      "size": 2602
+    },
+    {
+      "blob_sha": "b5ec05f823aae87895d09effc922e7fcf72d4ae8",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-branch-refresh/20261017T231954Z-plan.json",
+      "size": 944
+    },
+    {
+      "blob_sha": "39b2ae6421d8a39e09726ea8a2ba0bc7e1a4ed5f",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-branch-refresh/20261017T232008Z-update.json",
+      "size": 1072
+    },
+    {
+      "blob_sha": "2475b634fcae53e61dffe708b75b8a20f42b35ee",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-branch-refresh/20261017T232017Z-complete.json",
+      "size": 1016
+    },
+    {
+      "blob_sha": "644c5105aa4f755c5010ecb34191de7c85671494",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-final-refresh/20261017T231900Z-plan.json",
+      "size": 888
+    },
+    {
+      "blob_sha": "cb43021d6b7354894421ced9e0eb5256d657c116",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-final-refresh/20261017T231918Z-update.json",
+      "size": 1200
+    },
+    {
+      "blob_sha": "60880cf65d726f58c2415a5f4d17000b5e48c840",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-final-refresh/20261017T231932Z-complete.json",
+      "size": 1151
+    },
+    {
+      "blob_sha": "e556fe0a1f69f475b79a44e7d0eb61aa21e83760",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-refresh/20261017T231754Z-plan.json",
+      "size": 958
+    },
+    {
+      "blob_sha": "68bce80e39f7c6bc78266e416b3ed908b689cd61",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-refresh/20261017T231824Z-update.json",
+      "size": 1219
+    },
+    {
+      "blob_sha": "2ecdc72e7910bbabe9af24454c821c1bbb40fc3a",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point-refresh/20261017T231840Z-complete.json",
+      "size": 1213
+    },
+    {
+      "blob_sha": "19326cd381bcd6147843ca0ead7eff84657a7803",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point/20261017T231700Z-plan.json",
+      "size": 1113
+    },
+    {
+      "blob_sha": "24c37eb0433868fa51e2f1a1e1c30add03ada421",
+      "path": "coordination/events/2026/10/17/chatgpt-20261017-stop-point/20261017T231900Z-complete.json",
+      "size": 1183
+    },
+    {
+      "blob_sha": "96f5efede69f5a025ff2ec2c9057b17360c698c0",
+      "path": "coordination/events/2026/10/17/codex-20261017-coordination-cron-guard/20261017T232327Z-claim.json",
+      "size": 1046
+    },
+    {
+      "blob_sha": "b5c8b6c54e419f638639b5e2543f6731204d71bb",
+      "path": "coordination/events/2026/10/17/codex-20261017-coordination-cron-guard/20261017T232544Z-complete.json",
+      "size": 1119
+    },
+    {
+      "blob_sha": "54adf79ea41cb6de4455171f2d582b64a5ac40dd",
+      "path": "coordination/events/2026/10/17/codex-20261017-hub-integration-lead/20261017T231643Z-co-lead-hub-claim.json",
+      "size": 3066
+    },
+    {
+      "blob_sha": "8481b67c389b2cc71bfd8cad9e528feb561faa1a",
+      "path": "coordination/events/2026/10/17/codex-20261017-hub-integration-lead/20261017T232254Z-hub-pr59-waiting.json",
+      "size": 2847
+    },
+    {
+      "blob_sha": "45409a9ba7b6a11f03a5bad5b83fa0cdb420ff9f",
+      "path": "coordination/events/2026/10/17/codex-20261017-hub-integration-lead/20261017T232526Z-gru-integration-claim.json",
+      "size": 4121
+    },
+    {
+      "blob_sha": "72a2bb44092ce90da6674fd742b9baf8bb381ba4",
+      "path": "coordination/events/2026/10/17/codex-20261017-legacy-event-normalization/20261017T231913Z-claim.json",
+      "size": 1068
+    },
+    {
+      "blob_sha": "918f20e2fcf5dd3b4b71668636fa53539fffd349",
+      "path": "coordination/events/2026/10/17/codex-20261017-legacy-event-normalization/20261017T232038Z-update.json",
+      "size": 1230
+    },
+    {
+      "blob_sha": "0875e89094538ac36b0de653830ba2cf334a6eb6",
+      "path": "coordination/events/2026/10/17/codex-20261017-legacy-event-normalization/20261017T232424Z-complete.json",
+      "size": 1101
+    },
+    {
+      "blob_sha": "9b40931e578ea3a41293382007eadb8c48ce17a4",
+      "path": "coordination/events/2026/10/17/codex-20261017-sentinel-row-refresh-test/20261017T231951Z-claim.json",
+      "size": 1146
+    },
+    {
+      "blob_sha": "0b47444c2307b8db9cf331014e6de81381edc71a",
+      "path": "coordination/events/2026/10/17/codex-20261017-sentinel-row-refresh-test/20261017T232043Z-update.json",
+      "size": 1337
+    },
+    {
+      "blob_sha": "433a6fd9bf6739d9820bd8605bf6b3c1bb019007",
+      "path": "coordination/events/2026/10/17/codex-20261017-sentinel-row-refresh-test/20261017T232207Z-ci-update.json",
+      "size": 1273
+    },
+    {
+      "blob_sha": "1baa264e4b31c055b6ef9d9ee7a48f1e87498fc0",
+      "path": "coordination/events/2026/10/17/codex-20261017-sentinel-row-refresh-test/20261017T232329Z-complete.json",
+      "size": 1805
+    },
+    {
+      "blob_sha": "26526dcdee3045b64e421d86ee772a9333326084",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T231345Z-runtime-fixture-claim.json",
+      "size": 1301
+    },
+    {
+      "blob_sha": "4eca856160eeae67546ffbefb87d3806c7d1200a",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T231500Z-plan.json",
+      "size": 1250
+    },
+    {
+      "blob_sha": "5152525df0ad8d47c46daed310faf0186f0363ae",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T231652Z-compiler-handoff.json",
+      "size": 1414
+    },
+    {
+      "blob_sha": "81b63da57b9583028c7962b86a8f0c2e72fb3deb",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T231800Z-initial-tranche-complete.json",
+      "size": 1166
+    },
+    {
+      "blob_sha": "215e2b486d0fc5bde97c2709ee51197e301e750f",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T231800Z-test-clock-claim.json",
+      "size": 1060
+    },
+    {
+      "blob_sha": "1c3ec456090d9661015d98e1228c091237f81e33",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233047Z-resume-federation.json",
+      "size": 1961
+    },
+    {
+      "blob_sha": "87a4fd66944379c9316c9fe40063a989a21b1024",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233141Z-brain-authorization-claim.json",
+      "size": 2289
+    },
+    {
+      "blob_sha": "b1bd40cf6ed538063bfdd5fdaef8a86b04a5d60b",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233232Z-hub-windows-finding.json",
+      "size": 1400
+    },
+    {
+      "blob_sha": "acdd425bba68a53396ca5707ba0bf04612cf2a89",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233517Z-futures-green.json",
+      "size": 3532
+    },
+    {
+      "blob_sha": "9b06afadc3c42b7fc46377c539eb38a9e7fe2736",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233706Z-coord-count-claim.json",
+      "size": 1604
+    },
+    {
+      "blob_sha": "897f1a689189b5b17745e0f5c343a070d6628c2a",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233816Z-windows-module-coverage.json",
+      "size": 1596
+    },
+    {
+      "blob_sha": "ad593f6277c8243530ac53f63b279f6158440ced",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T233857Z-review-ready.json",
+      "size": 1709
+    },
+    {
+      "blob_sha": "a5661509bca7ca9a4a2ed2f75a40b99c1aae81e3",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T234907Z-release-review-boundary.json",
+      "size": 1774
+    },
+    {
+      "blob_sha": "d9b03d2eb0a6ddcd6d67e5d67cc2fe425d3c42b1",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T235142Z-parallel-resume.json",
+      "size": 1693
+    },
+    {
+      "blob_sha": "db9b5ac8b74fb8be3407fc29b55a77214cce4085",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T235323Z-review-repairs.json",
+      "size": 2459
+    },
+    {
+      "blob_sha": "50827da75cf7ffaf68f62ba949250c60290ca887",
+      "path": "coordination/events/2026/10/17/codex-20261017-task-inventory-start/20261017T235640Z-parallel-repair-progress.json",
+      "size": 2819
+    },
+    {
+      "blob_sha": "5f6d6e666d92b4fae85f6549c6123c2187daba93",
+      "path": "coordination/events/2026/10/18/codex-20261017-hub-integration-lead/20261018T041313Z-resume-python313-investigation.json",
+      "size": 4137
+    },
+    {
+      "blob_sha": "bc9ee0bc884132b336d15783be14dd8432952a02",
+      "path": "coordination/events/2026/10/18/codex-20261017-hub-integration-lead/20261018T144129Z-audit-handoff-and-hub-renewal.json",
+      "size": 4476
+    },
+    {
+      "blob_sha": "36117f3c4a2990a2aa370bf3b57d3b2a82547050",
+      "path": "coordination/events/2026/10/18/codex-20261017-hub-integration-lead/20261018T144826Z-a200-fixture-merge-review.json",
+      "size": 4517
+    },
+    {
+      "blob_sha": "64ed373caeb6db1662831baa0806f4488bd4ea97",
+      "path": "coordination/events/2026/10/18/codex-20261017-hub-integration-lead/20261018T145102Z-fixture-merged-gru-validation.json",
+      "size": 4668
+    },
+    {
+      "blob_sha": "8a692b623bc1ba0f1a481ca6f8fecedf1ead4eab",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T000032Z-a200-receipt-review.json",
+      "size": 2973
+    },
+    {
+      "blob_sha": "0dafd446efc48accc043497267400f759a04da9d",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T041319Z-ordered-continuation.json",
+      "size": 3456
+    },
+    {
+      "blob_sha": "09a2811e921d6a2a2061d1d9df7561db66f99895",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T041808Z-research-hosted-synthetic-gate.json",
+      "size": 3243
+    },
+    {
+      "blob_sha": "186f7fb7c68eb68628413c2783b4684b5d1b6e3e",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T042428Z-release-verified-repairs.json",
+      "size": 1137
+    },
+    {
+      "blob_sha": "001606a6cf9995214a49635cdda004e84ee0bf7c",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T042428Z-secure-corpus-consumer-plane.json",
+      "size": 2909
+    },
+    {
+      "blob_sha": "419791c87bccbca12e25f0d112ca0213061d6c5d",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T042935Z-mirror-operation-proof.json",
+      "size": 3421
+    },
+    {
+      "blob_sha": "3dc708bbf39b8b113f46dc0969623af86a2ac011",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T091620Z-corpus-native-intake.json",
+      "size": 3544
+    },
+    {
+      "blob_sha": "20b53fce59e9b3173d5aee53b82adafb65c0c266",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T092409Z-corpus-review-gaps.json",
+      "size": 4111
+    },
+    {
+      "blob_sha": "d4d8e8133d95a0d1a4b4cfa3a2fdb43e353e7d36",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T092903Z-four-workspace-implementation.json",
+      "size": 5371
+    },
+    {
+      "blob_sha": "ec1e8d6dfd30200ed9a7a9d243937782c53379ed",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T093620Z-native-poll-retirement.json",
+      "size": 5238
+    },
+    {
+      "blob_sha": "96fa3393fd41c39f5e6730674b1b667c5a90edf5",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T150619Z-workspace-convergence.json",
+      "size": 6132
+    },
+    {
+      "blob_sha": "544e6a5e4f11632d9717996b4622fb654423be2a",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T151311Z-pnl-prop-scope.json",
+      "size": 5536
+    },
+    {
+      "blob_sha": "bebb1383aeac94fb0af168953d7460aa4a0c7a45",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T200606Z-shared-pnl-validator.json",
+      "size": 5410
+    },
+    {
+      "blob_sha": "883a4fa6c4fb7503da1e3c14e9469ba598e7a253",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T200751Z-pnl-test-migration.json",
+      "size": 5386
+    },
+    {
+      "blob_sha": "ba9c04bb83cb6048ba0977c64ffa6cba5d23dcd1",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T201849Z-dashboard-review.json",
+      "size": 6377
+    },
+    {
+      "blob_sha": "8f2ba2a7423f4f64b1498f88a7f2911d37f4755c",
+      "path": "coordination/events/2026/10/18/codex-20261017-task-inventory-start/20261018T202237Z-expansion-proof-ui.json",
+      "size": 6220
+    },
+    {
+      "blob_sha": "dd2e7eedfd56e6947fc687c0df57b4aaea0df0d7",
+      "path": "coordination/events/2026/10/18/codex-20261018-dashboard-integration-audit/20261018T041413Z-plan.json",
+      "size": 1248
+    },
+    {
+      "blob_sha": "982467b1d509e6c6cebbadde72bd3409c2e5c424",
+      "path": "coordination/events/2026/10/18/codex-20261018-dashboard-integration-audit/20261018T092921Z-claim-root-repair-takeover.json",
+      "size": 2331
+    },
+    {
+      "blob_sha": "9a6eee00576392ae1d2eb0c54cc49446ba3f98c8",
+      "path": "coordination/events/2026/10/18/codex-20261018-dashboard-integration-audit/20261018T200421Z-update-guard-split.json",
+      "size": 1997
+    },
+    {
+      "blob_sha": "1456c4396e6fa80b8b183e27804f99b4b7256f4f",
+      "path": "coordination/events/2026/10/18/codex-20261018-discovery-provenance-fix/20261018T200350Z-claim.json",
+      "size": 1967
+    },
+    {
+      "blob_sha": "778361887c7ca15ff5dbf452900d3a2d07749d62",
+      "path": "coordination/events/2026/10/18/codex-20261018-discovery-provenance-fix/20261018T200600Z-update-cli-fixture.json",
+      "size": 2192
+    },
+    {
+      "blob_sha": "5cff7c6f8ba00b1bc7b8529868b284ccc88661b6",
+      "path": "coordination/events/2026/10/18/codex-20261018-discovery-provenance-fix/20261018T200810Z-waiting-review-ci.json",
+      "size": 2140
+    },
+    {
+      "blob_sha": "df8e504ff0bb81bc1eabd770e8a459ac69b82f8b",
+      "path": "coordination/events/2026/10/18/codex-20261018-discovery-provenance-fix/20261018T201117Z-final-head-waiting.json",
+      "size": 2334
+    },
+    {
+      "blob_sha": "a6572fe6185c16502d0e84f1f9c26e182977afa7",
+      "path": "coordination/events/2026/10/18/codex-20261018-provider-account-guard/20261018T041608Z-corpus-account-claim.json",
+      "size": 1299
+    },
+    {
+      "blob_sha": "3d70bed639b73e725981e2f2faf538a92e23b056",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T030151Z-focused-futures-dashboard-claim.json",
+      "size": 1689
+    },
+    {
+      "blob_sha": "54bafd763c7f917f10d45407b8d6c425292a481f",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T030733Z-owner-directed-integration-scope.json",
+      "size": 2196
+    },
+    {
+      "blob_sha": "086e645203547f786dc673fc444eb6ee8ef961a0",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T030920Z-restart-tool-scope.json",
+      "size": 2048
+    },
+    {
+      "blob_sha": "efa71b0acea0e43d6e72d8c91f915c86b727de4a",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T031136Z-cross-platform-verification-claim.json",
+      "size": 2187
+    },
+    {
+      "blob_sha": "629ef3318e942e193edd14af366c60f7ea2d3b3d",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T031847Z-four-dashboard-release-waiting.json",
+      "size": 2696
+    },
+    {
+      "blob_sha": "206b660d90f193f6a03aed76c33119c5ebd2f9d6",
+      "path": "coordination/events/2026/10/19/codex-20261017-hub-integration-lead/20261019T032521Z-focused-feature-release-complete.json",
+      "size": 1747
+    },
+    {
+      "blob_sha": "4685f9ac78fdf84c6f919a1d1198669e19c9c621",
+      "path": "coordination/events/2026/10/19/codex-20261017-task-inventory-start/20261019T011957Z-provider-consumption.json",
+      "size": 7055
+    },
+    {
+      "blob_sha": "119b0beb19eb79d502d75f715c5a3429481c8fd1",
+      "path": "coordination/events/2026/10/19/codex-20261017-task-inventory-start/20261019T013150Z-bounded-provider-intake.json",
+      "size": 7700
+    },
+    {
+      "blob_sha": "11eea3263daa35e43fc6156b2a66aed062bd879c",
+      "path": "coordination/events/2026/10/19/codex-20261017-task-inventory-start/20261019T013753Z-provider-and-temporal-integrity.json",
+      "size": 8003
+    },
+    {
+      "blob_sha": "1fbf21c51f3b3faffdcd55a33bbb15866dd9b8a7",
+      "path": "coordination/events/2026/10/19/codex-20261017-task-inventory-start/20261019T014433Z-private-provider-evidence.json",
+      "size": 8448
+    },
+    {
+      "blob_sha": "1de355607bf4f49c364c19c31bc8bb6b964108a4",
+      "path": "coordination/events/2026/10/19/codex-20261019-owner-gitbash-reset-restart/20261019T212826Z-plan.json",
+      "size": 827
+    },
+    {
+      "blob_sha": "fd825ddd3b84b0a0de63a40f9b3909aaeeeebf03",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/001-plan.json",
+      "size": 1623
+    },
+    {
+      "blob_sha": "07143e25e3436e2ee418616213f93641368d10bf",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/002-scope.json",
+      "size": 2566
+    },
+    {
+      "blob_sha": "1aed0de5b8a90b80fefb037b8e0ed18538a6429c",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/003-api-scope.json",
+      "size": 2407
+    },
+    {
+      "blob_sha": "d732c5211245dd6fb45b49761a7017a479fda065",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/004-recovery-handoff.json",
+      "size": 3340
+    },
+    {
+      "blob_sha": "42bbabb1c6f86549d689f0de72accdc1fe12c424",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/005-reviewed-checkpoint.json",
+      "size": 3126
+    },
+    {
+      "blob_sha": "33ed06ba00b709b1520714369e60937fec323e5e",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/006-visibility-recheck.json",
+      "size": 3016
+    },
+    {
+      "blob_sha": "5918f9be062b8e2bc9140df6f2286111b53d3854",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/007-chart-repair.json",
+      "size": 3078
+    },
+    {
+      "blob_sha": "5a1c4975770cd479ba93fa392ad81e5d10f1c460",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/008-ui-spec-amendment.json",
+      "size": 2881
+    },
+    {
+      "blob_sha": "c4cb7eb74c4367e60901ba83d6dfff89a3a6349f",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/009-chart-windows-check.json",
+      "size": 3036
+    },
+    {
+      "blob_sha": "b2a42e0677a88470620d20adca88e690cbf25836",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/010-chart-verified-handoff.json",
+      "size": 3942
+    },
+    {
+      "blob_sha": "3327c02ccbade4475f0d746e99302d50602ee3a8",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/011-approved-workspace-foundation.json",
+      "size": 3303
+    },
+    {
+      "blob_sha": "44f3632dfd65ad9d554495b533233df0fcf902b8",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/012-rollback-review-and-api-scope.json",
+      "size": 3699
+    },
+    {
+      "blob_sha": "fedf5a0db3548e6ae0af622656038bfe08a90eba",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/013-configuration-verified-api-start.json",
+      "size": 4155
+    },
+    {
+      "blob_sha": "19cc09dc17f92934fe15841edb874d4f40cc8f2c",
+      "path": "coordination/events/2026/10/20/icarus1-20261020-system-recovery/014-scoped-jobs-subtask.json",
+      "size": 4216
+    },
+    {
+      "blob_sha": "3845990759cd7eee61dd5fe9156e53f338beaf58",
+      "path": "coordination/events/2026/10/20/icarus2-20261020-federation-integration/001-plan.json",
+      "size": 2544
+    },
+    {
+      "blob_sha": "6b68df335ce3503b94335c7b9bff55d2345ef5d8",
+      "path": "coordination/events/2026/10/20/icarus2-20261020-federation-integration/002-runtime-handoff.json",
+      "size": 3345
+    },
+    {
+      "blob_sha": "2cd7c2390cf9454a1acce7fd7d5e4e7fb95b49e2",
+      "path": "coordination/events/2026/10/20/icarus2-20261020-federation-integration/003-bounded-cycle-claim.json",
+      "size": 2427
+    },
+    {
+      "blob_sha": "0529006dfb3044d6516bff05c06b0d7e62e98dd2",
+      "path": "coordination/events/20261016T121100Z-plan-chatgpt-atlas141-review.json",
+      "size": 932
+    },
+    {
+      "blob_sha": "aed1da333edaf983408e1eb0cfddcf7dc3a13295",
+      "path": "coordination/events/20261016T122000Z-handoff-chatgpt-atlas141-review.json",
+      "size": 1312
+    },
+    {
+      "blob_sha": "1279d48e7d83d32c8efe14003ca01087c0464956",
+      "path": "coordination/events/20261016T122300Z-complete-chatgpt-atlas141-review.json",
+      "size": 1015
+    },
+    {
+      "blob_sha": "ca0955349e54aff437779e160f1d8cb91fd5f6ee",
+      "path": "coordination/events/20261016T200258Z-databento-three-corpus-plan.json",
+      "size": 1363
+    },
+    {
+      "blob_sha": "b82d5da88e1ec66c051187363cf8ffa4a810e11b",
+      "path": "coordination/events/20261016T200723Z-databento-sweep-durability-update.json",
+      "size": 1423
+    },
+    {
+      "blob_sha": "a389ada11aae245a4de5c326d561ac6a804b899f",
+      "path": "coordination/events/20261016T201243Z-databento-bars-baseline-plan.json",
+      "size": 1863
+    },
+    {
+      "blob_sha": "6f5a0661b9fc87edc6e838bae9186bc8061472f1",
+      "path": "coordination/events/20261016T201546Z-sweep-account-inventory-plan.json",
+      "size": 1587
+    },
+    {
+      "blob_sha": "68aefd6c3918569213ad175c64451889f0771cb1",
+      "path": "coordination/events/20261016T201855Z-databento-durability-checkpoint.json",
+      "size": 1576
+    },
+    {
+      "blob_sha": "74343ca1bdb225320df4a2f821b813af66626ef7",
+      "path": "coordination/events/20261019T005500Z-plan-chatgpt-guest-sandbox-access.json",
+      "size": 1300
+    },
+    {
+      "blob_sha": "ea7074c966b2a711a3e1751db4b84fa36c668cf2",
+      "path": "coordination/owner_status.json",
+      "size": 385
+    },
+    {
+      "blob_sha": "5b3ed97d826940bdb0e9700b5af537ffeb31fece",
+      "path": "coordination/sessions/chatgpt-20261016-atlas-coordination-compiler-durability.json",
+      "size": 704
+    },
+    {
+      "blob_sha": "d151526e65077fa252fcb59150c127f13920e3cc",
+      "path": "coordination/sessions/chatgpt-20261016-atlas-coordination-futures.json",
+      "size": 982
+    },
+    {
+      "blob_sha": "538fb3a97e68c92bdd33062d13b941b13082de09",
+      "path": "coordination/sessions/chatgpt-20261016-atlas-coordination-ui-182.json",
+      "size": 692
+    },
+    {
+      "blob_sha": "59c6e4d44748316ffc4a474a3b46c7396d83c3eb",
+      "path": "coordination/sessions/chatgpt-20261016-atlas-system-convergence.json",
+      "size": 927
+    },
+    {
+      "blob_sha": "6597df7e1a20353a10f44fa118f095c19d343491",
+      "path": "coordination/sessions/chatgpt-20261016-atlas-vendor-panel-vault.json",
+      "size": 894
+    },
+    {
+      "blob_sha": "eb16ca494bfc12807e6f1387cbf4345bddf66d0e",
+      "path": "coordination/sessions/chatgpt-20261016-atlas141-review.json",
+      "size": 587
+    },
+    {
+      "blob_sha": "36e8ebdad9d01fdc22d989c98894f45f328525bd",
+      "path": "coordination/sessions/chatgpt-20261016-current-head-builds.json",
+      "size": 696
+    },
+    {
+      "blob_sha": "7ba987d6406874e73180cbaa68fc37899d950178",
+      "path": "coordination/sessions/chatgpt-20261017-stop-point-branch-refresh.json",
+      "size": 674
+    },
+    {
+      "blob_sha": "aca3e6c47fddce40941a175f7b6b105eef09a1e4",
+      "path": "coordination/sessions/chatgpt-20261017-stop-point-final-refresh.json",
+      "size": 650
+    },
+    {
+      "blob_sha": "976d373664d05d5d4b0d1f153d9ed244c3d57061",
+      "path": "coordination/sessions/chatgpt-20261017-stop-point-refresh.json",
+      "size": 668
+    },
+    {
+      "blob_sha": "bfb8ba59e57c7e254246fccf7c3c4d386ba4c238",
+      "path": "coordination/sessions/chatgpt-20261017-stop-point.json",
+      "size": 650
+    },
+    {
+      "blob_sha": "7a7a0b1941ff051607fb5c7ac93950152aea9bdb",
+      "path": "coordination/sessions/chatgpt-20261019-guest-sandbox-access.json",
+      "size": 647
+    },
+    {
+      "blob_sha": "0551c2adc20be55ac40152e7bf0d79e7930f4a6a",
+      "path": "coordination/sessions/codex-20261016-a200-ledger-hardening.json",
+      "size": 869
+    },
+    {
+      "blob_sha": "d5f6a07583454e13385987a1ee3d90c16e90f248",
+      "path": "coordination/sessions/codex-20261016-a200-provider-scope.json",
+      "size": 764
+    },
+    {
+      "blob_sha": "4db500620d670bdeed55118447013c8895570822",
+      "path": "coordination/sessions/codex-20261016-a200-timezone-provenance.json",
+      "size": 679
+    },
+    {
+      "blob_sha": "5ee4e896325deb48e429f8e11fdcd09aca4050e2",
+      "path": "coordination/sessions/codex-20261016-a200-uw-head-refresh.json",
+      "size": 757
+    },
+    {
+      "blob_sha": "f268d46c4dce515e1a01896b6e7a8b94ee977d47",
+      "path": "coordination/sessions/codex-20261016-c02-brain-uw-merge.json",
+      "size": 717
+    },
+    {
+      "blob_sha": "94b07a8ded758d9dbfd8229b28dccd19d5deebad",
+      "path": "coordination/sessions/codex-20261016-c04-population-audit.json",
+      "size": 699
+    },
+    {
+      "blob_sha": "91fb3a1b23018080225a7870fde93d894bd54192",
+      "path": "coordination/sessions/codex-20261016-dashboard-cinema-followup.json",
+      "size": 777
+    },
+    {
+      "blob_sha": "d5714280a8b143774d025740bfd7e2ce3b4dacf8",
+      "path": "coordination/sessions/codex-20261016-databento-three-corpus-recovery.json",
+      "size": 816
+    },
+    {
+      "blob_sha": "e6cc4112b75ad13adb93bc40dfa88b5be03301b5",
+      "path": "coordination/sessions/codex-20261016-futures-pr-review.json",
+      "size": 645
+    },
+    {
+      "blob_sha": "4a348cdc91666e9a32d78394d9f9930157ff0f55",
+      "path": "coordination/sessions/codex-20261016-intrinio-doc-consistency.json",
+      "size": 646
+    },
+    {
+      "blob_sha": "cecee98080f588764fc0de1ce319b4692d6ec22b",
+      "path": "coordination/sessions/codex-20261016-intrinio-ledger-refresh.json",
+      "size": 665
+    },
+    {
+      "blob_sha": "f0e11c49245fbc7ca82ce0b67336e9105e120300",
+      "path": "coordination/sessions/codex-20261016-latest-main-readback.json",
+      "size": 728
+    },
+    {
+      "blob_sha": "7990ddfcb38ed9288d9981de3f8370e5bbbd4fd0",
+      "path": "coordination/sessions/codex-20261016-owner-contact-boundary.json",
+      "size": 793
+    },
+    {
+      "blob_sha": "b9f9bc0bf3cdc19df33c4fec8475bbbd1370f891",
+      "path": "coordination/sessions/codex-20261016-phone-command-center-site.json",
+      "size": 806
+    },
+    {
+      "blob_sha": "2e637e1bcee6279f50839b16700ca41f8f732f7e",
+      "path": "coordination/sessions/codex-20261016-provider-data-hardening.json",
+      "size": 649
+    },
+    {
+      "blob_sha": "e049379d0f64d8280e7353d1b7d4edb74117c598",
+      "path": "coordination/sessions/codex-20261016-real-price-shadow-twin.json",
+      "size": 670
+    },
+    {
+      "blob_sha": "6ef9c737398ef22dcd56bde1479cee9886202b20",
+      "path": "coordination/sessions/codex-20261016-shadow-dashboard-overlay.json",
+      "size": 718
+    },
+    {
+      "blob_sha": "6a1a45e4b8318a1cbaa4ea33cfd06cbee0b8d61c",
+      "path": "coordination/sessions/codex-20261016-ui-pointer-contract-fix.json",
+      "size": 733
+    },
+    {
+      "blob_sha": "ef0abde719c48e92996e88ee1c627a7a93eec26e",
+      "path": "coordination/sessions/codex-20261016-uw-pulse-consumption-audit.json",
+      "size": 721
+    },
+    {
+      "blob_sha": "83a3f3505306f8cb8aa81a6783459ab56111ef92",
+      "path": "coordination/sessions/codex-20261017-coordination-cron-guard.json",
+      "size": 532
+    },
+    {
+      "blob_sha": "8acf1751946343bc3a21a37a2e62ddec760ff972",
+      "path": "coordination/sessions/codex-20261017-hub-integration-lead.json",
+      "size": 714
+    },
+    {
+      "blob_sha": "014c2faf536d9a6176cbe3148afd6cc0e4dfef5f",
+      "path": "coordination/sessions/codex-20261017-legacy-event-normalization.json",
+      "size": 566
+    },
+    {
+      "blob_sha": "d2aa6f19b08b9cb69b708961ca96e13e3c576550",
+      "path": "coordination/sessions/codex-20261017-sentinel-row-refresh-test.json",
+      "size": 664
+    },
+    {
+      "blob_sha": "78ced3181da73e3e92fd341040a3863e0dc88d1f",
+      "path": "coordination/sessions/codex-20261017-task-inventory-start.json",
+      "size": 535
+    },
+    {
+      "blob_sha": "6a4087bbf52842665273427701dfdd84a9c3e288",
+      "path": "coordination/sessions/codex-20261018-dashboard-integration-audit.json",
+      "size": 719
+    },
+    {
+      "blob_sha": "1f3aab2f33e1be2b203867ce1d2fd8bd1f0bcb84",
+      "path": "coordination/sessions/codex-20261018-discovery-provenance-fix.json",
+      "size": 630
+    },
+    {
+      "blob_sha": "bea724a3a352bf57b9282a2c08126fc32c3e8249",
+      "path": "coordination/sessions/codex-20261018-provider-account-guard.json",
+      "size": 630
+    },
+    {
+      "blob_sha": "d64f0d7171380c7e5e317ab77bbc26d01daa6a10",
+      "path": "coordination/sessions/codex-20261019-owner-gitbash-reset-restart.json",
+      "size": 570
+    },
+    {
+      "blob_sha": "5ec03329cc6f7a8b845282c8bd897e30a7f695b1",
+      "path": "coordination/sessions/icarus1-20261020-system-recovery.json",
+      "size": 701
+    },
+    {
+      "blob_sha": "9cba6eb6f168af49b8d1a19cfe95e594d4f36b9d",
+      "path": "coordination/sessions/icarus2-20261020-federation-integration.json",
+      "size": 883
+    },
+    {
+      "blob_sha": "d7e3975d73aaef49eaee9314dd34b6fb1fadf72a",
+      "path": "coordination/summaries/chatgpt-20261016-atlas-coordination-futures.json",
+      "size": 1736
+    },
+    {
+      "blob_sha": "3cf8aa1c43800ac0096df6a39277496fed1d7750",
+      "path": "coordination/summaries/chatgpt-20261016-atlas-coordination-ui-182.json",
+      "size": 1582
+    },
+    {
+      "blob_sha": "321ff3e56d44bbdc970a9bf276bc7e6151ccfbba",
+      "path": "coordination/summaries/chatgpt-20261016-atlas141-review.json",
+      "size": 1074
+    },
+    {
+      "blob_sha": "9c44604a8415694f65c06e3aa6562f451b27dc6f",
+      "path": "coordination/summaries/chatgpt-20261016-current-head-builds.json",
+      "size": 1411
+    },
+    {
+      "blob_sha": "9ddf627f20a522a90bf4201782a9a2bf734270fc",
+      "path": "coordination/summaries/chatgpt-20261017-stop-point-branch-refresh.json",
+      "size": 1140
+    },
+    {
+      "blob_sha": "8f74b841ecccce04139961bd7e88cc54dc996004",
+      "path": "coordination/summaries/chatgpt-20261017-stop-point-final-refresh.json",
+      "size": 2092
+    },
+    {
+      "blob_sha": "34db3a16dd1edc657b360d682397ea64e3706934",
+      "path": "coordination/summaries/chatgpt-20261017-stop-point-refresh.json",
+      "size": 1881
+    },
+    {
+      "blob_sha": "f66d09b0bfe7912df521d7fbd6e4b2e477c65c9f",
+      "path": "coordination/summaries/chatgpt-20261017-stop-point.json",
+      "size": 1960
+    },
+    {
+      "blob_sha": "9d7f24c1610b93870ca0abc637e9d7a32c21c87f",
+      "path": "coordination/summaries/codex-20261016-a200-timezone-provenance.json",
+      "size": 491
+    },
+    {
+      "blob_sha": "f9d951c95124a721596f4af0bd26be915b4f1587",
+      "path": "coordination/summaries/codex-20261016-a200-uw-head-refresh.json",
+      "size": 1003
+    },
+    {
+      "blob_sha": "8ad0261028bea5ca381abca1b27c6a8d1eaf0035",
+      "path": "coordination/summaries/codex-20261016-c02-brain-uw-merge.json",
+      "size": 1139
+    },
+    {
+      "blob_sha": "b0ce1019d17c8d909e70c8710a3bb809da3290d3",
+      "path": "coordination/summaries/codex-20261016-c04-population-audit.json",
+      "size": 988
+    },
+    {
+      "blob_sha": "e2ba362196c211461d623925a836a180642b17cf",
+      "path": "coordination/summaries/codex-20261016-intrinio-doc-consistency.json",
+      "size": 1816
+    },
+    {
+      "blob_sha": "3144df468c005ebc1347624f5cf02846c3386c07",
+      "path": "coordination/summaries/codex-20261016-intrinio-ledger-refresh.json",
+      "size": 1039
+    },
+    {
+      "blob_sha": "5db7a22cfdc3a2c09a454b627c8ab963f38b8310",
+      "path": "coordination/summaries/codex-20261016-latest-main-readback.json",
+      "size": 986
+    },
+    {
+      "blob_sha": "fff340707bd88fbf9451b177dcab0c713e50c515",
+      "path": "coordination/summaries/codex-20261016-real-price-shadow-twin.json",
+      "size": 1014
+    },
+    {
+      "blob_sha": "3f7d4f39d7ada592ff033179a3a907bd67388003",
+      "path": "coordination/summaries/codex-20261016-shadow-dashboard-overlay.json",
+      "size": 1423
+    },
+    {
+      "blob_sha": "95216927505070e92750cf2d30040c0d6899eea2",
+      "path": "coordination/summaries/codex-20261016-ui-pointer-contract-fix.json",
+      "size": 1026
+    },
+    {
+      "blob_sha": "3767a35406143870a7c88b476ff6cb315770653d",
+      "path": "coordination/summaries/codex-20261016-uw-pulse-consumption-audit.json",
+      "size": 932
+    },
+    {
+      "blob_sha": "490b70c554eccf30e567ed2f0e936b7241d9837b",
+      "path": "coordination/summaries/codex-20261017-coordination-cron-guard.json",
+      "size": 573
+    },
+    {
+      "blob_sha": "652314930ac7c5071eac550708402b654738aa0c",
+      "path": "coordination/summaries/codex-20261017-legacy-event-normalization.json",
+      "size": 567
+    },
+    {
+      "blob_sha": "e35b90bd3055aec0a3485612ac27b266ccdf1381",
+      "path": "coordination/summaries/codex-20261017-sentinel-row-refresh-test.json",
+      "size": 1142
+    },
+    {
+      "blob_sha": "cfaca78f71137440c922ff334ab296200fae9610",
+      "path": "coordination/summaries/codex-20261017-task-inventory-start.json",
+      "size": 2449
+    },
+    {
+      "blob_sha": "d83f51b329c9e10b4b7f799c028aa5bf21190d81",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
+      "size": 4704
+    }
+  ],
+  "cycle_id": "icarus2-20261020T225043Z",
+  "deployment_authorized": false,
+  "execution_authorized": false,
+  "final_head_checks": [
+    {
+      "captured_commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a",
+      "current_commit": "37b5bf1e589a3ba2262452ed7f346e1533b8579f",
+      "drift": true,
+      "repository": "reppiks490/Icarus"
+    },
+    {
+      "captured_commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+      "current_commit": "12b2d9d9efd7691624551521ed64641ee139e7ef",
+      "drift": true,
+      "repository": "reppiks490/Icarus-engine"
+    },
+    {
+      "captured_commit": "27ae69c593ede3019957100cd401625bd2424f43",
+      "current_commit": "27ae69c593ede3019957100cd401625bd2424f43",
+      "drift": false,
+      "repository": "reppiks490/divine-providence"
+    },
+    {
+      "captured_commit": "194378362eba21d91070de4ae4193cebc630d427",
+      "current_commit": "34eb13fa382d420e63bc634e92535d3e63714a1b",
+      "drift": true,
+      "repository": "reppiks490/icarus-csv-evidence-lab"
+    },
+    {
+      "captured_commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+      "current_commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+      "drift": false,
+      "repository": "reppiks490/icarus-causal-router"
+    },
+    {
+      "captured_commit": "59e1e16387e3753d7388be18b147c174e56ae07c",
+      "current_commit": "9f2b8ea0b6df6ac76585597ef64739013d1c55ab",
+      "drift": true,
+      "repository": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "final_manifest_check": {
+    "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+    "commit": "12b2d9d9efd7691624551521ed64641ee139e7ef",
+    "repositories": [
+      "reppiks490/Icarus",
+      "reppiks490/Icarus-engine",
+      "reppiks490/divine-providence",
+      "reppiks490/icarus-csv-evidence-lab",
+      "reppiks490/icarus-causal-router",
+      "reppiks490/icarus-owner-actions"
+    ],
+    "same_manifest_blob": true
+  },
+  "findings": [
+    {
+      "evidence": [
+        "pr:reppiks490/icarus-owner-actions#60@df32dabd064510ce9934cea09c5140ff3cdffa21"
+      ],
+      "id": "VERIFIED_HELPER_REPAIR",
+      "status": "REVIEW_PENDING",
+      "summary": "Fixed GitHub CLI hostname and numeric pagination; preserve failed final-head reads; require actual job proof; reject future cycles."
+    },
+    {
+      "evidence": [
+        {
+          "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+          "commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+          "path": "config/federated_repo_evidence.json",
+          "repository": "reppiks490/Icarus-engine",
+          "sha256": "9292b683258dc02fbb110fadf4bb63f8d133352031e15c6093e621d7c4120886",
+          "verified": true
+        }
+      ],
+      "id": "FEDERATION_CAPTURE",
+      "status": "INCOMPLETE",
+      "summary": "All six declared repositories and22anchors observed;46openPRs completely paginated; five histories stopped at500runs, with explicit gaps. No missing repository silently omitted."
+    },
+    {
+      "evidence": [
+        {
+          "endpoint": "repos/reppiks490/divine-providence/actions/runs/39415577104/jobs?per_page=100",
+          "items": [
+            {
+              "conclusion": "success",
+              "failed_steps": [],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39415577104/job/118603640942",
+              "id": 118603640942,
+              "name": "contract-tests",
+              "status": "completed"
+            },
+            {
+              "conclusion": "failure",
+              "failed_steps": [
+                "Require complete evidence"
+              ],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39415577104/job/118603972249",
+              "id": 118603972249,
+              "name": "research",
+              "status": "completed"
+            },
+            {
+              "conclusion": "success",
+              "failed_steps": [],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39415577104/job/118604320279",
+              "id": 118604320279,
+              "name": "publish",
+              "status": "completed"
+            }
+          ],
+          "total": 3
+        },
+        {
+          "endpoint": "repos/reppiks490/divine-providence/actions/runs/39400480579/jobs?per_page=100",
+          "items": [
+            {
+              "conclusion": "success",
+              "failed_steps": [],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39400480579/job/118553647589",
+              "id": 118553647589,
+              "name": "collect",
+              "status": "completed"
+            },
+            {
+              "conclusion": "failure",
+              "failed_steps": [
+                "Install and validate the full Windows system"
+              ],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39400480579/job/118553647963",
+              "id": 118553647963,
+              "name": "windows-collector",
+              "status": "completed"
+            },
+            {
+              "conclusion": "success",
+              "failed_steps": [],
+              "html_url": "https://github.com/reppiks490/divine-providence/actions/runs/39400480579/job/118554272139",
+              "id": 118554272139,
+              "name": "publish",
+              "status": "completed"
+            }
+          ],
+          "total": 3
+        }
+      ],
+      "id": "DIVINE_EXECUTION_FAILURES",
+      "status": "OPEN",
+      "summary": "Research Require complete evidence and Observatory Windows installation/validation failed during actual execution. Their publication jobs succeeded; publication does not establish research completion."
+    },
+    {
+      "evidence": [
+        {
+          "blob_sha": "5b8d64a76ce1f3baec612738ec321244f2df1e35",
+          "commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+          "path": "automation_intelligence/provider_collection_v1/research_context.json",
+          "repository": "reppiks490/Icarus-engine",
+          "sha256": "2aac2d99ff8f4a6de84b1e3563fa2ee435805cc2856c7004db73478b638c948d"
+        },
+        {
+          "blob_sha": "b26e01d8df8309c7dd0e6be7c0f1be98a2b8787b",
+          "commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a",
+          "path": "icarus_engine/brain_sync.py",
+          "repository": "reppiks490/Icarus",
+          "sha256": "039b038392a2524e4f894ff318ccd8152366f5995b15eb87e15ee678f6e18518"
+        }
+      ],
+      "id": "PROVIDER_CONSUMPTION_BOUNDARY",
+      "status": "OPEN",
+      "summary": "Engine context at2026-10-21T00:06:31Z reports20352upstreamrows/57pages/127requests,6substantive and7blocked among14providers. These are producer reports; they do not establish entitlement or current consumer reads. Icarus Brain main still has historical context metadata/hash handling, not evidence of typed provider consumption or measured value. Earlier draft457 remains separately implemented, not resumed."
+    },
+    {
+      "evidence": [
+        {
+          "commit": "194378362eba21d91070de4ae4193cebc630d427",
+          "latest_blob": "d12b4f5f1a618a65bc09a877f8cfee06d659ffa1",
+          "repository": "reppiks490/icarus-csv-evidence-lab"
+        },
+        {
+          "blob_sha": "763f80b9ca0d08514845c1fc1eb8a1008a289d7d",
+          "commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a",
+          "path": "automation_intelligence/federation/icarus_engine_acceptance.json",
+          "repository": "reppiks490/Icarus"
+        }
+      ],
+      "id": "DURABILITY_IS_NOT_RESEARCH",
+      "status": "OPEN",
+      "summary": "CSV fresh durability receipt/heartbeat coexists with Sep29 substantive evidence; current liveness success cannot prove substantive cognition. Peer acceptance says zero substantive lanes and refers to an older exact packet, with freshness measured at acceptance."
+    },
+    {
+      "evidence": [
+        "coordination/events/2026/10/21/icarus1-20261020-system-recovery/015-controls-jobs-review.json",
+        "github-run:39514770172",
+        "github-job:118944172965"
+      ],
+      "id": "ICARUS1_CURRENT_WINDOWS_FAILURE",
+      "status": "OWNED_BY_ICARUS1",
+      "summary": "PR462 currenthead6ac652e9505732a886bc5c807eeda80daab24b5a has Linux success and Windows acceptance failure. Prior4368 green is historical. Current source015 identifies a position assertion during background workers; no takeover or repair of his files."
+    },
+    {
+      "evidence": [
+        {
+          "captured_commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a",
+          "current_commit": "37b5bf1e589a3ba2262452ed7f346e1533b8579f",
+          "drift": true,
+          "repository": "reppiks490/Icarus"
+        },
+        {
+          "captured_commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+          "current_commit": "12b2d9d9efd7691624551521ed64641ee139e7ef",
+          "drift": true,
+          "repository": "reppiks490/Icarus-engine"
+        },
+        {
+          "captured_commit": "27ae69c593ede3019957100cd401625bd2424f43",
+          "current_commit": "27ae69c593ede3019957100cd401625bd2424f43",
+          "drift": false,
+          "repository": "reppiks490/divine-providence"
+        },
+        {
+          "captured_commit": "194378362eba21d91070de4ae4193cebc630d427",
+          "current_commit": "34eb13fa382d420e63bc634e92535d3e63714a1b",
+          "drift": true,
+          "repository": "reppiks490/icarus-csv-evidence-lab"
+        },
+        {
+          "captured_commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+          "current_commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+          "drift": false,
+          "repository": "reppiks490/icarus-causal-router"
+        },
+        {
+          "captured_commit": "59e1e16387e3753d7388be18b147c174e56ae07c",
+          "current_commit": "9f2b8ea0b6df6ac76585597ef64739013d1c55ab",
+          "drift": true,
+          "repository": "reppiks490/icarus-owner-actions"
+        }
+      ],
+      "id": "FINAL_HEAD_DRIFT",
+      "status": "RESTART_CYCLE_REQUIRED",
+      "summary": "Four repository heads moved after the repaired capture; the old capture remains immutable historical evidence. Owner-actions code base was explicitly advanced and retested before PR creation; federation health requires a new cycle."
+    }
+  ],
+  "icarus1_handoff": {
+    "latest_source_event": "coordination/events/2026/10/21/icarus1-20261020-system-recovery/015-controls-jobs-review.json",
+    "mutual_cooperation": false,
+    "record": {
+      "blob_sha": "6ad7707f8deb82399861b163417cb1a8ca3c2092",
+      "bytes": 2207,
+      "commit": "b7cb91759d9c49d65daf23096c5a9612506d0efa",
+      "path": "coordination/events/2026/10/21/icarus2-20261020-federation-integration/004-reviewed-cycle-handoff.json",
+      "readback_verified": true,
+      "sha256": "34dd42cea64929a7ae7d58d30a27f7956dc282f45568c17b9d7cf8126e06aac9"
+    },
+    "reserved_files_modified": false,
+    "session_id": "icarus1-20261020-system-recovery"
+  },
+  "implementation_status": "REPAIRED_REVIEW_PENDING",
+  "interruption_accounting": {
+    "continuous_execution_claimed": false,
+    "missing_work": "No completed standalone MNEMOSYNE final report was received in this cycle; prior dated audit and partial continuation evidence remain distinguished.",
+    "observed_runtime_interruptions": [
+      "Native HERMES and federation_finish agents returned usage-limit errors; their unfinished audits remain partial.",
+      "Execution environment briefly unavailable at2026-10-21T09:20; available again before any mutation."
+    ]
+  },
+  "metadata_only": true,
+  "new_spend_authorized": false,
+  "next_expected_work": [
+    "Review PR60 under fresh controls andclaims; no automatic merge.",
+    "Start the next finite cycle from current canonicalmanifest andfreshheads, preserving this immutable historicalcapture.",
+    "Reconcile exact provider consumer/read receipts and scientific freshness under existing research gates; do notstart collection ortraining.",
+    "Continue Icarus1 handoffs without editing his reservedruntime/recovery files."
+  ],
+  "prior_immutable_cycles": [],
+  "scheduler_management_authorized": false,
+  "schema_version": "icarus2-integration-cycle-v1",
+  "session_id": "icarus2-20261020-federation-integration",
+  "session_state": "WAITING_REVIEW",
+  "source_manifest": {
+    "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+    "commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+    "path": "config/federated_repo_evidence.json",
+    "repository": "reppiks490/Icarus-engine",
+    "sha256": "9292b683258dc02fbb110fadf4bb63f8d133352031e15c6093e621d7c4120886",
+    "verified": true
+  },
+  "started_at_utc": "2026-10-20T22:50:43Z",
+  "status": "RESTART_CYCLE_REQUIRED",
+  "tests": {
+    "clean_owning_suite": {
+      "failed": 0,
+      "passed": 170,
+      "subtests_passed": 8
+    },
+    "coordination_validation": {
+      "events": 213,
+      "sessions": 42,
+      "summaries": 24,
+      "valid": true
+    },
+    "focused": {
+      "passed": 113
+    },
+    "hosted_existing_contract_ci": {
+      "jobs": [
+        {
+          "conclusion": "success",
+          "id": 119143227196,
+          "name": "contract (3.11)",
+          "runner_name": "GitHub Actions 1000044470",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-21T09:22:58Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "started_at": "2026-10-21T09:22:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:22:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Coordination fabric contract",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Existing mission compiler regression",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Validate live coordination records",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Compile active coordination view",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Validate collision diagnostics are present",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            }
+          ]
+        },
+        {
+          "conclusion": "success",
+          "id": 119143227291,
+          "name": "contract (3.13)",
+          "runner_name": "GitHub Actions 1000044468",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-21T09:22:58Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "started_at": "2026-10-21T09:22:57Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:22:59Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:22:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:22:59Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:22:59Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Coordination fabric contract",
+              "started_at": "2026-10-21T09:22:59Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Existing mission compiler regression",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Validate live coordination records",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Compile active coordination view",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:01Z",
+              "conclusion": "success",
+              "name": "Validate collision diagnostics are present",
+              "started_at": "2026-10-21T09:23:01Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:02Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:23:02Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:02Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:23:02Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:02Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "started_at": "2026-10-21T09:23:02Z",
+              "status": "completed"
+            }
+          ]
+        },
+        {
+          "conclusion": "success",
+          "id": 119143227477,
+          "name": "contract (3.12)",
+          "runner_name": "GitHub Actions 1000044469",
+          "status": "completed",
+          "steps": [
+            {
+              "completed_at": "2026-10-21T09:22:58Z",
+              "conclusion": "success",
+              "name": "Set up job",
+              "started_at": "2026-10-21T09:22:57Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:22:59Z",
+              "conclusion": "success",
+              "name": "Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:22:58Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:22:59Z",
+              "conclusion": "success",
+              "name": "Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:22:59Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:22:59Z",
+              "conclusion": "success",
+              "name": "Coordination fabric contract",
+              "started_at": "2026-10-21T09:22:59Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Existing mission compiler regression",
+              "started_at": "2026-10-21T09:22:59Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Validate live coordination records",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Compile active coordination view",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Validate collision diagnostics are present",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Post Run actions/setup-python@v5",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Post Run actions/checkout@v4",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            },
+            {
+              "completed_at": "2026-10-21T09:23:00Z",
+              "conclusion": "success",
+              "name": "Complete job",
+              "started_at": "2026-10-21T09:23:00Z",
+              "status": "completed"
+            }
+          ]
+        }
+      ],
+      "run": {
+        "conclusion": "success",
+        "created_at": "2026-10-21T09:22:53Z",
+        "event": "pull_request",
+        "head_sha": "df32dabd064510ce9934cea09c5140ff3cdffa21",
+        "id": 39576505166,
+        "name": "coordination-fabric",
+        "path": ".github/workflows/coordination-fabric.yml",
+        "status": "completed",
+        "updated_at": "2026-10-21T09:23:05Z"
+      }
+    },
+    "hosted_helper_tests_verified": false,
+    "hosted_scope_note": "Existing coordination-fabric workflow checks coordination/mission contracts; new helper tests were verified locally, not by a new workflow.",
+    "independent_review": "CLEAR at exact reviewed core/transport/CLI hashes; finalheadHTTP403 collector-to-CLI and hostile pagination probes passed",
+    "meaningful_red": {
+      "core_regressions": 3,
+      "hostname_regression": 1,
+      "numeric_pagination_regression": 1
+    }
+  },
+  "validation_snapshot": {
+    "automatic_merge_authorized": false,
+    "completed_at_utc": "2026-10-21T04:18:55.830478Z",
+    "coordination": {
+      "collisions": [],
+      "collisions_complete": true,
+      "commit": "59e1e16387e3753d7388be18b147c174e56ae07c",
+      "complete": true,
+      "live_broker_arming": false,
+      "owner_status_verified": true,
+      "repository": "reppiks490/icarus-owner-actions",
+      "reserved_targets": [
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/paper_workspaces.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_paper_workspaces.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_paper_workspaces_runtime.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "README.md",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "docs/recovery",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "coordination/START_HERE.md",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "coordination/summaries/icarus1-20261020-system-recovery.json",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/server.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_command_center_routes.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_workspace_chart_routes.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": ".github/workflows/test.yml",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "docs/superpowers/plans/2026-10-20-workspace-configuration.md",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/workspace_config.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_workspace_config.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/runtime.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/workspace_api.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_workspace_api.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "docs/superpowers/plans/2026-10-20-workspace-api.md",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "icarus_engine/workspace_jobs.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "tests_engine/test_workspace_jobs.py",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": true,
+          "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md",
+          "repository": "reppiks490/Icarus",
+          "session_id": "icarus1-20261020-system-recovery"
+        },
+        {
+          "handoff_only": false,
+          "path": "integration_brain",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "tests/test_integration_brain.py",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "tests/test_integration_brain_transport.py",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "tests/test_icarus2_cli.py",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "docs/icarus2-integration-brain.md",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "coordination/icarus2/DESIGN.md",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "coordination/icarus2/PLAN.md",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "coordination/icarus2/swarm-inputs",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        },
+        {
+          "handoff_only": false,
+          "path": "coordination/icarus2/cycles/icarus2-20261020T225043Z.json",
+          "repository": "reppiks490/icarus-owner-actions",
+          "session_id": "icarus2-20261020-federation-integration"
+        }
+      ]
+    },
+    "cycle_id": "icarus2-20261020T225043Z",
+    "execution_authorized": false,
+    "gaps": [
+      {
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/Icarus"
+      },
+      {
+        "code": "CURRENT_HEAD_CI_UNVERIFIED",
+        "repository": "reppiks490/Icarus"
+      },
+      {
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/Icarus-engine"
+      },
+      {
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/divine-providence"
+      },
+      {
+        "code": "CURRENT_HEAD_CI_OBSERVED_FAILURE",
+        "repository": "reppiks490/divine-providence"
+      },
+      {
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/icarus-csv-evidence-lab"
+      },
+      {
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/icarus-owner-actions"
+      },
+      {
+        "code": "CURRENT_HEAD_CI_UNVERIFIED",
+        "repository": "reppiks490/icarus-owner-actions"
+      }
+    ],
+    "handoffs": [
+      {
+        "automatic_repair_authorized": false,
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/Icarus",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "CURRENT_HEAD_CI_UNVERIFIED",
+        "repository": "reppiks490/Icarus",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/Icarus-engine",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/divine-providence",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "CURRENT_HEAD_CI_OBSERVED_FAILURE",
+        "repository": "reppiks490/divine-providence",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/icarus-csv-evidence-lab",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "PAGINATION_INCOMPLETE",
+        "collection": "runs_pages_complete",
+        "repository": "reppiks490/icarus-owner-actions",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      },
+      {
+        "automatic_repair_authorized": false,
+        "code": "CURRENT_HEAD_CI_UNVERIFIED",
+        "repository": "reppiks490/icarus-owner-actions",
+        "required_next_step": "CLAIM_AND_VERIFY_BEFORE_REPAIR"
+      }
+    ],
+    "limits": {
+      "collection_items": 2000,
+      "repository_count": 64,
+      "snapshot_bytes": 8388608,
+      "unknown_universe_closed": false
+    },
+    "metadata_only": true,
+    "repositories": [
+      {
+        "anchors": [
+          {
+            "blob_sha": "763f80b9ca0d08514845c1fc1eb8a1008a289d7d",
+            "kind": "file",
+            "path": "automation_intelligence/federation/icarus_engine_acceptance.json",
+            "sha256": "fc13430086e6af8637d05d18eb8fe234063d6ebb16423bff402b2155b51cd2ac",
+            "size": 1430,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "ccf3955e9998a8e2ad73c73b30396c6dfff10467",
+            "kind": "file",
+            "path": "icarus_engine/unusual_whales_intake.py",
+            "sha256": "5a9d99479a1a6ef62195ce2a16888200a7d6687f0ee9f13def76aecd4d272005",
+            "size": 16716,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "b5cc8b8a06d9930186cc6ac5831041212bcb96f3",
+            "kind": "file",
+            "path": "docs/AI_DATA_ACCESS.md",
+            "sha256": "e364c948008c3444b6486935574a59008a43ad10215d7d94bd6e4529ab08d651",
+            "size": 3024,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "1184e9891ac24a7fb4af826e868c6c26448253ba",
+            "kind": "file",
+            "path": "GITHUB_NATIVE_DATA_FEDERATION.md",
+            "sha256": "d5b28bb50c02e815d2a2aed6cd328a2f3792e2f7aae1b8703bbb06244c6fbab1",
+            "size": 2786,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "UNVERIFIED",
+          "current_runs": 0,
+          "execution_verified": false,
+          "historical_runs": 500,
+          "selected_runs": [],
+          "successful_current_runs": 0,
+          "workflows_observed": 0
+        },
+        "commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a",
+        "data_authority": "CONSUMER_AND_BOUNDED_PROVIDER_FAILOVER",
+        "observed_at_utc": "2026-10-21T04:18:33.721582Z",
+        "pull_requests": [
+          {
+            "base_sha": "25d560b1d67848e244e59095f9f9152c3d7ab09b",
+            "draft": true,
+            "head_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
+            "number": 462
+          },
+          {
+            "base_sha": "4c12fad1d5fa25d63cffe0886d979815058059dc",
+            "draft": true,
+            "head_sha": "90fb938124162d63fe7dc392cd336e3eb048cec2",
+            "number": 458
+          },
+          {
+            "base_sha": "e96da3f466f6e027983dfbbc6e29a2e24ff55efa",
+            "draft": true,
+            "head_sha": "46e9306e71e1ece82d7e7eee9c1daa2111c73755",
+            "number": 457
+          },
+          {
+            "base_sha": "7b42eaa528d3137e87f8ae10ea0896944eb4b62b",
+            "draft": false,
+            "head_sha": "e96da3f466f6e027983dfbbc6e29a2e24ff55efa",
+            "number": 456
+          },
+          {
+            "base_sha": "53b6e73f4dc54ffa6b7279ecf9f1f0fd5a059254",
+            "draft": true,
+            "head_sha": "763ed6770a233ba0d0794bbd1caefffe9ea16044",
+            "number": 455
+          },
+          {
+            "base_sha": "e4daa751c0090c2c5c3888ffd35237b97973f05f",
+            "draft": true,
+            "head_sha": "4c12fad1d5fa25d63cffe0886d979815058059dc",
+            "number": 454
+          },
+          {
+            "base_sha": "e4daa751c0090c2c5c3888ffd35237b97973f05f",
+            "draft": false,
+            "head_sha": "714ad75606fc0cb3b7679987c6b654c6beff8e3d",
+            "number": 453
+          },
+          {
+            "base_sha": "016715683d5029e52e1a1e4d578231694dfb17f4",
+            "draft": false,
+            "head_sha": "7b42eaa528d3137e87f8ae10ea0896944eb4b62b",
+            "number": 452
+          },
+          {
+            "base_sha": "63e238f4aedf06744b0581281727cdafb7f0e0a1",
+            "draft": false,
+            "head_sha": "016715683d5029e52e1a1e4d578231694dfb17f4",
+            "number": 451
+          },
+          {
+            "base_sha": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+            "draft": true,
+            "head_sha": "606f0f70d255a34d81e4140bad433b12c8a8c19f",
+            "number": 449
+          },
+          {
+            "base_sha": "335148c8d911f3320b5bde1ed77b38df1ba9704e",
+            "draft": false,
+            "head_sha": "5a2db92671ad2e1cabaebfc09742020a652ef67e",
+            "number": 448
+          },
+          {
+            "base_sha": "4c7ef2c34d83ecc0d2a921485c2497a683a9b304",
+            "draft": true,
+            "head_sha": "979973e837b94c4c663c5ef2fda3583b58826009",
+            "number": 445
+          },
+          {
+            "base_sha": "cfa97333bbccbb0a62da4802b3d9b495f9ec347d",
+            "draft": true,
+            "head_sha": "75079156357070dfa6f20d8fbe22354e27a795a7",
+            "number": 438
+          },
+          {
+            "base_sha": "75079156357070dfa6f20d8fbe22354e27a795a7",
+            "draft": true,
+            "head_sha": "3250e42043c21f593e120532c5e440b5821a614b",
+            "number": 435
+          },
+          {
+            "base_sha": "75079156357070dfa6f20d8fbe22354e27a795a7",
+            "draft": true,
+            "head_sha": "e77dae0fb1d3860be677f6d2761e1bf75d065513",
+            "number": 432
+          },
+          {
+            "base_sha": "a313592867277be260f6ea4f0ab4c879a7c673d4",
+            "draft": true,
+            "head_sha": "f566e0835db0aacdcd427b1b62388ab253840c91",
+            "number": 414
+          },
+          {
+            "base_sha": "527d6efce40c3718c7d8c1c4dfa51ae56247d136",
+            "draft": true,
+            "head_sha": "d3ff4cd1de3856025813009319dd7960d1179866",
+            "number": 387
+          },
+          {
+            "base_sha": "7eca749c73f03fd440cb09b4dc83168bdf6c3bd7",
+            "draft": true,
+            "head_sha": "527d6efce40c3718c7d8c1c4dfa51ae56247d136",
+            "number": 353
+          },
+          {
+            "base_sha": "0bf06e98c9fbda627116578f8686a178e6837d68",
+            "draft": true,
+            "head_sha": "71a726a3678d87b4c5b72350d944b71c38c3919f",
+            "number": 332
+          },
+          {
+            "base_sha": "3ae97b4d4f0228e6e815c3dd59cd02e0986c50f0",
+            "draft": true,
+            "head_sha": "8b7cf387d23b3e6043304b501db5a107aff10da6",
+            "number": 330
+          },
+          {
+            "base_sha": "87f738a932499b821bdb1d97d6140ec60b88b3c0",
+            "draft": true,
+            "head_sha": "f1f99d8599bb8999b0d57b5b018b4cbc047f7b8f",
+            "number": 295
+          },
+          {
+            "base_sha": "03e9b082e2a0d9434fe165c0b7024b398a6e957a",
+            "draft": true,
+            "head_sha": "b2a747c767551034162c7174a9b9b5b071d09915",
+            "number": 198
+          }
+        ],
+        "repository": "reppiks490/Icarus",
+        "role": "runtime_engine_consumers_and_intrinio_preferred_provider_owner",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "INCOMPLETE",
+        "verification_error_code": null,
+        "verified_commit": "fdfef9affd887f49f1b0150b57d7d4a8cdf0f91a"
+      },
+      {
+        "anchors": [
+          {
+            "blob_sha": "1ce5c66892020ebd2831dfc78242dee525c6c2bc",
+            "kind": "file",
+            "path": "config/data_ingestion_manifest.json",
+            "sha256": "82c6649b3037c905559dfcc2c8ff7758556c7631d4ebc99e2007cb9024ebbcfd",
+            "size": 25495,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "446bcfd3a383d921477b6e1154c1b7beb482e75e",
+            "kind": "file",
+            "path": "automation_intelligence/sentinel/data_health.json",
+            "sha256": "7a62e6fcd8048bc56d46f750fbf76fb9cd23a532d76c58c17bcb5e3f23c72274",
+            "size": 17747,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "5b8d64a76ce1f3baec612738ec321244f2df1e35",
+            "kind": "file",
+            "path": "automation_intelligence/provider_collection_v1/research_context.json",
+            "sha256": "2aac2d99ff8f4a6de84b1e3563fa2ee435805cc2856c7004db73478b638c948d",
+            "size": 20491,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "b852e353c11da16046bafda39a9626789b3634d1",
+            "kind": "file",
+            "path": "automation_intelligence/interrepo/latest.json",
+            "sha256": "b80916febc3a6588327b4bc478fb3fd12a9f2ee83641ea1128fd72a77dbb615a",
+            "size": 18058,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "OBSERVED_SUCCESS",
+          "current_runs": 2,
+          "execution_verified": true,
+          "historical_runs": 498,
+          "selected_runs": [
+            {
+              "conclusion": "success",
+              "created_at": "2026-10-21T01:56:51Z",
+              "head_sha": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+              "id": 39530214911,
+              "job_failure_observed": false,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 1,
+              "name": "cl-federation-watch",
+              "status": "completed",
+              "updated_at": "2026-10-21T01:57:06Z",
+              "workflow_id": 374801106
+            },
+            {
+              "conclusion": "success",
+              "created_at": "2026-10-21T01:56:51Z",
+              "head_sha": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+              "id": 39530214965,
+              "job_failure_observed": false,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 1,
+              "name": "data-sentinel",
+              "status": "completed",
+              "updated_at": "2026-10-21T01:57:12Z",
+              "workflow_id": 381000702
+            }
+          ],
+          "successful_current_runs": 2,
+          "workflows_observed": 2
+        },
+        "commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+        "data_authority": "CANONICAL_LEDGER_AND_COLLECTION",
+        "observed_at_utc": "2026-10-21T04:18:31.183203Z",
+        "pull_requests": [
+          {
+            "base_sha": "ced31fcfcdf75e4ff2f4181315f462aa5d59a76b",
+            "draft": true,
+            "head_sha": "3e3482a50d6d73b3f7b13705b4c7ed35f42a56a4",
+            "number": 216
+          },
+          {
+            "base_sha": "16b927f4103f413c99fd58bbee9f0d03769acfe9",
+            "draft": false,
+            "head_sha": "91e3e105b2b6b1b0ed39e43a3c61c316a56a4abe",
+            "number": 214
+          },
+          {
+            "base_sha": "16b927f4103f413c99fd58bbee9f0d03769acfe9",
+            "draft": false,
+            "head_sha": "4df2dc1c8064385768311516e1e829d4ff36fa67",
+            "number": 213
+          },
+          {
+            "base_sha": "9e94578b5d7ebaab131207be6d5acb363a97ede3",
+            "draft": false,
+            "head_sha": "ced31fcfcdf75e4ff2f4181315f462aa5d59a76b",
+            "number": 211
+          },
+          {
+            "base_sha": "dfb18e96805faa905b687eaa4633d349a9f82eb2",
+            "draft": true,
+            "head_sha": "9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba",
+            "number": 209
+          },
+          {
+            "base_sha": "3a658c8106e3ffd48ce76212218d26c4ac550fdb",
+            "draft": true,
+            "head_sha": "dfd873e122398a9787e0c4de5bc54c878a7fa21f",
+            "number": 186
+          },
+          {
+            "base_sha": "8632a0d046bf153dcc627cdd3f82fbf88f6a41db",
+            "draft": false,
+            "head_sha": "0164438dc6fd4a96c00f5606f4a158d43ab1de16",
+            "number": 173
+          },
+          {
+            "base_sha": "8632a0d046bf153dcc627cdd3f82fbf88f6a41db",
+            "draft": false,
+            "head_sha": "55f73bbcd7a3e645ba398a71ef93e4b224f5b903",
+            "number": 167
+          },
+          {
+            "base_sha": "e958d1568379a39c89504ae7b5c69a47b6ac738c",
+            "draft": true,
+            "head_sha": "811022f5aa84d6f1d5d3a809ff2dd64a0b77b041",
+            "number": 148
+          },
+          {
+            "base_sha": "72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+            "draft": true,
+            "head_sha": "dfb18e96805faa905b687eaa4633d349a9f82eb2",
+            "number": 142
+          },
+          {
+            "base_sha": "3febb41bfacf4f4166e991c50e7c033306521753",
+            "draft": true,
+            "head_sha": "ba05a182b4aa947d81b26b6c4063e33adec9f147",
+            "number": 141
+          },
+          {
+            "base_sha": "a8cee8c2cc6a5c17e0df568a2da7dcdb0e84de3b",
+            "draft": true,
+            "head_sha": "ad73dfff313ae2eb66d6f3bda9e74077e183e059",
+            "number": 140
+          },
+          {
+            "base_sha": "8c77d9af9ce595e25143fe94e6882c6448b594a4",
+            "draft": false,
+            "head_sha": "72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+            "number": 137
+          },
+          {
+            "base_sha": "e97b7b3d24cb9e07d27cc4f46f1680027530870c",
+            "draft": false,
+            "head_sha": "8ad1d7eb08305011a43d32dc0c696bc0bd69ecdf",
+            "number": 84
+          }
+        ],
+        "repository": "reppiks490/Icarus-engine",
+        "role": "canonical_github_native_data_and_health_plane",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "INCOMPLETE",
+        "verification_error_code": null,
+        "verified_commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7"
+      },
+      {
+        "anchors": [
+          {
+            "blob_sha": "272614940876965f14f3f543b593fc61bcbe59ba",
+            "kind": "file",
+            "path": ".github/workflows/icarus-institution.yml",
+            "sha256": "69a4623d698d865eafc1938027332c68424960c6830991f0a0723bd2a3a2fdc3",
+            "size": 5240,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "883066d4ebfb9a0ac46855fcc27a3454818c4780",
+            "kind": "file",
+            "path": ".github/workflows/icarus-observatory.yml",
+            "sha256": "1352c19c7726f63f9ef9ab8e00b10fa7cde5bfec1c7b98511a7ae40399d02947",
+            "size": 5599,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "f56ace4c30832b52dc1edf98879149c84a944812",
+            "kind": "file",
+            "path": "scripts/institution/sources.py",
+            "sha256": "e0169fed6e578662c6a72165de4097f61b1632704f06165573e52a886cbe814d",
+            "size": 7324,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "68cd1aa4dca70c68fc870c4b110fbee24e99c067",
+            "kind": "file",
+            "path": "AGENTS.md",
+            "sha256": "760216c8eb5b7eb849e5eab6de7a73c28e17bc1b0b52a9f7ed2cb228a44e4b4e",
+            "size": 2526,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "OBSERVED_FAILURE",
+          "current_runs": 12,
+          "execution_verified": false,
+          "historical_runs": 488,
+          "selected_runs": [
+            {
+              "conclusion": "failure",
+              "created_at": "2026-10-20T09:24:48Z",
+              "head_sha": "27ae69c593ede3019957100cd401625bd2424f43",
+              "id": 39400480579,
+              "job_failure_observed": true,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 3,
+              "name": "ICARUS Observatory",
+              "status": "completed",
+              "updated_at": "2026-10-20T09:30:30Z",
+              "workflow_id": 384003206
+            },
+            {
+              "conclusion": "failure",
+              "created_at": "2026-10-20T11:31:37Z",
+              "head_sha": "27ae69c593ede3019957100cd401625bd2424f43",
+              "id": 39415577104,
+              "job_failure_observed": true,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 3,
+              "name": "ICARUS Research Institution",
+              "status": "completed",
+              "updated_at": "2026-10-20T11:33:37Z",
+              "workflow_id": 384283038
+            }
+          ],
+          "successful_current_runs": 0,
+          "workflows_observed": 2
+        },
+        "commit": "27ae69c593ede3019957100cd401625bd2424f43",
+        "data_authority": "EVIDENCE_PRODUCER",
+        "observed_at_utc": "2026-10-21T04:18:38.650850Z",
+        "pull_requests": [
+          {
+            "base_sha": "27ae69c593ede3019957100cd401625bd2424f43",
+            "draft": false,
+            "head_sha": "f63347c9cd6d603a00a081465caf7b8f53ba4c44",
+            "number": 59
+          }
+        ],
+        "repository": "reppiks490/divine-providence",
+        "role": "research_institution_observatory_and_independent_official_announcement_evidence",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "INCOMPLETE",
+        "verification_error_code": null,
+        "verified_commit": "27ae69c593ede3019957100cd401625bd2424f43"
+      },
+      {
+        "anchors": [
+          {
+            "blob_sha": "d12b4f5f1a618a65bc09a877f8cfee06d659ffa1",
+            "kind": "file",
+            "path": "automation_intelligence/advanced_csv/latest.json",
+            "sha256": "677c4e819fabf7161f0fb8a2462c4b8843102d41f351a43d73bcc1369a9188b9",
+            "size": 2725,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "0864a02612df8976d8e86f3849b75f1542e22a90",
+            "kind": "file",
+            "path": "automation_intelligence/advanced_csv/heartbeat.json",
+            "sha256": "97591ce91cfe491bb0a2fcbf61301b976553c6aef85741e0165e12366b46b6c2",
+            "size": 428,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "b0a4f8aba1d0b7f4190d94849d4d63deb176c735",
+            "kind": "file",
+            "path": "automation_intelligence/advanced_csv/finalization_state.json",
+            "sha256": "1b4f47a879c38c0a7cb0535c915f83a9a597ad487e888f32dc870340323c4c57",
+            "size": 659,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "a9acd98f2e857788a9e8fe99bdbe81b8b5a597ef",
+            "kind": "file",
+            "path": "automation_intelligence/advanced_csv/history_ledger.jsonl",
+            "sha256": "d31f602c05874f4b1de118aa3f1adb9604e0d93e2221f7f1fb7f300609b3be45",
+            "size": 9062,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "96b5fb2e66bef217bd3f4d150719ec853d795482",
+            "kind": "file",
+            "path": "AGENTS.md",
+            "sha256": "0ad7806567368353c280297704e3a4dd8b203953e5375a7cbdfcaa9545fe4fd8",
+            "size": 2379,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "OBSERVED_SUCCESS",
+          "current_runs": 1,
+          "execution_verified": true,
+          "historical_runs": 499,
+          "selected_runs": [
+            {
+              "conclusion": "success",
+              "created_at": "2026-10-21T01:34:09Z",
+              "head_sha": "194378362eba21d91070de4ae4193cebc630d427",
+              "id": 39528078528,
+              "job_failure_observed": false,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 1,
+              "name": "restored-five-native-liveness",
+              "status": "completed",
+              "updated_at": "2026-10-21T01:34:18Z",
+              "workflow_id": 371622463
+            }
+          ],
+          "successful_current_runs": 1,
+          "workflows_observed": 1
+        },
+        "commit": "194378362eba21d91070de4ae4193cebc630d427",
+        "data_authority": "EVIDENCE_PRODUCER",
+        "observed_at_utc": "2026-10-21T04:18:34.383760Z",
+        "pull_requests": [],
+        "repository": "reppiks490/icarus-csv-evidence-lab",
+        "role": "advanced_csv_persisted_evidence_and_restored_five_liveness",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "INCOMPLETE",
+        "verification_error_code": null,
+        "verified_commit": "194378362eba21d91070de4ae4193cebc630d427"
+      },
+      {
+        "anchors": [
+          {
+            "blob_sha": "c07bc46e25a427cc339803639cf3db2abb8b9153",
+            "kind": "file",
+            "path": ".github/workflows/assurance.yml",
+            "sha256": "71abf938716c3b28e9f23b3a51b3948b710a09522e7a5147fe54e52106f274a8",
+            "size": 10755,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "a9c80e5308580ca15f7855726c564ca8697cb317",
+            "kind": "file",
+            "path": "AGENTS.md",
+            "sha256": "58bdc177c5e58c107d711029408c103cb3297dbef54627296a4e75b76bcaca12",
+            "size": 2186,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "OBSERVED_SUCCESS",
+          "current_runs": 7,
+          "execution_verified": true,
+          "historical_runs": 35,
+          "selected_runs": [
+            {
+              "conclusion": "success",
+              "created_at": "2026-10-20T13:31:04Z",
+              "head_sha": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+              "id": 39431066205,
+              "job_failure_observed": false,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 2,
+              "name": "ICARUS causal-router assurance",
+              "status": "completed",
+              "updated_at": "2026-10-20T13:31:33Z",
+              "workflow_id": 375620875
+            },
+            {
+              "conclusion": "success",
+              "created_at": "2026-10-19T14:36:35Z",
+              "head_sha": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+              "id": 39270501813,
+              "job_failure_observed": false,
+              "job_unfinished_observed": false,
+              "jobs_pages_complete": true,
+              "jobs_started": 1,
+              "name": "pip in /. - Update #1637207175",
+              "status": "completed",
+              "updated_at": "2026-10-19T14:37:38Z",
+              "workflow_id": 375948153
+            }
+          ],
+          "successful_current_runs": 2,
+          "workflows_observed": 2
+        },
+        "commit": "cba6e187589853b69d80ee74a63c323b2564ecb1",
+        "data_authority": "SYNTHETIC_ASSURANCE_ONLY",
+        "observed_at_utc": "2026-10-21T04:18:21.515386Z",
+        "pull_requests": [],
+        "repository": "reppiks490/icarus-causal-router",
+        "role": "deterministic_synthetic_causal_research_assurance",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "METADATA_OBSERVED",
+        "verification_error_code": null,
+        "verified_commit": "cba6e187589853b69d80ee74a63c323b2564ecb1"
+      },
+      {
+        "anchors": [
+          {
+            "blob_sha": "1f390fe5609178d8387f9c3d34e5ba9a90cc7bfa",
+            "kind": "file",
+            "path": "mission/register.json",
+            "sha256": "c084d66d978cb9529ef2522ba41973bfcf69c05f579a6523aa74e1aa7db05cf6",
+            "size": 296787,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "f8199833f80a220fc5872e1ae161d9429f0f1a99",
+            "kind": "file",
+            "path": ".github/workflows/mission-register.yml",
+            "sha256": "801ef47a162aa1fbb4a4e767911016b4a76d2b954d41b94e022f80b6d99da036",
+            "size": 772,
+            "status": "PRESENT"
+          },
+          {
+            "blob_sha": "151fb05568ed397bdb0b3d758829657d102964e7",
+            "kind": "file",
+            "path": "AGENTS.md",
+            "sha256": "aebc22fabdb173b920bae29ccb72efd4bf6099e87985c33bcb279a7f9eb44cdb",
+            "size": 3889,
+            "status": "PRESENT"
+          }
+        ],
+        "ci": {
+          "current_head_status": "UNVERIFIED",
+          "current_runs": 0,
+          "execution_verified": false,
+          "historical_runs": 500,
+          "selected_runs": [],
+          "successful_current_runs": 0,
+          "workflows_observed": 0
+        },
+        "commit": "59e1e16387e3753d7388be18b147c174e56ae07c",
+        "data_authority": "GOVERNANCE_EVIDENCE_ONLY",
+        "observed_at_utc": "2026-10-21T04:18:35.117729Z",
+        "pull_requests": [
+          {
+            "base_sha": "6ffe985768719a70ecfa095ff2bb2faa275df14f",
+            "draft": false,
+            "head_sha": "1837a3ae7827c901377b6c413a857f5d600a8199",
+            "number": 51
+          },
+          {
+            "base_sha": "eda08ca8b570eb417ce2c96260189f169fadec93",
+            "draft": true,
+            "head_sha": "60a869027fedb68cda10abffc146cb7dcfd66379",
+            "number": 46
+          },
+          {
+            "base_sha": "f5b692bf2118d91d4e2f21ea40a185be49de215e",
+            "draft": false,
+            "head_sha": "55627d10b2224d02f1c57fe02e57ad0323d9b62e",
+            "number": 45
+          },
+          {
+            "base_sha": "211759b8548f708f1eb5df408be4f62a30a0ab58",
+            "draft": false,
+            "head_sha": "ce6e20aa7dd94ee00e2958bf78498de37f711684",
+            "number": 44
+          },
+          {
+            "base_sha": "a0301bb7e90178824804c03a948ce3aad69f6066",
+            "draft": false,
+            "head_sha": "ca73597d8d1d5b8a8aa39d1c67a6fdea872e3d09",
+            "number": 43
+          },
+          {
+            "base_sha": "30b18e707acc3ee084c44e4288e4c710b76761cf",
+            "draft": false,
+            "head_sha": "08b15b243e5e2e68730cec3e15b870f472777bfe",
+            "number": 42
+          },
+          {
+            "base_sha": "59c62daf6dc887fcf4ba3a96fb5c421fd66c3fdd",
+            "draft": false,
+            "head_sha": "3df007617a39726d94d43126efb1581aac702ec4",
+            "number": 41
+          },
+          {
+            "base_sha": "59c62daf6dc887fcf4ba3a96fb5c421fd66c3fdd",
+            "draft": false,
+            "head_sha": "e39570f4a2c36b629e6ef5a005b24bf7524dab49",
+            "number": 28
+          },
+          {
+            "base_sha": "e3a10878c356af8d1b68764e6cf6153d31005f82",
+            "draft": false,
+            "head_sha": "283250580361ba02ccd1824ad60ef8194844ddc5",
+            "number": 7
+          }
+        ],
+        "repository": "reppiks490/icarus-owner-actions",
+        "role": "mission_register_governance_and_acceptance_evidence",
+        "runtime_health": "UNVERIFIED",
+        "snapshot_status": "INCOMPLETE",
+        "verification_error_code": null,
+        "verified_commit": "59e1e16387e3753d7388be18b147c174e56ae07c"
+      }
+    ],
+    "schema_version": "icarus2-cycle-v1",
+    "source": {
+      "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+      "commit": "9263ebe634d47f1d757d7219a073f8d3dba8ccb7",
+      "path": "config/federated_repo_evidence.json",
+      "repository": "reppiks490/Icarus-engine",
+      "sha256": "9292b683258dc02fbb110fadf4bb63f8d133352031e15c6093e621d7c4120886",
+      "verified": true
+    },
+    "started_at_utc": "2026-10-21T04:18:14.602816Z",
+    "status": "INCOMPLETE",
+    "summary": {
+      "evidence_anchors_present": 22,
+      "gaps": 8,
+      "open_pull_requests": 46,
+      "repositories_expected": 6,
+      "repositories_observed": 6
+    },
+    "swarms": [
+      {
+        "agent_execution_observed": false,
+        "role": "VERITAS",
+        "scope": "authority_architecture",
+        "status": "SCOPE_ONLY"
+      },
+      {
+        "agent_execution_observed": false,
+        "role": "HERMES",
+        "scope": "data_providers_corpora",
+        "status": "SCOPE_ONLY"
+      },
+      {
+        "agent_execution_observed": false,
+        "role": "KEPLER",
+        "scope": "markets_execution",
+        "status": "SCOPE_ONLY"
+      },
+      {
+        "agent_execution_observed": false,
+        "role": "MNEMOSYNE",
+        "scope": "brain_science_evidence",
+        "status": "SCOPE_ONLY"
+      },
+      {
+        "agent_execution_observed": false,
+        "role": "SYNAPSE",
+        "scope": "integration_resilience",
+        "status": "SCOPE_ONLY"
+      }
+    ],
+    "system_ready": false,
+    "worker": "Icarus 2"
+  },
+  "worker_id": "icarus2"
+}
