@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-10-21T14:42:28.133134Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "008-prime-focused-verification",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6318800208",
+    "pr:reppiks490/Icarus#462@68acaec0347a644ee09884fd3826dfadf897ee1d",
+    "local-tests:workspace-client,workspace-api,workspace-jobs:162passed,4skipped",
+    "github-check:119263396960:success",
+    "github-check:119263380103:success"
+  ],
+  "next_action": "Prime may provide one exact-head review or disjoint restart blocker; preserve claims and disabled live execution. No routine federation sweeps.",
+  "phase": "focused-restart-verification-complete",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Icarus2 focused support for owner-designated Icarus Prime: publishedhead68acaec reviewed in clean detachedworktree with no edits; client/API/jobs tests162passed4skipped55.65s. GitHub reports13successfulchecks onthishead includingengine-windows; earlier6acfailure is historical. Numericfutures/receipt/ack andrenderer implementation remain Prime source024 ownership, not duplicated. Broadloop stayspaused; no newcycle orfanout. Pendingrenderer andowner-PC restart are notcertified.",
+  "targets": [],
+  "type": "HANDOFF"
+}
