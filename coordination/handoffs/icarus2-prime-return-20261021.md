@@ -2,6 +2,10 @@
 
 Owner direction: Icarus1 is now **Icarus Prime**; stable session remains `icarus1-20261020-system-recovery`. Icarus2 provides focused support. The 40-minute timing refers to the worker returning, not a software-start deadline. No restart is scheduled by this handoff.
 
+## Newly reproduced accounting gap
+
+Before trusting combined paper totals, review the [persisted-row regression](https://github.com/reppiks490/Icarus/pull/462#issuecomment-6321554762). At published `68acaec0`, NULL/nonnumeric closure profit becomes trusted zero and a future-dated closure becomes trusted profit; the detail performance reader correctly rejects the same rows. Three new regression cases fail, one valid control passes; independently confirmed. Synthetic rows only, not an observation of the owner’s real journals. Runtime/manager files remain reserved to Prime and were not edited. Check unpublished work first, then validate persisted rows and shared as-of time before aggregation.
+
 ## Ready for your review
 
 | PR | Verified result | Scope |
