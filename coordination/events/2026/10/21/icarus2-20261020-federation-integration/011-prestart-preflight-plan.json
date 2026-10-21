@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-21T16:18:28.025217Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "011-prestart-preflight-plan",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6320805708",
+    "pr:reppiks490/Icarus#462@68acaec0347a644ee09884fd3826dfadf897ee1d",
+    "pr:reppiks490/Icarus-engine#226@a02c781c4aba1c1139dd8806691239f72ece89a0"
+  ],
+  "next_action": "Inspect canonical launchmechanism andpersistentconfiguration compatibility; run onlyfocused meaningful prestartchecks; handoff exactresults andunresolvedgates beforetargettime.",
+  "phase": "focused-prestart-verification",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner asks what Icarus2 can complete before Icarus startup in40minutes, approximately16:57Z. Focusedread-only launch/saved-state/route verification and exactreleasehead check; Prime notified to publish/freeze finaltarget. Published462@68acaec andEngine226@a02c781checks successful butunmerged; currentPrime source024stillNO_GO. No broadloop/fanout, no Primefile edits, no deadline-based readiness override.",
+  "targets": [],
+  "type": "PLAN"
+}
