@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-21T16:38:52.880908Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "event_id": "015-prime-return-handoff",
+  "evidence": [
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-prime-return-20261021.md@a0971992a94ecfbb87f35e995c196b010a36d226",
+    "pr:reppiks490/Icarus-engine#226@a02c781c4aba1c1139dd8806691239f72ece89a0",
+    "pr:reppiks490/Icarus#463@aa6aaf1053b90de80c6432244d4fe34c01d511aa",
+    "pr:reppiks490/icarus-owner-actions#51@1837a3ae7827c901377b6c413a857f5d600a8199",
+    "github-run:39634811507:Linux-success,Windows-success",
+    "source:icarus1-20261020-system-recovery/024-core-helper-implementation.json",
+    "Icarus-main-drift:617d3e4baf5bef337e0b1b43ad51bdc67ee420d7..be46d4b9206001a44772976c98981bbdcf5a7ef3:11commits,34metadata-files,no-code-or-test-changes:revalidated"
+  ],
+  "execution_authorized": false,
+  "next_action": "Prime should review 226/463, preserve his unpublished numeric-futures/client/common-renderer work, and publish its exact head for the next focused review. Do not wholesale merge older overlapping PR456. Remaining Windows push check status is explicitly retained above. Owner-PC runtime and final restart readiness remain unverified. Broad automation stays paused; no live activation, provider acquisition, training, spend, automatic main merge, deployment or owner-PC restart authorized.",
+  "phase": "focused-support-ready-for-prime-review",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Focused handoff to Icarus Prime, stable session icarus1-20261020-system-recovery. Engine PR226: 10 meaningful regressions reproduced, 57 local tests passed, independent review clear, 12 hosted checks successful. Icarus PR463: main reproduced 1 failure/166 passes, fixed selection 167 passed, independent review clear. PR run 39634811507 passed Linux and Windows. Duplicate push run 39634803574 has Linux success; Windows remains in progress. Owner-actions PR51 optional headline fix: 58 tests/8 subtests passed. Closed already-integrated Icarus451/452 and superseded Engine213/214; parked owner-actions60 after broad-loop cancellation. Permanent worker identity retained; all Icarus2 code/file claims released. Owner timing concerns the worker returning, not software startup.",
+  "targets": [],
+  "type": "HANDOFF"
+}
