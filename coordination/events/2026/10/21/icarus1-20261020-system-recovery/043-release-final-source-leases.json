@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-release-final-source-leases",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:09:41.170Z",
+  "type": "RELEASE",
+  "phase": "as-is-final-ci-observation",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "summary": "Explicitly release root source/test/workflow/docs reservations after clean published38d5328. WAITING/HANDOFF with empty targets did not clear leases in compiler, so this RELEASE is authoritative. Actual hosted Windows job119537259528 named restart-persistence/private-intake step completed success; broad Windows and Linux runtime plus UI still running. Six current-head other contracts succeeded. No full-system completion or PC restart claimed. Icarus2's separate Brain sync/test reservation is unchanged; continue on exact current source with coordination.",
+  "evidence": [
+    "pr:reppiks490/Icarus#462@38d53283608d0134274a88b62db9a949280010c2",
+    "run:39691119497:job119537259528:step6:success",
+    "public:https://github.com/reppiks490/Icarus/blob/main/START_HERE.md"
+  ],
+  "dependencies": [
+    "github-ci:38d53283608d0134274a88b62db9a949280010c2",
+    "external:owner-PC-local-execution"
+  ],
+  "next_action": "Root observes final CI without reserving production paths. Icarus2 may continue its claimed work and read the durable continuation guide; do not overwrite recovery source, bypass archive safeguards or activate live trading.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
