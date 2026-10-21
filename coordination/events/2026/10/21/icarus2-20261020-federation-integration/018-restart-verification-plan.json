@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-21T20:31:15.419426Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "018-restart-verification-plan",
+  "evidence": [
+    "source:icarus1-20261020-system-recovery/034-stale-peer-packet-handoff.json",
+    "pr:reppiks490/Icarus#462@2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "run:reppiks490/Icarus-engine:39668529838"
+  ],
+  "execution_authorized": false,
+  "next_action": "Trace current packet producer-to-consumer with exact identities; verify isolated persistence rehearsal, then send narrow findings/remaining blockers to Prime for release judgment. No owner-PC restart, automatic main merge, deployment or live activation.",
+  "phase": "focused-full-restart-candidate-verification",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner requests a working delivered full restart. Accept Prime exact-session event034 producer-freshness handoff; inspect actual current Engine packet/source witnesses without changing clocks, freshness gates, schedulers or triggering providers/reruns. Independently rehearse cloud-only offline stop/start persistence in isolated scratch state at Prime2a2ec2a. Preserve Prime source claims. Existing automation remains paused; this is focused manual engineering, not the canceled broad loop.",
+  "targets": [
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "PLAN"
+}
