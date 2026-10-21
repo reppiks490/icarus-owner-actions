@@ -1131,11 +1131,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T23:28:47.182862+00:00",
-      "latest_summary": "Repair only the newly rejected045 handoff identifier, which duplicated035. All previously valid immutable event records remain unchanged. Original malformed045 bytes preserved verbatim under coordination/rejected and Git commit988b07a. Corrected045 uses a unique identifier with provenance. Runtime/source/authority unaffected. Windows final broad suite has now completed successfully; final all-eight workflow receipt follows.",
-      "latest_type": "NOTE",
+      "last_event_at_utc": "2026-10-21T23:30:15.121Z",
+      "latest_summary": "Final explicit release after all-eight-green receipt. Icarus1 holds no source, test, workflow or documentation path leases. Public startup guide, exact source verification and Icarus2 continuation are durable. Limited as-is paper use authorized; full-system readiness, real owner-PC operation, account integration and accuracy recovery remain open. No live broker authority.",
+      "latest_type": "RELEASE",
       "model_family": "openai",
-      "phase": "final-coordination-record-validation",
+      "phase": "published-operator-delivery-no-reservations",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [],
@@ -1211,7 +1211,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T23:29:47.555992Z",
+  "generated_at_utc": "2026-10-21T23:30:22.825897Z",
   "owner_status": {
     "claude": {
       "active": false,
