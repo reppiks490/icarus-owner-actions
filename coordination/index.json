@@ -1125,62 +1125,27 @@
       ],
       "coordination_mode": "independent",
       "declared_paths": [
-        "START_HERE.md",
-        "scripts/start-as-is.sh",
-        "tests_engine/test_as_is_launcher.py",
-        "tests_engine/test_restart_persistence.py",
-        "tests/test_provider_corpus_intake.py",
-        ".github/workflows/test.yml",
-        "README.md",
-        "COMMANDS.md",
-        "SETUP.md",
-        "docs/recovery",
-        "coordination/START_HERE.md"
+        "icarus_engine/experience-ui.css",
+        "icarus_engine/experience-ui.js",
+        "tests_engine/test_workspace_api.py",
+        "docs/recovery"
       ],
       "declared_targets": [
         {
-          "path": "START_HERE.md",
+          "path": "icarus_engine/experience-ui.css",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "scripts/start-as-is.sh",
+          "path": "icarus_engine/experience-ui.js",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_as_is_launcher.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_restart_persistence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests/test_provider_corpus_intake.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "COMMANDS.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "SETUP.md",
+          "path": "tests_engine/test_workspace_api.py",
           "repo": "reppiks490/Icarus"
         },
         {
           "path": "docs/recovery",
           "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/START_HERE.md",
-          "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
@@ -1189,70 +1154,35 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T22:28:33.432Z",
-      "latest_summary": "Owner-priority as-is paper startup published at6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7 on existing recovery branch/PR462. Public default-main START_HERE.md and README pointer are live, plus canonical bus entry. Complete commands include backup/separate source checkout/setup/explicit feed+assets/one-command shortcut/all5dashboards/Connections/status/inputs/exports/help/rollback. Newlauncher4RED\u2192GREEN, real contained shell\u2192plant\u2192engine\u2192all5routes+4ledgerAPI\u2192ownedshutdownexit0. Exact reviewed I2testblobs463/464 incorporated;59focused pass1skip; fresh aggregate3852pass4skip111subtests in423.13s. Windows79pathsvalid; later docs+34receipt merge preservedall5testedsourcehashes;80postmergeconsumercontracts pass. Runtime Linux/Windows at2a passed; priorUIcancellation andstalepeerfailure preserved alongside I2later actualbrowser/freshness receipts. No owner-PC remote control exists here; no PCrestart claimed. FullreadinessNO_GO/liveoff; limited as-is paper launch authorized. I2can continue its Braininventoryclaim and remaining operating/accuracy/data/account gates over remainingaccess.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-21T22:31:10.522Z",
+      "latest_summary": "Published as-is source6ed local3852passed/actualstartup; public guide live. Final hosted five-workspace browser43cases passed, but required resize API/browser case failed: mobile drawer y=-375.78125 when placement callbacks deliberately delayed. Investigate fixed-containing-header/mobileCSS anchoring, reproduce before changing, preserve assertion rather than rerunblind. Claim only presentation files and existing API/browser test; Icarus2 Brainclaim untouched. Source launcher/publiccommands alreadyusable; fullreadinessNO_GO.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "as-is-startup-published-pc-access-unavailable",
+      "phase": "final-vital-resize-drawer-correction",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "START_HERE.md",
-        "scripts/start-as-is.sh",
-        "tests_engine/test_as_is_launcher.py",
-        "tests_engine/test_restart_persistence.py",
-        "tests/test_provider_corpus_intake.py",
-        ".github/workflows/test.yml",
-        "README.md",
-        "COMMANDS.md",
-        "SETUP.md",
-        "docs/recovery",
-        "coordination/START_HERE.md"
+        "icarus_engine/experience-ui.css",
+        "icarus_engine/experience-ui.js",
+        "tests_engine/test_workspace_api.py",
+        "docs/recovery"
       ],
       "reserved_targets": [
         {
-          "path": "START_HERE.md",
+          "path": "icarus_engine/experience-ui.css",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "scripts/start-as-is.sh",
+          "path": "icarus_engine/experience-ui.js",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_as_is_launcher.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_restart_persistence.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests/test_provider_corpus_intake.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "COMMANDS.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "SETUP.md",
+          "path": "tests_engine/test_workspace_api.py",
           "repo": "reppiks490/Icarus"
         },
         {
           "path": "docs/recovery",
           "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "coordination/START_HERE.md",
-          "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1326,7 +1256,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T22:30:38.005496Z",
+  "generated_at_utc": "2026-10-21T22:31:20.014525Z",
   "owner_status": {
     "claude": {
       "active": false,
