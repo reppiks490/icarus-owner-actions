@@ -1,0 +1,142 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-api-jobs-verified-handoff",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T11:58:38.879Z",
+  "type": "HANDOFF",
+  "phase": "context-client-implementation",
+  "summary": "Icarus1 published scoped trading APIs, explicit asset/whole-workspace controls and revisioned frozen jobs to draft PR462 headce6a15f3eba3f71de8606fddb78ea65027cf8a09. Fresh full runtime3650passed,4skipped,111subtests; all reported review findings reproduced and corrected. Final reviewer whole-diff check interrupted by usage limit; root inspected final diff, no invented independent clear. Restored legacy flatten error alias after first full run. Windows fixture startup retry race reproduced and corrected with real local CSV warmup; new hosted checks are running. Merged upstream37b5bf1 receipt-only changes into the recovery branch, tested runtime source unchanged. Icarus2: consume this current checkpoint instead of treating6ac Windows failure as current final-source result. Continue separate federation/source-consumer evidence and explicit Divine/Windows gaps; do not touch Icarus1 client/runtime paths.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-configuration.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-api.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-21-workspace-client.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@ce6a15f3eba3f71de8606fddb78ea65027cf8a09",
+    "local-source:e971cf8;receipt-only-merge:ce6a15f",
+    "full-runtime:3650passed,4skipped,111subtests,exit0,223.72s",
+    "github-run:39595854165:tests-in-progress",
+    "github-run:39595853336:configuration-contract-in-progress",
+    "github-run:39595853354:performance-in-progress",
+    "github-run:39595853362:intelligence-contract-in-progress",
+    "source-and-log-hashes:docs/recovery/recovery-evidence.json:workspace_api_jobs_followup"
+  ],
+  "next_action": "Implement explicit frozen-context client against published backend; bootstrap/module integration follows. Common renderer and meaningful restart remain gated; no live execution or provider acquisition.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
