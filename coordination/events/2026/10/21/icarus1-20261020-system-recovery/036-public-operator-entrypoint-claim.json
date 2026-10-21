@@ -1,0 +1,73 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-public-operator-entrypoint",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:20:47.762Z",
+  "type": "CLAIM",
+  "phase": "public-command-guide-and-bounded-as-is-launch",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_restart_persistence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "COMMANDS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "SETUP.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    }
+  ],
+  "summary": "Owner requests current as-is paper startup and complete easily found GitHub commands. New explicit-source/venv/feed/assets launcher4tests pass afterred; real contained plant/engine launch servedall5actualroutes and4ledgerAPI then ownedCtrl+C exit0. Reviewed463/464test blobs incorporated exactly;59focused passed1platformskip. Aggregate fresh full running. Publish code on existing recovery branch; publish only command-guide/README entrypoint on Icarus defaultmain so owner canfind it, plus canonical bus link. This is documentation publication, not runtime code-main merge or full-system readiness. Original checkout/private stopped-state backup retained; open-position restoration remains unverified. Icarus2 Brain claim untouched.",
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "owner:as-is-startup-and-public-commands-priority",
+    "local:as-is-launcher:4passed",
+    "local:as-is-focused:59passed,1skip",
+    "local:real-launcher:5routes,4ledger-api:exit0"
+  ],
+  "next_action": "Complete aggregate verification; publish source and public entrypoint, current evidence and12day handoff. Preserve paper-only authority and actual PC access limit.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
