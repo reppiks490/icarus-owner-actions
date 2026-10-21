@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-10-21T21:30:57.897808Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/Icarus#462",
+    "pr:reppiks490/Icarus#463",
+    "pr:reppiks490/Icarus#464"
+  ],
+  "event_id": "023-prime-prestart-composition-plan",
+  "evidence": [
+    "commit:reppiks490/Icarus@2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "commit:reppiks490/Icarus@aa6aaf1053b90de80c6432244d4fe34c01d511aa",
+    "commit:reppiks490/Icarus@dd052a8c4a46ac2811856a28eba735acd633e68e"
+  ],
+  "execution_authorized": false,
+  "next_action": "Run meaningful composed regression selection, capture immutable source/test identities and publish short Prime handoff/release with remaining exact blockers.",
+  "phase": "bounded-prime-prestart-pr-composition-verification",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner asks what can be completed before Prime resumes. Validate existing reviewed Icarus fixture PR463 together with Prime462 and restart-test464 in isolated scratch; no production-file edits or new repair PR. Independently inspect review dependencies, current hosted status and Engine226 applyability to pinned newer main. One reused specialist is read-only. No broad federation loop, collection, workflow rerun, merge, deployment or restart.",
+  "targets": [
+    {
+      "path": "tests/test_provider_corpus_intake.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_restart_persistence.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "PLAN"
+}
