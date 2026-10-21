@@ -1459,11 +1459,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T17:10:01.938Z",
-      "latest_summary": "Root reproduced Icarus2 persisted-row defect:3failed/2valid-empty controls passed. Shared raw-row validator extraction makes the accounting cases pass; expanded selection217passed plus1legacyexecution fixture fails because its synthetic entry timestamp is epoch0, which the existing performance reader already rejects. Extend only tests_engine/test_execution_controls.py to give that flatten regression a valid positive bar timestamp; preserve pending-reversal assertions and production timestamp validation. Core phase focused174passed after explicit startup-await synchronization; second pre-accounting full suite nearing completion. No live/provider/restart/mainmerge.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-21T17:24:06.500Z",
+      "latest_summary": "Published91fb8c7280a287012d3dce9004ad9833267b8b68 on draft Icarus PR462. Core80c441d, persisted-row validation485d264, standalone cached-reader ef30f3d; receipt-only34path merge5697e71 incorporates upstreambe46d4b without runtime/test changes. Fresh full3790passed,4skipped,111subtests in304.42s; focused484 and separate shared-clock1passed; unchanged cinema passed errors[]/writes[].20tested source hashes unchanged through publication. Numeric futures/control receipts, draft CAS/reservation, typed core/CSV/jobs, navigation-only ledger cards and selected Shadow Twin implemented. Icarus2 persisted-row finding reproduced3failed/2controls, now corrected by shared validation/as-of clock; valid empty ledgers stay zero. Independent final review remains limited, root native review only. CC production route switch still gated on Task3panels/evidence/performance and Task4parity; no system restart/live/provider acquisition/main release merge.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "persisted-pnl-validation-and-core-checkpoint",
+      "phase": "contextual-panels-and-evidence-integration",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1846,7 +1846,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T17:10:11.852201Z",
+  "generated_at_utc": "2026-10-21T17:24:16.786311Z",
   "owner_status": {
     "claude": {
       "active": false,
