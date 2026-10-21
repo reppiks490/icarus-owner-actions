@@ -1184,15 +1184,16 @@
         }
       ],
       "dependencies": [
+        "external:owner-PC-local-command-execution",
         "session:icarus2-20261020-federation-integration"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T22:20:47.762Z",
-      "latest_summary": "Owner requests current as-is paper startup and complete easily found GitHub commands. New explicit-source/venv/feed/assets launcher4tests pass afterred; real contained plant/engine launch servedall5actualroutes and4ledgerAPI then ownedCtrl+C exit0. Reviewed463/464test blobs incorporated exactly;59focused passed1platformskip. Aggregate fresh full running. Publish code on existing recovery branch; publish only command-guide/README entrypoint on Icarus defaultmain so owner canfind it, plus canonical bus link. This is documentation publication, not runtime code-main merge or full-system readiness. Original checkout/private stopped-state backup retained; open-position restoration remains unverified. Icarus2 Brain claim untouched.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-21T22:28:33.432Z",
+      "latest_summary": "Owner-priority as-is paper startup published at6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7 on existing recovery branch/PR462. Public default-main START_HERE.md and README pointer are live, plus canonical bus entry. Complete commands include backup/separate source checkout/setup/explicit feed+assets/one-command shortcut/all5dashboards/Connections/status/inputs/exports/help/rollback. Newlauncher4RED\u2192GREEN, real contained shell\u2192plant\u2192engine\u2192all5routes+4ledgerAPI\u2192ownedshutdownexit0. Exact reviewed I2testblobs463/464 incorporated;59focused pass1skip; fresh aggregate3852pass4skip111subtests in423.13s. Windows79pathsvalid; later docs+34receipt merge preservedall5testedsourcehashes;80postmergeconsumercontracts pass. Runtime Linux/Windows at2a passed; priorUIcancellation andstalepeerfailure preserved alongside I2later actualbrowser/freshness receipts. No owner-PC remote control exists here; no PCrestart claimed. FullreadinessNO_GO/liveoff; limited as-is paper launch authorized. I2can continue its Braininventoryclaim and remaining operating/accuracy/data/account gates over remainingaccess.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "public-command-guide-and-bounded-as-is-launch",
+      "phase": "as-is-startup-published-pc-access-unavailable",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1325,7 +1326,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T22:20:58.749181Z",
+  "generated_at_utc": "2026-10-21T22:28:43.257613Z",
   "owner_status": {
     "claude": {
       "active": false,
