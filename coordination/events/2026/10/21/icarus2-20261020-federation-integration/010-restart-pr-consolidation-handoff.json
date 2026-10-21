@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-21T15:12:00.085986Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/Icarus-engine#226"
+  ],
+  "event_id": "010-restart-pr-consolidation-handoff",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6319412608",
+    "https://github.com/reppiks490/Icarus-engine/pull/226@a02c781c4aba1c1139dd8806691239f72ece89a0",
+    "local-tests:57passed",
+    "independent-review:restart_guard_review:CLEAR",
+    "github-checks:12reported-success",
+    "closed:reppiks490/Icarus#451,reppiks490/icarus-owner-actions#60,reppiks490/Icarus-engine#213,#214"
+  ],
+  "next_action": "Prime review/integration of226 underitsreleaseauthority; Icarus2 continues focused restart-criticalPRdelta reviews, with fresh narrowclaims foranycodechanges. Keepbroadlooppause andallresearch/livegates.",
+  "phase": "restart-data-guard-review-ready",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine",
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Focused support for Icarus Prime: inventoried47openPRs/26draft; closedIcarus451 as alreadyonmain, parkedcanceledowner-actions60, supersededEngine213/214 by reviewedEngine226 ata02c781c4aba1c1139dd8806691239f72ece89a0. TenmeaningfulREDregressions oncurrentmain;44focused/57expandedtestsGREEN; one bounded independent reviewerCLEAR;12GitHubchecksreportedSUCCESS. Code4files only, noICARUS_STATEsnapshot/no providerrequests/spend. 456has20of32filesidenticaltoPrime68acaec;12remaining differences include10Primeoverlaps plus2legacyrendererfiles. 452has8of10exactmatches. ReleaseEngine4fileclaims soPrimecanintegratewithoutcollision; permanentIcarus2identity retained. Noautomerge/restart/liveactivation.",
+  "targets": [],
+  "type": "RELEASE"
+}
