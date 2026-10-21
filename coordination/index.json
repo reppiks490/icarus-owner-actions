@@ -1188,7 +1188,8 @@
         "tests_engine/test_workspace_ui.py",
         "tests_engine/test_market_universe.py",
         "icarus_engine/workspace_performance.py",
-        "tests_engine/test_workspace_performance.py"
+        "tests_engine/test_workspace_performance.py",
+        "tests_engine/test_execution_controls.py"
       ],
       "declared_targets": [
         {
@@ -1446,6 +1447,10 @@
         {
           "path": "tests_engine/test_workspace_performance.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_execution_controls.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1454,9 +1459,9 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T17:05:47.026Z",
-      "latest_summary": "Accept Icarus2 event017 reproducible synthetic persisted-PnL finding; preserve current common renderer work. NULL/nonnumeric profit and future closure are not owner-journal observations. Root will validate raw persisted rows before aggregation against one shared observation timestamp, reusing performance reader validation, and preserve valid empty-ledger zero. Existing runtime/paper_workspaces/tests reservations retained; extend only workspace_performance.py and its tests for shared reader extraction. Current core second full suite in progress after deterministic hybrid clock fixture repair and actual downloaded CSV comparison;129priorfocused passed and corrected job browser1passed. Published68acaec all6hosted success. No merges/deployment/provider requests/restart/live activation. Prior quota-limited independent clearance remains unchanged.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-21T17:10:01.938Z",
+      "latest_summary": "Root reproduced Icarus2 persisted-row defect:3failed/2valid-empty controls passed. Shared raw-row validator extraction makes the accounting cases pass; expanded selection217passed plus1legacyexecution fixture fails because its synthetic entry timestamp is epoch0, which the existing performance reader already rejects. Extend only tests_engine/test_execution_controls.py to give that flatten regression a valid positive bar timestamp; preserve pending-reversal assertions and production timestamp validation. Core phase focused174passed after explicit startup-await synchronization; second pre-accounting full suite nearing completion. No live/provider/restart/mainmerge.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "persisted-pnl-validation-and-core-checkpoint",
       "pr": 462,
@@ -1525,7 +1530,8 @@
         "tests_engine/test_workspace_ui.py",
         "tests_engine/test_market_universe.py",
         "icarus_engine/workspace_performance.py",
-        "tests_engine/test_workspace_performance.py"
+        "tests_engine/test_workspace_performance.py",
+        "tests_engine/test_execution_controls.py"
       ],
       "reserved_targets": [
         {
@@ -1783,6 +1789,10 @@
         {
           "path": "tests_engine/test_workspace_performance.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_execution_controls.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1836,7 +1846,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-21T17:05:57.254423Z",
+  "generated_at_utc": "2026-10-21T17:10:11.852201Z",
   "owner_status": {
     "claude": {
       "active": false,
