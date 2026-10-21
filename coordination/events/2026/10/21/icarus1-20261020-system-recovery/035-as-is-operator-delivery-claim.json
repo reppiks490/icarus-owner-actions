@@ -1,0 +1,70 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-as-is-operator-delivery",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T22:10:21.468Z",
+  "type": "CLAIM",
+  "phase": "owner-priority-as-is-startup-and-command-guide",
+  "summary": "Owner now explicitly requests a usable fully updated as-is paper startup and prominent full GitHub command guide before subscription expires. Prepare/test bounded operator launch path; actual owner-PC access absent, no remote PC restart claimed. Separate source worktree preserves old checkout/private root; explicit feed prevents automatic paid Databento, local venv/source/readback, foreground owned Ctrl+C stop, backup and rollback commands. Incorporate reviewed Icarus2 test-only463/464 and intended Windows coverage on recovery branch; no main PR merge. Preserve Icarus2 active Brain inventory claim. Published2a runtime Linux/Windows success; visual canceled, not green. Icarus2 later launcher/persistence/all-world receipts read.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_restart_persistence.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests/test_provider_corpus_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "COMMANDS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "SETUP.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "external:owner-PC-access-unavailable"
+  ],
+  "evidence": [
+    "owner:as-is restart and full commands priority",
+    "coordination/handoffs/icarus2-restart-verification-20261021.md",
+    "pr:reppiks490/Icarus#463@aa6aaf1053b90de80c6432244d4fe34c01d511aa",
+    "pr:reppiks490/Icarus#464@dd052a8c4a46ac2811856a28eba735acd633e68e"
+  ],
+  "next_action": "Implement minimal explicit-source launcher and prominent guide; integrate reviewed test-only handoffs; verify contained actual startup/stop and persistent state; publish final source and12day Icarus2 handoff. No live trading or provider purchase.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
