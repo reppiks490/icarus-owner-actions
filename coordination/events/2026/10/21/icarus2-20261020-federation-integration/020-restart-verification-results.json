@@ -1,0 +1,381 @@
+{
+  "at_utc": "2026-10-21T20:44:41.501218Z",
+  "cloud_restart_rehearsal": {
+    "blobs": {
+      "icarus_engine/paper_workspaces.py": "86639f92f46274312ba0783984359461a67ceef3",
+      "icarus_engine/runtime.py": "49521a696310fcf4ced456244916dcba613ae886",
+      "icarus_engine/server.py": "172b09d0c3a368be0a65f4fc951c59e5c3352311",
+      "icarus_engine/workspace_tools.py": "b78066703e926fc70be6dc51bdc01c2599f02584"
+    },
+    "checks": [
+      {
+        "bad_auth_and_cross_context": "PASS",
+        "four_contexts": "PASS",
+        "independent_persisted_profit": [
+          20,
+          40,
+          60,
+          80
+        ],
+        "phase": 1,
+        "settings": "PASS"
+      },
+      {
+        "clean_shutdown": {
+          "phase": 1,
+          "server_thread_stopped": true,
+          "violations": [],
+          "workspace_journals_closed": true
+        }
+      },
+      {
+        "bad_auth_and_cross_context": "PASS",
+        "four_contexts": "PASS",
+        "independent_persisted_profit": [
+          20,
+          40,
+          60,
+          80
+        ],
+        "phase": 2,
+        "settings": "PASS"
+      },
+      {
+        "clean_shutdown": {
+          "phase": 2,
+          "server_thread_stopped": true,
+          "violations": [],
+          "workspace_journals_closed": true
+        }
+      }
+    ],
+    "child_environment": {
+      "ICARUS_FEED": "file",
+      "ICARUS_HOME": "/workspace/scratch/restart-rehearsal-l5091758/state",
+      "PATH": "/usr/bin:/bin",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "PYTHONPATH": "/workspace/scratch/restart-rehearsal-l5091758/source",
+      "PYTHONUNBUFFERED": "1"
+    },
+    "commands": {
+      "keep_existing_selection": "python -m icarus_engine.workspace_tools restart --root <state> --port <port> --keep-selection",
+      "rehearsal": [
+        "/workspace/Icarus/.venv/bin/python",
+        "/workspace/scratch/restart-rehearsal-l5091758/rehearse.py"
+      ],
+      "safe_production_cli_shape_only_not_executed": "python -m icarus_plant start --root <fresh-state> --offline --feed file --assets NQ --engine-port <unused-loopback-port> --no-downloads --no-browser",
+      "warning": "restart invokes PID-file stop before occupied-port validation; never run against an unverified root"
+    },
+    "existing_tests_inspected_not_run_by_this_worker": [
+      "tests_engine/test_workspace_tools.py (expansion guards/readback/auth/occupied port)",
+      "tests_engine/test_plant.py (offline argv/spawn-stop/unreaped supervisor/foreign healthy engine)",
+      "tests_engine/test_paper_workspaces.py::test_workspace_configuration_persists_only_to_its_own_profile",
+      "tests_engine/test_paper_workspaces.py::test_saved_invalid_assets_fail_closed_on_reload"
+    ],
+    "identity": {
+      "commit": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+      "interpreter": "/workspace/Icarus/.venv/bin/python",
+      "root": "/workspace/scratch/restart-rehearsal-l5091758",
+      "source": "/workspace/scratch/restart-rehearsal-l5091758/source",
+      "tree": "2df8b12043a70084b68dd6d6a4b429ec6ce22344"
+    },
+    "launches": [
+      {
+        "argv": [
+          "/workspace/Icarus/.venv/bin/python",
+          "/workspace/scratch/restart-rehearsal-l5091758/worker.py",
+          "1"
+        ],
+        "background_workers": false,
+        "pid": 44155,
+        "port": 39399,
+        "runtime_origin": "/workspace/scratch/restart-rehearsal-l5091758/source/icarus_engine/runtime.py"
+      },
+      {
+        "argv": [
+          "/workspace/Icarus/.venv/bin/python",
+          "/workspace/scratch/restart-rehearsal-l5091758/worker.py",
+          "2"
+        ],
+        "background_workers": false,
+        "pid": 44255,
+        "port": 44151,
+        "runtime_origin": "/workspace/scratch/restart-rehearsal-l5091758/source/icarus_engine/runtime.py"
+      }
+    ],
+    "limitations": [
+      "Production launcher and remote/background services intentionally not exercised; offline CLI does not disable every background service.",
+      "No owner PC, owner settings, real history, provider access, open position recovery or live authority verified."
+    ],
+    "live_execution_authorized": false,
+    "mode": "synthetic isolated cloud process restart; supported serve(start=False), real FileFeed and four real workspace portfolios",
+    "observed_startup_gaps": [
+      "No NQ CSV => futures warmup retries; config mutation rejects until warmup completes. Error text says Yahoo although FileFeed is selected.",
+      "Startup is asynchronous: require ready state, not only HTTP health.",
+      "Only the supported start=False API disables every server background worker; no equivalent plant CLI flag."
+    ],
+    "persistence": "PASS: exact config bytes, all trade/fill rows and SQLite integrity unchanged across two clean process lifecycles",
+    "persistence_receipts": {
+      "cc1": {
+        "config_sha256": "6e108b894c2366936c7cbafcfcde880a052dba9adaab339dc7972cd046e969d2",
+        "fills": 1,
+        "integrity": "ok",
+        "journal": "/workspace/scratch/restart-rehearsal-l5091758/state/command_centers/cc1.sqlite3",
+        "realized_profit": 20.0,
+        "rows_sha256": "80683b4a6a30e0517768fab2b3aff56690778ab5b150416dca33f88e6eb897bf",
+        "trades": 1
+      },
+      "cc2": {
+        "config_sha256": "f3fa25e381eca1b46655f0351f80214f55813f6f3f1dd6253f822a5e40eb9c9e",
+        "fills": 1,
+        "integrity": "ok",
+        "journal": "/workspace/scratch/restart-rehearsal-l5091758/state/command_centers/cc2.sqlite3",
+        "realized_profit": 40.0,
+        "rows_sha256": "89632856df5d8ba540d3ce2cc70acb12e184033234ea91bb761852e27b9a78f5",
+        "trades": 1
+      },
+      "cc3": {
+        "config_sha256": "bcacdb84d6de2f2677bcc38a8aa02d8ddd51cc1c68b6d6cf40e35a7ee5d4077d",
+        "fills": 1,
+        "integrity": "ok",
+        "journal": "/workspace/scratch/restart-rehearsal-l5091758/state/command_centers/cc3.sqlite3",
+        "realized_profit": 60.0,
+        "rows_sha256": "bb02ffff988d7143538ed8f496744db2ecc3885feb5ac33c1f59565516b8ca14",
+        "trades": 1
+      },
+      "cc4": {
+        "config_sha256": "8a392b2ee7f2be8576b822a74b1abfc0d6126796666f97dbbe8b65b8222f5eb9",
+        "fills": 1,
+        "integrity": "ok",
+        "journal": "/workspace/scratch/restart-rehearsal-l5091758/state/command_centers/cc4.sqlite3",
+        "realized_profit": 80.0,
+        "rows_sha256": "dc3f0d2c9b25c7a2dfa80256adaf1a6208fbf76ccb1d2fc140ff095f16b81925",
+        "trades": 1
+      }
+    },
+    "result": "PASS",
+    "verified_blobs": {
+      "icarus_engine/paper_workspaces.py": {
+        "actual_blob": "86639f92f46274312ba0783984359461a67ceef3",
+        "expected_blob": "86639f92f46274312ba0783984359461a67ceef3",
+        "match": true
+      },
+      "icarus_engine/runtime.py": {
+        "actual_blob": "49521a696310fcf4ced456244916dcba613ae886",
+        "expected_blob": "49521a696310fcf4ced456244916dcba613ae886",
+        "match": true
+      },
+      "icarus_engine/server.py": {
+        "actual_blob": "172b09d0c3a368be0a65f4fc951c59e5c3352311",
+        "expected_blob": "172b09d0c3a368be0a65f4fc951c59e5c3352311",
+        "match": true
+      },
+      "icarus_engine/workspace_tools.py": {
+        "actual_blob": "b78066703e926fc70be6dc51bdc01c2599f02584",
+        "expected_blob": "b78066703e926fc70be6dc51bdc01c2599f02584",
+        "match": true
+      },
+      "icarus_plant/cli.py": {
+        "actual_blob": "945e37753ee4965b5f395ef255b9477cc448fd0a",
+        "expected_blob": "945e37753ee4965b5f395ef255b9477cc448fd0a",
+        "match": true
+      },
+      "icarus_plant/supervisor.py": {
+        "actual_blob": "6dba30505330fddf06a76cf5e936e207880e5e18",
+        "expected_blob": "6dba30505330fddf06a76cf5e936e207880e5e18",
+        "match": true
+      },
+      "scripts/restart-command-centers.ps1": {
+        "actual_blob": "ac1248afb42ff3a52b1e845958c5108591adf529",
+        "expected_blob": "ac1248afb42ff3a52b1e845958c5108591adf529",
+        "match": true
+      },
+      "scripts/restart-command-centers.sh": {
+        "actual_blob": "5fe0f596a1c744f14c5df6a00682d4218ae14047",
+        "expected_blob": "5fe0f596a1c744f14c5df6a00682d4218ae14047",
+        "match": true
+      }
+    }
+  },
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "020-restart-verification-results",
+  "evidence": [
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-restart-verification-20261021.md@33522757da7d0fdc1a6bd62355af0840d284a217",
+    "run:reppiks490/Icarus:39654368024:older-failure-preserved",
+    "run:reppiks490/Icarus:39654368099:cancelled",
+    "run:reppiks490/Icarus-engine:39657632968:later-publication-success"
+  ],
+  "execution_authorized": false,
+  "historical_handshake": {
+    "consumer_head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "consumer_receipt": {
+      "execution_authorized": false,
+      "historical_candidate_evidence_count": 0,
+      "historical_context_ingested_total": 6,
+      "historical_context_source_count": 6,
+      "historical_context_status": "green",
+      "historical_packet_live_advanced_count": 0,
+      "historical_packet_projection_verified_count": 6,
+      "historical_packet_same_as_live_count": 6,
+      "historical_packet_witness_count": 6,
+      "historical_packet_witness_status": "green",
+      "historical_packet_witnesses": [
+        {
+          "artifact_id": "dc953272d203a1c175ebba6d3245390a51ba0673753961c0a356058f9eb03f8b",
+          "current_main_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "alpha_synthesis",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee",
+          "source_artifact_blob_verified": true
+        },
+        {
+          "artifact_id": "3ca36c424cd02c159577f70af2f4d2c6b3ab515724c550597ed02229f6bdc270",
+          "current_main_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "apex_council",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c",
+          "source_artifact_blob_verified": true
+        },
+        {
+          "artifact_id": "1ae5bd0c3bb6bf7c5a91077f58a2cf920068ec4c6369b6512b5d31e73aa47e94",
+          "current_main_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "flow_microstructure",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8",
+          "source_artifact_blob_verified": true
+        },
+        {
+          "artifact_id": "5d6ac8a75850bad6cf8557de2a5e569db030d1ad55c47c773920bfc195b92733",
+          "current_main_blob_sha": "9b2c18122fc732c3c0d87be4383caeac79e588e5",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "provider_collection",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "9b2c18122fc732c3c0d87be4383caeac79e588e5",
+          "source_artifact_blob_verified": true
+        },
+        {
+          "artifact_id": "78a8f4e40b06d184d388456bc304416caa6601b7704f6058cd81320f021b10d0",
+          "current_main_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "robustness_guardian",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7",
+          "source_artifact_blob_verified": true
+        },
+        {
+          "artifact_id": "40926f8fe56a00c8872e019a0a11dff7ce668c20aac221c6870569796dfe83ae",
+          "current_main_blob_sha": "f2b34085688d39b58e0b913e0ae83fa016c209d5",
+          "current_main_relation": "SAME_AS_PACKET_SOURCE",
+          "id": "sec_edgar",
+          "projection_verified": true,
+          "source_artifact_blob_sha": "f2b34085688d39b58e0b913e0ae83fa016c209d5",
+          "source_artifact_blob_verified": true
+        }
+      ],
+      "historical_sources": [
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+          "id": "alpha_synthesis",
+          "remote_blob_sha": "333b8dfd9ac676b8c404772b10e1dd8dc48871ee"
+        },
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+          "id": "apex_council",
+          "remote_blob_sha": "1079f286bbea9a81fba0f1890b191a5f11a6ea3c"
+        },
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_COLLECTION_EVIDENCE",
+          "id": "flow_microstructure",
+          "remote_blob_sha": "f8a3dd8111e7893db774cb9880e37d16391358d8"
+        },
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_COLLECTION_EVIDENCE",
+          "id": "provider_collection",
+          "remote_blob_sha": "9b2c18122fc732c3c0d87be4383caeac79e588e5"
+        },
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_RESEARCH_EVIDENCE",
+          "id": "robustness_guardian",
+          "remote_blob_sha": "37712e50831f0c6b7d5c0b854bb38a9f47aeefd7"
+        },
+        {
+          "candidate_evidence_eligible": false,
+          "evidence_status": "HISTORICAL_COLLECTION_EVIDENCE",
+          "id": "sec_edgar",
+          "remote_blob_sha": "f2b34085688d39b58e0b913e0ae83fa016c209d5"
+        }
+      ],
+      "icarus_commit": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+      "icarus_engine_commit": "e4b69a6240709a2df90ad98eca8dcc0b10a615cd",
+      "peer_lane_contract_binding_verified_count": 5,
+      "peer_lane_witness_unavailable_count": 0,
+      "peer_lane_witness_verified_count": 4,
+      "peer_packet_fresh": true,
+      "peer_packet_relation": "AHEAD",
+      "peer_packet_source_commit": "9f9b69db567681ae539164c5ec84fed5f80d02d5",
+      "peer_roundtrip_accepted_packet_id": "a30a6673eb0997039ff3114df297700e362909a6753c254dc7caab0d0a1e00dd",
+      "peer_roundtrip_accepted_source_commit": "5508ad450c6941f1dc179b13445b15bd32876931",
+      "peer_roundtrip_ack_status": "VERIFIED_PRIOR_PACKET",
+      "peer_source_contract_witness_count": 3,
+      "peer_source_contract_witness_status": "green",
+      "production_decision_authorized": false,
+      "schema_version": "icarus-live-historical-context-receipt-v1"
+    },
+    "engine_head": "e4b69a6240709a2df90ad98eca8dcc0b10a615cd",
+    "execution_authorized": false,
+    "exit_code": 0,
+    "materialized_peer_paths": 1087,
+    "network_connect_denied": true,
+    "observed_at_utc": "2026-10-21T20:36:16.179183+00:00",
+    "packet_git_blob": "cb10bd9552b2445e18b60d80c4bdf766b847c374",
+    "packet_observed_at": "2026-10-21T20:14:47Z",
+    "peer_packet_source": "9f9b69db567681ae539164c5ec84fed5f80d02d5",
+    "prefetched_source_witnesses": 17,
+    "preparation_error": "initial local partial clone lacked historical witness blobs; prefetched exact packet-bound identities, no source changes",
+    "workflow_sha256": "31d484e6bd1865830b42381fafec5e1bc815970af127c9f7b54caf166dc42d6c"
+  },
+  "independent_pnl_regression": {
+    "failed": 0,
+    "head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "passed": 4
+  },
+  "native_event_listing_limit": {
+    "available_files": 1076,
+    "consumer_cap": 1000,
+    "full_native_event_coverage_verified": false
+  },
+  "next_action": "Finish focused restart regression and review; Prime resolves release/visual/operating readiness. Do not interpret these bounded test passes as owner-PC execution or all-requirements completion.",
+  "phase": "restart-engineering-checks-verified-production-gates-open",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "runtime_capability_limit": "No connected owner-PC/browser/SSH control capability exposed; cloud shell and GitHub available.",
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Current exact-clock six-source historical consumer handshake passed without a source/gate/clock change; two isolated cloud process lifecycles preserved four journals/settings; independent persisted-row regression4passed. Full restart remains NO_GO: hosted visual cancellation, publication cadence, operating/owner-PC and open-position limits remain. One-file persistent restart test is in progress, not a production repair/clearance.",
+  "targets": [
+    {
+      "path": "tests_engine/test_restart_persistence.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "UPDATE"
+}
