@@ -1,12 +1,12 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T18:40:32.893Z",
+  "completed_at_utc": "2026-10-21T22:30:28.957Z",
   "result": "blocked",
-  "scope": "Verified strict accounting and isolated configuration/API/jobs, explicit typed context transport, common main/CC1-CC4 renderer with preserved evidence/performance and real five-route acceptance; operating integrations and restart readiness remain open.",
+  "scope": "Published usable as-is paper startup, public default-main command guide and unified five-workspace dashboard; actual PC execution and full operating readiness remain distinct.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
   "source_reviewed_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
-  "latest_documentation_sha": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+  "latest_documentation_sha": "6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
   "restart_decision": "NO_GO",
   "delivered": [
     "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
@@ -30,7 +30,12 @@
     "Common dashboard2a2ec2a: fresh full3833passed,4skipped,111subtests in429.28s, exit0;37source/test/workflow hashes frozen. Browser/JS114passed plus4API/browser, original8legacy Performance cases and unchanged cinema errors[]/writes[].",
     "Explicit linked-module transport, rejecting unsupported actions, selected cached-market diagnostics, truthful unobserved session health and shared evidence labels.",
     "Same Performance component across five journals; corpus/selected-consumer/archived expansion/A200 research qualification and Connections preserved; research history owner-only.",
-    "Editor conflict discard reloads current revision and unrelated completed config jobs preserve drafts; both regressions failed before fix. Five old test transport assumptions aligned;53affected-module tests+86subtests pass."
+    "Editor conflict discard reloads current revision and unrelated completed config jobs preserve drafts; both regressions failed before fix. Five old test transport assumptions aligned;53affected-module tests+86subtests pass.",
+    "As-is startup371eba1, docs/receipt merge6ed1fe8:3852passed,4skipped,111subtests in423.13s, exit0. All5changed source/test/workflow hashes retained through merge;80post-receipt consumer contracts passed.",
+    "Actual new shell launcher→plant→engine served5identities and4ledgerAPI, paper authorityfalse, owned shutdownexit0. Temporary synthetic root, not PC or sustained operation.",
+    "Public default-main START_HERE.md and README pointer; old guide pointers on recovery source. Backup/separate source worktree, explicit feed/assets/venv/source/root, one-command local shortcut, allURLs/status/exports/help/rollback.",
+    "Exact reviewed Icarus2testblobs463/464 incorporated; Linux now includes root fixture; Windows79paths include both tests. New shell harness skips on Windows, PC cold setup unverified.",
+    "Icarus2 remaining-access next-work record docs/recovery/ICARUS2_NEXT_12_DAYS.md; Brain inventory claim untouched, root source leases released for coordinated continuation."
   ],
   "remaining_internal_work": [
     "Selected-runtime adapters for explicitly unavailable common panels; hosted/release and owner-PC parity verification",
@@ -68,13 +73,17 @@
     "full:3833passed,4skipped,111subtests:429.28s",
     "coordination/events/2026/10/21/icarus1-20261020-system-recovery/033-common-dashboard-published.json",
     "run:reppiks490/Icarus:39654368024:stale-peer-failure",
-    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/034-stale-peer-packet-handoff.json"
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/034-stale-peer-packet-handoff.json",
+    "pr:reppiks490/Icarus#462@6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
+    "local-full:3852passed,4skipped,111subtests:423.13s",
+    "public-main:START_HERE.md",
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/037-as-is-startup-published.json"
   ],
-  "next_action": "Finish exact-head tests/UI visual verification, then preserve full hosted dispositions. Icarus2 has a focused peer-producer freshness handoff available, without assuming it is running; guard remains1800s. NO_GO persists for stale federation/PC/accuracy/operating-adapter/account/data/rehearsal gaps.",
+  "next_action": "Verify final exact-head CI and fix real failures. Owner can follow public START_HERE then use bash ~/icarus-start.sh locally; no ChatGPT session needed for core. Icarus2 continue safely from current recovery head without waiting on model identity: finish its Braininventoryclaim, qualify PC/state/steady operation/data consumers/accounts and matched accuracy. Preserve full NO_GO, paper authority and private state; no canceled broad automation or live arming.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
-    "head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+    "head": "6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
     "observed_runs": [
       39654367994,
       39654368010,
@@ -85,7 +94,7 @@
       39654368115,
       39654368158
     ],
-    "status_at_checkpoint": "Eight observed: five workflows success; tests and required UI visual inprogress; live historical-context gate failed by stale Engine peer packet.",
+    "status_at_checkpoint": "New final-head workflows started; configuration, federation-consumer and actual-clock historical handshake succeeded; remaining runs inprogress. Timed fresh handshake is not permanent freshness.",
     "prior_head_windows_configuration_failure": {
       "head": "d47c41ff21302c6086894c1f8012c3a2ba91425f",
       "run_id": 39476264660,
@@ -170,84 +179,84 @@
     },
     "observed_workflows": [
       {
-        "id": 39654368046,
-        "name": "tests",
-        "status": "in_progress",
-        "conclusion": null,
-        "run_number": 6549,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368046/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368046/logs",
-        "workflow_id": 362919046
-      },
-      {
-        "id": 39654368099,
-        "name": "ui-visual-contract",
-        "status": "in_progress",
-        "conclusion": null,
-        "run_number": 357,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368099/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368099/logs",
-        "workflow_id": 374925947
-      },
-      {
-        "id": 39654368010,
-        "name": "engine-federation-consumer-contract",
-        "status": "completed",
-        "conclusion": "success",
-        "run_number": 415,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368010/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368010/logs",
-        "workflow_id": 373520058
-      },
-      {
-        "id": 39654368024,
-        "name": "live-engine-historical-context-gate",
-        "status": "completed",
-        "conclusion": "failure",
-        "run_number": 182,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368024/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368024/logs",
-        "workflow_id": 373520502
-      },
-      {
-        "id": 39654368158,
-        "name": "configuration-job-contract",
-        "status": "completed",
-        "conclusion": "success",
-        "run_number": 657,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368158/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368158/logs",
-        "workflow_id": 373745408
-      },
-      {
-        "id": 39654368222,
+        "id": 39686515292,
         "name": "Four portfolio performance",
-        "status": "completed",
-        "conclusion": "success",
-        "run_number": 15,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368222/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368222/logs",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 17,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515292/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515292/logs",
         "workflow_id": 388971909
       },
       {
-        "id": 39654368115,
-        "name": "source-data-contract",
+        "id": 39686515316,
+        "name": "configuration-job-contract",
         "status": "completed",
         "conclusion": "success",
-        "run_number": 117,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368115/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654368115/logs",
+        "run_number": 659,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515316/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515316/logs",
+        "workflow_id": 373745408
+      },
+      {
+        "id": 39686515290,
+        "name": "engine-federation-consumer-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 417,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515290/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515290/logs",
+        "workflow_id": 373520058
+      },
+      {
+        "id": 39686515357,
+        "name": "ui-visual-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 359,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515357/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515357/logs",
+        "workflow_id": 374925947
+      },
+      {
+        "id": 39686515312,
+        "name": "tests",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 6557,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515312/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515312/logs",
+        "workflow_id": 362919046
+      },
+      {
+        "id": 39686515289,
+        "name": "source-data-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 119,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515289/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515289/logs",
         "workflow_id": 374234020
       },
       {
-        "id": 39654367994,
+        "id": 39686515359,
         "name": "intelligence-feed-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 527,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515359/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515359/logs",
+        "workflow_id": 373981573
+      },
+      {
+        "id": 39686515303,
+        "name": "live-engine-historical-context-gate",
         "status": "completed",
         "conclusion": "success",
-        "run_number": 525,
-        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654367994/jobs",
-        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39654367994/logs",
-        "workflow_id": 373981573
+        "run_number": 184,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515303/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39686515303/logs",
+        "workflow_id": 373520502
       }
     ],
     "stale_peer_packet": {
@@ -262,8 +271,33 @@
       "failure": "peer packet age3073.677s exceeds1800s",
       "disposition": "Correct freshness rejection on unchanged sync/gate source; no relaxation, timestamp-only repair, acquisition or rerun. Producer workflow declares10minute cron plus successful scheduled-producer completion triggers; declared cadence is not verified timely publication.",
       "handoff": "coordination/events/2026/10/21/icarus1-20261020-system-recovery/034-stale-peer-packet-handoff.json"
+    },
+    "previous_common_2a": {
+      "head": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
+      "runtime_run": 39654368046,
+      "linux": "success",
+      "windows": "success",
+      "five_contracts": "success",
+      "visual": {
+        "run": 39654368099,
+        "conclusion": "cancelled",
+        "limit": "Canceled at actual5route step; not a visual pass."
+      },
+      "historical": {
+        "run": 39654368024,
+        "conclusion": "failure",
+        "reason": "stale peer packet3073.677s>1800s"
+      }
     }
   },
-  "source_verified_sha": "2a2ec2a21a2426697259fd227b4c5db57d985bfb",
-  "review_limit": "Current2a2ec2a reviewed natively by Icarus1; fresh independent final whole-diff clearance remains unavailable. Supporting documentation preparation is not approval. source_reviewed_sha retains the last fully cleared independent checkpoint."
+  "source_verified_sha": "6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
+  "review_limit": "Root native review at6ed1fe8; earlier fully independently cleared source_reviewed_sha retained. Icarus2 separately reviewed its incorporated two test-only deltas and2a runtime boundaries; no fresh independent whole-branch clearance.",
+  "root_native_reviewed_sha": "6ed1fe8e06da47ffe07eb30671be1cb7df2c70a7",
+  "as_is_paper_startup_authorized": true,
+  "operator_pc_runtime_restarted": false,
+  "operator_commands_url": "https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
+  "public_documentation_commits": {
+    "guide": "f11fc79a58eb9ecb300cc8b5ccf90fc5fe29edd9",
+    "readme": "091e38b2957826c0695ac24d0d34b3b222ee0e15"
+  }
 }
