@@ -1,0 +1,124 @@
+{
+  "actual_delegation": {
+    "agent": "pnl_boundary_review",
+    "scope": "read-only financial validator review and independent regression confirmation"
+  },
+  "at_utc": "2026-10-21T16:52:36.373200Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "corpus_readonly_observation": {
+    "absent_micros": [
+      "MNG",
+      "MHG",
+      "M6E",
+      "MJY",
+      "M6B",
+      "M6A"
+    ],
+    "baseline_head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+    "corpora": [
+      {
+        "age_days": 5.3,
+        "cache": "bars_primary",
+        "datasets": 32,
+        "warm_assets_by_workspace": {
+          "cc1": 12,
+          "cc2": 12,
+          "cc3": 12,
+          "cc4": 12
+        }
+      },
+      {
+        "age_days": 5.1,
+        "cache": "bars_secondary",
+        "datasets": 2,
+        "warm_assets_by_workspace": {
+          "cc1": 0,
+          "cc2": 0,
+          "cc3": 0,
+          "cc4": 0
+        }
+      },
+      {
+        "age_days": 781.8,
+        "cache": "bars_third",
+        "datasets": 1,
+        "warm_assets_by_workspace": {
+          "cc1": 1,
+          "cc2": 1,
+          "cc3": 1,
+          "cc4": 1
+        }
+      }
+    ],
+    "execution_authorized": false,
+    "expansion_age_days": 5.3,
+    "expansion_status": "HISTORICAL_EXPANSION_CONSUMPTION_VERIFIED",
+    "live_feed_qualified": false,
+    "observed_at_ns": 1792601287112695890,
+    "original_status": "HISTORICAL_CONSUMPTION_VERIFIED"
+  },
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "017-persisted-pnl-boundary-finding",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/462#issuecomment-6321554762",
+    "blob:reppiks490/icarus-owner-actions:coordination/handoffs/icarus2-prime-return-20261021.md@1fe47219007f4a91d9276040df19a9f68fc39a8b"
+  ],
+  "execution_authorized": false,
+  "next_action": "Prime: inspect unpublished work, then validate persisted closure rows and shared as-of time before SUM; invalid data must produce unknown PnL, empty valid ledgers may remain zero. Reuse the reproduction, then rerun focused accounting/routes/runtime tests. Icarus2 repair is blocked by the existing Prime source claim; no competing edits. Runtime readiness remains unverified.",
+  "phase": "focused-accounting-defect-reproduced-prime-owned-repair",
+  "regression": {
+    "cases": [
+      {
+        "fault": "NULL profit",
+        "observed_complete": true,
+        "observed_realized_pnl": 0.0
+      },
+      {
+        "fault": "nonnumeric profit",
+        "observed_complete": true,
+        "observed_realized_pnl": 0.0
+      },
+      {
+        "fault": "future closure",
+        "observed_complete": true,
+        "observed_realized_pnl": 10.0
+      }
+    ],
+    "independent_rerun_confirmed": true,
+    "new_tests_failed": 3,
+    "owner_real_journal_inspected": false,
+    "performance_reader_rejects_all": "INVALID_PERSISTED_TRADE",
+    "valid_control_passed": 1
+  },
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "secondary_finding": {
+    "expected": 2.0,
+    "limitation": "Extreme magnitudes; lower materiality than provenance gap. No code churn.",
+    "observed": 1.0,
+    "profits": [
+      9007199254740991,
+      2,
+      -9007199254740991
+    ],
+    "scope": "workspace_performance sequential floating sums"
+  },
+  "session_id": "icarus2-20261020-federation-integration",
+  "source_blobs": {
+    "icarus_engine/paper_pnl.py": "74ff92edd581e20fea681e2b27ceb07715ef5203",
+    "icarus_engine/paper_workspaces.py": "3df23df61123b5ea4530f4c776f09f71c954c3e1",
+    "icarus_engine/runtime.py": "5131fef22d385aa4d8ec5e17ce8c1218287f3ce7",
+    "icarus_engine/workspace_performance.py": "f27785a271773475fd8643e196ae307a28d42c8f",
+    "tests_engine/test_paper_workspaces.py": "ce6d29321628eeedac87a733ce3e2b7b1d096563"
+  },
+  "source_head": "68acaec0347a644ee09884fd3826dfadf897ee1d",
+  "summary": "Deeper source-to-consumer check found persisted-journal provenance loss: NULL/text profit and future-dated closure yield complete combined PnL, while the performance reader rejects all three. New synthetic offline integration regressions:3 failed/1 valid control passed, independently rerun. Prime owns runtime/paper_workspaces; no code edits, extra PRs, provider collection, deployment, merge or restart. Exact portable reproduction sent to Prime and added to the return brief.",
+  "targets": [],
+  "type": "HANDOFF"
+}
