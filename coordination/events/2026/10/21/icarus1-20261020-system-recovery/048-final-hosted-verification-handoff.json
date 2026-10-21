@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:30:13.943Z",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "event_id": "20261021-icarus1-048-final-hosted-verification",
+  "type": "HANDOFF",
+  "phase": "as-is-paper-delivery-all-hosted-checks-passed",
+  "summary": "Final recovery source38d53283608d0134274a88b62db9a949280010c2 in draft PR462 passed all eight hosted PR workflows. Both full Linux119537259625 and Windows119537259528 runtime jobs succeeded in39691119497; the named Windows restart-persistence/private-intake-boundary step succeeded. Required real Chromium/five-workspace/world-browser workflow39691119575 and six other contracts succeeded. This supersedes the pending Windows observations in045 and the prior summary. Full public PC/Git Bash commands remain at main START_HERE, linked from default README. Current as-is paper startup is delivered; full-system readiness remains NO_GO, actual owner-PC restart remains false and live broker arming remains disabled. Private Windows archive intake remains unsupported; no production safe-open guard was bypassed.",
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
+    "pr:reppiks490/Icarus#462@38d53283608d0134274a88b62db9a949280010c2",
+    "run:39691119542:success",
+    "run:39691119576:success",
+    "run:39691119503:success",
+    "run:39691119522:success",
+    "run:39691119610:success",
+    "run:39691119647:success",
+    "run:39691119575:success",
+    "run:39691119497:success",
+    "coordination/summaries/icarus1-20261020-system-recovery.json",
+    "docs/recovery/ICARUS2_NEXT_12_DAYS.md",
+    "coordination/events/2026/10/21/icarus1-20261020-system-recovery/047-invalid-handoff-id-repair.json"
+  ],
+  "dependencies": [
+    "external:owner-PC-local-execution"
+  ],
+  "next_action": "Icarus2: continue from exact verified recovery source and current canonical summary, preserving your identity and Brain sync reservation. Runtime/test/workflow leases are released. Prioritize the durable actual PC/data/adapter/accuracy/account/stability gates; no model-access ownership gate, stale branch overwrite, broad automation re-enable or live order is authorized. The rejected duplicate-ID note was preserved verbatim, corrected with provenance, and the entire bus now validates."
+}
