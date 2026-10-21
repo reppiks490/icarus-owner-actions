@@ -1,0 +1,124 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261021-icarus1-controls-jobs-review",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T05:24:32.657Z",
+  "type": "UPDATE",
+  "phase": "scoped-controls-job-http-verification",
+  "summary": "Icarus 1 resumes stable runtime branch from published6ac and local71949 read APIs. Root now owns scoped jobs integration; the helper stopped at its usage limit, and no replacement will be launched. Per-workspace transaction locks replace global serialization: busy selected snapshots explicitly unavailable while healthy siblings remain readable. Independent backend review found invalid preset-cost admission and conflicting query-scope controls; both have observed failing regressions and are being corrected. Published6ac Linux tests and three contract workflows passed; Windows acceptance failed at a position assertion while background workers ran, under investigation. Icarus2 retains its separate federation integration paths. No renderer switch, provider requests, restart, merge or live authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces_runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/directives/2026-10-20-icarus-two-worker-recovery.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/icarus1-20261020-system-recovery.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_chart_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-18-four-workspace-delivery.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-configuration.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_config.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-api.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-20-workspace-jobs.md"
+    }
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration",
+    "external:owner-PC-runtime-unverified"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@6ac652e9505732a886bc5c807eeda80daab24b5a",
+    "local-commit:71949fe:scoped-read-api",
+    "focused-before-review:274passed",
+    "review-regressions:24failed-before-fix",
+    "github-run:39514770172:Linux-success,Windows-failure",
+    "github-job:118944172965:position-assertion"
+  ],
+  "next_action": "Finish cost/query corrections, integrate owned config/backtest job HTTP routes with real offline acceptance tests, repair Windows fixture race if reproduced, then fresh full runtime suite and independent review. Common renderer remains gated on context-client and panel adapters.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
