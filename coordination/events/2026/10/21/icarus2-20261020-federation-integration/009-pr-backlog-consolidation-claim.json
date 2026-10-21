@@ -1,0 +1,43 @@
+{
+  "at_utc": "2026-10-21T15:03:51.423496Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "pr:reppiks490/Icarus-engine#213",
+    "pr:reppiks490/Icarus-engine#214"
+  ],
+  "event_id": "009-pr-backlog-consolidation-claim",
+  "evidence": [
+    "main:reppiks490/Icarus-engine@165f01b4af77892f969ade4882b46ad3e6b1b51d",
+    "pr:reppiks490/Icarus#451:closed-as-already-integrated"
+  ],
+  "next_action": "Reproduce guard regressions oncurrentmain; carry onlyminimalcode/tests ontoone reviewed restart-support branch. Leave staleICARUS_STATE/research drafts andPrime files untouched.",
+  "phase": "focused-restart-data-guard-consolidation",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner requests continuous focused support and asks why so many open PRs. Inventory47open/26draft across6repos. Closed redundantIcarus451 after exactmain617d3e4code/test/doc match and retainedWindows selection; verifiedclosed. Prime462 and456 overlap10files;452has8of10files matchingPrime. Engine213focused28tests and214focused16tests passed ontheirheads; their source differs fromcurrentEngine main165f01b4. Claimonly4Enginepaths to consolidate approved existing account-budget/freshness intendedbehavior ontocurrentmain, capture meaningfulRED, repair, verify and obtain review. No broadloop ornewfeatures; no provider requests/spend/merge/restart/liveauthority.",
+  "targets": [
+    {
+      "path": "cl_lab/feeds/registry.py",
+      "repo": "reppiks490/Icarus-engine"
+    },
+    {
+      "path": "tests_cl/test_feeds.py",
+      "repo": "reppiks490/Icarus-engine"
+    },
+    {
+      "path": "tools/data_sentinel.py",
+      "repo": "reppiks490/Icarus-engine"
+    },
+    {
+      "path": "tests/test_data_sentinel.py",
+      "repo": "reppiks490/Icarus-engine"
+    }
+  ],
+  "type": "CLAIM"
+}
