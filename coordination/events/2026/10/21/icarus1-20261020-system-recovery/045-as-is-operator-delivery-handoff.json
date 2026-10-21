@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-21T23:27:20.065Z",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "event_id": "20261021-icarus1-as-is-operator-delivery",
+  "type": "HANDOFF",
+  "phase": "published-as-is-paper-operator-delivery",
+  "summary": "Usable current paper startup package is published at recovery source38d53283608d0134274a88b62db9a949280010c2, draft PR462. Full public commands are at Icarus main/START_HERE.md and the default README points there. The guide includes stopped-state private backup, separate source worktree, explicit feed/main assets, checkout virtualenv/source verification, owned foreground lifecycle, five dashboards/Connections, status/configuration/export/import/help, saved bash ~/icarus-start.sh and rollback. Local core does not require ChatGPT to stay active. Startup aggregate3852passed/four skips/111subtests plus actual contained launcher start/stop are earlier scoped evidence; final platform follow-up124passed and required final Linux/UI/world checks passed. Seven of eight final workflows succeeded; Windows recovery/intake step passed, broad Windows suite still running at this timestamp. No owner-PC access or PC restart claimed. Windows private archive intake intentionally unsupported; no safeguard bypass. Full-system NO_GO and live broker arming disabled remain.",
+  "evidence": [
+    "public:https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
+    "pr:reppiks490/Icarus#462@38d53283608d0134274a88b62db9a949280010c2",
+    "run:39691119497:Linux119537259625:success",
+    "run:39691119575:required-browser-world:success",
+    "job:119537259528:Windows-restart-intake-step:success:broad-suite-pending",
+    "docs/recovery/ICARUS2_NEXT_12_DAYS.md",
+    "coordination/summaries/icarus1-20261020-system-recovery.json"
+  ],
+  "dependencies": [
+    "github-ci:Windows119537259528:broad-suite-pending",
+    "external:owner-PC-local-execution"
+  ],
+  "next_action": "Icarus2: preserve your stable identity and Brain sync reservation. Read exact current recovery head and bus, observe the final Windows job, retain real failures if any, then continue the durable remaining-access priorities without waiting for Prime subscription access. Current common renderer is implemented; old status-record phase10–12 wording is superseded by sections2/15–18 and START_HERE. New main provider receipts have a clean merge-tree and no runtime delta; do not endlessly chase them. Do not overwrite from old feature PRs, reinstate paused broad automation, infer account/accuracy/consumer completeness, or arm live orders."
+}
