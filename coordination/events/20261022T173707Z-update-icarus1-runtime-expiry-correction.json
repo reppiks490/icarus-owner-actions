@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022T173707Z-update-icarus1-runtime-expiry-correction",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T17:37:07Z",
+  "type": "UPDATE",
+  "phase": "runtime-expiry-correction",
+  "summary": "Correction to the prior verification checkpoint: transport-level core-status deduplication was too broad because it also joined explicit/manual refreshes. The real Chromium contract showed an older failed request could then erase the intended newer successful manual observation. That transport change was reverted. The final design keeps the original newer-request-wins client semantics and serializes only the automatic three-second dashboard poll through pollStatus(). Selected-status backend isolation remains unchanged.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "icarus_engine/workspace_api.py",
+    "icarus_engine/workspace-client.js",
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_runtime_expiry_regression.py"
+  ],
+  "targets": [
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/workspace_api.py"},
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/dashboard.html"},
+    {"repo":"reppiks490/Icarus","path":"tests_engine/test_runtime_expiry_regression.py"}
+  ],
+  "dependencies": [
+    "branch:icarus1/restart-readiness-20261020",
+    "head:10e48e6cea774ab1727ef722d5737d10fa7235c1",
+    "verification-pr:467",
+    "constraint:live-execution-remains-disabled",
+    "constraint:preserve-saved-workspace-settings-and-journals"
+  ],
+  "evidence": [
+    "browser-contract:test_common_late_failed_refresh_cannot_erase_new_selected_observation exposed over-broad client dedupe",
+    "client-restored:66f13fcd9c710928656bb831eef4d3b915f32fc7",
+    "periodic-poll-regression:d023a3604831e111b40273ebfc9310c668418c93",
+    "automatic-poll-serialization:10e48e6cea774ab1727ef722d5737d10fa7235c1",
+    "dashboard-diff contains the three intended functional hunks plus one whitespace-only CSS formatting change"
+  ],
+  "next_action": "Verify exact head 10e48e6cea774ab1727ef722d5737d10fa7235c1 through Linux, Windows, and real-Chromium UI contracts. Keep PR 467 verification-only and unmerged.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
