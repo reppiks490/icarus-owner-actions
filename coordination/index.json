@@ -1273,11 +1273,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-21T23:44:50.796Z",
-      "latest_summary": "Owner explicitly requests step3 through all unfinished panels, documenting each completed panel's Git Bash restart/refresh on GitHub. Continue from verified38d5328 and approved common-renderer architecture; no new design approval required for scoped completion. Inventory actual panel readers/writers, implement real selected-runtime adapters with strict auth/context/revision isolation, preserve shared provenance and no-parent fallback, and verify end-to-end before readiness claims. Knowledge delta: docs/recovery/ICARUS_PANEL_RESTARTS.md (per-panel source, test, refresh/restart command and real limits), existing recovery record and plan. Do not touch Icarus2 brain_sync.py/test_brain_sync.py claim. No live arming, purchases, automatic code-main merge or invented PC access.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T07:09:52.162361Z",
+      "latest_summary": "Owner latest steering: finish the current task and document it. Finish the in-progress four selected-workspace panels (Possibility, Chronofold, Commissioning, Engine Control), publish individual Git Bash restart instructions and verification receipts. Broad component/browser regression in progress; 35 focused checks already pass. Read Icarus2 events026-031: owner-assisted PC startup38d5328 is observed through that worker screenshots, distinct from source adoption of this new batch. Preserve Icarus2 Brain claim and PR466 implementation. PR466 Linux/Windows run39720172498 succeeds but visual39720172573 fails later DOM-churn pointer fixture browser_depth.cjs217; do not call stacked candidate all-green or silently install it. No world-immersion duplication; Icarus2 can continue that precise candidate while Icarus1 finishes the current four.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "complete-selected-workspace-panels",
+      "phase": "verify-and-document-first-four-panels",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1479,7 +1479,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T05:27:42.103253Z",
+  "generated_at_utc": "2026-10-22T07:10:03.252933Z",
   "owner_status": {
     "claude": {
       "active": false,
