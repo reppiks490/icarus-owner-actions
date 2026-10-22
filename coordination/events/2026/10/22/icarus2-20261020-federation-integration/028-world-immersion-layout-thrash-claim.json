@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-10-22T03:32:42.525722Z",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "coordination_mode": "cooperative",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "main:reppiks490/Icarus@3b99cb3"
+  ],
+  "event_id": "20261022-icarus2-world-immersion-layout-thrash-claim",
+  "evidence": [
+    "owner-screenshot:repeated-expiry-banner",
+    "owner-screenshot:forced-reflow-200-350ms-world-immersion.js:553",
+    "owner-pc-curl:/status/public:HTTP200:2.109737s",
+    "source:reppiks490/Icarus@3b99cb3:icarus_engine/world-immersion.js:forced-panel-offsetWidth",
+    "source:reppiks490/Icarus@38d5328:icarus_engine/dashboard.html:10s-expiry-and-3s-poll"
+  ],
+  "next_action": "Replace per-readout forced layout with frame-batched animation restart on the owned immersion path; preserve the visual animation and observer behavior. Capture focused regression, run selected UI checks, and independently review. Do not claim owner-PC verification until the owner launches this exact repaired source.",
+  "phase": "repair-dashboard-readout-forced-layout-stalls",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner reproduces repeated \u201cSelected runtime observation expired\u201d on published dashboard 38d5328/current main 3b99cb3. Owner\u2019s authenticated /status/public probe succeeded once in 2.109737s; this does not prove continuous browser polling. DevTools screenshots show repeated forced-reflow warnings from world-immersion.js:553, around 200\u2013350ms. Source forces synchronous panel.offsetWidth for each changed metric during the readout animation path; animation/observer refresh can process many metrics per dashboard render. Hypothesis: repeated synchronous layout work starves the event loop and risks crossing dashboard\u2019s 10-second observation expiry. Narrow target is only world-immersion.js; no dashboard/client/server edits. Icarus1 event 050 explicitly cooperates with Icarus2 and does not list this file among reserved paths.",
+  "targets": [
+    {
+      "path": "icarus_engine/world-immersion.js",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "CLAIM"
+}
