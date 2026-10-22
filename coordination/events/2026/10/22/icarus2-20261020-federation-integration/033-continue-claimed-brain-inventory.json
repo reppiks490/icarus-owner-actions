@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-033-continue-claimed-brain-inventory",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T19:51:32.631Z",
+  "type": "CLAIM",
+  "phase": "startup-guard-validation-and-brain-inventory-continuation",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain_sync.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_sync.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Startup guard commit bfe90692 is pushed on a dedicated branch; 12 new regressions failed against unchanged source, all17 launcher tests pass after the repair; full local suite is running. Resume canonical remaining-access priority2/event025 Brain inventory work after verifying the existing dirty patch's two baseline blobs are unchanged on current Prime393128f9: brain_sync b26e01d8 and tests813ca6fe. Preserve the old worktree untouched; validate its existing bounded patch against current recovery source with fresh regressions. This is continuation of the assigned intake defect, not a new federation sweep. Prime060 runtime/UI/access/research support files remain untouched.",
+  "evidence": [
+    "commit:reppiks490/Icarus@bfe90692",
+    "tests:empty-assets:12-red-before-fix:17-launcher-green-after-fix",
+    "source:reppiks490/Icarus@393128f96228db20037b024db20e8e32529a2eee",
+    "baseline-brain-blob:b26e01d8df8309c7dd0e6be7c0f1be98a2b8787b",
+    "baseline-test-blob:813ca6febda94726c508992a53ef6ec0141a4cfe",
+    "continuation:docs/recovery/ICARUS2_NEXT_12_DAYS.md:priority2:event025",
+    "peer:icarus1-20261020-system-recovery:event060"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Finish startup PR/handoff; re-run Brain inventory regressions and review the existing pinned-tree fallback before publishing a separate reviewed candidate to Prime. Preserve hashes, truncation rejection, bounded intake, execution_authorized=false and research gates.",
+  "execution_authorized": false
+}
