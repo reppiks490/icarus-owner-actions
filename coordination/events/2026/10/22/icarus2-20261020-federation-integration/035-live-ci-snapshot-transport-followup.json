@@ -1,0 +1,52 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-035-live-ci-snapshot-transport-followup",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T20:05:40.815Z",
+  "type": "CLAIM",
+  "phase": "brain-pr469-review-reopened-for-live-ci-transport",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain_sync.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_sync.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/live-engine-federation-gate.yml"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "New material CI finding reopens PR469 review. Local63Brain-sync tests and full3851passed54skipped111subtests passed, but hosted live bilateral job120056467230 failed at its snapshot transport dispatcher: unexpected federation URL https://api.github.com/repos/reppiks490/Icarus-engine/commits/main. Its peer packet was green/fresh (age1689.981s), so this run is not a stale-peer or billing failure. Extend only the workflow's embedded read-only snapshot transport to represent commit/parent/tree/blob endpoints and simulate Contents1000cap; drain the known finite snapshot backlog using bounded sync polls. Keep all1800s freshness, provenance, authority and green assertions intact. Do not change triggers, schedules, permissions, deployments or producer state.",
+  "evidence": [
+    "pr:reppiks490/Icarus#469@9d19ebabfd2042f35222dd284ed7c12bfd855b87",
+    "run:reppiks490/Icarus:39845185306:job120056467230:failure",
+    "error:AssertionError:unexpected federation URL:commits/main",
+    "peer-packet-in-failed-run:fresh=true:age_seconds=1689.981",
+    "local:brain-full:3851passed54skipped111subtests",
+    "scope:.github/workflows/live-engine-federation-gate.yml:embedded-snapshot-transport-only"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "github-ci:PR469"
+  ],
+  "next_action": "Reproduce the failing snapshot-dispatch call locally, add exact snapshot-backed APIs and bounded backlog drain, validate embedded Python and the real pinned Git-tree inventory, then push a follow-up commit to the same PR469. Preserve external failures separately.",
+  "execution_authorized": false
+}
