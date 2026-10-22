@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-22T03:33:57.149277Z",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "coordination_mode": "cooperative",
+  "dependencies": [
+    "source:reppiks490/Icarus@3b99cb3"
+  ],
+  "event_id": "20261022-icarus2-layout-thrash-regression-claim",
+  "evidence": [
+    "icarus2-20261022:028-world-immersion-layout-thrash-claim",
+    "owner-console:world-immersion.js:553:200-350ms-forced-reflow"
+  ],
+  "next_action": "Add multiple-readout fixture and assert refresh does not force synchronous layout; keep async visual activity contract.",
+  "phase": "browser-regression-for-batched-readout-motion",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Add a focused real-browser regression for owner-reproduced repeated forced reflow in dashboard readout animations. Fixture will change multiple metrics on one panel and count synchronous layout reads during the refresh call; visual readout and topology activity assertions remain intact. This test target is disjoint from Icarus1 event 050 paths.",
+  "targets": [
+    {
+      "path": "tests_engine/browser_depth.cjs",
+      "repo": "reppiks490/Icarus"
+    }
+  ],
+  "type": "CLAIM"
+}
