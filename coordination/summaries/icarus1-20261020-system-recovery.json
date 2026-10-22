@@ -112,8 +112,8 @@
   "live_broker_arming": false,
   "hosted_verification": {
     "head": "fd89142871e8e690d73f1fc687c1c516dbaf08c2",
-    "observed_at_utc": "2026-10-22 07:34:09 UTC",
-    "status_at_checkpoint": "Final-head CI running; do not inherit all-eight-green from38d5328. Historical-context success, if later observed, is a timed receipt only.",
+    "observed_at_utc": "2026-10-22T07:37:12.839291Z",
+    "status_at_checkpoint": "Six of eight final-head workflows passed. Runtime Linux/Windows and required UI/world browser workflows remain running; no final-head all-green claim.",
     "runs": [
       {
         "id": 39740988788,
@@ -138,8 +138,8 @@
       {
         "id": 39740988546,
         "name": "intelligence-feed-contract",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "run_number": 532,
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988546/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988546/logs",
@@ -148,8 +148,8 @@
       {
         "id": 39740988718,
         "name": "Four portfolio performance",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "run_number": 21,
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988718/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988718/logs",
@@ -158,8 +158,8 @@
       {
         "id": 39740988711,
         "name": "live-engine-historical-context-gate",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "run_number": 188,
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988711/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988711/logs",
@@ -168,8 +168,8 @@
       {
         "id": 39740988784,
         "name": "source-data-contract",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "run_number": 123,
         "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988784/jobs",
         "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988784/logs",
