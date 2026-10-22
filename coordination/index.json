@@ -1123,24 +1123,147 @@
       "cooperates_with": [
         "icarus2-20261020-federation-integration"
       ],
-      "coordination_mode": "independent",
-      "declared_paths": [],
-      "declared_targets": [],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "icarus_engine/dashboard.html",
+        "icarus_engine/workspace_api.py",
+        "icarus_engine/paper_workspaces.py",
+        "icarus_engine/server.py",
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_workspace_dashboard_browser.py",
+        "tests_engine/test_workspace_api.py",
+        "tests_engine/test_workspace_client.py",
+        "tests_engine/test_world_immersion.py",
+        "tests_engine/browser_depth.cjs",
+        "docs/recovery",
+        "START_HERE.md"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_dashboard_browser.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_client.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_depth.cjs",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "START_HERE.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "dependencies": [
-        "github-ci:39740988887",
-        "github-ci:39740988788"
+        "session:icarus2-20261020-federation-integration"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T07:37:12.839291Z",
-      "latest_summary": "Final sourcefd891428 is clean and remote verified. Six hosted contracts succeeded; runtime39740988887 and UI39740988788 remain running. Per-panel guide pinned blob81ff3c85e91a9632948ec1d0da2b0415b7e535bc independently matches local. Current four-panel implementation/restart documentation and actual contained restart proof published; no final hosted all-green, all-eleven-adapter or owner-PC adoption claim. Root leases remain released.",
-      "latest_type": "WAITING",
+      "last_event_at_utc": "2026-10-22T16:10:57.595049Z",
+      "latest_summary": "Owner stopped previous continuation, now explicitly requests help with recurring runtime expiry/fetch failure every10seconds. Prioritize this bounded operating bug; preserve four-panel delivery and remaining-panel plan. Read actual core source:3second periodic refresh increments request sequence;10second display freshness/deadline. Hypothesis: successful responses slower than poll interval are continuously superseded. Reproduce in real Chromium before changes. Also investigate selected status fan-out through all four snapshots and integrate peer batched-readout patch only with its exact regression/provenance preserved. Explicit cooperation with Icarus2 events030/031 naming root permits shared browser_depth.cjs work; do not touch peer Brain files. Newfd89142 CI runtime/Linux/Windows and six other contracts succeed; UI fails wrapped-settings-trigger assertion browser_cinema.cjs175 (not the peer candidate pointer failure). Record each separately.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "final-panel-head-six-green-two-running",
+      "phase": "owner-runtime-expiry-and-fetch-recovery",
       "pr": 462,
       "reclaimable": false,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reserved_paths": [
+        "icarus_engine/dashboard.html",
+        "icarus_engine/workspace_api.py",
+        "icarus_engine/paper_workspaces.py",
+        "icarus_engine/server.py",
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_workspace_dashboard_browser.py",
+        "tests_engine/test_workspace_api.py",
+        "tests_engine/test_workspace_client.py",
+        "tests_engine/test_world_immersion.py",
+        "tests_engine/browser_depth.cjs",
+        "docs/recovery",
+        "START_HERE.md"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/paper_workspaces.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/server.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_dashboard_browser.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_client.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/browser_depth.cjs",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "START_HERE.md",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
       "session_id": "icarus1-20261020-system-recovery",
       "stale": false,
       "status": "active"
@@ -1196,7 +1319,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T15:36:38.965086Z",
+  "generated_at_utc": "2026-10-22T16:11:09.801714Z",
   "owner_status": {
     "claude": {
       "active": false,
