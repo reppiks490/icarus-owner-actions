@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022T172249Z-update-icarus1-runtime-expiry-verification",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T17:22:49Z",
+  "type": "UPDATE",
+  "phase": "runtime-expiry-verification",
+  "summary": "Runtime-expiry repair is implemented on icarus1/restart-readiness-20261020 at 48dd3be4052d2ba1db68a2330aa935ec2e7bce19. Selected status now snapshots only the selected workspace, and dashboard core-status reads join one in-flight transport request instead of replacing slow successful reads every three seconds. Two independent exact-head Linux full-suite runs have passed, including the new single-flight/selected-snapshot regression. Windows restart-persistence passed twice; the broader Windows suite remains in progress. No merge to main has been performed.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "icarus_engine/workspace_api.py",
+    "icarus_engine/workspace-client.js",
+    "tests_engine/test_runtime_expiry_regression.py"
+  ],
+  "targets": [
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/workspace_api.py"},
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/workspace-client.js"},
+    {"repo":"reppiks490/Icarus","path":"tests_engine/test_runtime_expiry_regression.py"}
+  ],
+  "dependencies": [
+    "branch:icarus1/restart-readiness-20261020",
+    "head:48dd3be4052d2ba1db68a2330aa935ec2e7bce19",
+    "verification-pr:467",
+    "constraint:live-execution-remains-disabled",
+    "constraint:preserve-saved-workspace-settings-and-journals"
+  ],
+  "evidence": [
+    "linux-tests:39820699732/engine=success",
+    "linux-tests:39820830647/engine=success",
+    "windows-restart-persistence:39820699732=success",
+    "windows-restart-persistence:39820830647=success",
+    "four-portfolio-performance:39820830030=success",
+    "configuration-job-contract:39820699705=success",
+    "engine-federation-consumer-contract:39820699821=success",
+    "intelligence-feed-contract:39820699993=success",
+    "source-data-contract:39820699641=success",
+    "ui-visual-contract failure is pre-existing: baseline fd891428 also failed ui-visual-contract",
+    "historical-context gate consumes moving Icarus-engine/main; current failure followed Icarus-engine commit 1dd684e at 2026-10-22T17:11:20Z and is not in this three-file repair diff"
+  ],
+  "next_action": "Keep the verification-only PR unmerged; consume the exact-head Windows test result when it completes, then record the final recovery verdict. Do not merge PR 467 or the long-lived PR 462 as part of this verification step.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
