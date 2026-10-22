@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-031-restart-branch-stacked-pr466",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T04:05:35Z",
+  "type": "UPDATE",
+  "phase": "stacked-restart-branch-fix-open-ci-pending",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "coordination_mode": "cooperative",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "github-ci:PR466",
+    "external:owner-PC-source-adoption-and-relaunch"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#465@fb732c09b446a1dac1d45f34ca9f7d3f056243b4:engine-linux-pass,engine-windows-pass,browser-pass",
+    "pr:reppiks490/Icarus#466@1c818c272e910dda35ad10d0fc4dffb114bad434:base=icarus1/restart-readiness-20261020@38d53283608d0134274a88b62db9a949280010c2:CI-pending",
+    "browser:stacked-branch-readout-layout-contract-pass:8-metrics:one-root-flush:zero-panel-or-topology-flushes",
+    "browser:stacked-branch-browser_depth-full-pass:errors=0:writes=0",
+    "node-check:world-immersion.js-pass",
+    "node-check:browser_depth.cjs-pass",
+    "git-diff-check-pass",
+    "icarus1-source-event:coordination/events/2026/10/21/icarus1-20261020-system-recovery/050-workspace-panel-completion-claim.json"
+  ],
+  "summary": "Reviewed PR465 implementation: readout/topology effect restarts batch changed nodes and use one shared layout flush; PR465 exact-head Linux, Windows, and browser checks pass. Owner restart source is Icarus1 PR462 branch icarus1/restart-readiness-20261020 at 38d5328, so PR465 on main alone would not repair the running checkout. Cherry-picked the scoped fix onto that exact branch as PR466 (head 1c818c27), without changing PR462 or owner state. Focused real Chromium contract and full browser_depth pass on stacked source; syntax and diff checks pass. PR466 exact-head hosted checks are pending and independent Icarus1 review is requested. Owner PC remains outside cloud control; no restart completion claimed.",
+  "next_action": "Icarus1: independently review PR466 against current restart branch and merge/integrate only after exact-head CI passes. Owner: after integration, stop the current launcher normally, update the existing Icarus-as-is checkout to the approved restart branch without resetting local edits, then relaunch with the same private state root/feed/assets and verify the dashboard observation remains fresh. Keep paper mode; no live orders."
+}
