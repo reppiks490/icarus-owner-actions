@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022T170205Z-update-icarus1-runtime-expiry-test-path",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T17:02:05Z",
+  "type": "UPDATE",
+  "phase": "runtime-expiry-regression",
+  "summary": "Reserve one focused regression file for the resumed runtime-expiry repair. It will prove periodic status polling is single-flight and selected workspace status does not snapshot sibling workspaces.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": ["tests_engine/test_runtime_expiry_regression.py"],
+  "targets": [{"repo":"reppiks490/Icarus","path":"tests_engine/test_runtime_expiry_regression.py"}],
+  "dependencies": ["session:icarus1-20261020-system-recovery","constraint:live-execution-remains-disabled"],
+  "evidence": ["dashboard:auto-poll=3000ms","workspace-client:deadline=10000ms","workspace-api:selected-status-currently-uses-four-profile-snapshot"],
+  "next_action": "Commit the failing regressions first, observe CI failure, then implement the minimum dashboard and selected-snapshot changes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
