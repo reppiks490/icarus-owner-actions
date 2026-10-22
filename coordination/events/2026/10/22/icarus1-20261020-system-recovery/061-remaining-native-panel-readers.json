@@ -1,0 +1,163 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-061-intelligence-and-golive-readers",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T19:50:59.782192Z",
+  "type": "UPDATE",
+  "phase": "remaining-native-panel-readers",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_depth.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_research_engines.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_research_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_runtime_layout_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/ui-visual-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_access.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/connections-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_connections_layout_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_intelligence_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_intelligence_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_golive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_golive.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration",
+    "icarus1-20261022-ui-stability-support",
+    "icarus1-20261022-research-panels-support",
+    "icarus1-20261022-access-support",
+    "icarus1-20261022-connections-layout-support",
+    "icarus1-20261022-golive-support"
+  ],
+  "summary": "First new research backend90passed and shared Access95passed; runtime expiry timeout1passed plus scoped245passed. Extend supporting research session to new isolated IntelligencePanels module and tests for complete native Brain Research Learning Autopilot ASCENDANCY readers; Go-live support implements truthful pure selected report. No new automatic collectors, provider sessions, activation, live trading or main/sibling mutations. Root alone integrates registry/UI and publishes commits.",
+  "evidence": [
+    "owner:2026-10-22:runtime-expiring-or-failing-fetch-every10seconds",
+    "source:fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "ci:39740988887:success",
+    "ci:39740988788:failure:browser_cinema.cjs175",
+    "peer:PR466@1c818c272e910dda35ad10d0fc4dffb114bad434:readout-batching",
+    "peer:events030-031:cooperates-with-icarus1",
+    "owner:2026-10-22:weekly-reset-continue-all-tasks",
+    "local:runtime-expiry-first-green:6passed",
+    "local:runtime-status-scoped-regression:245passed",
+    "source-adopted:393128f96228db20037b024db20e8e32529a2eee",
+    "red:published393128f-explicit-refresh-crossing-auto-poll:1failed",
+    "green:adopted-boundary:7passed45deselected70.92s",
+    "prior-continuity:175153-handoff-runtime-expiry",
+    "scope:no-overwrite-of-external-or-helper-commits"
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "next_action": "Publish support claims then implement/verify native readers, browser navigation and per-panel restart documentation. Reader delivery does not imply activation controls or source completeness."
+}

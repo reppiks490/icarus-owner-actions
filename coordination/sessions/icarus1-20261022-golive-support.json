@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "icarus1-20261022-golive-support",
+  "actor": "Icarus1 selected Go-live diagnostics support / Codex",
+  "model_family": "openai",
+  "goal": "Real selected cached Go-live diagnostic reader with honest asset/provider/history scope. Temporary Icarus1 support, not Icarus2.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "icarus1/restart-readiness-20261020",
+  "pr": 462,
+  "started_at_utc": "2026-10-22T19:50:25.064531Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "cloud-shell"
+  ],
+  "initial_dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ]
+}

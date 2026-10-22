@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-golive-support-001",
+  "session_id": "icarus1-20261022-golive-support",
+  "at_utc": "2026-10-22T19:50:25.064531Z",
+  "type": "CLAIM",
+  "phase": "selected-golive-diagnostic-reader",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_golive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_golive.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Parent delegated narrow selected cached Go-live report wrapper and tests; read/plan only until root reciprocal061 and this claim published. Preserve native safety gates, distinguish selected assets and real cached provider, never substitute another asset as NQ, mark unsupported history explicitly, no provider calls, secrets, collectors or broker arming. Root owns registry/UI integration and canonical docs. Knowledge delta: /workspace/scratch/golive-selected-support.md for root recovery docs. No git or compiler operations by helper.",
+  "evidence": [
+    "parent-task:/root/golive_selected",
+    "audit:/workspace/scratch/remaining-panel-audit-support.md",
+    "source:393128f96228db20037b024db20e8e32529a2eee"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Wait for reciprocal061 publication, add meaningful failing selected diagnostic tests, implement wrapper using native from_status, verify native original gates unchanged and report integration contract."
+}

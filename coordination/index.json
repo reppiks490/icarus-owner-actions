@@ -1125,7 +1125,8 @@
         "icarus1-20261022-ui-stability-support",
         "icarus1-20261022-research-panels-support",
         "icarus1-20261022-access-support",
-        "icarus1-20261022-connections-layout-support"
+        "icarus1-20261022-connections-layout-support",
+        "icarus1-20261022-golive-support"
       ],
       "coordination_mode": "cooperate",
       "declared_paths": [
@@ -1154,7 +1155,11 @@
         "tests_engine/test_workspace_access.py",
         "icarus_engine/connections-ui.js",
         "icarus_engine/workspace-dashboard.html",
-        "tests_engine/test_connections_layout_browser.py"
+        "tests_engine/test_connections_layout_browser.py",
+        "icarus_engine/workspace_intelligence_panels.py",
+        "tests_engine/test_workspace_intelligence_panels.py",
+        "icarus_engine/workspace_golive.py",
+        "tests_engine/test_workspace_golive.py"
       ],
       "declared_targets": [
         {
@@ -1260,6 +1265,22 @@
         {
           "path": "tests_engine/test_connections_layout_browser.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_intelligence_panels.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_intelligence_panels.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_golive.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1267,11 +1288,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:45:43.739235Z",
-      "latest_summary": "Preserve newly discovered same-session continuity handoff175153: remote recovery source advancedfd89142->393128f with selected-status fix, client-coalescing rollback and automatic pollStatus guard. Root saved its duplicate native working patch and fast-forwarded exactly; no peer commits overwritten. Current stronger real Chromium regression still fails393128f when automatic poll interrupts an explicit unresolved refresh; root adds only all-in-flight skip at automatic boundary, preserves manual newer-request-wins,10s deadline and freshness gates. Adopted boundary tests7pass, earlier scoped245pass remains distinct. Continue prior4panel docs plus research/UI support. New Access support owns explicit shared security transport/context only; new Connections layout support repairs independently observed mobile overflow. All are temporary support to Icarus1, not Icarus2. Parent alone stages/pushes central bus and runtime. Knowledge delta remains canonical recovery docs, per-panel restart guide and runtime connection runbook.",
+      "last_event_at_utc": "2026-10-22T19:50:59.782192Z",
+      "latest_summary": "First new research backend90passed and shared Access95passed; runtime expiry timeout1passed plus scoped245passed. Extend supporting research session to new isolated IntelligencePanels module and tests for complete native Brain Research Learning Autopilot ASCENDANCY readers; Go-live support implements truthful pure selected report. No new automatic collectors, provider sessions, activation, live trading or main/sibling mutations. Root alone integrates registry/UI and publishes commits.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "published-expiry-reconciliation-and-shared-access-connections",
+      "phase": "remaining-native-panel-readers",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1300,7 +1321,11 @@
         "tests_engine/test_workspace_access.py",
         "icarus_engine/connections-ui.js",
         "icarus_engine/workspace-dashboard.html",
-        "tests_engine/test_connections_layout_browser.py"
+        "tests_engine/test_connections_layout_browser.py",
+        "icarus_engine/workspace_intelligence_panels.py",
+        "tests_engine/test_workspace_intelligence_panels.py",
+        "icarus_engine/workspace_golive.py",
+        "tests_engine/test_workspace_golive.py"
       ],
       "reserved_targets": [
         {
@@ -1406,6 +1431,22 @@
         {
           "path": "tests_engine/test_connections_layout_browser.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_intelligence_panels.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_intelligence_panels.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_golive.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1443,11 +1484,11 @@
       ],
       "goal": "Finish explicitly shared Access transport with exact owner-controlled writes while preserving selected runtime boundaries. Temporary support to Icarus1, not Icarus2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:46:21.326365Z",
-      "latest_summary": "Root060 reciprocal cooperation verified before source edits. Own only shared Access transport and new Node/context/HTTP regressions: actual existing registry, exact GET and two POST allowlists, captured page context and query rejection, unchanged owner authentication. Root owns server raw-target forwarding and visible shared label. No new registry, credentials, provider calls, live trading, agents or git mutations. Audit knowledge delta is /workspace/scratch/remaining-panel-audit-support.md; implementation handoff will be /workspace/scratch/access-support.md.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T19:50:11.709118Z",
+      "latest_summary": "Bounded shared Access transport verified and frozen for parent integration. Exact real shared GET and owner-gated two POST paths retain page context, reject query selectors and prefixes, preserve real native registry and one-time token behavior. Root supplied required server raw-target forwarding. Parent owns UI shared-security label, enablement, canonical restart docs, staging and publication. Local evidence only; no owner-PC restart or live trading claim. Knowledge delta: /workspace/scratch/access-support.md and /workspace/scratch/remaining-panel-audit-support.md.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "shared-access-transport-regressions",
+      "phase": "shared-access-transport-verified-frozen",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1535,6 +1576,57 @@
       "status": "active"
     },
     {
+      "actor": "Icarus1 selected Go-live diagnostics support / Codex",
+      "branch": "icarus1/restart-readiness-20261020",
+      "cooperates_with": [
+        "icarus1-20261020-system-recovery"
+      ],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "icarus_engine/workspace_golive.py",
+        "tests_engine/test_workspace_golive.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "session:icarus1-20261020-system-recovery"
+      ],
+      "goal": "Real selected cached Go-live diagnostic reader with honest asset/provider/history scope. Temporary Icarus1 support, not Icarus2.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-22T19:50:25.064531Z",
+      "latest_summary": "Parent delegated narrow selected cached Go-live report wrapper and tests; read/plan only until root reciprocal061 and this claim published. Preserve native safety gates, distinguish selected assets and real cached provider, never substitute another asset as NQ, mark unsupported history explicitly, no provider calls, secrets, collectors or broker arming. Root owns registry/UI integration and canonical docs. Knowledge delta: /workspace/scratch/golive-selected-support.md for root recovery docs. No git or compiler operations by helper.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "selected-golive-diagnostic-reader",
+      "pr": 462,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/workspace_golive.py",
+        "tests_engine/test_workspace_golive.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_golive.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "icarus1-20261022-golive-support",
+      "stale": false,
+      "status": "active"
+    },
+    {
       "actor": "Icarus1 research panel support / Codex",
       "branch": "icarus1/restart-readiness-20261020",
       "cooperates_with": [
@@ -1542,21 +1634,16 @@
       ],
       "coordination_mode": "cooperate",
       "declared_paths": [
-        "icarus_engine/workspace_panels.py",
-        "icarus_engine/workspace_research_engines.py",
-        "tests_engine/test_workspace_research_panels.py"
+        "icarus_engine/workspace_intelligence_panels.py",
+        "tests_engine/test_workspace_intelligence_panels.py"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/workspace_panels.py",
+          "path": "icarus_engine/workspace_intelligence_panels.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace_research_engines.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_research_panels.py",
+          "path": "tests_engine/test_workspace_intelligence_panels.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1565,29 +1652,24 @@
       ],
       "goal": "Implement four selected research panel adapters for Icarus1 without replacing Icarus2 identity or editing parent runtime fixes.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:39:01.590508Z",
-      "latest_summary": "Root-delegated temporary support implements real selected PARALLAX/DREAMSTATE, PANTHEON, SIBYL and APEX readers in private subsystem stores. No parent/sibling fallback, provider collection, execution/promotion, Brain changes or branch commits. Root owns UI enabling, documentation and publication; first failing HTTP regressions then existing real class adapters.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T19:50:18.832236Z",
+      "latest_summary": "Continue root-delegated support with native private Research, Adaptive Brain, Learning, Tactical Autopilot and complete ASCENDANCY reader family. Root owns workspace registry/client/dashboard integration. No parent-bound mutations, collectors, background startup, provider acquisition, brain_sync edits or branch operations. Shared historical-learning boundary is separately evaluated, not fabricated from empty private folders.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "selected-research-read-adapters",
+      "phase": "selected-intelligence-read-adapters",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/workspace_panels.py",
-        "icarus_engine/workspace_research_engines.py",
-        "tests_engine/test_workspace_research_panels.py"
+        "icarus_engine/workspace_intelligence_panels.py",
+        "tests_engine/test_workspace_intelligence_panels.py"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/workspace_panels.py",
+          "path": "icarus_engine/workspace_intelligence_panels.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace_research_engines.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_research_panels.py",
+          "path": "tests_engine/test_workspace_intelligence_panels.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1608,7 +1690,7 @@
         "icarus_engine/experience-ui.js",
         "icarus_engine/experience-ui.css",
         "tests_engine/test_world_immersion.py",
-        "tests_engine/test_ui_stability_browser.py"
+        "tests_engine/test_runtime_layout_browser.py"
       ],
       "declared_targets": [
         {
@@ -1628,7 +1710,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_ui_stability_browser.py",
+          "path": "tests_engine/test_runtime_layout_browser.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1637,11 +1719,11 @@
       ],
       "goal": "Support root runtime-expiry recovery with reviewed readout batching and settings-drawer placement regression repair; not Icarus2",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:38:57.779830Z",
-      "latest_summary": "Temporary root support, not Icarus2. Integrate exact reviewed peer readout batching blob from PR466@1c818c27; reproduce/fix800x600 wrapped-settings drawer covering its trigger. Preserve root polling/status files, peer Brain files and reserved browser_depth.cjs (read peer test from scratch only). No source mutation until root reciprocal059 published. Knowledge delta: scratch result handoff to root for canonical runtime-connection docs/evidence.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T19:49:26.042323Z",
+      "latest_summary": "Align the focused browser regression filename with root explicit direction and already-published root059/root060: tests_engine/test_runtime_layout_browser.py replaces the originally proposed test_ui_stability_browser.py. Only the actual runtime-layout test file was created; no proposed-name file was created. Exact peer readout source and settings-anchor repair are implemented; focused81checks and full cinema pass. Full peer depth/shadow/world verification is underway. Root alone stages and publishes shared source/bus records.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "reproduce-and-fix-ui-stability",
+      "phase": "ui-stability-scope-reconciliation",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1649,7 +1731,7 @@
         "icarus_engine/experience-ui.js",
         "icarus_engine/experience-ui.css",
         "tests_engine/test_world_immersion.py",
-        "tests_engine/test_ui_stability_browser.py"
+        "tests_engine/test_runtime_layout_browser.py"
       ],
       "reserved_targets": [
         {
@@ -1669,7 +1751,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests_engine/test_ui_stability_browser.py",
+          "path": "tests_engine/test_runtime_layout_browser.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1731,12 +1813,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 23,
+    "active": 24,
     "collisions": 0,
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T19:49:06.166914Z",
+  "generated_at_utc": "2026-10-22T19:51:36.484162Z",
   "owner_status": {
     "claude": {
       "active": false,

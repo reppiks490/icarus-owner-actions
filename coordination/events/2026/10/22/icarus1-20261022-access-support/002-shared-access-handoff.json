@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-access-support-002",
+  "session_id": "icarus1-20261022-access-support",
+  "at_utc": "2026-10-22T19:50:11.709118Z",
+  "type": "HANDOFF",
+  "phase": "shared-access-transport-verified-frozen",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_access.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Bounded shared Access transport verified and frozen for parent integration. Exact real shared GET and owner-gated two POST paths retain page context, reject query selectors and prefixes, preserve real native registry and one-time token behavior. Root supplied required server raw-target forwarding. Parent owns UI shared-security label, enablement, canonical restart docs, staging and publication. Local evidence only; no owner-PC restart or live trading claim. Knowledge delta: /workspace/scratch/access-support.md and /workspace/scratch/remaining-panel-audit-support.md.",
+  "evidence": [
+    "local:Access+full-client+context+registry:95passed9.50s",
+    "local:owned-diff-check:clean",
+    "local:first-red:Node503-expected200",
+    "local:first-red:HTTP409-expected201",
+    "local:server-query-boundary-red-then-green"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Root integrates frozen three files plus its own server/UI changes, runs Chromium shared-scope acceptance and documents canonical restart command. Helper will not mutate source further."
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-ui-support-002-scope-update",
+  "session_id": "icarus1-20261022-ui-stability-support",
+  "at_utc": "2026-10-22T19:49:26.042323Z",
+  "type": "UPDATE",
+  "phase": "ui-stability-scope-reconciliation",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_runtime_layout_browser.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ],
+  "summary": "Align the focused browser regression filename with root explicit direction and already-published root059/root060: tests_engine/test_runtime_layout_browser.py replaces the originally proposed test_ui_stability_browser.py. Only the actual runtime-layout test file was created; no proposed-name file was created. Exact peer readout source and settings-anchor repair are implemented; focused81checks and full cinema pass. Full peer depth/shadow/world verification is underway. Root alone stages and publishes shared source/bus records.",
+  "evidence": [
+    "root059@322f80b",
+    "root060@b121315",
+    "/workspace/scratch/ui-support-focused-green.log",
+    "/workspace/scratch/ui-support-cinema-full.log"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Finish full Chromium verification and write precise scratch handoff with RED/GREEN evidence and source provenance; no source commits, no bus compile/git."
+}
