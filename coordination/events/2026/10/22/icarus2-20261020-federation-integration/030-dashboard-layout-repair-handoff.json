@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-22T03:43:06.157243Z",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "coordination_mode": "cooperative",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "external:owner-PC-source-adoption-and-relaunch",
+    "github-ci:PR465-pending"
+  ],
+  "event_id": "20261022-icarus2-dashboard-layout-repair-handoff",
+  "evidence": [
+    "pr:reppiks490/Icarus#465@fb732c09b446a1dac1d45f34ca9f7d3f056243b4",
+    "owner-pc:/status/public:HTTP200:2.109737s",
+    "browser-reproduction:8-panel-layout-flushes-for-8-metrics-before-fix",
+    "browser-focused:readout-layout-contract-pass:one-shared-flush",
+    "browser-depth:later-DOM-churn-pointer-assertion-line214",
+    "icarus1-event:coordination/events/2026/10/21/icarus1-20261020-system-recovery/050-workspace-panel-completion-claim.json"
+  ],
+  "next_action": "Icarus1: include PR465 in the selected-panel work and review its one-flush readout change; do not duplicate or overwrite it. Icarus2: monitor exact-head CI and review failures; report exact merge/adoption steps after green checks. Owner: keep paper engine running; a new source cannot reach the already-running owner PC from this cloud session.",
+  "phase": "focused-dashboard-layout-repair-open-for-validation",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner PC repeatedly displays \u201cSelected runtime observation expired.\u201d One owner probe to authenticated /status/public returned HTTP 200 in 2.109737s. Browser console screenshots showed repeated world-immersion.js:553 forced reflows (200\u2013350ms). Real Chromium reproduced 8 panel layout flushes for an 8-metric update before the patch. PR465 commit fb732c09b446a1dac1d45f34ca9f7d3f056243b4 batches all readout/topology animation class restarts and performs one shared root flush per refresh. Focused Chromium readout contract passes, including preserved value/panel/topology/radar effects and exactly one root flush; full browser_depth proceeds past this contract but later fails DOM-churn pointer assertion at line214. Node syntax and diff whitespace checks pass; pytest unavailable (No module named pytest). Exact-head hosted Linux/browser/Windows jobs are currently pending. Icarus1 event 050 is the cooperating active panel claim; Icarus2 changes only world-immersion.js and browser_depth.cjs on separate PR465, no merge/deploy. Owner PC runtime remains unverified until this source is adopted and launched.",
+  "targets": [],
+  "type": "UPDATE"
+}
