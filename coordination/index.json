@@ -1124,7 +1124,7 @@
       "coordination_mode": "independent",
       "declared_paths": [
         "icarus_engine/workspace_api.py",
-        "icarus_engine/workspace-client.js",
+        "icarus_engine/dashboard.html",
         "tests_engine/test_runtime_expiry_regression.py"
       ],
       "declared_targets": [
@@ -1133,7 +1133,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace-client.js",
+          "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1143,23 +1143,23 @@
       ],
       "dependencies": [
         "branch:icarus1/restart-readiness-20261020",
-        "head:48dd3be4052d2ba1db68a2330aa935ec2e7bce19",
+        "head:10e48e6cea774ab1727ef722d5737d10fa7235c1",
         "verification-pr:467",
         "constraint:live-execution-remains-disabled",
         "constraint:preserve-saved-workspace-settings-and-journals"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T17:22:49Z",
-      "latest_summary": "Runtime-expiry repair is implemented on icarus1/restart-readiness-20261020 at 48dd3be4052d2ba1db68a2330aa935ec2e7bce19. Selected status now snapshots only the selected workspace, and dashboard core-status reads join one in-flight transport request instead of replacing slow successful reads every three seconds. Two independent exact-head Linux full-suite runs have passed, including the new single-flight/selected-snapshot regression. Windows restart-persistence passed twice; the broader Windows suite remains in progress. No merge to main has been performed.",
+      "last_event_at_utc": "2026-10-22T17:37:07Z",
+      "latest_summary": "Correction to the prior verification checkpoint: transport-level core-status deduplication was too broad because it also joined explicit/manual refreshes. The real Chromium contract showed an older failed request could then erase the intended newer successful manual observation. That transport change was reverted. The final design keeps the original newer-request-wins client semantics and serializes only the automatic three-second dashboard poll through pollStatus(). Selected-status backend isolation remains unchanged.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "runtime-expiry-verification",
+      "phase": "runtime-expiry-correction",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_engine/workspace_api.py",
-        "icarus_engine/workspace-client.js",
+        "icarus_engine/dashboard.html",
         "tests_engine/test_runtime_expiry_regression.py"
       ],
       "reserved_targets": [
@@ -1168,7 +1168,7 @@
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace-client.js",
+          "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
         },
         {
@@ -1231,7 +1231,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T17:23:14.847555Z",
+  "generated_at_utc": "2026-10-22T17:38:30.732825Z",
   "owner_status": {
     "claude": {
       "active": false,
