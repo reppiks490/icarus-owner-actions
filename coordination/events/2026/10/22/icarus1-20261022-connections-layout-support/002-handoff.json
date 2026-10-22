@@ -1,0 +1,29 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-connections-layout-support-002-handoff",
+  "session_id": "icarus1-20261022-connections-layout-support",
+  "at_utc": "2026-10-22T19:53:24.560012Z",
+  "type": "HANDOFF",
+  "phase": "connections-layout-verified-parent-integration",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Verified minimal Connections-only CSS repair: supported long aliases wrap390px; native controls shrink320px. New real Chromium2case regression failed before fix and passed after; final account/route/browser compatibility suite105passed51.59s. Original generic eight-firm historical failure did not reproduce before edits and its cause is not claimed. connections-ui.js untouched. Root receives allowed template+new test unstaged; parent owns docs/full integration/publication. No provider/credentials/live work or git stage/commit/push/compile.",
+  "evidence": [
+    "source:icarus_engine/workspace-dashboard.html:two-scoped-css-rules",
+    "test:tests_engine/test_connections_layout_browser.py:2cases",
+    "red:/workspace/scratch/connections-layout-red.log:2expected-failures",
+    "green:/workspace/scratch/connections-layout-focused-final.log:105passed51.59s",
+    "handoff:/workspace/scratch/connections-layout-support.md",
+    "check:git-diff-check:exit0"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Parent reviews/integrates only allowed CSS template and new test, updates canonical recovery docs and runs combined final gates. Supporting worker releases source edits."
+}

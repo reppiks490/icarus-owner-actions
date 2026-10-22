@@ -1159,7 +1159,9 @@
         "icarus_engine/workspace_intelligence_panels.py",
         "tests_engine/test_workspace_intelligence_panels.py",
         "icarus_engine/workspace_golive.py",
-        "tests_engine/test_workspace_golive.py"
+        "tests_engine/test_workspace_golive.py",
+        "icarus_engine/learning_fabric.py",
+        "tests_engine/test_learning_history_roots.py"
       ],
       "declared_targets": [
         {
@@ -1281,6 +1283,14 @@
         {
           "path": "tests_engine/test_workspace_golive.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/learning_fabric.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_learning_history_roots.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1288,11 +1298,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:50:59.782192Z",
-      "latest_summary": "First new research backend90passed and shared Access95passed; runtime expiry timeout1passed plus scoped245passed. Extend supporting research session to new isolated IntelligencePanels module and tests for complete native Brain Research Learning Autopilot ASCENDANCY readers; Go-live support implements truthful pure selected report. No new automatic collectors, provider sessions, activation, live trading or main/sibling mutations. Root alone integrates registry/UI and publishes commits.",
+      "last_event_at_utc": "2026-10-22T19:54:40.664328Z",
+      "latest_summary": "Extend Access/audit support to optional LearningFabric history_base_dir. Shared historical reads retain native provenance/admission checks, resolve each candidate under explicit authorized history root, reject symlink/traversal and restrict selected assets. DB/config/native feedback remain selected-private; no collectors or auto scans. Root integrates optional original data root with IntelligencePanels. Separate source/test ownership avoids concurrent edits.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "remaining-native-panel-readers",
+      "phase": "shared-history-read-private-learning-write",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1325,7 +1335,9 @@
         "icarus_engine/workspace_intelligence_panels.py",
         "tests_engine/test_workspace_intelligence_panels.py",
         "icarus_engine/workspace_golive.py",
-        "tests_engine/test_workspace_golive.py"
+        "tests_engine/test_workspace_golive.py",
+        "icarus_engine/learning_fabric.py",
+        "tests_engine/test_learning_history_roots.py"
       ],
       "reserved_targets": [
         {
@@ -1447,6 +1459,14 @@
         {
           "path": "tests_engine/test_workspace_golive.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/learning_fabric.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_learning_history_roots.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
@@ -1457,56 +1477,48 @@
       "actor": "Icarus1 Access transport support / Codex",
       "branch": "icarus1/restart-readiness-20261020",
       "cooperates_with": [
-        "icarus1-20261020-system-recovery"
+        "icarus1-20261020-system-recovery",
+        "icarus1-20261022-research-panels-support"
       ],
       "coordination_mode": "cooperate",
       "declared_paths": [
-        "icarus_engine/workspace-client.js",
-        "icarus_engine/workspace_context.py",
-        "tests_engine/test_workspace_access.py"
+        "icarus_engine/learning_fabric.py",
+        "tests_engine/test_learning_history_roots.py"
       ],
       "declared_targets": [
         {
-          "path": "icarus_engine/workspace-client.js",
+          "path": "icarus_engine/learning_fabric.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace_context.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_access.py",
+          "path": "tests_engine/test_learning_history_roots.py",
           "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "session:icarus1-20261020-system-recovery"
+        "session:icarus1-20261020-system-recovery",
+        "session:icarus1-20261022-research-panels-support"
       ],
       "goal": "Finish explicitly shared Access transport with exact owner-controlled writes while preserving selected runtime boundaries. Temporary support to Icarus1, not Icarus2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:50:11.709118Z",
-      "latest_summary": "Bounded shared Access transport verified and frozen for parent integration. Exact real shared GET and owner-gated two POST paths retain page context, reject query selectors and prefixes, preserve real native registry and one-time token behavior. Root supplied required server raw-target forwarding. Parent owns UI shared-security label, enablement, canonical restart docs, staging and publication. Local evidence only; no owner-PC restart or live trading claim. Knowledge delta: /workspace/scratch/access-support.md and /workspace/scratch/remaining-panel-audit-support.md.",
-      "latest_type": "HANDOFF",
+      "last_event_at_utc": "2026-10-22T19:54:19.938376Z",
+      "latest_summary": "Access delivery remains frozen and released to parent integration. Root delegates next bounded task: optional LearningFabric history_base_dir with readonly authorized shared CSV/XLSX/manifest reads and private DB/config writes; preserve source hashes, protected training/admission and dedup. Explicit shared root with selected portfolio restricts dataset assets; no constructor/read-started scan, worker, network or collector. Read/plan only until reciprocal root062. Knowledge delta /workspace/scratch/learning-history-support.md; existing audit report remains available. No git add/commit/push, compile or agents.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "shared-access-transport-verified-frozen",
+      "phase": "private-learning-shared-history-read-boundary",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "icarus_engine/workspace-client.js",
-        "icarus_engine/workspace_context.py",
-        "tests_engine/test_workspace_access.py"
+        "icarus_engine/learning_fabric.py",
+        "tests_engine/test_learning_history_roots.py"
       ],
       "reserved_targets": [
         {
-          "path": "icarus_engine/workspace-client.js",
+          "path": "icarus_engine/learning_fabric.py",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "icarus_engine/workspace_context.py",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_workspace_access.py",
+          "path": "tests_engine/test_learning_history_roots.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1545,11 +1557,11 @@
       ],
       "goal": "Repair isolated Connections mobile horizontal overflow after eight fake prop-firm configurations; temporary Icarus1 support, not Icarus2",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:45:09.800887Z",
-      "latest_summary": "Temporary root support, not Icarus2. Reproduce real Chromium390px Connections horizontal overflow after eight fake local paper metadata configurations, then repair only layout without account or broker behavior changes. No source mutation until root reciprocal060 confirmation. Knowledge delta: /workspace/scratch/connections-layout-support.md for root canonical recovery docs and final validation. No git add/commit/push/coordination compile; no provider calls, credentials or live trading.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T19:53:24.560012Z",
+      "latest_summary": "Verified minimal Connections-only CSS repair: supported long aliases wrap390px; native controls shrink320px. New real Chromium2case regression failed before fix and passed after; final account/route/browser compatibility suite105passed51.59s. Original generic eight-firm historical failure did not reproduce before edits and its cause is not claimed. connections-ui.js untouched. Root receives allowed template+new test unstaged; parent owns docs/full integration/publication. No provider/credentials/live work or git stage/commit/push/compile.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "reproduce-and-fix-connections-mobile-overflow",
+      "phase": "connections-layout-verified-parent-integration",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1791,15 +1803,17 @@
         }
       ],
       "dependencies": [
-        "session:icarus1-20261020-system-recovery"
+        "session:icarus1-20261020-system-recovery",
+        "github-ci:PR468",
+        "external:owner-PC-reviewed-source-adoption"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-22T19:51:32.631Z",
-      "latest_summary": "Startup guard commit bfe90692 is pushed on a dedicated branch; 12 new regressions failed against unchanged source, all17 launcher tests pass after the repair; full local suite is running. Resume canonical remaining-access priority2/event025 Brain inventory work after verifying the existing dirty patch's two baseline blobs are unchanged on current Prime393128f9: brain_sync b26e01d8 and tests813ca6fe. Preserve the old worktree untouched; validate its existing bounded patch against current recovery source with fresh regressions. This is continuation of the assigned intake defect, not a new federation sweep. Prime060 runtime/UI/access/research support files remain untouched.",
-      "latest_type": "CLAIM",
+      "last_event_at_utc": "2026-10-22T19:54:31.114Z",
+      "latest_summary": "Prime: PR468 is the two-file startup guard stacked on recovery393128f9, headbfe90692497cf8404ab5e944ca1a18b4559194c2. Empty/whitespace/comma-only --assets now refuses before Python/pip/plant; no private-state writes.12new cases failed before repair;17launcher tests pass; full default local suite3845passed/54skipped/111subtests passed in298.06s; bash syntax and diff checks pass. Hosted checks are pending; independent Prime review/integration requested. Separately revalidated existing event025 Brain gap using immutable Engine2eb1cffd tree4253b3c2:1140JSON files, Contents returns1000,140omitted paths. This is repository inventory evidence, not an observed owner runtime outage. Existing Brain patch has17red regressions against unchanged393128f9 source and is under current focused validation. No changes to Prime060 runtime/status/UI/access/research paths.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "startup-guard-validation-and-brain-inventory-continuation",
+      "phase": "startup-guard-ready-for-prime-review-brain-validation-running",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
@@ -1838,7 +1852,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T19:52:06.904268Z",
+  "generated_at_utc": "2026-10-22T19:55:41.625904Z",
   "owner_status": {
     "claude": {
       "active": false,

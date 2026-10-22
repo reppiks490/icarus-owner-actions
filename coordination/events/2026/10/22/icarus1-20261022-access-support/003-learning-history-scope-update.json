@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-access-support-003",
+  "session_id": "icarus1-20261022-access-support",
+  "at_utc": "2026-10-22T19:54:19.938376Z",
+  "type": "UPDATE",
+  "phase": "private-learning-shared-history-read-boundary",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_learning_history_roots.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus1-20261022-research-panels-support"
+  ],
+  "summary": "Access delivery remains frozen and released to parent integration. Root delegates next bounded task: optional LearningFabric history_base_dir with readonly authorized shared CSV/XLSX/manifest reads and private DB/config writes; preserve source hashes, protected training/admission and dedup. Explicit shared root with selected portfolio restricts dataset assets; no constructor/read-started scan, worker, network or collector. Read/plan only until reciprocal root062. Knowledge delta /workspace/scratch/learning-history-support.md; existing audit report remains available. No git add/commit/push, compile or agents.",
+  "evidence": [
+    "parent-task:/root/remaining_panel_audit:learning-history-root",
+    "local:prior-access:95passed9.50s"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "session:icarus1-20261022-research-panels-support"
+  ],
+  "next_action": "Verify root062 reciprocal claim before source edits, add real failing shared-history/private-state/containment tests, implement explicit optional constructor seam, run native Learning regressions and freeze for root."
+}
