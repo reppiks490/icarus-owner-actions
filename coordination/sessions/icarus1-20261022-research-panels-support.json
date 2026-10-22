@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "icarus1-20261022-research-panels-support",
+  "actor": "Icarus1 research panel support / Codex",
+  "model_family": "openai",
+  "goal": "Implement four selected research panel adapters for Icarus1 without replacing Icarus2 identity or editing parent runtime fixes.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "icarus1/restart-readiness-20261020",
+  "pr": 462,
+  "started_at_utc": "2026-10-22T19:39:01.590508Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "cloud-shell",
+    "github"
+  ],
+  "initial_dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ]
+}

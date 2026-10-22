@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-ui-support-001-claim",
+  "session_id": "icarus1-20261022-ui-stability-support",
+  "at_utc": "2026-10-22T19:38:57.779830Z",
+  "type": "CLAIM",
+  "phase": "reproduce-and-fix-ui-stability",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_ui_stability_browser.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ],
+  "summary": "Temporary root support, not Icarus2. Integrate exact reviewed peer readout batching blob from PR466@1c818c27; reproduce/fix800x600 wrapped-settings drawer covering its trigger. Preserve root polling/status files, peer Brain files and reserved browser_depth.cjs (read peer test from scratch only). No source mutation until root reciprocal059 published. Knowledge delta: scratch result handoff to root for canonical runtime-connection docs/evidence.",
+  "evidence": [
+    "root:assigned-ui-stability",
+    "peer:PR466@1c818c272e910dda35ad10d0fc4dffb114bad434",
+    "ci:39740988788:browser_cinema.cjs175-failure"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Run real Chromium regressions before changes, fix only assigned paths, report exact commands/source provenance and limits to root; no runtime commits/push or live/provider work."
+}

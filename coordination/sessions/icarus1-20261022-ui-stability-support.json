@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "icarus1-20261022-ui-stability-support",
+  "actor": "Icarus1 UI stability supporting worker",
+  "model_family": "openai",
+  "goal": "Support root runtime-expiry recovery with reviewed readout batching and settings-drawer placement regression repair; not Icarus2",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "icarus1/restart-readiness-20261020",
+  "started_at_utc": "2026-10-22T19:38:57.779830Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "cloud-shell",
+    "real-chromium"
+  ],
+  "initial_dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ]
+}

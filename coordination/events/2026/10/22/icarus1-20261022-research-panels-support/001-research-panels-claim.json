@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-research-panels-support-001",
+  "session_id": "icarus1-20261022-research-panels-support",
+  "at_utc": "2026-10-22T19:39:01.590508Z",
+  "type": "CLAIM",
+  "phase": "selected-research-read-adapters",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_research_engines.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_research_panels.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Root-delegated temporary support implements real selected PARALLAX/DREAMSTATE, PANTHEON, SIBYL and APEX readers in private subsystem stores. No parent/sibling fallback, provider collection, execution/promotion, Brain changes or branch commits. Root owns UI enabling, documentation and publication; first failing HTTP regressions then existing real class adapters.",
+  "evidence": [
+    "parent-task:/root/research_panel_adapters",
+    "source:fd89142871e8e690d73f1fc687c1c516dbaf08c2"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "After reciprocal root claim is published, add failing HTTP scope/persistence/provider-trap tests, implement exact UI read routes and verify; report logs and limits in scratch to root."
+}
