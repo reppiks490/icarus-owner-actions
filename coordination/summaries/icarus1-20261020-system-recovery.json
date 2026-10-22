@@ -1,12 +1,12 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "icarus1-20261020-system-recovery",
-  "completed_at_utc": "2026-10-21T23:29:37.887Z",
+  "completed_at_utc": "2026-10-22T07:35:55.291293Z",
   "result": "blocked",
-  "scope": "Published usable as-is paper startup, public default-main command guide and unified five-workspace dashboard; actual PC execution and full operating readiness remain distinct.",
+  "scope": "Current four-panel source batch completed, verified locally, restarted twice in containment and documented on GitHub; eleven remaining adapters and full-system operating readiness stay open. Exact final-head hosted checks pending.",
   "source_pr": "https://github.com/reppiks490/Icarus/pull/462",
   "source_reviewed_sha": "6ac652e9505732a886bc5c807eeda80daab24b5a",
-  "latest_documentation_sha": "38d53283608d0134274a88b62db9a949280010c2",
+  "latest_documentation_sha": "fd89142871e8e690d73f1fc687c1c516dbaf08c2",
   "restart_decision": "NO_GO",
   "delivered": [
     "Strict four-workspace accounting projection with failing-before/fixed-after regressions; PC symptom cause remains unproven.",
@@ -32,7 +32,7 @@
     "Same Performance component across five journals; corpus/selected-consumer/archived expansion/A200 research qualification and Connections preserved; research history owner-only.",
     "Editor conflict discard reloads current revision and unrelated completed config jobs preserve drafts; both regressions failed before fix. Five old test transport assumptions aligned;53affected-module tests+86subtests pass.",
     "As-is startup371eba1, docs/receipt merge6ed1fe8:3852passed,4skipped,111subtests in423.13s, exit0. All5changed source/test/workflow hashes retained through merge;80post-receipt consumer contracts passed.",
-    "Actual new shell launcher→plant→engine served5identities and4ledgerAPI, paper authorityfalse, owned shutdownexit0. Temporary synthetic root, not PC or sustained operation.",
+    "Actual new shell launcher\u2192plant\u2192engine served5identities and4ledgerAPI, paper authorityfalse, owned shutdownexit0. Temporary synthetic root, not PC or sustained operation.",
     "Public default-main START_HERE.md and README pointer; old guide pointers on recovery source. Backup/separate source worktree, explicit feed/assets/venv/source/root, one-command local shortcut, allURLs/status/exports/help/rollback.",
     "Exact reviewed Icarus2testblobs463/464 incorporated; Linux now includes root fixture; Windows79paths include both tests. New shell harness skips on Windows, PC cold setup unverified.",
     "Icarus2 remaining-access next-work record docs/recovery/ICARUS2_NEXT_12_DAYS.md; Brain inventory claim untouched, root source leases released for coordinated continuation.",
@@ -40,10 +40,13 @@
     "Windows platform followup38d5328 changes tests/CI/docs only: nine Windows archive-admission failures traced to intentional safe-open guard. Original assertions retained under ten capability markers; new unconditional refusal/no-output/input-integrity test. Linux focused124passed, missing-capability5passed10skipped; same79unique Windows modules, new modules verified early.",
     "Public main guide cc4f0a9 clarifies Windows private archive limitation, foreground Ctrl+C before shortcut creation and removes sidecar --help that starts a service. ElevenBashblocks parse; six actual help commands exit0.",
     "Final 38d5328 hosted Linux runtime and required browser/world checks passed. All six other contracts passed. Actual Windows restart-persistence/private-intake-boundary step passed; broad Windows suite remains running at this checkpoint, without an invented completion claim.",
-    "Final exact recovery source38d5328: all eight hosted PR workflows completed successfully, including both Linux and Windows runtime jobs, the newly included Windows restart-persistence/private-intake boundary and required real Chromium/world-browser contracts. This supersedes the preceding pending Windows observation."
+    "Final exact recovery source38d5328: all eight hosted PR workflows completed successfully, including both Linux and Windows runtime jobs, the newly included Windows restart-persistence/private-intake boundary and required real Chromium/world-browser contracts. This supersedes the preceding pending Windows observation.",
+    "First four real selected-workspace panels published: Possibility, Chronofold, Commissioning and Engine Control. Private subsystem ledgers, cached-only analytics, selected asset/query/identity boundaries, owner/revision/confirmation gates and 13registered actions.",
+    "Each completed panel has Git Bash restart commands and real saved-state limits at docs/recovery/ICARUS_PANEL_RESTARTS.md; public default-main guide links it at top.",
+    "Final panel full3895/4skip/111subtests; preceding248component+92routing+37panel cases; subsequent launcher42cases. Actual same-root two-start sequence preserves private evidence/forecasts and exits0 twice. POSIX TIME_WAIT preflight false refusal repaired; Windows port guard unchanged."
   ],
   "remaining_internal_work": [
-    "Selected-runtime adapters for unavailable common panels; release and owner-PC parity verification",
+    "Eleven remaining selected adapters: Access, Brain, Research, PARALLAX/DREAMSTATE, PANTHEON, SIBYL, APEX, ASCENDANCY, Learning, Tactical Autopilot, Go-live; final-head hosted validation and new-source owner-PC parity verification",
     "Required data-to-consumer completeness and source freshness qualification",
     "Futures/prop-firm operational wiring and reconciliation",
     "Matched real-input accuracy regression investigation",
@@ -52,7 +55,7 @@
     "Engine peer packet producer publication reliability within the unchanged30minute consumer freshness bound."
   ],
   "external_dependencies": [
-    "Owner PC checkout, interpreter, configuration, data root and actual runtime remain unobserved.",
+    "Icarus2 receipt026 records owner-assisted38d5328 paper application startup and main health200. New panelfd89142 installation, sustained PC freshness/all-CC operation and open-position recovery are not observed; no PC reboot certified.",
     "Historical four Engine attempts were rejected at job start by billing/spending annotations; current blanket billing block is not established. New lab executing; three lanes have no newer observed result.",
     "Firecrawl lookup returned HTTP 402 insufficient credits; direct primary-source/GitHub tools remain independently available."
   ],
@@ -95,12 +98,135 @@
     "coordination/events/2026/10/21/icarus1-20261020-system-recovery/043-release-final-source-leases.json",
     "run:39691119497:both-Linux-Windows-success",
     "all-eight-exact-head-workflows:success",
-    "coordination-repair:e133939:rejected-original-preserved"
+    "coordination-repair:e133939:rejected-original-preserved",
+    "pr:reppiks490/Icarus#462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "local-full:3895passed4skipped111subtests462.60s",
+    "local-launcher-panel:42passed19.69s",
+    "actual-contained-two-start:16selected-panel-endpoints-each:4forecast-ledgers:psi-digest-retained:exit0-twice",
+    "public-main-docs:0b7e46b641c20b87ae624b188394f710844fcac8",
+    "icarus2-owner-assisted-startup:receipt026@38d5328",
+    "icarus2-layout-PR466:runtime39720172498success:visual39720172573failure-cjs217:not-integrated"
   ],
-  "next_action": "Operator: use the public default-main START_HERE guide once for stopped-state backup, separate source worktree and setup; then use saved bash ~/icarus-start.sh. The local core does not require an active ChatGPT session. Cloud cannot execute on the PC. Icarus2: all final38d5328 hosted workflows now passed. Continue your separate Brain claim and durable remaining-access priorities: actual PC/root/source verification, runtime adapters, real consumer/freshness evidence, matched accuracy investigation, operating accounts and sustained/open-position recovery. Preserve exact current source and authority; do not wait for Prime model access, overwrite from old PRs, re-enable canceled broad automation or arm live brokers. Earlier status-record phase10–12 wording is superseded by current sections2/15–18 and START_HERE. New main3b99cb3 added provider receipts only and has a clean merge-tree; no production delta was found.",
+  "next_action": "Continue from publishedfd89142 with fresh narrow claims. Monitor its exact eight CI runs, inspect any real failure without treating predecessor cancellation as a code failure. Icarus2 preserves Brain claim and separatePR466 patch; diagnose its DOM-churn pointer contract and sustained observation-expiry reproduction. Finish remaining eleven adapters through existing scoped registry; document each. Use public START_HERE and per-panel guide for an explicitly bounded paper update; preserve data/inputs and no-live gates.",
   "full_system_restart_performed": false,
   "live_broker_arming": false,
   "hosted_verification": {
+    "head": "fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "observed_at_utc": "2026-10-22 07:34:09 UTC",
+    "status_at_checkpoint": "Final-head CI running; do not inherit all-eight-green from38d5328. Historical-context success, if later observed, is a timed receipt only.",
+    "runs": [
+      {
+        "id": 39740988788,
+        "name": "ui-visual-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 365,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988788/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988788/logs",
+        "workflow_id": 374925947
+      },
+      {
+        "id": 39740988887,
+        "name": "tests",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 6571,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988887/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988887/logs",
+        "workflow_id": 362919046
+      },
+      {
+        "id": 39740988546,
+        "name": "intelligence-feed-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 532,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988546/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988546/logs",
+        "workflow_id": 373981573
+      },
+      {
+        "id": 39740988718,
+        "name": "Four portfolio performance",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 21,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988718/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988718/logs",
+        "workflow_id": 388971909
+      },
+      {
+        "id": 39740988711,
+        "name": "live-engine-historical-context-gate",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 188,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988711/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988711/logs",
+        "workflow_id": 373520502
+      },
+      {
+        "id": 39740988784,
+        "name": "source-data-contract",
+        "status": "in_progress",
+        "conclusion": null,
+        "run_number": 123,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988784/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988784/logs",
+        "workflow_id": 374234020
+      },
+      {
+        "id": 39740988756,
+        "name": "engine-federation-consumer-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 421,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988756/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988756/logs",
+        "workflow_id": 373520058
+      },
+      {
+        "id": 39740988679,
+        "name": "configuration-job-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "run_number": 664,
+        "jobs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988679/jobs",
+        "logs_url": "https://api.github.com/repos/reppiks490/Icarus/actions/runs/39740988679/logs",
+        "workflow_id": 373745408
+      }
+    ]
+  },
+  "source_verified_sha": "fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+  "review_limit": "Root native bounded review of panel/launcher changes; earlier independent6ac checkpoint preserved. No new independent whole-branch clearance and no unobserved final-head hosted success claimed.",
+  "root_native_reviewed_sha": "fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+  "as_is_paper_startup_authorized": true,
+  "operator_pc_runtime_restarted": true,
+  "operator_commands_url": "https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
+  "public_documentation_commits": {
+    "guide": "f11fc79a58eb9ecb300cc8b5ccf90fc5fe29edd9",
+    "readme": "091e38b2957826c0695ac24d0d34b3b222ee0e15",
+    "platform_clarifications": "cc4f0a93bf5f48cd9f1072111f63a9c3fdfe2eba",
+    "first_four_panels_pointer": "0b7e46b641c20b87ae624b188394f710844fcac8"
+  },
+  "windows_private_archive_intake_supported": false,
+  "final_integration_observation": {
+    "main": "3b99cb3a41bf44cc81bf7fa162ad73917c349ab2",
+    "changes": "Provider receipt paths and opaque encrypted checkpoint only; no runtime code delta.",
+    "merge_tree": "a537979119359fa917879a73ea33a2a90fe55b3e; exit0, clean",
+    "merge_performed": false,
+    "pr_draft": true,
+    "pr_merged": false,
+    "limit": "No decryption, provider collection, source merge or runtime restart performed by this check."
+  },
+  "coordination_record_repair": {
+    "commit": "e133939",
+    "scope": "Only newly invalid045 duplicate identifier corrected. Previously valid immutable events unchanged; original malformed bytes preserved verbatim in quarantine and Git history.",
+    "original_blob": "001670c87c6dafa60eec09f11c7dc01801fc2618",
+    "quarantined_original": "coordination/rejected/icarus1-20261020-system-recovery/045-duplicate-event-id.original.json",
+    "validation": "whole tree valid; zero collisions"
+  },
+  "previous_hosted_verification": {
     "head": "38d53283608d0134274a88b62db9a949280010c2",
     "status_at_checkpoint": "All eight exact-head PR workflows completed successfully, including full Linux and Windows runtime jobs and required Chromium/world-browser contracts. Actual Windows restart-persistence/private-intake-boundary step passed. Windows private archive intake remains intentionally unsupported; skipped admission cases do not certify support. Historical handshake is a timed observation, not permanent freshness.",
     "observed_workflows": [
@@ -451,32 +577,15 @@
     },
     "observed_at_utc": "2026-10-21T23:29:37.887Z"
   },
-  "source_verified_sha": "38d53283608d0134274a88b62db9a949280010c2",
-  "review_limit": "Root native bounded review at38d5328; prior independent checkpoint retained. Internal command inspection is supporting work, not independent whole-branch clearance.",
-  "root_native_reviewed_sha": "38d53283608d0134274a88b62db9a949280010c2",
-  "as_is_paper_startup_authorized": true,
-  "operator_pc_runtime_restarted": false,
-  "operator_commands_url": "https://github.com/reppiks490/Icarus/blob/main/START_HERE.md",
-  "public_documentation_commits": {
-    "guide": "f11fc79a58eb9ecb300cc8b5ccf90fc5fe29edd9",
-    "readme": "091e38b2957826c0695ac24d0d34b3b222ee0e15",
-    "platform_clarifications": "cc4f0a93bf5f48cd9f1072111f63a9c3fdfe2eba"
+  "source_verification_phases": {
+    "panel_runtime_commit": "2c1b6270eda685f5de2733ff4dbb9478ec98bd05",
+    "full_runtime": "3895 passed,4 skipped,111 subtests in462.60s; required Chromium; eight changed production/test files frozen",
+    "launcher_followup_commit": "e0980d84804d736aeede81b8f1f0cd2cd47f73ea",
+    "launcher_checks": "42 passed in19.69s; controlled closed-connection regression failed first; existing active-listener refusal passes",
+    "actual_restart": "Synthetic file-only shell->plant->engine->owned shutdown->same-root restart;16panel endpoints each start;four forecast ledgers and selected evidence digest retained;owned exit0 twice;external network and credential-file reads forbidden",
+    "published_documentation": "fd89142871e8e690d73f1fc687c1c516dbaf08c2"
   },
-  "windows_private_archive_intake_supported": false,
-  "final_integration_observation": {
-    "main": "3b99cb3a41bf44cc81bf7fa162ad73917c349ab2",
-    "changes": "Provider receipt paths and opaque encrypted checkpoint only; no runtime code delta.",
-    "merge_tree": "a537979119359fa917879a73ea33a2a90fe55b3e; exit0, clean",
-    "merge_performed": false,
-    "pr_draft": true,
-    "pr_merged": false,
-    "limit": "No decryption, provider collection, source merge or runtime restart performed by this check."
-  },
-  "coordination_record_repair": {
-    "commit": "e133939",
-    "scope": "Only newly invalid045 duplicate identifier corrected. Previously valid immutable events unchanged; original malformed bytes preserved verbatim in quarantine and Git history.",
-    "original_blob": "001670c87c6dafa60eec09f11c7dc01801fc2618",
-    "quarantined_original": "coordination/rejected/icarus1-20261020-system-recovery/045-duplicate-event-id.original.json",
-    "validation": "whole tree valid; zero collisions"
-  }
+  "owner_pc_runtime_observed": true,
+  "owner_pc_restart_scope": "Owner-executed paper application restart per Icarus2 receipt026 only. New panel batch not observed on PC; no PC reboot/full-system qualification.",
+  "panel_commands_url": "https://github.com/reppiks490/Icarus/blob/icarus1/restart-readiness-20261020/docs/recovery/ICARUS_PANEL_RESTARTS.md"
 }

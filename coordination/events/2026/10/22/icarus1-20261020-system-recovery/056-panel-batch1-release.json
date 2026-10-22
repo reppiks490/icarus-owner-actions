@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "dependencies": [
+    "github-ci:PR462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "local-full:3895passed4skipped111subtests462.60s",
+    "local-launcher-panel:42passed19.69s",
+    "actual-contained-two-start:16selected-panel-endpoints-each:4forecast-ledgers:psi-digest-retained:exit0-twice",
+    "public-main-docs:0b7e46b641c20b87ae624b188394f710844fcac8",
+    "icarus2-owner-assisted-startup:receipt026@38d5328",
+    "icarus2-layout-PR466:runtime39720172498success:visual39720172573failure-cjs217:not-integrated"
+  ],
+  "event_id": "20261022-icarus1-056-panel-batch1",
+  "at_utc": "2026-10-22T07:35:55.293293Z",
+  "type": "RELEASE",
+  "phase": "published-panel-batch-no-source-leases",
+  "summary": "Release all Icarus1 source/test/workflow/documentation leases at this bounded published checkpoint so continuation does not wait on stale reservations. Release is not full-system completion or final-head CI success; exact pending runs and remaining eleven adapters are durable. No live broker authority.",
+  "next_action": "Fresh claim required for any further code mutation; keep Icarus2 current work separate and inspect exact final-head CI before release decisions."
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus1-20261020-system-recovery",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ],
+  "dependencies": [
+    "github-ci:PR462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
+    "local-full:3895passed4skipped111subtests462.60s",
+    "local-launcher-panel:42passed19.69s",
+    "actual-contained-two-start:16selected-panel-endpoints-each:4forecast-ledgers:psi-digest-retained:exit0-twice",
+    "public-main-docs:0b7e46b641c20b87ae624b188394f710844fcac8",
+    "icarus2-owner-assisted-startup:receipt026@38d5328",
+    "icarus2-layout-PR466:runtime39720172498success:visual39720172573failure-cjs217:not-integrated"
+  ],
+  "event_id": "20261022-icarus1-054-panel-batch1",
+  "at_utc": "2026-10-22T07:35:55.291293Z",
+  "type": "WAITING",
+  "phase": "first-four-panels-published-hosted-pending",
+  "summary": "Four-panel and immediate-restart source verified locally and documented; exact final-head CI is running. Full3895/4skip/111subtests is the panel checkpoint; subsequent launcher42passed plus actual contained same-root two-start proof are separate. Public command guide and per-panel instructions are published. No new-head hosted all-green or owner-PC source-adoption claim.",
+  "next_action": "Monitor exact final-head runs recorded in durable summary; preserve source until a concrete failure justifies changes."
+}
