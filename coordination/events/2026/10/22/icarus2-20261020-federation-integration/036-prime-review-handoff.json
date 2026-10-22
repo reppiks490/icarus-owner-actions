@@ -1,0 +1,57 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-036-prime-review-handoff",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T20:16:54.785Z",
+  "type": "HANDOFF",
+  "phase": "verified-candidates-await-prime-review-and-remaining-ci",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "execution_authorized": false,
+  "summary": "Continued targeted restart integration with Prime, without reinstating the canceled federation loop. PR468 bfe90692 prevents an empty explicit main-asset list from reaching Python/pip/plant;12regressions were red before repair,17launcher cases pass, full local suite3845passed54skipped111subtests. Its Linux/Windows hosted checks all pass. PR469 2ecb729a completes pinned Brain inventories beyond Contents1000 and models the new APIs/finite backlog in the existing read-only live validation fixture.17inventory regressions were red,63Brain tests pass, full local runtime suite3851passed54skipped111subtests at core9d19ebab. Workflow follow-up ran locally on a real pinned snapshot:1145unique blobs fully processed,1109ingested36ignored0rejected; it correctly blocked a stale2156.927s packet. Later genuine Engine export39846613281 refreshed the packet; hosted live bilateral run39846721468/job120061831143 passes with1151event files1115ingested0rejected and49.266s packet age. No clock/freshness/execution gate changed. Closed duplicate PR463/464 only after changed-test-body/entire-file incorporation proofs against recovery393128f9. Prime's runtime/UI/access/research files were not overwritten.",
+  "evidence": [
+    "pr:reppiks490/Icarus#468@bfe90692497cf8404ab5e944ca1a18b4559194c2",
+    "pr:reppiks490/Icarus#469@2ecb729a6e99d817f3c1c553a2950a793fbde0dd",
+    "brain-core-commit:9d19ebabfd2042f35222dd284ed7c12bfd855b87",
+    "hosted-tested-merge:12295c76eec5d807cf19e98013f1d28d56050d0d:tree=f2a3ff2c68b10cd335257d7d146c95d8ed81b345:identical-to-PR469-head-tree",
+    "hosted-live-receipt:run39846721468:job120061831143:success",
+    "artifact:12456120524:live-engine-federation-receipt:GitHub-reported-sha256=9b5c52c1929d3a74cc1802841118a9eeb70c19caafd4742dd9996199a4d76ad6",
+    "hosted-engine-snapshot:5d15d715a09166ea6257d0939f2c1bb1e29c3468",
+    "hosted-packet-blob:aa5f4bf05965bc57cde12550a7d452b325cac380:age=49.266s",
+    "hosted-receipt:substantive-research-lanes=0:durability-only-lanes=4:RESEARCH_OBSERVABILITY_ONLY",
+    "prior-hosted-failure:39845185306/job120056467230:unexpected-commits-main-dispatch:packet-was-fresh",
+    "prior-local-snapshot:fc143b6f9511b42a523c1356cb9e69ccbede218c:event-tree=a112d9cfb545da61b50470a7eef0c5f62a4cd816:complete=1145:stale-packet-remained-blocked",
+    "closed-PR464-proof:restart-test-blob2f5b1177cc53491dc2867665f0311c8111311732-identical-in-recovery",
+    "closed-PR463-proof:entire-changed-corpus-fixture-test-body-AST-identical-in-recovery",
+    "recovery-head-rechecked:393128f96228db20037b024db20e8e32529a2eee:affected-base-blobs-unchanged",
+    "control-worker-blob:3883408e5d305c9e42ef163f3e65321176b523ff:stop_requested=false",
+    "control-owner-blob:ea7074c966b2a711a3e1751db4b84fa36c668cf2:live_broker_arming=false"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "github-ci:PR469-runtime-Linux-Windows",
+    "review:Prime-independent-review-and-integration",
+    "external:owner-PC-approved-combined-source-adoption"
+  ],
+  "next_action": "Prime: independently review PR468 and PR469, integrate the approved commits into the single recovery source after remaining checks, and verify the combination with your polling/selected-status/UI repairs. Publish one final source-qualified operator path with explicit non-empty main assets and the existing private root; do not direct the owner back to stale38d5328 or an unmerged main. Preserve current settings and separate journals. Keep actual PC stability/open-position recovery, provider consumer freshness/value, account connectivity and matched accuracy evidence distinct. No automatic main merge, scheduler change, new spend, deployment or live orders is implied. Icarus2 continues from these exact PR heads and new source claims when review findings arrive.",
+  "capabilities_used": [
+    "connected GitHub read/create/update/PR/artifact tools",
+    "cloud Git/Bash and isolated worktrees",
+    "pytest via existing /workspace/Icarus/.venv/bin/python",
+    "actual pinned GitHub tree/blob reads",
+    "full embedded federation validation against an isolated real peer snapshot"
+  ],
+  "agents_spawned_this_turn": 0,
+  "owner_pc_access_used": false,
+  "environment_notes": "Active review worktrees /workspace/Icarus-launch-assets-guard and /workspace/Icarus-brain-inventory-current are clean and committed. The preexisting /workspace/Icarus-brain-inventory dirty two-file draft was preserved untouched; PR469 on current recovery source supersedes that draft. Shell-only tests remain skipped on hosted Windows; Windows CI success is not a Windows Git Bash or owner-PC runtime certificate. Full runtime suite results precede the workflow-only fixture follow-up; that follow-up has its own parsed-Python/local-snapshot/hosted-gate evidence.",
+  "full_system_readiness": "NO_GO",
+  "all_icarus_requirements_complete": false
+}
