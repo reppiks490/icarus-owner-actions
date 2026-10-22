@@ -1124,8 +1124,7 @@
       "coordination_mode": "independent",
       "declared_paths": [
         "icarus_engine/workspace_api.py",
-        "icarus_engine/dashboard.html",
-        "tests_engine/test_runtime_expiry_regression.py"
+        "icarus_engine/dashboard.html"
       ],
       "declared_targets": [
         {
@@ -1135,32 +1134,27 @@
         {
           "path": "icarus_engine/dashboard.html",
           "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_runtime_expiry_regression.py",
-          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
         "branch:icarus1/restart-readiness-20261020",
-        "head:10e48e6cea774ab1727ef722d5737d10fa7235c1",
-        "verification-pr:467",
+        "head:393128f96228db20037b024db20e8e32529a2eee",
+        "pr:reppiks490/Icarus#467",
         "constraint:live-execution-remains-disabled",
         "constraint:preserve-saved-workspace-settings-and-journals"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T17:37:07Z",
-      "latest_summary": "Correction to the prior verification checkpoint: transport-level core-status deduplication was too broad because it also joined explicit/manual refreshes. The real Chromium contract showed an older failed request could then erase the intended newer successful manual observation. That transport change was reverted. The final design keeps the original newer-request-wins client semantics and serializes only the automatic three-second dashboard poll through pollStatus(). Selected-status backend isolation remains unchanged.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-22T17:51:53Z",
+      "latest_summary": "Runtime-expiry repair is implemented and focused verification is complete. Selected workspace status no longer computes all four runtime snapshots, and only the automatic 3-second dashboard poll is serialized. Manual refresh retains newer-request-wins semantics. Live execution remains disabled and no saved workspace settings or journals were reset or rewritten by this repair.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "runtime-expiry-correction",
+      "phase": "runtime-expiry-recovery-verified",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_engine/workspace_api.py",
-        "icarus_engine/dashboard.html",
-        "tests_engine/test_runtime_expiry_regression.py"
+        "icarus_engine/dashboard.html"
       ],
       "reserved_targets": [
         {
@@ -1169,10 +1163,6 @@
         },
         {
           "path": "icarus_engine/dashboard.html",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "tests_engine/test_runtime_expiry_regression.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1231,7 +1221,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T17:38:30.732825Z",
+  "generated_at_utc": "2026-10-22T17:52:20.680917Z",
   "owner_status": {
     "claude": {
       "active": false,
