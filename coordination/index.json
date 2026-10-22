@@ -1127,16 +1127,16 @@
       "declared_paths": [],
       "declared_targets": [],
       "dependencies": [
-        "github-ci:PR462@fd89142871e8e690d73f1fc687c1c516dbaf08c2",
-        "session:icarus2-20261020-federation-integration"
+        "github-ci:39740988887",
+        "github-ci:39740988788"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T07:35:55.293293Z",
-      "latest_summary": "Release all Icarus1 source/test/workflow/documentation leases at this bounded published checkpoint so continuation does not wait on stale reservations. Release is not full-system completion or final-head CI success; exact pending runs and remaining eleven adapters are durable. No live broker authority.",
-      "latest_type": "RELEASE",
+      "last_event_at_utc": "2026-10-22T07:37:12.839291Z",
+      "latest_summary": "Final sourcefd891428 is clean and remote verified. Six hosted contracts succeeded; runtime39740988887 and UI39740988788 remain running. Per-panel guide pinned blob81ff3c85e91a9632948ec1d0da2b0415b7e535bc independently matches local. Current four-panel implementation/restart documentation and actual contained restart proof published; no final hosted all-green, all-eleven-adapter or owner-PC adoption claim. Root leases remain released.",
+      "latest_type": "WAITING",
       "model_family": "openai",
-      "phase": "published-panel-batch-no-source-leases",
+      "phase": "final-panel-head-six-green-two-running",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [],
@@ -1196,7 +1196,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T07:36:04.999960Z",
+  "generated_at_utc": "2026-10-22T07:37:22.825664Z",
   "owner_status": {
     "claude": {
       "active": false,
