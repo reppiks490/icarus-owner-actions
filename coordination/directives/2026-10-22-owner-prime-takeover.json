@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-directive-v1",
+  "at_utc": "2026-10-22T20:55:39.509812+00:00",
+  "recorded_by_session": "icarus2-20261020-federation-integration",
+  "owner_instruction": "Owner appoints this chat Icarus Prime; original Prime is shut down temporarily. Finish only original current work and provide an observable as-is fully updated paper restart, then standby. Broad federation loop remains cancelled.",
+  "supersedes": "Primary-worker assignment and runtime reservations of the named stopped original Prime/support sessions only; historical identities and evidence remain intact. No claim of reciprocal cooperation by stopped workers.",
+  "taken_over_sessions": [
+    "icarus1-20261020-system-recovery",
+    "icarus1-20261022-access-support",
+    "icarus1-20261022-connections-layout-support",
+    "icarus1-20261022-golive-support",
+    "icarus1-20261022-research-panels-support",
+    "icarus1-20261022-ui-stability-support"
+  ],
+  "source_session_cutoff": {
+    "icarus1-20261020-system-recovery": "2026-10-22T19:54:40.664328Z",
+    "icarus1-20261022-access-support": "2026-10-22T19:54:19.938376Z",
+    "icarus1-20261022-connections-layout-support": "2026-10-22T19:53:24.560012Z",
+    "icarus1-20261022-golive-support": "2026-10-22T19:50:25.064531Z",
+    "icarus1-20261022-research-panels-support": "2026-10-22T19:50:18.832236Z",
+    "icarus1-20261022-ui-stability-support": "2026-10-22T19:49:26.042323Z"
+  },
+  "source_bus_commit": "d92f7d421cd1e9ded5249b69593fcf5a366cd75f",
+  "boundaries": {
+    "execution_authorized": false,
+    "live_broker_arming": false,
+    "main_merge": false,
+    "new_spend": false,
+    "scheduler_changes": false,
+    "worker_stop_control_changes": false
+  },
+  "capability_limitation": "Original Prime uncommitted work and scratch files are not present in this cloud workspace. Recover published393128f and explicit source handoffs; reconstruct only restart-critical unfinished work with fresh regression evidence. Owner-PC runtime not connected.",
+  "standby_condition": "Deliver tested exact source and restart path; owner-PC observation remains separately verifiable."
+}
