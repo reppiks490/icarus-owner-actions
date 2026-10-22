@@ -1768,7 +1768,9 @@
       "coordination_mode": "cooperate",
       "declared_paths": [
         "scripts/start-as-is.sh",
-        "tests_engine/test_as_is_launcher.py"
+        "tests_engine/test_as_is_launcher.py",
+        "icarus_engine/brain_sync.py",
+        "tests_engine/test_brain_sync.py"
       ],
       "declared_targets": [
         {
@@ -1778,6 +1780,14 @@
         {
           "path": "tests_engine/test_as_is_launcher.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_sync.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1785,16 +1795,18 @@
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-22T19:45:19.020Z",
-      "latest_summary": "Resume stable Icarus2 identity after owner reset. Prime event059 owns runtime expiry, UI stability, and research panels. Separate owner screenshot shows /healthz HTTP200 with assets=[] and warm=false. On restart head393128f9 the launcher checks only --assets flag presence; empty/whitespace/comma-only values reach engine CLI, whose split loop creates no runners. Add a failing process-boundary regression, then reject an empty explicit asset universe before --setup installs or process startup. No edits to Prime's dashboard/server/recovery/automation/stop paths; no live orders or PC execution.",
+      "last_event_at_utc": "2026-10-22T19:51:32.631Z",
+      "latest_summary": "Startup guard commit bfe90692 is pushed on a dedicated branch; 12 new regressions failed against unchanged source, all17 launcher tests pass after the repair; full local suite is running. Resume canonical remaining-access priority2/event025 Brain inventory work after verifying the existing dirty patch's two baseline blobs are unchanged on current Prime393128f9: brain_sync b26e01d8 and tests813ca6fe. Preserve the old worktree untouched; validate its existing bounded patch against current recovery source with fresh regressions. This is continuation of the assigned intake defect, not a new federation sweep. Prime060 runtime/UI/access/research support files remain untouched.",
       "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "reject-empty-main-assets-before-launch",
+      "phase": "startup-guard-validation-and-brain-inventory-continuation",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
         "scripts/start-as-is.sh",
-        "tests_engine/test_as_is_launcher.py"
+        "tests_engine/test_as_is_launcher.py",
+        "icarus_engine/brain_sync.py",
+        "tests_engine/test_brain_sync.py"
       ],
       "reserved_targets": [
         {
@@ -1803,6 +1815,14 @@
         },
         {
           "path": "tests_engine/test_as_is_launcher.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/brain_sync.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_brain_sync.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1818,7 +1838,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T19:51:36.484162Z",
+  "generated_at_utc": "2026-10-22T19:52:06.904268Z",
   "owner_status": {
     "claude": {
       "active": false,
