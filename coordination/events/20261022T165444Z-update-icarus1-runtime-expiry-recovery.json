@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022T165444Z-update-icarus1-runtime-expiry-recovery",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T16:54:44Z",
+  "type": "UPDATE",
+  "phase": "runtime-expiry-recovery",
+  "summary": "Resumed the interrupted Icarus 1 cloud repair for repeated workspace/status expiry. Evidence confirms a 3-second dashboard poll can overlap slow status reads, while selected workspace status currently computes the four-workspace aggregate snapshot. Continue with regression-first changes that prevent refresh starvation and keep selected reads isolated without enabling live execution or altering saved journals/settings.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/workspace_api.py",
+    "icarus_engine/paper_workspaces.py",
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_workspace_api.py",
+    "tests_engine/test_workspace_dashboard_browser.py",
+    "tests_engine/test_paper_workspaces.py"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace_api.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/paper_workspaces.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/dashboard.html"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_api.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_dashboard_browser.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_paper_workspaces.py"}
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "branch:icarus1/restart-readiness-20261020",
+    "constraint:live-execution-remains-disabled",
+    "constraint:preserve-saved-workspace-settings-and-journals"
+  ],
+  "evidence": [
+    "dashboard:poll-interval-default=3000ms",
+    "dashboard:core-status-newer-request-sequence-discards-late-response",
+    "workspace-api:selected-status-calls-manager.snapshot-all-profiles",
+    "coordination:collisions-none-for-reserved-paths"
+  ],
+  "next_action": "Add failing regression coverage for slow/overlapping status reads, then make the smallest backend and dashboard changes and verify the focused plus broader workspace suites.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
