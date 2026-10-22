@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-connections-layout-support-001-claim",
+  "session_id": "icarus1-20261022-connections-layout-support",
+  "at_utc": "2026-10-22T19:45:09.800887Z",
+  "type": "CLAIM",
+  "phase": "reproduce-and-fix-connections-mobile-overflow",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/connections-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_connections_layout_browser.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Temporary root support, not Icarus2. Reproduce real Chromium390px Connections horizontal overflow after eight fake local paper metadata configurations, then repair only layout without account or broker behavior changes. No source mutation until root reciprocal060 confirmation. Knowledge delta: /workspace/scratch/connections-layout-support.md for root canonical recovery docs and final validation. No git add/commit/push/coordination compile; no provider calls, credentials or live trading.",
+  "evidence": [
+    "root:assigned-connections-layout-support",
+    "source:Connections markup confirmed in allowed JS/template"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Wait root reciprocal060 confirmation; then create real failing Chromium test and minimal layout fix using isolated existing HTTP fixture on ephemeral port."
+}

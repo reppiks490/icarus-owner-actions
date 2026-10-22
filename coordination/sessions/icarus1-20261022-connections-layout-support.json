@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "icarus1-20261022-connections-layout-support",
+  "actor": "Icarus1 Connections layout supporting worker",
+  "model_family": "openai",
+  "goal": "Repair isolated Connections mobile horizontal overflow after eight fake prop-firm configurations; temporary Icarus1 support, not Icarus2",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "icarus1/restart-readiness-20261020",
+  "started_at_utc": "2026-10-22T19:45:09.800887Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "cloud-shell",
+    "real-chromium"
+  ],
+  "initial_dependencies": [
+    "session:icarus1-20261020-system-recovery",
+    "policy:live-execution-disabled"
+  ]
+}

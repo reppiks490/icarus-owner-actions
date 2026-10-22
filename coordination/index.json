@@ -1123,7 +1123,9 @@
       "cooperates_with": [
         "icarus2-20261020-federation-integration",
         "icarus1-20261022-ui-stability-support",
-        "icarus1-20261022-research-panels-support"
+        "icarus1-20261022-research-panels-support",
+        "icarus1-20261022-access-support",
+        "icarus1-20261022-connections-layout-support"
       ],
       "coordination_mode": "cooperate",
       "declared_paths": [
@@ -1146,7 +1148,13 @@
         "tests_engine/test_workspace_research_panels.py",
         "tests_engine/test_runtime_layout_browser.py",
         ".github/workflows/ui-visual-contract.yml",
-        ".github/workflows/test.yml"
+        ".github/workflows/test.yml",
+        "icarus_engine/workspace-client.js",
+        "icarus_engine/workspace_context.py",
+        "tests_engine/test_workspace_access.py",
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "tests_engine/test_connections_layout_browser.py"
       ],
       "declared_targets": [
         {
@@ -1228,6 +1236,30 @@
         {
           "path": ".github/workflows/test.yml",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_access.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_connections_layout_browser.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1235,11 +1267,11 @@
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T19:39:15.836261Z",
-      "latest_summary": "Owner reports another weekly reset and explicitly requests diligent continuation across every task. Root keeps immediate expiry/fetch repair as priority: Chromium reproduces slow-reply supersession; first six scoped browser/API checks pass after guarded periodic polling and selected-only status read.245accounting/API regressions pass. Supporting workers accelerate nonoverlapping approved work without replacing primary Icarus2: ui-stability-support owns readout/experience layout files; research-panels-support owns selected subsystem registry+new tests for PARALLAX/DREAMSTATE/PANTHEON/SIBYL/APEX; remaining-panel-audit-support is read-only. Reciprocal explicit cooperation names below. Root alone stages/commits/pushes shared runtime and central-bus checkout; helpers append only their unique records. Preserve Icarus2 Brain/browser_depth reservation; root alone may integrate its existing exact peer test under root/I2 mutual cooperation.",
+      "last_event_at_utc": "2026-10-22T19:45:43.739235Z",
+      "latest_summary": "Preserve newly discovered same-session continuity handoff175153: remote recovery source advancedfd89142->393128f with selected-status fix, client-coalescing rollback and automatic pollStatus guard. Root saved its duplicate native working patch and fast-forwarded exactly; no peer commits overwritten. Current stronger real Chromium regression still fails393128f when automatic poll interrupts an explicit unresolved refresh; root adds only all-in-flight skip at automatic boundary, preserves manual newer-request-wins,10s deadline and freshness gates. Adopted boundary tests7pass, earlier scoped245pass remains distinct. Continue prior4panel docs plus research/UI support. New Access support owns explicit shared security transport/context only; new Connections layout support repairs independently observed mobile overflow. All are temporary support to Icarus1, not Icarus2. Parent alone stages/pushes central bus and runtime. Knowledge delta remains canonical recovery docs, per-panel restart guide and runtime connection runbook.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "runtime-expiry-repair-and-parallel-panel-support",
+      "phase": "published-expiry-reconciliation-and-shared-access-connections",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
@@ -1262,7 +1294,13 @@
         "tests_engine/test_workspace_research_panels.py",
         "tests_engine/test_runtime_layout_browser.py",
         ".github/workflows/ui-visual-contract.yml",
-        ".github/workflows/test.yml"
+        ".github/workflows/test.yml",
+        "icarus_engine/workspace-client.js",
+        "icarus_engine/workspace_context.py",
+        "tests_engine/test_workspace_access.py",
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "tests_engine/test_connections_layout_browser.py"
       ],
       "reserved_targets": [
         {
@@ -1344,9 +1382,155 @@
         {
           "path": ".github/workflows/test.yml",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_access.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_connections_layout_browser.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "icarus1-20261020-system-recovery",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "Icarus1 Access transport support / Codex",
+      "branch": "icarus1/restart-readiness-20261020",
+      "cooperates_with": [
+        "icarus1-20261020-system-recovery"
+      ],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "icarus_engine/workspace-client.js",
+        "icarus_engine/workspace_context.py",
+        "tests_engine/test_workspace_access.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_access.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "session:icarus1-20261020-system-recovery"
+      ],
+      "goal": "Finish explicitly shared Access transport with exact owner-controlled writes while preserving selected runtime boundaries. Temporary support to Icarus1, not Icarus2.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-22T19:46:21.326365Z",
+      "latest_summary": "Root060 reciprocal cooperation verified before source edits. Own only shared Access transport and new Node/context/HTTP regressions: actual existing registry, exact GET and two POST allowlists, captured page context and query rejection, unchanged owner authentication. Root owns server raw-target forwarding and visible shared label. No new registry, credentials, provider calls, live trading, agents or git mutations. Audit knowledge delta is /workspace/scratch/remaining-panel-audit-support.md; implementation handoff will be /workspace/scratch/access-support.md.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "shared-access-transport-regressions",
+      "pr": 462,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/workspace-client.js",
+        "icarus_engine/workspace_context.py",
+        "tests_engine/test_workspace_access.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace_context.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_workspace_access.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "icarus1-20261022-access-support",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "Icarus1 Connections layout supporting worker",
+      "branch": "icarus1/restart-readiness-20261020",
+      "cooperates_with": [
+        "icarus1-20261020-system-recovery"
+      ],
+      "coordination_mode": "cooperate",
+      "declared_paths": [
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "tests_engine/test_connections_layout_browser.py"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_connections_layout_browser.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "session:icarus1-20261020-system-recovery"
+      ],
+      "goal": "Repair isolated Connections mobile horizontal overflow after eight fake prop-firm configurations; temporary Icarus1 support, not Icarus2",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-22T19:45:09.800887Z",
+      "latest_summary": "Temporary root support, not Icarus2. Reproduce real Chromium390px Connections horizontal overflow after eight fake local paper metadata configurations, then repair only layout without account or broker behavior changes. No source mutation until root reciprocal060 confirmation. Knowledge delta: /workspace/scratch/connections-layout-support.md for root canonical recovery docs and final validation. No git add/commit/push/coordination compile; no provider calls, credentials or live trading.",
+      "latest_type": "CLAIM",
+      "model_family": "openai",
+      "phase": "reproduce-and-fix-connections-mobile-overflow",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/connections-ui.js",
+        "icarus_engine/workspace-dashboard.html",
+        "tests_engine/test_connections_layout_browser.py"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/connections-ui.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-dashboard.html",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_connections_layout_browser.py",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "icarus1-20261022-connections-layout-support",
       "stale": false,
       "status": "active"
     },
@@ -1501,34 +1685,42 @@
       ],
       "coordination_mode": "cooperate",
       "declared_paths": [
-        "tests_engine/browser_depth.cjs"
+        "scripts/start-as-is.sh",
+        "tests_engine/test_as_is_launcher.py"
       ],
       "declared_targets": [
         {
-          "path": "tests_engine/browser_depth.cjs",
+          "path": "scripts/start-as-is.sh",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_as_is_launcher.py",
           "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "session:icarus1-20261020-system-recovery",
-        "github-ci:PR466",
-        "external:owner-PC-source-adoption-and-relaunch"
+        "session:icarus1-20261020-system-recovery"
       ],
       "goal": "Owner-authorized recurring cross-repository integration, repair and validation in tandem with Icarus 1; distinct specialist swarms, evidence-bound work, durable GitHub handoffs. Prior stopped tasks remain stopped.",
       "home_repo": "reppiks490/icarus-owner-actions",
-      "last_event_at_utc": "2026-10-22T04:05:35Z",
-      "latest_summary": "Reviewed PR465 implementation: readout/topology effect restarts batch changed nodes and use one shared layout flush; PR465 exact-head Linux, Windows, and browser checks pass. Owner restart source is Icarus1 PR462 branch icarus1/restart-readiness-20261020 at 38d5328, so PR465 on main alone would not repair the running checkout. Cherry-picked the scoped fix onto that exact branch as PR466 (head 1c818c27), without changing PR462 or owner state. Focused real Chromium contract and full browser_depth pass on stacked source; syntax and diff checks pass. PR466 exact-head hosted checks are pending and independent Icarus1 review is requested. Owner PC remains outside cloud control; no restart completion claimed.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-22T19:45:19.020Z",
+      "latest_summary": "Resume stable Icarus2 identity after owner reset. Prime event059 owns runtime expiry, UI stability, and research panels. Separate owner screenshot shows /healthz HTTP200 with assets=[] and warm=false. On restart head393128f9 the launcher checks only --assets flag presence; empty/whitespace/comma-only values reach engine CLI, whose split loop creates no runners. Add a failing process-boundary regression, then reject an empty explicit asset universe before --setup installs or process startup. No edits to Prime's dashboard/server/recovery/automation/stop paths; no live orders or PC execution.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "stacked-restart-branch-fix-open-ci-pending",
+      "phase": "reject-empty-main-assets-before-launch",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "tests_engine/browser_depth.cjs"
+        "scripts/start-as-is.sh",
+        "tests_engine/test_as_is_launcher.py"
       ],
       "reserved_targets": [
         {
-          "path": "tests_engine/browser_depth.cjs",
+          "path": "scripts/start-as-is.sh",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_as_is_launcher.py",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1539,12 +1731,12 @@
   ],
   "collisions": [],
   "counts": {
-    "active": 21,
+    "active": 23,
     "collisions": 0,
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T19:39:41.701992Z",
+  "generated_at_utc": "2026-10-22T19:48:55.295941Z",
   "owner_status": {
     "claude": {
       "active": false,

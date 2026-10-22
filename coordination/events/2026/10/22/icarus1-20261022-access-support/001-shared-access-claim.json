@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-access-support-001",
+  "session_id": "icarus1-20261022-access-support",
+  "at_utc": "2026-10-22T19:46:21.326365Z",
+  "type": "CLAIM",
+  "phase": "shared-access-transport-regressions",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_access.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Root060 reciprocal cooperation verified before source edits. Own only shared Access transport and new Node/context/HTTP regressions: actual existing registry, exact GET and two POST allowlists, captured page context and query rejection, unchanged owner authentication. Root owns server raw-target forwarding and visible shared label. No new registry, credentials, provider calls, live trading, agents or git mutations. Audit knowledge delta is /workspace/scratch/remaining-panel-audit-support.md; implementation handoff will be /workspace/scratch/access-support.md.",
+  "evidence": [
+    "parent-task:/root/remaining_panel_audit",
+    "coordination:root060",
+    "source:393128f96228db20037b024db20e8e32529a2eee"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Add failing Node and actual HTTP regressions, implement exact shared Access paths, run full client/context/access contracts; root alone integrates source and canonical docs."
+}
