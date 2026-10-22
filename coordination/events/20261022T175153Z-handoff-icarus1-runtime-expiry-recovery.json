@@ -1,0 +1,44 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022T175153Z-handoff-icarus1-runtime-expiry-recovery",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T17:51:53Z",
+  "type": "HANDOFF",
+  "phase": "runtime-expiry-recovery-verified",
+  "summary": "Runtime-expiry repair is implemented and focused verification is complete. Selected workspace status no longer computes all four runtime snapshots, and only the automatic 3-second dashboard poll is serialized. Manual refresh retains newer-request-wins semantics. Live execution remains disabled and no saved workspace settings or journals were reset or rewritten by this repair.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "icarus_engine/workspace_api.py",
+    "icarus_engine/workspace-client.js",
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_runtime_expiry_regression.py",
+    "tests_engine/test_workspace_dashboard_browser.py"
+  ],
+  "targets": [
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/workspace_api.py"},
+    {"repo":"reppiks490/Icarus","path":"icarus_engine/dashboard.html"}
+  ],
+  "dependencies": [
+    "branch:icarus1/restart-readiness-20261020",
+    "head:393128f96228db20037b024db20e8e32529a2eee",
+    "pr:reppiks490/Icarus#467",
+    "constraint:live-execution-remains-disabled",
+    "constraint:preserve-saved-workspace-settings-and-journals"
+  ],
+  "evidence": [
+    "commit:b11aa487875f44499a379a73aa9f099a7e2e7262 selected-status isolates one workspace snapshot",
+    "commit:66f13fcd9c710928656bb831eef4d3b915f32fc7 restores manual status refresh supersession",
+    "commit:10e48e6cea774ab1727ef722d5737d10fa7235c1 serializes only automatic status polling",
+    "commit:393128f96228db20037b024db20e8e32529a2eee removes one-time verification workflow",
+    "focused transport/API regression suite: PASS",
+    "Chromium manual-refresh ordering + automatic single-flight regression pair: PASS",
+    "five-workspace real Chromium route suite: PASS",
+    "four-portfolio performance workflow: PASS",
+    "historical-context gate at repaired head: PASS",
+    "unrelated ui-visual-contract failure: browser_depth.cjs 30-second WebGL/depth wait timeout after workspace browser tests passed",
+    "unrelated full-suite failure: connections-page mobile horizontal overflow after eight prop-firm configurations"
+  ],
+  "next_action": "Do not reintroduce client-wide core-status request coalescing. Keep the single-flight guard at the automatic polling boundary. Treat the depth/WebGL timeout and Connections mobile overflow as separate defects. Merge remains an owner decision.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
