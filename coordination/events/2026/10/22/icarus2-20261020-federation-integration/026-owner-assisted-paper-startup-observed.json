@@ -1,0 +1,69 @@
+{
+  "at_utc": "2026-10-22T02:58:03.405877Z",
+  "cooperates_with": [],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "026-owner-assisted-paper-startup-observed",
+  "evidence": [
+    "commit:reppiks490/Icarus@38d53283608d0134274a88b62db9a949280010c2",
+    "operator-screenshot:/healthz:HTTP200,oktrue,warmtrue",
+    "operator-screenshot:/:HTTP200"
+  ],
+  "execution_authorized": false,
+  "next_action": "Owner: open five local trading routes on PC, verify saved inputs/workspace identity/Performance, keep owning launcher open. Icarus2: preserve current narrow Brain claim and revalidate against Prime published head before code work. Full-system NO_GO remains distinct from successful paper startup.",
+  "observations": {
+    "backup_copy": "completed before first git fetch; exact backup suffix not captured",
+    "command_execution_clock": "not captured; at_utc is receipt publication clock",
+    "companion_services": "Phone-access proxy on8790 and Divine Providence MCP processes left running",
+    "dashboard_http": 200,
+    "evidence_channel": "Owner-supplied terminal screenshots in this conversation",
+    "existing_state_folder": "%USERPROFILE%/Icarus",
+    "health_http": 200,
+    "health_main_assets": [
+      "NQ",
+      "ES",
+      "YM",
+      "GC",
+      "SI",
+      "BTC"
+    ],
+    "health_main_warm": true,
+    "health_ok": true,
+    "installed_source_commit": "38d53283608d0134274a88b62db9a949280010c2",
+    "main_journal_file_present": true,
+    "prior_problem": "First GitHub443 connection failed, later fetch succeeded. Initial /healthz probes timed out and logged WinError10053; later probes succeeded. No root-cause claim beyond those observations.",
+    "source_folder": "%USERPROFILE%/Icarus-as-is",
+    "startup_profile_files_present": 4
+  },
+  "phase": "operator-assisted-paper-startup-observed",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "scope_limits": [
+    "Health warm applies to main runner set, not every CC or adapter.",
+    "Saved CC input values, actual persisted PnL, current feed quality and all panels still require operator inspection.",
+    "No PC reboot, live broker arming, account execution, model promotion or full-system completion certified.",
+    "Existing Brain-sync repair claim remains separate; no old code patch installed by this receipt."
+  ],
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner PC paper startup now observed through owner-supplied screenshots. Operator prepared separate Icarus-as-is checkout38d53283, retained existing state root/private backup, launched start-as-is with explicit Yahoo feed and NQ,ES,YM,GC,SI,BTC. Startup reports4/4saved profiles and main journal present. Initial health timeout/connection-aborted traces preserved. Fresh longer loopback probes returned healthHTTP200 with oktrue,warmtrue and sixmainassets; dashboardHTTP200. This is owner-executed evidence, not Icarus2 remote PC access or full-system readiness.",
+  "targets": [
+    {
+      "path": "icarus_engine/brain_sync.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "tests_engine/test_brain_sync.py",
+      "repo": "reppiks490/Icarus"
+    },
+    {
+      "path": "coordination/handoffs/icarus2-restart-verification-20261021.md",
+      "repo": "reppiks490/icarus-owner-actions"
+    }
+  ],
+  "type": "UPDATE"
+}
