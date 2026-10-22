@@ -1,0 +1,150 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus1-052-panel-windows-regression-claim",
+  "session_id": "icarus1-20261020-system-recovery",
+  "at_utc": "2026-10-22T07:16:27.900005Z",
+  "type": "UPDATE",
+  "phase": "first-four-panels-windows-coverage",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/access-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/research-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/parallax-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/possibility-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/pantheon-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/sibyl-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/apex-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/ascendancy-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/chronofold-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/commissioning-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/engine-control-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/autopilot-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_ui.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-21-workspace-panel-completion.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    }
+  ],
+  "summary": "Add the new 37-case selected-panel module to the existing Windows runtime selection while finishing batch1 documentation. Narrow additional workflow reservation only; production source is frozen at2c1b627 and the full runtime run is in progress. Final routing validation passed92 and expanded lifecycle/panel suite passed37. Preserve Icarus2 distinct Brain/layout candidates and all no-live constraints.",
+  "evidence": [
+    "owner:2026-10-21:complete-step3-all-panels-and-document-each-gitbash-restart",
+    "pr:reppiks490/Icarus#462@38d53283608d0134274a88b62db9a949280010c2",
+    "prior:all-eight-exact-head-workflows-success",
+    "owner:2026-10-22:finish-current-task-then-document",
+    "local:workspace-panels-first-final:35passed90deselected41.40s",
+    "github-run:39720172498:success",
+    "github-run:39720172573:failure:browser_depth.cjs217",
+    "commit:reppiks490/Icarus@2c1b6270eda685f5de2733ff4dbb9478ec98bd05",
+    "local:workspace-panels-routing-green:92passed17.81s",
+    "local:workspace-panels-lifecycle:37passed19.77s"
+  ],
+  "dependencies": [
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "next_action": "Add exactly tests_engine/test_workspace_panels.py to Windows selection, parse YAML and confirm all selected paths exist; publish code/docs plus fresh full-suite receipt and inspect exact new-head hosted checks.",
+  "coordination_mode": "independent",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
