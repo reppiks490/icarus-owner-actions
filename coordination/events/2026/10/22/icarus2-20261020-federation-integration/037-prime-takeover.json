@@ -1,0 +1,174 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-037-prime-takeover",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T20:57:45.756Z",
+  "type": "CLAIM",
+  "phase": "owner-directed-prime-takeover-finish-observable-as-is-restart",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/experience-ui.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_research_engines.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_intelligence_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_golive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_runtime_layout_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_connections_layout_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_access.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_research_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_intelligence_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_golive.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_learning_history_roots.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain_sync.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_sync.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/live-engine-federation-gate.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/ui-visual-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus1-20261022-access-support",
+    "icarus1-20261022-connections-layout-support",
+    "icarus1-20261022-golive-support",
+    "icarus1-20261022-research-panels-support",
+    "icarus1-20261022-ui-stability-support"
+  ],
+  "summary": "Owner appoints this chat current Icarus Prime while original Prime is stopped. Continue stable existing session; historical worker identity/control stays unchanged. Canonical owner takeover directive supersedes only named stopped recovery/helper reservations; no invented mutual cooperation. Recover published393128f plus reviewed PR468/469, reconstruct missing restart-critical runtime race, scoped Access/research readers and layout from source handoffs with fresh tests. Finish one combined observable paper restart and standby; no federation loop, new independent projects, live trading, auto-main merge, deployment or scheduler edits.",
+  "evidence": [
+    "directive:coordination/directives/2026-10-22-owner-prime-takeover.json@14d0a8416cbc4933922e93a31023ac4b77f1dac1",
+    "source:393128f96228db20037b024db20e8e32529a2eee",
+    "pr:reppiks490/Icarus#468@bfe90692497cf8404ab5e944ca1a18b4559194c2:all-ci-success",
+    "pr:reppiks490/Icarus#469@2ecb729a6e99d817f3c1c553a2950a793fbde0dd:all-required-ci-success",
+    "limitation:original-Prime-dirty-files-not-in-current-workspace",
+    "limitation:no-owner-PC-terminal"
+  ],
+  "dependencies": [],
+  "next_action": "Dedicated takeover branch from393128f; isolate support scopes; root handles refresh/snapshot integration, reviewed cherry-picks and operator delivery. Fresh focused regressions, real Chromium, one combined full suite and contained paper launch/restart; publish exact tested SHA and remaining external PC observation.",
+  "execution_authorized": false
+}
