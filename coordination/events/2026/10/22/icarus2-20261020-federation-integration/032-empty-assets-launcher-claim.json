@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261022-icarus2-032-empty-assets-launcher-claim",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-22T19:45:19.020Z",
+  "type": "CLAIM",
+  "phase": "reject-empty-main-assets-before-launch",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    }
+  ],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "summary": "Resume stable Icarus2 identity after owner reset. Prime event059 owns runtime expiry, UI stability, and research panels. Separate owner screenshot shows /healthz HTTP200 with assets=[] and warm=false. On restart head393128f9 the launcher checks only --assets flag presence; empty/whitespace/comma-only values reach engine CLI, whose split loop creates no runners. Add a failing process-boundary regression, then reject an empty explicit asset universe before --setup installs or process startup. No edits to Prime's dashboard/server/recovery/automation/stop paths; no live orders or PC execution.",
+  "evidence": [
+    "owner-screenshot:healthz:HTTP200:assets-empty:warm-false",
+    "source:reppiks490/Icarus@393128f96228db20037b024db20e8e32529a2eee:scripts/start-as-is.sh",
+    "source:icarus_engine/cli.py:_portfolio:blank-assets-split-yields-no-runners",
+    "peer:icarus1-20261020-system-recovery:event059"
+  ],
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "next_action": "Icarus2 tests and repairs the launcher on a dedicated branch based on Prime393128f9, publishes a stacked PR and exact evidence. Prime may continue its existing disjoint runtime/UI work; do not duplicate the launcher patch.",
+  "execution_authorized": false
+}
