@@ -1123,31 +1123,54 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
+        "icarus_engine/workspace_api.py",
+        "icarus_engine/workspace-client.js",
         "tests_engine/test_runtime_expiry_regression.py"
       ],
       "declared_targets": [
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
         {
           "path": "tests_engine/test_runtime_expiry_regression.py",
           "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
-        "session:icarus1-20261020-system-recovery",
-        "constraint:live-execution-remains-disabled"
+        "branch:icarus1/restart-readiness-20261020",
+        "head:48dd3be4052d2ba1db68a2330aa935ec2e7bce19",
+        "verification-pr:467",
+        "constraint:live-execution-remains-disabled",
+        "constraint:preserve-saved-workspace-settings-and-journals"
       ],
       "goal": "Owner-directed comprehensive federation audit and meaningful, evidence-gated system recovery; prepare a two-primary-worker handoff for Icarus 2.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-22T17:02:05Z",
-      "latest_summary": "Reserve one focused regression file for the resumed runtime-expiry repair. It will prove periodic status polling is single-flight and selected workspace status does not snapshot sibling workspaces.",
+      "last_event_at_utc": "2026-10-22T17:22:49Z",
+      "latest_summary": "Runtime-expiry repair is implemented on icarus1/restart-readiness-20261020 at 48dd3be4052d2ba1db68a2330aa935ec2e7bce19. Selected status now snapshots only the selected workspace, and dashboard core-status reads join one in-flight transport request instead of replacing slow successful reads every three seconds. Two independent exact-head Linux full-suite runs have passed, including the new single-flight/selected-snapshot regression. Windows restart-persistence passed twice; the broader Windows suite remains in progress. No merge to main has been performed.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "runtime-expiry-regression",
+      "phase": "runtime-expiry-verification",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
+        "icarus_engine/workspace_api.py",
+        "icarus_engine/workspace-client.js",
         "tests_engine/test_runtime_expiry_regression.py"
       ],
       "reserved_targets": [
+        {
+          "path": "icarus_engine/workspace_api.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "icarus_engine/workspace-client.js",
+          "repo": "reppiks490/Icarus"
+        },
         {
           "path": "tests_engine/test_runtime_expiry_regression.py",
           "repo": "reppiks490/Icarus"
@@ -1208,7 +1231,7 @@
     "stale": 17,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-22T17:01:28.213933Z",
+  "generated_at_utc": "2026-10-22T17:23:14.847555Z",
   "owner_status": {
     "claude": {
       "active": false,
