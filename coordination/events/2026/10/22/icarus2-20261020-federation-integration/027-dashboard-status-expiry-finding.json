@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-22T03:31:42.726188Z",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "coordination_mode": "independent",
+  "dependencies": [
+    "session:icarus1-20261020-system-recovery"
+  ],
+  "event_id": "20261022-icarus2-dashboard-status-expiry-finding",
+  "evidence": [
+    "owner-screenshot:repeated-selected-runtime-observation-expired",
+    "owner-pc-curl:/status/public:HTTP200:2.109737s",
+    "owner-browser-console:world-immersion.js:553:repeated-forced-reflow-warnings",
+    "source:reppiks490/Icarus@38d53283608d0134274a88b62db9a949280010c2:icarus_engine/dashboard.html:1326,1485",
+    "icarus1-event:coordination/events/2026/10/21/icarus1-20261020-system-recovery/050-workspace-panel-completion-claim.json"
+  ],
+  "next_action": "Icarus1: coordinate an owner-reproduction review of core-status polling and world-immersion main-thread work; share exact fix ownership with Icarus2 before overlapping edits. Icarus2: after cooperation or release, reproduce the browser-side status sequence and submit a minimal reviewed repair. Owner: keep current paper process running while the dashboard is diagnosed.",
+  "phase": "owner-dashboard-repeated-runtime-observation-expiry",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "schema_version": "icarus-coordination-event-v2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "summary": "Owner reports repeated blank dashboard with \u201cSelected runtime observation expired.\u201d Published source 38d53283608d0134274a88b62db9a949280010c2 expires the rendered core view once lastStatusAt is older than 10 seconds (dashboard.html:1326), while polling every 3 seconds (1485). Owner ran the authenticated /status/public route and observed HTTP 200 in 2.109737 seconds; this confirms one successful request, not sustained browser polling. Browser screenshots show repeated Chromium forced-reflow warnings, including world-immersion.js:553, with samples around 200\u2013350 ms. Main-thread/layout pressure is a plausible contributor but is not proven as root cause. Icarus1 source event 050 currently claims dashboard.html, workspace-client.js, server.py and related UI/tests for panel completion. Icarus2 makes no overlapping code change pending explicit coordination; request Icarus1 inspect the periodic status polling and world-immersion render cost against this owner reproduction.",
+  "targets": [],
+  "type": "UPDATE"
+}
