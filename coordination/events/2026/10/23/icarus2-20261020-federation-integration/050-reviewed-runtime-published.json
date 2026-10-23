@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-050-reviewed-runtime-published",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T19:09:58Z",
+  "type": "WAITING",
+  "phase": "hosted-checks-and-owner-PC-readback",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [],
+  "execution_authorized": false,
+  "summary": "Reviewed runtime published by fast-forward into existing PR471 branch, with exact ref/commit/tree readback verified. No main runtime merge. Wait for the 10 automatically triggered exact-head hosted runs and owner-PC sanitized status output while replacing the current restart documentation and archiving its prior bytes.",
+  "evidence": [
+    {
+      "runtime_commit": "0560627e7522e85eb97a5f906800e376508a4cd6",
+      "tree": "73690475a40ce2b5a308f544fe2a34328266f824",
+      "parent": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0",
+      "local_equivalent_commit": "8a2e9b5438c2bbfbc82a14feb97f5ce10b48e4dd"
+    },
+    {
+      "tests": "4066 passed, 89 skipped, 111 subtests; fresh full exit0 after preserving and repairing2 legacy fixture failures"
+    },
+    {
+      "browser": "16 power-control Chromium cases; broader UI suite71 passed1 skipped; skipped performance assertions separately exit0 with systemChromium"
+    },
+    {
+      "launcher": "Synthetic NQ same-root process restart and separate35-symbol launch corePASS, settings preserved, savedOFF restored; strict NOT_FULLY_READY with blocked external research attempts11 per NQlaunch/13 for35symbols"
+    },
+    {
+      "review": "Native independent final review CLEAR, including9-line legacy fixture delta; frozen source hashes unchanged"
+    }
+  ],
+  "dependencies": [
+    "external:owner-PC-current-last_error-readback",
+    "ci:exact-head0560627e"
+  ],
+  "next_action": "Verify hosted outcomes without reruns or main code merge; publish pinned35-asset restart guide and byte-preserved archive, then continue with owner-PC command output."
+}
