@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-043-three-profile-toggle",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T07:58:40Z",
+  "type": "CLAIM",
+  "phase": "canonical-three-profile-navigation-toggle",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard-switcher.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Canonical existing owner-approved four-workspace delivery spec identifies the original three customized trading profiles as cc1/cc2/cc4 and requires preserving cc3. Owner now explicitly requests a toggle; use native accessible three-choice navigation select on current dashboard headers, URL-backed selection, no config/journal mutations, no new polling/provider requests, preserve main/cc3/existing links. Mapping communicated for correction while independent installer work completed; no owner correction received. This is implementation of existing approved route/configuration design plus new owner toggle instruction, not a new engine or layout system. Root implements directly to minimize context/cost; scoped independent review after real browser red/green.",
+  "evidence": [
+    "source:docs/superpowers/specs/2026-10-18-four-workspace-delivery.md:three customized cc1 cc2 cc4 and four-profile preservation",
+    "source:icarus_engine/paper_workspaces.py:_PROFILE_DEFAULTS",
+    "tests:/workspace/scratch/prime-install-expanded-full.log:4010passed73skipped111subtests383.19s"
+  ],
+  "dependencies": [],
+  "next_action": "Fail browser regression for missing toggle; add narrow native navigation control and static route; verify all three selected identities/back navigation/no writes/mobile fit; revalidate combined build."
+}
