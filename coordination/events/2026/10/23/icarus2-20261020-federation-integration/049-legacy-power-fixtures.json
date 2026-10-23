@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-049-legacy-power-fixtures",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T18:57:10Z",
+  "type": "UPDATE",
+  "phase": "full-suite-regression-reconciliation",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Fresh broad suite exposed2legacybrowserfixture failures: oldOFFchartwording assertion and syntheticONaccountingfixture omitting newauthoritativepowerONmetadata. Narrowtestrepair keepsrealOFFpollsuppression and explicitlyalignssyntheticpowerstate withsyntheticruntimevaluation; noauthority/freshnesschecksremoved. Sourceunchangedforruntime. Currentrestartcandidate remainsunpublished pending fullchecks. Continueexisting047/048 scopes.",
+  "evidence": [
+    "legacyfocusedRED:2failed27deselected",
+    "realpowerChromium:16passed",
+    "combinedbrowser:71passed1skipped",
+    "boundedactualBashlauncher+same-rootrestart corePASS settingspreserved cc4savedOFF; strictNOT_FULLY_READY due11externalresearchattemptsdeniedperlaunch"
+  ],
+  "dependencies": [
+    "external:owner-PC-current-last_error-readback"
+  ],
+  "next_action": "Repairlegacyfixtures, focusedGREEN, finalbroadsuite, reviewedPR471publication; noauto-maincode merge.",
+  "clock_corrections": [
+    {
+      "event": "048-power-regression-contract",
+      "declared_at_utc": "2026-10-23T15:00:00Z",
+      "github_commit_at_utc": "2026-10-23T14:55:22Z",
+      "limitation": "Declared eventclock was estimated and future relative tocreation; useGitHubcommitclock forordering. Immutableeventpreserved."
+    }
+  ],
+  "resumption": "Work resumed at18:51UTC aftersteering; elapsedgapnotcontinuous execution."
+}
