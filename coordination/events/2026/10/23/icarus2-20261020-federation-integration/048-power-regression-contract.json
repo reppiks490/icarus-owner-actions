@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-048-power-regression-contract",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T15:00:00Z",
+  "type": "UPDATE",
+  "phase": "power-regression-contract",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-23/INDEX.md"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Extend047 for existing shutdown cleanup regression to inject lifecycle-controller close failure rather than the retired legacy manager.stop callback. Preserve all-services-finally/socketclose contract. Add byte-identical old-guide archive index entry when replacing currentrestart guide; allpriorclaimsremain. Independentreview continues beforepublication; noallrequirementscomplete claim.",
+  "evidence": [
+    "HTTP117passed4skipped beforelatestisolationrepairs",
+    "powerfrontend15Chromiumcasespass",
+    "panelisolation2failingregressionscaptured"
+  ],
+  "dependencies": [
+    "external:owner-PC-current-last_error-readback"
+  ],
+  "next_action": "Finalintegrationtestsandindependentreview beforeexistingPR471update."
+}
