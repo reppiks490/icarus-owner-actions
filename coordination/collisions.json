@@ -1,26 +1,5 @@
 {
-  "collisions": [
-    {
-      "path_pairs": [
-        [
-          "icarus_engine/workspace-dashboard.html",
-          "icarus_engine/workspace-dashboard.html"
-        ]
-      ],
-      "repo": "reppiks490/Icarus",
-      "sessions": [
-        "icarus1-20261022-connections-layout-support",
-        "icarus2-20261020-federation-integration"
-      ],
-      "severity": "collision",
-      "target_pairs": [
-        [
-          "icarus_engine/workspace-dashboard.html",
-          "icarus_engine/workspace-dashboard.html"
-        ]
-      ]
-    }
-  ],
-  "generated_at_utc": "2026-10-23T11:27:37.885723Z",
+  "collisions": [],
+  "generated_at_utc": "2026-10-23T15:52:14.262865Z",
   "schema_version": "icarus-coordination-collisions-v2"
 }
