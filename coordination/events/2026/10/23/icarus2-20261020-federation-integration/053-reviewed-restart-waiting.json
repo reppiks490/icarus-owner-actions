@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-053-reviewed-restart-waiting",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T20:11:44Z",
+  "type": "WAITING",
+  "phase": "reviewed-as-is-restart-delivery",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "Reviewed restart published at 7aa3900282213c4e690436098702300a0447cb8d. Final full suite: 4,083 passed, 89 skipped, 111 subtests passed; 16 real Chromium controls and four additional browser cases passed. Exact-head Linux and visual jobs passed; Windows persistence passed, with full suites still executing at the receipt observation. Owner PC remains unobserved. Release substantive write targets to a bounded waiting state.",
+  "evidence": [
+    "PR #471, tree d6020c33e6a7c7d72946a2faaae52ca8189bae40",
+    "Documentation-only main commit 5fa97822af3b1af31610772a58bd8f7f5635e41d; exact guide bytes verified",
+    "Handoff commit 7e12b3b8ec8d22bb734619a43184b994a45b650a, blob a0ed9369dc558ceee533099a30425265a73c4a12"
+  ],
+  "handoff": "coordination/handoffs/prime-installer-expanded-restart-20261023.json",
+  "dependencies": [
+    "ci:final-head-windows-suite",
+    "external:owner-PC-setup-startup-status-rendered-views"
+  ],
+  "next_action": "Read final Windows conclusions without reruns; continue with sanitized PC launch output. Do not resume recurring loops or paused specialists. No automatic main runtime merge, new spend, deployment, release or scheduler management."
+}
