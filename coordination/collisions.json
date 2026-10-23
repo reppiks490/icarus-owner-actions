@@ -3,40 +3,8 @@
     {
       "path_pairs": [
         [
-          "icarus_engine/learning_fabric.py",
-          "icarus_engine/learning_fabric.py"
-        ],
-        [
-          "tests_engine/test_learning_history_roots.py",
-          "tests_engine/test_learning_history_roots.py"
-        ]
-      ],
-      "repo": "reppiks490/Icarus",
-      "sessions": [
-        "icarus1-20261022-access-support",
-        "icarus2-20261020-federation-integration"
-      ],
-      "severity": "collision",
-      "target_pairs": [
-        [
-          "icarus_engine/learning_fabric.py",
-          "icarus_engine/learning_fabric.py"
-        ],
-        [
-          "tests_engine/test_learning_history_roots.py",
-          "tests_engine/test_learning_history_roots.py"
-        ]
-      ]
-    },
-    {
-      "path_pairs": [
-        [
           "icarus_engine/workspace-dashboard.html",
           "icarus_engine/workspace-dashboard.html"
-        ],
-        [
-          "tests_engine/test_connections_layout_browser.py",
-          "tests_engine/test_connections_layout_browser.py"
         ]
       ],
       "repo": "reppiks490/Icarus",
@@ -49,122 +17,10 @@
         [
           "icarus_engine/workspace-dashboard.html",
           "icarus_engine/workspace-dashboard.html"
-        ],
-        [
-          "tests_engine/test_connections_layout_browser.py",
-          "tests_engine/test_connections_layout_browser.py"
-        ]
-      ]
-    },
-    {
-      "path_pairs": [
-        [
-          "icarus_engine/workspace_golive.py",
-          "icarus_engine/workspace_golive.py"
-        ],
-        [
-          "tests_engine/test_workspace_golive.py",
-          "tests_engine/test_workspace_golive.py"
-        ]
-      ],
-      "repo": "reppiks490/Icarus",
-      "sessions": [
-        "icarus1-20261022-golive-support",
-        "icarus2-20261020-federation-integration"
-      ],
-      "severity": "collision",
-      "target_pairs": [
-        [
-          "icarus_engine/workspace_golive.py",
-          "icarus_engine/workspace_golive.py"
-        ],
-        [
-          "tests_engine/test_workspace_golive.py",
-          "tests_engine/test_workspace_golive.py"
-        ]
-      ]
-    },
-    {
-      "path_pairs": [
-        [
-          "icarus_engine/workspace_intelligence_panels.py",
-          "icarus_engine/workspace_intelligence_panels.py"
-        ],
-        [
-          "tests_engine/test_workspace_intelligence_panels.py",
-          "tests_engine/test_workspace_intelligence_panels.py"
-        ]
-      ],
-      "repo": "reppiks490/Icarus",
-      "sessions": [
-        "icarus1-20261022-research-panels-support",
-        "icarus2-20261020-federation-integration"
-      ],
-      "severity": "collision",
-      "target_pairs": [
-        [
-          "icarus_engine/workspace_intelligence_panels.py",
-          "icarus_engine/workspace_intelligence_panels.py"
-        ],
-        [
-          "tests_engine/test_workspace_intelligence_panels.py",
-          "tests_engine/test_workspace_intelligence_panels.py"
-        ]
-      ]
-    },
-    {
-      "path_pairs": [
-        [
-          "icarus_engine/experience-ui.css",
-          "icarus_engine/experience-ui.css"
-        ],
-        [
-          "icarus_engine/experience-ui.js",
-          "icarus_engine/experience-ui.js"
-        ],
-        [
-          "icarus_engine/world-immersion.js",
-          "icarus_engine/world-immersion.js"
-        ],
-        [
-          "tests_engine/test_runtime_layout_browser.py",
-          "tests_engine/test_runtime_layout_browser.py"
-        ],
-        [
-          "tests_engine/test_world_immersion.py",
-          "tests_engine/test_world_immersion.py"
-        ]
-      ],
-      "repo": "reppiks490/Icarus",
-      "sessions": [
-        "icarus1-20261022-ui-stability-support",
-        "icarus2-20261020-federation-integration"
-      ],
-      "severity": "collision",
-      "target_pairs": [
-        [
-          "icarus_engine/experience-ui.css",
-          "icarus_engine/experience-ui.css"
-        ],
-        [
-          "icarus_engine/experience-ui.js",
-          "icarus_engine/experience-ui.js"
-        ],
-        [
-          "icarus_engine/world-immersion.js",
-          "icarus_engine/world-immersion.js"
-        ],
-        [
-          "tests_engine/test_runtime_layout_browser.py",
-          "tests_engine/test_runtime_layout_browser.py"
-        ],
-        [
-          "tests_engine/test_world_immersion.py",
-          "tests_engine/test_world_immersion.py"
         ]
       ]
     }
   ],
-  "generated_at_utc": "2026-10-23T05:57:33.773463Z",
+  "generated_at_utc": "2026-10-23T11:27:37.885723Z",
   "schema_version": "icarus-coordination-collisions-v2"
 }
