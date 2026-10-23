@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-041-install-and-expanded-restart",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T07:44:24Z",
+  "type": "CLAIM",
+  "phase": "owner-reopened-installer-and-expanded-restart",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Owner explicitly resumes work and requests a toggle for three dashboards plus a broader restart asset selection. Dashboard identities requested asynchronously; no guess or UI implementation yet. Independently reproduce Python3.10 setuptools/distutils setup failure from owner screenshot and repair only with regression evidence; expose existing canonical35-asset dashboard universe as an explicit operator choice, preserving saved CC inputs and feed/execution boundaries. Dedicated reviewed branch, no automatic merge or provider collection.",
+  "evidence": [
+    "owner-screenshot:Windows Python3.10 _distutils_hack ensure_local_distutils assertion persists with --no-build-isolation",
+    "source:reppiks490/Icarus@402722b4b708fc0ea6e2b2ede62252e75ccdd4a0:icarus_engine/workspace_universe.py",
+    "directive:coordination/directives/2026-10-22-owner-prime-takeover.json"
+  ],
+  "dependencies": [
+    "owner:identify-three-dashboard-toggle"
+  ],
+  "next_action": "Reproduce installer on isolated Python3.10; regression-first repair; validate canonical explicit asset option while awaiting dashboard identification."
+}
