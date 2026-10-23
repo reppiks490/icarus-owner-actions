@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-047-power-isolation-review",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T14:53:00Z",
+  "type": "UPDATE",
+  "phase": "power-controls-independent-review",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.js"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Extend existing045/046 scope with regression coverage for per-workspace panel startup/shutdown isolation and suspended polling on legacy selected dashboards. Independent review found synchronous commissioning startup under global panel registry lock can couple siblings and server startup; repair keeps selected background initialization off HTTP/global locks. Existingjobs admission already holds selectedconfigurationlock through active registryacceptance. Add owner cancellation of STARTING via explicitOFF. No competingworker claim or ownerPChealthassertion.",
+  "evidence": [
+    "native delegation:backend/frontend/independentreview active",
+    "Chromium:14powercasespassed before newcancel-startregression",
+    "source:WorkspacePanels._bundle locksglobalduringRuntimePanels+initialtick",
+    "source:ScopedWorkspaceJobs.submit_* selectedlock spans_source to_accept"
+  ],
+  "dependencies": [
+    "external:owner-PC-current-last_error-readback"
+  ],
+  "next_action": "Finish isolation regressions, broadchecks, independentreview, thenupdateexistingPR471 and currentrestartguide."
+}
