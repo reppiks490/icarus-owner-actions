@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-040-restart-delivered-standby",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T06:15:38Z",
+  "type": "RELEASE",
+  "phase": "standby-waiting-owner-local-restart",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "execution_authorized": false,
+  "summary": "Owner-requested stopping point reached. Newest exact source402722b4 (test-only delta over reviewed71e808f3; runtime identical) passed all8hosted workflows including Windows/Linux/browser/visual. Local preceding-tree full4009passed73skips111subtests and realAPI/Chromium177passed. Core contained launcher start/restart/status/config/shutdown passed; strict containment NOT_FULLY_READY due denied existing background attempts, ownerPC unverified. Docs-only main3ed592bb now replaces obsolete operator entrypoints and byte-archives7notes. Canonical bus entrypoint updated; immutable handoff preserves all identities, failed first aggregate and limits. All current targets released. Current Prime standby until owner calls. Permanent worker identity, other schedulers and stop controls unchanged. Full-system NO_GO; no main runtime merge/deployment/spend/live authority.",
+  "evidence": [
+    "handoff:coordination/handoffs/prime-as-is-restart-20261023.json",
+    "pr:reppiks490/Icarus#471@402722b4b708fc0ea6e2b2ede62252e75ccdd4a0",
+    "docs-commit:reppiks490/Icarus@3ed592bb190db563efb42daf9856a5ab040de304",
+    "github-run:39901834113:success",
+    "github-run:39901834144:success",
+    "directive:coordination/directives/2026-10-22-owner-prime-takeover.json"
+  ],
+  "dependencies": [
+    "external:owner-local-update-launch-and-readback"
+  ],
+  "next_action": "Stand by. Do not resume broad loops, old Prime jobs or further integration without owner request."
+}

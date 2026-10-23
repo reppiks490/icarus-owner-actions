@@ -1,0 +1,419 @@
+{
+  "schema_version": "icarus-prime-as-is-restart-handoff-v1",
+  "created_at_utc": "2026-10-23T06:15:38Z",
+  "work_started_at_utc": "2026-10-22T20:55:39.509812Z",
+  "final_documentation_started_at_utc": "2026-10-23T06:07:48Z",
+  "engineering_completed_at_utc": "2026-10-23T06:15:38Z",
+  "clock_semantics": "Separate resumed work segments; not a claim of continuously resident execution across the intervening hours.",
+  "owner_request": "Finish original Prime current work only, deliver updated observable as-is paper restart, archive/replace obsolete restart notes, then standby.",
+  "worker_id": "icarus2",
+  "current_role": "Icarus Prime",
+  "session_id": "icarus2-20261020-federation-integration",
+  "original_prime_session": "icarus1-20261020-system-recovery",
+  "original_prime_source_cutoff": "2026-10-22T19:54:40.664328Z",
+  "takeover_directive_blob": "14d0a8416cbc4933922e93a31023ac4b77f1dac1",
+  "state": "STANDBY_WAITING_OWNER_LOCAL_RESTART",
+  "execution_authorized": false,
+  "source": {
+    "repository": "reppiks490/Icarus",
+    "branch": "prime/as-is-restart-20261022",
+    "pr": 471,
+    "commit": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0",
+    "tree": "7df29ad8829d123eb6ad52e4599fe464c8295db3",
+    "reviewed_previous_commit": "71e808f3e20d06a98718a550ee742d38100435a0",
+    "reviewed_previous_tree": "cdf3bee0e2e8efb8d5ff945595bac3ef4e3785f4",
+    "local_equivalent_commit": "8666a8770181e9527461243001688fc248154114",
+    "recovered_parent": "393128f96228db20037b024db20e8e32529a2eee",
+    "original_owner_pc_previous_observation": "38d53283608d0134274a88b62db9a949280010c2",
+    "drift_revalidation": {
+      "from": "71e808f3e20d06a98718a550ee742d38100435a0",
+      "to": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0",
+      "only_changed_path": "tests_engine/browser_depth.cjs",
+      "runtime_blobs_unchanged": true,
+      "test_review": "Reacquires visible panel geometry immediately before DOM-churn pointer event; waits one handler reconciliation frame rather than two; retains physical-pointer, active resonance, leaving-panel and layout assertions.",
+      "status": "EXPLICITLY_REVALIDATED",
+      "hosted_runs": [
+        {
+          "id": 39901834136,
+          "name": "engine-federation-consumer-contract",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834143,
+          "name": "configuration-job-contract",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834141,
+          "name": "live-engine-federation-gate",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834169,
+          "name": "intelligence-feed-contract",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834193,
+          "name": "Four portfolio performance",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834113,
+          "name": "tests",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901834144,
+          "name": "ui-visual-contract",
+          "conclusion": "success"
+        },
+        {
+          "id": 39901829735,
+          "name": "tests",
+          "conclusion": "success"
+        }
+      ],
+      "new_tree": "7df29ad8829d123eb6ad52e4599fe464c8295db3"
+    }
+  },
+  "canonical_manifest": {
+    "repository": "reppiks490/Icarus-engine",
+    "commit": "b96a5fdf09718cd5e078ddf6ee7ebbfcfe9506fe",
+    "path": "config/federated_repo_evidence.json",
+    "blob": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+    "scope": "Pinned source identity only; full federation re-audit is outside owner-narrowed restart task."
+  },
+  "actual_capabilities": [
+    "connected GitHub reads/publication",
+    "cloud Bash/Python/Node",
+    "actual Chromium/Playwright",
+    "native delegated specialists and independent source review"
+  ],
+  "actual_delegates": [
+    "restart_ui",
+    "restart_access",
+    "restart_panel_readers",
+    "prime_final_review"
+  ],
+  "runtime_limits": [
+    "No owner-PC shell/browser connection",
+    "Original Prime uncommitted scratch/work not accessible; reconstruction from canonical sources tested afresh",
+    "Shell GitHub token expired; connected GitHub publication continued",
+    "No exposed ultracode switch; no switch invocation claimed"
+  ],
+  "changes": [
+    "Status refresh single-flight admission and bounded expiry/recovery",
+    "Expected HTTP consumer disconnect closes without second500",
+    "Owner-gated shared Access registry and stable label draft",
+    "Readout batching, narrow Connections overflow and responsive settings anchor",
+    "Selected-private read-only research/intelligence and genuine selected NQ Go-live readers",
+    "Integrated PR468 empty-main-assets refusal and PR469 bounded pinned Brain inventory; preserved research/source gates"
+  ],
+  "tests": {
+    "final_full_suite": {
+      "passed": 4009,
+      "skipped": 73,
+      "subtests": 111,
+      "exit_code": 0,
+      "seconds": 395.01,
+      "log": "/workspace/scratch/prime-final-full-suite.log",
+      "scope": "Preceding reviewed tree, identical runtime; optional Playwright unavailable in default Python path"
+    },
+    "final_status_api_real_chromium": {
+      "passed": 177,
+      "exit_code": 0,
+      "seconds": 318.34,
+      "log": "/workspace/scratch/prime-final-status-api-browser.log"
+    },
+    "initial_full_aggregate": {
+      "passed": 4076,
+      "skipped": 4,
+      "subtests": 111,
+      "failed": 2,
+      "seconds": 607.58,
+      "log": "/workspace/scratch/prime-full-suite.log",
+      "resolution": "Two stale test expectations corrected: exact guard syntax and genuinely unsupported panel reader. Both focused checks then passed; no behavior weakened."
+    },
+    "focused_panel_layout_passed": 40,
+    "settings_anchor_passed": 3,
+    "read_only_panel_browser_passed": 10,
+    "independent_review": {
+      "result": "CLEAR",
+      "path": "/workspace/scratch/prime-independent-review.md",
+      "source": "8666a8770181e9527461243001688fc248154114"
+    },
+    "latest_hosted_runs": [
+      {
+        "id": 39901834136,
+        "name": "engine-federation-consumer-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834143,
+        "name": "configuration-job-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834141,
+        "name": "live-engine-federation-gate",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834169,
+        "name": "intelligence-feed-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834193,
+        "name": "Four portfolio performance",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834113,
+        "name": "tests",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901834144,
+        "name": "ui-visual-contract",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      },
+      {
+        "id": 39901829735,
+        "name": "tests",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "402722b4b708fc0ea6e2b2ede62252e75ccdd4a0"
+      }
+    ],
+    "latest_runtime_and_visual_jobs": [
+      {
+        "id": 120244926608,
+        "name": "browser",
+        "conclusion": "success",
+        "completed_at": "2026-10-23T04:51:54Z"
+      },
+      {
+        "id": 120244926384,
+        "name": "engine-windows",
+        "conclusion": "success",
+        "completed_at": "2026-10-23T05:02:10Z"
+      },
+      {
+        "id": 120244926587,
+        "name": "engine",
+        "conclusion": "success",
+        "completed_at": "2026-10-23T04:52:20Z"
+      },
+      {
+        "id": 120244913063,
+        "name": "engine-windows",
+        "conclusion": "success",
+        "completed_at": "2026-10-23T05:03:23Z"
+      },
+      {
+        "id": 120244913262,
+        "name": "engine",
+        "conclusion": "success",
+        "completed_at": "2026-10-23T04:51:45Z"
+      }
+    ],
+    "previous_head_hosted_runs": [
+      {
+        "id": 39882751102,
+        "name": "tests",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882751074,
+        "name": "engine-federation-consumer-contract",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882750983,
+        "name": "live-engine-federation-gate",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882751148,
+        "name": "configuration-job-contract",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882751162,
+        "name": "Four portfolio performance",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882751068,
+        "name": "intelligence-feed-contract",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882750987,
+        "name": "ui-visual-contract",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882697433,
+        "name": "tests",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882697443,
+        "name": "configuration-job-contract",
+        "conclusion": "success"
+      },
+      {
+        "id": 39882697477,
+        "name": "intelligence-feed-contract",
+        "conclusion": "success"
+      }
+    ],
+    "pagination": "Newest8 and previous10 run inventories fit first page100; job inventories complete. No manual reruns or capacity purchases."
+  },
+  "launcher_rehearsal": {
+    "proof": "/workspace/scratch/prime-launcher-20261023T0100Z/bounded-proof.json",
+    "core": "PASS",
+    "health": {
+      "ok": true,
+      "assets": [
+        "NQ"
+      ],
+      "warm": true
+    },
+    "main_and_four_selected_status": "PASS",
+    "all_four_saved_configuration_bytes_preserved": true,
+    "owned_shutdown_exit_code": 0,
+    "owned_plant_engine_exited": true,
+    "source_tree": "cdf3bee0e2e8efb8d5ff945595bac3ef4e3785f4",
+    "newest_runtime_blobs_identical": true,
+    "synthetic_file_history": true,
+    "external_attempts_denied_per_launch": 11,
+    "cumulative_denials": 33,
+    "strict_containment_result": "NOT_FULLY_READY",
+    "boundary": "Python audit containment, not an OS sandbox. Existing main background GitHub/public-source network/subprocess attempts denied. No external provider collection permitted; synthetic main ledger trades/fills/equity counts0."
+  },
+  "federation_receipt": {
+    "run": 39882750983,
+    "consumer_job": 120183748371,
+    "consumer_tree": "cdf3bee0e2e8efb8d5ff945595bac3ef4e3785f4",
+    "engine_commit": "b96a5fdf09718cd5e078ddf6ee7ebbfcfe9506fe",
+    "events_available": 1168,
+    "ingested": 1132,
+    "rejected": 0,
+    "packet_blob": "0e56032a11394e8fb67f0aed9421b0535af324d2",
+    "packet_id": "19865e44c52b92ee3fc5e3dfaa78fd0ae2c67c6bb7c032a1beffdf7de4bc3ded",
+    "packet_age_seconds_at_job": 603.291,
+    "maximum_age_seconds": 1800,
+    "substantive_lane_count": 0,
+    "durability_only_lane_count": 4,
+    "source_contract_witnesses": 3,
+    "roundtrip": "VERIFIED_PRIOR_PACKET",
+    "artifact_id": 12471550501,
+    "github_reported_digest": "sha256:7890cdbc72a44e521578f2340324dfba13c5708729ffd63fbbb90c0bd2c95965",
+    "semantics": "Historical job read receipt, not current producer freshness, provider entitlement, model usefulness or measured value. Archive digest not independently downloaded/rehashed."
+  },
+  "documentation": {
+    "commit": "3ed592bb190db563efb42daf9856a5ab040de304",
+    "tree": "89360e464192a8921f72070a314f5379025c872b",
+    "guide_blob": "ec8ed0a12f43a9b19d3f1d6047c0f6585cbe2e55",
+    "archived": [
+      {
+        "path": "START_HERE.md",
+        "archive": "docs/recovery/archive/2026-10-23/main/START_HERE.md",
+        "source_commit": "6e934a82a50cdb403c974e68c82c8c9c107dc02c",
+        "blob": "c4f8a360312ae63a39227b662068b280a88b4ceb"
+      },
+      {
+        "path": "SETUP.md",
+        "archive": "docs/recovery/archive/2026-10-23/main/SETUP.md",
+        "source_commit": "6e934a82a50cdb403c974e68c82c8c9c107dc02c",
+        "blob": "44d52c259c8f87371e392d7053f0b5094a3ac332"
+      },
+      {
+        "path": "README.md",
+        "archive": "docs/recovery/archive/2026-10-23/main/README.md",
+        "source_commit": "6e934a82a50cdb403c974e68c82c8c9c107dc02c",
+        "blob": "9831d5384c783046f6cb6dd8e0c536fd3c414040"
+      },
+      {
+        "path": "docs/COMMAND_CENTER_RESTARTS.md",
+        "archive": "docs/recovery/archive/2026-10-23/main/docs/COMMAND_CENTER_RESTARTS.md",
+        "source_commit": "6e934a82a50cdb403c974e68c82c8c9c107dc02c",
+        "blob": "ea6d69fabc40b22ec55033384835f0a98080dac7"
+      },
+      {
+        "path": "docs/recovery/ICARUS_PANEL_RESTARTS.md",
+        "archive": "docs/recovery/archive/2026-10-23/candidate/docs/recovery/ICARUS_PANEL_RESTARTS.md",
+        "source_commit": "71e808f3e20d06a98718a550ee742d38100435a0",
+        "blob": "81ff3c85e91a9632948ec1d0da2b0415b7e535bc"
+      },
+      {
+        "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "archive": "docs/recovery/archive/2026-10-23/candidate/docs/recovery/ICARUS_RECOVERY_STATUS.md",
+        "source_commit": "71e808f3e20d06a98718a550ee742d38100435a0",
+        "blob": "9522de603f850252b549d2c49bf8abc8e60f5735"
+      },
+      {
+        "path": "docs/recovery/PRIME_AS_IS_RESTART.md",
+        "archive": "docs/recovery/archive/2026-10-23/candidate/docs/recovery/PRIME_AS_IS_RESTART.md",
+        "source_commit": "71e808f3e20d06a98718a550ee742d38100435a0",
+        "blob": "f1f3e0b177a7e32d87c5b39d17dd537511f8385b"
+      }
+    ],
+    "files": 15,
+    "readback": true
+  },
+  "owner_local_restart": {
+    "guide": "https://github.com/reppiks490/Icarus/blob/main/docs/recovery/PRIME_AS_IS_RESTART.md",
+    "source_directory": "C:/Users/tripl/Icarus-as-is",
+    "state_directory": "C:/Users/tripl/Icarus",
+    "main_assets": [
+      "NQ",
+      "ES",
+      "YM",
+      "GC",
+      "SI",
+      "BTC"
+    ],
+    "feed": "yahoo delayed paper",
+    "preserve_existing_custom_token": true,
+    "backup_after_owned_shutdown": true,
+    "pc_launch_verified": false,
+    "observation": "Correct workspace badges, saved inputs and persisted ledgers, nonempty assets, warmup and actual price age; repeated blank/expiry after30s requires diagnostics."
+  },
+  "remaining_blockers": [
+    "Owner must run exact pinned update/launch and verify actual PC observations",
+    "Open in-memory position reconstruction not fully certified",
+    "Shared-history admission to new selected-private Learning reader unavailable",
+    "Sustained real feeds/provider consumer freshness, measured accuracy/value, every mutation adapter and real broker/prop operation not certified",
+    "Windows private vault intake intentionally refuses without safe no-follow file operations"
+  ],
+  "release": {
+    "targets": [],
+    "new_work_authorized": false,
+    "full_system_readiness": "NO_GO",
+    "broad_loop": "CANCELLED_BY_OWNER",
+    "next_expected_work": "None until owner calls; owner-local restart readback is the outstanding external step.",
+    "no_main_runtime_merge": true,
+    "no_deployment": true,
+    "no_spend": true,
+    "no_scheduler_or_stop_control_changes": true
+  }
+}
