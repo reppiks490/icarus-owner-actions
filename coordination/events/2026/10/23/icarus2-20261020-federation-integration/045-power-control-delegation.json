@@ -1,0 +1,108 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-045-power-control-delegation",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T14:23:46Z",
+  "type": "UPDATE",
+  "phase": "disjoint-dashboard-power-implementation",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power_ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_power.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_power_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-23/pre-installer-repair-PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/prime-installer-expanded-restart-20261023.json"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Owner again instructs continue. Actual native delegation: workspace_power_backend owns only workspace_power.py, paper_workspaces.py, test_workspace_power.py; workspace_power_frontend owns only workspace_power_ui.js, twoHTML script includes, test_workspace_power_browser.py; root owns HTTP/auth/context, API/job guards, selected panel cleanup, documentation/publication. installer_review independently audits lifecycle/reviews. These are subordinate scopes under this stable session, not revived legacyworkers. RuntimeOFF/ON is actual lifecycle, persisted desire, honest transitions, open/pending and job guards, no hiddenflatten or sharedfeed teardown. Corrected on/off intent supersedes discardednavigation043. Preserve reviewed installerfix and explicit canonical35assets.",
+  "evidence": [
+    "owner:independent on/off not navigation; continue",
+    "native-agent:/root/workspace_power_backend",
+    "native-agent:/root/workspace_power_frontend",
+    "native-review:/root/installer_review"
+  ],
+  "dependencies": [],
+  "next_action": "Regression-first disjoint changes, then integration and independent review; source controls reread at every mutation boundary. No code/PR publication yet."
+}
