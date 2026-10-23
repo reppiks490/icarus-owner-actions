@@ -1,0 +1,29 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-051-world-pointer-fixture",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T19:24:04Z",
+  "type": "UPDATE",
+  "phase": "material-hosted-finding-review-reopened",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_depth.cjs"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Hosted visual run40009086034 actually executed and failed at browser_depth.cjs:71 waiting for pointer-driven --panel-x. Linux full job passed; Windows remains executing. Reopen review. Investigate physical first-panel viewport geometry after the new Main power section; existing fixture reads the first card's coordinates without scrolling it into view. Reproduce before a narrow repair; retain rendering/pointer assertions and require actual target under the pointer.",
+  "evidence": [
+    "run40009086034/job120604491872: world browser step failed with TimeoutError at line71; preceding real five-workspace Chromium step succeeded",
+    "PR471 head0560627e7522e85eb97a5f906800e376508a4cd6; local full4066passed,16powerbrowser passed",
+    "source: initial cardTarget geometry lacks scroll unlike later topology fixtures"
+  ],
+  "dependencies": [
+    "ci:repaired exact-head visual check",
+    "external:owner-PC-current-last_error-readback"
+  ],
+  "next_action": "Local feed-free Chromium reproduction, smallest geometry fixture repair if verified, independent review and exact-head hosted validation. Update existing PR and pinned notes; no automatic merge or rerun workflows."
+}
