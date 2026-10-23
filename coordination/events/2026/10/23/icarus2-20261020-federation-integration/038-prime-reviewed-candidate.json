@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-038-prime-reviewed-candidate",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T01:15:34Z",
+  "type": "WAITING",
+  "phase": "reviewed-combined-restart-hosted-validation",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [],
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery"
+  ],
+  "execution_authorized": false,
+  "summary": "Owner-directed bounded Prime takeover candidate published as draftPR471. Remote71e808f3e20d06a98718a550ee742d38100435a0 treecdf3bee0e2e8efb8d5ff945595bac3ef4e3785f4 exactly matches local8666a877; Git blob uploads, Git-tree equality, commit parent/tree and branch readbacks verified. Native source review CLEAR. Final default fullsuite4009passed73skipped111subtests395.01s; separate final status/API/real-Chromium177passed318.34s. First full aggregate4076passed4skipped111subtests2failed retained; both old expectations corrected without weakening behavior. Scoped panel/layout40passed, settings3passed. Bash archive launcher start and same-root restart warmed NQ, served4selected statuses, preservedsavedconfigs, ownedshutdownexit0twice. Strict containment staysNOT_FULLY_READY:11first/22cumulative existingmainbackground GitHub/public-source attempts denied; no provider calls permitted and no PC proof. Final-tree rehearsal and exactheadCI remain pending. Shell GitHub token expired; connectedGitHub authority/publication tools remainworking. OriginalPrime unstagedsource inaccessible; reconstructed canonicalreaders withfresh tests, no claim of recoveredbytes. No allrequirements-complete, live, mainmerge, deployment, spend, scheduler or stopcontrol change.",
+  "evidence": [
+    "pr:reppiks490/Icarus#471@71e808f3e20d06a98718a550ee742d38100435a0",
+    "git-tree:cdf3bee0e2e8efb8d5ff945595bac3ef4e3785f4",
+    "independent-review:/workspace/scratch/prime-independent-review.md:CLEAR@8666a877",
+    "tests:/workspace/scratch/prime-full-suite.log:2failed4076passed4skipped111subtests607.58s",
+    "tests:/workspace/scratch/prime-final-full-suite.log:4009passed73skipped111subtests395.01s",
+    "tests:/workspace/scratch/prime-final-status-api-browser.log:177passed318.34s",
+    "rehearsal:/workspace/scratch/prime-launcher-20261023T0100Z/first-result.json",
+    "rehearsal:/workspace/scratch/prime-launcher-20261023T0100Z/result.json"
+  ],
+  "dependencies": [
+    "github-run:39882751102",
+    "github-run:39882750987",
+    "github-run:39882750983"
+  ],
+  "next_action": "Complete exact-tree rehearsal, inspect hosted Linux/Windows/browser and federation outcomes without paid collection/reruns, re-fetch affected heads, publish precise PC update/start handoff and release current work to standby."
+}
