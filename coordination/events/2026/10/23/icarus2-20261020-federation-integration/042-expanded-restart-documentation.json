@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-042-expanded-restart-documentation",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T07:52:56Z",
+  "type": "UPDATE",
+  "phase": "reviewed-installer-repair-full-validation",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-23/pre-installer-repair-PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Exact Python3.10 pip→setuptools AssertionError reproduced with real pip26.2.2/setuptools84.2.1. New launcher regression failed same assertion before repair; setup-scoped stdlib distutils for310/311 and local for312+, matching venv build-tool upgrade plus no-build-isolation passed18launcherchecks on310 and real312backend check. Native independent reviewer installer_review CLEAR; fullsuite running. Canonical explicit35asset list validated distinct/allregistered, no provider calls or saved CC changes. Will publish two-file fix in existing PR471 (same dedicated reviewed restart branch), not multiply PR backlog. Broaden existing operator guide and preserve its previous blob in archive. UI toggle remains unimplemented pending owner identification of three dashboards.",
+  "evidence": [
+    "regression-red:/workspace/scratch/prime-setup-regression-red.log",
+    "regression-green310:/workspace/scratch/prime-setup-regression-green310.log:18passed",
+    "regression-green312:/workspace/scratch/prime-setup-regression-green312.log:1passed",
+    "dependency-resolution:/workspace/scratch/prime-python310-dependencies.json:62packages:dryrun",
+    "universe:/workspace/scratch/prime-expanded-universe-proof.json:35unique_registered",
+    "review:/root/installer_review:CLEAR"
+  ],
+  "dependencies": [
+    "owner:identify-three-dashboard-toggle",
+    "tests:fullsuite-in-progress"
+  ],
+  "next_action": "Finish full check, gate and publish reviewed installer repair into PR471; refresh authoritative restart with exact revision and35assets, archive previous guide; wait for dashboard identities before UI change."
+}
