@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-055-pc-readback-waiting",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T20:56:35Z",
+  "type": "WAITING",
+  "phase": "final-hosted-passes-owner-pc-foreground-launch",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "All ten exact-head workflows passed. Canonical guide records final Windows results and distinguishes append-only historical tracebacks from current PC listener failure. Runtime source remains unchanged at 7aa3900282213c4e690436098702300a0447cb8d; no screenshot-driven code churn. Owner PC remains unverified and requires a foreground same-root launch and sanitized new output.",
+  "evidence": [
+    "coordination/events/2026/10/23/icarus2-20261020-federation-integration/054-hosted-verified-pc-launch.json",
+    "Documentation-only Icarus main commit d8d3bb66cafbc73681617e2a9c4bf1510063a2f3; exact guide bytes read back"
+  ],
+  "next_action": "Owner follows normal shutdown/backup and pinned source verification, launches with explicit Main assets, keeps owning terminal open and returns new errors/status. Prime continues diagnosis only from actual new observations; no broad recurring loop, automatic merge, spend, deployment or scheduler change."
+}
