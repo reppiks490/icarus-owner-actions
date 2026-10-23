@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-052-idle-disconnect",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T19:46:00Z",
+  "type": "CLAIM",
+  "phase": "material-native-browser-teardown-finding-review-reopened",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Native feed-free preview completed depth/shadow/cinema/world browser assertions but normal client teardown logged ConnectionResetError from BaseHTTPRequestHandler.handle_one_request rfile.readline. Existing _send guard covers response writes only. Reproduce idle/keepalive reset, keep unrelated I/O/application exceptions visible, and make a narrow transport-lifecycle repair if justified.",
+  "evidence": [
+    "Final world siblings session70172 exited0; all report errors=[] and writes=[]",
+    "Owned preview session51736 exited0 after normal shutdown; request thread reported peer reset while reading next request",
+    "Reviewed test-only head0bc3a110d7e4c8dd26e079501698bdda2a297377 published and new automatic CI executing; full local suite frozen at equivalent tree162a74ae7b13a765b358532ae531fee44e76691d"
+  ],
+  "next_action": "Use separate local worktree so executing full suite remains frozen. Add meaningful transport regressions, repair only confirmed expected disconnects, focused and broader checks, independent review, update PR471 and exact-pinned restart notes.",
+  "dependencies": [
+    "external:owner-PC-readback",
+    "ci:exact-final-head"
+  ],
+  "all_icarus_requirements_complete": false
+}
