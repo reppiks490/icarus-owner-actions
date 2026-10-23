@@ -1,0 +1,135 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-054-hosted-verified-pc-launch",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T20:54:44Z",
+  "type": "CLAIM",
+  "phase": "metadata-only-hosted-verification-and-owner-pc-continuation",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "All ten automatic workflows for exact restart head 7aa3900282213c4e690436098702300a0447cb8d completed successfully, including Windows/Linux tests and visual contracts. Update canonical notes and coordination waiting state only; no runtime change is justified by the owner screenshot alone.",
+  "source": {
+    "commit": "7aa3900282213c4e690436098702300a0447cb8d",
+    "tree": "d6020c33e6a7c7d72946a2faaae52ca8189bae40",
+    "pr": 471
+  },
+  "hosted": {
+    "total": 10,
+    "all_success": true,
+    "runs": [
+      {
+        "id": 40014905304,
+        "name": "tests",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905304"
+      },
+      {
+        "id": 40014905310,
+        "name": "engine-federation-consumer-contract",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905310"
+      },
+      {
+        "id": 40014905302,
+        "name": "ui-visual-contract",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905302"
+      },
+      {
+        "id": 40014905301,
+        "name": "live-engine-federation-gate",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905301"
+      },
+      {
+        "id": 40014905303,
+        "name": "configuration-job-contract",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905303"
+      },
+      {
+        "id": 40014905354,
+        "name": "Four portfolio performance",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905354"
+      },
+      {
+        "id": 40014905309,
+        "name": "intelligence-feed-contract",
+        "event": "pull_request",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905309"
+      },
+      {
+        "id": 40014897507,
+        "name": "configuration-job-contract",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897507"
+      },
+      {
+        "id": 40014897592,
+        "name": "intelligence-feed-contract",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897592"
+      },
+      {
+        "id": 40014897534,
+        "name": "tests",
+        "event": "push",
+        "status": "completed",
+        "conclusion": "success",
+        "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897534"
+      }
+    ],
+    "windows_jobs": [
+      120624857012,
+      120624911403
+    ],
+    "linux_jobs": [
+      120624857394,
+      120624911557
+    ],
+    "visual_job": 120624937501,
+    "no_manual_reruns": true
+  },
+  "owner_evidence": {
+    "received_first_clock_utc": "2026-10-23T20:51:50Z",
+    "capture_time_unknown": true,
+    "observed": "Owner screenshots show WinError10053 during request-line read and curl health/status connection refusal on127.0.0.1:8791 (HTTP000).",
+    "qualification": "Refusal establishes no successful connection at the sampled moment, not cause or sustained downtime. Complete shown stack lacks current private RequestInput/H.handle guard. Historical log content or older loaded source remains a hypothesis; engine.log is append-only. A request disconnect alone does not establish that it killed the server. No firewall diagnosis.",
+    "owner_PC_restart_verified": false
+  },
+  "independent_review": "restart_evidence_check reviewed source and append-only supervisor log behavior; no code change justified by screenshot evidence alone.",
+  "next_action": "Normal owning-launcher shutdown and stopped-state backup if not yet completed; verify pinned source and correct import, then foreground same-root launcher with explicit35Mainassets. Preserve custom token locally. Inspect new startup output and health/status/rendered views; never infer completion from CI alone."
+}
