@@ -1,0 +1,66 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-039-final-restart-documentation",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T06:07:48Z",
+  "type": "CLAIM",
+  "phase": "bounded-restart-documentation-and-release",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "SETUP.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/COMMAND_CENTER_RESTARTS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/ICARUS_PANEL_RESTARTS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/ICARUS_RECOVERY_STATUS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-23"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/archive/restart-notes/2026-10-23"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/prime-as-is-restart-20261023.json"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Owner requests a stopping point and replacement/archive of old restart instructions. Docs-only main publication, historical archive with original blob identities, one authoritative guide pinned to reviewed runtime71e808f3. All ten exact-head hosted workflows now successful. No runtime main merge, deployment or new workstream. Original Prime stopped reservations superseded only under owner takeover directive; permanent worker/stop/schedulers unchanged.",
+  "evidence": [
+    "pr:reppiks490/Icarus#471@71e808f3e20d06a98718a550ee742d38100435a0",
+    "directive:coordination/directives/2026-10-22-owner-prime-takeover.json"
+  ],
+  "dependencies": [],
+  "next_action": "Archive and replace operator notes, verify exact bytes, publish immutable final handoff and release to standby."
+}
