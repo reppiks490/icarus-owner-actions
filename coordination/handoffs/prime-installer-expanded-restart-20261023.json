@@ -1,0 +1,438 @@
+{
+  "schema_version": "icarus-prime-restart-handoff-v1",
+  "handoff_id": "prime-installer-expanded-restart-20261023",
+  "permanent_worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "functional_role": "Icarus Prime by owner takeover",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "scope": "Finish the stopped Prime recovery work and deliver an observable updated as-is paper restart; the federation mega-loop remains cancelled.",
+  "source": {
+    "repository": "reppiks490/Icarus",
+    "branch": "prime/as-is-restart-20261022",
+    "commit": "7aa3900282213c4e690436098702300a0447cb8d",
+    "tree": "d6020c33e6a7c7d72946a2faaae52ca8189bae40",
+    "parent": "0bc3a110d7e4c8dd26e079501698bdda2a297377",
+    "pr": 471,
+    "pr_url": "https://github.com/reppiks490/Icarus/pull/471",
+    "base_branch": "icarus1/restart-readiness-20261020",
+    "base_commit": "393128f96228db20037b024db20e8e32529a2eee",
+    "local_equivalent_commit": "6bcf91372d8c22d82ef5f996591866b495b0f63d",
+    "local_worktree": "/workspace/Icarus-restart-final-20261023",
+    "local_worktree_clean": true,
+    "remote_ref_and_commit_tree_verified": true,
+    "blobs": {
+      "icarus_engine/server.py": "9a56a33554145242b0d4222a266e1c44d42d5aaa",
+      "tests_engine/test_workspace_api.py": "6300e93e7b74ffbdc19cb3f43041008c4a66f450",
+      "tests_engine/browser_depth.cjs": "422e6d656650747fc63927aa6d7ea59bb2166cb7",
+      "tests_engine/test_workspace_dashboard_browser.py": "b281faba4c8ffd3461f7b05877b5d5fd880c1e6e"
+    }
+  },
+  "documentation": {
+    "commit": "5fa97822af3b1af31610772a58bd8f7f5635e41d",
+    "tree": "62760c93a2f4cf4e5a6d13fe17d13926b0831f4f",
+    "changed_paths": [
+      {
+        "path": "START_HERE.md",
+        "sha": "504659c41f24bf51e9b95afe38caa89239f4e258"
+      },
+      {
+        "path": "docs/recovery/PRIME_AS_IS_RESTART.md",
+        "sha": "688ce7f74a08796d275c70c163edcd1e0aef449a"
+      }
+    ],
+    "docs_only_main_change_verified": true,
+    "canonical_guide": "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "archive": {
+      "path": "docs/recovery/archive/2026-10-23/pre-installer-repair-PRIME_AS_IS_RESTART.md",
+      "blob": "ec8ed0a12f43a9b19d3f1d6047c0f6585cbe2e55",
+      "previous_source": "3ed592bb190db563efb42daf9856a5ab040de304",
+      "bytes_preserved": true
+    },
+    "guide_exact_bytes_refetched": true,
+    "previous_documentation_commit": "7d38c21280798a6cef196318c91c274b74b46ff7",
+    "archive_preserved_in_previous_commit": true
+  },
+  "capabilities": {
+    "used": [
+      "connected GitHub API",
+      "cloud Bash and filesystem",
+      "native parallel delegation",
+      "pytest",
+      "actual Python3.10.22 and3.12 packaging metadata",
+      "Node",
+      "system Chromium and Playwright"
+    ],
+    "actual_native_subordinate_scopes": [
+      "installer_review",
+      "workspace_power_backend",
+      "workspace_power_frontend",
+      "restart_docs",
+      "final_power_review",
+      "restart_evidence_check"
+    ],
+    "skills_applied": [
+      "Superpowers verification-before-completion",
+      "Baton Pass continuity/handoff",
+      "cloud environment runtime context"
+    ],
+    "not_available_or_not_invoked": [
+      "owner PC terminal/browser connection",
+      "Windows PowerShell runtime on cloud executor",
+      "ultracode switch"
+    ],
+    "plugins_not_fabricated": true
+  },
+  "changes": [
+    "Independent revisioned owner-gated CC1–CC4 runtime power controls; Main remains available for monitoring.",
+    "Asynchronous per-profile lifecycle with truthful STARTING/STOPPING/OFF/ERROR, Cancel start and Retry stop.",
+    "OFF refuses primary/shadow open positions, pending orders, active jobs, reconfiguration or activation; does not flatten or cancel.",
+    "Saved settings/journals and shared provider ownership preserved; desired power persisted separately.",
+    "Selected runtime polling stops while off; per-profile diagnostics initialization/drain avoids shared locks and late generation resurrection.",
+    "Lifetime asset-error totals separated from escaped reported error text; bar age remains visible.",
+    "Windows Python3.10 setup collision repaired with command-scoped distutils mode and no build isolation; Python3.12 uses local distutils.",
+    "Canonical35-symbol Main startup argument supplied without rewriting saved CC asset selections.",
+    "Current restart notes replaced and prior guide archived by exact Git blob.",
+    "Known client request-line/header/keepalive disconnects terminate only the affected connection via a private input-stream signal; upstream/application transport errors remain visible."
+  ],
+  "verification": {
+    "full_suite": {
+      "result": "PASS",
+      "source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "tree": "d6020c33e6a7c7d72946a2faaae52ca8189bae40",
+      "passed": 4083,
+      "skipped": 89,
+      "subtests_passed": 111,
+      "seconds": 403.3,
+      "exit_code": 0,
+      "log_sha256": "25b45f42ac0400494a4e4f74c905b728da5f774d60c89ef0fbde42c1dee4e3e2"
+    },
+    "power_browser": {
+      "passed": 16,
+      "seconds": 78.21,
+      "exit_code": 0,
+      "source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "log_sha256": "ac84b9a8eaaa6df8f8f372c3d9d70ca8230af33b14aacccdf28a4006ca9b1c87"
+    },
+    "broader_ui": {
+      "passed": 71,
+      "skipped": 1,
+      "performance_assertions_separately_passed_with_system_chromium": true,
+      "log_sha256": "dec7c0f56ae16c6b91807d1b1a78e97bfdedbd55646ff7579527993d1e15beeb",
+      "source": "0560627e7522e85eb97a5f906800e376508a4cd6"
+    },
+    "additional_api_browser": {
+      "passed": 4,
+      "exit_code": 0,
+      "source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "commands": "Two focused real Chromium runs,2passed each"
+    },
+    "packaging": {
+      "original_failure_reproduced": true,
+      "actual_python_versions": [
+        "3.10.22",
+        "3.12"
+      ],
+      "setup_environment_leak_regression_passed": true
+    },
+    "independent_review": {
+      "verdict": "CLEAR",
+      "scope": "Original runtime, test-only world/encoding delta and final client-input sentinel repair independently reviewed;17new regressions actually run by reviewer",
+      "final_source": "7aa3900282213c4e690436098702300a0447cb8d"
+    },
+    "preserved_failures": [
+      {
+        "full_run": "2 failed,4064passed,89skipped,111subtests",
+        "cause": "Legacy browser fixtures omitted new power metadata and asserted old OFF chart wording.",
+        "focused_reproduction": "2 failed,27deselected",
+        "repair_focused": "2 passed,27deselected",
+        "final_full_suite": "PASS"
+      },
+      {
+        "cancelled_superseded_navigation_runs": "Partial3394passes/8skips/111subtests and partial45browserpasses were interrupted after owner clarified runtime ON/OFF; neither is claimed complete."
+      },
+      {
+        "source": "0560627e7522e85eb97a5f906800e376508a4cd6",
+        "hosted_windows": "PR job120604491807 actually executed and failed3new badge cases with cp1252 UnicodeDecodeError; explicit UTF-8 testfixture fix passed3 locally",
+        "hosted_visual": "run40009086034/job120604491872 actually executed and failed pointer wait; physical viewport target repaired without assertion removal or timeout widening; all4local world scripts passed",
+        "intermediate_source": "0bc3a110d7e4c8dd26e079501698bdda2a297377",
+        "cancelled_jobs": [
+          120604473881,
+          120620374788,
+          120620333491
+        ],
+        "qualification": "Older Windows jobs executed restart-persistence checks successfully then suite steps were cancelled; cancellation is not a passing suite or a billing/job-not-started failure. No rerun was requested."
+      },
+      {
+        "finding": "Native keepalive request-line read reset printed traceback during normal browser teardown, though preview process stayed alive",
+        "regression_before": "9failed4passed124deselected",
+        "independent_review_reopened": "3 additional Expect-header cases failed before final sentinel design",
+        "regression_after": "17newfocused checks passed independently, all137APIchecks passed4browser-skipped, actual realTCPreset passed",
+        "qualification": "Expected transport noise suppressed; no claim this diagnosed ownerPC feed faults"
+      }
+    ],
+    "skipped_boundaries": "Three actual Windows-only cases and optional Python Playwright/browser dependencies skipped in the default local suite; separate Chromium checks are listed above. Owner PC is unobserved.",
+    "preceding_full_suite": {
+      "result": "PASS",
+      "source": "0bc3a110d7e4c8dd26e079501698bdda2a297377",
+      "passed": 4066,
+      "skipped": 89,
+      "subtests_passed": 111,
+      "seconds": 384.48,
+      "exit_code": 0,
+      "log_sha256": "bbc95e9f158b35e98d706d075f01edbfe810c99e09a4cae157b5d3687caeb129"
+    },
+    "world_browser": {
+      "source": "0bc3a110d7e4c8dd26e079501698bdda2a297377",
+      "depth": "PASS shaderready/contextrestored/mobilelight/cleanrapidtransitions",
+      "shadow": "PASS entries3",
+      "cinema": "PASS",
+      "worlds": "PASS nooverflow",
+      "errors": [],
+      "writes": [],
+      "qualification": "Earlier local scripts qualified separately; exact final-head hosted visual job has now completed successfully, including five-workspace routes and all world contracts.",
+      "final_source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "hosted_run_id": 40014905302,
+      "hosted_job_id": 120624937501,
+      "hosted_conclusion": "success"
+    },
+    "api": {
+      "passed": 137,
+      "skipped": 4,
+      "exit_code": 0,
+      "log_sha256": "389055f5d54af260b7e3a976d159ca2520c462186928e05529c679f8d475e8c8",
+      "all_four_skips_separately_exercised_with_actual_chromium": true
+    },
+    "hosted": {
+      "source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "total_count": 10,
+      "runs": [
+        {
+          "id": 40014905310,
+          "name": "engine-federation-consumer-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905310"
+        },
+        {
+          "id": 40014905301,
+          "name": "live-engine-federation-gate",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905301"
+        },
+        {
+          "id": 40014905304,
+          "name": "tests",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null,
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905304"
+        },
+        {
+          "id": 40014905303,
+          "name": "configuration-job-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905303"
+        },
+        {
+          "id": 40014905354,
+          "name": "Four portfolio performance",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905354"
+        },
+        {
+          "id": 40014905309,
+          "name": "intelligence-feed-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905309"
+        },
+        {
+          "id": 40014905302,
+          "name": "ui-visual-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014905302"
+        },
+        {
+          "id": 40014897507,
+          "name": "configuration-job-contract",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897507"
+        },
+        {
+          "id": 40014897534,
+          "name": "tests",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null,
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897534"
+        },
+        {
+          "id": 40014897592,
+          "name": "intelligence-feed-contract",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/reppiks490/Icarus/actions/runs/40014897592"
+        }
+      ],
+      "no_manual_reruns": true,
+      "observed_at_utc": "2026-10-23T20:10:39Z",
+      "qualification": "8 of10 workflows completed success at this observation. Both tests workflows have successful Linux jobs and Windows persistence checks; Windows suite still executes. No passing Windows full-suite conclusion is claimed."
+    },
+    "hosted_linux": {
+      "source": "7aa3900282213c4e690436098702300a0447cb8d",
+      "run_id": 40014905304,
+      "job_id": 120624857394,
+      "result": "success",
+      "completed_at_utc": "2026-10-23T20:02:10Z",
+      "steps": "Full tests_engine plus provider-corpus pytest, plant setup, CLI help and doctor completed successfully.",
+      "qualification": "Doctor printed missing-history guidance in temporary CI state; successful invocation is not owner-PC/full-system health."
+    }
+  },
+  "launcher_rehearsals": {
+    "data": "Explicitly synthetic temporary private roots and per-symbol OHLC fixtures, not licensed raw or actual exchange observations.",
+    "nq_first_launch": {
+      "core": "PASS",
+      "settings_preserved": true,
+      "main_warm": true,
+      "saved_cc4_off": true,
+      "owned_processes_exited": true,
+      "exit_code": 0,
+      "strict": "NOT_FULLY_READY",
+      "blocked_external_attempts": 11
+    },
+    "nq_same_root_restart": {
+      "core": "PASS",
+      "settings_preserved": true,
+      "saved_cc4_off": true,
+      "owned_processes_exited": true,
+      "exit_code": 0,
+      "strict": "NOT_FULLY_READY",
+      "blocked_external_attempts": 11
+    },
+    "main35_launch": {
+      "core": "PASS",
+      "main_symbols": 35,
+      "warm": true,
+      "settings_preserved": true,
+      "saved_cc4_off": true,
+      "owned_processes_exited": true,
+      "exit_code": 0,
+      "strict": "NOT_FULLY_READY",
+      "blocked_external_attempts": 13
+    },
+    "blocked_destinations": [
+      "git subprocess",
+      "api.github.com",
+      "raw.githubusercontent.com",
+      "publicreporting.cftc.gov",
+      "api.bls.gov",
+      "www.federalreserve.gov"
+    ],
+    "paid_requests_allowed": false,
+    "source": "0560627e7522e85eb97a5f906800e376508a4cd6",
+    "qualification": "Explicit earlier source; final changes are client-input lifecycle repair and test fixtures, not a new final-source launcher claim."
+  },
+  "federation_evidence": {
+    "repository": "reppiks490/Icarus-engine",
+    "commit": "9e1c7c083d5a3a776b3c67200dd0aba6883df2c3",
+    "manifest_blob": "8ff931370d1192bd19e20f61d2b5dac0957e3a70",
+    "ingestion_manifest_blob": "1ce5c66892020ebd2831dfc78242dee525c6c2bc",
+    "data_health_blob": "5eeb43a4ad7029bc2fc00f14f1b0c2010157b4c4",
+    "data_health_at_utc": "2026-10-23T18:42:57Z",
+    "health_counts": {
+      "OK": 69,
+      "BLOCKED": 7,
+      "DEGRADED": 5,
+      "FAILING": 4,
+      "STALE": 1
+    },
+    "qualification": "Cloud source evidence, not owner-PC runtime observation; catalog presence, credentials, entitlement, collection, consumer reads, freshness and value remain separate.",
+    "final_head_revalidation": {
+      "head": "dfd8f5a15dc3cd03eeb0267f7e6f34886c97db3b",
+      "base": "9e1c7c083d5a3a776b3c67200dd0aba6883df2c3",
+      "status": "EXPLICITLY_REVALIDATED",
+      "commits": 32,
+      "changed_files": 129,
+      "qualification": "All changed paths under automation_intelligence; canonical manifests and code unchanged. New sentinel read directly; immutable earlier snapshot preserved separately.",
+      "health_blob": "40d780a608e37905a3874880f78f12a714a2ca2b",
+      "health_generated_at_utc": "2026-10-23T19:17:07+00:00",
+      "counts": {
+        "BLOCKED": 7,
+        "DEGRADED": 5,
+        "FAILING": 4,
+        "OK": 70
+      },
+      "execution_authorized": false
+    }
+  },
+  "blockers": [
+    "Exact final-head Windows full-suite conclusion is pending in runs40014905304 and40014897534; in-progress job log archive was unavailable (404BlobNotFound), not an execution or billing failure.",
+    "Owner-PC current status/setup/feed/history/journal/rendered-view readback is unavailable; cannot certify a completed PC restart or zero runtime errors.",
+    "Current reported PC asset faults require last_error/price_age/bar_age readback; lifetime counts alone do not identify active faults.",
+    "35 symbols are catalog-admitted, not verified fresh feed coverage; missing history, entitlements and rate limits remain explicit.",
+    "Cloud Engine evidence still reports authentication, licensing and workflow blockers; no claim that every subsystem is connected.",
+    "Strict contained launcher checks deny external research attempts; they are not full-system health passes.",
+    "Every open in-memory position reconstruction, selected-private Learning shared-history admission, accuracy and real broker/prop operation remain uncertified."
+  ],
+  "owner_PC": {
+    "source": "C:/Users/tripl/Icarus-as-is",
+    "private_state": "C:/Users/tripl/Icarus",
+    "preserve_custom_token_locally": true,
+    "main_url": "http://127.0.0.1:8791/",
+    "native_status": "/status/public",
+    "restart_procedure": "Follow current exact-pinned guide: stop owning launcher normally, preserve stopped private root, verify fetched exact SHA, run repaired --setup launcher with explicit35 Main symbols, keep window open, inspect status/data freshness and views.",
+    "restart_verified": false
+  },
+  "constraints": {
+    "no_automatic_main_runtime_merge": true,
+    "no_force_push": true,
+    "no_deployment_or_release": true,
+    "no_new_spend_or_capacity_purchase": true,
+    "no_scheduler_or_stop_control_edits": true,
+    "no_training_or_collection_authorized_by_heartbeat": true,
+    "no_owner_PC_restart_claimed": true
+  },
+  "next_expected_work": [
+    "Read final Windows conclusions for exact7aa390 head without manual reruns; inspect any actual failure and reopen review.",
+    "Continue with sanitized owner-PC setup/startup/status/rendered-view output using the newly published guide; do not claim PC completion until observed.",
+    "After actual PC restart verification, wait for further owner requests; cancelled specialist automations stay paused."
+  ],
+  "clock_limitations": [
+    {
+      "event": "048-power-regression-contract",
+      "declared_at_utc": "2026-10-23T15:00:00Z",
+      "actual_github_commit_at_utc": "2026-10-23T14:55:22Z",
+      "correction": "Use commit clock for event ordering; declared clock was estimated and future at creation, immutable event preserved."
+    },
+    "Resumption gaps around14:xx and18:51 UTC are not claimed as continuous execution."
+  ],
+  "observed_completion_at_utc": "2026-10-23T20:10:39Z",
+  "delivery_window": {
+    "first_explicit_clock_observed_utc": "2026-10-23T19:43:07Z",
+    "verification_completed_at_utc": "2026-10-23T19:59:08Z",
+    "qualification": "Clock observations bound this continuation; earlier resumed work and resumption gaps are separately qualified. No claim of continuous execution across gaps."
+  },
+  "state": "WAITING_OWNER_PC_READBACK_AND_WINDOWS_CI",
+  "coordination": {
+    "worker_blob": "3883408e5d305c9e42ef163f3e65321176b523ff",
+    "owner_status_blob": "ea7074c966b2a711a3e1751db4b84fa36c668cf2",
+    "takeover_directive_blob": "14d0a8416cbc4933922e93a31023ac4b77f1dac1",
+    "source_claims_head": "d0d6d31279202150c69a33d1879b7e553db360b5",
+    "targets_released_to_waiting": true,
+    "permanent_worker_identity_unchanged": true
+  }
+}
