@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-046-asset-error-diagnostics",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T14:34:38Z",
+  "type": "UPDATE",
+  "phase": "power-controls-plus-truthful-asset-errors",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Owner asks why every asset shows errors. Source proves assetCard paints cumulative a.errors red even after current last_error clears; counters increment on feed/runtime/warmup failures and are not reset on recovery. Screenshot alone cannot identify currently active ownerPC faults. Root will display recorded historical errors separately from a nonempty current last_error, with escaped actual message; no backend counter resets or hiding active faults. Owner asked for metadata-only Console readback since cloud has no PC access. Continue all root/delegated045 runtime on/off targets; this adds narrow asset-diagnostic presentation scope. Navigation staysdiscarded. Superseded tests explicitlyinterrupted:3394passes8skips111subtests partialfull;45browserpasses partial; neither fullcompletion claimed.",
+  "evidence": [
+    "source:icarus_engine/dashboard.html assetCard a.errors redbadge",
+    "source:runtime.py errors counter and successful warmup last_error clear",
+    "owner:screenshot sixassets2–4err withoutactualmessages",
+    "tests:installer-only4010passed73skipped111subtests remainsvalid"
+  ],
+  "dependencies": [
+    "external:owner-PC-current-last_error-readback"
+  ],
+  "next_action": "Regression historical versusactive badge; keep source/time/freshness separate; continue safe lifecycle integration/review."
+}
