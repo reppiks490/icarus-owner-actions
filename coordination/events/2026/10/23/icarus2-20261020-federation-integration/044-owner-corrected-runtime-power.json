@@ -1,0 +1,99 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261023-icarus2-044-owner-corrected-runtime-power",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-23T14:20:39Z",
+  "type": "UPDATE",
+  "phase": "true-independent-dashboard-on-off",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power_ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_jobs.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_power.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_power_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-23/pre-installer-repair-PRIME_AS_IS_RESTART.md"
+    }
+  ],
+  "execution_authorized": false,
+  "summary": "Owner corrects intent: independent OFF/ON per dashboard so its work/errors/timeouts do not burden Main. Unpublished navigation source/tests removed, preserved only scratch diagnostics; no navigation feature pushed. Own superseded verification interrupted; partial logs not claimed passing. Retain reviewed installer fix/full4010pass and canonical35asset command. Implement actual per-workspace lifecycle, owner/revision guards, asynchronous bounded HTTP admission, no shared main lock during slow feed work, persisted requested state, honest STARTING/STOPPING/ERROR; refuse unsafe shutdown of open/pending positions without auto-flatten. Preserve workspace identities/configurations/journals; legacy default enabled until operator disables; no new licensed collection or broker authority.",
+  "evidence": [
+    "owner:2026-10-23 correction on/off per dashboard to protect Main",
+    "source:PaperWorkspaceManager.start starts all and aborts all on one failure; pause leaves feed workers active",
+    "tests:installer-only full4010passed73skipped111subtests383.19s",
+    "discarded:/workspace/scratch/prime-discarded-navigation.patch"
+  ],
+  "dependencies": [],
+  "next_action": "Disjoint lifecycle/frontend and root HTTP/auth integration; regressions for stopped workers, sibling/Main responsiveness, startup/error isolation, persistence and guarded shutdown; combined review before publication."
+}
