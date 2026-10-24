@@ -1,0 +1,68 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-002-main-flow-review-findings",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T00:32:58Z",
+  "type": "UPDATE",
+  "phase": "review-reopened-and-narrow-test-readiness-claim",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_main_dashboard_flow_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "findings": [
+    {
+      "kind": "verified-regression",
+      "evidence": "Five unchanged35-asset renders discarded175SVG nodes and took3332ms. Candidate retained35cards/35SVGs with0SVG removals, roughly274–466ms for unchanged/live samples; cloud synthetic fixture, not owner-PC measurement."
+    },
+    {
+      "kind": "verified-regression",
+      "evidence": "Actual browser transport on unmodified baseline emitted duplicate NQ chart reads from overlapping refreshCharts calls. Fixed with one shared pass."
+    },
+    {
+      "kind": "review-reopened",
+      "evidence": "Initial bounded chunking stalled all later assets behind one held chart; failing8s regression preserved. Worker pool4 resolves that head-of-line wait in focused run. Selected workspace APIs own an exclusive configuration lock, so scoped chart concurrency must remain1; only Main may use4."
+    },
+    {
+      "kind": "preserved-broader-failures",
+      "evidence": "First broad browser run:2failed88passed438.28s. Slow-chart test can join a pre-existing periodic2-asset pass instead of its intended35-asset pass. Native Possibility expected200 but received designed transient busy409; focused rerun passed. Do not hide failures or relax timeout/assertions. Add optional fixture-only periodic timer capture/pause for controlled request tests; keep real automatic-recovery test unpaused."
+    },
+    {
+      "kind": "full-suite",
+      "evidence": "Frozen first candidate:4083passed96skipped111subtests443.34s; seven new browser cases are optional skips here and exercised separately."
+    }
+  ],
+  "capabilities": {
+    "independent_native_performance_review": "unavailable: two actual subordinate turns hit usage-limit errors; no completed independent review claimed",
+    "root_review": "source/canonical lock-boundary review and actual browser/Node/pytest verification continue",
+    "owner_PC": "no terminal/browser connection; exact current timeout wording and status latency requested, not yet returned"
+  },
+  "next_action": "Correct selected-reader concurrency and deterministic test setup, rerun relevant checks, update existing PR471 and exact-pinned guide only after verification. Since server reads dashboard.html on each GET and Python/runtime files remain unchanged, validate a conditional UI-only hot update from exact7aa390 while preserving the running engine."
+}
