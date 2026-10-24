@@ -1,0 +1,153 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-006-main-flow-delivery-readback",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T01:28:33Z",
+  "type": "WAITING",
+  "phase": "owner-PC-update-and-final-Windows-CI",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "source": {
+    "commit": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+    "tree": "98533b4e053d6cc13447c4decd62f5b327385f3c",
+    "pr": 471,
+    "draft": true,
+    "merged": false
+  },
+  "documentation": {
+    "current_main_commit": "7d706696353ce180fb20d3935d15ab423578d04e",
+    "archive_commit": "19c6c770b52cdafb80f2a9c812bddb8ef1791c9d",
+    "archive_blob": "33cf5048af663e0fb4199fdbdc36ab9fc5deaaf8",
+    "exact_archive_and_doc_bytes_verified": true,
+    "runtime_code_not_merged_into_main": true
+  },
+  "supplements": "coordination/handoffs/prime-main-flow-restart-20261024.json",
+  "verification": {
+    "automatic_workflows": {
+      "total": 8,
+      "all_pages_observed": true,
+      "runs": [
+        {
+          "id": 40048151238,
+          "name": "intelligence-feed-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151303,
+          "name": "tests",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40048151282,
+          "name": "configuration-job-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151244,
+          "name": "live-engine-federation-gate",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151166,
+          "name": "Four portfolio performance",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151188,
+          "name": "engine-federation-consumer-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151205,
+          "name": "ui-visual-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048145226,
+          "name": "tests",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ]
+    },
+    "platform_jobs": [
+      {
+        "run": 40048151303,
+        "jobs": [
+          {
+            "id": 120734555892,
+            "name": "engine",
+            "status": "completed",
+            "conclusion": "success"
+          },
+          {
+            "id": 120734556103,
+            "name": "engine-windows",
+            "status": "in_progress",
+            "conclusion": null
+          }
+        ]
+      },
+      {
+        "run": 40048145226,
+        "jobs": [
+          {
+            "id": 120734543913,
+            "name": "engine-windows",
+            "status": "in_progress",
+            "conclusion": null
+          },
+          {
+            "id": 120734544128,
+            "name": "engine",
+            "status": "completed",
+            "conclusion": "success"
+          }
+        ]
+      }
+    ],
+    "visual": {
+      "run": 40048151205,
+      "job": 120734467596,
+      "result": "success",
+      "world_scripts": 4,
+      "errors": [],
+      "writes": [],
+      "artifact": 12542014496
+    },
+    "local": "93 wider Chromium checks at identical production UI;3 focused final fixture checks;114 presentation/client checks;10 focused new browser cases;five synthetic Git guard scenarios."
+  },
+  "stopping_point": "Bounded source repair, independent review, publication, command rehearsal, guide replacement and exact-byte archive are concrete and complete. Final-source visual and both Linux jobs pass. Two Windows jobs remain in progress; prior base Windows workflows took about23–38minutes. No final Windows or owner-PC success is claimed.",
+  "owner_action": "Apply the exact source using the conditional UI update or full controlled restart in the current guide, then check Main scrolling/clicking and native status. A UI hot update retains the Python process launched at7aa3900; its served UI source becomesc8bd8d4.",
+  "next": "Inspect Windows job completion and owner-PC readback on continuation. Diagnose any remaining exact runtime message; do not resume the federation loop, hide stale data or claim zero-error uptime.",
+  "authorization_provenance": "Owner requested this bounded repair, exact restart instructions and archive. Verified same-owner canonical coordination repository; project evidence only, no credentials or account payloads."
+}
