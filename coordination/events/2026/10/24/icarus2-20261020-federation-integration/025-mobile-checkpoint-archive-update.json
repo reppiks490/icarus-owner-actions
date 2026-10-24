@@ -1,0 +1,24 @@
+{
+  "type": "UPDATE",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:docs/recovery/archive/2026-10-24/pre-mobile-pairing-PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:docs/recovery/archive/2026-10-24/INDEX.md"
+  ],
+  "reason": "Owner asked a working stopping point and mobile connection. Archive the interim3122full-restart guide byte-for-byte; replace active guide with honest held-release/mobile-pairing checkpoint so old FETCH_HEAD commands are not recommended after mobile-only branchadvance.",
+  "source": "8ec6199d0133db345b4ea81ef89f7519b3bf238f",
+  "validation": {
+    "phone_proxy": "37 passed50.68s; original34retained",
+    "root_regressions": "3 passed4.06s",
+    "actual_python310_launch": "7scenario rehearsalpassed"
+  },
+  "held_gates": [
+    "Windows8.3settingspath recognition",
+    "Windowsclosedporttimeouttestclassification",
+    "visual delayedstartup/power fixture"
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
