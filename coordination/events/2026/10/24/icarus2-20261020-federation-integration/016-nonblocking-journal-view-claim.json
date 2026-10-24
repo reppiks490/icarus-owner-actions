@@ -1,0 +1,14 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:icarus_engine/journal.py",
+    "reppiks490/Icarus:tests_engine/test_journal.py"
+  ],
+  "finding": "Portfolio.status(nonblocking=True) callsjournal.equity_series withunboundedJournalRLock and fullSQL; selectedsnapshot alsoaggregates persistedtrades. Publishbounded immutablecachedviewsoutsideHTTP; dirty/missing/expired valuationunknown, no fresh-time reassignment.",
+  "coordination": "cached_runtime_status ownsjournal/runtime status regions; rootreservesresolve_inputs andWorkspacePortfolio._resolved defaults hooks; authagentownsaccess/server wiring. Existingtestfixturesmustpublishtheirsyntheticmutationreadviews explicitly.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
