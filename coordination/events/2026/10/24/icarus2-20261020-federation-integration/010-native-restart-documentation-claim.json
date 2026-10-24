@@ -1,0 +1,21 @@
+{
+  "type": "UPDATE",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "task": "Complete two native subsystem connections and replace restart notes",
+  "targets": [
+    "reppiks490/Icarus:docs/recovery/archive/2026-10-24/pre-nexus-aion-PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:docs/recovery/archive/2026-10-24/INDEX.md",
+    "reppiks490/Icarus:docs/recovery/PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:START_HERE.md"
+  ],
+  "details": [
+    "Archive exact current guide blob 9d85e39c0caf80f441c45a66a43407bf05338f99 before replacement.",
+    "Replace obsolete UI-only route with one full restart procedure because this successor changes Python runtime code.",
+    "Retain 35 Main assets, saved private state, independent CC controls, source/tree guards and stopped-state backup.",
+    "Native core independent review16passed including actualPython3.10 lifecycle; wiring review23API/Chromium passed. Configuration revision mismatch reproduced and fixed. Final broad browser and full suite are running. Phone connection remains next phase after owner PC readback."
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
