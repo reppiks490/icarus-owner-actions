@@ -1,0 +1,17 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:tests_engine/test_paper_workspaces_runtime.py",
+    "reppiks490/Icarus:tests_engine/test_runtime_expiry_regression.py"
+  ],
+  "details": [
+    "Publishfixtureemulatormutations throughactualruntime readview publisher; retainassertedrealpositions/P&L.",
+    "Forwardnewoptionalnonblockingkeywordin testinstrumentationwrapper; no deadline/freshnessrelaxation.",
+    "Cachedstatus firstbroader309pass4skip2fixturefail beforeexplicitpublication fixes. ActualheldJournalMain/CCrequests+poisonheavy_summary all4regressionsgreen. Authbroader69pass; defaults11passactualPython3.10 plusfutureMain/CCpolicyhooks."
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
