@@ -1,0 +1,18 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:tests_engine/test_research_service.py",
+    "reppiks490/Icarus:docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md"
+  ],
+  "details": [
+    "Keepphonepreflightno-double-auth assertion; explicitflushowneraccessregistry inbackgroundFalse fixture afterrequests toobserveasynchronousauditpersistence.",
+    "NewHIGHLYIMPORTANTGitHubrunbook recordsactualMainNQdefaultsallassets/Main+CC; SOLUSDcanonicalSOL30min/nonRTH25contracts. Currentperassetsettingsresetexplicitlyrequested; journals,selectedassets,powerstate remain.",
+    "CaptureactualMainNQbeforeCtrlC usingnewverifiedGitblobhelper executedwithcurrentpackagecontextwithoutsourcecheckout; ifalreadyoff,explicitlyrecordsavedresolutionbasiswithactualNQsettingsfile,neverstockfallback.",
+    "Prior211592 nativebuildCI remainsindependenthistoricalproof; currentauth/status/defaultssuccessorneedsfreshvalidation."
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
