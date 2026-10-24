@@ -1,0 +1,255 @@
+{
+  "schema_version": "icarus-prime-main-flow-handoff-v1",
+  "handoff_id": "prime-main-flow-restart-20261024",
+  "at_utc": "2026-10-24T01:15:14Z",
+  "permanent_worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "functional_role": "Icarus Prime by owner takeover",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "state": "WAITING_CURRENT_HEAD_CI_AND_OWNER_PC_UPDATE",
+  "scope": "Repair owner-reported heavy Main scrolling/clicking and recurring runtime observation expiry. Deliver updated as-is paper source and replace/archive restart notes; broader federation loop remains cancelled.",
+  "source": {
+    "repository": "reppiks490/Icarus",
+    "branch": "prime/as-is-restart-20261022",
+    "commit": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+    "tree": "98533b4e053d6cc13447c4decd62f5b327385f3c",
+    "parent": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+    "runtime_ui_change_commit": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+    "previous_verified_base": "7aa3900282213c4e690436098702300a0447cb8d",
+    "local_equivalent_commit": "564ec213df31f26e64915638ee24372ece3cc789",
+    "local_worktree_clean": true,
+    "pr": 471,
+    "pr_url": "https://github.com/reppiks490/Icarus/pull/471",
+    "draft": true,
+    "merged": false,
+    "changed_from_base": [
+      {
+        "path": "icarus_engine/dashboard.html",
+        "blob": "23deff7ce0de71b37715df2abcdb4330eada389a"
+      },
+      {
+        "path": "icarus_engine/world-immersion.js",
+        "blob": "8589fc252422024ec5a06589d58d2b955117ffcf"
+      },
+      {
+        "path": "tests_engine/test_workspace_dashboard_browser.py",
+        "blob": "207d767eb81080255c532e21ae151d7c31304f6f"
+      },
+      {
+        "path": "tests_engine/test_world_immersion.py",
+        "blob": "bf5360764c550fe99d327c0e129582fd9983b9bf"
+      }
+    ],
+    "last_commit_changes_only": "tests_engine/test_workspace_dashboard_browser.py",
+    "all_Python_runtime_dependency_launcher_blobs_unchanged": true
+  },
+  "documentation": {
+    "main_commit": "19c6c770b52cdafb80f2a9c812bddb8ef1791c9d",
+    "tree": "ed14db9f9d65822f60910e58f1f741482c5ca1e0",
+    "canonical": "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "current_blob": "3b2c71726688beee0d01d0934c6b7d06f51c42d3",
+    "entrypoint": "START_HERE.md",
+    "archive": "docs/recovery/archive/2026-10-24/pre-main-flow-fix-PRIME_AS_IS_RESTART.md",
+    "archive_blob": "33cf5048af663e0fb4199fdbdc36ab9fc5deaaf8",
+    "archive_equals_previous_original_blob": true,
+    "all_four_docs_exact_bytes_refetched": true,
+    "local_guide": "/workspace/ICARUS_RESTART_CURRENT.md",
+    "main_runtime_code_unchanged": true
+  },
+  "confirmed_causes_and_repairs": [
+    "Status updates rebuilt the entire asset grid and redrew every cached SVG. Retain cards/chart containers and patch changed fields, membership/order, active errors and overview content.",
+    "numberPanels rewrote unchanged index text; the subtree observer scheduled another refresh, producing a persistent render loop. Idempotent labels and one pending observer frame remove it while preserving real updates.",
+    "Eight-second chart refreshes overlapped long serial passes and issued duplicate reads. Share one pass with four Main workers; keep selected CC readers serial for their exclusive configuration lock."
+  ],
+  "verification": {
+    "focused_new_browser": {
+      "source": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+      "passed": 10,
+      "seconds": 57.05,
+      "exit_code": 0,
+      "log_sha256": "ae3bcc406e8390bc5242de49c9b3178767f550dc0d4f75dbc22602729fc89514"
+    },
+    "presentation_client": {
+      "source": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+      "passed": 114,
+      "seconds": 8.69,
+      "log_sha256": "e25e4309a856e7d56c359f49b99d7284b22bad6564ceb9cfdfffc4764a5b97bb"
+    },
+    "wider_browser": {
+      "source": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+      "passed": 93,
+      "seconds": 327.19,
+      "exit_code": 0,
+      "production_identical_to_final": true,
+      "log_sha256": "0eb1b6cb6e8f43e8bea8b3b817eff9a19bc80a61c12508edc823073b238e9b10"
+    },
+    "final_fixture_focused": {
+      "source": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+      "passed": 3,
+      "seconds": 35.77,
+      "exit_code": 0,
+      "log_sha256": "fd0eb57740706e78f1cfd401e667eb34bc4c3e4dc78f57dcaa9dca9e9d1344bc"
+    },
+    "full_suite_before_final_decoration_repair": {
+      "passed": 4083,
+      "skipped": 97,
+      "subtests_passed": 111,
+      "seconds": 454.12,
+      "exit_code": 0,
+      "qualification": "Before final nine-line decoration repair; not relabelled as a final exact-head full-suite pass."
+    },
+    "idle_regression": {
+      "before": "5 idle refreshes;175 index mutations over five frames;1 failed",
+      "after": "0 idle refreshes;0 index mutations;two actual updates coalesce to one refresh;8 scoped checks passed",
+      "red_log_sha256": "8583e107ce0dba9660702386d2a2716d09cc1a480f275c6a0248b71f9c72b61a",
+      "green_log_sha256": "fd029f70c3f510ee59d17553657e66505e37c25611028d388b3260916aca05d6"
+    },
+    "render_measurement": {
+      "fixture": "Explicitly synthetic35-asset cloud Chromium view, not owner-PC data",
+      "before": "Five unchanged updates3332ms;175SVG removals",
+      "after": "About270–307ms;35cards/35SVGs retained;0SVG removals",
+      "live_values": "All35cards/SVGs retained during live value updates; no direct live-value baseline claim"
+    },
+    "operator_commands": {
+      "bash_blocks_parsed": 7,
+      "synthetic_local_git_cases": [
+        "clean exact source succeeds",
+        "dirty tracked source refuses",
+        "dirty untracked source refuses",
+        "wrong fetched pin refuses",
+        "unexpected runtime-file change refuses"
+      ],
+      "private_state_sentinel_unchanged": true,
+      "log_sha256": "83f1dd406462b38ca85000a199b4cbfce6261c7c58b8ea6193f0dc2dfd9dbb74",
+      "owner_PC_commands_executed": false
+    },
+    "hosted": {
+      "observed_total": 8,
+      "complete_pagination": true,
+      "source": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+      "runs": [
+        {
+          "id": 40048151238,
+          "name": "intelligence-feed-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151303,
+          "name": "tests",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40048151282,
+          "name": "configuration-job-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151244,
+          "name": "live-engine-federation-gate",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151166,
+          "name": "Four portfolio performance",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151188,
+          "name": "engine-federation-consumer-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048151205,
+          "name": "ui-visual-contract",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40048145226,
+          "name": "tests",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ],
+      "qualification": "Snapshot at this handoff time; later immutable event must supplement pending results. Previous base hosted passes are historical."
+    }
+  },
+  "review": {
+    "native_reviewer": "main_flow_final_review",
+    "root_dashboard_and_test_review": "CLEAR after findings resolved",
+    "world_patch_authored_by_native_reviewer_and_reviewed_by_root": "CLEAR; no claim that author independently reviewed own patch",
+    "status_fixture_followup": "Independent read-only review CLEAR; no production polling/finally defect found",
+    "docs_reviewer": "main_flow_restart_docs;CLEAR",
+    "earlier_quota_limited_attempts": "Two older subordinate turns hit usage limits; current fresh native reviewers completed. Do not treat earlier limit as permanent unavailability."
+  },
+  "preserved_failures": [
+    "Baseline grid churn and actual duplicate NQ chart reads.",
+    "Initial chunk barrier blocked later assets behind a held chart; worker pool replaced it.",
+    "Selected CC parallel reads violated exclusive reader lock; Main-only concurrency retained.",
+    "Slow-chart regression persisted after a timer-only test adjustment; that hypothesis did not resolve it. Actual idle observer loop later found and repaired.",
+    "An environment restart interrupted one wider browser run after37passing cases; not a completed pass. Fresh later run passed93.",
+    "Hosted visual40047245008/job120731683267 at d3ae145 failed only recovery fixture. Watchdog screen expiry could precede request timeout, and hold-all routing could strand a second poll after unroute. Final permanent route holds one scheduled request, records actual timeout after real cache clearing, and verifies normal recovery with original6s recovery budget.",
+    "Two old d3ae145 full-test workflows40047244942 and40047239845 were cancelled by superseding final fixture commit; not claimed passing."
+  ],
+  "operator_update": {
+    "owner_source": "C:/Users/tripl/Icarus-as-is",
+    "private_state": "C:/Users/tripl/Icarus",
+    "main_url": "http://127.0.0.1:8791/",
+    "status_route": "/status/public",
+    "main_assets_count": 35,
+    "saved_CC_asset_selections_preserved": true,
+    "hot_update_precondition": "Owning launcher already identifies startup7aa390028221 and this exact clean source path; validate exact old/new commits/trees and four-path allowlist. Close ICARUS tabs, retain launcher, update and reopen. Raw served-script hash confirms content.",
+    "hot_update_identity": "Existing Python process launched at7aa3900; served UI sourcec8bd8d4. Do not demand a newc8bd8d4 startup line for this route.",
+    "fallback": "Unknown/different process source or stopped engine: use full Ctrl+C, stopped-state backup, exact-source switch and start with existing state; setup only when unprepared.",
+    "force_reset_clean_or_unrelated_kills": false
+  },
+  "capabilities": {
+    "used": [
+      "connected GitHub API",
+      "cloud Bash/filesystem",
+      "pytest",
+      "system Chromium/Playwright",
+      "native delegated review/implementation",
+      "synthetic local Git command rehearsal"
+    ],
+    "unavailable": [
+      "owner PC terminal/browser connection",
+      "local Windows PowerShell execution"
+    ],
+    "Windows_checks": "Hosted Windows CI is separately tracked; no local Windows success fabricated.",
+    "plugins_or_external_messages_not_fabricated": true
+  },
+  "owner_readback_pending": [
+    "Apply this exact source using the correct guarded route.",
+    "Check Main scrolling/clicking responsiveness and continuous native status after reload.",
+    "If symptom remains, capture exact runtime wording and bounded status latency without exposing custom token."
+  ],
+  "constraints": {
+    "zero_error_guarantee": false,
+    "unavailable_observations_must_remain_unavailable": true,
+    "full_system_readiness": "NO_GO",
+    "no_federation_loop_resume": true,
+    "no_live_broker_arming": true,
+    "no_new_spend": true,
+    "no_scheduler_or_stop_control_changes": true,
+    "no_main_runtime_merge": true,
+    "provider_entitlement_or_freshness_not_certified": true
+  },
+  "next": "Finish exact-head hosted results, supplement this snapshot with immutable receipt, update guide/PR/entrypoint evidence, then wait for owner-PC update/readback. Continue diagnosis in-session if the symptom persists.",
+  "authorization_provenance": "Owner requested this bounded restart/UI repair and replacement/archive of prior notes. The verified same-owner project coordination repository is required by Icarus AGENTS.md; no credentials, account payloads or licensed raw data included."
+}
