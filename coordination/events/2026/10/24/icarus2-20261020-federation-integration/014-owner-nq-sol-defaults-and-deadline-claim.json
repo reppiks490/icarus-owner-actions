@@ -1,0 +1,33 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "owner_request": "Stop recurring Request deadline exceeded blank runtime; every asset defaults to current NQ except SOLUSD/SOL timeframe30/non-RTH/25contracts. Full updated restart, HIGHLY IMPORTANT GitHub documentation and commands in chat. Preserve two completednativeconnections.",
+  "targets": [
+    "reppiks490/Icarus:icarus_engine/restart_defaults.py",
+    "reppiks490/Icarus:tests_engine/test_restart_defaults.py",
+    "reppiks490/Icarus:icarus_engine/runtime.py",
+    "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
+    "reppiks490/Icarus:icarus_engine/workspace_api.py",
+    "reppiks490/Icarus:icarus_engine/server.py",
+    "reppiks490/Icarus:icarus_engine/dashboard.html",
+    "reppiks490/Icarus:icarus_engine/workspace-client.js",
+    "reppiks490/Icarus:tests_engine/test_workspace_dashboard_browser.py",
+    "reppiks490/Icarus:tests_engine/test_workspace_api.py",
+    "reppiks490/Icarus:tests_engine/test_runtime_status.py",
+    "reppiks490/Icarus:tests_engine/test_dashboard_js.py",
+    "reppiks490/Icarus:.github/workflows/test.yml",
+    "reppiks490/Icarus:docs/recovery/PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:START_HERE.md"
+  ],
+  "implementation_boundary": "Derive actual saved MainNQ configuration on owner PC during stopped-state preflight; do not invent missing private values. Explicit owner-requested defaults reset supersedes preserve-custom-Inputs instruction, while journals, CCasset selections and powerstate remain preserved. SOLusesregistrySOL/COINBASE:SOLUSD. Investigate cachedstatus blockingpaths with reproductions; don't widen deadlines or represent stale observations as fresh.",
+  "baseline": {
+    "source": "211592f2515df690cc89857f9d3c27aeff843225",
+    "tree": "7806ff69776a2804b19a36b88fa833d29cb6171a",
+    "local_equivalent": "f8b7c59443b37a8525232cf4b98d00bab1189fec",
+    "ci": "eight workflows and bothLinuxjobs pass; twoWindowsjobs still running"
+  },
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
