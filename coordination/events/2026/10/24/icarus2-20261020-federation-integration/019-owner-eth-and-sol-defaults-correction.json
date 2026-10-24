@@ -1,0 +1,18 @@
+{
+  "type": "UPDATE",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "owner_request": "Owner clarified screenshot is COINBASE:ETHUSD; retain SOLUSD exceptions too and apply same to ETHUSD. Both canonicalETH andSOL30minutes/notRTH/25contracts; everyotherassetcurrentMainNQdefaults.",
+  "targets": [
+    "reppiks490/Icarus:icarus_engine/restart_defaults.py",
+    "reppiks490/Icarus:icarus_engine/paper_workspaces.py",
+    "reppiks490/Icarus:tests_engine/test_restart_defaults.py",
+    "reppiks490/Icarus:docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md",
+    "reppiks490/Icarus:docs/recovery/PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:START_HERE.md"
+  ],
+  "state": "Continuecombinedruntime/auth/defaultsrestart beforedelivery; priornative211592alltenCIworkflowsnowpassed; newcombinedcodeunpublished. Sourceconsistencyguardtrackspreset/capturefilechangesbeforewrite. No ownerPCrestartclaimed.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
