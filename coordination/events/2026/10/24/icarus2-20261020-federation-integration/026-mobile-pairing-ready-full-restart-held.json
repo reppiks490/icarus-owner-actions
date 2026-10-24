@@ -1,0 +1,105 @@
+{
+  "type": "HANDOFF",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T23:24:00Z",
+  "owner_priority": "Begin phone pairing; pause new subsystem/defaults work at working desktop boundary",
+  "state": "WAITING_OWNER_PC_MOBILE_PAIRING_FULL_RESTART_HELD",
+  "runtime": {
+    "mobile_commit": "8ec6199d0133db345b4ea81ef89f7519b3bf238f",
+    "mobile_tree": "d713310928c8f779f8e085e4e898f17180b4452a",
+    "relay_sha256": "568e11f718a202609c81309f90b7ff76d4a54d6156d89dd81ac032e243636464",
+    "parent": "3122d349524fbce803970dc34ab6fc74dad87467",
+    "pr": 471,
+    "changed_files": [
+      "icarus_engine/phone_access_proxy.py",
+      "tests_engine/test_phone_access_proxy.py"
+    ]
+  },
+  "documentation": {
+    "main_commit": "715e6229f6ba1fdc0af58972bdf67c36673d3d5d",
+    "phone": "docs/PHONE_ACCESS.md",
+    "checkpoint": "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "important": "docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md",
+    "archive": "docs/recovery/archive/2026-10-24/pre-mobile-pairing-PRIME_AS_IS_RESTART.md",
+    "readback": "all6filesexact"
+  },
+  "validation": {
+    "phone_real_http": "37 passed50.68s",
+    "regressions_independent": "3 passed4.06s",
+    "actual_python310_operator_rehearsal": "7 passed; credential refusal/warmup refusal/workspace preflight/authenticated relay",
+    "shell_and_python310_syntax": "passed",
+    "full_candidate_local": "4152passed128skipped111subtests;107Chromium",
+    "hosted_parent": "bothLinuxPASS; bothWindowsFAIL8.3shortpath andclosedportfixture;visualFAILstartup/power",
+    "hosted_new_head": [
+      {
+        "id": 40142311866,
+        "name": "tests",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 40142311820,
+        "name": "Four portfolio performance",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 40142311706,
+        "name": "ui-visual-contract",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "id": 40142311745,
+        "name": "intelligence-feed-contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 40142311739,
+        "name": "engine-federation-consumer-contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 40142311762,
+        "name": "configuration-job-contract",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 40142311702,
+        "name": "live-engine-federation-gate",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "id": 40142306419,
+        "name": "tests",
+        "status": "in_progress",
+        "conclusion": null
+      }
+    ]
+  },
+  "pending_full_restart": [
+    "Repair Windows8.3pathrecognition without allowing junction/symlink escape",
+    "Make stopped-port fixture deterministic without accepting socket timeout fallback",
+    "Resolve visual forced-delayed-start native resume/power fixture"
+  ],
+  "unshipped": {
+    "dirty_file": "tests_engine/test_subsystem_connections_browser.py",
+    "patch": "/workspace/scratch/prime-subsystem-delayed-start-unshipped.patch",
+    "note": "Forceddelay experiment notcommitted; retainforfuturediagnosis"
+  },
+  "operator": {
+    "relay": "/workspace/ICARUS_PHONE_CONNECT_GIT_BASH.sh",
+    "tunnel": "/workspace/ICARUS_PHONE_TUNNEL_GIT_BASH.sh",
+    "guide": "/workspace/ICARUS_PHONE_CONNECTION.md",
+    "readback_required": "owner runsPCcommands; sends printed HTTPS tunnelURL/status and confirmsphoneassetupdates; keep tokenprivate",
+    "pc_restart_performed": false,
+    "phone_connected_verified": false
+  },
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
