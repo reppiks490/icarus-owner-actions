@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-004-main-flow-ci-waiting",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T00:54:48Z",
+  "type": "WAITING",
+  "phase": "exact-source-ui-ci-and-restart-guide",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-24/pre-main-flow-fix-PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/archive/2026-10-24/INDEX.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/prime-main-flow-restart-20261024.json"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "source": {
+    "commit": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+    "tree": "0e2765356c855ba4be6dc86eba0f2478eef9bec4",
+    "parent": "7aa3900282213c4e690436098702300a0447cb8d",
+    "pr": 471
+  },
+  "verification": {
+    "focused_browser": "10passed57.05s",
+    "presentation_client": "114passed8.69s",
+    "idle_mutations": "before175over5frames;after0;realchangescoalesce1",
+    "broader_browser": "inprogress",
+    "exact_head_hosted": "pending"
+  },
+  "summary": "Owner-requested Main lag/runtime fix published to existing draft PR; complete current exact-pinned restart guide and byte-identical prior-guide archive. Two served UI files plus two tests only; Python runtime unchanged from parent.",
+  "authorization_provenance": "Owner requested replacement/archive of old restart notes and lag/runtime repair. This is the verified same-owner canonical project coordination repository, required by Icarus AGENTS.md; only project paths and bounded test metadata are recorded."
+}
