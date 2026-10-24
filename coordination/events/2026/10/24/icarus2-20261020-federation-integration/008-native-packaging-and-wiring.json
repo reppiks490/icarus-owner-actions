@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-008-native-packaging-and-wiring",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T05:36:05Z",
+  "type": "UPDATE",
+  "phase": "native-source-integrity-and-runtime-wiring",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "pyproject.toml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "Extend claim007 for exact package-data inclusion of native source manifest/attribution; no runtime dependencies added. Keep native source identity available in wheel installs as well as source checkout.",
+  "verification": {
+    "baseline": "37 source-reliability/client checks passed; c8bd8d4 all eight hosted workflows passed.",
+    "native": "Four integrity/native-store tests passed, including actual Python3.10 with site-packages disabled. Four unmodified native source blobs verified.",
+    "api_red": "Eight route/isolation/lifecycle regressions failed before API wiring; expected unsupported endpoints.",
+    "UI": "Initial eight Chromium cases passed; additional state/shape regressions being completed."
+  },
+  "preserve": "Unknown provider SLO/sequence stays unknown. Native health context is monitoring evidence; no SourceReliability research measurements fabricated from heartbeat telemetry.",
+  "authorization_provenance": "Owner-delegated NEXUS/AION build in canonical same-owner coordination repository; bounded code/test metadata only."
+}
