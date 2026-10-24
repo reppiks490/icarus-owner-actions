@@ -1,0 +1,39 @@
+{
+  "type": "WAITING",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/icarus-owner-actions:coordination/handoffs/prime-nexus-aion-restart-20261024.json"
+  ],
+  "runtime": {
+    "revision": "211592f2515df690cc89857f9d3c27aeff843225",
+    "tree": "7806ff69776a2804b19a36b88fa833d29cb6171a",
+    "parent": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+    "local_equivalent": "f8b7c59443b37a8525232cf4b98d00bab1189fec",
+    "pr": 471
+  },
+  "validation": {
+    "full": {
+      "passed": 4114,
+      "skipped": 128,
+      "subtests_passed": 111,
+      "seconds": 457.45
+    },
+    "browser": {
+      "passed": 107,
+      "seconds": 490.78
+    },
+    "focused": {
+      "passed": 45,
+      "seconds": 113.81
+    },
+    "independent_core": 16,
+    "independent_wiring": 23,
+    "python310": "actual stdlib-only native and adapter lifecycle/recovery pass; wheel provenance packaged and verified",
+    "regressions": "configuration relabeling and all-unusable state reproduced before fixes; Windows autocrlf canonical bytes checked"
+  },
+  "waiting": "Ten automatic hosted workflows running, including Windows and visual contracts. No runtime main merge; next canonical docs replace/byte-exact archive after hosted readback. Owner PC restart follows delivery; phone deferred until actual PC readback.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
