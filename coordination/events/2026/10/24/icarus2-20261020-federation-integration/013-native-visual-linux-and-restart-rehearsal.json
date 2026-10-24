@@ -1,0 +1,55 @@
+{
+  "type": "WAITING",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "runtime": "211592f2515df690cc89857f9d3c27aeff843225",
+  "tree": "7806ff69776a2804b19a36b88fa833d29cb6171a",
+  "hosted": {
+    "completed_workflows": 8,
+    "total_workflows": 10,
+    "visual": {
+      "run": 40097011216,
+      "job": 120881266011,
+      "result": "success",
+      "artifact": 12562030284,
+      "artifact_digest": "sha256:e1f122dbcd965c595cc860ca082b54de3ac8a7efff382ff1de4a16ed7db78583",
+      "four_world_scripts": "errors[]; writes[]; final overflow:false"
+    },
+    "linux": {
+      "pr_job": 120881266015,
+      "push_job": 120881254069,
+      "result": "success"
+    },
+    "windows": {
+      "pr_job": 120881265817,
+      "push_job": 120881253886,
+      "result": "in_progress",
+      "persistence_step": "success",
+      "broad_test_step": "running"
+    }
+  },
+  "restart_rehearsal": {
+    "passed": 7,
+    "scope": "real temporary Git/state; actual Python3.10/process_identity; fake launcher; POSIX/MSYS boundary explicit",
+    "checks": [
+      "backup+oldsource receipt+exact checkout+35assets launch",
+      "dirtycheckout",
+      "livePID",
+      "unknownPID",
+      "busy8791",
+      "fetchedhead mismatch",
+      "ignored local source conflict preserved"
+    ]
+  },
+  "performance_probe": {
+    "scope": "synthetic cloud Python3.10 35stream monitor; not owner PC",
+    "cached_reads_1000_total_ms": 421.16,
+    "unchanged_ticks_100_total_ms": 297.34,
+    "receipts_after_unchanged_ticks": 1,
+    "fixture_note": "Initial timestamp-float synthetic fixture produced future nanoseconds; corrected capture one second before receipt; production future guard unchanged."
+  },
+  "pending": "Await both broad Windows test/setup jobs. Then publish exact guide/archive and final operator handoff. Owner PC and phone remain unverified.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
