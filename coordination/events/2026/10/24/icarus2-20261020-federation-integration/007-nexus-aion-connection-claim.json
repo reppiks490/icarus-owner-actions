@@ -1,0 +1,99 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-007-nexus-aion-connection-claim",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T05:24:01Z",
+  "type": "CLAIM",
+  "phase": "two-native-subsystem-connections",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/divine-providence"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/native_subsystems"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/subsystem_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/subsystem-connections-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_native_subsystem_sources.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_subsystem_connections.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_subsystem_connections_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_subsystem_connections_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/test.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-24-nexus-aion-connections-design.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-24-nexus-aion-connections.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "owner_direction": "Build the next two most beneficial subsystem connections for next restart; owner delegated selection. Choose NEXUS source-health and AION durable receipt-time history for current reliability/observability goals. No broad federation loop restart.",
+  "baseline": {
+    "commit": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+    "tree": "98533b4e053d6cc13447c4decd62f5b327385f3c",
+    "all_eight_hosted_workflows_now_pass": true,
+    "Windows_tests_runs": [
+      40048151303,
+      40048145226
+    ]
+  },
+  "native_source": {
+    "repository": "reppiks490/divine-providence",
+    "commit": "27ae69c593ede3019957100cd401625bd2424f43",
+    "tree": "bde186e028d14f79a70b4408e3d94a79d3bc32c7",
+    "mutation": false
+  },
+  "approach": "Embed exact pinned minimal stdlib native NEXUS health/contracts and AION EventStore/contracts under a private namespace, preserve hashes/provenance, verify Python3.10 compatibility. Observe existing cached feed summaries in scoped background workers; publish cached read-only status plus verified AION history across restart. Unknown provider SLO/sequence remain unknown; no raw data acquisition or research promotion.",
+  "preservation": "Keep current c8bd8d4 restart pinned until tested successor is ready. Preserve Main/CC isolation, saved state, power OFF/drain, single-flight UI behavior and existing request deadlines.",
+  "authorization_provenance": "Owner explicitly requested two connections and delegated selecting the most beneficial. Canonical cooperation repository is verified same-owner and mandated by Icarus AGENTS.md; public code paths/metadata only."
+}
