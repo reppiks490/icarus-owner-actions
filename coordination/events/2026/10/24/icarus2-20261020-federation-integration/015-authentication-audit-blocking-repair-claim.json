@@ -1,0 +1,15 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:icarus_engine/access_control.py",
+    "reppiks490/Icarus:tests_engine/test_access_control.py",
+    "reppiks490/Icarus:tests_engine/test_runtime_status.py"
+  ],
+  "finding": "Every API auth currently serializes SQLite UPDATE/access-event COMMIT behind global RLock with10sdb timeout. An audit writer can stall allstatus/chart auth past client's10sdeadline. Also nonblockingstatus calls unlocked heavy summaries/journalaggregation.",
+  "plan": "Reproduce heldwriter + concurrentauth/HTTP behavior; memory-only authoritative digest identities, cache updatedaftercommittedadd/kick; auditflush bounded/background outsideauthlock; immediate expiry/revocation semantics retained. Cache-only status using publishedreadviews and truthfultimestamps; no deadlineextension orstale-as-fresh. Preserve old211592 native releaseverification ashistorical untilsuccessorcodepasses.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
