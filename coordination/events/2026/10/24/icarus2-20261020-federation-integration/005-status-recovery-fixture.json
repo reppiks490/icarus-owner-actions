@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-005-status-recovery-fixture",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T01:05:03Z",
+  "type": "UPDATE",
+  "phase": "status-deadline-fixture-repair-and-ci-wait",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "source": {
+    "commit": "c8bd8d49d9fc759067c75ee76157b812ce287775",
+    "tree": "98533b4e053d6cc13447c4decd62f5b327385f3c",
+    "parent": "d3ae145868dc2b227836ac3b9ff15894f959b11f",
+    "latest_delta": "one test file only; all production blobs unchanged"
+  },
+  "verification": {
+    "previous_source_wider_browser": "93 passed in 327.19s; exit 0",
+    "hosted_failure": {
+      "run": 40047245008,
+      "job": 120731683267,
+      "test": "test_main_real_status_deadline_expires_then_automatic_poll_recovers",
+      "failure": "Recovery wait 6000ms exceeded; all other cases in that step passed."
+    },
+    "review": "Independent reviewer CLEAR on fixture cause and proposed repair; no production poll/finally defect found.",
+    "final_focused": "3 passed in 35.77s; actual deadline, automatic recovery and status continuity; exit 0"
+  },
+  "finding": "The independent age watchdog may clear observations before the in-flight request deadline. A hold-all route can capture a later scheduled request before route replacement; unroute does not release already held Routes. The repaired test holds exactly one scheduled status request with a permanent handler, records the actual deadline after the real expiry function clears caches, then verifies normal scheduled recovery with the original 6s recovery budget. Application deadlines/freshness remain unchanged.",
+  "next_action": "Await new exact-head automatic CI. Repin canonical restart guide/archive to this final source and preserve earlier failure/cancellation identities.",
+  "authorization_provenance": "Owner-requested restart repair in the existing canonical project cooperation repository; public code/test metadata only."
+}
