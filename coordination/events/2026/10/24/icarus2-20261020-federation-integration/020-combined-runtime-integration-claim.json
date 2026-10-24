@@ -1,0 +1,26 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:tests_engine/test_command_center_routes.py",
+    "reppiks490/Icarus:tests_engine/test_config_jobs.py",
+    "reppiks490/Icarus:tests_engine/test_restart_persistence.py"
+  ],
+  "evidence": {
+    "full_first_integration": "13failed4130passed128skipped111subtests467.07s; sourcechangedaftercollection forcompositeclock/warmupfixes; no finalpassclaimed",
+    "browser": "107passed446.23s",
+    "cache_targeted": 16,
+    "cache_broader": "311passed4skipped85.20s",
+    "defaults_eth_sol": "13passed2.84s",
+    "auth": "96passed30.51s"
+  },
+  "details": [
+    "Instrumentedmanager.snapshot mocks mustacceptnewnonblockingkeyword; retainallaccountinginvalidityassertions.",
+    "SyntheticdirectSQL/emulatormutations mustpublishexplicitlybeforeHTTPchecks, matchingactualworker contract; no API-I/O fallback.",
+    "Investigateactualrewarmcached-viewretentionbeforemerelyfixingmanualAssetRunnerfixture. Preservecommittedepoch/inputs whilecandidateworkerbusy andoldcapturetimestamps untilnewpublishedview."
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
