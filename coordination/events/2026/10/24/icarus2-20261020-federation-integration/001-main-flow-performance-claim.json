@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-001-main-flow-performance-claim",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T00:09:41Z",
+  "type": "CLAIM",
+  "phase": "bounded-main-dashboard-flow-performance",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_main_dashboard_flow_browser.py"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "Owner confirms updated restart operates but Main scrolling/clicking lags heavily, and periodically reports a timeout resembling the earlier runtime observation failure. Investigate and reproduce Main scaling/refresh behavior before smallest repair; no automatic merge, deployment, training, provider collection or broad federation cycle.",
+  "source": {
+    "commit": "7aa3900282213c4e690436098702300a0447cb8d",
+    "tree": "d6020c33e6a7c7d72946a2faaae52ca8189bae40",
+    "pr": 471
+  },
+  "findings": [
+    {
+      "status": "source-observed-reproduction-pending",
+      "evidence": "dashboard overview replaces full asset grid on every status render, redraws every cached mini-chart and constructs a second full detached overview. Every8s refreshCharts can overlap its previous sequential35-symbol pass; status is polled every3s and expires after10s."
+    }
+  ],
+  "capabilities": {
+    "cloud_shell": true,
+    "system_chromium": true,
+    "native_delegation_attempted": [
+      "final_power_review",
+      "restart_evidence_check"
+    ],
+    "delegated_review_limit": "Both subordinate attempts ended with runtime usage-limit errors after partial read-only source findings; no completed independent performance benchmark/review is claimed. Root continues supported work; no capacity purchase.",
+    "owner_PC_access": false
+  },
+  "next_action": "Create isolated worktree, meaningful 35-asset rendering/overlapping-chart regressions and delayed/recovering status checks. Keep actual stale data unavailable and preserve recovery; smallest repair only on demonstrated paths. Ask owner for exact timeout wording while continuing independent work."
+}
