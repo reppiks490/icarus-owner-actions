@@ -1,0 +1,20 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/Icarus:tests_engine/test_subsystem_connections_browser.py"
+  ],
+  "failure": {
+    "source": "3122d349524fbce803970dc34ab6fc74dad87467",
+    "visual_run": 40121565882,
+    "job": 120954058874,
+    "line": "test_subsystems_pause_hidden_and_off_keep_focus_and_dispose_pending_requests:207",
+    "message": "UI ON state wait timed out15000ms; no other browserfailure"
+  },
+  "finding": "common_page(pause_periodic=True) clears all window.setInterval including workspace-power5s refresh. Test's post-ON immediate refresh can observe STARTING; without timer it never learns actualON on slowerhost. Productionpowerpolling remains active.",
+  "plan": "Reproduce with explicit delayed realcreate_portfolio/start boundary, keep actualpowerON/OFF and nativepollcancel/focus/dispose assertions, drive IcarusWorkspacePower.refresh explicitly in fixture afterrelease instead of wideningtime. Productioncode unchanged; publish test-only followup with exact productiontree equivalence and freshchecks.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
