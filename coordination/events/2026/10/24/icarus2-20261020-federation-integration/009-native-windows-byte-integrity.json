@@ -1,0 +1,19 @@
+{
+  "type": "UPDATE",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "task": "Finish NEXUS and AION, then exact-pinned full restart before phone reconnection",
+  "targets": [
+    "reppiks490/Icarus:.gitattributes",
+    "reppiks490/Icarus:tests_engine/test_native_subsystem_sources.py"
+  ],
+  "details": [
+    "Extend existing 007/008 claim for LF checkout attributes required by canonical native Git-byte verification on Windows core.autocrlf=true.",
+    "Add actual Git checkout regression and Python3.10 wheel package-data verification.",
+    "Eleven integrated cached API and real-browser cases passed in 11.74s. Local Python3.12 build lacks setuptools; use already prepared Python3.10 build toolchain without network.",
+    "Old c8 runtime stays published while successor verification proceeds. Phone connection deferred until owner PC restart readback."
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
