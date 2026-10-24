@@ -1,0 +1,24 @@
+{
+  "type": "CLAIM",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "owner_instruction": "Find a working stopping point; begin mobile connection now. Freeze new subsystem/defaults work and preserve current working PC engine.",
+  "targets": [
+    "reppiks490/Icarus:icarus_engine/phone_access_proxy.py",
+    "reppiks490/Icarus:tests_engine/test_phone_access_proxy.py",
+    "reppiks490/Icarus:docs/PHONE_ACCESS.md",
+    "reppiks490/Icarus:docs/recovery/PRIME_AS_IS_RESTART.md",
+    "reppiks490/Icarus:docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md",
+    "reppiks490/Icarus:START_HERE.md",
+    "reppiks490/icarus-owner-actions:coordination/START_HERE.md"
+  ],
+  "finding": {
+    "phone": "Actual HTTP OPTIONS from configured hosted mobile origin with authorization,x-icarus-workspace returns400; current client also needs x-icarus-config-revision and exposed response workspace/revision headers. Existing34proxy checks pass but lack this integration case.",
+    "checkpoint": "3122 Linux full suites pass, Windows full suites fail short8.3path recognition and stopped-port timeout fixture; visual delayed startup fixture unresolved. Do not claim full verified release or deploy it for mobile.",
+    "pc": "Owner PC not remotely connected; retain currently working engine and Inputs. Reconnect phone independently with a pinned standard-library-only relay."
+  },
+  "plan": "Add regressions then minimal mobile CORS compatibility correction, preserve exact origin and bearer validation, verify locally. Publish bounded relay update on existingPR471; document release blockers and phone pairing commands without source-switching/restarting the running PC engine. Preserve dirty subsystem startup experiment as WIP, unshipped.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
