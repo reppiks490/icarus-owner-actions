@@ -1,0 +1,134 @@
+{
+  "type": "WAITING",
+  "worker_id": "icarus2",
+  "session_id": "icarus2-20261020-federation-integration",
+  "date": "2026-10-24",
+  "targets": [
+    "reppiks490/icarus-owner-actions:coordination/handoffs/prime-full-restart-nq-eth-sol-20261024.json"
+  ],
+  "runtime": {
+    "sha": "3122d349524fbce803970dc34ab6fc74dad87467",
+    "tree": "9ad37de97e160aead6602351b54c43608086a006",
+    "local_equivalent": "af15cb03c84b716994b891f8d4ecd1f2bd68ed87",
+    "parent": "211592f2515df690cc89857f9d3c27aeff843225",
+    "pr": 471
+  },
+  "owner_settings": {
+    "template": "actual current Main NQ; authenticated live capture or actual saved resolution when stopped; never stock fallback",
+    "exception_assets": [
+      "ETH / COINBASE:ETHUSD",
+      "SOL / COINBASE:SOLUSD"
+    ],
+    "exceptions": {
+      "timeframe": "30",
+      "use_session": false,
+      "qty_contracts": 25
+    },
+    "scope": "all Main and selected CC assets; future defaults; later explicit edits retain precedence",
+    "preserved": "journals; asset lists; power state; native economics"
+  },
+  "validation": {
+    "full": "4152 passed,128 skipped,111 subtests;468.28s",
+    "real_browser": "107 passed;437.29s",
+    "auth": 96,
+    "prepare": 18,
+    "writer_audit": 69,
+    "main_cc_config": "239 passed,4 skipped",
+    "independent_review": "5 passed incl actual accounting clock regression",
+    "wheel_sha256": "f084e5357081f05304bfc3520596759a067f407722a699a42f5f627ae9b4beb2"
+  },
+  "docs": {
+    "commit": "3b82b2c3d95e5854e8d57ddd22f9bab55891b2c6",
+    "readback_verified_files": 5,
+    "important": "docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md",
+    "current": "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "archive": "docs/recovery/archive/2026-10-24/pre-nexus-aion-PRIME_AS_IS_RESTART.md",
+    "archive_blob": "9d85e39c0caf80f441c45a66a43407bf05338f99",
+    "status": "Full pinned commands published; hostedWindows pending explicitly. Update evidence after all checks."
+  },
+  "hosted": [
+    {
+      "id": 40121565882,
+      "name": "ui-visual-contract",
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565882"
+    },
+    {
+      "id": 40121565880,
+      "name": "tests",
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565880"
+    },
+    {
+      "id": 40121565870,
+      "name": "configuration-job-contract",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565870"
+    },
+    {
+      "id": 40121565918,
+      "name": "engine-federation-consumer-contract",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565918"
+    },
+    {
+      "id": 40121565890,
+      "name": "live-engine-federation-gate",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565890"
+    },
+    {
+      "id": 40121565893,
+      "name": "intelligence-feed-contract",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565893"
+    },
+    {
+      "id": 40121565950,
+      "name": "Four portfolio performance",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121565950"
+    },
+    {
+      "id": 40121561327,
+      "name": "tests",
+      "event": "push",
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121561327"
+    },
+    {
+      "id": 40121561320,
+      "name": "configuration-job-contract",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121561320"
+    },
+    {
+      "id": 40121561303,
+      "name": "intelligence-feed-contract",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/reppiks490/Icarus/actions/runs/40121561303"
+    }
+  ],
+  "waiting": "Hosted Linux/Windows/visual final jobs; no failures observed. Do not claim owner PC restarted. Final inline commands after hosted readback; phone after PC confirmation. No runtime main merge.",
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false
+}
