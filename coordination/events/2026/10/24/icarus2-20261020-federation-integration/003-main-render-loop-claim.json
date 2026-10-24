@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261024-icarus2-003-main-render-loop-claim",
+  "session_id": "icarus2-20261020-federation-integration",
+  "at_utc": "2026-10-24T00:45:57Z",
+  "type": "CLAIM",
+  "phase": "main-render-loop-repair",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    }
+  ],
+  "execution_authorized": false,
+  "all_icarus_requirements_complete": false,
+  "summary": "Repair the confirmed idle dashboard decoration render loop and verify slow-chart/status recovery. Continue the existing as-is restart PR471; no runtime merge or deployment.",
+  "authorization_provenance": "Owner requested Main lag and runtime fixes. Icarus AGENTS.md requires publishing a CLAIM to this canonical cooperation repository before shared UI edits. GitHub metadata freshly verifies reppiks490/icarus-owner-actions shares the Icarus owner, is the existing project coordination repository, and connected account has admin/push permission. This record contains only public repository paths and a bounded repair claim; no credentials, personal local paths, licensed data or customer records.",
+  "supersedes_hypothesis": "The timer-only hypothesis in002 did not resolve the slow-chart browser failure; diagnosis remains open."
+}
