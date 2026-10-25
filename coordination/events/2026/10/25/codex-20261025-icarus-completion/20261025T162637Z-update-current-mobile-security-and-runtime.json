@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T162637Z-update-current-mobile-security-and-runtime",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T16:26:37Z",
+  "type": "UPDATE",
+  "phase": "nonlive-integration-and-runtime-closeout",
+  "summary": "Continued the user's broad non-live completion request. Mobile gateway review found that the configured engine URL accepted remote origins and authenticated urllib redirects/proxy settings could disclose the gateway engine token. Added fail-closed loopback-origin validation, disabled ambient proxies and redirects, and added remote-origin, redirect-capture, and proxy-capture regressions; exact mobile gateway suite passes 12 tests. Pushed commits df484af331e459fdad7573b66f7acee9d1346b1a and c040d697091d8bdb5ab82cbe798fe2fb7fc4fddc to Icarus PR #198; hosted checks are pending. Current Icarus main already wraps disconnected request reads/writes and tests ConnectionAbortedError as a dropped client stream; the owner's observed traceback therefore still requires restarting any older running checkout/process to load merged code. Icarus-engine PR #252 is merged into FR-1 feature PR #209, not main; all current exact-head synthetic/API/accounting checks pass, but #209 remains draft and empirical gates remain. Divine Providence PR #60 increases only the observatory Windows job timeout from 25 to 40 minutes; exact-head Windows collection is still in progress. No live arming, provider collection/spend, physical restart, or phone pairing is claimed.",
+  "repos": [
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/divine-providence"
+  ],
+  "paths": [
+    "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#198@c040d697091d8bdb5ab82cbe798fe2fb7fc4fddc",
+    "pr:reppiks490/Icarus-engine#209@15401aac4d51d70d031309f0b6520c00bd163bcc",
+    "pr:reppiks490/Icarus-engine#252@15401aac4d51d70d031309f0b6520c00bd163bcc",
+    "pr:reppiks490/divine-providence#60@a31f6563191e18f9b68d33966fac89680409a692",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_provider_collection_or_new_spend"
+  ],
+  "evidence": [
+    "local:tests_engine/test_mobile_gateway.py:12 passed at exact PR #198 source plus security fix",
+    "hosted:Icarus PR #198 exact-head CI is running on c040d697091d8bdb5ab82cbe798fe2fb7fc4fddc",
+    "hosted:Icarus-engine PR #209 exact-head Python 3.11, 3.12, 3.13; CLI; dependency-free; MCP and both synthetic contracts passed",
+    "hosted:Divine Providence PR #60 collect passed; Windows observatory collector remains in progress after timeout increased to 40 minutes",
+    "source:Icarus current main includes RequestInput disconnect translation and regression coverage in tests_engine/test_workspace_api.py"
+  ],
+  "next_action": "Wait for exact-head mobile and 40-minute Windows observatory checks; continue auditing and resolving stale open Icarus coordination PRs and verify every remaining non-live adapter against current source and runtime evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

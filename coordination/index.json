@@ -1123,76 +1123,38 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "cl_lab/frontier.py",
-        "cl_lab/trial_ledger.py",
-        "tests_cl/test_frontier.py",
-        ".github/workflows/icarus-observatory.yml",
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json"
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json"
       ],
       "declared_targets": [
         {
-          "path": "cl_lab/frontier.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "cl_lab/trial_ledger.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_cl/test_frontier.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": ".github/workflows/icarus-observatory.yml",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus-engine#252@a03195a7ec269b6c1e9fdb9519ad597383276978",
-        "pr:reppiks490/divine-providence#59@f63347c9cd6d603a00a081465caf7b8f53ba4c44",
-        "github-run:reppiks490/divine-providence#39137306043/windows-collector=cancelled-by-25-minute-job-timeout",
-        "github-run:reppiks490/divine-providence#39137306042/windows-lifecycle=success",
-        "github-run:reppiks490/divine-providence#39137306048/windows-subsystems-and-full-validation=success"
+        "pr:reppiks490/Icarus#198@c040d697091d8bdb5ab82cbe798fe2fb7fc4fddc",
+        "pr:reppiks490/Icarus-engine#209@15401aac4d51d70d031309f0b6520c00bd163bcc",
+        "pr:reppiks490/Icarus-engine#252@15401aac4d51d70d031309f0b6520c00bd163bcc",
+        "pr:reppiks490/divine-providence#60@a31f6563191e18f9b68d33966fac89680409a692",
+        "constraint:execution_authorized_false",
+        "constraint:no_live_broker_arming",
+        "constraint:no_provider_collection_or_new_spend"
       ],
       "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-25T16:09:34Z",
-      "latest_summary": "Extend the current synthetic-only FR-1 single-writer work while repairing the Divine Providence Windows observatory job budget. The PR #59 Windows lifecycle matrix, Windows subsystem tests, and separate full-system validation pass at the exact PR head; the observatory collector is canceled by its explicit 25-minute timeout while the full Windows engine suite is still progressing. Increase only that CI budget and verify the exact PR head again. Keep runtime, provider, and live execution paths unchanged.",
+      "last_event_at_utc": "2026-10-25T16:26:37Z",
+      "latest_summary": "Continued the user's broad non-live completion request. Mobile gateway review found that the configured engine URL accepted remote origins and authenticated urllib redirects/proxy settings could disclose the gateway engine token. Added fail-closed loopback-origin validation, disabled ambient proxies and redirects, and added remote-origin, redirect-capture, and proxy-capture regressions; exact mobile gateway suite passes 12 tests. Pushed commits df484af331e459fdad7573b66f7acee9d1346b1a and c040d697091d8bdb5ab82cbe798fe2fb7fc4fddc to Icarus PR #198; hosted checks are pending. Current Icarus main already wraps disconnected request reads/writes and tests ConnectionAbortedError as a dropped client stream; the owner's observed traceback therefore still requires restarting any older running checkout/process to load merged code. Icarus-engine PR #252 is merged into FR-1 feature PR #209, not main; all current exact-head synthetic/API/accounting checks pass, but #209 remains draft and empirical gates remain. Divine Providence PR #60 increases only the observatory Windows job timeout from 25 to 40 minutes; exact-head Windows collection is still in progress. No live arming, provider collection/spend, physical restart, or phone pairing is claimed.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "offline-runtime-ci-repair",
+      "phase": "nonlive-integration-and-runtime-closeout",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "cl_lab/frontier.py",
-        "cl_lab/trial_ledger.py",
-        "tests_cl/test_frontier.py",
-        ".github/workflows/icarus-observatory.yml",
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json"
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json"
       ],
       "reserved_targets": [
         {
-          "path": "cl_lab/frontier.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "cl_lab/trial_ledger.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "tests_cl/test_frontier.py",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": ".github/workflows/icarus-observatory.yml",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -1672,7 +1634,7 @@
     "stale": 23,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-25T16:13:08.529473Z",
+  "generated_at_utc": "2026-10-25T16:27:06.309628Z",
   "owner_status": {
     "claude": {
       "active": false,
