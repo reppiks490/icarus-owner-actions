@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T232000Z-champion-stopping-point-handoff",
+  "session_id": "codex-20261017-champion-stopping-point",
+  "at_utc": "2026-10-17T23:20:00Z",
+  "type": "HANDOFF",
+  "phase": "review-and-merge",
+  "summary": "Published the dated champion qualification handoff as Icarus PR #448; exact-head engine CI is pending. The handoff records the last observed 2026-10-16 CL Lab/Sentinel state and instructs the next agent to refresh current Engine evidence before acting.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "docs/agent-handoffs/2026-10-17-champion-stopping-point.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/agent-handoffs/2026-10-17-champion-stopping-point.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#448 exact-head engine and engine-windows CI"
+  ],
+  "evidence": [
+    "Icarus PR #448: https://github.com/reppiks490/Icarus/pull/448",
+    "Icarus head: 5a2db92671ad2e1cabaebfc09742020a652ef67e",
+    "PR #448 is mergeable; engine and Windows engine checks pending"
+  ],
+  "next_action": "Review and merge #448 after checks pass; next agent should refresh latest Engine artifacts and trace candidate gate failures.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
