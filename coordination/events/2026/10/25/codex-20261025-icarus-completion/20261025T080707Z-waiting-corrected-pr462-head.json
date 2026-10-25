@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T080707Z-waiting-corrected-pr462-head",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T08:07:07Z",
+  "type": "WAITING",
+  "phase": "corrected-pr462-exact-head-checks",
+  "summary": "Integrated PR #462 head 0db8f237 fixes the historical-gate fixture, restores the still-tested Windows/history setup facts, documents the APEX research layer, and applies the owner's corrected defaults to both ETH and SOL. Fresh local full-suite run collected 4,289 cases and exited 0; diff check is clean. Exact-head hosted checks are mixed pass/pending, so restart release status remains held.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/restart_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_historical_context_gate.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@0db8f2372085fdc219af351986d5fe034dce58a4",
+    "github-runs:40175162458,40175162468,40175162470,40175162484,40175162494,40175162527,40175162579,40175162593,40175162595,40175162601,40175162602,40175162605,40175162607,40175162631,40175162677"
+  ],
+  "evidence": [
+    "local:python -m pytest tests_engine tests/test_provider_corpus_intake.py -q: 4,289 cases collected; exit 0",
+    "local:focused restart-default/history-gate/APEX/Plant regressions passed",
+    "local:git diff --check passed",
+    "hosted:config-jobs-linux-and-windows, historical-context-handshake, historical-context-consumer, bilateral-federation, one-browser-job, and several contract jobs have passed; other exact-head jobs remain pending"
+  ],
+  "next_action": "Wait for every required exact-head Linux/Windows, browser, contract, and configuration job; diagnose any failure before updating the release guide or changing PR status.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
