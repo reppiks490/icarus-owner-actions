@@ -1,0 +1,62 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T143822Z-plan-postmerge-nonlive-closeout",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T14:38:22Z",
+  "type": "PLAN",
+  "phase": "post-merge-nonlive-closeout",
+  "summary": "The owner has renewed the request to continue exhaustive non-live Icarus completion, superseding the older restart-only/standby and main-merge hold recorded before this turn. Icarus PR #462 is now merged at 8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25 from exact PR head 9a44dc1c6d20088bac1df013e6ec09e80446d30e; all required exact-head Linux/Windows, browser, contract, configuration and federation checks passed. Merge-triggered main checks and the post-merge restart-documentation PR remain in progress. Continue the non-live PR/adapter audit and preserve the distinction between source/CI evidence and owner-device or provider-runtime evidence. Live broker arming, live orders, new spend, provider collection and scheduler changes remain disabled.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine",
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-causal-router"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination_fabric/__init__.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_coordination_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "mobile"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@9a44dc1c6d20088bac1df013e6ec09e80446d30e",
+    "merge:reppiks490/Icarus@8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25",
+    "workflow-run:reppiks490/Icarus#40202103435",
+    "pr:reppiks490/Icarus#475",
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "policy:no_new_spend_or_provider_collection"
+  ],
+  "evidence": [
+    "hosted:Icarus PR #462 exact-head required checks passed, including both Windows engine runs and browser checks",
+    "hosted:Icarus merge-triggered main engine workflow 40202103435 is still running",
+    "hosted:Icarus restart-documentation PR #475 has Windows and Linux engine checks pending",
+    "local:Icarus selected-workspace, dashboard, disconnect and restart-default regression suites passed before merge",
+    "external:owner Windows warm startup, sustained runtime and physical phone pairing are not observable from this workspace"
+  ],
+  "next_action": "Wait for merged-main checks and the documentation update checks while continuing independent non-live review. Integrate the safe current coordination-count fix only after this claim is visible; recheck each remaining PR against the latest tree and close only work proven to be duplicated or stale, preserving its branch and explanation.",
+  "coordination_mode": "independent"
+}
