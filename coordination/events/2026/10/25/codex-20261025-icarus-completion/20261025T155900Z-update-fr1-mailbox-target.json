@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T155900Z-update-fr1-mailbox-target",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T15:59:00Z",
+  "type": "UPDATE",
+  "phase": "offline-fr1-code-completion",
+  "summary": "Correct the internal Claude-mailbox reservation: the repository protocol requires replying in the sender's inbox (`to-claude`). The prior planned `to-chatgpt` path was mistaken and is released. Keep the C2 code/test claim unchanged.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/board/chatgpt.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/inbox/to-claude/20261025T1600Z-codex-claude-hello-reply.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/trial_ledger.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_trial_ledger.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155900Z-update-fr1-mailbox-target.json"}
+  ],
+  "dependencies": [
+    "directive:icarus-owner-actions/coordination/directives/2026-10-16-claude-work-reclamation-queue.md#C2",
+    "protocol:reppiks490/Icarus-engine/coordination/README.md#messages",
+    "pr:reppiks490/icarus-owner-actions#67@624cb54f3086be97f76790aa857c533481e72983"
+  ],
+  "evidence": [
+    "Internal protocol: replies go to the original sender's inbox, here coordination/inbox/to-claude/",
+    "The initial plan's to-chatgpt filename does not exist and will not be written",
+    "Central owner-actions CI run 40208819927 passed at #67 head 624cb54f3086be97f76790aa857c533481e72983"
+  ],
+  "next_action": "Publish this correction to the owner-actions plan PR, then publish the C2 board claim and a correctly addressed reply before editing frontier source.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
