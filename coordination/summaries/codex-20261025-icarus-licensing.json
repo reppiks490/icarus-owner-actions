@@ -2,25 +2,25 @@
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "codex-20261025-icarus-licensing",
   "status": "COMPLETE",
-  "at_utc": "2026-10-25T16:42:10Z",
-  "summary": "Published proprietary all-rights-reserved LICENSE.md and README ownership notice to default branches of eleven ICARUS-related repositories. Verified all 22 files by fresh GitHub reads; identical LICENSE blob 37d1ab695c1c86259b81c0f615def4048e4aa94c. Existing third-party terms, prior grants, statutory and GitHub platform rights preserved. Unrelated repositories excluded; empty build repositories have no work to license.",
+  "at_utc": "2026-10-25T16:56:40Z",
+  "summary": "Owner-selected neutral maintainer landing pages and stronger proprietary notices published in eleven related repositories. Fresh exact-content readback verified all 22 README/LICENSE files, preservation of complete prior README content inside details, and AION change log. No repository rename, visibility change, runtime modification or workflow modification. Public code/history remain accessible/searchable; no automatic download popup, legal guarantee, tracking or invented penalty is claimed.",
   "evidence": [
-    "Icarus:LICENSE@4272470d099b92672c6e60abf75dedadd15f6f44;README@c9a86c934cfc2f2bae5d9587de83cc897ef0845b;fresh-read verified",
-    "Icarus-engine:LICENSE@72df16a77c1b8ee390e70d4f5a6c22e5c29a9f03;README@c87494a73579583766b4987014d9175d1028003b;fresh-read verified",
-    "multi-level-csv:LICENSE@e80e1037dc74609e6c0a958400b936cfbe38166c;README@2f5469520055195b3f47c212a67f756f6c25584d;fresh-read verified",
-    "csv-data-multi-chart-type:LICENSE@84c3a42a10d6e9bfd896fa7aceba609e81cedfb5;README@ad75c5aec7d23a0469a2d29899dbbd8963c38651;fresh-read verified",
-    "icarus-owner-actions:LICENSE@d89869784735e0bc484f133084a54fe548e1b819;README@faea88f6db68844435228d809a97dfc6d9e7e18f;fresh-read verified",
-    "daedalus-research-os:LICENSE@1356ec5b6992ee620260746dfb5b078b82d7c20d;README@2604711ce54a7e67e7f209479c5bc7215b5dacfa;fresh-read verified",
-    "aion-parallax-research:LICENSE@422455ed49e5ea45bc3e1b6d9dd973c2c0e470a7;README@7d6b058e5afb1e9862125c45e0c33d2e3fb33684;fresh-read verified",
-    "icarus-csv-evidence-lab:LICENSE@8b66c4a13e6b862ae41600d222872b3c90e1cc73;README@3a1ca6ef79cee4451e0d20049b0c1ca2d58c41b4;fresh-read verified",
-    "icarus-causal-router:LICENSE@f2750ba72bf95f565a547a0e58016cbb872fecd4;README@300e71670f1d9afd11d5eda497d3774a343a64ac;fresh-read verified",
-    "divine-providence:LICENSE@97a33a9fc950b7aa31932427667af02cac110a3a;README@27f26a0fd3e912f6769a74b245062a8dae59d094;fresh-read verified",
-    "ideas-reality:LICENSE@bb9f1bab6d07edd5e4bba317eaf06e28183cc258;README@ad5fd78066a908aba78999596afb3f7f8afa8fe6;fresh-read verified"
+    "Icarus: README 456da5e36d1428402b97357dda2da66679613803; LICENSE 4bd9c5e55b05abac085bc08732e03a6e38ac5413; fresh exact-content readback passed",
+    "Icarus-engine: README a0635620563f095bd0f492b75be89a89a4b49ec7; LICENSE 45640df5b4e9c54c97894af7c39da6300064cb25; fresh exact-content readback passed",
+    "multi-level-csv: README a441ec1fab7f50ce9ea5e8a0f58818a855fc102a; LICENSE 57f9e46c05266861b1c46f91b71ed30a0d3d7fc9; fresh exact-content readback passed",
+    "csv-data-multi-chart-type: README 4585e1f6b49ea49fa777dc83fc0722ba6df7c087; LICENSE cb50ce947a6ee6c500def1676a10f3973931c49f; fresh exact-content readback passed",
+    "icarus-owner-actions: README 109ca0a44dc721a8f21aece3894c674507a5090a; LICENSE 908fb88af12a1c7ac5825e64db39083b02b92624; fresh exact-content readback passed",
+    "daedalus-research-os: README b40ac86cfac985aaeb641ce845f2c24aefcbda6b; LICENSE 723e74dce0aa81b77fe91517eb22806eb77c73f4; fresh exact-content readback passed",
+    "aion-parallax-research: README 705a7f18e3ff3730f066f000d9bb6deaa62db7e9; LICENSE 3302092d49556a8f7735b291b9666f6da230cb5e; fresh exact-content readback passed",
+    "icarus-csv-evidence-lab: README d96458fa7a7a64c9792fc956a211bca593e776cd; LICENSE bd4d71ea92048b853d95a330c1c9d3632e62be07; fresh exact-content readback passed",
+    "icarus-causal-router: README 3239192f2497b3bbbc89ffca5cd17e8820eac227; LICENSE b05d8052b3ed132c148cb568beeb823eec270e17; fresh exact-content readback passed",
+    "divine-providence: README 33b6b549bdaf5e6e67b3a5bd850c0db671c61fe4; LICENSE fd5c22a107b43eb21c8511f570bd865fa7e0b0ae; fresh exact-content readback passed",
+    "ideas-reality: README de18f9ea31054aa4a0a02c0a7bc808dcc5ceb8db; LICENSE f87f66dc34fb46b7a2edb12c92eecb41e7d7a2a2; fresh exact-content readback passed"
   ],
   "limitations": [
-    "No legal guarantee against copying.",
-    "No revocation of prior licenses or third-party rights.",
-    "Initial session and PLAN timestamp entry error corrected by 20261025T164200Z update."
-  ],
-  "next_action": "None."
+    "Presentation deters casual browsing only; all public source/history remain searchable.",
+    "No download popup or automatic prohibition of lawful GitHub viewing/downloading/forking.",
+    "Third-party terms, prior grants and statutory rights remain preserved.",
+    "Only documentation changed; no runtime tests executed or full-system health claimed."
+  ]
 }
