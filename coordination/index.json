@@ -1125,89 +1125,37 @@
       ],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion",
-        "coordination_fabric/__init__.py",
-        "tests/test_coordination_fabric.py",
-        "docs/recovery",
-        "mobile",
-        "docs/agent-handoffs"
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json"
       ],
       "declared_targets": [
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination_fabric/__init__.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_coordination_fabric.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "docs/recovery",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "mobile",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/agent-handoffs",
-          "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#462@9a44dc1c6d20088bac1df013e6ec09e80446d30e",
-        "merge:reppiks490/Icarus@8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25",
-        "workflow-run:reppiks490/Icarus#40202103435",
-        "pr:reppiks490/Icarus#475",
-        "policy:execution_authorized_false",
-        "policy:no_live_broker_arming",
-        "policy:no_new_spend_or_provider_collection"
+        "merge:reppiks490/Icarus#475@d19d539dc3ff8e9e20b0935a8e340926e9f3d408",
+        "github-run:40204902763:linux-and-windows-success",
+        "tests:reppiks490/Icarus@aa51756510a2a298ac3a3b71c2e94aa0e9a077ae:shadow-and-paper-focused-73-pass",
+        "pr:reppiks490/Icarus#198@4cdbc51dd04229be54f10c6d561946383ed30dc4",
+        "github-run:40205294468:prior-head-success"
       ],
       "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-25T14:38:22Z",
-      "latest_summary": "The owner has renewed the request to continue exhaustive non-live Icarus completion, superseding the older restart-only/standby and main-merge hold recorded before this turn. Icarus PR #462 is now merged at 8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25 from exact PR head 9a44dc1c6d20088bac1df013e6ec09e80446d30e; all required exact-head Linux/Windows, browser, contract, configuration and federation checks passed. Merge-triggered main checks and the post-merge restart-documentation PR remain in progress. Continue the non-live PR/adapter audit and preserve the distinction between source/CI evidence and owner-device or provider-runtime evidence. Live broker arming, live orders, new spend, provider collection and scheduler changes remain disabled.",
-      "latest_type": "PLAN",
+      "last_event_at_utc": "2026-10-25T15:33:03Z",
+      "latest_summary": "Merged the post-restart documentation PR #475 at d19d539dc3ff8e9e20b0935a8e340926e9f3d408 after both exact-head Linux and Windows checks passed. Corrected the shadow-twin audit: canonical Icarus main already contains the opt-in, fail-isolated, non-authoritative implementation; its focused suite passed 73 tests. Closed Icarus-engine design-only PR #148 as superseded while preserving its contents and history. Rebased mobile PR #198 onto the new main; its new head is 4cdbc51dd04229be54f10c6d561946383ed30dc4 and is mergeable; exact-head hosted checks are pending. Physical phone pairing is still unverified.",
+      "latest_type": "UPDATE",
       "model_family": "openai",
       "phase": "post-merge-nonlive-closeout",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion",
-        "coordination_fabric/__init__.py",
-        "tests/test_coordination_fabric.py",
-        "docs/recovery",
-        "mobile",
-        "docs/agent-handoffs"
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json"
       ],
       "reserved_targets": [
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json",
           "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "coordination_fabric/__init__.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "tests/test_coordination_fabric.py",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "docs/recovery",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "mobile",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "docs/agent-handoffs",
-          "repo": "reppiks490/Icarus-engine"
         }
       ],
       "session_id": "codex-20261025-icarus-completion",
@@ -1686,7 +1634,7 @@
     "stale": 23,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-25T15:02:47.697353Z",
+  "generated_at_utc": "2026-10-25T15:33:28.998862Z",
   "owner_status": {
     "claude": {
       "active": false,
