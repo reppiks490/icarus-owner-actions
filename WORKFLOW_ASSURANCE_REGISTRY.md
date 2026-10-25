@@ -12,8 +12,8 @@ model.
 | Component | Workflow | Current state | Authority |
 |---|---|---|---|
 | `aion-parallax-research` | `AION / PARALLAX assurance` | Operational; latest verified main workflow run passed | Read-only research |
-| `daedalus-research-os` | `DAEDALUS research assurance` | Workflow installed; private hosted-runner infrastructure currently blocks execution before usable logs | Research only |
-| `icarus-causal-router` | `ICARUS causal-router assurance` | Workflow installed; private hosted-runner infrastructure currently blocks execution before usable logs | Research only |
+| `daedalus-research-os` | `DAEDALUS research assurance` | Public runner restored; scheduled assurance run 37639188767 attempt 3 **passed** | Research only |
+| `icarus-causal-router` | `ICARUS causal-router assurance` | Public runner restored; run 37644317860 attempt 3 **failed in unit tests**, missing `causal_router.journal` | Research only |
 
 The machine-readable source of truth is
 [`intake/research_assurance_registry.json`](intake/research_assurance_registry.json).
@@ -54,21 +54,11 @@ Successful aggregate jobs upload one JSON evidence document whose fields include
 This shape is intentionally suitable for a future ICARUS UI assurance panel or
 owner automation without giving the research repositories order authority.
 
-## Private-repository runner blocker
+## Runner restoration and new code-level blocker (2026-10-07)
 
-DAEDALUS and Causal Router both currently fail before useful job logs are
-created. A temporary workflow containing only a bare GitHub-hosted runner probe
-reproduced the same failure, while AION's public workflow executed normally.
-That isolates the observed failure away from the Python test logic.
+Owner-authorized visibility changes made DAEDALUS, Causal Router, and Owner Actions public. The previously blocked hosted runners have now actually executed steps. DAEDALUS scheduled assurance run [37639188767](https://github.com/reppiks490/daedalus-research-os/actions/runs/37639188767) passed on attempt 3. Causal Router [37644317860](https://github.com/reppiks490/icarus-causal-router/actions/runs/37644317860) reached its Python suite and failed: `ModuleNotFoundError: No module named 'causal_router.journal'`.
 
-GitHub's current product model meters standard hosted-runner minutes for private
-repositories. If included private-repository minutes are exhausted and billing
-cannot cover additional use, hosted usage is blocked. The owner should treat
-private Actions quota/billing/runner availability as the infrastructure gate,
-not weaken the research workflows to hide the failure.
-
-Do **not** make either private repository public merely to clear CI without an
-explicit repository-visibility decision.
+Do not treat this as either an unresolved private-runner failure or a passing research assurance check. The code must be repaired and retested. Full historical recovery and substantive worker-result processing remain incomplete; see [the recovery plan](RECOVERY_MASTER_PLAN_20261007.md).
 
 ## Refresh discipline
 
@@ -87,8 +77,7 @@ label without another workflow edit. This is a fallback for private hosted-runne
 quota/billing constraints, not a reason to run untrusted pull-request code on an
 unisolated personal machine.
 
-The current default remains GitHub-hosted and therefore remains blocked until
-private hosted-runner eligibility/quota/settings permit execution.
+The current default is GitHub-hosted. Runners now execute in these public repositories; any remaining red result must be diagnosed at the actual failed step.
 
 
 ## Shared assurance schema
@@ -113,7 +102,4 @@ main SHA.
 
 DAEDALUS and Causal Router now carry the corresponding checkout/setup-python/
 upload-artifact v7 updates. Those exact action majors were proven on the public
-AION runner before the private repositories were updated. Their own private
-workflow runs still terminate at the existing hosted-runner infrastructure
-blocker before usable step-level evidence, so those red states remain
-infrastructure states rather than Python/test verdicts.
+AION runner before the private repositories were updated. The public hosted runners now execute steps; DAEDALUS passed scheduled assurance while Causal Router has a Python import failure.
