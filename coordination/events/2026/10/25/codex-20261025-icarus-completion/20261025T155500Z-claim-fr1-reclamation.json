@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T155500Z-claim-fr1-reclamation",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T15:55:00Z",
+  "type": "CLAIM",
+  "phase": "offline-fr1-code-completion",
+  "summary": "Reclaim the inactive Claude C2 frontier lane under the owner's reclamation directive. Review and repair only the offline, synthetic/code contracts in the current #137/#142/#209 stack; preserve the prohibition on empirical strategy evaluation and execution authority.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/board/chatgpt.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "coordination/inbox/to-chatgpt/20261025T1555Z-codex-reclaim-c2.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/trial_ledger.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_trial_ledger.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155500Z-claim-fr1-reclamation.json"}
+  ],
+  "dependencies": [
+    "directive:icarus-owner-actions/coordination/directives/2026-10-16-claude-work-reclamation-queue.md#C2",
+    "pr:reppiks490/Icarus-engine#137@72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+    "pr:reppiks490/Icarus-engine#142@dfb18e96805faa905b687eaa4633d349a9f82eb2",
+    "pr:reppiks490/Icarus-engine#209@9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba",
+    "constraint:no-empirical-run-or-provider-acquisition",
+    "constraint:execution_authorized_false"
+  ],
+  "evidence": [
+    "Current Icarus-engine coordination board lists C2 as planned, with no in-progress Claude task in the frontier lane",
+    "Central owner directive marks inactive Claude tasks reclaimable after collision/relevance check",
+    "Owner-actions active coordination compiled to zero collisions before this claim"
+  ],
+  "next_action": "Add the C2 claim and reply to the outstanding 2026-10-11 handoff message, then inspect the exact repaired source and write any demonstrated synthetic-only regression before implementation.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
