@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T074247Z-plan-ci-root-cause",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T07:42:47Z",
+  "type": "PLAN",
+  "phase": "exact-head-ci-root-cause-repair",
+  "summary": "Reproduce and repair two exact integrated-suite failures before another hosted run. The history-gate test executes the workflow tail without the new event listing consumed for poll-count calculation; the test fixture already provides the canonical one-event listing. The APEX installed-documentation contract also requires the README to link its installed research/shadow-only guide. No runtime authority or provider scope changes.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain_historical_context_gate.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    }
+  ],
+  "dependencies": [
+    "github-run:40172690439:engine-linux-failure",
+    "github-run:40172696275:engine-linux-failure"
+  ],
+  "evidence": [
+    "local:python-m-pytest-tests_engine-tests_provider_corpus_intake-reproduced-apex-docs-failure-and-seven-history-gate-harness-failures",
+    "source:ce024586325ee68191584c0c8dc7f553dedd5596"
+  ],
+  "next_action": "Supply the exact fixture listing to the extracted workflow block and add the documented APEX \u03a9 guide link; rerun the focused regressions and full local suite, then rerun exact-head hosted gates.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
