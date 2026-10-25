@@ -1,0 +1,29 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T155400Z-update-exact-head-checks",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T15:54:00Z",
+  "type": "UPDATE",
+  "phase": "offline-fr1-code-completion",
+  "summary": "Exact-head status update: Icarus mobile PR #198 head 4cdbc51 has all three hosted jobs green (mobile, Linux engine, Windows engine; run 40207442980). This is software/export validation only; the physical phone and private route remain unverified. Divine Providence PR #59's rerun now passes the isolated Windows child-output/cleanup step and collector job, while its Windows full-system install/test step remains in progress; collection passed and publish was skipped. FR-1 #137/#142/#209 synthetic/code checks are green, and source audit confirms the documented outer single-writer gap is still open; no empirical run was performed.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/divine-providence", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#198@4cdbc51dd04229be54f10c6d561946383ed30dc4",
+    "github-run:reppiks490/Icarus#198:40207442980:mobile-linux-windows-success",
+    "pr:reppiks490/divine-providence#59@f63347c9cd6d603a00a081465caf7b8f53ba4c44",
+    "github-run:reppiks490/divine-providence#59:39137306043:windows-full-system-in-progress",
+    "pr:reppiks490/Icarus-engine#137@72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+    "pr:reppiks490/Icarus-engine#142@dfb18e96805faa905b687eaa4633d349a9f82eb2",
+    "pr:reppiks490/Icarus-engine#209@9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba"
+  ],
+  "evidence": [
+    "Icarus mobile exact-head run 40207442980: mobile=success, engine=success, engine-windows=success",
+    "Divine Providence rerun 39137306043: windows-collector in progress at full system install/test; collect=success; publish=skipped",
+    "FR-1 exact-head CI 38148319038, 38167557414, 39096705635, 39096705515 all success",
+    "Source inspection: cl_lab/frontier.run currently serializes ledger writes but not the complete evaluation/snapshot operation"
+  ],
+  "next_action": "Finish C2 internal board/message handoff and synthetic-only outer-run serialization coverage. Keep the mobile draft pending physical phone verification and await the scoped Windows rerun without claiming whole-system completion prematurely.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
