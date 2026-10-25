@@ -1,0 +1,65 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T050122Z-update-fresh-federation-corpus-pr",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "at_utc": "2026-10-25T05:01:22Z",
+  "type": "UPDATE",
+  "phase": "restart-and-consumer-verification",
+  "summary": "The stale-peer gate was cleared without changing its 1,800-second threshold: Icarus-engine refreshed its revision-bound packet from existing evidence and Icarus PR #471 federation CI passed on retry. The browser and Linux engine checks also pass; Windows engine checks remain in progress. Archived restart documentation and a warm-state-aware Git Bash verifier are prepared locally. A separate offline corpus-consumption workflow and strict receipt validation are on PR #248; its 95-test local suite passes and hosted CI is running. No corpus restore or live/broker action was run.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/corpus_receipt_sanitizer.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#471@4fc4650ff692324b3f5d6935eb20581dc642a7c5:windows-engine-exact-head-pending",
+    "pr:reppiks490/Icarus-engine#248@acea1d47749bd066a0b6a6e6418b3d32174cdebc:hosted-checks-running",
+    "owner-PC:restart-and-warm-state-unverified",
+    "github-actions:corpus-consumer-plane-restore-not-dispatched"
+  ],
+  "evidence": [
+    "Icarus-engine:workflow-run-40163603556:success;peer-packet-commit-56387ca7c7d42c159d19de19c6d56d1d194fc6e7",
+    "Icarus:workflow-run-40163146743:success-on-retry;federation-age-under-1800s",
+    "Icarus:workflow-runs-40163146732-linux-success,40163146734-browser-success;Windows-still-running",
+    "Icarus-engine:PR-248-head-acea1d47749bd066a0b6a6e6418b3d32174cdebc;local-focused-suite-95-passed",
+    "coordination:origin-main-collisions-empty-at-2026-10-23T15:52:14Z"
+  ],
+  "next_action": "Finish PR #471 exact-head Windows checks, commit the current restart guide/archive and warm-aware helper to the same release stack and wait for its new exact-head CI. Finish PR #248 CI; only then evaluate merge and the manual encrypted-corpus proof path. Keep the PC restart, persistent corpus connection, and full-system NO_GO status unverified.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
