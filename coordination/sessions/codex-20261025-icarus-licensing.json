@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261025-icarus-licensing",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Owner-requested restrictive licensing notices for ICARUS-related repositories; preserve third-party rights and existing grants.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "main",
+  "started_at_utc": "2026-10-25T17:00:00Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github"
+  ],
+  "initial_dependencies": []
+}
