@@ -1,0 +1,129 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T165520Z-update-neutral-landings",
+  "session_id": "codex-20261025-icarus-licensing",
+  "at_utc": "2026-10-25T16:55:20Z",
+  "type": "UPDATE",
+  "phase": "owner-requested-neutral-landings",
+  "summary": "Owner selected Neutral. Replace rendered README landing presentation with accurate generic Maintainer workspace label, prominent proprietary notice and expandable existing maintainer documentation; preserve repository names, URLs, code and workflows. Strengthen LICENSE wording on personal-use permissions and lawful remedies, preserving statutory/platform/third-party/prior-grant exceptions. No popup on download is technically possible. Knowledge delta: LICENSE.md, README.md and AION docs/CURRENT.md plus durable bus summary.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/multi-level-csv",
+    "reppiks490/csv-data-multi-chart-type",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/daedalus-research-os",
+    "reppiks490/aion-parallax-research",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/divine-providence",
+    "reppiks490/ideas-reality"
+  ],
+  "paths": [
+    "README.md",
+    "LICENSE.md",
+    "docs/CURRENT.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "docs/CURRENT.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Owner requested strict deterrence and selected neutral camouflage.",
+    "Fresh GitHub reads confirmed identical existing notices and no active colliding other-session paths."
+  ],
+  "next_action": "Publish documentation-only updates and verify exact readback; no runtime changes or automatic download popups.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
