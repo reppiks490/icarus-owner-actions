@@ -79,10 +79,47 @@ def _string_list(value: Any, field: str) -> list[str]:
     return list(value)
 
 
-def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
+def _legacy_event_summary(doc: dict[str, Any]) -> str:
+    for key in (
+        "task", "owner_request", "owner_priority", "state", "reason",
+        "stopping_point", "owner_direction", "finding", "next_action", "pending",
+    ):
+        value = doc.get(key)
+        if isinstance(value, str) and value.strip():
+            return value.strip()
+        if isinstance(value, (dict, list)) and value:
+            return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    findings = doc.get("findings")
+    if isinstance(findings, list) and findings:
+        return f"Legacy {doc.get('type', 'NOTE')} record with {len(findings)} findings"
+    return f"Legacy {doc.get('type', 'NOTE')} record {doc.get('event_id', 'without an event id')}"
+
+
+def _normalize_evidence(value: Any) -> Any:
+    """Convert older structured evidence into stable strings without data loss."""
+    if isinstance(value, dict):
+        return [
+            f"{key}={json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(',', ':'))}"
+            for key, item in sorted(value.items())
+        ]
+    if isinstance(value, list) and any(not isinstance(item, str) for item in value):
+        return [
+            item if isinstance(item, str) else json.dumps(
+                item, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+            )
+            for item in value
+        ]
+    return value
+
+
+def _normalize_event(doc: dict[str, Any], path: Path | None = None) -> dict[str, Any]:
     """Map immutable pre-canonical event dialects to canonical keys in memory."""
     doc = dict(doc)
-    legacy_dialect = "event_type" in doc or "created_at_utc" in doc
+    legacy_icarus2 = doc.get("schema_version") is None and (
+        ("worker_id" in doc and ("date" in doc or "at_utc" in doc))
+        or ("owner_priority" in doc and "state" in doc)
+    )
+    legacy_dialect = "event_type" in doc or "created_at_utc" in doc or legacy_icarus2
     legacy_phase_missing = "phase" not in doc
     aliases = {
         "type": "event_type",
@@ -94,11 +131,58 @@ def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
             raise ValueError(f"conflicting event fields: {canonical} and {legacy}")
         if canonical not in doc and legacy in doc:
             doc[canonical] = doc[legacy]
+    if legacy_icarus2:
+        doc["schema_version"] = EVENT_SCHEMA
+        if "at_utc" not in doc and isinstance(doc.get("date"), str):
+            stamp = doc["date"].strip()
+            doc["at_utc"] = f"{stamp}T00:00:00Z" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", stamp) else stamp
+        if "event_id" not in doc:
+            if path is not None:
+                doc["event_id"] = path.stem
+            elif isinstance(doc.get("session_id"), str) and isinstance(doc.get("at_utc"), str):
+                doc["event_id"] = f"legacy-{doc['session_id']}-{doc['at_utc']}"
+        if "type" not in doc and "owner_priority" in doc and "state" in doc:
+            # A waiting handoff without a type must not become a claim or
+            # completion; NOTE is the inert canonical representation.
+            doc["type"] = "NOTE"
+        if "summary" not in doc:
+            doc["summary"] = _legacy_event_summary(doc)
+    elif "summary" not in doc and any(
+        key in doc for key in ("findings", "finding", "stopping_point", "owner_direction")
+    ):
+        # Some immutable v2 records stored structured findings instead of the
+        # required one-line summary. Keep the source unchanged and derive a
+        # compact summary from those already-recorded fields.
+        doc["summary"] = _legacy_event_summary(doc)
+
+    doc["evidence"] = _normalize_evidence(doc.get("evidence", []))
     if "phase" not in doc and (legacy_dialect or "status" in doc):
         doc["phase"] = "legacy"
     doc.setdefault("paths", [])
     targets = doc.get("targets")
     repos = doc.get("repos")
+    if isinstance(targets, list) and targets and all(isinstance(item, str) for item in targets):
+        qualified: list[dict[str, str]] = []
+        inferred_repos: list[str] = []
+        for item in targets:
+            repo_prefix, separator, target_path = item.partition(":")
+            if separator and REPO_RE.fullmatch(repo_prefix):
+                repo = repo_prefix
+                target_path = target_path
+            elif isinstance(repos, list) and len(repos) == 1:
+                repo = repos[0]
+                target_path = item
+            else:
+                qualified = []
+                break
+            inferred_repos.append(repo)
+            qualified.append({"repo": repo, "path": target_path})
+        if qualified:
+            if not isinstance(repos, list) or not repos:
+                doc["repos"] = list(dict.fromkeys(inferred_repos))
+                repos = doc["repos"]
+            doc["targets"] = qualified
+            targets = qualified
     if (isinstance(targets, list) and targets and all(isinstance(item, str) for item in targets)
             and isinstance(repos, list)):
         qualified: list[dict[str, str]] = []
@@ -126,6 +210,10 @@ def _normalize_event(doc: dict[str, Any]) -> dict[str, Any]:
         doc["repos"] = list(dict.fromkeys(
             item.get("repo") for item in targets if isinstance(item, dict) and isinstance(item.get("repo"), str)
         ))
+    if legacy_icarus2 and isinstance(targets, list) and targets and all(isinstance(item, dict) for item in targets):
+        target_repos = [item.get("repo") for item in targets if isinstance(item.get("repo"), str)]
+        if target_repos and not doc.get("repos"):
+            doc["repos"] = list(dict.fromkeys(target_repos))
     return doc
 
 
@@ -165,7 +253,7 @@ def _validate_targets(value: Any, repos: list[str], path: Path) -> list[dict[str
 
 
 def _validate_event(doc: dict[str, Any], path: Path, sessions: set[str]) -> dict[str, Any]:
-    doc = _normalize_event(doc)
+    doc = _normalize_event(doc, path)
     if doc.get("schema_version") != EVENT_SCHEMA:
         raise ValueError(f"unsupported event schema: {path}")
     sid = _safe_session_id(doc.get("session_id"))
@@ -258,7 +346,7 @@ def validate_tree(root: Path | str) -> dict[str, Any]:
     orphan_event_docs: list[tuple[Path, dict[str, Any]]] = []
     if events_dir.exists():
         for path in sorted(events_dir.glob("**/*.json")):
-            raw = _normalize_event(_load(path))
+            raw = _normalize_event(_load(path), path)
             sid = _safe_session_id(raw.get("session_id"))
             if sid not in sessions:
                 orphan_event_docs.append((path, raw))
