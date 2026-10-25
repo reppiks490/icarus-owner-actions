@@ -1120,41 +1120,100 @@
     {
       "actor": "Codex",
       "branch": "codex/icarus-pr462-full-integration-20261025",
-      "cooperates_with": [
-        "icarus2-20261020-federation-integration"
-      ],
+      "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json"
+        "coordination/board/chatgpt.md",
+        "coordination/inbox/to-chatgpt/20261025T1555Z-codex-reclaim-c2.md",
+        "cl_lab/frontier.py",
+        "cl_lab/trial_ledger.py",
+        "tests_cl/test_frontier.py",
+        "tests_cl/test_trial_ledger.py",
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155500Z-claim-fr1-reclamation.json"
       ],
       "declared_targets": [
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json",
+          "path": "coordination/board/chatgpt.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/inbox/to-chatgpt/20261025T1555Z-codex-reclaim-c2.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "cl_lab/frontier.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "cl_lab/trial_ledger.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_frontier.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_trial_ledger.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155500Z-claim-fr1-reclamation.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
-        "merge:reppiks490/Icarus#475@d19d539dc3ff8e9e20b0935a8e340926e9f3d408",
-        "github-run:40204902763:linux-and-windows-success",
-        "tests:reppiks490/Icarus@aa51756510a2a298ac3a3b71c2e94aa0e9a077ae:shadow-and-paper-focused-73-pass",
-        "pr:reppiks490/Icarus#198@4cdbc51dd04229be54f10c6d561946383ed30dc4",
-        "github-run:40205294468:prior-head-success"
+        "directive:icarus-owner-actions/coordination/directives/2026-10-16-claude-work-reclamation-queue.md#C2",
+        "pr:reppiks490/Icarus-engine#137@72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+        "pr:reppiks490/Icarus-engine#142@dfb18e96805faa905b687eaa4633d349a9f82eb2",
+        "pr:reppiks490/Icarus-engine#209@9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba",
+        "constraint:no-empirical-run-or-provider-acquisition",
+        "constraint:execution_authorized_false"
       ],
       "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-25T15:33:03Z",
-      "latest_summary": "Merged the post-restart documentation PR #475 at d19d539dc3ff8e9e20b0935a8e340926e9f3d408 after both exact-head Linux and Windows checks passed. Corrected the shadow-twin audit: canonical Icarus main already contains the opt-in, fail-isolated, non-authoritative implementation; its focused suite passed 73 tests. Closed Icarus-engine design-only PR #148 as superseded while preserving its contents and history. Rebased mobile PR #198 onto the new main; its new head is 4cdbc51dd04229be54f10c6d561946383ed30dc4 and is mergeable; exact-head hosted checks are pending. Physical phone pairing is still unverified.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-25T15:55:00Z",
+      "latest_summary": "Reclaim the inactive Claude C2 frontier lane under the owner's reclamation directive. Review and repair only the offline, synthetic/code contracts in the current #137/#142/#209 stack; preserve the prohibition on empirical strategy evaluation and execution authority.",
+      "latest_type": "CLAIM",
       "model_family": "openai",
-      "phase": "post-merge-nonlive-closeout",
+      "phase": "offline-fr1-code-completion",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json"
+        "coordination/board/chatgpt.md",
+        "coordination/inbox/to-chatgpt/20261025T1555Z-codex-reclaim-c2.md",
+        "cl_lab/frontier.py",
+        "cl_lab/trial_ledger.py",
+        "tests_cl/test_frontier.py",
+        "tests_cl/test_trial_ledger.py",
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155500Z-claim-fr1-reclamation.json"
       ],
       "reserved_targets": [
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json",
+          "path": "coordination/board/chatgpt.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/inbox/to-chatgpt/20261025T1555Z-codex-reclaim-c2.md",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "cl_lab/frontier.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "cl_lab/trial_ledger.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_frontier.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "tests_cl/test_trial_ledger.py",
+          "repo": "reppiks490/Icarus-engine"
+        },
+        {
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155500Z-claim-fr1-reclamation.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -1634,7 +1693,7 @@
     "stale": 23,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-25T15:34:52.443050Z",
+  "generated_at_utc": "2026-10-25T15:50:01.571681Z",
   "owner_status": {
     "claude": {
       "active": false,

@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T154900Z-plan-fr1-offline-code-completion",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T15:49:00Z",
+  "type": "PLAN",
+  "phase": "offline-fr1-code-completion",
+  "summary": "Audit the open FR-1 preregistration/code/repair stack and close only deterministic synthetic/code-level gaps. Keep all empirical data evaluation, holdout access, provider collection, ledger writes to real research, and execution authority disabled.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/FRONTIER_PREREG_FR1.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/trial_ledger.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_trial_ledger.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T154900Z-plan-fr1-offline-code-completion.json"}
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus-engine#137@72f5bdb866d134bdef12adc06bbb22837a9f8a3c",
+    "pr:reppiks490/Icarus-engine#142@dfb18e96805faa905b687eaa4633d349a9f82eb2",
+    "pr:reppiks490/Icarus-engine#209@9298ac6b8a88b10ca1e605ee0efc8fcbcfb3a1ba",
+    "constraint:no-empirical-run-or-provider-acquisition",
+    "constraint:execution_authorized_false"
+  ],
+  "evidence": [
+    "PR #137 exact-head application workflow 38148319038 success",
+    "PR #142 exact-head application workflow 38167557414 success",
+    "PR #209 exact-head synthetic and application workflows 39096705635 and 39096705515 success",
+    "Exact-head review identifies unresolved outer single-writer orchestration and historical archive/data-version requirements"
+  ],
+  "next_action": "Inspect exact PR heads, existing tests, and owner research gates. Add failing-first synthetic coverage and narrow code fixes only where a deterministic gap is demonstrated; publish fresh exact-head CI and a precise research-readiness boundary.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
