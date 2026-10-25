@@ -1,0 +1,15 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261017-futures-stop-point",
+  "status": "handoff",
+  "summary": "# Futures stop-point session\n\nCreated `coordination/handoffs/futures-stop-point-2026-10-17.md` and submitted the same handoff to `reppiks490/Icarus` at `docs/agent-handoffs/futures-stop-point-2026-10-17.md`. Current exact-head status: #438 (`7507915`, run `38959193080`) passed Linux and Windows; #432 (`e77dae0`, run `38959268985`) passed both; #435 (`3250e42`, run `38959284263`) passed both; #415 (`cfa9733`, run `38910087247`) failed Linux and passed Windows. #444 is integrated into the #438 branch, and no code was merged to main.\n\nNext: re-fetch live state, resolve the truthy non-boolean authorization finding in `icarus_engine/brain_evidence.py`, integrate #432/#435 into #438 after confirming CI, then rerun #438 and #415. Keep draft status and live broker arming disabled.\n\nBus-wide validation remains blocked by a pre-existing malformed legacy UI-pointer event; new session/event records were checked individually. The initial test of a prior failed duplicate Windows run for #435 has been superseded by the later successful exact-head run noted above.",
+  "completed_at_utc": "2026-10-17T23:18:38Z",
+  "result": "complete",
+  "evidence": [
+    "GitHub exact-head Actions run 38910087247: #415 Linux failed, Windows passed",
+    "GitHub exact-head Actions run 38959193080: #438 Linux and Windows passed",
+    "GitHub exact-head Actions run 38959268985: #432 Linux and Windows passed",
+    "GitHub exact-head Actions run 38959284263: #435 Linux and Windows passed",
+    "coordination/handoffs/futures-stop-point-2026-10-17.md"
+  ]
+}
