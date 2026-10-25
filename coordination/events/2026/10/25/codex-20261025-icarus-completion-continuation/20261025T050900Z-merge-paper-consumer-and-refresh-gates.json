@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T050900Z-merge-paper-consumer-and-refresh-gates",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "at_utc": "2026-10-25T05:09:00Z",
+  "type": "UPDATE",
+  "phase": "paper-corpus-proof-and-release-gates",
+  "summary": "Engine PR #248 was independently reviewed, its full Python 3.11–3.13 hosted matrix and focused 95-test suite passed, and it was squash-merged to Engine main as e26797045bdf3392c34d9f54c468bfc1d3369977. Main CI and the post-merge revision-bound peer refresh passed. A manual offline, metadata-only paper-profile corpus proof is now running against the existing encrypted caches; no provider collection, restore result, or warm state is claimed yet. PR #471 remains at 4fc4650ff692324b3f5d6935eb20581dc642a7c5: all visible Linux/browser/configuration/contracts/federation checks pass, while its two Windows full-engine suites are still pending. A fresh federation workflow against the updated Engine main is in progress. Restart archive and consolidated guide changes are local and not yet published. Owner-PC restart and observation remain unverified.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#471@4fc4650ff692324b3f5d6935eb20581dc642a7c5:windows-engine-exact-head-pending",
+    "workflow:reppiks490/Icarus#40164439620:federation-validation-in-progress",
+    "workflow:reppiks490/Icarus-engine#40164439881:private-paper-corpus-proof-in-progress",
+    "owner-PC:restart-and-warm-state-unverified"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus-engine#248:merged:e26797045bdf3392c34d9f54c468bfc1d3369977",
+    "pr248-checks:two-hosted-Python-3.11-3.12-3.13-matrices-all-pass;focused-local-95-pass",
+    "workflow:reppiks490/Icarus-engine#40164231389:main-test-success",
+    "workflow:reppiks490/Icarus-engine#40164252399:revision-bound-peer-export-success",
+    "workflow:reppiks490/Icarus#40163146743:prior-packet-federation-retry-pass",
+    "pr471-checks:linux-browser-config-contracts-pass;both-Windows-full-engine-jobs-pending"
+  ],
+  "next_action": "Verify the private corpus proof and the two fresh exact-source release gates. Once the current Windows suites resolve, commit the single consolidated restart/archive documentation to PR #471, refresh the peer packet immediately before its exact-head rerun, and wait for new exact-head CI. Do not claim an owner-PC restart, persistent provider-feed connection, or full-system readiness from cloud checks.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
