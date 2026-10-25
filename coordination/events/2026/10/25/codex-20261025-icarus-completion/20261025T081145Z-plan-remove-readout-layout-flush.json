@@ -5,7 +5,7 @@
   "at_utc": "2026-10-25T08:11:45Z",
   "type": "PLAN",
   "phase": "dashboard-forced-reflow-removal",
-  "summary": "The owner's browser console still reports repeated forced-reflow violations from world-immersion.js. The current readout animation patch batches many changes into one synchronous root offsetWidth read, so frequent market updates can still force a layout on each refresh. Add a browser regression requiring the readout and topology animations to restart with no synchronous layout flush, then use frame-separated class restarts and verify activity remains visible. This is presentation-only; runtime data and adapter behavior stay unchanged.",
+  "summary": "The owner's browser console still reports repeated forced-reflow violations from world-immersion.js. The current readout animation patch batches many changes into one synchronous root offsetWidth read, so frequent market updates can still force a layout on each refresh. Add a browser regression requiring the readout and topology animations to restart with no synchronous layout flush, then use frame-separated class restarts and verify activity remains visible. Also harden the failing CC2 browser control regression so it pauses background polling, asserts the UI control receipt, and exposes errors instead of letting the wrapper silently return null. This is presentation/test isolation only; runtime data and adapter behavior stay unchanged.",
   "repos": [
     "reppiks490/Icarus"
   ],
@@ -22,6 +22,10 @@
     {
       "repo": "reppiks490/Icarus",
       "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
     }
   ],
   "dependencies": [
