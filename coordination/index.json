@@ -1123,23 +1123,13 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/board/chatgpt.md",
-        "coordination/inbox/to-claude/20261025T1600Z-codex-claude-hello-reply.md",
         "cl_lab/frontier.py",
         "cl_lab/trial_ledger.py",
         "tests_cl/test_frontier.py",
-        "tests_cl/test_trial_ledger.py",
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155900Z-update-fr1-mailbox-target.json"
+        ".github/workflows/icarus-observatory.yml",
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json"
       ],
       "declared_targets": [
-        {
-          "path": "coordination/board/chatgpt.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "coordination/inbox/to-claude/20261025T1600Z-codex-claude-hello-reply.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
         {
           "path": "cl_lab/frontier.py",
           "repo": "reppiks490/Icarus-engine"
@@ -1153,46 +1143,38 @@
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "tests_cl/test_trial_ledger.py",
-          "repo": "reppiks490/Icarus-engine"
+          "path": ".github/workflows/icarus-observatory.yml",
+          "repo": "reppiks490/divine-providence"
         },
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155900Z-update-fr1-mailbox-target.json",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
       "dependencies": [
-        "directive:icarus-owner-actions/coordination/directives/2026-10-16-claude-work-reclamation-queue.md#C2",
-        "protocol:reppiks490/Icarus-engine/coordination/README.md#messages",
-        "pr:reppiks490/icarus-owner-actions#67@624cb54f3086be97f76790aa857c533481e72983"
+        "pr:reppiks490/Icarus-engine#252@a03195a7ec269b6c1e9fdb9519ad597383276978",
+        "pr:reppiks490/divine-providence#59@f63347c9cd6d603a00a081465caf7b8f53ba4c44",
+        "github-run:reppiks490/divine-providence#39137306043/windows-collector=cancelled-by-25-minute-job-timeout",
+        "github-run:reppiks490/divine-providence#39137306042/windows-lifecycle=success",
+        "github-run:reppiks490/divine-providence#39137306048/windows-subsystems-and-full-validation=success"
       ],
       "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-25T15:59:00Z",
-      "latest_summary": "Correct the internal Claude-mailbox reservation: the repository protocol requires replying in the sender's inbox (`to-claude`). The prior planned `to-chatgpt` path was mistaken and is released. Keep the C2 code/test claim unchanged.",
+      "last_event_at_utc": "2026-10-25T16:09:34Z",
+      "latest_summary": "Extend the current synthetic-only FR-1 single-writer work while repairing the Divine Providence Windows observatory job budget. The PR #59 Windows lifecycle matrix, Windows subsystem tests, and separate full-system validation pass at the exact PR head; the observatory collector is canceled by its explicit 25-minute timeout while the full Windows engine suite is still progressing. Increase only that CI budget and verify the exact PR head again. Keep runtime, provider, and live execution paths unchanged.",
       "latest_type": "UPDATE",
       "model_family": "openai",
-      "phase": "offline-fr1-code-completion",
+      "phase": "offline-runtime-ci-repair",
       "pr": 462,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination/board/chatgpt.md",
-        "coordination/inbox/to-claude/20261025T1600Z-codex-claude-hello-reply.md",
         "cl_lab/frontier.py",
         "cl_lab/trial_ledger.py",
         "tests_cl/test_frontier.py",
-        "tests_cl/test_trial_ledger.py",
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155900Z-update-fr1-mailbox-target.json"
+        ".github/workflows/icarus-observatory.yml",
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json"
       ],
       "reserved_targets": [
-        {
-          "path": "coordination/board/chatgpt.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "coordination/inbox/to-claude/20261025T1600Z-codex-claude-hello-reply.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
         {
           "path": "cl_lab/frontier.py",
           "repo": "reppiks490/Icarus-engine"
@@ -1206,11 +1188,11 @@
           "repo": "reppiks490/Icarus-engine"
         },
         {
-          "path": "tests_cl/test_trial_ledger.py",
-          "repo": "reppiks490/Icarus-engine"
+          "path": ".github/workflows/icarus-observatory.yml",
+          "repo": "reppiks490/divine-providence"
         },
         {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T155900Z-update-fr1-mailbox-target.json",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json",
           "repo": "reppiks490/icarus-owner-actions"
         }
       ],
@@ -1690,7 +1672,7 @@
     "stale": 23,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-25T15:55:38.179614Z",
+  "generated_at_utc": "2026-10-25T16:13:08.529473Z",
   "owner_status": {
     "claude": {
       "active": false,
