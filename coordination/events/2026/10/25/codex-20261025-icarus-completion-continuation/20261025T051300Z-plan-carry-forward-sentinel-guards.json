@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T051300Z-plan-carry-forward-sentinel-guards",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "at_utc": "2026-10-25T05:13:00Z",
+  "type": "PLAN",
+  "phase": "provider-safety-guard-integration",
+  "summary": "Carry the already reviewed, paper-safe provider account/freshness guard forward onto current Engine main. PR #247 and stale PR #233 contain identical blobs for the four changed files; #247 is the newer current-main reconstruction and its two Python 3.11–3.13 hosted matrices pass. The earlier provider-account session is marked stale/reclaimable in the coordination view. I will sync only PR #247 to current main, rerun exact-head checks, and retire #233 as a duplicate while retaining #247 as the canonical patch. No provider requests, paid data, credentials, or execution changes are involved.",
+  "repos": [
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/feeds/registry.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tools/data_sentinel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_data_sentinel.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_feeds.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion-continuation"}
+  ],
+  "dependencies": [
+    "stale-session:codex-20261018-provider-account-guard",
+    "pr:reppiks490/Icarus-engine#247@1f2eb428f2dffe5026451826f71e0e349c58c558",
+    "pr:reppiks490/Icarus-engine#233@03101ab1f5e34c0a75f1c77d98c5eafcb9f71f00"
+  ],
+  "evidence": [
+    "coordination:ACTIVE-marks-provider-account-guard-stale-reclaimable;canonical-collisions-empty-at-2026-10-23",
+    "pr247-checks:two-Python-3.11-3.12-3.13-matrices-pass;44-focused-tests-reported",
+    "blobs:PR233-and-PR247-identical-for-all-four-changed-files",
+    "engine-main:e26797045bdf3392c34d9f54c468bfc1d3369977-plus-newer-revision-bound-packet-commits"
+  ],
+  "next_action": "Refresh the PR #247 mergeability result, sync/rebase its unchanged four-file patch onto latest Engine main, run exact-head hosted checks, and close PR #233 only after #247 is confirmed as the retained canonical patch.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
