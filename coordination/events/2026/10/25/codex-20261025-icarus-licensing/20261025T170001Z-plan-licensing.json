@@ -1,0 +1,124 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T170001Z-plan-licensing",
+  "session_id": "codex-20261025-icarus-licensing",
+  "at_utc": "2026-10-25T17:00:01Z",
+  "type": "PLAN",
+  "phase": "licensing",
+  "summary": "Add root LICENSE.md and README licensing links across eleven owner ICARUS repositories. Knowledge delta: LICENSE.md states proprietary all-rights-reserved policy, exceptions for third-party material, prior grants, law and platform rights. No runtime or pyproject changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/multi-level-csv",
+    "reppiks490/csv-data-multi-chart-type",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/daedalus-research-os",
+    "reppiks490/aion-parallax-research",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/divine-providence",
+    "reppiks490/ideas-reality"
+  ],
+  "paths": [
+    "LICENSE.md",
+    "README.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "README.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Owner explicitly requested licenses to restrict appropriation and reuse.",
+    "Default-branch root listings have no existing license files in ten inspected implementation/data repositories; ideas-reality recursive tree has no license."
+  ],
+  "next_action": "Inspect remaining license metadata and publish notices, then read back each file.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
