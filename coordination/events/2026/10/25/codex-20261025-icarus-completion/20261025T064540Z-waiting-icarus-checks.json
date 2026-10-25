@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T064540Z-waiting-icarus-checks",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T06:45:40Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci-and-streamed-adapter-verification",
+  "summary": "The PR #471 Windows shutdown timing failure was traced to a fixed three-second test deadline. The test now joins the actual selected-workspace OFF lifecycle worker and asserts its terminal state; commit a4ebd699 is pushed and exact-head checks are running. In parallel, PR #216 now has a synthetic regression that failed on the old 32 MB whole-checkpoint parser and passed with bounded streaming SQLite extraction. Continue full adapter and exact-head validation.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_archive_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_archive_intake.py"
+    }
+  ],
+  "dependencies": [
+    "github-run:40170191547",
+    "github-run:40170188697",
+    "pr:reppiks490/Icarus#471@a4ebd699997096d0495c276162ad9592ab8c6148",
+    "pr:reppiks490/Icarus-engine#216"
+  ],
+  "evidence": [
+    "Icarus local tests: tests_engine/test_workspace_panels.py, test_workspace_access.py and test_workspace_power_browser.py: 115 passed in 105.28 seconds",
+    "Icarus-engine synthetic oversized checkpoint regression: red before streaming implementation at compressed payload rejected; green after implementation",
+    "Icarus-engine local tests: tests/test_provider_archive_intake.py: 36 passed; consumer-workflow and engine adapter tests also completed with no reported failures"
+  ],
+  "next_action": "Wait for exact-head Icarus Windows/browser/federation checks while finishing the complete Icarus-engine local suite and review of streamed checkpoint bounds.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
