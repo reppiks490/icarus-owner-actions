@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T074746Z-update-restart-note-reconciliation",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T07:47:46Z",
+  "type": "UPDATE",
+  "phase": "restart-note-reconciliation",
+  "summary": "The current branch also has a stale root-level panel-restart pointer and a subsystem design spec that repeats the superseded ETH-only exception. Reconcile both against the latest owner correction (both ETH and SOL exceptions), while preserving the historical archive and keeping the single current runbook authoritative.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/ICARUS_PANEL_RESTARTS.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/specs/2026-10-24-nexus-aion-connections-design.md"
+    }
+  ],
+  "dependencies": [
+    "coordination:icarus2-20261020-federation-integration:event-019-owner-eth-and-sol-defaults-correction"
+  ],
+  "evidence": [
+    "source:ce024586325ee68191584c0c8dc7f553dedd5596",
+    "archive:docs/recovery/archive/restarts/2026-10-25/pre-final/ICARUS_PANEL_RESTARTS.md"
+  ],
+  "next_action": "Remove outdated SOL-follows-NQ claims from active operator/design docs and retain one deprecated pointer to the new guide/archive.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
