@@ -28,7 +28,7 @@
     },
     {
       "repo": "reppiks490/Icarus-engine",
-      "path": "main:automation_intelligence/interrepo/latest.json"
+      "path": "automation_intelligence/interrepo/latest.json"
     }
   ],
   "dependencies": [
