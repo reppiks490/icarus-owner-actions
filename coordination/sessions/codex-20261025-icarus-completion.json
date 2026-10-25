@@ -3,7 +3,7 @@
   "session_id": "codex-20261025-icarus-completion",
   "actor": "Codex",
   "model_family": "openai",
-  "goal": "Complete verified non-live Icarus restart readiness and close bounded offline provider-consumption gaps without relaxing safety limits.",
+  "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
   "home_repo": "reppiks490/Icarus",
   "branch": "codex/icarus-pr462-full-integration-20261025",
   "pr": 462,

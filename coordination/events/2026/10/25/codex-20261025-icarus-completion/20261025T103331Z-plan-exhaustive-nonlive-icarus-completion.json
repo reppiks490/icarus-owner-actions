@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T103331Z-plan-exhaustive-nonlive-icarus-completion",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T10:33:31Z",
+  "type": "PLAN",
+  "phase": "paper-restart-and-nonlive-gap-closure",
+  "summary": "The owner explicitly resumed broad completion work. Finish the integrated paper restart candidate with exact-head Windows checks, reconcile its base/documents, then continue a source-level audit of all open non-live integration work across Icarus and Icarus-engine. Close gaps in narrow draft PRs with tests; document only evidence-backed external/data rights/runtime blockers. Do not enable live trading/broker arming, merge to main, spend, collect providers, or alter scheduler authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@1283551fbec56113da656d998ff4c04866c1624e",
+    "github-run:40183899072",
+    "github-run:40183897492",
+    "constraint:main_merge_false",
+    "constraint:execution_authorized_false",
+    "constraint:no_new_spend_or_live_broker_arming"
+  ],
+  "evidence": [
+    "hosted:Linux full Engine and provider-intake suite success at current PR head",
+    "hosted:Windows restart persistence and private-intake boundary success at current PR head",
+    "hosted:Windows selected full suite still in progress on duplicate exact-head runs",
+    "hosted:portfolio, visual-browser and other independent contract checks passed on current PR head"
+  ],
+  "next_action": "Wait for both exact-head Windows suites to finish; diagnose any failure. Reconcile candidate with the one-commit current-main receipt after tests, refresh restart evidence, and rerun exact-head CI. Continue cross-repository gap audit and integration in separate reviewable changes.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
