@@ -58,3 +58,8 @@ Prepared by CA / Codex, 2026-09-23; federation credential/coordination routing u
 - [TradingView Heikin Ashi fill modes](https://www.tradingview.com/support/solutions/43000786181-broker-emulator/)
 - [TradingView exchange-data purchases](https://www.tradingview.com/support/solutions/43000471705-how-to-purchase-additional-market-data/)
 - [TradingView webhooks](https://www.tradingview.com/support/solutions/43000529348-how-to-configure-webhook-alerts/)
+
+## License and ownership
+
+Copyright (c) 2026 reppiks490. **Proprietary — all rights reserved.**
+Public visibility does not grant permission to reuse, redistribute, sell, or claim this work as your own. Written permission is required except where applicable law, existing grants, third-party terms, or GitHub's terms provide otherwise. See [LICENSE.md](LICENSE.md) for the full notice and permission requests.
