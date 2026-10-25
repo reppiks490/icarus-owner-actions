@@ -537,14 +537,18 @@ def compile_state(root: Path | str, *, now: datetime | None = None) -> dict[str,
 
 
 def render_active(state: dict[str, Any]) -> str:
+    counts = state.get("counts", {})
+    non_terminal = counts.get("active", 0)
+    stale = counts.get("stale", 0)
     lines = [
         "# ICARUS Active Coordination",
         "",
         f"Generated: `{state.get('generated_at_utc', '')}`",
         "",
-        f"Active sessions: **{state.get('counts', {}).get('active', 0)}** · "
-        f"Stale/reclaimable: **{state.get('counts', {}).get('stale', 0)}** · "
-        f"Collisions: **{state.get('counts', {}).get('collisions', 0)}**",
+        f"Current sessions: **{non_terminal - stale}** · "
+        f"Stale/reclaimable: **{stale}** · "
+        f"Non-terminal total: **{non_terminal}** · "
+        f"Collisions: **{counts.get('collisions', 0)}**",
         "",
         "| Session | Phase | Repo / branch | Latest note | Dependencies | Reserved targets |",
         "|---|---|---|---|---|---|",

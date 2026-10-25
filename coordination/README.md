@@ -39,6 +39,8 @@ A chat waiting on CI should say so explicitly, for example: `waiting on Icarus-e
 - `collisions.json` — active overlapping path reservations requiring resolution.
 - `owner_status.json` — owner-declared global constraints/availability.
 
+The `ACTIVE.md` headline separates **current** sessions with recent records from **stale/reclaimable** sessions. Its non-terminal total includes both. For compatibility, `index.json` retains `counts.active` and `active_sessions` as the complete non-terminal population; subtract `counts.stale` when displaying the current count. Staleness releases reservations without declaring unfinished work complete. A recent record is coordination evidence, not proof that a worker is executing continuously.
+
 Use `python -m coordination_fabric validate` to validate records and `python -m coordination_fabric compile` to rebuild the generated views. `python -m coordination_fabric prune --days 14` may remove old terminal event files from the working tree only after a durable session summary exists. Git history remains the provenance record.
 
 ## Automatic refresh and retention cleanup
