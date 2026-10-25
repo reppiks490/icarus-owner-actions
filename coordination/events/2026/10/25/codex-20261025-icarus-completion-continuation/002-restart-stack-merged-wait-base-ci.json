@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T044805Z-restart-stack-merged-wait-base-ci",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "at_utc": "2026-10-25T04:48:05Z",
+  "type": "WAITING",
+  "phase": "restart-stack-base-verification",
+  "summary": "PR #474 exact head 801c13bae20e3c205da86b44e9a3e6ffbbcd206b passed both Linux and Windows engine jobs, browser/UI checks, and four-workspace contracts, then merged into PR #471 as merge commit 4fc4650ff692324b3f5d6935eb20581dc642a7c5. PR #471's exact merge-head checks are now running. In the independent Engine corpus-consumer worktree, archive availability/status provenance gaps were fixed and the expanded local suite passes 92 tests; no provider was contacted and no private restore was dispatched.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#471@4fc4650ff692324b3f5d6935eb20581dc642a7c5",
+    "github-runs:40163143663,40163146732,40163146734,40163146738,40163146743,40163146769,40163146792",
+    "owner-PC:restart-and-warm-state-unverified",
+    "github-actions:corpus-consumer-workflow-hosted-checks-not-run",
+    "external:encrypted-corpus-restore-not-dispatched"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#474:merged:2026-10-25T04:47:04Z",
+    "checks-pr474:engine-linux-pass,engine-windows-pass,browser-pass,contracts-pass",
+    "local:engine-corpus-cross-repo-focused-suite:92-passed",
+    "local:workflow-yaml-parses,diff-check-clean"
+  ],
+  "next_action": "Keep the PR #471 exact-head jobs as the release gate while archiving the obsolete panel restart guide and refreshing the current operator commands. Do not merge PR #471 to the readiness branch until its cross-repository freshness and all platform checks are understood.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
