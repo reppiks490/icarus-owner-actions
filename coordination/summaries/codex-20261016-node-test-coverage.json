@@ -1,0 +1,14 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261016-node-test-coverage",
+  "completed_at_utc": "2026-10-16T20:12:00Z",
+  "result": "complete",
+  "evidence": [
+    "PR #442 merged at 2026-10-16T20:03:21Z as main commit 5f3b7c9f026c1eaa535b01924f12053aad191928.",
+    "All 14 check runs on PR head 86dea48f4bd1169285318e53a5088d9c2d98a271 completed successfully.",
+    "All six post-merge checks on main commit 5f3b7c9f026c1eaa535b01924f12053aad191928 completed successfully, including Windows engine and both contract matrices.",
+    "Local targeted Node-backed test set: 123 passed in 6.81s with Node v24.19.0.",
+    "All affected workflows parsed as YAML and audit confirmed Node 22 setup in every affected job."
+  ],
+  "next_action": "No further Node coverage work needed. Owner-actions PR #42 cannot pass full-tree validation until the pre-existing malformed event `coordination/events/2026/10/16/codex-20261016-ui-pointer-contract-fix/20261016T131600Z-claim.json` is corrected by its author or coordinated maintainer; this session did not rewrite that immutable event."
+}
