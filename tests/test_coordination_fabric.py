@@ -154,6 +154,87 @@ class CoordinationFabricContractTests(unittest.TestCase):
             self.assertEqual(len(state["active_sessions"]), 1)
             self.assertEqual(len(state["active_sessions"][0]["reserved_targets"]), 2)
 
+    def test_legacy_icarus2_events_normalize_in_memory_without_rewriting_history(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            session_path = root / "coordination/sessions/chat-a.json"
+            session = json.loads(session_path.read_text(encoding="utf-8"))
+            session["home_repo"] = "reppiks490/Icarus"
+            _write(root, "coordination/sessions/chat-a.json", session)
+            event_path = root / "coordination/events/2026/10/24/chat-a/legacy-claim.json"
+            event = {
+                "type": "CLAIM",
+                "worker_id": "icarus2",
+                "session_id": "chat-a",
+                "date": "2026-10-24",
+                "task": "Preserve the NQ restart defaults",
+                "targets": ["reppiks490/Icarus:icarus_engine/restart_defaults.py"],
+                "evidence": {"test_count": 13, "result": "passed"},
+                "execution_authorized": False,
+            }
+            event_path.parent.mkdir(parents=True, exist_ok=True)
+            event_path.write_text(json.dumps(event, sort_keys=True) + "\n", encoding="utf-8")
+            original_bytes = event_path.read_bytes()
+
+            normalized = validate_tree(root)["events"][0][1]
+
+            self.assertEqual(normalized["type"], "CLAIM")
+            self.assertEqual(normalized["phase"], "legacy")
+            self.assertEqual(normalized["summary"], "Preserve the NQ restart defaults")
+            self.assertEqual(normalized["at_utc"], "2026-10-24T00:00:00Z")
+            self.assertEqual(normalized["repos"], ["reppiks490/Icarus"])
+            self.assertEqual(normalized["targets"], [{
+                "repo": "reppiks490/Icarus", "path": "icarus_engine/restart_defaults.py",
+            }])
+            self.assertEqual(normalized["evidence"], ["result=\"passed\"", "test_count=13"])
+            self.assertFalse(normalized["execution_authorized"])
+            self.assertEqual(event_path.read_bytes(), original_bytes)
+
+    def test_immutable_v2_findings_supply_a_summary_without_source_rewrite(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            event_path = root / "coordination/events/2026/10/24/chat-a/findings.json"
+            event = {
+                "schema_version": "icarus-coordination-event-v2",
+                "event_id": "findings-only", "session_id": "chat-a",
+                "at_utc": "2026-10-24T00:32:58Z", "type": "UPDATE", "phase": "review",
+                "repos": [], "targets": [], "findings": [
+                    {"kind": "verified-regression", "evidence": "first"},
+                    {"kind": "full-suite", "evidence": "second"},
+                ],
+            }
+            _write(root, "coordination/events/2026/10/24/chat-a/findings.json", event)
+            original_bytes = event_path.read_bytes()
+
+            normalized = validate_tree(root)["events"][0][1]
+
+            self.assertEqual(normalized["summary"], "Legacy UPDATE record with 2 findings")
+            self.assertEqual(event_path.read_bytes(), original_bytes)
+
+    def test_legacy_icarus2_metadata_without_scope_is_an_inert_note(self):
+        _, _, _, validate_tree = self._api()
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            _session(root, "chat-a")
+            _write(root, "coordination/events/2026/10/24/chat-a/mobile-handoff.json", {
+                "session_id": "chat-a", "at_utc": "2026-10-24T23:24:00Z",
+                "owner_priority": "Wait for the owner's PC and phone",
+                "state": "WAITING_OWNER_PC_MOBILE_PAIRING_FULL_RESTART_HELD",
+                "execution_authorized": False,
+            })
+
+            normalized = validate_tree(root)["events"][0][1]
+
+            self.assertEqual(normalized["type"], "NOTE")
+            self.assertEqual(normalized["summary"], "Wait for the owner's PC and phone")
+            self.assertEqual(normalized["repos"], [])
+            self.assertEqual(normalized["targets"], [])
+            self.assertFalse(normalized["execution_authorized"])
+
     def test_legacy_event_rejects_conflicting_canonical_alias(self):
         _, _, _, validate_tree = self._api()
         with tempfile.TemporaryDirectory() as td:
