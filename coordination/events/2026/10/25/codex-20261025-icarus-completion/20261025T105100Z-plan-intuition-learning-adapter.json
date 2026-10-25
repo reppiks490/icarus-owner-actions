@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T105100Z-plan-intuition-learning-adapter",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T10:51:00Z",
+  "type": "PLAN",
+  "phase": "selected-intuition-learning-adapter",
+  "summary": "Integrate the verified research-only INTUITION Ω library into selected-workspace Learning panels through an explicit, authenticated import action and read-only status route. Preserve as-of receipt integrity, selected-workspace isolation, non-execution authority, and avoid panel polling that can add main-dashboard load. The immutable peer packet remains fail-closed when stale; no synthetic refresh or source-time bypass.",
+  "repos": ["reppiks490/Icarus"],
+  "paths": [
+    "icarus_engine/intuition_omega/",
+    "icarus_engine/workspace_intelligence_panels.py",
+    "icarus_engine/workspace_panels.py",
+    "icarus_engine/server.py",
+    "icarus_engine/learning-ui.js",
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_intuition_omega.py",
+    "tests_engine/test_workspace_intelligence_panels.py",
+    "tests_engine/test_dashboard_js.py",
+    "docs/recovery/ICARUS_ADAPTER_STATUS.md",
+    "docs/recovery/ICARUS_RECOVERY_STATUS.md"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus1/restart-readiness-20261020"}
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@e0aaeb911f50a425c9b007d5fc1f39ebe2261a5c",
+    "pr:reppiks490/Icarus#454@4c12fad1d5fa25d63cffe0886d979815058059dc",
+    "pr:reppiks490/Icarus#458@90fb938124162d63fe7dc392cd336e3eb048cec2",
+    "constraint:main_merge_false",
+    "constraint:execution_authorized_false",
+    "constraint:no_new_spend_or_live_broker_arming"
+  ],
+  "evidence": [
+    "PR #454 explicitly reports that INTUITION Ω has no runtime adapter or dashboard gauges",
+    "PR #458 validates indexed receipt identities against authenticated receipt bodies",
+    "selected Learning Fabric is already isolated per workspace; current reads never start background workers"
+  ],
+  "next_action": "Integrate the reviewed research library, add owner-gated selected-workspace Learning import and bounded diagnostics, remove the Learning panel's five-second refresh loop, then run focused adapter/browser suites and the exact full restart checks.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": ["icarus2-20261020-federation-integration"]
+}
