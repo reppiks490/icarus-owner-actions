@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261025-icarus-completion",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Complete verified non-live Icarus restart readiness and close bounded offline provider-consumption gaps without relaxing safety limits.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/icarus-pr462-full-integration-20261025",
+  "pr": 462,
+  "started_at_utc": "2026-10-25T06:36:46Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "github",
+    "local-tests"
+  ],
+  "initial_dependencies": [
+    "Icarus PR #471 exact-head Windows failure 40167438577",
+    "Icarus PR #462 remote head 28dbfbd5d86cac88da80220e8ae3b58db9afef58",
+    "Icarus-engine PR #216 exact-head CI failures for large retained checkpoints"
+  ]
+}
