@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T160934Z-update-windows-observatory-budget",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T16:09:34Z",
+  "type": "UPDATE",
+  "phase": "offline-runtime-ci-repair",
+  "summary": "Extend the current synthetic-only FR-1 single-writer work while repairing the Divine Providence Windows observatory job budget. The PR #59 Windows lifecycle matrix, Windows subsystem tests, and separate full-system validation pass at the exact PR head; the observatory collector is canceled by its explicit 25-minute timeout while the full Windows engine suite is still progressing. Increase only that CI budget and verify the exact PR head again. Keep runtime, provider, and live execution paths unchanged.",
+  "repos": ["reppiks490/Icarus-engine", "reppiks490/divine-providence", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/frontier.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "cl_lab/trial_ledger.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_cl/test_frontier.py"},
+    {"repo": "reppiks490/divine-providence", "path": ".github/workflows/icarus-observatory.yml"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T160934Z-update-windows-observatory-budget.json"}
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus-engine#252@a03195a7ec269b6c1e9fdb9519ad597383276978",
+    "pr:reppiks490/divine-providence#59@f63347c9cd6d603a00a081465caf7b8f53ba4c44",
+    "github-run:reppiks490/divine-providence#39137306043/windows-collector=cancelled-by-25-minute-job-timeout",
+    "github-run:reppiks490/divine-providence#39137306042/windows-lifecycle=success",
+    "github-run:reppiks490/divine-providence#39137306048/windows-subsystems-and-full-validation=success"
+  ],
+  "evidence": [
+    "Exact PR #59 head has four passing lifecycle matrix jobs, including Windows Python 3.11 and 3.13.",
+    "Exact PR #59 head has passing Windows causal-subsystem checks and a passing twelve-system full validation.",
+    "The Windows observatory collector passed bootstrap validation (2,174 tests) and entered Icarus engine tests before the 25-minute workflow limit canceled it at 85%; logs show no assertion failure before cancellation."
+  ],
+  "next_action": "Raise only the windows-collector job timeout to 40 minutes, rerun its full offline validation, and verify PR #59. Continue the FR-1 synthetic-only stack after exact-head CI; empirical/provider/holdout/execution work remains disabled.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
