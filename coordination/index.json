@@ -1123,42 +1123,95 @@
       "cooperates_with": [
         "icarus2-20261020-federation-integration"
       ],
-      "coordination_mode": "cooperate",
+      "coordination_mode": "independent",
       "declared_paths": [
-        "icarus1/restart-readiness-20261020",
-        "automation_intelligence/interrepo/latest.json"
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+        "coordination_fabric/__init__.py",
+        "tests/test_coordination_fabric.py",
+        "docs/recovery",
+        "mobile",
+        "docs/agent-handoffs"
       ],
       "declared_targets": [
         {
-          "path": "icarus1/restart-readiness-20261020",
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination_fabric/__init__.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_coordination_fabric.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/recovery",
           "repo": "reppiks490/Icarus"
         },
         {
-          "path": "automation_intelligence/interrepo/latest.json",
+          "path": "mobile",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/agent-handoffs",
           "repo": "reppiks490/Icarus-engine"
         }
       ],
       "dependencies": [
-        "pr:reppiks490/Icarus#462@ab6a4765f6ea76d146fbe80b42f951253d4cf615",
-        "workflow-run:reppiks490/Icarus-engine#40189132839",
-        "workflow-reruns:reppiks490/Icarus#40188785958,40188786436",
-        "constraint:main_merge_false",
-        "constraint:execution_authorized_false",
-        "constraint:no_live_trading_or_broker_arming"
+        "pr:reppiks490/Icarus#462@9a44dc1c6d20088bac1df013e6ec09e80446d30e",
+        "merge:reppiks490/Icarus@8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25",
+        "workflow-run:reppiks490/Icarus#40202103435",
+        "pr:reppiks490/Icarus#475",
+        "policy:execution_authorized_false",
+        "policy:no_live_broker_arming",
+        "policy:no_new_spend_or_provider_collection"
       ],
       "goal": "Continue the user-requested exhaustive non-live Icarus completion: finish and verify the paper restart, then close or precisely document remaining owned adapter/integration gaps across Icarus and Icarus-engine. Preserve live arming, main merge, provider spend, and execution disabled.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-25T11:34:29Z",
-      "latest_summary": "Pushed the selected-workspace Intuition \u03a9 research bridge on PR #462 at exact head ab6a4765f6ea76d146fbe80b42f951253d4cf615 (implementation cde6d0cca771ec8a401092a231449646306c026c). Its full local tests_engine + provider-corpus-intake suite exited 0 after collecting 4,386 cases. Current hosted source/contract/config/browser checks and the selected Icarus-engine consumer passed. The two bilateral gates initially failed closed because the observe-only Icarus-engine peer packet was 5,863.986 seconds old against a 1,800-second contract; the exporter workflow passed and wrote packet 9529fa838cfe2365ec67f896dcb8199188f782d529d7adbbb0170ba9fa838b97 with observed_at 2026-10-25T11:31:05Z, execution_authorized=false. Reruns of both bilateral gates then passed on the same Icarus source SHA. Complete Linux/Windows engine suites and one full browser visual run remain in progress. The candidate has not been merged to main or installed on the owner's PC.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-25T14:38:22Z",
+      "latest_summary": "The owner has renewed the request to continue exhaustive non-live Icarus completion, superseding the older restart-only/standby and main-merge hold recorded before this turn. Icarus PR #462 is now merged at 8c1dbf0d989894683d9daaefe6f1a4b6bcf4cc25 from exact PR head 9a44dc1c6d20088bac1df013e6ec09e80446d30e; all required exact-head Linux/Windows, browser, contract, configuration and federation checks passed. Merge-triggered main checks and the post-merge restart-documentation PR remain in progress. Continue the non-live PR/adapter audit and preserve the distinction between source/CI evidence and owner-device or provider-runtime evidence. Live broker arming, live orders, new spend, provider collection and scheduler changes remain disabled.",
+      "latest_type": "PLAN",
       "model_family": "openai",
-      "phase": "pr462-peer-refresh-and-full-verification",
+      "phase": "post-merge-nonlive-closeout",
       "pr": 462,
-      "reclaimable": true,
-      "reserved_paths": [],
-      "reserved_targets": [],
+      "reclaimable": false,
+      "reserved_paths": [
+        "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+        "coordination_fabric/__init__.py",
+        "tests/test_coordination_fabric.py",
+        "docs/recovery",
+        "mobile",
+        "docs/agent-handoffs"
+      ],
+      "reserved_targets": [
+        {
+          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "coordination_fabric/__init__.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "tests/test_coordination_fabric.py",
+          "repo": "reppiks490/icarus-owner-actions"
+        },
+        {
+          "path": "docs/recovery",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "mobile",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/agent-handoffs",
+          "repo": "reppiks490/Icarus-engine"
+        }
+      ],
       "session_id": "codex-20261025-icarus-completion",
-      "stale": true,
+      "stale": false,
       "status": "active"
     },
     {
@@ -1630,10 +1683,10 @@
   "counts": {
     "active": 25,
     "collisions": 0,
-    "stale": 24,
+    "stale": 23,
     "terminal": 24
   },
-  "generated_at_utc": "2026-10-25T14:16:31.972504Z",
+  "generated_at_utc": "2026-10-25T14:42:00.701835Z",
   "owner_status": {
     "claude": {
       "active": false,
