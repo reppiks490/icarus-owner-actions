@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T074559Z-update-dual-crypto-defaults",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T07:45:59Z",
+  "type": "UPDATE",
+  "phase": "restart-defaults-owner-correction",
+  "summary": "Expand the restart fix to honor the latest recorded owner correction: retain the SOLUSD 30-minute, no-session, quantity-25 exception and apply the same settings to COINBASE:ETHUSD. The current migration incorrectly resets SOL to NQ and the current operator notes say ETH is the sole exception. Update the migration, consumer-visible tests and both restart guides before release.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/restart_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_restart_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md"
+    }
+  ],
+  "dependencies": [
+    "constraint:execution_authorized=false",
+    "github-run:40172690439:linux-suite-failure"
+  ],
+  "evidence": [
+    "coordination:icarus2-20261020-federation-integration:event-019-owner-eth-and-sol-defaults-correction",
+    "source:ce024586325ee68191584c0c8dc7f553dedd5596"
+  ],
+  "next_action": "Add failing literal SOL/ETH assertions, verify the expected failures, apply the minimal dual-exception migration, and update operator guidance.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

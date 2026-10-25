@@ -1,0 +1,47 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T081145Z-plan-remove-readout-layout-flush",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T08:11:45Z",
+  "type": "PLAN",
+  "phase": "dashboard-forced-reflow-removal",
+  "summary": "The owner's browser console still reports repeated forced-reflow violations from world-immersion.js. The current readout animation patch batches many changes into one synchronous root offsetWidth read, so frequent market updates can still force a layout on each refresh. Add a browser regression requiring the readout and topology animations to restart with no synchronous layout flush, then use frame-separated class restarts and verify activity remains visible. Also harden the failing CC2 browser control regression so it pauses background polling, asserts the UI control receipt, and exposes errors instead of letting the wrapper silently return null. This is presentation/test isolation only; runtime data and adapter behavior stay unchanged.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_depth.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@0db8f2372085fdc219af351986d5fe034dce58a4",
+    "pr:reppiks490/Icarus#466@5fea33504c4a2dff115dfcb0bc4d9e1183fa3c2e",
+    "owner-screenshot:repeated-world-immersion-forced-reflow-violations"
+  ],
+  "evidence": [
+    "source:tests_engine/browser_depth.cjs currently asserts one synchronous root layout read for a batch of eight changed metrics",
+    "source:icarus_engine/world-immersion.js calls root.offsetWidth before restarting panel and topology activity classes",
+    "existing-browser-baseline:PR #466 stacks an earlier performance reduction and includes the exact browser instrumentation"
+  ],
+  "next_action": "After the corrected restart head checks settle, reproduce the expected-failing zero-layout-flush regression, implement frame-separated CSS animation restarts, and run the real Chromium/readout and full browser suites.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261022-ui-stability-support",
+    "icarus2-20261020-federation-integration"
+  ]
+}

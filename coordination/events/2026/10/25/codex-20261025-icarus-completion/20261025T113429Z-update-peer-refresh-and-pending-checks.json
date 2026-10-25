@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T113429Z-update-peer-refresh-and-pending-checks",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T11:34:29Z",
+  "type": "UPDATE",
+  "phase": "pr462-peer-refresh-and-full-verification",
+  "summary": "Pushed the selected-workspace Intuition Ω research bridge on PR #462 at exact head ab6a4765f6ea76d146fbe80b42f951253d4cf615 (implementation cde6d0cca771ec8a401092a231449646306c026c). Its full local tests_engine + provider-corpus-intake suite exited 0 after collecting 4,386 cases. Current hosted source/contract/config/browser checks and the selected Icarus-engine consumer passed. The two bilateral gates initially failed closed because the observe-only Icarus-engine peer packet was 5,863.986 seconds old against a 1,800-second contract; the exporter workflow passed and wrote packet 9529fa838cfe2365ec67f896dcb8199188f782d529d7adbbb0170ba9fa838b97 with observed_at 2026-10-25T11:31:05Z, execution_authorized=false. Reruns of both bilateral gates then passed on the same Icarus source SHA. Complete Linux/Windows engine suites and one full browser visual run remain in progress. The candidate has not been merged to main or installed on the owner's PC.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [
+    "icarus_engine/intuition_omega/workspace_adapter.py",
+    "icarus_engine/workspace_intelligence_panels.py",
+    "icarus_engine/workspace_panels.py",
+    "icarus_engine/server.py",
+    "icarus_engine/learning-ui.js",
+    "tests_engine/test_workspace_intuition_adapter.py",
+    "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "docs/recovery/ICARUS_ADAPTER_STATUS.md",
+    "automation_intelligence/interrepo/latest.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus1/restart-readiness-20261020"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "automation_intelligence/interrepo/latest.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@ab6a4765f6ea76d146fbe80b42f951253d4cf615",
+    "workflow-run:reppiks490/Icarus-engine#40189132839",
+    "workflow-reruns:reppiks490/Icarus#40188785958,40188786436",
+    "constraint:main_merge_false",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_trading_or_broker_arming"
+  ],
+  "evidence": [
+    "local:python -m pytest tests_engine tests/test_provider_corpus_intake.py -q exited 0; 4,386 cases collected",
+    "local:focused selected-workspace adapter, panel isolation, client routing, cancellation and UI checks passed",
+    "hosted:engine peer packet exporter workflow 40189132839 passed and persisted a newly observed packet",
+    "hosted:live-engine-historical-context-gate rerun 40188785958 passed against exact Icarus head ab6a4765",
+    "hosted:live-engine-federation-gate rerun 40188786436 passed against exact Icarus head ab6a4765",
+    "hosted:full Linux/Windows engine suites and one full browser visual run remain pending"
+  ],
+  "next_action": "Wait for current exact-head full suites and browser visual checks. Then inspect and classify the 11 newer main-branch provider receipts before deciding whether to refresh the pinned offline provider context, and continue reviewing the remaining non-live open research/integration PRs without merging to main or enabling execution.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}

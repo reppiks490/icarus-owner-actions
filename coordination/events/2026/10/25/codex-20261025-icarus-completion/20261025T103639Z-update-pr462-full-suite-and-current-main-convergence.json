@@ -1,0 +1,44 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T103639Z-update-pr462-full-suite-and-current-main-convergence",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T10:36:39Z",
+  "type": "UPDATE",
+  "phase": "pr462-full-suite-and-current-main-convergence",
+  "summary": "One current-head PR #462 hosted test run has now completed with Linux and the full selected Windows suite successful; Windows restart-persistence/private-intake checks also passed. Portfolio/browser and the other independent consumer, configuration, intelligence and federation contracts pass on the same head. The duplicate identical-head full test run remains in progress. Before final candidate verification, merge the single current-main automation-only catalog registry receipt into the PR branch, refresh source/status pins in the restart docs, and rerun exact-head checks. This is a branch-only convergence; no merge to main.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "automation_intelligence/catalog_registry_v1/cycles/catalog-registry-40180278183-1/receipt.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@1283551fbec56113da656d998ff4c04866c1624e",
+    "github-run:40183899072=success",
+    "github-run:40183897492=in_progress",
+    "constraint:main_merge_false"
+  ],
+  "evidence": [
+    "hosted:40183899072 Linux suite success and selected full Windows suite success",
+    "hosted:40183899072 Windows restart-persistence and private-intake boundary success",
+    "hosted:40183899096 configuration job contract success",
+    "hosted:40183899082 four portfolio performance contract success",
+    "hosted:40183899093 UI visual contract success",
+    "hosted:40183899117 engine federation consumer contract success",
+    "hosted:40183899083 intelligence feed contract success",
+    "hosted:40183899110 live federation gate success"
+  ],
+  "next_action": "Merge the single current-main receipt commit into the PR branch; update the restart and adapter status documents with the precise verified candidate/source revision and current CI evidence; push and wait for all final exact-head checks.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}

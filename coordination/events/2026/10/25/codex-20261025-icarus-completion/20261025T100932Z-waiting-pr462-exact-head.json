@@ -1,0 +1,52 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T100932Z-waiting-pr462-exact-head",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T10:09:32Z",
+  "type": "WAITING",
+  "phase": "pr462-exact-head-validation",
+  "summary": "Integrated the offline historical provider-context consumer and corrected restart defaults so ETHUSD alone gets the 30-minute/session-off/25-contract exception; SOL follows NQ. Source commit 5160a55368fc5c7e5a61dcf53c85193c028042ab passed the full local suite (4,331 collected, exit 0) plus focused restart-default/launcher/provider suites. Source and updated restart/phone docs were pushed to PR #462; current head is docs commit 4281a83a561f486ec502056b6dd85584d42b8d8d. Exact-head tests, browser and remaining contracts are running; hosted Windows and full engine runs are not yet complete. No main merge or live execution occurred.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/provider_corpus.py",
+    "icarus_engine/provider-corpus.json",
+    "icarus_engine/restart_defaults.py",
+    "icarus_engine/brain_sync.py",
+    "icarus_engine/server.py",
+    "icarus_engine/workspace-dashboard.js",
+    "tests_engine/test_provider_corpus.py",
+    "tests_engine/test_restart_defaults.py",
+    "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "docs/recovery/ICARUS_ADAPTER_STATUS.md",
+    "docs/recovery/HIGHLY_IMPORTANT_RESTART_INFO.md",
+    "docs/PHONE_ACCESS.md"
+  ],
+  "targets": [],
+  "dependencies": [
+    "github-head:4281a83a561f486ec502056b6dd85584d42b8d8d",
+    "github-run:40183425876",
+    "github-run:40183426345",
+    "github-run:40183425813",
+    "github-run:40183426376",
+    "github-run:40183425802",
+    "github-run:40183425803",
+    "github-run:40183426346"
+  ],
+  "evidence": [
+    "local:full-pytest-suite-exit-0-4331-collected",
+    "local:focused-restart-default-launcher-provider-tests-exit-0",
+    "hosted:engine-federation-consumer-contract-success",
+    "hosted:configuration-job-contract-success",
+    "hosted:bilateral-federation-gate-success",
+    "hosted:historical-context-handshake-success",
+    "hosted:engine-linux-windows-browser-and-other-contracts-pending"
+  ],
+  "next_action": "Wait for all exact-head checks on PR #462. Diagnose and repair failures before updating the restart gate. Then continue the authorized non-live completion audit and phone handoff; physical PC/phone pairing cannot be certified from this workspace.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T094003Z-waiting-provider-consumer-suite",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T09:40:03Z",
+  "type": "WAITING",
+  "phase": "provider-context-integration-local-suite-and-windows-recheck",
+  "summary": "The exact 350f93 PR #462 candidate's first Windows engine run passed (40178997534); its second redundant exact-head Windows run (40178999879) remains in progress. The isolated provider-consumer integration has passed focused provider/Brain/route/Chromium checks after removing a duplicate refresh path. The full local suite on the augmented isolated candidate is still running. No integration commit has been pushed.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@350f93ea721b5edae36777bf251c1738b03bb671",
+    "pr:reppiks490/Icarus#457@46e9306e71e1ece82d7e7eee9c1daa2111c73755",
+    "github-run:40178999879",
+    "local:pytest-tests_engine-tests-provider-corpus-intake"
+  ],
+  "evidence": [
+    "hosted:engine-windows-run-40178997534-success",
+    "local:provider-corpus-brain-sync-command-center-focused-suite-exit-0",
+    "local:provider-context-browser-duplicate-refresh-regression-pass",
+    "local:augmented-full-suite-in-progress-83-percent"
+  ],
+  "next_action": "Finish the full local suite. If clean, commit the isolated provider-context consumer and refresh/UI hardening, update the single restart and adapter docs, publish to PR #462, and run exact-head Windows/Linux/browser checks. Diagnose any failure before continuing.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ]
+}

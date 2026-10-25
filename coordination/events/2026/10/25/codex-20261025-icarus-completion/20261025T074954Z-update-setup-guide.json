@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T074954Z-update-setup-guide",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T07:49:54Z",
+  "type": "UPDATE",
+  "phase": "plant-setup-guide-ci-repair",
+  "summary": "Exact Linux and Windows runs exposed one remaining setup-guide regression: replacing SETUP.md with a restart pointer removed still-supported Plant/chart-download directions and fails test_start_plant_scripts_are_dummy_proof. Restore the useful local setup guidance without reviving stale Yahoo/live-data commands; point full dashboard restarts to the single current paper guide.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "SETUP.md"
+    }
+  ],
+  "dependencies": [
+    "github-run:40172690439:test_plant_failure",
+    "github-run:40172696275:test_plant_failure"
+  ],
+  "evidence": [
+    "github-test:tests_engine/test_plant.py::test_start_plant_scripts_are_dummy_proof",
+    "source:docs/recovery/archive/2026-10-23/main/SETUP.md"
+  ],
+  "next_action": "Replace the placeholder with accurate current Plant/chart-file setup, preserve a single full-restart entrypoint, then rerun the exact Plant test and full suite.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,54 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T063646Z-plan-icarus-completion",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T06:36:46Z",
+  "type": "PLAN",
+  "phase": "verified-restart-and-offline-adapters",
+  "summary": "Continue the authorized non-live completion work. First diagnose the exact PR #471 Windows shutdown test failure, correct its synchronization/implementation and run exact-head CI; finish the reviewed restart-stack integration and refresh the current restart notes. Then repair the three offline provider archive consumers using bounded streaming/read-only checkpoint access while preserving current encrypted-input and output limits, with focused tests and exact-head CI.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_archive_intake.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_archive_intake.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#471@b0d67889143221087e5f7045cae9109ede0af031",
+    "github-run:40167438577",
+    "pr:reppiks490/Icarus-engine#216@3e3482a50d6d73b3f7b13705b4c7ed35f42a56a4",
+    "constraint:live-broker-arming-disabled",
+    "constraint:provider-acquisition-and-spend-unchanged"
+  ],
+  "evidence": [
+    "tests_engine/test_workspace_panels.py::test_off_waits_for_selected_panel_worker_without_blocking_sibling failed on exact Windows PR run 40167438577 with STOPPING after a 3-second wall-clock assertion; duplicate Windows run 40167436038 passed",
+    "PR #216 reports five verified provider archive profiles and three bounded-consumption failures; current encrypted input and diagnostic bounds must remain intact"
+  ],
+  "next_action": "Inspect exact Windows failure and lifecycle cleanup synchronization, fix and verify; then complete integration candidate and implement streaming checkpoint binding for retained archives.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T104052Z-waiting-pr462-current-head-checks",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T10:40:52Z",
+  "type": "WAITING",
+  "phase": "pr462-current-head-verification",
+  "summary": "Merged the one-commit current Icarus main advance into the restart PR branch (receipt-only merge f4a4a2800069bcefc3661b38d0b4d134ae775326) and refreshed the restart/default/adapter/recovery/START_HERE docs. The latest runtime source 1283551fbec56113da656d998ff4c04866c1624e passed both complete Linux/selected-Windows runs 40183899072 and 40183897492, including the Windows restart-persistence/private-intake checks; all portfolio, UI visual, config, federation and intelligence contracts passed. The docs-synced PR head is e0aaeb911f50a425c9b007d5fc1f39ebe2261a5c and its exact-head workflows are queued.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "automation_intelligence/catalog_registry_v1/cycles/catalog-registry-40180278183-1/receipt.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@e0aaeb911f50a425c9b007d5fc1f39ebe2261a5c",
+    "github-runs:40185742540,40185742537,40185742532,40185742527,40185742529,40185742541,40185742542,40185742549,40185743353,40185743339,40185743328,40185743331,40185743367,40185743322,40185742632,40185743347",
+    "constraint:main_merge_false",
+    "constraint:execution_authorized_false",
+    "constraint:no_new_spend_or_live_broker_arming"
+  ],
+  "evidence": [
+    "local:restart-default-launcher-persistence-expiry-provider focused selection exit 0",
+    "local:git diff --check and bash -n scripts/start-as-is.sh exit 0",
+    "hosted:runtime source 1283551 Linux+Windows full selected suites both passed",
+    "hosted:runtime source 1283551 portfolio/browser/configuration/federation/intelligence contracts passed"
+  ],
+  "next_action": "Wait for all exact-head required checks on e0aaeb91. Diagnose and repair any failure; then close only those redundant PRs whose behavior and regression tests are present in this validated candidate. Continue the remaining non-live subsystem and adapter audit.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus2-20261020-federation-integration"
+  ]
+}
