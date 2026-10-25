@@ -1,0 +1,47 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T090743Z-plan-disconnect-and-empty-startup-guards",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T09:07:43Z",
+  "type": "PLAN",
+  "phase": "restart-connection-and-empty-startup-hardening",
+  "summary": "Review and integrate two already-developed restart-safety fixes into the exact PR #462 candidate: close a client request-reader disconnect before it reaches the HTTP server's unhandled exception logger, while leaving application faults visible; and reject an empty/whitespace/comma-only asset list before setup or plant startup. The request-reader regression matches the owner's repeated WinError 10053 request-line traceback. Preserve all existing workspace data and the no-live-execution boundary.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_api.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_as_is_launcher.py"
+    }
+  ],
+  "dependencies": [
+    "source-commit:6bcf91372d8c22d82ef5f996591866b495b0f63d",
+    "pr:reppiks490/Icarus#468@bfe90692497cf8404ab5e944ca1a18b4559194c2",
+    "pr:reppiks490/Icarus#462@350f93ea721b5edae36777bf251c1738b03bb671"
+  ],
+  "evidence": [
+    "owner-screenshot:WinError-10053-during-request-line-read",
+    "tests:commit-6bcf9137-real-keepalive-TCP-reset-and-application-error-visibility",
+    "pr-468:17-launcher-tests-and-3845-suite-cases-passed-on-its-source-head"
+  ],
+  "next_action": "Complete the exact #462 full local suite, independently verify both focused fixes against the integrated head, resolve any incompatibility, and rerun required exact-head hosted checks before updating restart readiness.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ]
+}

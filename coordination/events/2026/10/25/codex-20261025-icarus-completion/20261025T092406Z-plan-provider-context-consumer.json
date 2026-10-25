@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T092406Z-plan-provider-context-consumer",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T09:24:06Z",
+  "type": "PLAN",
+  "phase": "review-and-integrate-offline-provider-context-consumer",
+  "summary": "Audit and, if safe, integrate the draft provider-corpus statistics consumer into the current restart candidate. The consumer must remain offline, descriptive, source-hash and clock bound, isolated per workspace, and ineligible for execution/candidate evidence. Review its reader cost and ensure it cannot reintroduce dashboard layout stalls. This is separate from live feed connectivity and broker work.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": ".github/workflows/test.yml"},
+    {"repo": "reppiks490/Icarus", "path": "docs/superpowers/specs/2026-10-19-provider-corpus-consumption.md"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/brain_sync.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/provider-corpus.json"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/provider_corpus.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/server.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace-dashboard.js"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_brain_sync.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_command_center_routes.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_provider_corpus.py"}
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@350f93ea721b5edae36777bf251c1738b03bb671",
+    "pr:reppiks490/Icarus#457@46e9306e71e1ece82d7e7eee9c1daa2111c73755",
+    "owner-takeover:coordination/directives/2026-10-22-owner-prime-takeover.json"
+  ],
+  "evidence": [
+    "hosted:pr462-windows-engine-runs-40178997534-and-40178999879-still-in-progress",
+    "local:pr457-source-is-a-draft-stacked-on-base-commit-contained-by-pr462",
+    "local:provider-consumer-source-and-tests-under-review"
+  ],
+  "next_action": "Inspect the data consumer, Brain projection, API route, and browser load path. Integrate only in an isolated worktree, preserve immutable evidence/safety contracts, run focused and full local checks, then rerun exact-head Windows/Linux/browser checks after the current PR #462 jobs finish.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ]
+}

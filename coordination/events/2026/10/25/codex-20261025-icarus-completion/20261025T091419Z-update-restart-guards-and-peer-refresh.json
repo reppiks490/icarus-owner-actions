@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T091419Z-update-restart-guards-and-peer-refresh",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T09:14:19Z",
+  "type": "UPDATE",
+  "phase": "restart-guards-and-peer-freshness-recheck",
+  "summary": "Review confirmed both requested guard fixes were already integrated into the exact #462 source: the request-line disconnect guard and real TCP-reset regression are present from candidate commit 7aa39002; empty asset lists are rejected before setup/plant from candidate commit 71e808f3. No duplicate changes were applied. The initial live federation failures were solely because Engine main's peer packet was 4,079 seconds old (30-minute contract). The documented metadata-only interrepo export workflow completed successfully without provider acquisition and committed a revision-bound packet at 2026-10-25T09:12:45Z (Engine commit 683ba958805609e20a9a254e25f64459e784e87b; packet abcc36c3a0678938abba069be6acfdf05d9eb8e10e07525d233beed164c03c23). Exact-head federation and handshake failed jobs have been rerun against this refreshed packet; the full local #462 suite is still running.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "automation_intelligence/interrepo/latest.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#462@350f93ea721b5edae36777bf251c1738b03bb671",
+    "engine-run:40179650520",
+    "engine-commit:683ba958805609e20a9a254e25f64459e784e87b"
+  ],
+  "evidence": [
+    "local:git-show-HEAD-server-contains-ClientRequestDisconnected-and-real-keepalive-reset-test",
+    "local:git-show-HEAD-launcher-refuses-empty-assets-before-python-or-private-state-change",
+    "hosted:engine-run-40179650520-all-export-steps-succeeded",
+    "hosted:engine-main-peer-packet-observed-at-2026-10-25T09:12:45Z"
+  ],
+  "next_action": "Wait for the exact 350f93e local full-suite and rerun of both hosted federation gates. If green, publish exact evidence in restart documentation and the PR; if a fresh packet still fails, diagnose that assertion instead of widening freshness or fabricating lane observations.",
+  "coordination_mode": "cooperate",
+  "cooperates_with": [
+    "icarus1-20261020-system-recovery",
+    "icarus2-20261020-federation-integration"
+  ]
+}
