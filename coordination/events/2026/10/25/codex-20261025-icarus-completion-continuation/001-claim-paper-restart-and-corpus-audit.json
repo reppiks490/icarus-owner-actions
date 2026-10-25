@@ -1,0 +1,71 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T043906Z-claim-paper-restart-and-corpus-audit",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "at_utc": "2026-10-25T04:39:06Z",
+  "type": "CLAIM",
+  "phase": "restart-release-gates-and-subsystem-audit",
+  "summary": "Continue the owner-directed paper-only Icarus recovery. Finish exact-head CI and integration for restart PR #474 into #471, replace old restart commands with a single current guide and archive, and audit the already-present Icarus-engine corpus-consumer worktree for a safe, verified completion path. No live broker arming, order submission, provider spend, credential extraction, or owner-PC state claims.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "START_HERE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/corpus-consumer-plane.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/corpus_receipt_sanitizer.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_corpus_consumer_workflow.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_exhaustive_collection.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/CORPUS_OPERATION_RECEIPTS_20261018.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "ICARUS_STATE.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#474@801c13bae20e3c205da86b44e9a3e6ffbbcd206b",
+    "pr:reppiks490/Icarus#471@e632c24340184dc3a0202954fec0753d18231b2f",
+    "github-run:40161395061:engine-windows-pending",
+    "github-run:40161397465:engine-windows-pending",
+    "stale-session:icarus1-20261020-system-recovery:last-event-2026-10-22",
+    "owner-PC:restart-and-warm-state-unverified",
+    "policy:live-broker-arming-disabled"
+  ],
+  "evidence": [
+    "github-runs:40161397437=browser-pass,40161397441=browser-and-contract-pass,40161395061=linux-engine-pass,40161397465=linux-engine-pass",
+    "local:python310-restart-defaults-launcher-tests-pass",
+    "local:chromium-browser-depth-regression-pass-twice",
+    "worktree:Icarus-engine-corpus-current-has-existing-uncommitted-consumer-work"
+  ],
+  "next_action": "Wait for exact-head Windows suites while checking non-conflicting engine corpus workflow evidence; on green, integrate the restart fix, archive the superseded guide, refresh all command pins, run validations, and publish exact evidence or a precise external blocker.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

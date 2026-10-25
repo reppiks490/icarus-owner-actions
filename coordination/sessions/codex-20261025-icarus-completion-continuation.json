@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261025-icarus-completion-continuation",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Finish and verify the paper-only Icarus restart stack, replace superseded restart instructions with one accurate archived/current procedure, and continue the highest-value non-live integration work without claiming external runtime or provider state that is not evidenced.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/icarus-completion-20261025",
+  "started_at_utc": "2026-10-25T04:39:06Z",
+  "stale_after_minutes": 1440,
+  "capabilities": ["github", "local-tests", "browser-tests"],
+  "initial_dependencies": [
+    "policy:live-broker-arming-disabled",
+    "external:owner-windows-runtime-not-accessible",
+    "github-run:40161395061:engine-windows",
+    "github-run:40161397465:engine-windows",
+    "stale-session:icarus1-20261020-system-recovery"
+  ]
+}
