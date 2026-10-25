@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T153303Z-postmerge-nonlive-closeout-update",
+  "session_id": "codex-20261025-icarus-completion",
+  "at_utc": "2026-10-25T15:33:03Z",
+  "type": "UPDATE",
+  "phase": "post-merge-nonlive-closeout",
+  "summary": "Merged the post-restart documentation PR #475 at d19d539dc3ff8e9e20b0935a8e340926e9f3d408 after both exact-head Linux and Windows checks passed. Corrected the shadow-twin audit: canonical Icarus main already contains the opt-in, fail-isolated, non-authoritative implementation; its focused suite passed 73 tests. Closed Icarus-engine design-only PR #148 as superseded while preserving its contents and history. Rebased mobile PR #198 onto the new main; its new head is 4cdbc51dd04229be54f10c6d561946383ed30dc4 and is mergeable; exact-head hosted checks are pending. Physical phone pairing is still unverified.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T153303Z-postmerge-nonlive-closeout-update.json"
+    }
+  ],
+  "dependencies": [
+    "merge:reppiks490/Icarus#475@d19d539dc3ff8e9e20b0935a8e340926e9f3d408",
+    "github-run:40204902763:linux-and-windows-success",
+    "tests:reppiks490/Icarus@aa51756510a2a298ac3a3b71c2e94aa0e9a077ae:shadow-and-paper-focused-73-pass",
+    "pr:reppiks490/Icarus#198@4cdbc51dd04229be54f10c6d561946383ed30dc4",
+    "github-run:40205294468:prior-head-success"
+  ],
+  "evidence": [
+    "github:PR-475-merged",
+    "github:run-40204902763-engine-and-engine-windows-success",
+    "local:exact-main-shadow-and-paper-focused-suite-73-passed",
+    "github:PR-148-closed-as-superseded-not-deleted",
+    "github:PR-198-rebased-on-d19d539-and-mergeable"
+  ],
+  "next_action": "Finish exact-head verification for mobile PR #198 and continue inspecting all remaining open Icarus and Icarus-engine work for unique non-live gaps. Keep physical device, owner-PC, provider entitlement/freshness, and empirical strategy qualification claims separate from source and CI evidence; live broker arming remains disabled."
+}
