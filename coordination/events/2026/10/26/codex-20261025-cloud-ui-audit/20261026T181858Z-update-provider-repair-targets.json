@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T181858Z-update-provider-repair-targets",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T18:18:58.601146Z",
+  "type": "UPDATE",
+  "phase": "parallel-remediation",
+  "summary": "Reserve actual Engine transport regression path and state/provenance records; root integrates agent12 offline-verified path-validation patch. No provider calls, scheduler or live authority changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_supplemental_transport.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_provider_supplemental_transport.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "ICARUS_STATE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "automation_intelligence/mcp_interface/events"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Read-only audit reports agent-01 through agent-09 under /workspace/ui-audit/repaired/final-readiness; current full Icarus suite remains running."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

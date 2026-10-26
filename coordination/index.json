@@ -1123,12 +1123,17 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T144134Z-update-engine-pr.json"
+        "docs/recovery/PC_CODEX_HANDOFF.md",
+        "docs/recovery/cloud-audit-20261026"
       ],
       "declared_targets": [
         {
-          "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T144134Z-update-engine-pr.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "docs/recovery/PC_CODEX_HANDOFF.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery/cloud-audit-20261026",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1137,20 +1142,25 @@
       ],
       "goal": "Repair and verify Icarus runtime and panels, integrate reviewed EIA spot snapshots as research-only context, and assess available reverse-engineering/data tools without changing live authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-26T14:41:34Z",
-      "latest_summary": "Standalone Engine reviewed source is published as draft PR #260. The initial provenance CI failure was repaired with a required same-changeset MCP event; all nine active checks now pass and one optional check is skipped. Main Icarus fresh-main full suite continues.",
-      "latest_type": "UPDATE",
+      "last_event_at_utc": "2026-10-26T21:45:48.662898Z",
+      "latest_summary": "Published application PR485 and updated Engine PR260 with offline-verified repairs. PC takeover instructions and 31 audit reports are committed; full-system completion remains open. Four of 35 launched agents hit account usage limit; 15 more have not launched. Root retains remaining integration scope.",
+      "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "approved-publication-validation",
+      "phase": "published-review-candidate",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T144134Z-update-engine-pr.json"
+        "docs/recovery/PC_CODEX_HANDOFF.md",
+        "docs/recovery/cloud-audit-20261026"
       ],
       "reserved_targets": [
         {
-          "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T144134Z-update-engine-pr.json",
-          "repo": "reppiks490/icarus-owner-actions"
+          "path": "docs/recovery/PC_CODEX_HANDOFF.md",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "docs/recovery/cloud-audit-20261026",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261025-cloud-ui-audit",
@@ -1790,7 +1800,7 @@
     "stale": 26,
     "terminal": 25
   },
-  "generated_at_utc": "2026-10-26T14:41:43.820692Z",
+  "generated_at_utc": "2026-10-26T21:45:49.116168Z",
   "owner_status": {
     "claude": {
       "active": false,
