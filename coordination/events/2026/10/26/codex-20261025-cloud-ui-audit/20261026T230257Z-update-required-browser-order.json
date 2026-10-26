@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T230257Z-update-required-browser-order",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T23:02:57.201589Z",
+  "type": "UPDATE",
+  "phase": "final-hosted-gate-repair",
+  "summary": "Run required browser-backed presentation checks only after Chromium installation; preserve the existing optional-browser contract in ordinary unit environments, while explicitly requiring browsers in the dedicated visual gate.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/ui-visual-contract.yml"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Hosted browser_depth.cjs:394 observed wait success then lost SVG scroll-active; rebuild replaces nodes and updateScrollFocus can immediately return inside200ms.",
+    "Hosted handshake rejected packet age2482.440s>1800s; dispatched Engine interrepo-peer-intelligence run40414528326."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

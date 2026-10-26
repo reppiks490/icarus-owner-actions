@@ -1124,7 +1124,8 @@
       "coordination_mode": "independent",
       "declared_paths": [
         "icarus_engine/world-immersion.js",
-        "tests_engine/test_world_immersion.py"
+        "tests_engine/test_world_immersion.py",
+        ".github/workflows/ui-visual-contract.yml"
       ],
       "declared_targets": [
         {
@@ -1134,6 +1135,10 @@
         {
           "path": "tests_engine/test_world_immersion.py",
           "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1142,16 +1147,17 @@
       ],
       "goal": "Repair and verify Icarus runtime and panels, integrate reviewed EIA spot snapshots as research-only context, and assess available reverse-engineering/data tools without changing live authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-26T23:00:13.244644Z",
-      "latest_summary": "Published deterministic topology/throttle correction after reproducing missing highlights. All12 focused world checks and all4 Chromium contracts pass; native exporter refreshed the stale peer packet and strict consumer rerun passed with1800s gate intact. Python runtime source remains unchanged from4510/3 full test run.",
+      "last_event_at_utc": "2026-10-26T23:07:10.538280Z",
+      "latest_summary": "Final review head includes required Chromium-before-presentation ordering and explicit optional handling outside the dedicated browser gate. All141 required checks pass with zero skips; all4 real Chromium contracts pass. Python runtime code is unchanged from4510/3 full run; final-head hosted checks and physical PC verification remain open.",
       "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "final-hosted-gate-repair",
+      "phase": "published-local-verified-pc-package",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
         "icarus_engine/world-immersion.js",
-        "tests_engine/test_world_immersion.py"
+        "tests_engine/test_world_immersion.py",
+        ".github/workflows/ui-visual-contract.yml"
       ],
       "reserved_targets": [
         {
@@ -1160,6 +1166,10 @@
         },
         {
           "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
           "repo": "reppiks490/Icarus"
         }
       ],
@@ -1800,7 +1810,7 @@
     "stale": 26,
     "terminal": 25
   },
-  "generated_at_utc": "2026-10-26T23:00:13.650578Z",
+  "generated_at_utc": "2026-10-26T23:07:10.998215Z",
   "owner_status": {
     "claude": {
       "active": false,
