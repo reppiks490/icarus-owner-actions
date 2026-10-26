@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T223222Z-handoff-verified-runtime-and-preview",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T22:32:22.313066Z",
+  "type": "HANDOFF",
+  "phase": "verified-cloud-source-pc-takeover",
+  "summary": "Published application runtime/bar guards and authenticated preview correction; final runtime4510 passed/3 Windows skips and all4 Chromium world contracts pass with no browser errors/write requests. Engine1489 passed; Divine loopback transport185 passed/3 platform skips.31 agent reports and exact50-task accounting are bundled for PC continuation.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "Icarus PR485@27e722bac41ce7360ac6aaa3ff9705baed69709b; runtime source is unchanged from fully tested a83a18377f28; later commit changes preview fixtures and evidence only.",
+    "/tmp/icarus-final-runtime.exit=0;4510 pass/3 native Windows skip outcomes;115 targeted bar-integrity tests passed.",
+    "/tmp/icarus-browser-authfix.exit=0; shadow/depth/cinema/worlds all passed; errors=[]; writes=[].",
+    "Engine PR260@0f49b38ed983740a8db417f97319d550e1e6fcfb;1489 pass/0 skip, MCP same-changeset contract passed.",
+    "Divine PR61@d8b49aee67c4526877663bf309ab25693af71afa;185 pass/3 platform skips;12 local/offline transport regressions pass.",
+    "Four official Apache2 DBN parser fixtures downloaded, Git-blob/SHA256 verified and8 records normalized by existing Icarus adapter; no market corpus/entitlement claim.",
+    "35 agents launched,31 reports complete,4 account-usage failures,15 not launched. Current remote refs fetched:518 application/200 Engine; ancestry review queue is not a content-audit certificate."
+  ],
+  "next_action": "Observe final-head hosted checks, then let locally attached Codex read PC_CODEX_HANDOFF and ROOT_TRIAGE. Preserve running PC/private state; native PC checks, remaining audit tasks and wider data/adapter/history completion remain open.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

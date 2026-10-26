@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T080420Z-update-shared-token-access",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T08:04:20Z",
+  "type": "UPDATE",
+  "phase": "authentication-defaults",
+  "summary": "Extend centralized token reads to every remaining Icarus panel module so direct data and control requests share the same validated browser token and missing-token prompt.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "icarus_engine/autopilot-ui.js",
+    "icarus_engine/market-data-ui.js",
+    "icarus_engine/research-ui.js",
+    "icarus_engine/workspace-evidence-ui.js",
+    "icarus_engine/integrity-ui.js",
+    "icarus_engine/engine-control-ui.js",
+    "tests_engine/test_dashboard_js.py",
+    "tests_engine/test_workspace_client.py"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/autopilot-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/market-data-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/research-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace-evidence-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/integrity-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/engine-control-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_dashboard_js.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_client.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T080420Z-update-shared-token-access.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Read-only search found six additional current UI modules that read the localStorage key directly; none supplied a fixed `icarus` fallback, but they bypassed the shared token API and clean-profile 401 handling."
+  ],
+  "next_action": "Switch each remaining module to the shared getter and extend static source coverage to all active auth paths. Keep storage behavior explicit and test current accessor values.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

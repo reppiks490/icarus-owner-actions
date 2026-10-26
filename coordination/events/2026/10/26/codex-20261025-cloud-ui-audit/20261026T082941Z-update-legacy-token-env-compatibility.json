@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T082941Z-update-legacy-token-env-compatibility",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T08:29:41Z",
+  "type": "UPDATE",
+  "phase": "authentication-defaults",
+  "summary": "Preserve explicitly configured legacy owner-token environment names while rejecting built-in placeholder values; update the active restart and access guides to describe ICARUS_TOKEN configuration accurately.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "icarus_engine/access_control.py",
+    "icarus_engine/cli.py",
+    "icarus_engine/server.py",
+    "icarus_engine/workspace_tools.py",
+    "icarus_engine/restart_defaults.py",
+    "icarus_plant/cli.py",
+    "icarus_plant/supervisor.py",
+    "tests_engine/test_plant_auth_defaults.py",
+    "docs/recovery/PRIME_AS_IS_RESTART.md",
+    "docs/ACCESS_ANALYZER.md",
+    "icarus_engine/cli.py@Icarus-engine",
+    "icarus_engine/server.py@Icarus-engine",
+    "start-engine-background.ps1@Icarus-engine",
+    "tests_engine/test_auth_defaults.py@Icarus-engine"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/access_control.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/cli.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/server.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace_tools.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/restart_defaults.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_plant/cli.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_plant/supervisor.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_plant_auth_defaults.py"},
+    {"repo": "reppiks490/Icarus", "path": "docs/recovery/PRIME_AS_IS_RESTART.md"},
+    {"repo": "reppiks490/Icarus", "path": "docs/ACCESS_ANALYZER.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/cli.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "icarus_engine/server.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "start-engine-background.ps1"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests_engine/test_auth_defaults.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T082941Z-update-legacy-token-env-compatibility.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The existing local plant environment template documents ICARUS_ADMIN_TOKEN and ADMIN_TOKEN as legacy engine-token sources.",
+    "The active restart procedure and access guide were still describing a built-in/default token interface after the startup paths changed."
+  ],
+  "next_action": "Use one shared token resolver per repository, retain explicitly configured legacy aliases, reject known placeholder secrets, and verify startup plus guide consistency.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T102522Z-claim-browser-suite-races",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T10:25:22Z",
+  "type": "CLAIM",
+  "phase": "browser-regression-diagnosis",
+  "summary": "Diagnose two late Chromium failures: one power-control assertion that races the final refresh, and one subsystem mount timeout that reproduces only under the full-suite browser load.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": ["tests_engine/test_workspace_power_browser.py", "tests_engine/test_subsystem_connections_browser.py"],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_power_browser.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_subsystem_connections_browser.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T102522Z-claim-browser-suite-races.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The full Icarus rerun failed test_main_switch_stops_only_requested_workspace_and_preserves_profiles[cc2] because the switch was still disabled while the state label already showed OFF.",
+    "The subsystem acceptance case timed out waiting for its valid baseline OBSERVING state in two full runs, but passed four isolated Chromium runs."
+  ],
+  "next_action": "Reproduce both nodes, update only brittle test synchronization or diagnostics where evidence supports it, then rerun targeted Chromium checks and the full suite.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

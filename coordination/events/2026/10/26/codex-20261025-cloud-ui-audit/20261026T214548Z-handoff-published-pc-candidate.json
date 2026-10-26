@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T214548Z-handoff-published-pc-candidate",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T21:45:48.662898Z",
+  "type": "HANDOFF",
+  "phase": "published-review-candidate",
+  "summary": "Published application PR485 and updated Engine PR260 with offline-verified repairs. PC takeover instructions and 31 audit reports are committed; full-system completion remains open. Four of 35 launched agents hit account usage limit; 15 more have not launched. Root retains remaining integration scope.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PC_CODEX_HANDOFF.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/cloud-audit-20261026"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Icarus PR485 head 69b4aaf055eb7dcc6bf735768c7de6e7daf21686; full local suite4499 passed/3 native-Windows skips plus3 post-harness-correction browser regressions passed.",
+    "Engine PR260 head 0f49b38ed983740a8db417f97319d550e1e6fcfb; full suite1489 passed/0 skipped, MCP contract passed.",
+    "Coordinator tree414 events/51 sessions/26 summaries valid before this handoff; tests65 passed plus12 subtests.",
+    "Fetched all518 current Icarus and200 Engine origin refs without changing source worktrees; current upstream-only changes are generated artifacts, not runtime source.",
+    "The proposed peer export trigger expansion was reverted: existing tests explicitly require scheduled-only producer completions. Static audit findings remain candidates pending reproduction."
+  ],
+  "next_action": "Finish hosted checks; connect local Codex to the owner PC, preserve current process/private state, run native Windows gates before restart; continue code/data audit queue. Overall readiness remains open.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

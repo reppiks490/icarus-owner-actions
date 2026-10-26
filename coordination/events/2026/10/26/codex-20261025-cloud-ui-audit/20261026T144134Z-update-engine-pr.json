@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T144134Z-update-engine-pr",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T14:41:34Z",
+  "type": "UPDATE",
+  "phase": "approved-publication-validation",
+  "summary": "Standalone Engine reviewed source is published as draft PR #260. The initial provenance CI failure was repaired with a required same-changeset MCP event; all nine active checks now pass and one optional check is skipped. Main Icarus fresh-main full suite continues.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [{"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T144134Z-update-engine-pr.json"}],
+  "dependencies": ["test:icarus-publish-full", "review:icarus-engine-pr-260"],
+  "evidence": ["https://github.com/reppiks490/Icarus-engine/pull/260", "Icarus-engine fresh-main suite: 1461 passed, 0 skipped, 0 failed", "MCP event contract: 3 critical paths covered, corpus test passed", "PR #260 checks: nine success, one skipped"],
+  "next_action": "Finish latest-main Icarus suite, publish its reviewed branch and PR, then prepare owner-PC handoff without restarting or pairing a phone from the cloud.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

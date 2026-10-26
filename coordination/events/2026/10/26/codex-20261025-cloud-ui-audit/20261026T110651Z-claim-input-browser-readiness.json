@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T110651Z-claim-input-browser-readiness",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T11:06:51Z",
+  "type": "CLAIM",
+  "phase": "browser-regression-diagnosis",
+  "summary": "Make the Inputs browser acceptance test await initial runtime status before switching panels, preventing a load-order race where loadInputsTab exits while no selected runtime exists.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": ["tests_engine/test_workspace_dashboard_browser.py"],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_dashboard_browser.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T110651Z-claim-input-browser-readiness.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The full browser suite timed out waiting for inState.asset === NQ in test_common_unrelated_config_completion_does_not_discard_or_rebase_draft.",
+    "The test called setView('inputs') without awaiting refresh(); loadInputsTab returns early when the selected runtime status has not populated last."
+  ],
+  "next_action": "Await status before opening Inputs, verify the browser regression, then rerun full Icarus and standalone engine suites.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T230013Z-handoff-hosted-gate-corrections",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T23:00:13.244644Z",
+  "type": "HANDOFF",
+  "phase": "final-hosted-gate-repair",
+  "summary": "Published deterministic topology/throttle correction after reproducing missing highlights. All12 focused world checks and all4 Chromium contracts pass; native exporter refreshed the stale peer packet and strict consumer rerun passed with1800s gate intact. Python runtime source remains unchanged from4510/3 full test run.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "Icarus PR485@e3671b40b5113db596011be99cb74402c2b4fab5; frontend-only correction; /tmp/icarus-topology-red.log fails original and /tmp/icarus-topology-green.log passes12 checks.",
+    "/tmp/icarus-worlds-final.exit=0; all4 contracts return errors=[] and writes=[].",
+    "Engine native exporter run40414528326 success; strict Icarus historical-context consumer run40412921045 rerun success.",
+    "Observed source packet22:45:30Z, source_commit e1823d345e600467ae0cde52910dcdb8540fc8d5; research-only authority retained.",
+    "Retained PR source refs fetched:481 Icarus,194 Engine; both include PR1. Source objects are available, not all content-reviewed."
+  ],
+  "next_action": "Verify newly published final-head hosted checks; follow PC_CODEX_HANDOFF and ROOT_TRIAGE in connected local Codex. Full-system and19 unfinished agent tasks remain open.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

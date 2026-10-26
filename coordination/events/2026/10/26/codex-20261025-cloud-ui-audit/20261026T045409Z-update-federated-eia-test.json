@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T045409Z-update-federated-eia-test",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T04:54:09Z",
+  "type": "UPDATE",
+  "phase": "federated-source-contract",
+  "summary": "Extend the bounded EIA snapshot integration to the canonical Icarus-engine source ledger and its three-stage source-contract regression, while keeping the source staged and research-only.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_federated_data_surface.py"}
+  ],
+  "dependencies": [],
+  "evidence": ["reppiks490/Icarus-engine:config/data_ingestion_manifest.json"],
+  "next_action": "Add the failing three-stage EIA source assertion, then add the source ledger record and human-readable state notes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

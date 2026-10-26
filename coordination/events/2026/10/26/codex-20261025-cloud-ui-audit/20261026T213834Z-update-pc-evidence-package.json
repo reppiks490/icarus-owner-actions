@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T213834Z-update-pc-evidence-package",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T21:38:34.799294Z",
+  "type": "UPDATE",
+  "phase": "parallel-remediation",
+  "summary": "Full Icarus suite completed 4499 passed/3 native-Windows skips; three prior browser failures pass after two harness race corrections. Package 31 completed audit reports and 50-task state for PC takeover; 4 agents hit account usage limit, 15 remain undispatched. Root continues integration.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PC_CODEX_HANDOFF.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/cloud-audit-20261026"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "/tmp/icarus-publish-full-final2.log: 4502 completed results, no F/E markers.",
+    "/tmp/icarus-browser-post-review.log: 3 passed, exit 0.",
+    "65 Engine transport/core collection tests passed offline."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T074343Z-claim-commissioning-read-latency",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T07:43:43.547870Z",
+  "type": "CLAIM",
+  "phase": "commissioning-read-latency",
+  "summary": "Reduce repeated expensive runtime status and Chronofold reads in the research-only commissioning sampler without changing evidence cadence, freshness semantics, or execution authority.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/commissioning.py",
+    "icarus_engine/chronofold.py",
+    "icarus_engine/runtime.py",
+    "tests_engine/test_commissioning.py",
+    "tests_engine/test_workspace_dashboard_browser.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/commissioning.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/chronofold.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_commissioning.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "read-only py-spy stack: repeated commissioning tick/capture -> Portfolio.status -> Runner.summary/_clean/deepcopy -> Chronofold.snapshot",
+    "live Financial & Data table rendered after all requests succeeded; market-context HTTP response 4.6s, other research endpoints 0.4\u20132.9s"
+  ],
+  "next_action": "Add a failing call-count regression around one commissioning tick, then reuse same-tick status/snapshots where event freshness permits and verify panel latency.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

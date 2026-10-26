@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T143049Z-wait-publish-validation",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T14:30:49Z",
+  "type": "WAITING",
+  "phase": "approved-publication-validation",
+  "summary": "Isolated latest-main branches contain the reviewed Icarus and Icarus-engine source sets. Restart guide conflict resolved and explicit legacy capture token separated from new unique owner token. Focused Icarus and full Icarus-engine tests are running.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T143049Z-wait-publish-validation.json"
+    }
+  ],
+  "dependencies": [
+    "test:icarus-publish-focused",
+    "test:icarus-engine-publish-full"
+  ],
+  "evidence": [
+    "Original cloud source worktrees preserved; isolated branches based on origin/main at 798b6776 and a858eef85.",
+    "Source paths transferred exactly except the integrated restart guide and test_plant.py remote additions.",
+    "Four targeted legacy capture/restart guide checks passed."
+  ],
+  "next_action": "Inspect test results, run full latest-main Icarus suite, then commit and push reviewed branches; no Windows restart until a local PC session is attached.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

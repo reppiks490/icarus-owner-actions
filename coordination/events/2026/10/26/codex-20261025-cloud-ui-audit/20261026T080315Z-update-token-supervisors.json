@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T080315Z-update-token-supervisors",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T08:03:15Z",
+  "type": "UPDATE",
+  "phase": "authentication-defaults",
+  "summary": "Expand the fixed-token cleanup through the plant supervisor, plant CLI, setup guides, and PowerShell launchers. Stop printing or forwarding tokens in process arguments; use the configured runtime environment instead and keep startup refusal fail-closed.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "icarus_plant/cli.py",
+    "icarus_plant/supervisor.py",
+    "icarus_plant/guide.py",
+    "start-plant.sh",
+    "start-plant.ps1",
+    "start-yahoo.ps1",
+    "tests_engine/test_dashboard_js.py",
+    "tests_engine/test_plant_auth_defaults.py",
+    "start-engine-background.ps1@Icarus-engine",
+    "tests/test_auth_defaults.py@Icarus-engine"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_plant/cli.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_plant/supervisor.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_plant/guide.py"},
+    {"repo": "reppiks490/Icarus", "path": "start-plant.sh"},
+    {"repo": "reppiks490/Icarus", "path": "start-plant.ps1"},
+    {"repo": "reppiks490/Icarus", "path": "start-yahoo.ps1"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_dashboard_js.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_plant_auth_defaults.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "start-engine-background.ps1"},
+    {"repo": "reppiks490/Icarus-engine", "path": "tests/test_auth_defaults.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T080315Z-update-token-supervisors.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Independent read-only review found Icarus plant CLI/supervisor startup banners and subprocess argv also expose configured token values.",
+    "Active launch helpers include Bash and PowerShell paths that still inject or display a fixed token; Icarus-engine has a separate PowerShell launcher and uses a legacy admin-token environment name."
+  ],
+  "next_action": "Inspect each active launch path and its tests, then use one documented `ICARUS_TOKEN` environment variable for child processes without putting values in argv or output.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

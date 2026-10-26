@@ -1,0 +1,56 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T181428Z-claim-parallel-remediation",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T18:14:28.278562Z",
+  "type": "CLAIM",
+  "phase": "parallel-remediation",
+  "summary": "Resume owner-authorized completion with six concurrent compact agents and 50 bounded jobs. Root serializes integration; claim verified provider path, workflow and browser-harness corrections plus PC handoff. Preserve live execution gates and original worktrees.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tools/provider_supplemental_transport.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_engine/test_provider_supplemental_transport.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": ".github/workflows/interrepo-peer-intelligence.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/icarus-full-export.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/ui-visual-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PC_CODEX_HANDOFF.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Read-only audit reports agent-01 through agent-09 under /workspace/ui-audit/repaired/final-readiness; current full Icarus suite remains running."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
