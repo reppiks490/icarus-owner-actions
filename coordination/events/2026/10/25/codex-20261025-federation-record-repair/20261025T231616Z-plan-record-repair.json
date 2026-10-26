@@ -1,0 +1,56 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T231616Z-plan-record-repair",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-25T23:16:16.771544Z",
+  "type": "PLAN",
+  "phase": "provenance-preserving-record-repair",
+  "summary": "Root-delegated repair: archive both invalid immutable multi-repository COMPLETE receipts unchanged; append qualified correction receipts under this repair identity, add regression and record procedure. Knowledge delta: coordination/README.md. No validator semantics changes or new licensing verification.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_coordination_archived_corrections.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-federation-record-repair/20261025T231616Z-correction-1.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/25/codex-20261025-federation-record-repair/20261025T231616Z-correction-2.json"
+    }
+  ],
+  "dependencies": [
+    "session:codex-20261025-cloud-ui-audit"
+  ],
+  "evidence": [
+    "offline:coordination_fabric.validate failed on both licensing receipts; /workspace/ui-audit/federation/event-errors.json"
+  ],
+  "next_action": "Prove failing regression, preserve original bytes, append qualified historical corrections, validate full tree and suite.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

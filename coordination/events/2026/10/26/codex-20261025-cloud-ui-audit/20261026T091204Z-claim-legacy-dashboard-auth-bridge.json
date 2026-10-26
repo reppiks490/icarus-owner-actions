@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T091204Z-claim-legacy-dashboard-auth-bridge",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T09:12:04Z",
+  "type": "UPDATE",
+  "phase": "authentication-regression-fixes",
+  "summary": "Bridge the legacy workspace page's in-memory owner token into the shared workspace-power client so its lifecycle and status panels remain usable without reintroducing localStorage token writes.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": ["icarus_engine/workspace-dashboard.js", "icarus_engine/workspace_power_ui.js", "tests_engine/test_command_center_routes.py", "tests_engine/test_power_retry_lifecycle.py"],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace-dashboard.js"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/workspace_power_ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_command_center_routes.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_power_retry_lifecycle.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T091204Z-claim-legacy-dashboard-auth-bridge.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The legacy workspace page keeps its owner token in #owner-token memory and does not have IcarusClient, while workspace_power_ui.js now correctly refuses unauthenticated reads and mutations.",
+    "A browser regression consequently reported UNKNOWN power status where the authenticated legacy page should show OFF."
+  ],
+  "next_action": "Expose the existing in-memory credential through one immutable page accessor, let workspace power consume that accessor, and verify status refresh and retry lifecycle.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

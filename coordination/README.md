@@ -43,6 +43,38 @@ The `ACTIVE.md` headline separates **current** sessions with recent records from
 
 Use `python -m coordination_fabric validate` to validate records and `python -m coordination_fabric compile` to rebuild the generated views. `python -m coordination_fabric prune --days 14` may remove old terminal event files from the working tree only after a durable session summary exists. Git history remains the provenance record.
 
+## Correcting malformed immutable records
+
+A malformed historical event can stop whole-tree validation. Do not rewrite its
+bytes, relax validation, or publish a new event as the original worker. With an
+explicitly coordinated repair claim, move the exact original bytes outside
+`events/` into `archive/invalid-events/<original-session>/`, then append a new
+qualified correction event under the repairing session. Record the original and
+archive paths, SHA-256, original session/event identity and original summary in
+its `correction` provenance, and include the archive/hash in `evidence`.
+
+Carry forward original evidence as historical assertions without claiming it was
+verified again. Qualify only paths supported by that evidence: the 25 October
+licensing receipts cover README/LICENSE in eleven repositories; the later
+receipt additionally covers `docs/CURRENT.md` in AION only. A corrective COMPLETE
+closes the repair session, not the historical worker. The historical worker's
+remaining events continue to determine its status; an older malformed COMPLETE
+must not silently override its later PLAN. Archive contents are provenance, not
+active events, and must never be placed under the recursively scanned `events/`.
+
+Run the archive/hash/target regression and full record validation before
+regenerating views. Archive hashes and correction targets are protected by
+`tests/test_coordination_archived_corrections.py`. This procedure repairs record
+structure only; it grants no provider access, deployment or execution authority.
+
+Malformed historical summaries follow the same preservation rule. Archive the
+exact original bytes outside `summaries/`, normalize only fields supported by
+the existing record (for example, `status: COMPLETE` and `at_utc` to
+`result: complete` and `completed_at_utc`), and bind the archive path and SHA-256
+in the active summary evidence. Keep the original claims and timestamp unchanged;
+do not let a corrected summary close or impersonate a worker session whose
+latest event does not establish completion.
+
 ## Automatic refresh and retention cleanup
 
 The `coordination-maintenance` GitHub Actions workflow automatically refreshes the compiled coordination surfaces when session, event, summary, or owner-status records change on `main`. Each publication attempt fetches the latest `main`, performs `git reset --hard origin/main`, validates the record tree, recompiles `coordination/ACTIVE.md`, `coordination/index.json`, and `coordination/collisions.json`, and refuses to publish while an undeclared active collision exists. If another worker moves `main` before the push succeeds, the workflow discards that stale derived snapshot and recomputes from the newer main before retrying.

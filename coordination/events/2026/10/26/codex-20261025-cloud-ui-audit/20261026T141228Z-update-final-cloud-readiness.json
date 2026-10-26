@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T141228Z-update-final-cloud-readiness",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T14:12:28Z",
+  "type": "UPDATE",
+  "phase": "final-cloud-validation",
+  "summary": "Bounded research panel status reads across advisory, analysis, activation, and learning stores; verified owner-token and UI repairs, documented current cloud worktree and restart gate.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine", "reppiks490/icarus-owner-actions"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/activation.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/advisory.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/orchestration.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/learning_fabric.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/research_service.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_panel_backend_latency.py"},
+    {"repo": "reppiks490/Icarus", "path": "docs/recovery/PRIME_AS_IS_RESTART.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T141228Z-update-final-cloud-readiness.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Final Icarus cloud suite: 4,495 passed, 5 skipped, 0 failed/error markers across 4,500 tests; native Python 3.10 and Node/Chromium enabled.",
+    "A subsequent analysis-status cache isolation fix passed 47 focused research, orchestration, and backend-latency tests.",
+    "Skipped packaging and PowerShell launcher tests passed separately with managed Python 3.10 and checksum-verified official PowerShell 7.6.9; remaining three skip gates require native Windows APIs.",
+    "Standalone Icarus-engine full suite: 1,461 passed, 0 skipped, 0 failed.",
+    "Live 8791 health: ok=true, warm=true, assets=NQ,ES,YM,GC,SI,BTC; process still predates the source fixes and has not been restarted.",
+    "Git diff whitespace checks passed in both code checkouts; current changes remain uncommitted in cloud worktrees.",
+    "Exact proposed publication file set is recorded in /workspace/ui-audit/repaired/final-readiness/icarus-publication-manifest.md; four generated command-center profiles are excluded."
+  ],
+  "next_action": "Review and publish the current source, then obtain the owner's requested approval before the Windows restart or phone connection step.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

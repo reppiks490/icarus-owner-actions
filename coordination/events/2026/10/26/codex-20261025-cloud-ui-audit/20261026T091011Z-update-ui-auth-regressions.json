@@ -1,0 +1,47 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T091011Z-update-ui-auth-regressions",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T09:10:11Z",
+  "type": "UPDATE",
+  "phase": "authentication-regression-fixes",
+  "summary": "Align browser and Node UI test harnesses with the shared validated token client, then refresh brittle source assertions so they verify the current rendered panel wiring.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "tests_engine/test_chronofold_integration.py",
+    "tests_engine/test_command_center_routes.py",
+    "tests_engine/test_historical_trade_admission.py",
+    "tests_engine/test_intelligence_feed.py",
+    "tests_engine/test_native_validation_ui.py",
+    "tests_engine/test_pantheon_aether.py",
+    "tests_engine/test_parallax_dreamstate.py",
+    "tests_engine/test_power_retry_lifecycle.py",
+    "tests_engine/test_sibyl.py",
+    "tests_engine/test_source_data_contract.py",
+    "tests_engine/test_workspace_market_data.py",
+    "tests_engine/browser_preview_server.py"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_chronofold_integration.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_command_center_routes.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_historical_trade_admission.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_intelligence_feed.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_native_validation_ui.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_pantheon_aether.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_parallax_dreamstate.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_power_retry_lifecycle.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_sibyl.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_source_data_contract.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_market_data.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/browser_preview_server.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T091011Z-update-ui-auth-regressions.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The full repository run exposed stale JavaScript fixtures that omit IcarusClient.getToken after panel calls moved to the shared client.",
+    "Interface assertions expected inline tab markup, while the current dashboard registers those views through a data-driven view map."
+  ],
+  "next_action": "Fix only confirmed fixture or markup-contract mismatches, add UI authentication to browser runs, and rerun the complete last-failed set.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
