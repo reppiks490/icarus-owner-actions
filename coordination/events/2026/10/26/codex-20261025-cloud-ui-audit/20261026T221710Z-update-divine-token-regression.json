@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T221710Z-update-divine-token-regression",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T22:17:10.267881Z",
+  "type": "UPDATE",
+  "phase": "divine-loopback-client",
+  "summary": "Loopback guards pass12 new regressions. Full Divine run exposed an existing token-header test mocking global urlopen instead of the new private opener; update only its I/O stub and retain all header/route assertions.",
+  "repos": [
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/engine.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_engine_transport_guard.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_hub.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Fresh origin/main src/divine_providence/engine.py has unrestricted BASE and urllib.request.urlopen; AGENTS explicitly classifies ICARUS_ENGINE_TOKEN as a loopback engine credential."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

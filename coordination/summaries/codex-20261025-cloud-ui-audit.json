@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "completed_at_utc": "2026-10-26T22:32:22.313066Z",
+  "result": "blocked",
+  "scope": "Cloud source improvements and PC preparation are published and locally verified. Full-system completion remains open: native owner-PC observation, final hosted gates, remaining agent tasks and candidate data/history findings.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/485",
+  "source_reviewed_sha": "27e722bac41ce7360ac6aaa3ff9705baed69709b",
+  "evidence": [
+    "Icarus PR485@27e722bac41ce7360ac6aaa3ff9705baed69709b; runtime source is unchanged from fully tested a83a18377f28; later commit changes preview fixtures and evidence only.",
+    "/tmp/icarus-final-runtime.exit=0;4510 pass/3 native Windows skip outcomes;115 targeted bar-integrity tests passed.",
+    "/tmp/icarus-browser-authfix.exit=0; shadow/depth/cinema/worlds all passed; errors=[]; writes=[].",
+    "Engine PR260@0f49b38ed983740a8db417f97319d550e1e6fcfb;1489 pass/0 skip, MCP same-changeset contract passed.",
+    "Divine PR61@d8b49aee67c4526877663bf309ab25693af71afa;185 pass/3 platform skips;12 local/offline transport regressions pass.",
+    "Four official Apache2 DBN parser fixtures downloaded, Git-blob/SHA256 verified and8 records normalized by existing Icarus adapter; no market corpus/entitlement claim.",
+    "35 agents launched,31 reports complete,4 account-usage failures,15 not launched. Current remote refs fetched:518 application/200 Engine; ancestry review queue is not a content-audit certificate."
+  ],
+  "remaining_work": [
+    "Run native owner-PC checks and inspect actual PC panels without discarding local work.",
+    "Complete19 unfinished agent tasks; quota prevented4 completions and15 launches.",
+    "Continue source-qualified adapter/data/history review and reproduce remaining static findings.",
+    "No live broker arming, provider purchase or physical restart was performed."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T220519Z-claim-hosted-preview-auth",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T22:05:19.631180Z",
+  "type": "CLAIM",
+  "phase": "hosted-preview-auth",
+  "summary": "Hosted visual gate failed because direct CJS browser fixtures omit the preview server owner token after auth hardening; the expected authentication modal intercepts Style clicks. Seed fixture-only credentials at browser-context initialization, including fallback pages; retain real authentication and click assertions.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_preview_auth.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_preview_server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_shadow_twin.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_depth.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_cinema.cjs"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_worlds.cjs"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "CI run40407622428 job121869877789: browser_shadow_twin.cjs:76 blocked by #ctl modal open; preview token is browser-preview-test-token."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
