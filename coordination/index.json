@@ -1123,22 +1123,17 @@
       "cooperates_with": [],
       "coordination_mode": "independent",
       "declared_paths": [
-        "src/divine_providence/engine.py",
-        "tests/test_engine_transport_guard.py",
-        "tests/test_hub.py"
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_world_immersion.py"
       ],
       "declared_targets": [
         {
-          "path": "src/divine_providence/engine.py",
-          "repo": "reppiks490/divine-providence"
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests/test_engine_transport_guard.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "tests/test_hub.py",
-          "repo": "reppiks490/divine-providence"
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "dependencies": [
@@ -1147,30 +1142,25 @@
       ],
       "goal": "Repair and verify Icarus runtime and panels, integrate reviewed EIA spot snapshots as research-only context, and assess available reverse-engineering/data tools without changing live authority.",
       "home_repo": "reppiks490/Icarus",
-      "last_event_at_utc": "2026-10-26T22:32:22.313066Z",
-      "latest_summary": "Published application runtime/bar guards and authenticated preview correction; final runtime4510 passed/3 Windows skips and all4 Chromium world contracts pass with no browser errors/write requests. Engine1489 passed; Divine loopback transport185 passed/3 platform skips.31 agent reports and exact50-task accounting are bundled for PC continuation.",
+      "last_event_at_utc": "2026-10-26T23:00:13.244644Z",
+      "latest_summary": "Published deterministic topology/throttle correction after reproducing missing highlights. All12 focused world checks and all4 Chromium contracts pass; native exporter refreshed the stale peer packet and strict consumer rerun passed with1800s gate intact. Python runtime source remains unchanged from4510/3 full test run.",
       "latest_type": "HANDOFF",
       "model_family": "openai",
-      "phase": "verified-cloud-source-pc-takeover",
+      "phase": "final-hosted-gate-repair",
       "pr": null,
       "reclaimable": false,
       "reserved_paths": [
-        "src/divine_providence/engine.py",
-        "tests/test_engine_transport_guard.py",
-        "tests/test_hub.py"
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_world_immersion.py"
       ],
       "reserved_targets": [
         {
-          "path": "src/divine_providence/engine.py",
-          "repo": "reppiks490/divine-providence"
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
         },
         {
-          "path": "tests/test_engine_transport_guard.py",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "tests/test_hub.py",
-          "repo": "reppiks490/divine-providence"
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
         }
       ],
       "session_id": "codex-20261025-cloud-ui-audit",
@@ -1810,7 +1800,7 @@
     "stale": 26,
     "terminal": 25
   },
-  "generated_at_utc": "2026-10-26T22:32:23.879609Z",
+  "generated_at_utc": "2026-10-26T23:00:13.650578Z",
   "owner_status": {
     "claude": {
       "active": false,
