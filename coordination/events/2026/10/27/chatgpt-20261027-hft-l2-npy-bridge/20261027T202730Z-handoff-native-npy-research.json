@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T202730Z-handoff-native-npy-research",
+  "session_id": "chatgpt-20261027-hft-l2-npy-bridge",
+  "at_utc": "2026-10-27T20:27:30Z",
+  "type": "HANDOFF",
+  "phase": "native-npy-structural-parity-verified-broad-ci-pending",
+  "summary": "Created draft Icarus #489 stacked on #488/#486, exact head 75b30535ae5f0019b3241bcabdcf3b8af0c70bcf. New isolated standard-library NumPy NPY v1.0 HFTBacktest Event binary converter consumes only independently verified physical-contract L2 source/staging, uses caller-supplied independently trusted SHA256, streams all records, emits SHA256-linked quarantine manifest and refuses authority elevation, overwrite and post-verification mutations. Independent NumPy 2.2.6 CI run 40577961147 SUCCESS: 12 synthetic tests each Python 3.10,3.11,3.12,3.13 including producer-to-verifier-to-native binary readback, >10000 rows, adversarial source/staging tampering. Earlier YAML parser failures on superseded commits repaired. Owner-actions #75 CI 40578030236 SUCCESS, 428 events, 53 sessions, 0 collisions. Broad exact-head application CI 40577949933 and 40577960818 pending. Not actual HFTBacktest simulator execution, licensed vendor receipt, synchronized clocks, snapshot completeness, real queue/fills, model training, owner WSL2 validation, Brain/UI adoption or live trading.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_numpy.py",
+    "tests_engine/test_external_hft_numpy.py",
+    ".github/workflows/external-hft-numpy.yml",
+    "docs/integrations/HFT_L2_NUMPY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-l2-npy-bridge/20261027T202730Z-handoff-native-npy-research.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#489@75b30535ae5f0019b3241bcabdcf3b8af0c70bcf",
+    "pr:reppiks490/Icarus#488",
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#75",
+    "ci:reppiks490/Icarus/actions/runs/40577949933",
+    "ci:reppiks490/Icarus/actions/runs/40577960818",
+    "constraint:execution_authorized=false",
+    "constraint:no_provider_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40577961147 success 12 tests x4",
+    "ci:reppiks490/icarus-owner-actions/actions/runs/40578030236 success 428 events 53 sessions 0 collisions",
+    "upstream:nkaz001/hftbacktest@5f3ec40b2afb764e0fea112f941ed85523ef4e88"
+  ],
+  "next_action": "Wait for exact-head broad app CI, independent code review and parent #488/#486 merge gates; verify actual installed HFTBacktest accepts NPY in isolated licensed-data replay before any research promotion. Independently prove venue clock synchronization, snapshots, queue latency fees and real-price fills; continue Nautilus/Brain/UI only via reviewed source-qualified read-only contracts.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
