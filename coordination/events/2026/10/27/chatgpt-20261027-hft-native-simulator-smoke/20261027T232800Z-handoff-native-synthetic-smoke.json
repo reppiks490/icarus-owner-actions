@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T232800Z-handoff-native-synthetic-smoke",
+  "session_id": "chatgpt-20261027-hft-native-simulator-smoke",
+  "at_utc": "2026-10-27T23:28:00Z",
+  "type": "HANDOFF",
+  "phase": "native-synthetic-hft-runtime-proven-empirical-gates-open",
+  "summary": "Implemented Icarus draft #492 stacked on #491/#490/#489/#488/#486 with four new isolated files. Actual HFTBacktest 2.4.4 Python/Rust simulator successfully executed on an ephemeral GitHub Ubuntu Python3.11 runner using five embedded synthetic MBP L2 events after independent source-to-NPY verification and pinned upstream Event ABI comparison. It advanced 2.5 seconds, observed synthetic bid 15000.25/ask 15000.50, zero position and zero order submissions, closed successfully; 6 focused tests passed. Exact-head native run #40602195231 SUCCESS at aa5202dbe006d3acf5c3e8f25a7ce87efb36a28d. Initial failures #40601844631 (NPY alignment metadata) and #40601969635 (deprecated/missing API and regex) were fixed with targeted tests; no hidden failure claims. Both exact-head broad app workflows #40602195208 and #40602188497 still in progress. No vendor data, empirical fills, initial full snapshot, queue/latency calibration, holdout or owner WSL2 runtime proven. Research and live execution authority denied.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_simulator_smoke.py",
+    "tests_engine/test_external_hft_simulator_smoke.py",
+    ".github/workflows/external-hft-simulator-smoke.yml",
+    "docs/integrations/HFT_NATIVE_SIMULATOR_SMOKE.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-native-simulator-smoke/20261027T232800Z-handoff-native-synthetic-smoke.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#492@aa5202dbe006d3acf5c3e8f25a7ce87efb36a28d",
+    "pr:reppiks490/icarus-owner-actions#78",
+    "ci:reppiks490/Icarus/actions/runs/40602195208",
+    "ci:reppiks490/Icarus/actions/runs/40602188497",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40602195231 SUCCESS six tests and native smoke receipt",
+    "source:nkaz001/hftbacktest version 2.4.4 MIT upstream API",
+    "ci:reppiks490/Icarus/actions/runs/40595034998 success",
+    "ci:reppiks490/Icarus/actions/runs/40595043273 success"
+  ],
+  "next_action": "Check broad exact-head CI and independent review; pin full dependency lock if promoting reproducibility. Do not connect to Brain/strategy until licensed real depth with initial snapshots, clock/sequence continuity, queue/latency/fee/real-fill parity and protected holdout approvals are independently verified. RD-Agent owner WSL2 runtime remains unknown.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
