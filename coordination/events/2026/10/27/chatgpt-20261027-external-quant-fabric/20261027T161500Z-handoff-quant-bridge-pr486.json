@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T161500Z-handoff-quant-bridge-pr486",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T16:15:00Z",
+  "type": "HANDOFF",
+  "phase": "initial-quarantined-adapter-validated-broader-integration-open",
+  "summary": "Icarus draft PR #486 implements the first isolated research seam: dependency metadata probe, no-ceiling Qlib-oriented raw UTC single-contract CSV staging, SHA-256 source/output manifest, canonical evidence_record/handoff generation with stale=true and authority NONE, plus 19 safety/provenance regressions. Exact head 1f86775556a7925135aa5b01d5401c9f252a8ceb focused hosted workflow 40542042267 passed Python 3.10/3.11/3.12/3.13 (19 tests each). Broad standard project suites and actual Windows/WSL2 framework import/ingestion remain unverified. Keep draft, do not merge or deploy; subsequent agents can implement adapters, hardware audit and CI-independent review on non-conflicting paths.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/10/27/chatgpt-20261027-external-quant-fabric/20261027T161500Z-handoff-quant-bridge-pr486.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-external-quant-fabric/20261027T161500Z-handoff-quant-bridge-pr486.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486@1f86775556a7925135aa5b01d5401c9f252a8ceb",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_provider_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40542042267:4 Python versions 19/19 tests each",
+    "source:reppiks490/Icarus/docs/integrations/EXTERNAL_QUANT_FABRIC.md",
+    "source:reppiks490/Icarus/integration/schemas/handoff.schema.json"
+  ],
+  "next_action": "Independently review PR486 and current full-suite exact-head CI; verify local owner PC and WSL2 hardware/RD-Agent models; implement verified Qlib importer, versioned data catalog, independent HFTBacktest/Nautilus real-fill replay adapters and RD-Agent research artifact intake through canonical evidence; preserve paper only.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
