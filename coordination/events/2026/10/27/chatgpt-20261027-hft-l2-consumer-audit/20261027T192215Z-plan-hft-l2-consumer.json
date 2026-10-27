@@ -1,0 +1,52 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T192215Z-plan-hft-l2-consumer",
+  "session_id": "chatgpt-20261027-hft-l2-consumer-audit",
+  "at_utc": "2026-10-27T19:22:15Z",
+  "type": "PLAN",
+  "phase": "independent-read-only-l2-verifier",
+  "summary": "Claim four new paths only for independent read-only consumer verification of PR #486 HFTBacktest L2 CSV. Verify source/output hashes, exact manifest schema/denied flags, row-by-row event/clock/tick/lot parity against source, strict counts/first-last bounds, and fail-closed tamper/symlink/duplicate-key cases. Add no-network Python 3.10-3.13 CI and detailed read-only handoff. Do not edit PR #486/#487 files, runtime, provider or scheduler state. Stack source PR on #486 and coordination PR on #71 to avoid pre-existing main validation blocker.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_verify.py",
+    "tests_engine/test_external_hft_verify.py",
+    ".github/workflows/external-hft-consumer.yml",
+    "docs/integrations/HFT_L2_CONSUMER.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-consumer.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_L2_CONSUMER.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486@df706bc7079d84f74924a89d2b0d6151ffeac7fb",
+    "pr:reppiks490/Icarus#487",
+    "pr:reppiks490/icarus-owner-actions#71",
+    "constraint:execution_authorized=false",
+    "constraint:no_provider_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40562780741",
+    "ci:reppiks490/Icarus/actions/runs/40562780682",
+    "ci:reppiks490/Icarus/actions/runs/40559489737"
+  ],
+  "next_action": "Create standalone verifier and adversarial tests; run exact-head CI; leave draft PR and durable coordination handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T192750Z-waiting-ci-hft-l2-consumer",
+  "session_id": "chatgpt-20261027-hft-l2-consumer-audit",
+  "at_utc": "2026-10-27T19:27:50Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci-and-independent-review",
+  "summary": "Added four isolated paths on stacked draft Icarus PR #488, exact HEAD cd74368505cf973f6d22431bd3cac884a090098c. New standalone HFT L2 consumer independently checks every source/output event and denied-authority manifest against an externally supplied original SHA256; rejects forged/rehashed events, fake MBO IDs, symlinks, JSON duplicates, source/contract/time/price mismatches. Focused hosted CI 40569149287 succeeded on Python 3.10-3.13, 23 synthetic tests per version including actual #486 producer roundtrip. Broader exact-head app CI 40569149528 pending. #487 broad CI 40559489737 is now success, contrary to earlier pending status. No provider calls, native replay, empirical fill or Windows/WSL execution.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_verify.py",
+    "tests_engine/test_external_hft_verify.py",
+    ".github/workflows/external-hft-consumer.yml",
+    "docs/integrations/HFT_L2_CONSUMER.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-consumer.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_L2_CONSUMER.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#488@cd74368505cf973f6d22431bd3cac884a090098c",
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#71",
+    "ci:reppiks490/Icarus/actions/runs/40569149528"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40569149287",
+    "ci:reppiks490/Icarus/actions/runs/40559489737",
+    "ci:reppiks490/Icarus/actions/runs/40562780682"
+  ],
+  "next_action": "Wait for exact-head broad tests and independently review code; then HANDOFF or COMPLETE narrow structural scope. Keep draft PR and never promote into Brain/trading until provenance and empirical gates.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
