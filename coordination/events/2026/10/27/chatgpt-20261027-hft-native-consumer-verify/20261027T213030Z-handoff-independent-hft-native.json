@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T213030Z-handoff-independent-hft-native",
+  "session_id": "chatgpt-20261027-hft-native-consumer-verify",
+  "at_utc": "2026-10-27T21:30:30Z",
+  "type": "HANDOFF",
+  "phase": "independent-native-source-to-byte-verified-broad-ci-wait",
+  "summary": "Draft Icarus PR #490 at c488db69708be3d8bf1b417877cdf2dc2e14b815 adds four new paths only: independent read-only native HFT NPY consumer, 17 synthetic tests, 4-version CI and research-only documentation. Independently pinned source SHA + existing #488 source-to-stage verifier, exact NPY dtype/header and every 64-byte record parity, full hashes, no trailing/truncated records, strict denied authority. Focused exact-head CI 40587205465 SUCCESS across Python 3.10–3.13 (17 tests each). Initial run 40587154613 failed one test due to error wrapping; corrected and rerun green. Prior #489 broad CI 40577949933/40577960818 and #488 broad 40569149528/40569162153 completed SUCCESS. New #490 broad application CI 40587197240/40587205473 pending at handoff. Upstream pinned Event struct directly checked. No vendor rights, native simulator replay, empirical fills, Windows/WSL2 proof, or training/trading authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_native_verify.py",
+    "tests_engine/test_external_hft_native_verify.py",
+    ".github/workflows/external-hft-native-verify.yml",
+    "docs/integrations/HFT_NATIVE_INDEPENDENT_VERIFICATION.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-native-consumer-verify/20261027T213030Z-handoff-independent-hft-native.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#490@c488db69708be3d8bf1b417877cdf2dc2e14b815",
+    "pr:reppiks490/Icarus#489",
+    "pr:reppiks490/icarus-owner-actions#76",
+    "constraint:no_live_broker_arming"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40587205465",
+    "ci:reppiks490/Icarus/actions/runs/40577949933",
+    "ci:reppiks490/Icarus/actions/runs/40577960818",
+    "ci:reppiks490/icarus-owner-actions/actions/runs/40587172312"
+  ],
+  "next_action": "Inspect exact-head broad CI #40587197240/#40587205473; independent review; real licensed HFTBacktest replay with validated book snapshots, clock offsets, sequence gaps, queue/latency fees and real-price fill parity; do not promote until holdout-approved.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
