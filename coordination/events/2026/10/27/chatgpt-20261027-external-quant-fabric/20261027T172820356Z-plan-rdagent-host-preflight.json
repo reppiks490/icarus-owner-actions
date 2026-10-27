@@ -1,0 +1,47 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T172820356Z-plan-rdagent-host-preflight",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T17:28:20.356Z",
+  "type": "UPDATE",
+  "phase": "rdagent-wsl-host-capacity-audit",
+  "summary": "Build an independent, read-only WSL2 and Windows host capacity inspector before selecting a local RD-Agent chat/embedding model. Collect CPU, effective/cgroup RAM and disk without exposing secrets or downloading/running models; report all unverified GPU/runtime/model evidence as unknown. Test offline with synthetic /proc fixtures. Preserve earlier Qlib changes and no-live safety.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/external_rd_agent_preflight.py",
+    "tests_engine/test_external_rd_agent_preflight.py",
+    ".github/workflows/external-quant-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_rd_agent_preflight.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_rd_agent_preflight.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "constraint:no_live_broker_arming",
+    "constraint:no_model_download_no_network"
+  ],
+  "evidence": [
+    "ci:40550586601 60x4 passing native-binary enhanced verifier"
+  ],
+  "next_action": "Implement CPU/RAM/WSL/cgroup/disk-safe preflight, test and add note that owner PC not remotely accessible.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
