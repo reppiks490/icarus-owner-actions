@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T164744812Z-plan-qlib-native-csv-preparation",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T16:47:44.812Z",
+  "type": "UPDATE",
+  "phase": "versioned-native-qlib-preparation",
+  "summary": "Focused independent structural verifier now passes 34/34 on Python 3.10-3.13 CI #40544013095. Start next isolated research-only interface using official Qlib dump_bin CSV conventions: actual per-contract CSV filename, date field and factor=1 for unadjusted raw bars, explicit UTC provenance, immutable hashes and fail-closed admission. No Qlib vendor binary conversion or package execution without pinned/local installed runtime verification.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_qlib_prepare.py",
+    "tests_engine/test_external_qlib_prepare.py",
+    ".github/workflows/external-quant-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_qlib_prepare.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_qlib_prepare.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    }
+  ],
+  "dependencies": [
+    "source:github.com/microsoft/qlib/docs/component/data.rst",
+    "pr:reppiks490/Icarus#486",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40544013095",
+    "source:reppiks490/Icarus/icarus_engine/external_research_verify.py"
+  ],
+  "next_action": "Add independently verified quarantined CSV preparation and tests. Keep PR draft pending full CI and owner WSL2 Qlib version audit.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

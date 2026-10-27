@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T172142853Z-plan-native-qlib-verifier",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T17:21:42.853Z",
+  "type": "UPDATE",
+  "phase": "native-qlib-binary-independent-verification",
+  "summary": "Extend draft Icarus PR #486 with an offline read-only verifier for official Qlib binary dump output, checking contract, feature binaries, calendar alignment, float32 interpretation, size, and provenance against the already-verified prepared CSV. No automatic Qlib or third-party execution or data collection. Existing focused CI 47 cases×4 Python versions green, broad-suite run in progress. Keep draft, no live-trading authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_qlib_verify.py",
+    "tests_engine/test_external_qlib_verify.py",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md",
+    ".github/workflows/external-quant-contract.yml"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_qlib_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_qlib_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-contract.yml"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "constraint:no_live_broker_arming",
+    "constraint:no_provider_spend",
+    "upstream:microsoft/qlib/scripts/dump_bin.py"
+  ],
+  "evidence": [
+    "focused-CI:40545420725 47x4 passed"
+  ],
+  "next_action": "Implement independent native binary roundtrip checker, test with corrupt/synthetic binary fixture, enable exact-head focused CI; preserve draft and broader gates.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

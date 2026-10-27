@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T183800Z-plan-hftbacktest-event-staging",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T18:38:00Z",
+  "type": "PLAN",
+  "phase": "hftbacktest-l2-structured-event-staging",
+  "summary": "Continue previous external-quant draft PR #486 after exact-head broad CI passed. Add a separate isolated offline research-only normalized MBP depth-update/trade event staging CSV compatible with HFTBacktest documented Event columns and bit flags. Validate tick/lot grid, nanosecond clocks, monotonic sequence/arrival, contract, event type, provenance hashes; no fabricated snapshots or L3 queue identity, no vendor/API calls or live execution. Add focused tests and CI, updated docs.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_stage.py",
+    "tests_engine/test_external_hft_stage.py",
+    ".github/workflows/external-quant-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_stage.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_stage.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:no_live_broker_arming",
+    "constraint:no_paid_provider_spend",
+    "upstream:nkaz001/hftbacktest/docs/data.rst"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40551469316",
+    "ci:reppiks490/Icarus/actions/runs/40551469341"
+  ],
+  "next_action": "Implement and test the event preparation seam on existing branch; record explicit limits that CSV != HFTBacktest structured numpy events nor replay/fill proof.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

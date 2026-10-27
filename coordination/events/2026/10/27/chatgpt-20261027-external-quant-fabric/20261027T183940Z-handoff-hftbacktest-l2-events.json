@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T183940Z-handoff-hftbacktest-l2-events",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T18:39:40Z",
+  "type": "HANDOFF",
+  "phase": "l2-event-staging-verified-native-replay-open",
+  "summary": "Continued draft Icarus PR #486 with HFTBacktest-compatible L2 event-column CSV staging. Source-qualified original physical futures contract and source ID mandatory; strict trade/depth side/event kind, dual nanosecond timestamps, no negative latency, increasing sequence/clock, finite tick/lot-aligned price/size and bounded IEEE-float64 conversion; no 10k sample ceiling. Reject snapshot, MBO orders, fabricated book state. Output SHA256 and manifest deny vendor authenticity/entitlements/queue/fills/runtime/trading. Added 20 new focused tests incl massive integer and decimal exponent hostile inputs. Latest focused exact-head run 40562780741 passes 91 tests each for Python 3.10,3.11,3.12,3.13 at commit df706bc7079d84f74924a89d2b0d6151ffeac7fb. Broader exact-head CI workflows 40562780682 and 40562768888 were still in progress. Existing pre-HFT broad workflows 40551469341 and 40551459792 succeeded. The work remains draft, paper/research only, no market collection, spent credits, machine restart, live arming or merges.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_stage.py",
+    "tests_engine/test_external_hft_stage.py",
+    ".github/workflows/external-quant-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-external-quant-fabric/20261027T183940Z-handoff-hftbacktest-l2-events.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486@df706bc7079d84f74924a89d2b0d6151ffeac7fb",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_paid_provider_spend",
+    "runtime:hftbacktest natively installed/imported not proven"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40562780741 four versions 91 tests each passing",
+    "source:nkaz001/hftbacktest/docs/data.rst",
+    "source:nkaz001/hftbacktest/hftbacktest/src/types.rs"
+  ],
+  "next_action": "Inspect exact-head broad CI, independently review new converter, add fail-closed L2 consumer checksum/record verifier and authentic vendor provenance pinning, then optional native NumPy structured-array bridge and HFTBacktest replay on authorized depth data. Continue NautilusTrader independent real-fills comparison and RD-Agent local WSL2 model audit, preserve all broker/owner stop-point constraints.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

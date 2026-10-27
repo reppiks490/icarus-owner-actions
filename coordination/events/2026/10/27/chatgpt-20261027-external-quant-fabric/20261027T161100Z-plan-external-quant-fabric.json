@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T161100Z-plan-external-quant-fabric",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T16:11:00Z",
+  "type": "PLAN",
+  "phase": "isolated-nonlive-first-integration",
+  "summary": "Claims narrow new canonical paths for fail-closed external quant adapter: validate authentic raw UTC bar records, export research-only feature data and provenance manifests, expose optional installed-framework discovery without executing them. Preserve current strategy/UI, provider secrets, the stop-point and draft PRs. No imports of downloaded repositories at startup.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_research.py",
+    "tests_engine/test_external_research.py",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_research.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_research.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    }
+  ],
+  "dependencies": [
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_provider_spend",
+    "review:reppiks490/Icarus#485"
+  ],
+  "evidence": [
+    "source:reppiks490/Icarus/integration/README.md",
+    "source:reppiks490/Icarus/AGENTS.md",
+    "source:reppiks490/icarus-owner-actions/coordination/collisions.json"
+  ],
+  "next_action": "Implement and test isolated adapters on fresh branch; draft PR for independent review and exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
