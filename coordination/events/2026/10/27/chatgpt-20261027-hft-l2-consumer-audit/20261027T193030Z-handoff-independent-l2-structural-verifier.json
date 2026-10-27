@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T193030Z-handoff-independent-l2-structural-verifier",
+  "session_id": "chatgpt-20261027-hft-l2-consumer-audit",
+  "at_utc": "2026-10-27T19:30:30Z",
+  "type": "HANDOFF",
+  "phase": "focused-verified-broad-ci-in-progress",
+  "summary": "HFT L2 independent consumer implemented in draft Icarus PR #488, head cd74368505cf973f6d22431bd3cac884a090098c. It reconstructs every normalized depth/trade event from original CSV, checks independent caller-supplied source SHA-256, manifest/source/output SHA-256, exact event flags/fields, contract, tick/lot grid, exchange/local clocks, sequence, counts, first/last timestamps and all denied authority. It rejects source/output tampering even if manifest is rehashed, duplicate JSON keys, symlinked inputs and forged MBO IDs. Focused exact-head run 40569161758 passed 23 tests each Python 3.10/3.11/3.12/3.13, including actual stage-to-consumer roundtrip. Coordination draft PR #74 stacked on repaired #71; coordination CI 40569271043 passed with 426 events, 52 sessions, 0 collisions. Broad exact-head Icarus CI runs 40569149528 and 40569162153 still in progress. No licensed market-data replay, native HFTBacktest/NumPy, empirical fills, source entitlements, WSL2 runtime or live trading claims.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_verify.py",
+    "tests_engine/test_external_hft_verify.py",
+    ".github/workflows/external-hft-consumer.yml",
+    "docs/integrations/HFT_L2_CONSUMER.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-l2-consumer-audit/20261027T193030Z-handoff-independent-l2-structural-verifier.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#488@cd74368505cf973f6d22431bd3cac884a090098c",
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#74",
+    "pr:reppiks490/icarus-owner-actions#71",
+    "ci:reppiks490/Icarus/actions/runs/40569149528",
+    "ci:reppiks490/Icarus/actions/runs/40569162153"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40569161758",
+    "ci:reppiks490/icarus-owner-actions/actions/runs/40569271043",
+    "ci:reppiks490/Icarus/actions/runs/40559489737"
+  ],
+  "next_action": "Confirm both broad app exact-head runs; independent review; only then mark narrow scope complete. Future native HFTBacktest NumPy conversion must remain quarantined, version-pinned, rights-verified, clock-synchronized and empirically tested against real fills before any Brain/UI signal admission.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
