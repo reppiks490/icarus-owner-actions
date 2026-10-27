@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T172533534Z-update-native-authenticity-gate",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T17:25:33.534Z",
+  "type": "UPDATE",
+  "phase": "independent-native-verifier-hardening",
+  "summary": "Native binary structural verifier passed 60 focused offline tests across Python 3.10–3.13 in exact-head CI run 40550238784. Independent review identified missing trusted producer-repository/handoff-id expectation and post-read immutable CSV digest check. Extend strict native verifier and its narrow tests before declaring full integration; do not change broker or accept model authority.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/external_qlib_verify.py",
+    "tests_engine/test_external_qlib_verify.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_qlib_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_qlib_verify.py"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "constraint:execution_authorized_false"
+  ],
+  "evidence": [
+    "ci:40550238784 4×60 passed"
+  ],
+  "next_action": "Enforce independently expected producer/handoff and immutable prepared CSV, then focused CI and handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
