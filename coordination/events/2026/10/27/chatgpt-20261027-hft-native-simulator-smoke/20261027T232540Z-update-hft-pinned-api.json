@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T232540Z-update-hft-pinned-api",
+  "session_id": "chatgpt-20261027-hft-native-simulator-smoke",
+  "at_utc": "2026-10-27T23:25:40Z",
+  "type": "UPDATE",
+  "phase": "native-hft-runtime-ci-debug",
+  "summary": "Exact-head native CI #40601969635 reached real HFTBacktest 2.4.4 runtime and exposed BacktestAsset.trade_len absent in installed 2.4.4 API; also strict test regex expected ABI while implementation correctly said scalar types mismatch. Removed optional unsupported trade_len configuration and corrected refusal test expectation; latest source head 3f86ba61985891ba1b6fee256958f0579edd1113. No runtime success claimed pending fresh native CI. Earlier ABI metadata mismatch was separately corrected after #40601844631.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_simulator_smoke.py",
+    "tests_engine/test_external_hft_simulator_smoke.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-native-simulator-smoke/20261027T232540Z-update-hft-pinned-api.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#492",
+    "ci:reppiks490/Icarus/actions/runs/40601969635 failure",
+    "constraint:no_orders_or_live_broker"
+  ],
+  "evidence": [
+    "run:40601969635 BacktestAsset.trade_len AttributeError and test regex mismatch",
+    "commit:reppiks490/Icarus@3f86ba61985891ba1b6fee256958f0579edd1113"
+  ],
+  "next_action": "Inspect fresh exact-head native CI, then broad CI; preserve research-only authority.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

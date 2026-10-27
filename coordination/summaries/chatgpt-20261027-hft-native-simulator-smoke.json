@@ -1,0 +1,25 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261027-hft-native-simulator-smoke",
+  "completed_at_utc": "2026-10-27T23:28:00Z",
+  "result": "blocked",
+  "scope": "Bounded research-only native HFTBacktest 2.4.4 synthetic no-order simulator smoke implemented, exact-head focused CI passed, broader app CI and empirical/owner host gates outstanding.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/492",
+  "source_reviewed_sha": "aa5202dbe006d3acf5c3e8f25a7ce87efb36a28d",
+  "evidence": [
+    "Icarus #492@aa5202dbe006d3acf5c3e8f25a7ce87efb36a28d four new files, stacked on #491.",
+    "Exact-head native GitHub Actions #40602195231 SUCCESS: HFTBacktest 2.4.4 installed on ephemeral Python3.11 runner; six synthetic tests; actual native Rust/Python no-order simulator processed synthetic book; 0 position, no order submissions, correct bid/ask.",
+    "First CI #40601844631 failed because NPY readback drops align metadata; fixed and regression tested.",
+    "CI #40601969635 failed due optional BacktestAsset.trade_len unavailable in pinned version; removed and updated tests.",
+    "Latest broad #40602195208 and #40602188497 in progress at handoff.",
+    "Parent #491 broad #40595034998/#40595043273 SUCCESS.",
+    "Coordination draft #78 unique session/PLAN/UPDATE/HANDOFF; previous coordination CI #40602019992 SUCCESS."
+  ],
+  "remaining_work": [
+    "Confirm latest broad exact-head workflows and independent review before merge.",
+    "Full dependency resolution not frozen; pinned top-level hftbacktest/numpy/numba only.",
+    "No licensed vendor source, complete initial book snapshot, venue sequence/clock synchronization, calibrated queue/order latency/fees/slippage, empirical fills, holdout or strategy promotion.",
+    "No owner Windows/WSL2 runtime or RD-Agent model proof. Live broker arming disabled, no new provider spending or collections.",
+    "Preserve all existing branches, PR ancestry, agent coordination and automations."
+  ]
+}

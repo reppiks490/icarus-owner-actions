@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T232136Z-plan-hft-native-simulator-smoke",
+  "session_id": "chatgpt-20261027-hft-native-simulator-smoke",
+  "at_utc": "2026-10-27T23:21:36Z",
+  "type": "PLAN",
+  "phase": "isolated-hftbacktest-native-synthetic-smoke",
+  "summary": "Claim four new unreserved paths stacked on Icarus draft #491. Add a pinned HFTBacktest 2.4.4 isolated CI smoke (Python>=3.11) consuming an independently source-verified, synthetic physical-contract L2 NPY fixture; compare actual upstream numpy Event dtype offsets, construct a read-only backtester, elapse synthetic market events, observe best bid/ask and zero position, close. No orders, no vendor data, no fill calibration, no live trading or model training. Ensure existing all-Python offline suites remain standard-library compatible, document exact CI results and limitations.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_simulator_smoke.py",
+    "tests_engine/test_external_hft_simulator_smoke.py",
+    ".github/workflows/external-hft-simulator-smoke.yml",
+    "docs/integrations/HFT_NATIVE_SIMULATOR_SMOKE.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_simulator_smoke.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_simulator_smoke.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-simulator-smoke.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_NATIVE_SIMULATOR_SMOKE.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#491@c1bde80271e6b865cbcf58d9ea7951e038eef2a8",
+    "pr:reppiks490/icarus-owner-actions#77@4247f9c0ea9c5acfb29fedd35ff67a7bde32b6bd",
+    "upstream:nkaz001/hftbacktest@2.4.4 MIT",
+    "constraint:execution_authorized=false",
+    "constraint:no_provider_spend_or_new_collection"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40595034998 success",
+    "ci:reppiks490/Icarus/actions/runs/40595043273 success"
+  ],
+  "next_action": "Implement optional native simulator smoke, run exact-head CI, record failures and handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
