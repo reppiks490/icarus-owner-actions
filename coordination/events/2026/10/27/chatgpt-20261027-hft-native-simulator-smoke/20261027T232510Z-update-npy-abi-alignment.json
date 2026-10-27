@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T232510Z-update-npy-abi-alignment",
+  "session_id": "chatgpt-20261027-hft-native-simulator-smoke",
+  "at_utc": "2026-10-27T23:25:10Z",
+  "type": "UPDATE",
+  "phase": "native-hft-runtime-ci-debug",
+  "summary": "First actual HFTBacktest 2.4.4 Python3.11 CI #40601844631 failed at NPY dtype admission: NumPy NPY v1.0 reloaded dtype loses isalignedstruct=True metadata although 8-byte scalar types, field offsets and 64-byte itemsize can match upstream. Corrected ABI gate to compare actual names/types/offsets/record size and upstream native alignment separately; keep loaded buffer alignment check. Added regression for NPY unaligned metadata. Latest Icarus head 6a9a5314a02f5688a496973ceadf2e6b76d77341. Native and broad exact-head CI still pending. No runtime smoke success claimed yet.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_simulator_smoke.py",
+    "tests_engine/test_external_hft_simulator_smoke.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-hft-native-simulator-smoke/20261027T232510Z-update-npy-abi-alignment.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#492",
+    "pr:reppiks490/icarus-owner-actions#78",
+    "ci:reppiks490/Icarus/actions/runs/40601844631 failure",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "run:40601844631 test error NativeSmokeError native/upstream Event ABI differs from pinned 64-byte layout",
+    "commit:reppiks490/Icarus@6a9a5314a02f5688a496973ceadf2e6b76d77341"
+  ],
+  "next_action": "Inspect latest native CI #40601969635 and broad exact-head workflows; do not claim simulator run until green.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
