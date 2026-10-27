@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T222600Z-plan-hft-causal-readiness",
+  "session_id": "chatgpt-20261027-hft-causal-readiness",
+  "at_utc": "2026-10-27T22:26:00Z",
+  "type": "PLAN",
+  "phase": "independent-causal-readiness-audit",
+  "summary": "Claim four new isolated paths stacked on draft #490. Implement read-only source-anchored native L2 partial-book event audit: stream all NPY events after independent source-to-byte verification; distinguish exchange/arrival as-of clocks, observed bid/ask levels and partial NBBO, no snapshot inference; report monotonicity/latency/spread/trade-without-observed-book diagnostics and mandatory replay blockers. Synthetic offline tests with refusal and large-feed coverage. Do not execute HFTBacktest or claim fills, vendor authenticity, complete depth or empirical edge.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_causal_audit.py",
+    "tests_engine/test_external_hft_causal_audit.py",
+    ".github/workflows/external-hft-causal-audit.yml",
+    "docs/integrations/HFT_CAUSAL_READINESS.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_causal_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_causal_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-causal-audit.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_CAUSAL_READINESS.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#490@c488db69708be3d8bf1b417877cdf2dc2e14b815",
+    "pr:reppiks490/icarus-owner-actions#76",
+    "constraint:execution_authorized=false",
+    "constraint:no_paid_data_or_training"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40587205473",
+    "ci:reppiks490/Icarus/actions/runs/40587197240"
+  ],
+  "next_action": "Implement independent offline audit and tests, run exact-head focused CI, update draft PR and coordination handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

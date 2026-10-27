@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261027-hft-causal-readiness",
+  "completed_at_utc": "2026-10-27T22:29:30Z",
+  "result": "blocked",
+  "scope": "Bounded source-anchored HFT L2 partial-book causal-readiness audit and 13-test four-Python focused exact-head CI complete; broad app CI and independent review outstanding. No full-book or native simulator execution claims.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/491",
+  "source_reviewed_sha": "c1bde80271e6b865cbcf58d9ea7951e038eef2a8",
+  "evidence": [
+    "Icarus #491@c1bde80271e6b865cbcf58d9ea7951e038eef2a8; four isolated files stacked on #490.",
+    "Focused exact-head run #40595043261 SUCCESS: 13 synthetic tests each on Python 3.10–3.13; 10,020-event full-feed fixture.",
+    "Initial #40594980380 failed due to missing depth/trades keys in parent read-only receipt; corrected and rerun green.",
+    "Parent #490 broad #40587197240/#40587205473 SUCCESS.",
+    "Coordination #77 CI #40595005796 SUCCESS.",
+    "New #491 broad #40595034998/#40595043273 pending."
+  ],
+  "remaining_work": [
+    "Check both #491 broad workflows and independent review before any merge.",
+    "Maintain draft ancestry #491→#490→#489→#488→#486 and coordination #77→#76.",
+    "No native HFTBacktest simulator execution, complete initial snapshot, authenticated licensed depth feed, exchange clock/sequence proof, queue/latency/fee/fill calibration, holdout approval or local Windows/WSL2 proof.",
+    "Keep live broker arming, paid provider requests, training, and runtime deployments disabled."
+  ]
+}
