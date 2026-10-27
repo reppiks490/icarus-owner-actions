@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T202315Z-plan-native-npy-l2-bridge",
+  "session_id": "chatgpt-20261027-hft-l2-npy-bridge",
+  "at_utc": "2026-10-27T20:23:15Z",
+  "type": "PLAN",
+  "phase": "independently-verified-npy-binary-bridge",
+  "summary": "Claim four new files for a standard-library NumPy NPY v1.0 64-byte HFTBacktest Event binary bridge, strictly gated by #488 source-to-staging independent SHA and semantic verifier; produce immutable research-only binary + manifest with complete row count and no sample ceiling. Add byte-level and optional pinned NumPy independent readback tests across Python 3.10–3.13. No HFTBacktest simulator execution, model training, market collection, live broker controls or provider charges. Stack on #488 and coordinate on #74; preserve all prior PR branches.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_numpy.py",
+    "tests_engine/test_external_hft_numpy.py",
+    ".github/workflows/external-hft-numpy.yml",
+    "docs/integrations/HFT_L2_NUMPY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_numpy.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_numpy.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-numpy.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_L2_NUMPY.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/Icarus#488@cd74368505cf973f6d22431bd3cac884a090098c",
+    "pr:reppiks490/icarus-owner-actions#74",
+    "constraint:execution_authorized=false",
+    "constraint:no_provider_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40569161758",
+    "ci:reppiks490/Icarus/actions/runs/40569149528",
+    "ci:reppiks490/Icarus/actions/runs/40569162153",
+    "source:nkaz001/hftbacktest@5f3ec40b2afb764e0fea112f941ed85523ef4e88"
+  ],
+  "next_action": "Implement isolated bridge and independent tests, run exact HEAD CI and record handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
