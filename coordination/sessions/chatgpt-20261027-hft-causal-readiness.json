@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261027-hft-causal-readiness",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Independent fail-closed as-of MBP L2 partial-book replay diagnostics and readiness blockers, downstream of fully verified source-to-NPY evidence. No trading simulator, broker, provider calls, new market data or model training.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/hft-causal-replay-readiness-20261027",
+  "started_at_utc": "2026-10-27T22:26:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "offline-tests"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#486",
+    "#488",
+    "#489",
+    "#490",
+    "reppiks490/icarus-owner-actions#76",
+    "no live broker arming"
+  ]
+}
