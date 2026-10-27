@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T182000000Z-plan-quant-catalog-audit",
+  "session_id": "chatgpt-20261027-quant-catalog-audit",
+  "at_utc": "2026-10-27T18:20:00.000Z",
+  "type": "PLAN",
+  "phase": "independent-research-artifact-provenance-audit",
+  "summary": "Claim four new, unreserved files for a standalone read-only metadata+SHA-256 audit of externally produced research artifacts. Require exact repository commit, license attestation (not authorization), data rights/entitlement gates, immutable file digests, no path escape/symlinks, no authority escalation; tests with synthetic temporary files. Stacked draft on Icarus PR #486 without modifying its existing files or live/runtime controls.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/external_quant_catalog.py",
+    "tests_engine/test_external_quant_catalog.py",
+    ".github/workflows/external-quant-catalog-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_CATALOG.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_quant_catalog.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_quant_catalog.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-catalog-contract.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_CATALOG.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:no_live_broker_arming",
+    "constraint:no_data_collection_no_spend",
+    "constraint:no_model_training"
+  ],
+  "evidence": [
+    "read:reppiks490/icarus-owner-actions:coordination/ACTIVE.md",
+    "read:reppiks490/icarus-owner-actions:coordination/collisions.json:no collisions in compiled snapshot"
+  ],
+  "next_action": "Build isolated auditor and regression suite; verify exact-head hosted CI; publish durable handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
