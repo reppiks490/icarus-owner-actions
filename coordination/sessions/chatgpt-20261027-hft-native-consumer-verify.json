@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261027-hft-native-consumer-verify",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Independent fail-closed source-to-native NPY byte/semantic verification, with original source SHA anchor, pinned dtype, denied authority, no simulator or broker access.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/hft-native-consumer-verify-20261027",
+  "started_at_utc": "2026-10-27T21:27:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "offline-tests"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#486",
+    "#488",
+    "#489",
+    "reppiks490/icarus-owner-actions#75",
+    "no live broker arming"
+  ]
+}

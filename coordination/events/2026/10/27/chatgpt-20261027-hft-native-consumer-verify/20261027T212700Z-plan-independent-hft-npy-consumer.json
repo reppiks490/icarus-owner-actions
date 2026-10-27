@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T212700Z-plan-independent-hft-npy-consumer",
+  "session_id": "chatgpt-20261027-hft-native-consumer-verify",
+  "at_utc": "2026-10-27T21:27:00Z",
+  "type": "PLAN",
+  "phase": "independent-native-npy-consumer",
+  "summary": "Claim four new isolated paths stacked on draft #489. Independently verify native NumPy NPY v1.0 binary against independently anchored original physical-contract L2 source and verified staging, checking exact dtype/header, per-record bytes, SHA, manifest denials, full length, symlink and malformed/duplicate JSON refusal. Read-only receipt; synthetic offline tests; no simulator import, empirical fills, live trading, provider spend or data collection.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_native_verify.py",
+    "tests_engine/test_external_hft_native_verify.py",
+    ".github/workflows/external-hft-native-verify.yml",
+    "docs/integrations/HFT_NATIVE_INDEPENDENT_VERIFICATION.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_native_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_native_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-native-verify.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_NATIVE_INDEPENDENT_VERIFICATION.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#489@75b30535ae5f0019b3241bcabdcf3b8af0c70bcf",
+    "pr:reppiks490/icarus-owner-actions#75@8a6edf01a8d11310dc74ae02081441b921bf0a8a",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40577949933",
+    "ci:reppiks490/Icarus/actions/runs/40577960818"
+  ],
+  "next_action": "Implement independent read-only verifier, adversarial fixtures, exact-head CI and handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
