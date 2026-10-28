@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-rdagent-local-plan-guard",
+  "actor": "ChatGPT scheduled ICARUS engineering",
+  "model_family": "openai",
+  "goal": "Independent RD-Agent local chat/embedding plan admission: fail closed on network, RAM, WSL2 and evidence authority; no execution, installs, secrets or owner host claims.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/rdagent-local-model-plan-20261028",
+  "started_at_utc": "2026-10-28T02:19:44Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "offline-tests"
+  ],
+  "initial_dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "constraint:research-only",
+    "constraint:owner-PC-unverified"
+  ]
+}
