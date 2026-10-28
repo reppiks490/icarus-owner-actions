@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T015920Z-plan-native-backtest-smoke",
+  "session_id": "chatgpt-20261028-nautilus-backtest-smoke",
+  "at_utc": "2026-10-28T01:59:20Z",
+  "type": "PLAN",
+  "phase": "native-nautilus-backtestengine-synthetic-only",
+  "summary": "Claim four isolated new paths stacked on #495. Build a strict adapter that first runs parent source/native provenance and as-of checks, constructs an actual physical FuturesContract matching NQH2026.CME, feeds only verified synthetic QuoteTicks into pinned NautilusTrader 1.221.0 BacktestEngine with no strategies/order factories/broker clients, and records deterministic terminal clock and zero-order/zero-position evidence. No real market data, provider collection, spending, training, Brain/UI promotion, local host claims, live execution or modification of runtime paths.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_nautilus_backtest_smoke.py",
+    "tests_engine/test_external_nautilus_backtest_smoke.py",
+    ".github/workflows/external-nautilus-backtest-smoke.yml",
+    "docs/integrations/NAUTILUS_BACKTEST_SMOKE.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_nautilus_backtest_smoke.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_nautilus_backtest_smoke.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-nautilus-backtest-smoke.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/NAUTILUS_BACKTEST_SMOKE.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#495",
+    "pr:reppiks490/Icarus#494",
+    "pr:reppiks490/Icarus#486",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40617886169 success native causal/bridge 35 synthetic tests",
+    "coordination:reppiks490/icarus-owner-actions#81 exact-head validation success"
+  ],
+  "next_action": "Implement isolated low-level BacktestEngine smoke with strict no-strategy/order boundary, run pinned CI, repair only new paths, publish exact-head handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
