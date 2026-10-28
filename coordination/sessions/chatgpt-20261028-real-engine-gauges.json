@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-real-engine-gauges",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Derive interpretable research-infrastructure gauges exclusively from the verified real Icarus-engine evidence catalog, without synthetic market inputs and without implying trading edge or execution authority",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/real-engine-evidence-gauges-20261028",
+  "started_at_utc": "2026-10-28T02:10:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "real-cross-repo-evidence",
+    "research-observability"
+  ],
+  "initial_dependencies": [
+    "pr:reppiks490/Icarus#497@1c9870329af1a5bfc040c56bf2b0ca292e623116",
+    "engine-peer:10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3",
+    "constraint:no_synthetic_market_evidence",
+    "constraint:no_edge_inference"
+  ]
+}
