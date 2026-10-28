@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "actor": "ICARUS Brain Experience Nexus / ChatGPT",
+  "model_family": "openai",
+  "goal": "Create a read-only, fail-closed ICARUS capability-context consumer of the authentic owner-actions 72-repo source inventory and Engine federation ledger, with provenance-aware no-false-usage evidence gates and exact-head cross-repository tests.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "chatgpt/brain-capability-usage-coord-20261028",
+  "pr": null,
+  "started_at_utc": "2026-10-28T02:49:00Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "github",
+    "library-manifest",
+    "offline-python",
+    "cross-repository-read-only-ci"
+  ],
+  "initial_dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-local-100GB-folders-unmounted",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "session:icarus2-20261020-federation-integration"
+  ]
+}
