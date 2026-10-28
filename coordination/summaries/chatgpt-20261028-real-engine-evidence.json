@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261028-real-engine-evidence",
+  "completed_at_utc": "2026-10-28T02:09:05Z",
+  "result": "blocked",
+  "scope": "Actual cross-repo Engine evidence federation into Icarus; dedicated real-data CI verified, broad app CI and review pending.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/497",
+  "source_reviewed_sha": "1c9870329af1a5bfc040c56bf2b0ca292e623116",
+  "evidence": [
+    "Dedicated CI #40619128466 SUCCESS against exact Engine commit 10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3.",
+    "6 tests read actual committed evidence only; no synthetic fixtures.",
+    "Real provider snapshot total current collected rows: 63,531; substantive providers alphavantage/fred/massive.",
+    "SEC/EDGAR manifest: 16,000 facts and 2,380 filings; Native Five run native-40610466093-1; interrepo VERIFIED_PRIOR_PACKET.",
+    "Derived catalog artifact ID 12785674067; raw_payloads_copied=false, provider_requests_made=0, execution_authorized=false.",
+    "Broad Icarus tests #40619128507 pending."
+  ],
+  "remaining_work": [
+    "Independent review and broad exact-head app CI before merge.",
+    "Advance real catalog into read-only gauges/context only; never infer a strategy edge from infrastructure health.",
+    "Provider/account/licensing blockers and paid depth integrity gap remain external/explicit; no spending or fresh collection in this lane."
+  ]
+}

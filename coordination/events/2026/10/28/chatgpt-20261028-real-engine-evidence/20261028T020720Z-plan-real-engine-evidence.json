@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T020720Z-plan-real-engine-evidence",
+  "session_id": "chatgpt-20261028-real-engine-evidence",
+  "at_utc": "2026-10-28T02:07:20Z",
+  "type": "PLAN",
+  "phase": "real-cross-repo-evidence-federation",
+  "summary": "Claim four isolated Icarus paths. Build a strict read-only catalog over actual committed Icarus-engine evidence at exact peer commit 10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3: ingestion manifest, provider research context, Sentinel health, SEC/EDGAR manifest, native research status and interrepo packet. CI checks out both repositories and validates the real files directly; no synthetic fixtures, provider calls, raw licensed payload copying, training, broker controls or execution authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/engine_evidence_catalog.py",
+    "tests_engine/test_engine_evidence_catalog_real.py",
+    ".github/workflows/engine-evidence-catalog-real.yml",
+    "docs/integrations/ENGINE_REAL_EVIDENCE_FEDERATION.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/engine_evidence_catalog.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_engine_evidence_catalog_real.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/engine-evidence-catalog-real.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/ENGINE_REAL_EVIDENCE_FEDERATION.md"
+    }
+  ],
+  "dependencies": [
+    "constraint:no_synthetic_evidence_counted",
+    "constraint:no_new_provider_collection",
+    "constraint:no_spend",
+    "constraint:no_live_broker_arming"
+  ],
+  "evidence": [
+    "engine-main:10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3",
+    "engine:provider massive latest 20000 persisted rows at 2026-10-28T01:24:17Z",
+    "engine:SEC/EDGAR manifest 16000 facts/2380 filings",
+    "engine:native research latest native-40610466093-1"
+  ],
+  "next_action": "Implement strict real-evidence reader, real cross-repo tests and CI, then publish exact-head evidence and handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
