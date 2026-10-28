@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T025300Z-update-brain-capability-pr502",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "at_utc": "2026-10-28T02:53:00Z",
+  "type": "UPDATE",
+  "phase": "draft-pr-and-pinned-peer-verification",
+  "summary": "Independent Brain capability-context implementation published as Icarus draft PR #502 exact head 6545cb88a747e444779be86c70fce64bd8a12921: read-only typed owner-actions+Engine ledger consumer, strict no-false-runtime-use gates, fork/shared-commit grouping, candidate subsystem mapping, 18 metadata tests (17 local pass, 1 authentic-peer skip), and pinned cross-repo CI. Source audit PR #87 authentic inventory: 72 distinct identities, 43 verified source snapshots, 37 distinct commits, zero verified external invocation from this inventory. Both owner Windows folders are unmounted. No runtime integration/Brain promotion is claimed. Extend narrow reservation to a unique durable handoff record; hosted exact-head CI pending.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#502",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/502",
+    "commit:reppiks490/Icarus@6545cb88a747e444779be86c70fce64bd8a12921",
+    "local:17-pass-1-skipped-authentic-peer-test",
+    "https://github.com/reppiks490/icarus-owner-actions/pull/87"
+  ],
+  "next_action": "Publish durable handoff to functional ICARUS PRIME and monitor exact-head CI; do not merge until independent review.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/2026-10-28-brain-capability-context-pr502.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-brain-capability-usage-gate/20261028T025300Z-update-brain-capability-pr502.json"
+    }
+  ]
+}

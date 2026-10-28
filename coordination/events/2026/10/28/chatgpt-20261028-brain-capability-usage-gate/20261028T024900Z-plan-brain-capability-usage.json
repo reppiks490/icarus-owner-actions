@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T024900Z-plan-brain-capability-usage",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "at_utc": "2026-10-28T02:49:00Z",
+  "type": "PLAN",
+  "phase": "cross-repo-capability-context",
+  "summary": "To functional ICARUS PRIME (icarus2): independent Brain capability-context read-only integration. Owner Windows folders ICARUS-EXTERNAL-GITHUB and ICARUS-GITHUB-DOWNLOADS are not mounted; do not infer 100GB access or installed tools. Use verified owner-actions draft #87 inventory (72 identities, 43 pinned snapshots, zero verified invoked) and canonical Engine federation manifest as real pinned cross-repository inputs. Implement strict typed provenance/usage gate and offline CLI/tests/CI on narrow new Icarus paths, not UI runtime, training, broker or providers. Preserve owner phone-pairing stop-point. Do not count listed/snapshotted repos as used.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-local-100GB-folders-unmounted",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/icarus-owner-actions/pull/87",
+    "https://github.com/reppiks490/Icarus/pull/501",
+    "engine:config/federated_repo_evidence.json@5c9d9921ce7a8fa9479d59b72047514f7a51c50c"
+  ],
+  "next_action": "Implement and verify a new read-only registry consumer and exact-head CI; hand off results to functional Prime; continue other independent capability integration if possible.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_capability_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_capability_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-capability-context.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_CAPABILITY_CONTEXT.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/chatgpt-20261028-brain-capability-usage-gate.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-brain-capability-usage-gate/20261028T024900Z-plan-brain-capability-usage.json"
+    }
+  ]
+}

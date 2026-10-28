@@ -1,0 +1,74 @@
+{
+  "schema_version": "icarus-brain-capability-handoff-v1",
+  "at_utc": "2026-10-28T02:53:30Z",
+  "to": "ICARUS PRIME (functional session icarus2-20261020-federation-integration)",
+  "from": "chatgpt-20261028-brain-capability-usage-gate",
+  "scope": "research/paper-only read-only external source capability context; no UI/runtime change",
+  "draft_pr": "https://github.com/reppiks490/Icarus/pull/502",
+  "source_commit": "6545cb88a747e444779be86c70fce64bd8a12921",
+  "pinned_peer_inputs": [
+    {
+      "repository": "reppiks490/icarus-owner-actions",
+      "commit": "d5f1bd43e217f2ad7009bab1cff09e9fd422ecc5",
+      "path": "coordination/handoffs/2026-10-28-external-execution-source-inventory.json",
+      "blob_sha": "8fa37401c5fe3f11581a50ff7e8178a3973ab294"
+    },
+    {
+      "repository": "reppiks490/Icarus-engine",
+      "commit": "5c9d9921ce7a8fa9479d59b72047514f7a51c50c",
+      "path": "config/federated_repo_evidence.json",
+      "blob_sha": "8ff931370d1192bd19e20f61d2b5dac0957e3a70"
+    }
+  ],
+  "source_archive": {
+    "filename": "ICARUS-GitHub-source-snapshots.tar.zst",
+    "bytes": 500867206,
+    "sha256": "ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06",
+    "verified_by": "source audit PR #501, not reverified by capability consumer"
+  },
+  "verified_source_counts": {
+    "named_identity_union": 72,
+    "source_snapshots": 43,
+    "unique_source_commits": 37,
+    "owner_list_only": 29,
+    "canonical_engine_federation_roles": 6
+  },
+  "verified_integration_counts_in_this_lane": {
+    "installed": 0,
+    "eligible_license_cleared": 0,
+    "adapter_integrated": 0,
+    "actually_invoked_external_repositories": 0,
+    "exact_head_external_invocation_tests": 0
+  },
+  "code_paths": [
+    "icarus_engine/external_capability_context.py",
+    "tests_engine/test_external_capability_context.py",
+    ".github/workflows/external-capability-context.yml",
+    "docs/integrations/EXTERNAL_CAPABILITY_CONTEXT.md"
+  ],
+  "test_evidence": {
+    "local": "17 pass, 1 authentic peer integration skip; 18 tests total",
+    "hosted": "pending",
+    "code_isolated_from_live_runtime": true
+  },
+  "blockers": [
+    "Owner's two Windows source locations ICARUS-EXTERNAL-GITHUB and ICARUS-GITHUB-DOWNLOADS are not mounted or directly accessible; their full paths, hashes and >100GB contents cannot be asserted.",
+    "Source-only audit inventory lacks independent per-repo license clearance, runtime installation, real callsites and invocation receipts.",
+    "Draft owner-actions PR #87 inventory and Icarus PR #502 require independent review and exact-head CI.",
+    "ICARUS Prime's held full restart and phone-pairing stop-point remain authoritative; do not deploy this as runtime mutation."
+  ],
+  "next_actions": [
+    "Verify exact-head PR #502 workflow on all four Python versions using pinned peer checkouts.",
+    "Review independent source API/license/rights and design a true isolated invocation adapter for an eligible external repo; count it only after real runtime receipt and exact-head CI.",
+    "Reconcile additional local source archive inventory only when it becomes technically accessible; never infer installed status from screenshots."
+  ],
+  "safety": {
+    "live_broker_arming": false,
+    "provider_collection": false,
+    "paid_downloads": false,
+    "model_training": false,
+    "auto_promotion": false,
+    "merge_performed": false,
+    "owner_schedules_changed": false
+  }
+}

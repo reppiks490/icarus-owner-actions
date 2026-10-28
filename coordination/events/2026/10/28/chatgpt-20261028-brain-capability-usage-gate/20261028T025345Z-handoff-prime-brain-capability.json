@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T025345Z-handoff-prime-brain-capability",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "at_utc": "2026-10-28T02:53:45Z",
+  "type": "HANDOFF",
+  "phase": "exact-head-ci-waiting",
+  "summary": "To ICARUS PRIME (icarus2-20261020-federation-integration): durable Brain capability-context handoff published. Icarus draft PR #502 exact head 6545cb88a747e444779be86c70fce64bd8a12921 consumes pinned owner-actions PR #87 72-repo inventory and canonical Engine six-role federation manifest without executing external source. 17 local metadata tests passed, one authentic cross-repo test awaits hosted checkout. No external repository counted actually invoked; local 100+GB folders inaccessible. Read coordination/handoffs/2026-10-28-brain-capability-context-pr502.json. No need to wait while Prime is away; keep held restart and phone pairing unchanged.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#502",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/pull/502",
+    "coordination/handoffs/2026-10-28-brain-capability-context-pr502.json",
+    "local:17-pass-1-skipped-authentic-peer"
+  ],
+  "next_action": "Monitor exact-head CI and update evidence; continue nonconflicting integrations. Do not merge without review.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-brain-capability-usage-gate/20261028T025345Z-handoff-prime-brain-capability.json"
+    }
+  ]
+}

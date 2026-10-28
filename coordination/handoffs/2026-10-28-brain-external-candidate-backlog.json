@@ -1,0 +1,311 @@
+{
+  "schema_version": "icarus-brain-external-candidate-backlog-v1",
+  "generated_at_utc": "2026-10-28T02:59:00Z",
+  "owner_source_inventory": {
+    "repository": "reppiks490/icarus-owner-actions",
+    "pr": 87,
+    "commit": "d5f1bd43e217f2ad7009bab1cff09e9fd422ecc5",
+    "distinct_identities": 72
+  },
+  "purpose": "Ten additional distinct public source repositories not present in 72-name inventory; read-only GitHub metadata/license/pyproject inspection only; no clone, install, import, training, provider access, or runtime execution.",
+  "counting": {
+    "source_inventory_identities": 72,
+    "additional_distinct_candidates": 10,
+    "combined_discovered_identities": 82,
+    "additional_installed_verified": 0,
+    "additional_integrated_verified": 0,
+    "additional_actually_invoked_verified": 0,
+    "additional_exact_head_tested_integrations": 0,
+    "acceptance_target_actually_used": 80
+  },
+  "license_note": "Root LICENSE and project metadata were read at pinned GitHub commits. License classification is provisional; obligations and transitive dependency rights require independent review before distribution or deployment. A root license does not license all assets/models/datasets.",
+  "source_repositories": [
+    {
+      "repository": "microsoft/RD-Agent",
+      "source_url": "https://github.com/microsoft/RD-Agent",
+      "source_commit": "484776c211e4fbbeef03e0ec00d6bbee7362a4f4",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "MIT",
+      "license_blob_sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "dependency_manifest_blob_sha": "264950892c0814375eaa049e1b60993257db24da",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; Linux-oriented; requirements include Docker, Litellm, Pydantic-AI, MLflow, Selenium, optional torch; owner WSL2 host and model resources unverified",
+      "candidate_subsystems_not_verified": [
+        "research_agent",
+        "model_isolation",
+        "experiment_tracking"
+      ],
+      "priority": "P1",
+      "blocker_next_action": "Isolate sandbox with no tool auto-execution; verify local model endpoint/resources, prompt-injection, secret and paid API boundaries before first invocation.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "microsoft/qlib",
+      "source_url": "https://github.com/microsoft/qlib",
+      "source_commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "MIT",
+      "license_blob_sha": "9e841e7a26e4eb057b24511e7b92d42b257a80e5",
+      "dependency_manifest_blob_sha": "54a44ab5fc28043796da48fc58a8c808c5922aca",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.8; compiled Cython/numpy; Redis, LightGBM, cvxpy, pyarrow and optional torch; Windows wheel/OSQP constraints",
+      "candidate_subsystems_not_verified": [
+        "quant_research",
+        "experiment_tracking"
+      ],
+      "priority": "P1",
+      "blocker_next_action": "Read-only source format/feature admission with protected holdouts; no auto-training or strategy promotion.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "langchain-ai/langgraph",
+      "source_url": "https://github.com/langchain-ai/langgraph",
+      "source_commit": "eb8ec111b3e9d3108af5d7bdcac51e3e913637a0",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "MIT",
+      "license_blob_sha": "fc0602feecdd6748623c852ab534e1ca612673c7",
+      "dependency_manifest_blob_sha": "5bb2d9c0360df71acb045a764f30ca4048807572",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; langchain-core, checkpoint, SDK, prebuilt, Pydantic; persistence/network adapters require explicit isolation",
+      "candidate_subsystems_not_verified": [
+        "agent_orchestration",
+        "durable_workflows"
+      ],
+      "priority": "P2",
+      "blocker_next_action": "Start with deterministic read-only workflow graph; disable external tool execution and persistence until reviewed.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "pydantic/pydantic-ai",
+      "source_url": "https://github.com/pydantic/pydantic-ai",
+      "source_commit": "bc2213364ca0318f4077110bbc9c240c0ee2f7cd",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "MIT",
+      "license_blob_sha": "1bf1f55e6d1736b499ded961ec6b94bfebb17aec",
+      "dependency_manifest_blob_sha": "0d0bdd423f0614e472874d7dc37a09877d240d2d",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.11; optional model/provider clients; explicit network, token, tool and model budget gate",
+      "candidate_subsystems_not_verified": [
+        "typed_agent_contracts",
+        "model_isolation"
+      ],
+      "priority": "P2",
+      "blocker_next_action": "Use schema validation only before any model call; require no-network offline smoke and pinned dependency lock.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "Arize-ai/phoenix",
+      "source_url": "https://github.com/Arize-ai/phoenix",
+      "source_commit": "d5f5e054756e98d05172a1651c6ffa3fc6f2ff27",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "Elastic-2.0",
+      "license_blob_sha": "23d3aa7c871a4eb153186073e3d2b72d586f64be",
+      "dependency_manifest_blob_sha": "656970dddb81c11db6129327283cd49524a68274",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.11,<3.16; FastAPI/OpenTelemetry; Elastic License 2.0 includes use restrictions and license-key provisions",
+      "candidate_subsystems_not_verified": [
+        "llm_observability",
+        "evaluation"
+      ],
+      "priority": "P3-LICENSE-REVIEW",
+      "blocker_next_action": "Do not install/deploy/embed before specific ELv2 obligations, hosted-service and license-key restrictions are reviewed.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "mlflow/mlflow",
+      "source_url": "https://github.com/mlflow/mlflow",
+      "source_commit": "7b923d1fcf81eeb6effbbb1fc3246087e1e31d37",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "Apache-2.0",
+      "license_blob_sha": "db7cb10b5e330d56b40370bc178974ccabe71458",
+      "dependency_manifest_blob_sha": "c93909e3226789c4a55c5296c0b1a312472aebef",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; broad dependency footprint incl Docker, FastAPI, optional databases and ML toolchains",
+      "candidate_subsystems_not_verified": [
+        "experiment_tracking",
+        "artifact_provenance"
+      ],
+      "priority": "P2",
+      "blocker_next_action": "Use read-only experiment lineage/metadata, no automatic model registry promotion or remote tracking server.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "open-telemetry/opentelemetry-python",
+      "source_url": "https://github.com/open-telemetry/opentelemetry-python",
+      "source_commit": "ca410a6eae68e32ba9eb886ba407df60d310aec9",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "Apache-2.0",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "dependency_manifest_blob_sha": "d1bd31b83abd23f56ddff4e8fe09d04d1de5cf3b",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; API/SDK/instrumentation modules; disable exporters/network and sanitize span attributes",
+      "candidate_subsystems_not_verified": [
+        "tracing",
+        "observability",
+        "provenance"
+      ],
+      "priority": "P1",
+      "blocker_next_action": "First candidate for isolated read-only local span receipt adapter; no exporter, PII, secrets or market rows.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "evidentlyai/evidently",
+      "source_url": "https://github.com/evidentlyai/evidently",
+      "source_commit": "34771fe41c08ca074d96a52aaf4a45cd640cbaf5",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "Apache-2.0",
+      "license_blob_sha": "f339cc7fc8fe13467e1b3f3a7afa02b29714b2bb",
+      "dependency_manifest_blob_sha": "eec74b2ca7334311282340936eb479f14edbaa97",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; monitoring core; optional transformers/torch/litellm heavy; avoid unapproved model installs",
+      "candidate_subsystems_not_verified": [
+        "model_monitoring",
+        "data_quality"
+      ],
+      "priority": "P2",
+      "blocker_next_action": "Report real provenance/freshness and drift only after admissible persisted data; no fabricated metric or auto-promotion.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "huggingface/smolagents",
+      "source_url": "https://github.com/huggingface/smolagents",
+      "source_commit": "96f33faaf028479119ec8d34507b47694cf14e34",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "Apache-2.0",
+      "license_blob_sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "dependency_manifest_blob_sha": "61ead4273b1928b1a9012d2ea06eb70100595c43",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10; optional torch/transformers/LiteLLM/provider clients; code-executing agents need strict sandbox",
+      "candidate_subsystems_not_verified": [
+        "agent_framework",
+        "tool_sandbox"
+      ],
+      "priority": "P3-SECURITY-REVIEW",
+      "blocker_next_action": "No arbitrary code agent, shell, browser, credentials or model tool invocation until isolation and permissions verified.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    },
+    {
+      "repository": "stanfordnlp/dspy",
+      "source_url": "https://github.com/stanfordnlp/dspy",
+      "source_commit": "39dd3e5df9ede98578e6d9d7f53d3c7ee388c6c0",
+      "source_location": "public GitHub exact commit (remote metadata only)",
+      "license_label_observed": "MIT",
+      "license_blob_sha": "be3f5c0e3fc7e6b0e7c9dddd9db313ab15bfa62b",
+      "dependency_manifest_blob_sha": "777e2959805e16ed38dd8a3a49386b887e504d9c",
+      "license_cleared": false,
+      "source_code_runtime_inspected": false,
+      "installed_verified": false,
+      "adapter_integrated_verified": false,
+      "actually_invoked_by_icarus_verified": false,
+      "exact_head_integration_tested": false,
+      "integration_stage": "source-metadata-inspected",
+      "environment_constraints": "Python >=3.10,<3.16; OpenAI/LiteLLM/GEPA optional paths; optimization can trigger paid model calls",
+      "candidate_subsystems_not_verified": [
+        "llm_evaluation",
+        "prompt_optimization"
+      ],
+      "priority": "P3",
+      "blocker_next_action": "Offline prompt/evaluation contract only; no automatic optimization, holdout reuse or paid inference.",
+      "source_provenance": "GitHub connector get_repo, exact branch SHA, root LICENSE and dependency metadata; no source clone/installation."
+    }
+  ],
+  "combinations_for_review": [
+    {
+      "components": [
+        "microsoft/RD-Agent",
+        "microsoft/qlib",
+        "mlflow/mlflow",
+        "open-telemetry/opentelemetry-python"
+      ],
+      "hypothesis": "Isolated research-agent orchestration + quant data format + experiment lineage + local-only traces",
+      "gate": "Never invoke until owner-host resources, licensing, provider budget, holdout and sandbox validated."
+    },
+    {
+      "components": [
+        "pydantic/pydantic-ai",
+        "langchain-ai/langgraph",
+        "huggingface/smolagents"
+      ],
+      "hypothesis": "Compare typed agent contracts and deterministic workflow graphs; avoid running overlapping agent runtimes",
+      "gate": "Select one tool executor after offline adversarial tests; no auto code execution."
+    },
+    {
+      "components": [
+        "evidentlyai/evidently",
+        "Arize-ai/phoenix",
+        "open-telemetry/opentelemetry-python"
+      ],
+      "hypothesis": "Provenance/data-quality/LLM diagnostics with redacted local traces",
+      "gate": "Phoenix ELv2 legal review and privacy/no-export checks; never infer trading edge from diagnostics."
+    },
+    {
+      "components": [
+        "stanfordnlp/dspy",
+        "mlflow/mlflow",
+        "microsoft/RD-Agent"
+      ],
+      "hypothesis": "Pre-registered prompt-evaluation lineage with immutable protected holdout",
+      "gate": "No automatic optimization, training, inference spending or model promotion."
+    }
+  ],
+  "blockers": [
+    "The owner's ICARUS-EXTERNAL-GITHUB and ICARUS-GITHUB-DOWNLOADS Windows folders are not mounted; no >100GB source installation claims.",
+    "Root license metadata is not full legal/asset clearance; especially Phoenix ELv2.",
+    "No external repository from this candidate backlog was installed, imported or invoked by ICARUS.",
+    "All 10 are outside the pinned 72-name source audit; keep separate until a new verified crosswalk merges them."
+  ]
+}
