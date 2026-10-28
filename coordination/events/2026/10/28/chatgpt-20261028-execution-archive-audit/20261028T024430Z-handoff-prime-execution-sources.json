@@ -10,11 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "reppiks490/Icarus:tools/external_execution_archive_audit.py",
-    "reppiks490/Icarus:tests_engine/test_external_execution_archive_audit.py",
-    "reppiks490/icarus-owner-actions:coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
-  ],
+  "paths": [],
   "dependencies": [
     "pr:reppiks490/Icarus#501",
     "pr:reppiks490/icarus-owner-actions#87",
@@ -32,5 +28,19 @@
   ],
   "next_action": "Await and inspect exact-head CI; fix any failures on the draft PR, then independently validate source/license/actual adapter call sites for execution-lane repos (DBN, Nautilus, MBO reconstruction, CME MDP, orderbook, vectorbt, cvxpy, kungfu), with no synthetic market evidence counted. Reconcile local >100GB source roots only when their actual mount/path is accessible; do not request manual user action while other work exists. Functional ICARUS PRIME should consume durable inventory and delegate nonoverlapping repo integrations.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
+    }
+  ]
 }
