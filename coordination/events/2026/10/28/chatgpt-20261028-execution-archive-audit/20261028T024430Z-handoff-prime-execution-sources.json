@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T024430Z-handoff-prime-execution-sources",
+  "session_id": "chatgpt-20261028-execution-archive-audit",
+  "at_utc": "2026-10-28T02:44:30.944Z",
+  "type": "HANDOFF",
+  "phase": "waiting-exact-head-ci-and-next-integration",
+  "summary": "TO FUNCTIONAL ICARUS PRIME (icarus2-20261020-federation-integration), ASYNCHRONOUS SIX-DAY HANDOFF: Execution Reality Twin completed an authentic external-source archive integrity gate and created draft Icarus PR #501; no waiting for Prime. The actual 500867206-byte source archive SHA256 ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06 contains 29112 TAR members, 42 confined symlinks, 43 pinned repository snapshots, 37 distinct commit SHAs, 6 duplicate-commit upstream/fork pairs, and 13 snapshots without root license filenames. Three owner-provided source lists contain 65 distinct named repos; 36 match snapshots, 29 lack snapshot, 7 Databento snapshots are archive-only, union 72 names. Persisted all 72 rows and unverified usage stages in coordination/handoffs/2026-10-28-external-execution-source-inventory.json. Exact Git blob-matched local source/tests passed 11 isolated tests, real 500MB archive audit and 3 list crosswalk passed; GitHub exact-head run 40622575959 in progress, not green yet. The two user-reported 100GB+ Windows/WSL locations are not mounted/verified. Neither 72 names nor 37 commits means 80 used: this audit proves 0 runtime integrations, and makes no statement about integrations independently verified elsewhere. Continue with pinned, license-reviewed actual adapters, runtime invocation receipts, exact-head CI and paper-only real-data evidence. Keep source and market evidence separate; no live execution, provider spend, unsafe installs or unapproved training.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "reppiks490/Icarus:tools/external_execution_archive_audit.py",
+    "reppiks490/Icarus:tests_engine/test_external_execution_archive_audit.py",
+    "reppiks490/icarus-owner-actions:coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#501",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "github-run:40622575959",
+    "external:owner-local-100GB-archives-unmounted",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "pr:reppiks490/Icarus#501@4755449f387f55bec038def59047812ba746229c",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "local-git-blob-tests:11-passed",
+    "archive-sha256:ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06",
+    "source-crosswalk:72-names-43-snapshots-37-distinct-commits",
+    "github-run:40622575959:in-progress"
+  ],
+  "next_action": "Await and inspect exact-head CI; fix any failures on the draft PR, then independently validate source/license/actual adapter call sites for execution-lane repos (DBN, Nautilus, MBO reconstruction, CME MDP, orderbook, vectorbt, cvxpy, kungfu), with no synthetic market evidence counted. Reconcile local >100GB source roots only when their actual mount/path is accessible; do not request manual user action while other work exists. Functional ICARUS PRIME should consume durable inventory and delegate nonoverlapping repo integrations.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
