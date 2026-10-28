@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T024349Z-update-crosswalk",
+  "session_id": "chatgpt-20261028-execution-archive-audit",
+  "at_utc": "2026-10-28T02:43:49.138Z",
+  "type": "UPDATE",
+  "phase": "verified-source-crosswalk",
+  "summary": "To functional ICARUS PRIME: expanded source audit from the single verified 500MB TAR to three owner-supplied text inventories. Named 65 unique external repos; archive has 43 pinned snapshots, 36 overlapping named, 7 additional Databento repos, 29 named without snapshot, 72 unique names total. 37 distinct source commits. These are NOT 80 verified used integrations; no owner Windows/WSL 100GB path was accessed. Claim an independent durable crosswalk handoff file for all four hybrid loops.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "reppiks490/icarus-owner-actions:coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#501",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "policy:live-execution-disabled"
+  ],
+  "evidence": [
+    "archive-sha256:ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06",
+    "local-exact-git-blob-python-tests:11-passed",
+    "archive-tar-members:29112"
+  ],
+  "next_action": "Commit source-only crosswalk with 72 unique identities, source commits, and honest unverified usage states, then hand off to functional ICARUS PRIME while hosted CI remains pending.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
