@@ -1,0 +1,55 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T021220Z-plan-real-workspace-panel",
+  "session_id": "chatgpt-20261028-real-engine-workspace",
+  "at_utc": "2026-10-28T02:12:20Z",
+  "type": "PLAN",
+  "phase": "real-evidence-workspace-read-bridge",
+  "summary": "Claim a new real-evidence workspace adapter/test/workflow/docs plus one narrow existing read-router path `workspace_intelligence_panels.py`. Prior research-panel support session is stale/reclaimable. Add `federation/engine-evidence` selected-workspace read which consumes only a configured exact Engine checkout, returns explicit UNAVAILABLE/BLOCKED instead of networking, and exposes real catalog/gauges/blockers with execution/model promotion false. No background services, provider calls, collection, training, local broker controls or UI mutation.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/engine_evidence_workspace.py",
+    "icarus_engine/workspace_intelligence_panels.py",
+    "tests_engine/test_workspace_engine_evidence_real.py",
+    ".github/workflows/workspace-engine-evidence-real.yml",
+    "docs/integrations/ENGINE_EVIDENCE_WORKSPACE_PANEL.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/engine_evidence_workspace.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_intelligence_panels.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_engine_evidence_real.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/workspace-engine-evidence-real.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/ENGINE_EVIDENCE_WORKSPACE_PANEL.md"
+    }
+  ],
+  "dependencies": [
+    "session:icarus1-20261022-research-panels-support stale/reclaimable",
+    "pr:reppiks490/Icarus#498",
+    "constraint:read_only"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40619128466 real catalog success",
+    "ci:reppiks490/Icarus/actions/runs/40619386143 real gauges success"
+  ],
+  "next_action": "Implement explicit env-bound peer checkout adapter and selected-workspace reader, validate against exact real Engine commit and existing workspace safety regressions.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
