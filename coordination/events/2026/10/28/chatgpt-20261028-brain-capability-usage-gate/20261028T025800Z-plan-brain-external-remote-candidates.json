@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T025800Z-plan-brain-external-remote-candidates",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "at_utc": "2026-10-28T02:58:00Z",
+  "type": "PLAN",
+  "phase": "controlled-missing-repo-discovery",
+  "summary": "Extend independent Brain lane with controlled source-metadata review of 10 high-value public repositories absent from the owner-actions 72-identity inventory. Read-only GitHub source commits, root license text, Python version/dependency manifests; no clone/install/execute. Publish a durable, deduplicated candidate backlog for Prime and all loops. Treat 72+10=82 as discovered identities only, never as 80 installed/invoked integrations. Include Elastic License 2.0 caution for Arize Phoenix and RD-Agent heavy Docker/LLM dependency footprint.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "pr:reppiks490/icarus-owner-actions#87",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "https://github.com/microsoft/RD-Agent",
+    "https://github.com/microsoft/qlib",
+    "https://github.com/langchain-ai/langgraph",
+    "https://github.com/pydantic/pydantic-ai",
+    "https://github.com/Arize-ai/phoenix",
+    "https://github.com/mlflow/mlflow",
+    "https://github.com/open-telemetry/opentelemetry-python",
+    "https://github.com/evidentlyai/evidently",
+    "https://github.com/huggingface/smolagents",
+    "https://github.com/stanfordnlp/dspy"
+  ],
+  "next_action": "Commit 10-repo exact-commit metadata candidate backlog with license/constraints and explicit zero runtime-use counts; do not install or count toward 80 actually-used target.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/2026-10-28-brain-external-candidate-backlog.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-brain-capability-usage-gate/20261028T025800Z-plan-brain-external-remote-candidates.json"
+    }
+  ]
+}
