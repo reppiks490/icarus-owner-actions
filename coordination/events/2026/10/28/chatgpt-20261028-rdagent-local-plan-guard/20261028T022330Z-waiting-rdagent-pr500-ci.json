@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T022330Z-waiting-rdagent-pr500-ci",
+  "session_id": "chatgpt-20261028-rdagent-local-plan-guard",
+  "at_utc": "2026-10-28T02:23:30Z",
+  "type": "WAITING",
+  "phase": "exact-head-hosted-ci-and-independent-review",
+  "summary": "Icarus draft stacked PR #500 now contains four new isolated RD-Agent local model admission files. Offline Python 3 26/26 synthetic tests and syntax checks passed; hosted exact-head focused run 40620548340 and broad app run 40620548204 were queued/in-progress at inspection. Structural pass never authorizes execution. Prime is not required for independent research-only verification; owner Windows/WSL2 hardware, model compatibility, rights, native inference and model availability remain unverified.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/10/28/chatgpt-20261028-rdagent-local-plan-guard/20261028T022330Z-waiting-rdagent-pr500-ci.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-rdagent-local-plan-guard/20261028T022330Z-waiting-rdagent-pr500-ci.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#500@d4faf541a7c086c37875672abc2a4aeb5d4a4c43",
+    "github-run:reppiks490/Icarus/40620548340",
+    "github-run:reppiks490/Icarus/40620548204",
+    "pr:reppiks490/Icarus#486",
+    "constraint:owner-host-unverified"
+  ],
+  "evidence": [
+    "local:python-unittest:26/26 synthetic",
+    "source:reppiks490/Icarus/pull/500/files"
+  ],
+  "next_action": "Inspect exact-head hosted tests; if green publish HANDOFF with concrete run IDs, keep draft and request independent review; if red fix only owned files.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
