@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261028-nautilus-native-quote",
+  "completed_at_utc": "2026-10-28T01:31:40Z",
+  "result": "blocked",
+  "scope": "Research-only physical futures contract/venue quote staging with three independently pinned digests and full-stream native NautilusTrader 1.221.0 QuoteTick readback. Isolated CI verified; broad application CI and empirical rights/runtime gates pending.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/494",
+  "source_reviewed_sha": "f43700f2f97426867e3c0093193aa724c05a479f",
+  "evidence": [
+    "Icarus draft #494 four new files based on #486; exact head f43700f2f97426867e3c0093193aa724c05a479f.",
+    "Native CI #40615400445 SUCCESS: 26 synthetic-only tests; actual wheel NautilusTrader 1.221.0, full 10,021-row native roundtrip, source/export/manifest hashes, fail-closed input and authority checks.",
+    "Earlier native CI #40615236094 SUCCESS 23 tests; initial YAML parsing, unavailable upstream 1.231.0 public wheel, and static QuoteTick.to_dict API failures fixed with evidence.",
+    "Coordination #80 CI #40615422560 SUCCESS across Python 3.11–3.13; compiled zero path collisions.",
+    "Exact-head broad application CI #40615400457 and #40615396540 pending; do not claim passing."
+  ],
+  "remaining_work": [
+    "Review broad exact-head application workflows and source code independently before any merge; maintain draft state.",
+    "Validate real vendor provenance and license rights, actual futures instrument economics/venue, source clock synchronization and quote coverage; never infer full L2 from top-of-book quotes.",
+    "Separate native NautilusTrader synthetic-only backtest temporal/arrival parity and no-order controls; then realistic real-price fill/queue/latency/fee evidence and protected holdout.",
+    "No owner Windows/WSL2 runtime proof, no data collection or provider spend, no model training, no broker arming, no live orders, no UI/Brain promotion."
+  ]
+}

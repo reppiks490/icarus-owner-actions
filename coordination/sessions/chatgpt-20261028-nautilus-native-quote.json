@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-nautilus-native-quote",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Build a research-only NautilusTrader 1.231.0 native QuoteTick source-to-staging roundtrip with strict physical-contract/venue identity, dual-clock causality, tick/lot validation, independently pinned digests and zero broker/order/runtime controls.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/nautilus-native-quote-20261028",
+  "started_at_utc": "2026-10-28T01:24:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "offline-tests",
+    "isolated-native-nautilus-ci"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#486@df706bc7079d84f74924a89d2b0d6151ffeac7fb",
+    "reppiks490/icarus-owner-actions#79",
+    "constraint:no_live_broker_arming",
+    "constraint:no_paid_provider_collection"
+  ]
+}

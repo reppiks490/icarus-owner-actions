@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T012425Z-plan-native-quote",
+  "session_id": "chatgpt-20261028-nautilus-native-quote",
+  "at_utc": "2026-10-28T01:24:25Z",
+  "type": "PLAN",
+  "phase": "native-nautilus-quote-research-only",
+  "summary": "Claim four new unreserved files stacked on Icarus draft #486. Add strict streaming actual-contract/venue top-of-book quote staging and independently pinned source/export hashes, clock/sequence/grid checks, then run native pinned NautilusTrader 1.231.0 QuoteTick to_dict/from_dict readback against synthetic fixtures in isolated CI. Never infer complete L2 book, fills, broker orders, empirical edge, model training, or Windows host compatibility. Preserve other branches, active/paused automations, no provider calls or spending.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_nautilus_quote_bridge.py",
+    "tests_engine/test_external_nautilus_quote_bridge.py",
+    ".github/workflows/external-nautilus-quote-parity.yml",
+    "docs/integrations/NAUTILUS_QUOTE_PARITY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_nautilus_quote_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_nautilus_quote_bridge.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-nautilus-quote-parity.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/NAUTILUS_QUOTE_PARITY.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "pr:reppiks490/Icarus#493",
+    "constraint:execution_authorized=false",
+    "constraint:no_provider_collection_or_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40609197840 success",
+    "ci:reppiks490/Icarus/actions/runs/40609197749 success",
+    "ci:reppiks490/Icarus/actions/runs/40609182612 success",
+    "upstream:nautechsystems/nautilus_trader@v1.231.0 docs/concepts/data/quote_tick.md"
+  ],
+  "next_action": "Implement narrow quote staging/native verification, test with synthetic fixtures in pinned CI, record exact HEAD, preserve no-live boundary.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
