@@ -1,0 +1,1455 @@
+{
+  "schema_version": "icarus-external-source-inventory-v1",
+  "generated_at_utc": "2026-10-28T02:43:59.597Z",
+  "scope": "Evidence checkpoint for the 65 owner-listed external repositories and 43 pinned source snapshots, not the unmounted 100+GB local installation",
+  "source_list_names": [
+    "all-repos.txt",
+    "starred-repos.txt",
+    "forked-repos.txt"
+  ],
+  "source_archive": {
+    "filename": "ICARUS-GitHub-source-snapshots.tar.zst",
+    "bytes": 500867206,
+    "sha256": "ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06",
+    "verified_actual_archive_sha256": true,
+    "tar_members": 29112,
+    "confined_symlinks": 42,
+    "root_license_files_missing": 13
+  },
+  "counts": {
+    "distinct_named": 65,
+    "verified_snapshot_repositories": 43,
+    "unique_pinned_source_commits": 37,
+    "intersection_named_and_snapshot": 36,
+    "named_without_snapshot": 29,
+    "snapshot_not_named": 7,
+    "distinct_identity_union": 72,
+    "installed_verified": 0,
+    "actually_invoked_verified": 0,
+    "exact_head_integration_verified": 0,
+    "target_verified_used": 80
+  },
+  "usage_proof_policy": "Do not count a repo as used until exact pinned commit, concrete ICARUS adapter/callsite, real invocation evidence and exact-head CI are independently verified; fork duplicates sharing a commit do not add independent capability.",
+  "repo_entries": [
+    {
+      "repository": "CMEGroupPublic/datamine_python",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/CMEGroupPublic__datamine_python",
+      "source_commit": "0454c8f04cb379de10c2949590bf6b92479af520",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "Comfy-Org/ComfyUI",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "CurateLabs/xyg",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "JerBouma/FinanceDatabase",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "MainakRepositor/Datasets",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "NVIDIA/OpenShell",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "NationalSecurityAgency/ghidra",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "Shine-5705/Reconstructing-MBP-10-data-from-MBO-data",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/Shine-5705__Reconstructing-MBP-10-data-from-MBO-data",
+      "source_commit": "5614e5a28fdc3a8c0fdeb446a97b3890eae8aed3",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "TencentCloud/Octop",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "Yuri-Mizuki/AlphaGPT",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/Yuri-Mizuki__AlphaGPT",
+      "source_commit": "d851f2221dcaf4d53a707344f68ae6801e3e5af5",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "Yuri-Mizuki/daily_stock_analysis",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/Yuri-Mizuki__daily_stock_analysis",
+      "source_commit": "ef7264f76a9b16d6854b6d26bfe38229734a43aa",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "Zdong104/FNSPID_Financial_News_Dataset",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/Zdong104__FNSPID_Financial_News_Dataset",
+      "source_commit": "4054842ec476953b30ee874d4b7e8eea786a21fa",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "affaan-m/ECC",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "agent-substrate/substrate",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "anomalyco/opencode",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "anthropics/claude-plugins-official",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "ar51an/unbound-dashboard",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "awesomedata/awesome-public-datasets",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/awesomedata__awesome-public-datasets",
+      "source_commit": "4016cdea56d66bb59c73f80f9b7d4526d6d1181a",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "clonemasterUwU/orderbook",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/clonemasterUwU__orderbook",
+      "source_commit": "0e261be47464155043b9728b14908785fea4a420",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "connu/awesome-datasets",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/connu__awesome-datasets",
+      "source_commit": "c7416f524d11441946a2931211dbdf190a9f524c",
+      "source_license_filenames": [
+        "license"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "cporter202/API-mega-list",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "cvxpy/cvxpy",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/cvxpy__cvxpy",
+      "source_commit": "8280648bd1f70fce701d362de4f58120f940c2f3",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/.github",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/.github",
+      "source_commit": "73db9fc9d5c038a6684bfcd2e4e6dd8f576ce667",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/databento-cpp",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/databento-cpp",
+      "source_commit": "ae3bb52f95710082ca83b3df0216520847c5f5a5",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/databento-python",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/databento-python",
+      "source_commit": "bde82bd2688a50644851725dfbfe8b6297235c92",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/databento-rs",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/databento-rs",
+      "source_commit": "72316bd104b47a2a9c24d10eb10f6daad9b36735",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/dbn",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/dbn",
+      "source_commit": "82f76c1de6f5c8a1f4b3711fac423f88a3f91d67",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/epoch",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/epoch",
+      "source_commit": "0686095e126874fca1799db594b976faaf982ddd",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "databento/secdef-parser",
+      "source_list_membership": [],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/secdef-parser",
+      "source_commit": "8c8c00cdab9140345200f202f673d98e1dcc2392",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "datasets/oil-prices",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/datasets__oil-prices",
+      "source_commit": "24f11b38195b58618196adb548c929e15f37a43c",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "datasets/publicbodies",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/datasets__publicbodies",
+      "source_commit": "add22e71c622528514987233de8e69a0d72fe12a",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "datasets/s-and-p-500-companies",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/datasets__s-and-p-500-companies",
+      "source_commit": "2f083ae70907cca3b644a94744dde87f3199fc5b",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "datasets/s-and-p-500-companies-financials",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/datasets__s-and-p-500-companies-financials",
+      "source_commit": "4223bbde4d13d349f0399cad98efb030a28878c5",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "epam/java-cme-mdp3-handler",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/epam__java-cme-mdp3-handler",
+      "source_commit": "0291e50f7a39593c7176987f254b7e30cc5f2ca6",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "firmai/financial-machine-learning",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/firmai__financial-machine-learning",
+      "source_commit": "a0fda6ac1f40251b9eb7cc32dd665db59130714e",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "grafana/grafana",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "grafana/loki",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "heygen-com/hyperframes",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "hudson-and-thames/EdgarSEC",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/hudson-and-thames__EdgarSEC",
+      "source_commit": "e8632932379dfddf81b6b16f3213e4ff1e45bd24",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "hudson-and-thames/mlfinlab",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/hudson-and-thames__mlfinlab",
+      "source_commit": "79dcc7120ec84110578f75b025a75850eb72fc73",
+      "source_license_filenames": [
+        "LICENSE.txt"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "kgretzky/evilginx2",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "kungfu-systems/kungfu",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/kungfu-systems__kungfu",
+      "source_commit": "a025fe8fd3063175a263c481b42b0b34f63fa91c",
+      "source_license_filenames": [
+        "LICENSE-POLICY.md",
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "mdozmorov/Data_notes",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "mindsdb/mindsdb-docs-old",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "mksglu/context-mode",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "morluto/rea",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/rea",
+      "source_commit": "1173c0a9dc1b352a60943a491462294db8f353ae",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "nautechsystems/nautilus_trader",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/nautechsystems__nautilus_trader",
+      "source_commit": "a3df5884d39d697ac38b4bc0fd7a5cb16c6535c5",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "paperclipai/paperclip",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "pingdotgg/t3code",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "polakowo/vectorbt",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/polakowo__vectorbt",
+      "source_commit": "8e30b8ce102f302bec0c0226e05b59714453bebd",
+      "source_license_filenames": [
+        "LICENSE.md"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "quantopian/quantopian-algos",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/quantopian__quantopian-algos",
+      "source_commit": "ec0fac6b5cfc84497957f7cbf3968ec559239d25",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "ranaroussi/yfinance",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/ranaroussi__yfinance",
+      "source_commit": "2081dca0b224512ff768f9c5e6bd9c658a3b8339",
+      "source_license_filenames": [
+        "LICENSE.txt"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "recinosr/wall-street-motor",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "reppiks490/Reconstructing-MBP-10-data-from-MBO-data",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__Reconstructing-MBP-10-data-from-MBO-data",
+      "source_commit": "5614e5a28fdc3a8c0fdeb446a97b3890eae8aed3",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/awesome-public-datasets",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__awesome-public-datasets",
+      "source_commit": "4016cdea56d66bb59c73f80f9b7d4526d6d1181a",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/awesome-public-real-time-datasets",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__awesome-public-real-time-datasets",
+      "source_commit": "519508440fe7f784be7d1e814bc2129d77424567",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/datasets-links-collection",
+      "source_list_membership": [
+        "all",
+        "starred",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__datasets-links-collection",
+      "source_commit": "fd98f4a5fc42f08ce04aaf1cec9ce666341e763d",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/exchange-rates",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__exchange-rates",
+      "source_commit": "9e669bcf5274a8c6d9974721d3fecace76982520",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/oil-prices",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__oil-prices",
+      "source_commit": "24f11b38195b58618196adb548c929e15f37a43c",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/orderbook",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__orderbook",
+      "source_commit": "0e261be47464155043b9728b14908785fea4a420",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/publicbodies",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__publicbodies",
+      "source_commit": "add22e71c622528514987233de8e69a0d72fe12a",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/s-and-p-500-companies",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__s-and-p-500-companies",
+      "source_commit": "2f083ae70907cca3b644a94744dde87f3199fc5b",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "reppiks490/torq-cme",
+      "source_list_membership": [
+        "all",
+        "forked"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/reppiks490__torq-cme",
+      "source_commit": "4d5f3484368cc55e16b970b3cb252a1eae38c905",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "richie-ma/cme.mdp",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/richie-ma__cme.mdp",
+      "source_commit": "4d0db0c941c539e1401f949edb0cb46dd1092534",
+      "source_license_filenames": [
+        "LICENSE.md"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "ruvnet/ruflo",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "rx3asarc/toragents-pi",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "sovai-research/open-investment-datasets",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/sovai-research__open-investment-datasets",
+      "source_commit": "6af7a5d0d12363e26d79cd463b699f70a93c2338",
+      "source_license_filenames": [],
+      "root_license_file_presence": false,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    },
+    {
+      "repository": "tashfeenahmed/freellmapi",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "vdmitriyev/datasets-links-collection",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "vectorize-io/hindsight",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": null,
+      "archive_directory": null,
+      "source_commit": null,
+      "source_license_filenames": [],
+      "root_license_file_presence": "not_inspected",
+      "snapshot_verified": false,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "named-only",
+      "license_review_required": true,
+      "blocker": "source snapshot/checkout not in verified archive; remote or local inventory required"
+    },
+    {
+      "repository": "virattt/financial-datasets",
+      "source_list_membership": [
+        "all",
+        "starred"
+      ],
+      "source_archive": "ICARUS-GitHub-source-snapshots.tar.zst",
+      "archive_directory": "source-repos/virattt__financial-datasets",
+      "source_commit": "9856644262caab56cf174109924bba1d81330335",
+      "source_license_filenames": [
+        "LICENSE"
+      ],
+      "root_license_file_presence": true,
+      "snapshot_verified": true,
+      "installed": "unverified",
+      "actually_used_by_icarus": "unverified",
+      "exact_head_integration_ci": "unverified",
+      "integration_stage": "source-snapshot-verified",
+      "license_review_required": true,
+      "blocker": "source adapter and runtime integration receipts absent"
+    }
+  ],
+  "source_limitations": [
+    "Owner-reported two >100GB local source locations are not mounted or verifiable from this cloud run.",
+    "Presence of source and a license filename is not permission to execute, train, redistribute or integrate.",
+    "This file is a verified archive/list crosswalk; it does not establish actual usage, installation, data entitlement or empirical market research."
+  ],
+  "coordination": {
+    "session": "chatgpt-20261028-execution-archive-audit",
+    "code_pr": "https://github.com/reppiks490/Icarus/pull/501",
+    "coordination_pr": "https://github.com/reppiks490/icarus-owner-actions/pull/87",
+    "functional_prime_session": "icarus2-20261020-federation-integration"
+  }
+}
