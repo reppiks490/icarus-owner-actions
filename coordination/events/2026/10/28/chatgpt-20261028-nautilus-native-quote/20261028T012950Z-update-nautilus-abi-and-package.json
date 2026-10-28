@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T012950Z-update-nautilus-abi-and-package",
+  "session_id": "chatgpt-20261028-nautilus-native-quote",
+  "at_utc": "2026-10-28T01:29:50Z",
+  "type": "UPDATE",
+  "phase": "native-wheel-abi-corrected",
+  "summary": "Native quote PR #494 established on separate branch from draft #486. Initial workflow YAML unquoted colon in pip flag was invalid; corrected. Upstream GitHub v1.231.0 tag lacked a wheel in CI's public package index (pip listed up to 1.221.0), so pinned and source-audited 1.221.0 instead. First real native run installed 1.221.0 but exposed static QuoteTick.to_dict(obj) API incompatibility; corrected to QuoteTick.to_dict(quote), and exact-head native CI #40615236094 succeeded with 23 synthetic tests. Added conservative native 64-bit fixed-point guard, 10021-record native readback regression and 4KiB physical line bound. Latest exact-head CI pending. No vendor data, broker/order API, live controls, provider requests or spend.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_nautilus_quote_bridge.py",
+    "tests_engine/test_external_nautilus_quote_bridge.py",
+    ".github/workflows/external-nautilus-quote-parity.yml",
+    "docs/integrations/NAUTILUS_QUOTE_PARITY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-nautilus-native-quote/20261028T012950Z-update-nautilus-abi-and-package.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#494",
+    "pr:reppiks490/icarus-owner-actions#80",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40615110624 failure: public wheel v1.231.0 unavailable",
+    "ci:reppiks490/Icarus/actions/runs/40615193004 failure: static QuoteTick.to_dict ABI",
+    "ci:reppiks490/Icarus/actions/runs/40615236094 success: 23 tests actual native 1.221.0"
+  ],
+  "next_action": "Verify final HEAD with 25+ synthetic tests and 10021-record native readback, inspect broad CI, independently review code and record handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
