@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T021020Z-plan-real-evidence-gauges",
+  "session_id": "chatgpt-20261028-real-engine-gauges",
+  "at_utc": "2026-10-28T02:10:20Z",
+  "type": "PLAN",
+  "phase": "real-evidence-infrastructure-gauges",
+  "summary": "Claim four isolated new paths stacked on real-data #497. Derive gauges only from actual Engine committed evidence: Sentinel health share, provider substantive delivery share, native verified lane share, source consumption availability, SEC manifest integrity, and interrepo acceptance. No aggregate 'edge' score, no synthetic rows, provider calls, new collection, training, Brain promotion, UI runtime mutation or execution authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/engine_evidence_gauges.py",
+    "tests_engine/test_engine_evidence_gauges_real.py",
+    ".github/workflows/engine-evidence-gauges-real.yml",
+    "docs/integrations/ENGINE_EVIDENCE_GAUGES.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/engine_evidence_gauges.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_engine_evidence_gauges_real.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/engine-evidence-gauges-real.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/ENGINE_EVIDENCE_GAUGES.md"
+    }
+  ],
+  "dependencies": [
+    "ci:reppiks490/Icarus/actions/runs/40619128466 success",
+    "pr:reppiks490/Icarus#497"
+  ],
+  "evidence": [
+    "real-catalog:63,531 provider rows; SEC 16,000 facts/2,380 filings; Native Five verified lanes; Sentinel real health counts"
+  ],
+  "next_action": "Implement semantic gauge projection and dedicated real cross-repo validation; maintain explicit non-edge labels.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
