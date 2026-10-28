@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T013135Z-handoff-native-quote",
+  "session_id": "chatgpt-20261028-nautilus-native-quote",
+  "at_utc": "2026-10-28T01:31:35Z",
+  "type": "HANDOFF",
+  "phase": "native-nautilus-quote-structural-parity-verified",
+  "summary": "Delivered Icarus draft #494 (four new paths) on commit f43700f2f97426867e3c0093193aa724c05a479f, stacked on draft #486. Native CI #40615400445 SUCCESS: 26 synthetic-only tests on Python3.11 with actual NautilusTrader 1.221.0 wheel, source→quarantined JSONL→native QuoteTick roundtrip and 10,021-row full native readback; all authority flags denied. Rejected wrong source/export/manifest digests, forged authority, bad sequence/clocks, mixed/continuous contracts, crossed/off-grid/overflow quotes, symlinks, unexpected files, output overwrite and oversized CSV physical line. No native backtest, orders, data collection, licensed market rows or empirical claim. Broad exact-head application workflows #40615400457 and #40615396540 pending at handoff. Coordination #80 CI #40615422560 SUCCESS across Python 3.11/3.12/3.13, compiler reports 0 path collisions. Owner PC/WSL and source rights remain unverified. Keep both PRs draft.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_nautilus_quote_bridge.py",
+    "tests_engine/test_external_nautilus_quote_bridge.py",
+    ".github/workflows/external-nautilus-quote-parity.yml",
+    "docs/integrations/NAUTILUS_QUOTE_PARITY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-nautilus-native-quote/20261028T013135Z-handoff-native-quote.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#494@f43700f2f97426867e3c0093193aa724c05a479f",
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#80",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_collection_or_spend"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40615400445 success 26 synthetic tests native 1.221.0",
+    "ci:reppiks490/icarus-owner-actions/actions/runs/40615422560 success 0 path collisions",
+    "ci:reppiks490/Icarus/actions/runs/40615400457 pending broad",
+    "ci:reppiks490/Icarus/actions/runs/40615396540 pending broad"
+  ],
+  "next_action": "Verify both broad exact-head workflows; independent security and instrument-contract review. Next separate lane: native Nautilus synthetic replay with no order methods and as-of arrival time parity, then authorized vendor source/clock/license validation and real-price fill reconciliation. No Brain/strategy/UI promotion until empirical gates and holdout approval.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
