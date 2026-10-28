@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-real-engine-workspace",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Expose the verified real Engine evidence catalog and gauges through a selected-workspace read-only intelligence panel, with explicit unavailable/blocker states and zero network, training or execution side effects",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/real-engine-evidence-workspace-20261028",
+  "started_at_utc": "2026-10-28T02:12:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "real-cross-repo-evidence",
+    "workspace-read-only"
+  ],
+  "initial_dependencies": [
+    "pr:reppiks490/Icarus#498@fda4c0fcda293506be751020fd8070d8362c8ffc",
+    "engine-peer:10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3",
+    "constraint:no_synthetic_market_evidence",
+    "constraint:no_worker_start",
+    "constraint:no_live_broker_arming"
+  ]
+}
