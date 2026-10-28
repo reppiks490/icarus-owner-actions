@@ -1,0 +1,52 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T021944Z-plan-rdagent-local-model-admission",
+  "session_id": "chatgpt-20261028-rdagent-local-plan-guard",
+  "at_utc": "2026-10-28T02:19:44Z",
+  "type": "PLAN",
+  "phase": "independent-isolated-admission-gate",
+  "summary": "New-file-only RD-Agent local chat and embedding model plan verifier: read preflight capacity and proposed model plan, reject nonloopback endpoints, unsafe or unverified model sizing, stale/unqualified host evidence; output non-executable research-only assessment. No dependency import, downloads, provider requests, activation or strategy/UI changes. Coordinate with Prime through bus without waiting.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_rd_agent_model_guard.py",
+    "tests_engine/test_external_rd_agent_model_guard.py",
+    "docs/integrations/EXTERNAL_RDAGENT_MODEL_GUARD.md",
+    ".github/workflows/external-rdagent-model-guard.yml"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_rd_agent_model_guard.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_rd_agent_model_guard.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_RDAGENT_MODEL_GUARD.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-rdagent-model-guard.yml"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:execution_authorized_false",
+    "constraint:no_spend_or_network",
+    "constraint:owner-host-unverified"
+  ],
+  "evidence": [
+    "source:reppiks490/Icarus#486:icarus_engine/external_rd_agent_preflight.py",
+    "source:reppiks490/icarus-owner-actions/coordination/START_HERE.md",
+    "source:reppiks490/icarus-owner-actions/coordination/collisions.json"
+  ],
+  "next_action": "Implement new independent offline plan guard with adversarial tests and hosted CI; keep draft pending owner-host evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
