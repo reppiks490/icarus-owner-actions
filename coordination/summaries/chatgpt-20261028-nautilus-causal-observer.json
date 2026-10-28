@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "chatgpt-20261028-nautilus-causal-observer",
+  "completed_at_utc": "2026-10-28T01:56:20Z",
+  "result": "blocked",
+  "scope": "Isolated native NautilusTrader QuoteTick reception-time causal as-of observer with native full-stream provenance; focused CI verified, broader CI and empirical gates pending.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/495",
+  "source_reviewed_sha": "024c9698533cbf9bcb5ce75e027e1ba21a54b8d9",
+  "evidence": [
+    "Draft source #495, final exact HEAD 024c9698533cbf9bcb5ce75e027e1ba21a54b8d9, four isolated paths only.",
+    "Dedicated native CI #40617886169 success, pinned NautilusTrader 1.221.0, 26 upstream + 9 new synthetic regression tests including >10000 records.",
+    "Initial native CI #40617771806 failed due only to assertion mismatch; corrected on exact source HEAD.",
+    "Coordination #81 path claim and status; original compiler #40617839416 SUCCESS, latest head coordination CI pending.",
+    "Icarus broad app CI #40617886130 pending; do not claim green."
+  ],
+  "remaining_work": [
+    "Verify exact-head broad app CI and coordination final head, independent source/security review and parent draft stacking before merge.",
+    "Run true isolated native NautilusTrader BacktestEngine synthetic temporal replay, without order placement or broker paths.",
+    "Prove licensed vendor source and actual physical contract metadata, initial snapshots, exchange-to-arrival clock offsets, sufficient depth, conservative queue/latency/fees, and real-price fills.",
+    "No protected holdout approval, profitability proof, model training, empirical Brain/UI admission, local owner Windows/WSL2 execution, live broker arming, deployment or spending."
+  ]
+}
