@@ -1,0 +1,51 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T002917Z-plan-native-temporal-parity",
+  "session_id": "chatgpt-20261028-hft-native-temporal-parity",
+  "at_utc": "2026-10-28T00:29:17Z",
+  "type": "PLAN",
+  "phase": "synthetic-native-replay-temporal-parity",
+  "summary": "Claim four new narrow unreserved files stacked on Icarus draft #492. Execute independently verified fixed synthetic L2 feed through actual pinned HFTBacktest 2.4.4 in two replay schedules, compare as-of best book states, test future event mutation cannot change earlier state, check zero positions, reject invalid upstream ABI/version. Never use vendor data, strategy orders, PnL or fill claims. Add focused synthetic tests, exact-head isolated CI and limitations. Preserve all branches, automations and execution restrictions.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_temporal_parity.py",
+    "tests_engine/test_external_hft_temporal_parity.py",
+    ".github/workflows/external-hft-temporal-parity.yml",
+    "docs/integrations/HFT_TEMPORAL_PARITY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_hft_temporal_parity.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_hft_temporal_parity.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-hft-temporal-parity.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/HFT_TEMPORAL_PARITY.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#492",
+    "pr:reppiks490/icarus-owner-actions#78",
+    "constraint:no_new_collection_or_spend",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40602195231 success",
+    "ci:reppiks490/Icarus/actions/runs/40602195208 success",
+    "ci:reppiks490/Icarus/actions/runs/40602188497 success"
+  ],
+  "next_action": "Implement independent temporal parity and future-event isolation, run exact-head CI, record evidence and handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

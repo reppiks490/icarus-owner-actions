@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T003125Z-handoff-native-temporal-parity",
+  "session_id": "chatgpt-20261028-hft-native-temporal-parity",
+  "at_utc": "2026-10-28T00:31:25Z",
+  "type": "HANDOFF",
+  "phase": "native-temporal-parity-focused-ci-verified-broad-pending",
+  "summary": "Implemented and verified independent synthetic-only native HFTBacktest 2.4.4 replay temporal parity on stacked Icarus draft #493@7c35ca2748552122389276e2e2225efbcbfaf986. New module/test/workflow/doc are isolated from parent #492 and runtime. Two independently SHA-verified 5-event L2 fixtures share first 3 events but differ after early 2.5s probe; one-step and segmented replay produce identical early and later partial-book states, future mutations do not affect earlier observations, later mutation affects later state, position remains zero. Native CI #40609197840 succeeded: 6 tests Python3.11 actual Rust/Python simulator and receipt, no order methods, source/vendor/clock/fill/holdout/training/execution all unverified/denied. Broad app exact-head #40609197749/#40609182612 still in progress. No provider calls, spending, secrets, data collection, automations, model training, PC runtime, merges or live broker control changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_hft_temporal_parity.py",
+    "tests_engine/test_external_hft_temporal_parity.py",
+    ".github/workflows/external-hft-temporal-parity.yml",
+    "docs/integrations/HFT_TEMPORAL_PARITY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-hft-native-temporal-parity/20261028T003125Z-handoff-native-temporal-parity.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#493@7c35ca2748552122389276e2e2225efbcbfaf986",
+    "pr:reppiks490/Icarus#492",
+    "pr:reppiks490/icarus-owner-actions#79",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40609197840 success six native synthetic tests",
+    "ci:reppiks490/icarus-owner-actions/actions/runs/40609213317 success",
+    "ci:reppiks490/Icarus/actions/runs/40609197749 broad pending",
+    "ci:reppiks490/Icarus/actions/runs/40609182612 broad pending"
+  ],
+  "next_action": "Verify exact-head broad CI; independent review and native HFT version/ABI; add adversarial synthetic sequence/clock offset scenarios and independently authorized source snapshot/clock validation before any empirical fill calibration or Brain promotion. Do not merge until reviewed. Preserve active/paused automations.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
