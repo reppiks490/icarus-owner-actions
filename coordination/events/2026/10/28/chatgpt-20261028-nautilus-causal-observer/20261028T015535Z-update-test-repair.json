@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T015535Z-update-test-repair",
+  "session_id": "chatgpt-20261028-nautilus-causal-observer",
+  "at_utc": "2026-10-28T01:55:35Z",
+  "type": "UPDATE",
+  "phase": "native-regression-exact-head-repair",
+  "summary": "First native audit CI #40617771806 installed pinned NautilusTrader 1.221.0 and passed all 26 upstream QuoteTick tests; new suite passed 8/9. Only failing assertion expected 'digest' while parent's correct tamper error was 'export SHA-256 mismatch'. Corrected single test assertion on Icarus #495 HEAD 024c9698533cbf9bcb5ce75e027e1ba21a54b8d9. New exact-head native CI #40617886169 and app tests #40617886130 started; do not claim success until completed. No code execution authority, provider calls or data collections.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-nautilus-causal-observer/20261028T015535Z-update-test-repair.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#495@024c9698533cbf9bcb5ce75e027e1ba21a54b8d9"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40617771806 failure 8/9 causal tests, 26/26 parent tests success",
+    "ci:reppiks490/Icarus/actions/runs/40617886169 pending",
+    "ci:reppiks490/Icarus/actions/runs/40617886130 pending"
+  ],
+  "next_action": "Inspect completed exact-head native run and broad tests; publish handoff with precise unverified empirical gates.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

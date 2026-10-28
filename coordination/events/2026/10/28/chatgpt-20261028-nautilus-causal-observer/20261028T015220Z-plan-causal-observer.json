@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T015220Z-plan-causal-observer",
+  "session_id": "chatgpt-20261028-nautilus-causal-observer",
+  "at_utc": "2026-10-28T01:52:20Z",
+  "type": "PLAN",
+  "phase": "native-nautilus-asof-causal-research",
+  "summary": "Claim four novel isolated paths stacked on draft Icarus #494. Independently pinned provenance-gated full-stream native QuoteTick as-of-arrival temporal observer; compare schedule-independent snapshots and future-edit nonleak with synthetic fixtures. No live broker/orders, backtest fill claims, provider collection, spend, training, deployment or change to other agents' branches, UI, automation, Engine or executable runtime.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_nautilus_causal_audit.py",
+    "tests_engine/test_external_nautilus_causal_audit.py",
+    ".github/workflows/external-nautilus-causal-audit.yml",
+    "docs/integrations/NAUTILUS_CAUSAL_AUDIT.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_nautilus_causal_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_nautilus_causal_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-nautilus-causal-audit.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/NAUTILUS_CAUSAL_AUDIT.md"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#494",
+    "pr:reppiks490/Icarus#486",
+    "pr:reppiks490/icarus-owner-actions#80",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40615400445 success 26 synthetic native QuoteTick tests",
+    "coordination:default-main collisions.json 0 as of 2026-10-25; recheck branch-specific before write"
+  ],
+  "next_action": "Implement isolated module/tests/workflow/docs and verify exact commit; hand off remaining empirical and owner host gates.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

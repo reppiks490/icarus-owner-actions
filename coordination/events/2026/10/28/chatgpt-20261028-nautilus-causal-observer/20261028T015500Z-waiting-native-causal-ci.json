@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T015500Z-waiting-native-causal-ci",
+  "session_id": "chatgpt-20261028-nautilus-causal-observer",
+  "at_utc": "2026-10-28T01:55:00Z",
+  "type": "WAITING",
+  "phase": "exact-head-native-and-broad-ci",
+  "summary": "Icarus draft #495 created with four separate paths on HEAD 82803b5fd341d56b66c0fe6dd77e6e97e1fac482, stacked on #494. Native pinned wheel CI #40617771806 and broad tests #40617771725 in progress; no passing claim yet. Original #494 focused native #40615400445 succeeded; its broad #40615400457 still in progress at last query. Research-only synthetic source-to-native as-of reception logic, no collection, orders, model or execution authority. Continue observing exact-head CI and repair only own isolated paths if failing.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-nautilus-causal-observer/20261028T015500Z-waiting-native-causal-ci.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#495@82803b5fd341d56b66c0fe6dd77e6e97e1fac482",
+    "pr:reppiks490/Icarus#494",
+    "constraint:execution_authorized=false"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40617771806 in_progress",
+    "ci:reppiks490/Icarus/actions/runs/40617771725 in_progress",
+    "ci:reppiks490/Icarus/actions/runs/40615400445 success"
+  ],
+  "next_action": "Inspect native CI, amend failing regressions in #495 branch only; leave handoff with exact commit and status.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
