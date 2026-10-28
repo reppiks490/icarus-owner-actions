@@ -9,9 +9,7 @@
   "repos": [
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "reppiks490/icarus-owner-actions:coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
-  ],
+  "paths": [],
   "dependencies": [
     "pr:reppiks490/Icarus#501",
     "pr:reppiks490/icarus-owner-actions#87",
@@ -24,5 +22,11 @@
   ],
   "next_action": "Commit source-only crosswalk with 72 unique identities, source commits, and honest unverified usage states, then hand off to functional ICARUS PRIME while hosted CI remains pending.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/handoffs/2026-10-28-external-execution-source-inventory.json"
+    }
+  ]
 }
