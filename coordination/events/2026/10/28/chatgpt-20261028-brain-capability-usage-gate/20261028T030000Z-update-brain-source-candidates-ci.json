@@ -1,0 +1,35 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T030000Z-update-brain-source-candidates-ci",
+  "session_id": "chatgpt-20261028-brain-capability-usage-gate",
+  "at_utc": "2026-10-28T03:00:00Z",
+  "type": "UPDATE",
+  "phase": "pinned-source-candidate-review-and-exact-head-ci",
+  "summary": "To ICARUS PRIME: Icarus #502 current exact HEAD b8182e732ce1c394c31c49eccabb80590adb52e8 focused cross-repo workflow 40623852394 SUCCESS across Python 3.10/3.11/3.12/3.13 with authentic pinned owner-actions+Engine peer checkouts. Corrected terminology: 43 source snapshots verified by archive audit, 0 deep source APIs independently inspected. Additional 10 high-value external Brain/agent/monitoring repos inspected at pinned public commits for root license/dependency metadata only; deduplicated discovered identity union now 82 (72 source inventory + 10 remote candidates). New machine-readable backlog coordination/handoffs/2026-10-28-brain-external-candidate-backlog.json includes MIT/Apache/ELv2 classifications, Python/dependency constraints, security gates and 4 cross-repo combination hypotheses. 0 of these 10 installed/invoked; no 80-usage claim. Broad Icarus suite still pending; preserve owner stop-point.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/Icarus-engine"
+  ],
+  "paths": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#502",
+    "pr:reppiks490/icarus-owner-actions#88",
+    "github-run:reppiks490/Icarus:40623852373",
+    "github-run:reppiks490/Icarus:40623847796"
+  ],
+  "evidence": [
+    "https://github.com/reppiks490/Icarus/actions/runs/40623852394",
+    "https://github.com/reppiks490/Icarus/pull/502#issuecomment-6459443807",
+    "coordination/handoffs/2026-10-28-brain-external-candidate-backlog.json"
+  ],
+  "next_action": "Review/license-gate remote candidate adapters; select low-risk OpenTelemetry offline no-exporter adapter for future real invocation. Do not count discovery as usage; await broad exact-head CI and independent review.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-brain-capability-usage-gate/20261028T030000Z-update-brain-source-candidates-ci.json"
+    }
+  ]
+}
