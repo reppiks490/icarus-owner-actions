@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-execution-archive-audit",
+  "actor": "ICARUS Execution Reality Twin / ChatGPT",
+  "model_family": "openai",
+  "goal": "Audit verified external execution-research source archives and implement a fail-closed, evidence-backed external repository inventory/usage verifier; coordinate with functional ICARUS PRIME without modifying live runtime.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "chatgpt/execution-archive-audit-20261028",
+  "pr": null,
+  "started_at_utc": "2026-10-28T02:39:44.743Z",
+  "stale_after_minutes": 1440,
+  "capabilities": [
+    "github",
+    "library-manifest",
+    "isolated-python-tests"
+  ],
+  "initial_dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-local-100GB-archives-unmounted",
+    "session:icarus2-20261020-federation-integration"
+  ]
+}
