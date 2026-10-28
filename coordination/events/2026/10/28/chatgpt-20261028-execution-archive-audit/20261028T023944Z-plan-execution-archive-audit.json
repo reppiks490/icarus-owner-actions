@@ -10,12 +10,7 @@
     "reppiks490/Icarus",
     "reppiks490/icarus-owner-actions"
   ],
-  "paths": [
-    "reppiks490/Icarus:tools/external_execution_archive_audit.py",
-    "reppiks490/Icarus:tests_engine/test_external_execution_archive_audit.py",
-    "reppiks490/icarus-owner-actions:coordination/sessions/chatgpt-20261028-execution-archive-audit.json",
-    "reppiks490/icarus-owner-actions:coordination/events/2026/10/28/chatgpt-20261028-execution-archive-audit/20261028T023944Z-plan-execution-archive-audit.json"
-  ],
+  "paths": [],
   "dependencies": [
     "policy:live-execution-disabled",
     "external:owner-local-100GB-archives-unmounted",
@@ -29,5 +24,23 @@
   ],
   "next_action": "Publish coordination PLAN; implement isolated Python inventory tool and tests, run against authentic 500MB archive, propose draft code PR and durable HANDOFF to functional ICARUS PRIME.",
   "coordination_mode": "independent",
-  "cooperates_with": []
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/chatgpt-20261028-execution-archive-audit.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-execution-archive-audit/20261028T023944Z-plan-execution-archive-audit.json"
+    }
+  ]
 }
