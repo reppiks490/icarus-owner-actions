@@ -1,6 +1,6 @@
 # ICARUS mission register — first verified engineering tranche
 
-**Latest continuation:** [2026-10-10 checkpoint](continuations/2026-10-10.md). It records private preservation and remote readback of all 11 original Actions ZIPs. The [2026-10-09 checkpoint](continuations/2026-10-09.md) preserves prior merges, ciphertext recovery and remaining mission work. Earlier tranche notes below remain historical evidence; their unmerged states and recovery limitations are not the latest status.
+**Latest continuation:** [2026-10-17 task review](continuations/2026-10-17-task-audit.md), with the [202-requirement inventory](task-audit-20261017.json) and [current PR audit](current-pr-audit-20261017.json). The [2026-10-10 checkpoint](continuations/2026-10-10.md) records private preservation and remote readback of all 11 original Actions ZIPs. The [2026-10-09 checkpoint](continuations/2026-10-09.md) preserves prior merges, ciphertext recovery and remaining mission work. Earlier tranche notes below remain historical evidence; their unmerged states and recovery limitations are not the latest status.
 
 This offline index preserves all 202 baseline requirements. It does not certify the entire ecosystem, data coverage, profitable research or source-to-UI integration. Domain records remain authoritative; this register indexes them and their evidence.
 
