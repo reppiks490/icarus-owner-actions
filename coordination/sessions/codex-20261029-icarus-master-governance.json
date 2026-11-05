@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261029-icarus-master-governance",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Implement and verify a fail-closed shared ICARUS capability and paper-exposure governance boundary that prevents duplicate root-asset work/orders and budget bypass; preserve live execution disabled and restart only after independent review.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/icarus-master-governance-20261029",
+  "started_at_utc": "2026-10-29T15:40:22Z",
+  "stale_after_minutes": 10080,
+  "capabilities": [
+    "local-tests",
+    "parallel-agents"
+  ],
+  "initial_dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "source:reppiks490/Icarus@08c57fe6c3fb3c12f13d8346c99e4c57a1280156",
+    "coordination:reppiks490/icarus-owner-actions@3ec14b004cfd5ecf853f77935e6d01b582b6ffa6"
+  ]
+}

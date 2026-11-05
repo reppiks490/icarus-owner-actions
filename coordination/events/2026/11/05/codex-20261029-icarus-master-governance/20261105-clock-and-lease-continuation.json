@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261105-clock-and-lease-continuation",
+  "session_id": "codex-20261029-icarus-master-governance",
+  "at_utc": "2026-11-05T23:40:33.106Z",
+  "type": "PLAN",
+  "phase": "governance-clock-lifecycle-repair",
+  "summary": "Continue owner-authorized paper-only master governance. Repair two unbound test-lease lifecycles without weakening authoritative fences. Reuse the existing timestamp helper for Python 3.10 variable fractional seconds while retaining aware-UTC chronology and immutable journal bytes. Independent review and complete engine verification remain pending; no runtime deployment, live arming, provider call or source-readiness claim.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/intelligence_time.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_brain.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_intelligence_time.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_futures.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_plant.py"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming"
+  ],
+  "evidence": [
+    "Combined governance regression:425 passed; source-bound author receipt retained locally",
+    "Full engine attempt stopped after4failures:3061 passed,65subtests passed,147skipped,no source drift; not full-suite qualification",
+    "Compiled collision report is dated2026-10-25; no current clock/lease target overlap visible in refreshed main ACTIVE; stale report is not fresh ownership proof"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
