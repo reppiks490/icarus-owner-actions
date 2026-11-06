@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261106-reversal-origin-cleanup",
+  "session_id": "codex-20261029-icarus-master-governance",
+  "at_utc": "2026-11-06T00:23:32.355Z",
+  "type": "UPDATE",
+  "phase": "generation-qualified-reversal-recovery",
+  "summary": "Extend owned governance correction to durable generation-qualified cleanup of fully closed reversal-lot journal origins, with recovery/fencing and replacement-generation protection. Existing origin rows and immutable evidence are not bulk-pruned. Current access remains on separate reviewed source; candidate is undeployed.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/emulator.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper_journal.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_reduction_admission_recovery.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_resource_governance.py"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming"
+  ],
+  "evidence": [
+    "Fresh independent Nemesis review found committed reversal skips closed-lot origin cleanup, causing stale rows and replay cost; no exposure bypass established",
+    "Parent serialized focused governance/reduction/access run140passed,no sourcedrift; complete engine suite remains pending"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
