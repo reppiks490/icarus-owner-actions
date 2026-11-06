@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261106-governance-review-repairs",
+  "session_id": "codex-20261029-icarus-master-governance",
+  "at_utc": "2026-11-06T00:08:58.119Z",
+  "type": "PLAN",
+  "phase": "independent-review-corrections",
+  "summary": "Repair independently found stale-lot reversal identity binding and ambiguous operator policy decoding without weakening paper-only authority or protective exits. Full engine attempt was interrupted after release-blocking findings; its partial results are not full-suite qualification. Existing raw coordination history is retained; stale compiled ownership coverage remains explicit.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/emulator.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/resource_governance.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_reduction_admission_recovery.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_resource_governance.py"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming"
+  ],
+  "evidence": [
+    "Independent fresh native review REQUEST CHANGES: reversal descriptors miss originating lot generation/basis and exact before-quantity; policy parser accepts duplicate keys/canonical roots",
+    "Root confirmed its owned QA process terminal/absent before author repairs",
+    "Current unchanged production engine remains separate from undeployed candidate"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
