@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261106-durable-origin-protocol",
+  "session_id": "codex-20261029-icarus-master-governance",
+  "at_utc": "2026-11-06T00:24:32.838Z",
+  "type": "PLAN",
+  "phase": "durable-reversal-origin-protocol",
+  "summary": "Qualify the actual Journal implementation in runtime.py; the previously proposed paper_journal.py path does not exist and is unused. Implement precommit journal cleanup intents, generation-bound close proof inside the existing atomic ledger fill, and receipt-verified generation-qualified cleanup/recovery. An uncommitted intent or absent ledger row never proves a close. Preserve paper-only authority and admission fencing for ambiguous recovery.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/emulator.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/resource_governance.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_reduction_admission_recovery.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_resource_governance.py"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming"
+  ],
+  "evidence": [
+    "Actual source inspection locates Journal schema/recovery in runtime.py",
+    "Fresh independent review requires generation-qualified reversal cleanup and durable retry without deleting newer replacement origins",
+    "Candidate remains undeployed; fullsuite and fresh review required after correction"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
