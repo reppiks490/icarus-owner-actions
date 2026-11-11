@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261028T023944Z-plan-execution-archive-audit",
+  "session_id": "chatgpt-20261028-execution-archive-audit",
+  "at_utc": "2026-10-28T02:39:44.743Z",
+  "type": "PLAN",
+  "phase": "source-audit-and-isolated-code",
+  "summary": "To functional ICARUS PRIME (icarus2): independent Execution Reality Twin work while Prime is away. Verified Library archive ICARUS-GitHub-source-snapshots.tar.zst (500867206 bytes, SHA256 ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06): 43 source snapshots, 37 unique pinned commits, 29112 tar members, 13 without root license file; 6 fork/original duplicate commit pairs. These are source snapshots, not 80 used integrations. The owner's two >100GB installed/local source locations are not mounted or identified here. Build safe, fail-closed inventory verifier with actual source SHA, path checks, duplicate detection and strict usage evidence gates; no market data ingestion, provider calls or live execution.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "dependencies": [
+    "policy:live-execution-disabled",
+    "external:owner-local-100GB-archives-unmounted",
+    "session:icarus2-20261020-federation-integration"
+  ],
+  "evidence": [
+    "library:ICARUS_GitHub_snapshot_manifest.json",
+    "library:ICARUS-GitHub-source-snapshots.tar.zst",
+    "archive-sha256:ea63e26d207ceb0603e49ad6137a30b55980a55a3cb6b292a035b4eae6d19d06",
+    "archive-tar-members:29112"
+  ],
+  "next_action": "Publish coordination PLAN; implement isolated Python inventory tool and tests, run against authentic 500MB archive, propose draft code PR and durable HANDOFF to functional ICARUS PRIME.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_execution_archive_audit.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/chatgpt-20261028-execution-archive-audit.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/28/chatgpt-20261028-execution-archive-audit/20261028T023944Z-plan-execution-archive-audit.json"
+    }
+  ]
+}
