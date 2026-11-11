@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T165552238Z-handoff-qlib-research-consumer",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T16:55:52.238Z",
+  "type": "HANDOFF",
+  "phase": "focused-adapters-complete-broader-gates-pending",
+  "summary": "Extended existing Icarus draft PR #486 with independent consumer-side read-only verification of canonical research handoffs and a Qlib CSV-input preparer based on official Qlib dump_bin conventions. 47 focused regression tests passed on Python 3.10/3.11/3.12/3.13 exact HEAD be90e54c171115ef1e9e7180002684d52cc8cc9a in run 40545420725; broad application CI still in progress. No native pyqlib binary conversion, owner Windows WSL2 readback, trained model, third-party runtime checks or empirical trade validation; live arming remains disabled. Continue directly on PR if independent review finds issues, otherwise stage next noncolliding RD-Agent/model and data-catalog adapters after host inspection.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_research.py",
+    "icarus_engine/external_research_verify.py",
+    "icarus_engine/external_qlib_prepare.py",
+    "tests_engine/test_external_research.py",
+    "tests_engine/test_external_research_verify.py",
+    "tests_engine/test_external_qlib_prepare.py",
+    ".github/workflows/external-quant-contract.yml",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-external-quant-fabric/20261027T165552238Z-handoff-qlib-research-consumer.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486@be90e54c171115ef1e9e7180002684d52cc8cc9a",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_provider_spend",
+    "runtime:Windows/WSL2 physical machine unverified",
+    "suite:Icarus broad tests still in progress"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40545420725:4x47 focused tests success",
+    "source:reppiks490/Icarus/docs/integrations/EXTERNAL_QUANT_FABRIC.md",
+    "upstream:github.com/microsoft/qlib/blob/main/docs/component/data.rst"
+  ],
+  "next_action": "Wait for current exact-head broad CI/review; audit local WSL2 hardware and verified installed Qlib/RD-Agent versions, validate Qlib binary round trip with independent canonical test before training, then build RD-Agent data/model sandbox, HFTBacktest and Nautilus adapters using authorized market data, and tested Brain/UI research-only consumption; do not merge PR #486 until independent gates pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

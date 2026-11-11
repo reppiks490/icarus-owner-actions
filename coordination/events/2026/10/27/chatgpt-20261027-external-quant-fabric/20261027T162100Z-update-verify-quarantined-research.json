@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T162100Z-update-verify-quarantined-research",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T16:21:00Z",
+  "type": "UPDATE",
+  "phase": "consumer-side-independent-admission",
+  "summary": "Continue PR #486 after prior exact-head four-version focused CI pass. Add a separately exercised, read-only consumer-side validator for quarantined candidate handoffs and research CSV output, checking artifact hashes/row counts/calendar/timestamps/schemas/revision expectation and ensuring no automatic Brain or trading authority. Reserve two new narrow paths and existing claimed workflow/docs; no provider calls, local model execution, merges, paper/live broker changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "icarus_engine/external_research_verify.py",
+    "tests_engine/test_external_research_verify.py",
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md",
+    ".github/workflows/external-quant-contract.yml"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/external_research_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_external_research_verify.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/external-quant-contract.yml"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486",
+    "constraint:execution_authorized_false",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_provider_spend",
+    "pending broad CI"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40542042267:19 cases ×4 Python versions"
+  ],
+  "next_action": "Write read-only verifier and adversarial offline tests, route workflow, verify current HEAD CI, leave draft.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

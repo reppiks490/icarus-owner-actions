@@ -1,0 +1,42 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261027T173330150Z-handoff-native-qlib-and-rdagent",
+  "session_id": "chatgpt-20261027-external-quant-fabric",
+  "at_utc": "2026-10-27T17:33:30.150Z",
+  "type": "HANDOFF",
+  "phase": "external-quant-research-slice-verified-full-system-incomplete",
+  "summary": "Full initial research-only external-quant fabric now on Icarus draft #486 head 42961b25786e7ee6e69314411497f3ef72651a9a. Added independent native Qlib calendar/instrument/bin float32 complete-data check with trusted expected repo/revision/handoff, and a Windows/WSL2/cgroup-aware local RD-Agent host resource audit. All 71 focused tests passed on Python 3.10-3.13 exact-head workflow 40551469316 after repairing cgroup-v2 unlimited semantics; broad project tests still unverified. A separate hourly ICARUS engineering continuation automation was created per owner's repeated/endlessly request without modifying any old task. This handoff is not a model, dataset or readiness certification. No secret exposure, paid provider access, data collection, Windows-PC work, merges, broker arming or external model execution.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "docs/integrations/EXTERNAL_QUANT_FABRIC.md",
+    "icarus_engine/external_qlib_verify.py",
+    "icarus_engine/external_rd_agent_preflight.py",
+    "tests_engine/test_external_qlib_verify.py",
+    "tests_engine/test_external_rd_agent_preflight.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/27/chatgpt-20261027-external-quant-fabric/20261027T173330150Z-handoff-native-qlib-and-rdagent.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#486@42961b25786e7ee6e69314411497f3ef72651a9a",
+    "pr:reppiks490/icarus-owner-actions#72",
+    "constraint:no_live_broker_arming",
+    "constraint:no_new_spend",
+    "unverified:owner Windows WSL2 model runtime",
+    "unverified:full exact-head Icarus app suite",
+    "unverified:native pyqlib code conversion and roundtrip"
+  ],
+  "evidence": [
+    "ci:reppiks490/Icarus/actions/runs/40551469316:Python 3.10,3.11,3.12,3.13 71 focused tests each pass",
+    "source:reppiks490/Icarus/docs/integrations/EXTERNAL_QUANT_FABRIC.md"
+  ],
+  "next_action": "Inspect broad CI failures and independent PR486 review, then actual native Qlib dump_bin binary ingestion on pinned environment, WSL2 host hardware and chat+embedding model compatibility, HFT/Nautilus authorized orderflow adapter integration, secure provider catalog and Brain/UI research-only evidence consumption. Continue with narrow coordination claims and paper-only boundaries.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
