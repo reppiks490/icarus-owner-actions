@@ -1,0 +1,434 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T142355Z-claim-publish-reviewed-worktree",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T14:23:55Z",
+  "type": "CLAIM",
+  "phase": "approved-publication-port",
+  "summary": "Owner approved publication. Port the reviewed Icarus and Icarus-engine worktree changes onto isolated branches from current origin/main, verify them, then publish review branches. Preserve original dirty checkouts and exclude generated command-center profiles.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/ACCESS_ANALYZER.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/recovery/PRIME_AS_IS_RESTART.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-25-runtime-reliability.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/access_control.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/activation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/adaptation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/advisory.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/apex-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/ascendancy-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/autopilot-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/chronofold-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/chronofold.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/cli.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/command-centers-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/commissioning-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/commissioning.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/data/research_context/eia-brent-daily.csv"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/data/research_context/eia-natural-gas-daily.csv"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/data/research_context/eia-wti-daily.csv"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/data/research_context/manifest.json"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/engine-control-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/evolution-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/integrity-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market-data-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/orchestration.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/pantheon-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/parallax-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/possibility-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/possibility.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/research-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/research_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/research_service.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/restart_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/sibyl-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/sources-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-dashboard.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-evidence-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_market_data.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power_ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_tools.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_plant/cli.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_plant/guide.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_plant/supervisor.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "scripts/start-as-is.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "start-plant.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "start-plant.sh"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "start-yahoo.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/browser_preview_server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_access_contention.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_chronofold.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_chronofold_integration.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_command_center_routes.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_commissioning.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_commissioning_integration.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_dashboard_js.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_databento.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_evolution_ui_status.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_historical_trade_admission.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_intelligence_feed.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_native_validation_ui.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_panel_backend_latency.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_panel_request_lifecycle.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_pantheon_aether.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_paper_workspaces.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_parallax_dreamstate.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_plant.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_plant_auth_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_possibility.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_power_retry_lifecycle.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_research_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_research_service.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_restart_defaults.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_runtime_control_lifecycle.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_runtime_valuation_ui.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_sibyl.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_source_data_contract.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_subsystem_connections_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_market_data.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_power_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_tools.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "config/data_ingestion_manifest.json"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "docs/agent-handoffs/FEDERATED_DATA_COLLECTION.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "icarus_engine/cli.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "start-engine-background.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests/test_federated_data_surface.py"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "tests_engine/test_auth_defaults.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T142355Z-claim-publish-reviewed-worktree.json"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "User explicitly approved publication and asked how to attach the Windows PC.",
+    "Main Icarus local HEAD is 61 commits behind origin/main; Icarus-engine is 253 commits behind origin/main.",
+    "Publication manifest: /workspace/ui-audit/repaired/final-readiness/icarus-publication-manifest.md."
+  ],
+  "next_action": "Create isolated branches from origin/main, apply reviewed source changes, resolve two main-repo overlap paths, test, and push review branches. Windows restart and phone connection wait for a local Codex PC environment.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

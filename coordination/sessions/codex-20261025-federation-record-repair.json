@@ -1,0 +1,18 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261025-federation-record-repair",
+  "actor": "Codex (delegated federation validator)",
+  "model_family": "openai",
+  "goal": "Repair malformed licensing coordination records without rewriting their bytes or strengthening historical claims; offline verification only.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "main",
+  "started_at_utc": "2026-10-25T23:16:16.771544Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "bash",
+    "python"
+  ],
+  "initial_dependencies": [
+    "session:codex-20261025-cloud-ui-audit"
+  ]
+}

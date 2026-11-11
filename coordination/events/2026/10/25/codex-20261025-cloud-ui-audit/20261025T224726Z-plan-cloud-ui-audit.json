@@ -1,0 +1,21 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T224726Z-plan-cloud-ui-audit",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-25T22:47:26.035330Z",
+  "type": "PLAN",
+  "phase": "interactive-browser-audit",
+  "summary": "Run isolated cloud paper runtime; inspect real rendered Main, CC1-CC4 and Connections panels with Chromium, capture screenshots and failing requests. No owner-PC restart or production/source changes.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [],
+  "evidence": [
+    "local:/workspace/ui-audit"
+  ],
+  "next_action": "Launch paper runtime and Chromium.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

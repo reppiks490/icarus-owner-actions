@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T072207Z-claim-ui-access-routing",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T07:22:07.586347Z",
+  "type": "CLAIM",
+  "phase": "ui-access-routing",
+  "summary": "Repair dashboard keyboard navigation and fail-safe invalid view routing; verify empty-token behavior before changing any auth default.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/dashboard.html",
+    "tests_engine/test_workspace_dashboard_browser.py",
+    "tests_engine/test_dashboard_js.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_dashboard_js.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "read-only source review identified non-focusable span navigation and unhandled invalid hash routes"
+  ],
+  "next_action": "Add failing keyboard-navigation and unknown-route browser regressions; inspect the clean-browser token contract before changing defaults.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

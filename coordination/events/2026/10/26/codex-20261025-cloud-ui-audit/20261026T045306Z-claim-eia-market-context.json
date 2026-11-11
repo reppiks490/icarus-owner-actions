@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T045306Z-claim-eia-market-context",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T04:53:06Z",
+  "type": "CLAIM",
+  "phase": "research-context-integration",
+  "summary": "Continue the owner-requested Icarus runtime/UI repair. Integrate the reviewed EIA Brent, WTI, and Henry Hub daily snapshots as read-only historical research context; retain all other candidate sources as reviewed/quarantined metadata; assess REA/tooling availability. Keep all external data separate from futures bars, signals, qualification, and live authority.",
+  "repos": ["reppiks490/Icarus", "reppiks490/Icarus-engine"],
+  "paths": [],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/research_context.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/data/research_context/"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/research_service.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/server.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/sources-ui.js"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_research_context.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_research_service.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_workspace_dashboard_browser.py"},
+    {"repo": "reppiks490/Icarus-engine", "path": "config/data_ingestion_manifest.json"},
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/FEDERATED_DATA_COLLECTION.md"},
+    {"repo": "reppiks490/Icarus-engine", "path": "docs/agent-handoffs/DATA_GAP_LEDGER.md"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "local:/workspace/attachments/fa0987a5-d08d-4fc1-a4a8-f776510837ee/stock-market-data.md",
+    "local:/workspace/Icarus/icarus_engine/data/research_context/manifest.json",
+    "local:/workspace/Icarus-engine/config/data_ingestion_manifest.json"
+  ],
+  "next_action": "Finish the bounded EIA source ledger connection and UI integration; verify API, parser, catalog, browser layout, and full Icarus suites. Keep unresolved source-rights candidates out of the active data path.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

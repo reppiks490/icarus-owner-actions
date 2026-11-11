@@ -1,0 +1,141 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T231616Z-correction-1",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-25T23:16:16.771544Z",
+  "type": "COMPLETE",
+  "phase": "historical-record-correction",
+  "summary": "Completed structural correction of archived historical receipt 20261025T164210Z-complete-licensing: retained original bytes and historical assertions, bound only documented repository-qualified targets. This repair does not repeat licensing verification or complete the original worker session.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/multi-level-csv",
+    "reppiks490/csv-data-multi-chart-type",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/daedalus-research-os",
+    "reppiks490/aion-parallax-research",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/divine-providence",
+    "reppiks490/ideas-reality"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "LICENSE.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Icarus:LICENSE@4272470d099b92672c6e60abf75dedadd15f6f44;README@c9a86c934cfc2f2bae5d9587de83cc897ef0845b;fresh-read verified",
+    "Icarus-engine:LICENSE@72df16a77c1b8ee390e70d4f5a6c22e5c29a9f03;README@c87494a73579583766b4987014d9175d1028003b;fresh-read verified",
+    "multi-level-csv:LICENSE@e80e1037dc74609e6c0a958400b936cfbe38166c;README@2f5469520055195b3f47c212a67f756f6c25584d;fresh-read verified",
+    "csv-data-multi-chart-type:LICENSE@84c3a42a10d6e9bfd896fa7aceba609e81cedfb5;README@ad75c5aec7d23a0469a2d29899dbbd8963c38651;fresh-read verified",
+    "icarus-owner-actions:LICENSE@d89869784735e0bc484f133084a54fe548e1b819;README@faea88f6db68844435228d809a97dfc6d9e7e18f;fresh-read verified",
+    "daedalus-research-os:LICENSE@1356ec5b6992ee620260746dfb5b078b82d7c20d;README@2604711ce54a7e67e7f209479c5bc7215b5dacfa;fresh-read verified",
+    "aion-parallax-research:LICENSE@422455ed49e5ea45bc3e1b6d9dd973c2c0e470a7;README@7d6b058e5afb1e9862125c45e0c33d2e3fb33684;fresh-read verified",
+    "icarus-csv-evidence-lab:LICENSE@8b66c4a13e6b862ae41600d222872b3c90e1cc73;README@3a1ca6ef79cee4451e0d20049b0c1ca2d58c41b4;fresh-read verified",
+    "icarus-causal-router:LICENSE@f2750ba72bf95f565a547a0e58016cbb872fecd4;README@300e71670f1d9afd11d5eda497d3774a343a64ac;fresh-read verified",
+    "divine-providence:LICENSE@97a33a9fc950b7aa31932427667af02cac110a3a;README@27f26a0fd3e912f6769a74b245062a8dae59d094;fresh-read verified",
+    "ideas-reality:LICENSE@bb9f1bab6d07edd5e4bba317eaf06e28183cc258;README@ad5fd78066a908aba78999596afb3f7f8afa8fe6;fresh-read verified",
+    "archived-original:coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json; original-path:coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json; sha256:0c6c39160d209dd2e29da7e90b72906dbee4b3906140486b366450a3d0d1042c",
+    "verification-scope:HISTORICAL_RECORD_STRUCTURE_ONLY; original licensing claims not reverified"
+  ],
+  "next_action": "Run current tree validation and regression suite; original worker state remains governed by its remaining records.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "correction": {
+    "original_path": "coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json",
+    "archive_path": "coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T164210Z-complete-licensing.json",
+    "sha256": "0c6c39160d209dd2e29da7e90b72906dbee4b3906140486b366450a3d0d1042c",
+    "original_session_id": "codex-20261025-icarus-licensing",
+    "original_event_id": "20261025T164210Z-complete-licensing",
+    "original_summary": "Published proprietary all-rights-reserved LICENSE.md and README ownership notice to default branches of eleven ICARUS-related repositories. Verified all 22 files by fresh GitHub reads; identical LICENSE blob 37d1ab695c1c86259b81c0f615def4048e4aa94c. Existing third-party terms, prior grants, statutory and GitHub platform rights preserved. Unrelated repositories excluded; empty build repositories have no work to license.",
+    "historical_verification_only": true
+  }
+}

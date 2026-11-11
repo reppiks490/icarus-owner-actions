@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T075230Z-update-commissioning-frame-tests",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T07:52:30Z",
+  "type": "UPDATE",
+  "phase": "commissioning-read-latency",
+  "summary": "Implemented stage-local market-status propagation through commissioning, Chronofold, and Possibility; settlement now captures fresh state and avoids a status read when no predictions are pending. Updated the navigation assertion for its native-button markup.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "icarus_engine/commissioning.py",
+    "icarus_engine/chronofold.py",
+    "icarus_engine/possibility.py",
+    "tests_engine/test_commissioning.py",
+    "tests_engine/test_commissioning_integration.py",
+    "tests_engine/test_chronofold.py",
+    "tests_engine/test_possibility.py"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/commissioning.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/chronofold.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/possibility.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_commissioning.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_commissioning_integration.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_chronofold.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_possibility.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T075230Z-update-commissioning-frame-tests.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "94 passed in 1.73s: tests_engine/test_commissioning.py, test_commissioning_integration.py, test_chronofold.py, test_possibility.py",
+    "Regression proves capture-stage assets share one frame, settlement takes a distinct fresh frame and updated price, and later ticks acquire new frames.",
+    "Chronofold -> Possibility integration test proves the supplied frame prevents a nested Portfolio.status reread.",
+    "git diff --check passed."
+  ],
+  "next_action": "Continue the token-default and clean-profile authentication audit; run broader UI and full suites after integration review.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

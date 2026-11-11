@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T022400536Z-update-shared-evidence-routing",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T02:24:00.536Z",
+  "type": "UPDATE",
+  "phase": "cross-workspace-source-routing",
+  "summary": "Live CC source and overview panels routed shared evidence reads through per-workspace adapters with no implementation, producing WORKSPACE_PANEL_UNAVAILABLE. Expanded the explicit read-only shared route allowlist in the page client and request guard for the global command-center overview, provider corpus and discovery receipts. No evidence or runtime scope is reclassified as selected-workspace state.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_client.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_context.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-25-runtime-reliability.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "offline:/workspace/ui-audit/repaired/final-readiness/failure-probe.json",
+    "http:503 WORKSPACE_PANEL_UNAVAILABLE on /api/overview/command-center and /api/discovery-registry from CC1-CC4"
+  ],
+  "next_action": "Run targeted client/context tests, repeat all-workspace browser audit, then run full regression suites.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

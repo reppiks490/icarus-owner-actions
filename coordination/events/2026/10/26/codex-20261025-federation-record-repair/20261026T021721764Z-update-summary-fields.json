@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T021721764Z-update-summary-fields",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-26T02:17:21.764Z",
+  "type": "UPDATE",
+  "phase": "historical-summary-correction",
+  "summary": "Archived the malformed licensing summary byte-for-byte and normalized its active schema fields from its existing historical timestamp/status. Original claims and dates are unchanged; no new licensing verification is asserted.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261025-icarus-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/archive/invalid-summaries/codex-20261025-icarus-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_coordination_archived_corrections.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/README.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "offline:summary-original-sha256:a66073d4848258c4b2baa227fe4beb8b69d5d0739142932fd6f1e6e66d8fb734",
+    "archive:coordination/archive/invalid-summaries/codex-20261025-icarus-licensing.json",
+    "historical-timestamp:2026-10-25T16:56:40Z; original status COMPLETE retained as result=complete"
+  ],
+  "next_action": "Verify summary archive/hash, full coordination tree, regression suite, then publish completion evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1119,6 +1119,66 @@
     },
     {
       "actor": "Codex",
+      "branch": "main",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_world_immersion.py",
+        ".github/workflows/ui-visual-contract.yml"
+      ],
+      "declared_targets": [
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "dependencies": [
+        "test:icarus-publish-full",
+        "review:icarus-engine-pr-260"
+      ],
+      "goal": "Repair and verify Icarus runtime and panels, integrate reviewed EIA spot snapshots as research-only context, and assess available reverse-engineering/data tools without changing live authority.",
+      "home_repo": "reppiks490/Icarus",
+      "last_event_at_utc": "2026-10-26T23:07:10.538280Z",
+      "latest_summary": "Final review head includes required Chromium-before-presentation ordering and explicit optional handling outside the dedicated browser gate. All141 required checks pass with zero skips; all4 real Chromium contracts pass. Python runtime code is unchanged from4510/3 full run; final-head hosted checks and physical PC verification remain open.",
+      "latest_type": "HANDOFF",
+      "model_family": "openai",
+      "phase": "published-local-verified-pc-package",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [
+        "icarus_engine/world-immersion.js",
+        "tests_engine/test_world_immersion.py",
+        ".github/workflows/ui-visual-contract.yml"
+      ],
+      "reserved_targets": [
+        {
+          "path": "icarus_engine/world-immersion.js",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": "tests_engine/test_world_immersion.py",
+          "repo": "reppiks490/Icarus"
+        },
+        {
+          "path": ".github/workflows/ui-visual-contract.yml",
+          "repo": "reppiks490/Icarus"
+        }
+      ],
+      "session_id": "codex-20261025-cloud-ui-audit",
+      "stale": false,
+      "status": "active"
+    },
+    {
+      "actor": "Codex",
       "branch": "codex/icarus-pr462-full-integration-20261025",
       "cooperates_with": [],
       "coordination_mode": "independent",
@@ -1148,18 +1208,11 @@
       "model_family": "openai",
       "phase": "nonlive-integration-and-runtime-closeout",
       "pr": 462,
-      "reclaimable": false,
-      "reserved_paths": [
-        "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json"
-      ],
-      "reserved_targets": [
-        {
-          "path": "coordination/events/2026/10/25/codex-20261025-icarus-completion/20261025T162637Z-update-current-mobile-security-and-runtime.json",
-          "repo": "reppiks490/icarus-owner-actions"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261025-icarus-completion",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -1290,123 +1343,11 @@
       "model_family": "openai",
       "phase": "licensing",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md",
-        "LICENSE.md",
-        "README.md"
-      ],
-      "reserved_targets": [
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/Icarus-engine"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/multi-level-csv"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/multi-level-csv"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/csv-data-multi-chart-type"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/csv-data-multi-chart-type"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/icarus-owner-actions"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/daedalus-research-os"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/daedalus-research-os"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/aion-parallax-research"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/aion-parallax-research"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/icarus-csv-evidence-lab"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/icarus-csv-evidence-lab"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/icarus-causal-router"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/icarus-causal-router"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/divine-providence"
-        },
-        {
-          "path": "LICENSE.md",
-          "repo": "reppiks490/ideas-reality"
-        },
-        {
-          "path": "README.md",
-          "repo": "reppiks490/ideas-reality"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "codex-20261025-icarus-licensing",
-      "stale": false,
+      "stale": true,
       "status": "active"
     },
     {
@@ -1854,34 +1795,22 @@
       "model_family": "openai",
       "phase": "legacy",
       "pr": null,
-      "reclaimable": false,
-      "reserved_paths": [
-        "pyproject.toml",
-        ".github/workflows/test.yml"
-      ],
-      "reserved_targets": [
-        {
-          "path": "pyproject.toml",
-          "repo": "reppiks490/Icarus"
-        },
-        {
-          "path": ".github/workflows/test.yml",
-          "repo": "reppiks490/Icarus"
-        }
-      ],
+      "reclaimable": true,
+      "reserved_paths": [],
+      "reserved_targets": [],
       "session_id": "icarus2-20261020-federation-integration",
-      "stale": false,
+      "stale": true,
       "status": "active"
     }
   ],
   "collisions": [],
   "counts": {
-    "active": 26,
+    "active": 27,
     "collisions": 0,
-    "stale": 23,
-    "terminal": 24
+    "stale": 26,
+    "terminal": 25
   },
-  "generated_at_utc": "2026-10-25T16:41:50.784210Z",
+  "generated_at_utc": "2026-10-26T23:07:10.998215Z",
   "owner_status": {
     "claude": {
       "active": false,
@@ -2515,6 +2444,31 @@
       "reserved_paths": [],
       "reserved_targets": [],
       "session_id": "codex-20261017-sentinel-row-refresh-test",
+      "stale": false,
+      "status": "complete"
+    },
+    {
+      "actor": "Codex (delegated federation validator)",
+      "branch": "main",
+      "cooperates_with": [],
+      "coordination_mode": "independent",
+      "declared_paths": [],
+      "declared_targets": [],
+      "dependencies": [
+        "session:codex-20261025-cloud-ui-audit"
+      ],
+      "goal": "Repair malformed licensing coordination records without rewriting their bytes or strengthening historical claims; offline verification only.",
+      "home_repo": "reppiks490/icarus-owner-actions",
+      "last_event_at_utc": "2026-10-26T02:28:53.599Z",
+      "latest_summary": "Completed structural repair of two malformed immutable licensing events and their malformed historical summary. Preserved exact original bytes and hashes in archives, retained original assertions and timestamps, qualified corrected repository targets, and kept validator semantics unchanged. This does not reverify licensing or close the historical licensing worker.",
+      "latest_type": "COMPLETE",
+      "model_family": "openai",
+      "phase": "provenance-preserving-record-repair",
+      "pr": null,
+      "reclaimable": false,
+      "reserved_paths": [],
+      "reserved_targets": [],
+      "session_id": "codex-20261025-federation-record-repair",
       "stale": false,
       "status": "complete"
     }

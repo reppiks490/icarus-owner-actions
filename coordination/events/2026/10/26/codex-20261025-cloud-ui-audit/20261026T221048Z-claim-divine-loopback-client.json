@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T221048Z-claim-divine-loopback-client",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T22:10:48.252691Z",
+  "type": "CLAIM",
+  "phase": "divine-loopback-client",
+  "summary": "Confirmed on freshly fetched Divine main: a documented loopback credential can be sent to arbitrary configured origins via ambient urllib proxy. Root will restrict the engine origin and refuse proxy/redirect transport; add offline/local-server regressions in isolated worktree.",
+  "repos": [
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/engine.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_engine_transport_guard.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Fresh origin/main src/divine_providence/engine.py has unrestricted BASE and urllib.request.urlopen; AGENTS explicitly classifies ICARUS_ENGINE_TOKEN as a loopback engine credential."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

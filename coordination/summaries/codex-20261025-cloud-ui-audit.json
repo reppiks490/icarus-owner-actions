@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "completed_at_utc": "2026-10-26T23:07:10.538280Z",
+  "result": "blocked",
+  "scope": "Final review head includes required Chromium-before-presentation ordering and explicit optional handling outside the dedicated browser gate. All141 required checks pass with zero skips; all4 real Chromium contracts pass. Python runtime code is unchanged from4510/3 full run; final-head hosted checks and physical PC verification remain open.",
+  "source_pr": "https://github.com/reppiks490/Icarus/pull/485",
+  "source_reviewed_sha": "900c52ff2cacd3ef2f77e1a011df25af95ecda22",
+  "evidence": [
+    "Icarus PR485@900c52ff2cacd3ef2f77e1a011df25af95ecda22; /tmp/icarus-required-presentation.log141 passed, exit0 with ICARUS_REQUIRE_WORKSPACE_BROWSER=1.",
+    "/tmp/icarus-worlds-final.exit=0; all4 world contracts errors=[]/writes=[].",
+    "Full Python runtime4510 passed/3 native Windows skips; unchanged Python runtime code.",
+    "Engine1489 passed/0 skips; Divine185 passed/3 platform skips; strict peer consumer rerun40412921045 success.",
+    "35 agents launched/31 reports complete/4 usage-limit failures/15 not launched; full-system completion and other source findings remain open.",
+    "Icarus PR485@e3671b40b5113db596011be99cb74402c2b4fab5; frontend-only correction; /tmp/icarus-topology-red.log fails original and /tmp/icarus-topology-green.log passes12 checks.",
+    "/tmp/icarus-worlds-final.exit=0; all4 contracts return errors=[] and writes=[].",
+    "Engine native exporter run40414528326 success; strict Icarus historical-context consumer run40412921045 rerun success.",
+    "Observed source packet22:45:30Z, source_commit e1823d345e600467ae0cde52910dcdb8540fc8d5; research-only authority retained.",
+    "Retained PR source refs fetched:481 Icarus,194 Engine; both include PR1. Source objects are available, not all content-reviewed.",
+    "Icarus PR485@27e722bac41ce7360ac6aaa3ff9705baed69709b; runtime source is unchanged from fully tested a83a18377f28; later commit changes preview fixtures and evidence only.",
+    "/tmp/icarus-final-runtime.exit=0;4510 pass/3 native Windows skip outcomes;115 targeted bar-integrity tests passed.",
+    "/tmp/icarus-browser-authfix.exit=0; shadow/depth/cinema/worlds all passed; errors=[]; writes=[].",
+    "Engine PR260@0f49b38ed983740a8db417f97319d550e1e6fcfb;1489 pass/0 skip, MCP same-changeset contract passed.",
+    "Divine PR61@d8b49aee67c4526877663bf309ab25693af71afa;185 pass/3 platform skips;12 local/offline transport regressions pass.",
+    "Four official Apache2 DBN parser fixtures downloaded, Git-blob/SHA256 verified and8 records normalized by existing Icarus adapter; no market corpus/entitlement claim.",
+    "35 agents launched,31 reports complete,4 account-usage failures,15 not launched. Current remote refs fetched:518 application/200 Engine; ancestry review queue is not a content-audit certificate."
+  ],
+  "remaining_work": [
+    "Run native owner-PC checks and inspect actual PC panels without discarding local work.",
+    "Complete19 unfinished agent tasks; quota prevented4 completions and15 launches.",
+    "Continue source-qualified adapter/data/history review and reproduce remaining static findings.",
+    "No live broker arming, provider purchase or physical restart was performed."
+  ]
+}

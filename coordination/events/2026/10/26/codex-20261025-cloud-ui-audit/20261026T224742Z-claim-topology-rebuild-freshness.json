@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T224742Z-claim-topology-rebuild-freshness",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T22:47:42.569440Z",
+  "type": "CLAIM",
+  "phase": "final-hosted-gate-repair",
+  "summary": "Preserve scroll highlight atomically through topology rebuilds despite the200ms ordinary-scroll throttle; add deterministic browser regression. Separately dispatch the existing Engine peer exporter after a genuinely stale packet failed the30-minute handshake gate; do not extend freshness limits or alter research producer policy.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/world-immersion.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_world_immersion.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Hosted browser_depth.cjs:394 observed wait success then lost SVG scroll-active; rebuild replaces nodes and updateScrollFocus can immediately return inside200ms.",
+    "Hosted handshake rejected packet age2482.440s>1800s; dispatched Engine interrepo-peer-intelligence run40414528326."
+  ],
+  "next_action": "Repair reproduced code defects, verify focused contracts, complete full suite and publish exact source candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

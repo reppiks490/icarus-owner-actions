@@ -1,0 +1,39 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T231803Z-update-summary-repair",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-25T23:18:03.474836Z",
+  "type": "UPDATE",
+  "phase": "historical-summary-correction",
+  "summary": "Same producer also emitted malformed licensing summary (status/at_utc instead of result/completed_at_utc). Preserve bytes in invalid-summaries archive and explicitly correct active summary fields from existing historical values. No validator changes, impersonation or fresh licensing claims.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261025-icarus-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/archive/invalid-summaries/codex-20261025-icarus-licensing.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "tests/test_coordination_archived_corrections.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/README.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "offline:/workspace/ui-audit/federation/summary-errors.json",
+    "original-sha256:a66073d4848258c4b2baa227fe4beb8b69d5d0739142932fd6f1e6e66d8fb734"
+  ],
+  "next_action": "Correct summary data fields without changing historical claims, verify full tree.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

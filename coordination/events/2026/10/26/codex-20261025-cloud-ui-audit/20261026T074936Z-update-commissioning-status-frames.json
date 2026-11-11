@@ -1,0 +1,37 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T074936Z-update-commissioning-status-frames",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T07:49:36Z",
+  "type": "UPDATE",
+  "phase": "commissioning-read-latency",
+  "summary": "Extend the commissioning optimization across Possibility so one explicit market-status frame flows through each stateful Chronofold snapshot. Keep a fresh status/snapshot stage for settlement, skip empty settlement reads, and align the dashboard wiring assertion with the native-button navigation.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": [
+    "icarus_engine/commissioning.py",
+    "icarus_engine/chronofold.py",
+    "icarus_engine/possibility.py",
+    "tests_engine/test_commissioning.py",
+    "tests_engine/test_commissioning_integration.py",
+    "tests_engine/test_chronofold.py",
+    "tests_engine/test_possibility.py"
+  ],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/commissioning.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/chronofold.py"},
+    {"repo": "reppiks490/Icarus", "path": "icarus_engine/possibility.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_commissioning.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_commissioning_integration.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_chronofold.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_possibility.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T074936Z-update-commissioning-status-frames.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Targeted commissioning/Chronofold suite: 21 passed, 1 failed because a static dashboard assertion expected the pre-button source spelling; current markup has the commissioning button and render branch.",
+    "Independent call-chain trace: CommissioningEngine -> ChronofoldEngine -> PossibilityEngine each queried Portfolio.status separately; status frames must stay stage-local and snapshot state must remain per-asset."
+  ],
+  "next_action": "Add call-count and identity regressions across the actual status-frame flow, repair the brittle markup assertion, then rerun focused suites.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

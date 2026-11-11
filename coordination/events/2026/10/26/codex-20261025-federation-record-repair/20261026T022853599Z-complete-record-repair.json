@@ -1,0 +1,29 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T022853599Z-complete-record-repair",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-26T02:28:53.599Z",
+  "type": "COMPLETE",
+  "phase": "provenance-preserving-record-repair",
+  "summary": "Completed structural repair of two malformed immutable licensing events and their malformed historical summary. Preserved exact original bytes and hashes in archives, retained original assertions and timestamps, qualified corrected repository targets, and kept validator semantics unchanged. This does not reverify licensing or close the historical licensing worker.",
+  "repos": [
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261025-federation-record-repair.json"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "offline:coordination_fabric.validate returned valid=true; 390 events, 51 sessions, 25 summaries",
+    "offline:tests.test_coordination_archived_corrections targeted actual-tree, summary-archive/hash and immutable-event archive tests: 3 passed",
+    "original-summary-sha256:a66073d4848258c4b2baa227fe4beb8b69d5d0739142932fd6f1e6e66d8fb734; exact bytes retained at coordination/archive/invalid-summaries/codex-20261025-icarus-licensing.json",
+    "scope:coordination record structure and provenance only; licensing history and external access were not reverified"
+  ],
+  "next_action": "None. Original licensing work remains governed by its surviving historical events.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

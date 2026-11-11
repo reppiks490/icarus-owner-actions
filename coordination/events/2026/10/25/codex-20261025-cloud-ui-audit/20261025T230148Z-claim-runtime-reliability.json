@@ -1,0 +1,66 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T230148Z-claim-runtime-reliability",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-25T23:01:48.566660Z",
+  "type": "CLAIM",
+  "phase": "runtime-reliability-repair",
+  "summary": "Owner explicitly expanded audit to repairs and comprehensive validation. Root owns UI request lifecycle, dashboard, runtime power and server integration. Delegated narrow Access authentication contention and PnL display fixes; preserve no-live authority.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/access_control.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/learning-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/brain-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace-client.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/workspace_power_ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/command-centers-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/paper-pnl-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/superpowers/plans/2026-10-25-runtime-reliability.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "local:/workspace/ui-audit/FINDINGS.md"
+  ],
+  "next_action": "Reproduce and repair each independent failure then verify combined suite and live app.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

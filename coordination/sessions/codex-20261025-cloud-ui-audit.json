@@ -1,0 +1,13 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Repair and verify Icarus runtime and panels, integrate reviewed EIA spot snapshots as research-only context, and assess available reverse-engineering/data tools without changing live authority.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "main",
+  "started_at_utc": "2026-10-25T22:47:26.035330Z",
+  "stale_after_minutes": 120,
+  "capabilities": ["bash", "browser", "subagents"],
+  "initial_dependencies": []
+}

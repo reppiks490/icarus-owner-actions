@@ -1,0 +1,45 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T072926Z-update-ui-findings-and-public-sweep",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T07:29:26.977766Z",
+  "type": "UPDATE",
+  "phase": "ui-and-public-market-data-audit",
+  "summary": "Fresh REA/Chromium inspection confirmed a Token dialog z-index blocker, keyboard-inaccessible panel navigation, stale-hash blank routes, and a possible market-context status lifecycle defect; broaden public GitHub scan to separate MBO, MBP-10 and OHLC candidates.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/dashboard.html",
+    "icarus_engine/sources-ui.js",
+    "tests_engine/test_dashboard_js.py",
+    "tests_engine/test_workspace_dashboard_browser.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/sources-ui.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_dashboard_js.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_workspace_dashboard_browser.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "browser hits #closeCtl beneath sticky .top (z-index 30 vs 60)",
+    "fresh panel source audit; visible intro skip works",
+    "baseline browser regressions fail for keyboard navigation, invalid routes, Token dialog stacking"
+  ],
+  "next_action": "Repair tested UI defects, reproduce market-context status lifecycle locally, and REA-inspect downloaded public GitHub candidates for provenance, licenses and tests.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

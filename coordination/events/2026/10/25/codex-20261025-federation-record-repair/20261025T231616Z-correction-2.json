@@ -1,0 +1,145 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261025T231616Z-correction-2",
+  "session_id": "codex-20261025-federation-record-repair",
+  "at_utc": "2026-10-25T23:16:16.771544Z",
+  "type": "COMPLETE",
+  "phase": "historical-record-correction",
+  "summary": "Completed structural correction of archived historical receipt 20261025T165640Z-complete-neutral-landings: retained original bytes and historical assertions, bound only documented repository-qualified targets. This repair does not repeat licensing verification or complete the original worker session.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/Icarus-engine",
+    "reppiks490/multi-level-csv",
+    "reppiks490/csv-data-multi-chart-type",
+    "reppiks490/icarus-owner-actions",
+    "reppiks490/daedalus-research-os",
+    "reppiks490/aion-parallax-research",
+    "reppiks490/icarus-csv-evidence-lab",
+    "reppiks490/icarus-causal-router",
+    "reppiks490/divine-providence",
+    "reppiks490/ideas-reality"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus-engine",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/multi-level-csv",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/csv-data-multi-chart-type",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/daedalus-research-os",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-csv-evidence-lab",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/icarus-causal-router",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "README.md"
+    },
+    {
+      "repo": "reppiks490/ideas-reality",
+      "path": "LICENSE.md"
+    },
+    {
+      "repo": "reppiks490/aion-parallax-research",
+      "path": "docs/CURRENT.md"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "Icarus: README 456da5e36d1428402b97357dda2da66679613803; LICENSE 4bd9c5e55b05abac085bc08732e03a6e38ac5413; fresh exact-content readback passed",
+    "Icarus-engine: README a0635620563f095bd0f492b75be89a89a4b49ec7; LICENSE 45640df5b4e9c54c97894af7c39da6300064cb25; fresh exact-content readback passed",
+    "multi-level-csv: README a441ec1fab7f50ce9ea5e8a0f58818a855fc102a; LICENSE 57f9e46c05266861b1c46f91b71ed30a0d3d7fc9; fresh exact-content readback passed",
+    "csv-data-multi-chart-type: README 4585e1f6b49ea49fa777dc83fc0722ba6df7c087; LICENSE cb50ce947a6ee6c500def1676a10f3973931c49f; fresh exact-content readback passed",
+    "icarus-owner-actions: README 109ca0a44dc721a8f21aece3894c674507a5090a; LICENSE 908fb88af12a1c7ac5825e64db39083b02b92624; fresh exact-content readback passed",
+    "daedalus-research-os: README b40ac86cfac985aaeb641ce845f2c24aefcbda6b; LICENSE 723e74dce0aa81b77fe91517eb22806eb77c73f4; fresh exact-content readback passed",
+    "aion-parallax-research: README 705a7f18e3ff3730f066f000d9bb6deaa62db7e9; LICENSE 3302092d49556a8f7735b291b9666f6da230cb5e; fresh exact-content readback passed",
+    "icarus-csv-evidence-lab: README d96458fa7a7a64c9792fc956a211bca593e776cd; LICENSE bd4d71ea92048b853d95a330c1c9d3632e62be07; fresh exact-content readback passed",
+    "icarus-causal-router: README 3239192f2497b3bbbc89ffca5cd17e8820eac227; LICENSE b05d8052b3ed132c148cb568beeb823eec270e17; fresh exact-content readback passed",
+    "divine-providence: README 33b6b549bdaf5e6e67b3a5bd850c0db671c61fe4; LICENSE fd5c22a107b43eb21c8511f570bd865fa7e0b0ae; fresh exact-content readback passed",
+    "ideas-reality: README de18f9ea31054aa4a0a02c0a7bc808dcc5ceb8db; LICENSE f87f66dc34fb46b7a2edb12c92eecb41e7d7a2a2; fresh exact-content readback passed",
+    "archived-original:coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json; original-path:coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json; sha256:633d85714ad177e3cf70afbb9ce8da20d44d5d0e14e70370ae72d0fd2767e6fa",
+    "verification-scope:HISTORICAL_RECORD_STRUCTURE_ONLY; original licensing claims not reverified"
+  ],
+  "next_action": "Run current tree validation and regression suite; original worker state remains governed by its remaining records.",
+  "coordination_mode": "independent",
+  "cooperates_with": [],
+  "correction": {
+    "original_path": "coordination/events/2026/10/25/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json",
+    "archive_path": "coordination/archive/invalid-events/codex-20261025-icarus-licensing/20261025T165640Z-complete-neutral-landings.json",
+    "sha256": "633d85714ad177e3cf70afbb9ce8da20d44d5d0e14e70370ae72d0fd2767e6fa",
+    "original_session_id": "codex-20261025-icarus-licensing",
+    "original_event_id": "20261025T165640Z-complete-neutral-landings",
+    "original_summary": "Owner-selected neutral maintainer landing pages and stronger proprietary notices published in eleven related repositories. Fresh exact-content readback verified all 22 README/LICENSE files, preservation of complete prior README content inside details, and AION change log. No repository rename, visibility change, runtime modification or workflow modification. Public code/history remain accessible/searchable; no automatic download popup, legal guarantee, tracking or invented penalty is claimed.",
+    "historical_verification_only": true
+  }
+}

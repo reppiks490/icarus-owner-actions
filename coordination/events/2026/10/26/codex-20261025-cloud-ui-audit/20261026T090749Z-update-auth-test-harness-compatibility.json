@@ -1,0 +1,24 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261026T090749Z-update-auth-test-harness-compatibility",
+  "session_id": "codex-20261025-cloud-ui-audit",
+  "at_utc": "2026-10-26T09:07:49Z",
+  "type": "UPDATE",
+  "phase": "authentication-defaults",
+  "summary": "Update legacy test harnesses to provide the shared browser token accessor and clear all supported credential names when verifying fail-closed behavior.",
+  "repos": ["reppiks490/Icarus", "reppiks490/icarus-owner-actions"],
+  "paths": ["tests_engine/test_evolution_ui_status.py", "tests_engine/test_restart_defaults.py"],
+  "targets": [
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_evolution_ui_status.py"},
+    {"repo": "reppiks490/Icarus", "path": "tests_engine/test_restart_defaults.py"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/26/codex-20261025-cloud-ui-audit/20261026T090749Z-update-auth-test-harness-compatibility.json"}
+  ],
+  "dependencies": [],
+  "evidence": [
+    "The full Icarus run showed the Evolution UI fixture supplied IcarusClient.request but omitted the new shared getToken accessor.",
+    "The restart-defaults fail-closed test cleared ICARUS_TOKEN but left legacy environment names available to the resolver."
+  ],
+  "next_action": "Align these fixtures with the centralized resolver and rerun all failed tests from the full suite.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

@@ -1,8 +1,6 @@
 {
   "schema_version": "icarus-coordination-summary-v2",
   "session_id": "codex-20261025-icarus-licensing",
-  "status": "COMPLETE",
-  "at_utc": "2026-10-25T16:56:40Z",
   "summary": "Owner-selected neutral maintainer landing pages and stronger proprietary notices published in eleven related repositories. Fresh exact-content readback verified all 22 README/LICENSE files, preservation of complete prior README content inside details, and AION change log. No repository rename, visibility change, runtime modification or workflow modification. Public code/history remain accessible/searchable; no automatic download popup, legal guarantee, tracking or invented penalty is claimed.",
   "evidence": [
     "Icarus: README 456da5e36d1428402b97357dda2da66679613803; LICENSE 4bd9c5e55b05abac085bc08732e03a6e38ac5413; fresh exact-content readback passed",
@@ -15,12 +13,16 @@
     "icarus-csv-evidence-lab: README d96458fa7a7a64c9792fc956a211bca593e776cd; LICENSE bd4d71ea92048b853d95a330c1c9d3632e62be07; fresh exact-content readback passed",
     "icarus-causal-router: README 3239192f2497b3bbbc89ffca5cd17e8820eac227; LICENSE b05d8052b3ed132c148cb568beeb823eec270e17; fresh exact-content readback passed",
     "divine-providence: README 33b6b549bdaf5e6e67b3a5bd850c0db671c61fe4; LICENSE fd5c22a107b43eb21c8511f570bd865fa7e0b0ae; fresh exact-content readback passed",
-    "ideas-reality: README de18f9ea31054aa4a0a02c0a7bc808dcc5ceb8db; LICENSE f87f66dc34fb46b7a2edb12c92eecb41e7d7a2a2; fresh exact-content readback passed"
+    "ideas-reality: README de18f9ea31054aa4a0a02c0a7bc808dcc5ceb8db; LICENSE f87f66dc34fb46b7a2edb12c92eecb41e7d7a2a2; fresh exact-content readback passed",
+    "archived-original:coordination/archive/invalid-summaries/codex-20261025-icarus-licensing.json; sha256:a66073d4848258c4b2baa227fe4beb8b69d5d0739142932fd6f1e6e66d8fb734",
+    "correction-scope:summary-schema-fields-normalized-only; historical evidence and timestamps retained"
   ],
   "limitations": [
     "Presentation deters casual browsing only; all public source/history remain searchable.",
     "No download popup or automatic prohibition of lawful GitHub viewing/downloading/forking.",
     "Third-party terms, prior grants and statutory rights remain preserved.",
     "Only documentation changed; no runtime tests executed or full-system health claimed."
-  ]
+  ],
+  "result": "complete",
+  "completed_at_utc": "2026-10-25T16:56:40Z"
 }
