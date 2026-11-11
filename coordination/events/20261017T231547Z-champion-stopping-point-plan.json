@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T231547Z-champion-stopping-point-plan",
+  "session_id": "codex-20261017-champion-stopping-point",
+  "at_utc": "2026-10-17T23:15:47Z",
+  "type": "PLAN",
+  "phase": "documentation-handoff",
+  "summary": "Document the last verified Shadow Twin/dashboard completion state and the champion qualification blocker, with dated evidence and specific next actions. Documentation-only; no trading logic or live execution changes.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "docs/agent-handoffs/2026-10-17-champion-stopping-point.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/agent-handoffs/2026-10-17-champion-stopping-point.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus-engine latest data_health.json and CL Lab latest.json were not mounted in this workspace"
+  ],
+  "evidence": [
+    "Icarus main worktree clean at 73fd351",
+    "PR #417 checks passed: browser, engine Linux, engine Windows, historical-context consumer"
+  ],
+  "next_action": "Publish dated handoff with caveats, commit and request merge so it is discoverable from main.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
