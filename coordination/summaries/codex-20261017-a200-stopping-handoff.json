@@ -1,0 +1,23 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261017-a200-stopping-handoff",
+  "completed_at_utc": "2026-10-17T23:06:23Z",
+  "result": "complete",
+  "summary": "Published a durable stopping handoff for Icarus PR #446. The fail-closed, signal-only A200 historical research gate is merged and verified; the 200 catalog listings still have zero source-connected, entitled, historical-qualified, Pulse-enabled, or strategy-qualified rows. Resumption requires an auditable provider path for entitlement, closed-bar status, and corporate-action evidence, followed by source-to-Pulse readback. No provider calls, spend, new credentials, broker actions, or live authority changes occurred.",
+  "evidence": [
+    "pr:reppiks490/Icarus#446",
+    "feature-head:881d285f9bee9491128aaf220cf162354ccf179c",
+    "merge:reppiks490/Icarus:02e99b1c0f6d50e511ff63eff2247a539d65b3d9",
+    "focused-tests:A200-and-market-universe:55-passed",
+    "github-run:38960360006:engine-Linux-and-Windows-engine-contract-success",
+    "github-run:38960360007:configuration-Linux-Windows-success",
+    "github-run:38960355579:source-data-contract-Linux-Windows-success",
+    "github-run:38960355631:intelligence-feed-contract-Linux-Windows-success",
+    "handoff:docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"
+  ],
+  "follow_ups": [
+    "Provide or identify an entitled source adapter with auditable entitlement, closed-bar, and source-bound corporate-action evidence.",
+    "Keep the gate fail-closed; qualify assets from receipts and demonstrate source-to-Pulse readback before claiming operational connection.",
+    "Live execution remains disabled; no spend or credentials were authorized by this documentation task."
+  ]
+}

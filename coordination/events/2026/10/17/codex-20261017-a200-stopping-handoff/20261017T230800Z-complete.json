@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T230800Z-complete-a200-stopping-handoff",
+  "session_id": "codex-20261017-a200-stopping-handoff",
+  "at_utc": "2026-10-17T23:08:00Z",
+  "type": "COMPLETE",
+  "phase": "verification",
+  "summary": "Completed and published the A200 stopping handoff as an owner-actions documentation PR. The note records the merged implementation, verification evidence, current zero-qualified-row state, provider evidence blocker, and bounded resume steps. No runtime or authority behavior changed.",
+  "repos": ["reppiks490/icarus-owner-actions", "reppiks490/Icarus"],
+  "paths": ["docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/sessions/codex-20261017-a200-stopping-handoff.json"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/summaries/codex-20261017-a200-stopping-handoff.json"}
+  ],
+  "dependencies": ["pr:reppiks490/icarus-owner-actions#43", "pr:reppiks490/Icarus#446"],
+  "evidence": [
+    "pr:reppiks490/icarus-owner-actions#43@a8b2c0a",
+    "JSON parsing passed for session, plan event, and summary",
+    "git diff --check passed",
+    "coordination_fabric validate is blocked by a pre-existing malformed immutable 2026-10-16 event"
+  ],
+  "next_action": "Merge after the documentation PR checks pass; preserve the independently established provider qualification blocker until auditable source evidence is available.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

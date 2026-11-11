@@ -1,0 +1,17 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-a200-stopping-handoff",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Record the merged A200-to-Pulse research runtime, verification, and remaining provider qualification blocker as a durable stopping handoff.",
+  "home_repo": "reppiks490/icarus-owner-actions",
+  "branch": "codex/a200-stopping-handoff-20261017",
+  "pr": null,
+  "started_at_utc": "2026-10-17T23:06:23Z",
+  "stale_after_minutes": 180,
+  "capabilities": ["github", "documentation", "coordination"],
+  "initial_dependencies": [
+    "reppiks490/Icarus#446 merged at 02e99b1c0f6d50e511ff63eff2247a539d65b3d9",
+    "A200 provider adapter must supply auditable source qualification evidence before any catalog row can qualify"
+  ]
+}

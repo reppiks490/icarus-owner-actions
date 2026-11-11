@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261017T230623Z-plan-a200-stopping-handoff",
+  "session_id": "codex-20261017-a200-stopping-handoff",
+  "at_utc": "2026-10-17T23:06:23Z",
+  "type": "PLAN",
+  "phase": "documentation",
+  "summary": "Document the merged A200 historical-batch qualification gate, exact verification evidence, safe stopping point, and provider qualification work needed to resume toward Pulse consumption. No runtime, provider, UI, workflow, or execution behavior changes are in scope.",
+  "repos": ["reppiks490/icarus-owner-actions"],
+  "paths": ["docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"],
+  "targets": [
+    {"repo": "reppiks490/icarus-owner-actions", "path": "docs/A200_PULSE_STOPPING_HANDOFF_20261017.md"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/sessions/codex-20261017-a200-stopping-handoff.json"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/events/2026/10/17/codex-20261017-a200-stopping-handoff/20261017T230623Z-plan.json"},
+    {"repo": "reppiks490/icarus-owner-actions", "path": "coordination/summaries/codex-20261017-a200-stopping-handoff.json"}
+  ],
+  "dependencies": ["reppiks490/Icarus#446"],
+  "evidence": ["Icarus main contains merge 02e99b1c0f6d50e511ff63eff2247a539d65b3d9"],
+  "next_action": "Write and verify the concise handoff, publish the coordination summary, then offer the documentation change as a PR.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
