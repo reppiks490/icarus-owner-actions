@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261017-futures-stop-point",
+  "actor": "ChatGPT / Codex",
+  "model_family": "openai",
+  "goal": "Record a durable stopping point and actionable handoff for the canonical futures convergence follow-ups and their current GitHub review state.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/futures-stop-point-20261017",
+  "started_at_utc": "2026-10-17T23:17:06Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "documentation",
+    "review"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus#415",
+    "reppiks490/Icarus#432",
+    "reppiks490/Icarus#435",
+    "reppiks490/Icarus#438"
+  ]
+}
