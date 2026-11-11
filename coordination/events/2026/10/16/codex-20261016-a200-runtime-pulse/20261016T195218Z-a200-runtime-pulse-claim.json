@@ -1,0 +1,50 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T195218Z-a200-runtime-pulse-claim",
+  "session_id": "codex-20261016-a200-runtime-pulse",
+  "at_utc": "2026-10-16T19:52:18Z",
+  "type": "CLAIM",
+  "phase": "implementation",
+  "summary": "Claim the A200-to-Pulse runtime admission seam. Add a dedicated evidence-gated module and tests, plus one narrow Portfolio integration hook; do not alter Atlas catalog/futures files, provider acquisition workflows, UI paths, credentials, or execution authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/sessions/codex-20261016-a200-runtime-pulse.json",
+    "coordination/events/2026/10/16/codex-20261016-a200-runtime-pulse/20261016T195218Z-a200-runtime-pulse-claim.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/a200_runtime_feed.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/runtime.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_a200_runtime_feed.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/sessions/codex-20261016-a200-runtime-pulse.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/10/16/codex-20261016-a200-runtime-pulse/20261016T195218Z-a200-runtime-pulse-claim.json"
+    }
+  ],
+  "dependencies": [
+    "main:reppiks490/Icarus@4c7ef2c34d83ecc0d2a921485c2497a683a9b304",
+    "evidence-ledger:reppiks490/Icarus-engine/config/data_ingestion_manifest.json"
+  ],
+  "evidence": [
+    "coordination-snapshot:reppiks490/icarus-owner-actions@59c62daf6dc887fcf4ba3a96fb5c421fd66c3fdd",
+    "owner-policy:live_broker_arming=false"
+  ],
+  "next_action": "Inspect current branch evidence and runtime API, implement a side-effect-free qualification gate, then test rejection of current unqualified A200 evidence and admission of fully witnessed synthetic evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
