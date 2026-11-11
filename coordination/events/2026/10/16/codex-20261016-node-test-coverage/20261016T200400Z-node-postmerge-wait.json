@@ -1,0 +1,26 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T200400Z-node-postmerge-wait",
+  "session_id": "codex-20261016-node-test-coverage",
+  "at_utc": "2026-10-16T20:04:00Z",
+  "type": "WAITING",
+  "phase": "post-merge-verification",
+  "summary": "PR #442 merged to main as 5f3b7c9f026c1eaa535b01924f12053aad191928 after all exact-PR-head checks passed. Post-merge main test and contract runs are queued; waiting for them to complete before closing the coordination workstream.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#442 merged",
+    "github-commit:5f3b7c9f026c1eaa535b01924f12053aad191928 post-merge checks"
+  ],
+  "evidence": [
+    "Exact PR head 86dea48f4bd1169285318e53a5088d9c2d98a271 had all 14 check runs completed successfully",
+    "PR merge status was CLEAN and MERGEABLE before merge",
+    "PR merge completed at 2026-10-16T20:03:21Z"
+  ],
+  "next_action": "Verify post-merge main checks, then record complete with exact evidence.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}

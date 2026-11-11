@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261016T195300Z-node-test-waiting",
+  "session_id": "codex-20261016-node-test-coverage",
+  "at_utc": "2026-10-16T19:53:00Z",
+  "type": "WAITING",
+  "phase": "exact-head-ci",
+  "summary": "Node 22 CI repair is implemented and locally verified; PR #442 is open at exact head 86dea48f. Waiting for Linux/Windows engine and contract workflows to finish; no failure observed yet.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#442@86dea48f4bd1169285318e53a5088d9c2d98a271",
+    "github-run:38957923797",
+    "github-run:38957923878",
+    "github-run:38957923914"
+  ],
+  "evidence": [
+    "Focused Node-backed suite passed 123 tests locally",
+    "All workflow YAML parsed; affected CI jobs were audited for setup-node@v4 Node 22",
+    "git diff --check passed"
+  ],
+  "next_action": "Inspect exact-head runs, diagnose and repair any failed test, then record CI completion and hand off/merge only according to repo workflow.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
