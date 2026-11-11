@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261028-real-engine-evidence",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Connect Icarus read-only to actual committed Icarus-engine evidence artifacts with exact peer commit provenance, zero synthetic fixtures, no provider calls, no execution authority and no raw licensed payload copying",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "chatgpt/real-engine-evidence-federation-20261028",
+  "started_at_utc": "2026-10-28T02:07:00Z",
+  "stale_after_minutes": 180,
+  "capabilities": [
+    "github",
+    "cross-repo-read",
+    "real-persisted-evidence-ci"
+  ],
+  "initial_dependencies": [
+    "reppiks490/Icarus@1771d9788bf63fdbf0ef23dde7b00c67b9360c24",
+    "reppiks490/Icarus-engine@10d02b2e1ee20797be5945ffe3f4ebb5e4193bb3",
+    "constraint:no_new_collection_or_spend",
+    "constraint:execution_authorized=false"
+  ]
+}
