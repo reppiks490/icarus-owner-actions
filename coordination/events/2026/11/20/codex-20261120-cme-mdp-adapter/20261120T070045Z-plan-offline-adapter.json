@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T070045Z-plan-offline-adapter",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "at_utc": "2026-11-20T07:00:45Z",
+  "type": "PLAN",
+  "phase": "adapter-build-contract",
+  "summary": "Claim an isolated offline adapter for richie-ma/cme.mdp in the existing ICARUS candidate checkout. Expose local, provenance-preserving wrappers for package analytics over owner-supplied entitled files, with substantive synthetic tests. No network/feed access, raw licensed data copied, MCP registration, runtime wiring, live execution, or production changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [
+    "tools/repository_adapters/cme_mdp/",
+    "tests_engine/test_cme_mdp_adapter.py",
+    "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T070045Z-plan-offline-adapter.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T070045Z-plan-offline-adapter.json"
+    }
+  ],
+  "dependencies": [
+    "source:richie-ma/cme.mdp@4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "runtime:private-WSL-R-4.5.3+highfrequency-1.0.3",
+    "constraint:synthetic-fixtures-only",
+    "constraint:no-provider-collection-or-new-spend",
+    "constraint:no-live-broker-arming",
+    "constraint:no-production-wiring-before-adapter-gate"
+  ],
+  "evidence": [
+    "source:clean local cme.mdp checkout at 4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "source:package declares GPL-3-or-later code and requires locally entitled CME MDP3 files; no raw sample data is included",
+    "runtime:WSL conda R environment imports highfrequency and its declared package dependencies with clean exit"
+  ],
+  "next_action": "Inspect package function contracts in the pinned source, create isolated adapter + synthetic tests, run the adapter suite and package-level checks in the private WSL environment, then request fresh independent Sol review. Do not count as integrated or ready until exact-source and safety checks pass.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
