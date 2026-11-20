@@ -1,0 +1,44 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T122618Z-plan-grype-local-sbom-adapter",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T12:26:18Z",
+  "type": "PLAN",
+  "phase": "grype-local-sbom-adapter",
+  "summary": "Add a standalone offline Grype adapter candidate that scans only explicit, bounded local Syft SBOM files using a checksum-pinned official Windows release and an explicitly selected local vulnerability database. Provide health and scan operations, provenance receipts, standardized errors, path/resource limits, and synthetic/mock tests. Disable auto DB/app updates and prohibit runtime/MCP wiring or scanning ICARUS-owned real SBOMs until the global adapters-first gate closes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "anchore/grype"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/GrypeAdapter.psm1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_grype_adapter_adapter.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/SOFTWARE_INVENTORY.md"
+    }
+  ],
+  "dependencies": [
+    "source:anchore/grype@v0.122.1 official Windows amd64 release (checksum verified before use)",
+    "database:C:\\Users\\tripl\\.omc\\tools\\grype\\db, schema v6.1.10, local Grype v0.121.3 status valid at 2026-11-20T12:26Z",
+    "runtime:PowerShell offline candidate; no auto-update or network",
+    "constraint:synthetic or caller-supplied test SBOMs only",
+    "constraint:execution_authorized_false",
+    "constraint:global-adapters-before-integration"
+  ],
+  "evidence": [
+    "Live ICARUS engine is ok and warm; no runtime changes.",
+    "Existing Syft adapter is isolated and independently reviewed; adapter composition is a future integration, not performed here.",
+    "Grype checkout at anchore__grype is behind 38 commits and has a local edit; it will be preserved and not used as a build workspace."
+  ],
+  "next_action": "Verify/download official Grype release into an isolated versioned tool directory, then implement and test the bounded candidate; request independent Sol review on exact final hashes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
