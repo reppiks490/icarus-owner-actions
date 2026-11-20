@@ -1,0 +1,60 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T111432Z-complete-cme-mdp-adapter",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "at_utc": "2026-11-20T11:14:32Z",
+  "type": "COMPLETE",
+  "phase": "isolated-adapter-verified",
+  "summary": "Completed and independently Sol-approved the isolated richie-ma/cme.mdp offline adapter candidate. It wraps six package exports using synthetic FIX tests, pins source/runtime, enforces local input/date/provenance and resource boundaries, blocks network socket syscalls, terminates/verifies all worker process-group descendants, and returns bounded aggregate-only receipts. This closes only this adapter workstream; it is not wired to ICARUS/MCP and the global adapters-first gate remains open.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [
+    "tools/repository_adapters/cme_mdp/adapter.py",
+    "tools/repository_adapters/cme_mdp/dispatch.R",
+    "tools/repository_adapters/cme_mdp/worker.py",
+    "tools/repository_adapters/cme_mdp/README.md",
+    "tests_engine/test_cme_mdp_adapter.py",
+    "coordination/summaries/codex-20261120-cme-mdp-adapter.json",
+    "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T111432Z-complete-cme-mdp-adapter.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/summaries/codex-20261120-cme-mdp-adapter.json"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T111432Z-complete-cme-mdp-adapter.json"
+    }
+  ],
+  "dependencies": [
+    "source:richie-ma/cme.mdp@4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "review:sol-advisor-approved-exact-candidate",
+    "constraint:adapter-isolated-until-global-gate",
+    "constraint:no-provider-data-or-live-broker-authority"
+  ],
+  "evidence": [
+    "local:WSL Ubuntu Python suite 15/15 passed in 14.099 seconds after final changes",
+    "review:Sol final read-only review APPROVE after source inspection",
+    "runtime:cme.mdp 0.1.1 and highfrequency 1.0.3 installed in private WSL R 4.5.3 environment; exact pinned source archive R CMD check exit 0 with one documented NOTE",
+    "local:source:adapter.py SHA-256 B682F0105CBF4CB31840A7D32F55CA12CB55F477F8373E2DA9193934F92D1904",
+    "local:source:dispatch.R SHA-256 628C2792BBF5E5ADB43470082E6626FD9F3503C2D18F8AC9413D8D3D97484560",
+    "local:source:worker.py SHA-256 1A9D180CFF492BE07E90C15DB0C429D1234CC015E4A06B9F29FCEE8B4A9B6DE8",
+    "local:source:README.md SHA-256 A476D20CEB5A4A55C0E2CBEDE964B0F15A6D407FB2FA50D7469DE4BB7C3BF7D4",
+    "local:source:test_cme_mdp_adapter.py SHA-256 743C604BCA1A327B1440FE3A9362A692433C538530A47B9E605F1FADFD0CEE97"
+  ],
+  "next_action": "Resume remaining EPAM and Syft FIX-FIRST adapters by inspecting their exact post-quota working tree, then continue the repository adapter queue. Do not integrate any repository capability until every known adapter is built, tested, reviewed and verified.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
