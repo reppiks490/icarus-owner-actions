@@ -1,0 +1,34 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T182646Z-update-rd-agent-status-integrity-budget",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T18:26:46Z",
+  "type": "UPDATE",
+  "phase": "rd-agent-status-integrity-budget",
+  "summary": "Repaired and independently approved three RD-Agent bridge findings: receipt reparse checks now use no-follow metadata, status avoids hashing large artifacts and labels its bounded envelope-only verification, and nonzero Docker exits carry a failure reason. Focused tests and compile pass; no runtime or experiment was run.",
+  "repos": [
+    "reppiks490/divine-providence"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/rd_agent_bridge.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_rd_agent_bridge.py"
+    }
+  ],
+  "dependencies": [
+    "checkout codex/onchain-proof-clock; preserve all unrelated dirty paths"
+  ],
+  "evidence": [
+    "bridge SHA256 31D236724E45BBA3A4A5C6807EABD4B28E058CA31F285017921E741F74915C91; test SHA256 C5AABCC32935FA4F93EBFA813B9B33B89707B1FC3C80F827B57239D78F9CFB93.",
+    "Windows venv focused pytest: 53 passed; py_compile clean; independent code-reviewer APPROVE.",
+    "No Docker, provider, model, EIA, live engine, MCP wiring, or runtime action occurred in this fix."
+  ],
+  "next_action": "Refresh and rank the actual repository/data inventory from configured roots; continue adapter-first review and do not integrate candidates until the global adapter gate closes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
