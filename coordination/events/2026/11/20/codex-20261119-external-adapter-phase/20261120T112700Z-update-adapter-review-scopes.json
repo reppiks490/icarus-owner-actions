@@ -1,0 +1,61 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T112700Z-update-adapter-review-scopes",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T11:27:00Z",
+  "type": "UPDATE",
+  "phase": "offline-adapter-repair-and-export-coverage",
+  "summary": "Resume the isolated adapters-first candidate work across EPAM CME MDP3, Syft, and richie-ma/cme.mdp. EPAM's focused baseline is 16/16 but independent review found exact-limit EOF, stale-lock recovery and no-replace publication/output revalidation gaps. Syft's current focused baseline is 26 passed/4 failed, with nested-schema, concurrent/stale-lock, failure cleanup and child lifecycle cases under repair. The prior cme.mdp adapter is Sol-approved for six exports; installed package exposes 13, so the remaining seven useful exports are being audited and tested. No ICARUS/MCP wiring, deployment, restart, provider calls, live market-data access or broker authority.",
+  "repos": [
+    "reppiks490/Icarus",
+    "epam/java-cme-mdp3-handler",
+    "anchore/syft",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp3/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp3_offline_adapter.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/SyftAdapter.psm1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/Export-IcarusSbom.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_syft_adapter_adapter.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "constraint:global-adapters-first-gate"
+  ],
+  "evidence": [
+    "EPAM focused Pester 3.4 baseline 16/16; exact-limit EOF and publication/lock review gaps confirmed by code inspection.",
+    "Syft focused Pester 3.4 baseline 26 passed/4 failed/0 skipped; exact failure cases communicated by its owner.",
+    "Installed cme.mdp 0.1.1 exports 13 namespace functions in private WSL R 4.5.3; existing approved adapter exercises six.",
+    "Read-only ICARUS engine health: ok=true, warm=true, 27 configured assets.",
+    "Source-evidence index reports 149 identities/153 memberships/677825 files but is dated 2026-10-27, stale_on_disk_unknown=true and source_reverified=false; treated as a lead, not current inventory."
+  ],
+  "next_action": "Repair/reproduce scoped adapter findings, run focused tests, obtain fresh independent Sol reviews, then continue the global adapter inventory. Keep all candidates isolated.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
