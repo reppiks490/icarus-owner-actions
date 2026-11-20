@@ -1,0 +1,36 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T181723Z-plan-rd-agent-status-integrity-budget",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T18:17:23Z",
+  "type": "PLAN",
+  "phase": "rd-agent-status-integrity-budget",
+  "summary": "Fix three reviewed RD-Agent bridge defects in the existing shared Divine Providence checkout: no-follow receipt reparse checks, bounded aggregate status verification cost, and an explicit failure reason on nonzero Docker exit. Preserve all unrelated dirty paths.",
+  "repos": [
+    "reppiks490/divine-providence",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "src/divine_providence/rd_agent_bridge.py"
+    },
+    {
+      "repo": "reppiks490/divine-providence",
+      "path": "tests/test_rd_agent_bridge.py"
+    }
+  ],
+  "dependencies": [
+    "existing dirty checkout branch codex/onchain-proof-clock at 5e4ed5fe005a4454512beca161bcb6879cc2ac0f",
+    "focused Windows venv tests only; no Docker/model/provider/experiment run"
+  ],
+  "evidence": [
+    "Independent review identified 3 findings; exact focused test baseline is 50 passed, 1 failed on receipt reparse rejection.",
+    "No owner named in existing handoff; parent assigns exclusive ownership to the two targets above; all other 64 dirty/untracked paths remain untouched.",
+    "Live ICARUS remains warm; no runtime or MCP changes in this plan."
+  ],
+  "next_action": "Implement the three bounded fixes and regressions, run the focused bridge test file, then independently review exact final hashes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
