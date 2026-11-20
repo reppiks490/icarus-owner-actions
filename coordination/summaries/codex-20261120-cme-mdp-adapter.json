@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-summary-v2",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "status": "COMPLETE",
+  "at_utc": "2026-11-20T11:14:32Z",
+  "summary": "Built and independently Sol-approved an isolated offline adapter candidate for richie-ma/cme.mdp. The adapter exposes trade_summary, quote_message, statistics, status, meta_data and mbo_quote_queue; outputs only bounded aggregate counts plus provenance; validates exact source/package/runtime pins, local input root, size, digest, identity, date tag, operation schema and price factor; denies socket, socketpair and io_uring_setup; and kills/verifies all parser process-group members after timeout or leader exit. Tests use generated synthetic FIX only. This completes the bounded adapter workstream, not the larger ICARUS goal.",
+  "evidence": [
+    "source commit 4d0db0c941c539e1401f949edb0cb46dd1092534; source archive SHA-256 bfec9fbad8149549354c88f864210fab44ba416daf976f9f81f96a763e45da69",
+    "private WSL Ubuntu R 4.5.3 environment; cme.mdp 0.1.1 and highfrequency 1.0.3 installed; declared imports present",
+    "exact-source R CMD check exit 0, Status: 1 NOTE (missing visible definition for dot in status(); optional gganimate absent); upstream tests are generic arithmetic placeholders",
+    "WSL focused Python suite 15/15 passed in 14.099 seconds; six actual exports were exercised with generated fixtures",
+    "independent fresh Sol read-only review disposition APPROVE after the final source changes",
+    "candidate hashes: adapter.py B682F0105CBF4CB31840A7D32F55CA12CB55F477F8373E2DA9193934F92D1904; dispatch.R 628C2792BBF5E5ADB43470082E6626FD9F3503C2D18F8AC9413D8D3D97484560; worker.py 1A9D180CFF492BE07E90C15DB0C429D1234CC015E4A06B9F29FCEE8B4A9B6DE8; README.md A476D20CEB5A4A55C0E2CBEDE964B0F15A6D407FB2FA50D7469DE4BB7C3BF7D4; test_cme_mdp_adapter.py 743C604BCA1A327B1440FE3A9362A692433C538530A47B9E605F1FADFD0CEE97"
+  ],
+  "limitations": [
+    "Adapter remains in an isolated local candidate checkout and is not committed, wired into ICARUS/MCP, deployed or used by the live engine.",
+    "No CME raw market data is included in the source repository and no vendor entitlement was established.",
+    "Only six of the package exports are wrapped; the remaining exports require separate contracts/tests before any claim of full repository use.",
+    "cme.mdp is GPL (>=3); distribution and linkage review remains required."
+  ],
+  "next_action": "Resume the broader adapters-first goal with EPAM and Syft after checking current exact files/working tree. Continue local install/adapter inventory; no repository capability integration until every known adapter passes tests and independent review."
+}
