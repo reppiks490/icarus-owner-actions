@@ -1,0 +1,46 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T125743Z-update-grype-local-sbom-adapter",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T12:57:43Z",
+  "type": "UPDATE",
+  "phase": "grype-local-sbom-adapter",
+  "summary": "Completed and independently reviewed an isolated Grype local-SBOM adapter candidate. Exact-hash Pester, parser, mutation/recovery, and synthetic CLI checks pass. No ICARUS runtime/MCP wiring or real ICARUS SBOM scan was performed; adapters-first gate remains open.",
+  "repos": [
+    "reppiks490/Icarus",
+    "anchore/grype"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/GrypeAdapter.psm1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_grype_adapter_adapter.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/SOFTWARE_INVENTORY.md"
+    }
+  ],
+  "dependencies": [
+    "source:anchore/grype@v0.122.1 official Windows amd64 release; archive checksum verified",
+    "database:local schema v6.1.10, valid under Grype v0.122.1; DB auto-update disabled",
+    "constraint:explicit local SBOM only, fixed sboms/reports roots, no OS-level network sandbox claim",
+    "constraint:execution_authorized_false",
+    "constraint:no ICARUS SBOM scan or runtime/MCP wiring before global adapters-first gate"
+  ],
+  "evidence": [
+    "Final module SHA256 899715E7791E3BF31BC579A110B474FCBFE5721429386197AE18F9BA0D479EA9; final test SHA256 A548F8CAA8090D70062297DAD78D580CD7B677BA9C36E499D3C88752C0B0301D.",
+    "Focused Pester passed 20/20; PowerShell parsers reported zero errors; git diff --check clean.",
+    "Independent Sol review on exact final hashes: ship; mutation tests cover staged, post-move, and commit-marker corruption/recovery.",
+    "Fresh final-hash Grype scan used only a 163-byte hand-authored CycloneDX fixture, produced zero matches; report/receipt/commit hashes are recorded in continuation-progress-20261120.md.",
+    "Live engine remained healthy/warm on 27 configured assets; no runtime changes. C: free space remained above 20 GiB.",
+    "RD-Agent is an existing bounded scheduler-smoke bridge with read-only receipts; its full execution path remains unqualified. Preserve its dirty checkout and review it before any duplicate adapter work."
+  ],
+  "next_action": "At next continuation, independently review and reconcile the existing RD-Agent bridge/receipt/MCP boundary, then resume the full adapters-first inventory. Keep all adapter candidates isolated until the global gate closes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
