@@ -1,0 +1,20 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Build and verify a standalone, fail-closed Syft adapter in the isolated ICARUS candidate while preserving the live runtime and the global adapters-before-integrations gate.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/syft-sbom-20261119",
+  "started_at_utc": "2026-11-20T05:09:53Z",
+  "stale_after_minutes": 10080,
+  "capabilities": [
+    "local-tests",
+    "parallel-agents"
+  ],
+  "initial_dependencies": [
+    "source:anchore/syft@v1.57.1",
+    "policy:execution_authorized_false",
+    "resource:C-free-space-5.46GiB"
+  ]
+}
