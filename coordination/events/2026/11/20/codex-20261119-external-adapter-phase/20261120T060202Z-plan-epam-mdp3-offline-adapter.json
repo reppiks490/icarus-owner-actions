@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T060202Z-plan-epam-mdp3-offline-adapter",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T06:02:02Z",
+  "type": "PLAN",
+  "phase": "epam-mdp3-offline-packet-adapter",
+  "summary": "Build and verify a bounded, local-file-only adapter over EPAM's in-memory MDP packet parser. Use synthetic fixtures for tests; no multicast, live CME connections, order-book reconstruction, ICARUS/MCP wiring, or market-data entitlement claims. Preserve the source checkout and keep runtime unchanged.",
+  "repos": [
+    "reppiks490/Icarus",
+    "epam/java-cme-mdp3-handler"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp3/CmeMdp3OfflineAdapter.java"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp3/Invoke-CmeMdp3Offline.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp3/README.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp3_offline_adapter.ps1"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "resource:epam-mdp3-source-0291e50f",
+    "resource:verified-gradle-5.5.1-and-zulu8u514",
+    "data-rights:epamdpm3-bundled-capture-fixtures-unverified",
+    "license:root-LGPL3-source-headers-GPL3-inconsistency"
+  ],
+  "evidence": [
+    "Offline API: MdpPacket.wrapFromBuffer(ByteBuffer), packet header accessors, reusable MdpMessage iterator",
+    "Bundled Cucumber replay helper sends UDP multicast; adapter will not call it",
+    "Need preserve opaque 8-byte capture field semantics until documentation proves meaning",
+    "Syft adapter paths remain separately reserved; no overlapping target paths"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
