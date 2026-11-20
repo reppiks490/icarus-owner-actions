@@ -1,0 +1,49 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T055640Z-adapter-and-epam-progress",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T05:56:40Z",
+  "type": "UPDATE",
+  "phase": "syft-adapter-independent-review; epam-mdp3-verified-build",
+  "summary": "Syft adapter corrections were implemented and a fresh Sol re-review is pending; its global adapter-gate status is not yet closed. Installed the repository-pinned Gradle 5.5.1 binary and a checksum-verified private Azul Zulu 8 runtime after Java 11 incompatibility, then built both EPAM CME MDP3 MBP modules. The MBO module test suite reports 35 tests, 0 failures, 3 skipped (32 pass); MBP-only test task produced no XML test suites. Both distribution ZIPs built. No CME feed, live market data, ICARUS/MCP wiring, broker, runtime, or source-tree changes were made. C: free space is 41.77 GiB; generated build evidence was moved out of the source checkout.",
+  "repos": [
+    "reppiks490/Icarus",
+    "epam/java-cme-mdp3-handler",
+    "anchore/syft"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/SyftAdapter.psm1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/software_inventory/Export-IcarusSbom.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_syft_adapter_adapter.ps1"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/SOFTWARE_INVENTORY.md"
+    }
+  ],
+  "dependencies": [
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "resource:C-free-space-41.77GiB",
+    "independent-review:syft-follow-up-pending"
+  ],
+  "evidence": [
+    "Syft focused Pester 3.4: 14 passed, 0 failed, 0 skipped; independent review requested",
+    "Gradle 5.5.1 official binary SHA256: 222a03fcf2fcaf3691767ce9549f78ebd4a77e73f9e23a396899fb70b420cd00",
+    "Azul metadata API package identity zulu8.98.0.201-ca-jdk8.0.514-win_x64.zip SHA256: ab833a2af66a80e003dacc97c598eaa8fa1a54c2be441e661ef80214eba99a97",
+    "EPAM :core:test :mbp-with-mbo:test with Azul JDK8: build successful; 35 tests, 0 failures, 3 skipped",
+    "EPAM :mbp-only:test :mbp-only:jar and both distribution ZIP tasks succeeded; MBP-only XML suite count was zero",
+    "ICARUS read-only engine health after work: ok=true, warm=true, 27 assets"
+  ],
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
