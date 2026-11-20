@@ -1,0 +1,53 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T110459Z-update-cme-mdp-review-fixes",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "at_utc": "2026-11-20T11:04:59Z",
+  "type": "UPDATE",
+  "phase": "adapter-sol-review",
+  "summary": "Applied bounded repairs from fresh Sol FIX-FIRST for the isolated cme.mdp adapter: require exactly one matching per-record tag 75, test same-process-group descendant termination and verify both PIDs are gone before timeout returns, and directly assert io_uring_setup receives EPERM. Independent exact WSL suite now passes 14/14. Awaiting fresh Sol review of these exact bytes. Candidate remains isolated and unwired.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [
+    "tools/repository_adapters/cme_mdp/adapter.py",
+    "tools/repository_adapters/cme_mdp/dispatch.R",
+    "tools/repository_adapters/cme_mdp/worker.py",
+    "tools/repository_adapters/cme_mdp/README.md",
+    "tests_engine/test_cme_mdp_adapter.py",
+    "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T110459Z-update-cme-mdp-review-fixes.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T110459Z-update-cme-mdp-review-fixes.json"
+    }
+  ],
+  "dependencies": [
+    "source:richie-ma/cme.mdp@4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "review:sol-first-disposition-fix-first",
+    "review:sol-follow-up-pending",
+    "constraint:no-live-broker-arming",
+    "constraint:no-network-or-provider-data",
+    "constraint:no-runtime-wiring-before-adapter-gate"
+  ],
+  "evidence": [
+    "local:Wsl-Python command python3 -IB tests_engine/test_cme_mdp_adapter.py -v; 14 tests passed in 14.268 seconds",
+    "local:test covers six real cme.mdp exports using generated synthetic FIX messages only",
+    "local:test covers missing and duplicate tag 75, identity/hash races, mounted-host rejection, timeouts with same-group child, socket/socketpair and io_uring_setup denial",
+    "runtime:live ICARUS engine_health ok=true warm=true with same 27 assets"
+  ],
+  "next_action": "Complete fresh independent Sol review against exact updated hashes. If approved, mark only adapter verification complete; keep global adapter gate and deployment/MCP wiring closed. If more findings, repair only the bounded candidate files and repeat exact tests/review.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
