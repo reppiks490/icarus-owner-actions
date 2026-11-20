@@ -1,0 +1,27 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T050953Z-plan-codex-20261119-external-adapter-phase",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T05:09:53Z",
+  "type": "PLAN",
+  "phase": "planning",
+  "summary": "Harden the standalone Syft adapter boundary in the isolated candidate: explicit capabilities/request-response contract, pinned executable trust, local-only inputs, bounded execution/output/free-space policy, full source provenance, transactional artifacts, and fixture verification. No deployment, MCP exposure, or live-runtime changes; maintain the global adapters-before-integrations gate.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "tools/software_inventory/Invoke-IcarusSyftAdapter.ps1",
+    "tests_engine/test_syft_adapter_adapter.ps1"
+  ],
+  "dependencies": [
+    "source:anchore/syft@v1.57.1",
+    "source:reppiks490/Icarus@a21507b8b9bb46ec418a0a9b89fae448fb3eae96",
+    "policy:execution_authorized_false"
+  ],
+  "evidence": [
+    "Sol read-only review identified provenance, resource bounds, executable trust, transactional publication, network-policy, and adapter-contract gaps in the current script."
+  ],
+  "next_action": "Implement only the newly claimed adapter module and focused fixture tests; preserve all existing candidate edits.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
