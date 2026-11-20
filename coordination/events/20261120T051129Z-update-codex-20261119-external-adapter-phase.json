@@ -1,0 +1,28 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T051129Z-update-codex-20261119-external-adapter-phase",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T05:11:29Z",
+  "type": "UPDATE",
+  "phase": "planning",
+  "summary": "Refine the declared Syft work to avoid a second scanner wrapper: harden the existing Export-IcarusSbom.ps1 as a thin CLI over one standalone SyftAdapter.psm1, clarify the candidate documentation, and add focused PowerShell contract tests. Keep the existing files un-deployed and do not wire them into MCP/runtime until the global adapter gate is satisfied.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "tools/software_inventory/SyftAdapter.psm1",
+    "tools/software_inventory/Export-IcarusSbom.ps1",
+    "docs/SOFTWARE_INVENTORY.md",
+    "tests_engine/test_syft_adapter_adapter.ps1"
+  ],
+  "dependencies": [
+    "coordination:reppiks490/icarus-owner-actions:coordination/ACTIVE.md@cb6c352b2157653f4106fc68f0455bbb4df2969d",
+    "review:sol_syft_adapter_review"
+  ],
+  "evidence": [
+    "Existing scanner wrapper is a 5.6KB local SPDX-only script; standalone module path and test path are confirmed absent. Existing candidate changes are preserved."
+  ],
+  "next_action": "Author the adapter module and focused tests within the declared isolated candidate paths.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
