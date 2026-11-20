@@ -1,0 +1,19 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "actor": "Codex",
+  "model_family": "openai",
+  "goal": "Build and verify a bounded offline adapter for the already-downloaded richie-ma/cme.mdp package as part of the adapters-first ICARUS objective. Keep it isolated and unwired until the full adapter gate passes; no provider calls, licensed raw-data access, live orders, or production changes.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "codex/syft-sbom-20261119",
+  "started_at_utc": "2026-11-20T07:00:45Z",
+  "stale_after_minutes": 120,
+  "capabilities": [
+    "local-tests",
+    "github-coordination"
+  ],
+  "initial_dependencies": [
+    "Private WSL R 4.5.3 environment with highfrequency 1.0.3 installed",
+    "Synthetic fixtures only; upstream raw CME data samples are not included or licensed by this repository"
+  ]
+}
