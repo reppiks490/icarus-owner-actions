@@ -1,0 +1,54 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T111017Z-update-cme-mdp-complete-descendant-cleanup",
+  "session_id": "codex-20261120-cme-mdp-adapter",
+  "at_utc": "2026-11-20T11:10:17Z",
+  "type": "UPDATE",
+  "phase": "adapter-final-review",
+  "summary": "Addressed the second Sol FIX-FIRST findings: _invoke now kills and verifies the worker process group after every leader exit, not only timeout/error; a controlled early-exit leader test proves its sleeping same-group child is absent after return; README now states exactly one matching tag 75 is required. Exact WSL suite passes 15/15. Third independent Sol review is running. No integration or production readiness is claimed.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [
+    "tools/repository_adapters/cme_mdp/adapter.py",
+    "tools/repository_adapters/cme_mdp/dispatch.R",
+    "tools/repository_adapters/cme_mdp/worker.py",
+    "tools/repository_adapters/cme_mdp/README.md",
+    "tests_engine/test_cme_mdp_adapter.py",
+    "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T111017Z-update-cme-mdp-complete-descendant-cleanup.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/20/codex-20261120-cme-mdp-adapter/20261120T111017Z-update-cme-mdp-complete-descendant-cleanup.json"
+    }
+  ],
+  "dependencies": [
+    "source:richie-ma/cme.mdp@4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "review:sol-first-disposition-fix-first-addressed",
+    "review:sol-second-disposition-fix-first-addressed",
+    "review:sol-third-review-pending",
+    "constraint:no-live-broker-arming",
+    "constraint:no-runtime-wiring-before-all-adapters"
+  ],
+  "evidence": [
+    "local:Wsl-Python cme.mdp focused suite; 15 tests passed in 14.099 seconds",
+    "local:controlled timeout test proves leader and same-group descendant are gone on timeout",
+    "local:controlled normal leader-exit test proves same-group descendant is gone before adapter returns",
+    "local:synthetic-only tests cover six exports, date tags, path and hash races, size/output bounds, socket/socketpair/io_uring_setup denial",
+    "runtime:engine_health ok=true warm=true on same 27 assets"
+  ],
+  "next_action": "Collect third fresh Sol disposition for exact updated hashes. On approval, mark this adapter verified as an isolated candidate only; continue the global adapter queue and do not wire into ICARUS/MCP until the global gate passes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
