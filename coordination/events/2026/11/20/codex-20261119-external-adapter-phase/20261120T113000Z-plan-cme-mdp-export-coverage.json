@@ -1,0 +1,38 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261120T113000Z-plan-cme-mdp-export-coverage",
+  "session_id": "codex-20261119-external-adapter-phase",
+  "at_utc": "2026-11-20T11:30:00Z",
+  "type": "PLAN",
+  "phase": "cme-mdp-complete-beneficial-export-coverage",
+  "summary": "Audit the installed richie-ma/cme.mdp 0.1.1 package API against the existing isolated offline adapter, which currently wraps six of 13 exports. Implement and verify additional beneficial operations and composed workflows using generated synthetic fixtures. Preserve provenance, explicit schemas and resource bounds; keep any visualization/data outputs in an offline, local-file boundary. Do not claim vendor entitlement, access licensed MDP-10 payloads, wire any repository into ICARUS/MCP, or change runtime/broker authority. Re-audit export coverage after implementation.",
+  "repos": [
+    "reppiks490/Icarus",
+    "richie-ma/cme.mdp"
+  ],
+  "paths": [],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tools/repository_adapters/cme_mdp/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_cme_mdp_adapter.py"
+    }
+  ],
+  "dependencies": [
+    "source:richie-ma/cme.mdp@4d0db0c941c539e1401f949edb0cb46dd1092534",
+    "runtime:private WSL R 4.5.3 and cme.mdp 0.1.1",
+    "constraint:offline-synthetic-fixtures-only",
+    "constraint:global-adapters-first-gate"
+  ],
+  "evidence": [
+    "Installed namespace exposes 13 exported functions; current adapter exercises six.",
+    "Remaining exports are tbbo, heatmap_time, book_bar, order_book, tick_bbo, cme_resample, mbo_match_details; their input/output forms require per-operation qualification.",
+    "Package source and man pages inspected; upstream checkout remains unchanged."
+  ],
+  "next_action": "Implement/test only beneficial operations with exact fixtures and resource limits; document any source- or contract-supported exclusions, then obtain fresh Sol review for the modified candidate.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
