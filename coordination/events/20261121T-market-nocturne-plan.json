@@ -1,0 +1,48 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261121T-market-nocturne-plan",
+  "session_id": "codex-20261120-market-nocturne",
+  "at_utc": "2026-11-21T02:27:18.155Z",
+  "type": "PLAN",
+  "phase": "implementation",
+  "summary": "Implement a read-only multi-market visual instrument on the shared dashboard and an explicitly archived mobile preview.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/dashboard.html",
+    "icarus_engine/server.py",
+    "icarus_engine/market-nocturne.js",
+    "icarus_engine/market-nocturne.css",
+    "tests_engine/test_market_nocturne.py"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/dashboard.html"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/server.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market-nocturne.js"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/market-nocturne.css"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_market_nocturne.py"
+    }
+  ],
+  "dependencies": [],
+  "evidence": [
+    "main@89a1ebfe3c2be774bf07ea7700ea7a0b2496dcc4"
+  ],
+  "next_action": "Build and verify scoped runtime UI; open a PR.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
