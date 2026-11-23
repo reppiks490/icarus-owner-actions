@@ -1,0 +1,65 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T054633Z-plan-nested-constellation-harness",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T05:46:33.331Z",
+  "type": "PLAN",
+  "phase": "reproducible-github-native-research-swarm",
+  "summary": "Implement nested, versioned GitHub reusable workflow swarm + bounded specialist matrix + independent evidence arbitration and source-linked receipts; first harden Phase 21 historical time/receipt causality and negative tests. This is PRE-MERGE research only; do not enable live broker routing or run Codex.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T054633Z-plan-nested-constellation-harness.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/constellation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/historical_paper.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_constellation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_historical_paper.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-constellation.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-constellation-worker.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_SOVEREIGN_HYBRID.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T054633Z-plan-nested-constellation-harness.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#503",
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "constraint:no-Codex-or-automatic-merge",
+    "CI:exact-HEAD-required"
+  ],
+  "evidence": [
+    "source:PR503@68993102f77549ac794d87a608058d6363649da9",
+    "source:AGENTS.md and coordination/START_HERE.md read",
+    "source:coordination/collisions.json no recorded collisions at 2026-10-25 snapshot"
+  ],
+  "next_action": "Build single allowlisted worker/evidence runtime and reusable GitHub Actions coordinator; run PR CI; report exact-HEAD status.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
