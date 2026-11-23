@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T060051Z-update-reusable-ci-integration",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T06:00:51.137Z",
+  "type": "UPDATE",
+  "phase": "nested-reusable-ci-end-to-end-verification",
+  "summary": "Source-only 12-worker Constellation plus hardened plan, tribunal and historical-clock tests committed on Icarus PR503. Dedicated OMNIGENESIS Python CI passed earlier, but new top-level Constellation workflow has not yet produced a PR-triggered run. Claim narrow existing research workflow addition to invoke reusable Constellation as a separate child job for REAL GitHub artifact/parallel-worker E2E without merger, preserving nonbroker/no-Codex boundaries.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T060051Z-update-reusable-ci-integration.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-research-ci.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-constellation.yml"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T060051Z-update-reusable-ci-integration.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#503",
+    "policy:execution_authorized_false",
+    "policy:no-Codex-scheduled",
+    "CI:nested-reusable-yaml-end-to-end-unverified"
+  ],
+  "evidence": [
+    "source:Icarus PR503@105b3bb44cca7d3ebedc65d733e584af5ab66b41",
+    "CI:earlier research-only dedicated tests SUCCESS; no distinct Constellation swarm Actions run"
+  ],
+  "next_action": "Make parent workflow callable, invoke from trusted existing OMNIGENESIS research-only verification workflow, verify actual nested worker and tribunal jobs with exact SHA.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
