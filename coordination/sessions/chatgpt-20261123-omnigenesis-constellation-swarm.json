@@ -1,0 +1,22 @@
+{
+  "schema_version": "icarus-coordination-session-v2",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "actor": "ChatGPT",
+  "model_family": "openai",
+  "goal": "Build and verify the owner's requested deeply nested GitHub-native research swarm on the existing ICARUS OMNIGENESIS x UMBRA draft PR #503, while preserving historical causality, risk, research-only authority, CI and no-Codex schedules.",
+  "home_repo": "reppiks490/Icarus",
+  "branch": "agent/omnigenesis-phase-01-foundation",
+  "pr": 503,
+  "started_at_utc": "2026-11-23T05:46:20.250Z",
+  "stale_after_minutes": 240,
+  "capabilities": [
+    "github",
+    "github-actions",
+    "research-only-unit-tests"
+  ],
+  "initial_dependencies": [
+    "Icarus PR #503 head 68993102f77549ac794d87a608058d6363649da9",
+    "policy:live-execution-disabled",
+    "policy:no-Codex-in-scheduled-automation"
+  ]
+}
