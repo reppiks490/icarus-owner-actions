@@ -1,0 +1,44 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T064844Z-handoff-phase25-recovery-observation",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T06:48:44.732Z",
+  "type": "HANDOFF",
+  "phase": "Phase24-25-completed-research-and-still-draft",
+  "summary": "Committed and source-verified the ICARUS/UMBRA Constellation Phase24 missing-shard checkpoint with bounded one-retry and failure-aware GitHub Actions retry gate; Phase25 strict source-recomputed completed-worker observability, default-safe local scientific ledger import, CLI, and sanitized GitHub tribunal artifact. Python/mobile and nested worker/tribunal/recovery verification passed at exact source SHA2599c2be; 17 artifacts including observation confirmed. PR503 remains draft; no live broker orders, Codex scheduling, data vendor spend, auto-merge, production deploy, GitHub-to-iPhone streaming or artificial profit claims.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T064844Z-handoff-phase25-recovery-observation.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T064844Z-handoff-phase25-recovery-observation.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#503@88c34bd2c14272406e05d83922b718593f75d37a",
+    "github:source_sha:2599c2beadecbee06e860fe30551f311e8b98a91",
+    "github:run:45126060714:success",
+    "policy:no_live_broker_arming",
+    "policy:no_codex_in_scheduled_work",
+    "blocker:reppiks490/Icarus#504:stale_upstream_federation"
+  ],
+  "evidence": [
+    "source:icarus_engine/omnigenesis/constellation_recovery.py",
+    "source:icarus_engine/omnigenesis/constellation_observation.py",
+    "source:tests_engine/test_omnigenesis_constellation_recovery.py and test_omnigenesis_constellation_observation.py",
+    "source:ResearchLedger.append_constellation and python -m icarus_engine.omnigenesis constellation-import CLI",
+    "source:.github/workflows/omnigenesis-constellation.yml and omnigenesis-constellation-tribunal.yml",
+    "ci:OMNIGENESIS-45126060714:research-python+mobile+12-specialists+recovery-checkpoint+tribunal+observation:success",
+    "artifact:17 from 45126060714 including omnigenesis-constellation-observation",
+    "docs:docs/icarus/OMNIGENESIS_HANDOFF.md and docs/icarus/OMNIGENESIS_CONSTELLATION_SWARM.md",
+    "PR-current-docs-only-head:88c34bd2:canonical-CI-running"
+  ],
+  "next_action": "Inspect current draft PR#503 exact HEAD and canonical CI before review; preserve issue#504 stale-peer freshness rejection; independently perform missing-worker failure-injection Actions E2E, verify publisher-attributed GitHub workflow provenance, design approved durable signed cross-run journal and authenticated low-latency read-only mobile/desktop synchronization. Never auto-merge or arm broker.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
