@@ -1,0 +1,43 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T073107Z-plan-halt-reconcile",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T07:31:07.453Z",
+  "type": "PLAN",
+  "phase": "offline-router-halt-reconciliation",
+  "summary": "Adversarial audit identified fail-closed reporting defect: must_cancel_and_reconcile_externally becomes false on HALT when no working orders remain, despite no external reconciliation proof. Correct reporting and tests only; no broker calls, risk/strategy or execution authority changes.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T073107Z-plan-halt-reconcile.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/offline_order_router.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_offline_order_router.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_SOVEREIGN_HYBRID.md"
+    }
+  ],
+  "dependencies": [
+    "PR503 draft",
+    "execution_authorized_false"
+  ],
+  "evidence": [
+    "current HEAD 88c34bd2c14272406e05d83922b718593f75d37a",
+    "CI research 45126531659 success",
+    "canonical tests 45126531457 success",
+    "federation 45126531594 failed stale peer packet 10212s >1800s"
+  ],
+  "next_action": "Fresh-SHA edits with adversarial HALT zero-open and cancel-ack tests, exact-head CI.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
