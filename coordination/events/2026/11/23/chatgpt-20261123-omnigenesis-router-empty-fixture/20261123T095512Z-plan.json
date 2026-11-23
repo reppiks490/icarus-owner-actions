@@ -1,0 +1,31 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T095512Z-plan",
+  "session_id": "chatgpt-20261123-omnigenesis-router-empty-fixture",
+  "at_utc": "2026-11-23T09:55:12Z",
+  "type": "PLAN",
+  "phase": "offline-router-valid-flat-fixture",
+  "summary": "Exact HEAD e8e42ead has 3 CI failures from a single adversarial test passing config([]) despite router strict event count 1..2000. Preserve production router and replace only invalid flat test case with a valid zero-position RECONCILE event; document and verify current HEAD.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_offline_order_router.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_SOVEREIGN_HYBRID.md"
+    }
+  ],
+  "dependencies": [
+    "PR503",
+    "CI 45143523352 failure",
+    "CI 45143523345 failure",
+    "CI 45143523438 failure"
+  ],
+  "next_action": "Change one invalid fixture only, preserve strict router, verify Actions",
+  "coordination_mode": "independent"
+}
