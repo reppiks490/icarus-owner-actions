@@ -1,0 +1,57 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T063143Z-plan-recovery-checkpoint",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T06:31:43.187Z",
+  "type": "PLAN",
+  "phase": "constellation-recovery-and-durable-checkpoint",
+  "summary": "Continue PR503 from exact head 978200e4. Build strict finite partial-receipt recovery planner, crash-resumable checkpoint artifacts, GitHub Actions one-retry missing-worker recovery, and read-only status evidence; prevent drift, spoofing, unsafe promotion and redundant retries. Verify against CI. No live broker, Codex, external paid calls, approval bypass, auto-merge or deploy.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T063143Z-plan-recovery-checkpoint.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/constellation_recovery.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_constellation_recovery.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-constellation.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_CONSTELLATION_SWARM.md"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_HANDOFF.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T063143Z-plan-recovery-checkpoint.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#503",
+    "policy:execution_authorized_false",
+    "policy:no_live_broker_arming",
+    "policy:no-Codex-automation",
+    "integration:live-peer-stale-7849-seconds-1800-threshold"
+  ],
+  "evidence": [
+    "github:pr503@978200e4da521d8d983bb953510fa259af4abd5b",
+    "github:OMNIGENESIS-research-ci-45122320824-success",
+    "github:live-engine-federation-45122320841-failure-stale-packet"
+  ],
+  "next_action": "Implement bounded incomplete-evidence plan and checkpoint; run tests before modifying parent CI; preserve draft.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
