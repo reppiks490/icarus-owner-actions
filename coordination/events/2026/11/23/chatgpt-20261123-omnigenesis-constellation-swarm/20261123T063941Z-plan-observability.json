@@ -1,0 +1,59 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261123T063941Z-plan-observability",
+  "session_id": "chatgpt-20261123-omnigenesis-constellation-swarm",
+  "at_utc": "2026-11-23T06:39:41.160Z",
+  "type": "PLAN",
+  "phase": "constellation-read-only-observatory",
+  "summary": "Extend verified Phase 24 checkpoint/tribunal with sanitized read-only observation payload, explicit local ledger import gated by exact replay and CLI, and a GitHub artifact for future authenticated desktop/iPhone UI consumption. No live worker claims, broker accounts, network calls, secrets or UI deployments.",
+  "repos": [
+    "reppiks490/Icarus",
+    "reppiks490/icarus-owner-actions"
+  ],
+  "paths": [
+    "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T063941Z-plan-observability.json"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/constellation_observation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/ledger.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/omnigenesis/__main__.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_omnigenesis_constellation_observation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": ".github/workflows/omnigenesis-constellation-tribunal.yml"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/icarus/OMNIGENESIS_CONSTELLATION_SWARM.md"
+    },
+    {
+      "repo": "reppiks490/icarus-owner-actions",
+      "path": "coordination/events/2026/11/23/chatgpt-20261123-omnigenesis-constellation-swarm/20261123T063941Z-plan-observability.json"
+    }
+  ],
+  "dependencies": [
+    "pr:reppiks490/Icarus#503",
+    "ci:OMNIGENESIS-research-only-45125228120-success",
+    "no-live-broker-arming",
+    "no Codex/scheduled autonomous merge or deployment"
+  ],
+  "evidence": [
+    "Github draft PR head 5bf427ee2f523ed3a441bbe0f704a78569e2e24a",
+    "19-job research workflow complete with 12 specialists, checkpoint plan, final checkpoint, tribunal; retry skipped"
+  ],
+  "next_action": "Implement strict observation builder and ledger gated import, tests and worker tribunal artifact; rerun exact-head Actions.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
