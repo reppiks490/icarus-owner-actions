@@ -1,0 +1,30 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T014500Z-plan-local-inventory",
+  "session_id": "chatgpt-20261124-local-inventory",
+  "at_utc": "2026-11-25T01:45:00Z",
+  "type": "PLAN",
+  "phase": "local-inventory",
+  "summary": "Measure 269 previously discovered project locations without changing source; publish sanitized inventory and resumable research handoff on isolated branch. No live changes, credential reads, provider spending, or cloud placeholder hydration.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "docs/research/local-inventory-20261124/"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/local-inventory-20261124/"
+    }
+  ],
+  "dependencies": [
+    "local:size-audit:11752"
+  ],
+  "evidence": [
+    "Prior discovery: 237 Git locations and 32 extracted source projects"
+  ],
+  "next_action": "Record sizes, coverage, limitations and integration candidates; leave a durable handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
