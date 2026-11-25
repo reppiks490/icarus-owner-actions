@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T042150Z-claim-campaign",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:21:50Z",
+  "type": "CLAIM",
+  "phase": "adaptive-campaign",
+  "summary": "Continue across verification gates into a bounded, resumable synthetic 40-identity compact routing campaign using the published Bank/Vault/worker wave; no production or PC execution.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/campaign.py",
+    "tests_engine/test_umbra_campaign.py",
+    "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/campaign.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_umbra_campaign.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@bf8f4950830f1cf2559255109c79cacee8c68400"
+  ],
+  "evidence": [
+    "32 focused integrated tests passed, exact adaptive_foundry and agent_lab blobs verified. Compiled collision view stale."
+  ],
+  "next_action": "Test resume and curriculum contracts, implement bounded campaign, run actual synthetic experiment and publish receipt/handoff.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
