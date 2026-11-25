@@ -1,0 +1,33 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T020108Z-handoff-local-inventory",
+  "session_id": "chatgpt-20261124-local-inventory",
+  "at_utc": "2026-11-25T02:01:08Z",
+  "type": "HANDOFF",
+  "phase": "verified-documentation-transfer",
+  "summary": "Full available technical-session handoff committed and read back. 275 project locations, 1,774,395 file entries, 101,135,047,636 logical bytes including 53,015,505,445 Git metadata bytes. Eight indexed documents preserve local evidence, historical recovery, UMBRA draft PRs, Pulse analysis, model acquisition and proposed scientific architecture. 14 verified acquisition receipts; gplearn/scikit-learn dependency conflict remains. Physical reclaimable storage, complete four-month activity and model qualification unknown. No cleanup, live execution, runtime modifications or main merge.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "docs/research/local-inventory-20261124/README.md",
+    "docs/research/local-inventory-20261124/SESSION_HANDOFF.md",
+    "docs/research/local-inventory-20261124/CONTINUE.md",
+    "docs/research/local-inventory-20261124/GIT_STORAGE_AUDIT.md"
+  ],
+  "targets": [],
+  "dependencies": [
+    "pr:reppiks490/Icarus#505@1ed9448383716477e27def3e1d58cbb33190a8db",
+    "constraint:no_live_broker_arming",
+    "constraint:no_scheduled_codex",
+    "constraint:no_destructive_storage_cleanup"
+  ],
+  "evidence": [
+    "Eight files read back from exact inventory branch; all links present.",
+    "275 matching size and metadata records.",
+    "GitHub draft PR #505: 1ed9448383716477e27def3e1d58cbb33190a8db"
+  ],
+  "next_action": "Read https://github.com/reppiks490/Icarus/blob/1ed9448383716477e27def3e1d58cbb33190a8db/docs/research/local-inventory-20261124/README.md and follow CONTINUE.md. First verify physical allocation and unique histories, resolve isolated environment compatibility, then qualify local models and data. No destructive action without owner approval.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
