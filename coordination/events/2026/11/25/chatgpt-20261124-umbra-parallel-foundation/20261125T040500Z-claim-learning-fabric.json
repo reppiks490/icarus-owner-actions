@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T040500Z-claim-learning-fabric",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:05:00Z",
+  "type": "CLAIM",
+  "phase": "learning-fabric",
+  "summary": "Offline compact ML and optional CPU deep learning candidate training on synthetic verified bank; no production or local runtime change; compiled coordination view stale.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/learning_fabric.py",
+    "tests_engine/test_learning_fabric.py",
+    "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@ee724fca404793aa992c68109e1c268e3f622e25"
+  ],
+  "evidence": [
+    "Acquisition transcript read-only, still first attempt."
+  ],
+  "next_action": "Test-first bounded training/evaluation with checkpoints; no promotion.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
