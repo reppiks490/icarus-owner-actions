@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T040000Z-claim-distillation-bank",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:00:00Z",
+  "type": "CLAIM",
+  "phase": "distillation-foundry",
+  "summary": "Owner-directed continuation: isolated synthetic reasoning bank and deterministic graders, group split and heldout evaluation. No runtime, model download, or provider changes. Compiled collision view is stale; exact branch and narrow new paths inspected.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/distillation.py",
+    "tests_engine/test_distillation.py",
+    "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/distillation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_distillation.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@1d070314a89aee1212aa71cd92bf45eef065494e"
+  ],
+  "evidence": [
+    "Owner local acquisition transcript still records attempt 1; no verified completion."
+  ],
+  "next_action": "Test-first offline implementation; preserve existing agent registry and runtime.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
