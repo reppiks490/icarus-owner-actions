@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T022040Z-claim-parallel-foundation",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T02:20:40.678Z",
+  "type": "CLAIM",
+  "phase": "parallel-foundation",
+  "summary": "Parallel isolated research-only work: causal evidence, settlement, purged verification, deterministic order book fixture, artifact qualification, discovery disposition tracking. No runtime/provider changes. Compiled coordination view stale; no overlapping reservation observed.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/",
+    "tests_engine/test_umbra_lab.py",
+    "docs/research/umbra-parallel-foundation/"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_umbra_lab.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#505@4674662ecb8c7e3eae4c57505591198bb9a43b85"
+  ],
+  "evidence": [
+    "Canonical AGENTS and federation directives read in preceding turn."
+  ],
+  "next_action": "Write and run independent tests, implement and publish bounded research components.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
