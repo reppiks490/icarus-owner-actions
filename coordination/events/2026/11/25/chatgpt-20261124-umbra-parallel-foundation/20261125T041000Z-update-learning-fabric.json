@@ -1,0 +1,41 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T041000Z-update-learning-fabric",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:10:00Z",
+  "type": "UPDATE",
+  "phase": "learning-fabric",
+  "summary": "Existing tests_engine/test_learning_fabric.py found; create request rejected without mutation. Preserve it and publish tests under new absent test_umbra_distillation_learning.py. Ten focused Linux tests passed including CPU Torch.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/learning_fabric.py",
+    "tests_engine/test_umbra_distillation_learning.py",
+    "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/learning_fabric.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_umbra_distillation_learning.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/REASONING_DISTILLATION_FOUNDRY.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@ee724fca404793aa992c68109e1c268e3f622e25"
+  ],
+  "evidence": [
+    "Local tested test blob f7cb0c463acfe38ef12b18f1f32b981173425f1d",
+    "Local tested implementation blob dbfb4edd7257d8341ac2a63637aea821f75f3f55"
+  ],
+  "next_action": "Publish exact tested files and verify readback; no live changes.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
