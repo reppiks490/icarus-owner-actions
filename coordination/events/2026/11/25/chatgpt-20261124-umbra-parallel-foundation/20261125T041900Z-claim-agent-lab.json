@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T041900Z-claim-agent-lab",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:19:00Z",
+  "type": "CLAIM",
+  "phase": "adaptive-foundry-agent-lab",
+  "summary": "Continue through durable per-agent checkpoint lineage and controlled concurrent synthetic CPU experiment execution. Existing 40 identities inspected. No PC execution or model download mutation. Compiled collision view stale.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/agent_lab.py",
+    "tests_engine/test_umbra_agent_lab.py",
+    "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/agent_lab.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_umbra_agent_lab.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@63cdc845a99324fbe196ee4082847bb69ce6f030"
+  ],
+  "evidence": [
+    "26 isolated Foundry regression checks passed; exact adaptive source/test blob readback verified."
+  ],
+  "next_action": "Test checkpoint isolation and supervised process-wave execution; preserve all existing production runtime and owner constraints.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
