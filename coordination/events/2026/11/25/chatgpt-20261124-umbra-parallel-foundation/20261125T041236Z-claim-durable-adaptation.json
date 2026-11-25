@@ -1,0 +1,40 @@
+{
+  "schema_version": "icarus-coordination-event-v2",
+  "event_id": "20261125T041236Z-claim-durable-adaptation",
+  "session_id": "chatgpt-20261124-umbra-parallel-foundation",
+  "at_utc": "2026-11-25T04:12:36Z",
+  "type": "CLAIM",
+  "phase": "adaptive-foundry",
+  "summary": "Offline durable synthetic evidence, adaptive per-agent routing and resource-aware research selection. No runtime/provider or download mutation. Compiled collision view stale.",
+  "repos": [
+    "reppiks490/Icarus"
+  ],
+  "paths": [
+    "icarus_engine/umbra_lab/adaptive_foundry.py",
+    "tests_engine/test_umbra_adaptive_foundry.py",
+    "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+  ],
+  "targets": [
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "icarus_engine/umbra_lab/adaptive_foundry.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "tests_engine/test_umbra_adaptive_foundry.py"
+    },
+    {
+      "repo": "reppiks490/Icarus",
+      "path": "docs/research/umbra-parallel-foundation/ADAPTIVE_FOUNDRY_HANDOFF.md"
+    }
+  ],
+  "dependencies": [
+    "reppiks490/Icarus#506@21b80cc26a7fcbf867892834b319c678c90ba8a5"
+  ],
+  "evidence": [
+    "Current branch and download transcript inspected; no teacher completion established."
+  ],
+  "next_action": "Test-first transaction and prequential adaptation, integrate existing Bank and learning fabric, verify source and document.",
+  "coordination_mode": "independent",
+  "cooperates_with": []
+}
